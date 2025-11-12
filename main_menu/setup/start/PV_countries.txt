@@ -1,0 +1,90 @@
+countries = {
+	countries = {
+		#Project Variety
+		BQA = {
+			own_control_core = {
+				benghazi ajdabiya al_bayda al_khuimat barca derna mechili msus qaminis suluntah tmimi
+				awjila el_agheila
+				tobruk siwa bahariyya
+			}
+
+			starting_technology_level = 3
+			include = "expl_muslim_mediterranean"
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = bqa_fayed_ibn_muqaddam
+			}
+			religious_school = maliki_school
+			government = { mysticism_vs_jurisprudence = -5 }
+
+			tolerated_cultures = {
+				eastern_amazigh
+			}
+
+			capital = barca
+			dynasty = heib_dynasty
+		}
+
+		KOJ = {
+			own_control_core = {
+				jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah sidon madaba shoubak
+			}
+			own_control_integrated = {
+				beirut baalbek deir_qamar tripoli_syria
+				ayntab dluk iskenderun damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+			}
+			own_control_conquered = {
+				el_arish nekhel qatya warrada
+			}
+			country_rank = rank_kingdom
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			discovered_areas = {
+				red_sea_area
+				persian_gulf_sea_zones_area
+				upper_egypt_area
+				nubia_proper_area
+			}
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+
+				reforms = {
+					feudal_nobility
+				}
+
+				privilege = {
+					#Nobles
+					elaborate_court_ceremonies
+					banal_lordship
+
+					#Ulama
+					clergy_strengthen_faith
+
+					#Burghers
+					trade_monopolies
+				}
+
+				spiritualist_vs_humanist = -90
+				belligerent_vs_conciliatory = -70
+				quality_vs_quantity = 80
+				land_vs_naval = -40
+			}
+			
+
+			tolerated_cultures = {
+				levantine_culture
+				syriac_culture
+			}
+
+			capital = jerusalem
+		}
+
+	}
+}
