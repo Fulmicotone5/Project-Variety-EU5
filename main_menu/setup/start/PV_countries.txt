@@ -135,6 +135,7 @@ countries = {
 				el_arish nekhel qatya warrada
 			}
 			country_rank = rank_kingdom
+			include = "catholic_military_order"
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
 			include = "expl_silk_road_center"
@@ -187,6 +188,375 @@ countries = {
 			}
 
 			capital = jerusalem
+		}
+
+		TOU = {
+			own_control_core = {
+				clermont 
+
+				cahors mirepoix limoux carcassonne lavaur castelnaudary condom nerac bazas agen
+				bergerac montauban albi millau saint_pons beziers agde sauveterre_de_guyenne
+				figeac villefranche
+				limeuil sarlat marmande montflanquin
+				mauriac riom tour_auvergne brioude saint_flour vodable
+				montaigut herment
+
+				tulle #Limousin
+				limoges nontron segur st_leonard aixe thiviers #Vic. Limoges
+				turenne gourdon #Vic.Turenne
+				mende #C. de Gevaudan
+				macon #C. de Macon
+				beaujeu perreux trevoux #S.de Beaujeu
+				lyon riverie #C. de Lyon
+				le_puy #C. du Velay
+				viviers # C. de Viviers
+				nimes uzes melgueil
+				french_ales #S. Ales
+				chambon #B. de Combraille
+
+
+				lodeve #C. Lodeve
+
+				fenouillet toulouse verdun_sur_garonne villemur
+				peyrusse entraigues st_affrique
+				allegre chalancon peyre chateauneuf_de_randon florac st_ambroix bourganeuf
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy"
+
+			government = {
+				heir_selection = salic_law
+
+				regnal_numbers = {
+					#Clovis = 4
+					#Clodomir = 1
+					#Thibert = 2
+					name_alphonse = 1
+					#Childebert = 4
+					#Clotaire = 5
+					#Caribert = 1
+					#Sigebert = 1
+					#Childéric = 3
+					#Gontran = 1
+					#Dagobert = 3
+					name_artaldus = 1
+					name_berengar = 2
+					name_christopher = 1
+					name_philip = 4
+					name_roderick = 1
+					name_thaddeus = 1
+					name_william = 1
+					name_vincent = 10
+					name_felix = 6
+					name_henry = 2
+					name_julian = 2
+				}
+
+				centralization_vs_decentralization = 10
+				aristocracy_vs_plutocracy = -75
+				serfdom_vs_free_subjects = -80
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = -25
+				offensive_vs_defensive = -20
+				land_vs_naval = -30
+				quality_vs_quantity = -30
+				belligerent_vs_conciliatory = -20
+				capital_economy_vs_traditional_economy = 70
+				individualism_vs_communalism = -30
+				outward_vs_inward = -50
+
+				reforms = {
+				}
+
+				laws = {
+					medieval_levy_law = noble_levies	#Dependence on nobles
+					cultural_traditions_law = civil_society	#Taxing the peasants
+					mining_law = nobles_mining_law	#Noble Controlled
+					precious_metal_distribution_law = unlimited_gold_export
+				}
+
+				privilege = {
+					formal_guilds
+					clergy_literacy_rights
+					auxilium_et_consilium
+					nobles_land_rights
+					primacy_of_nobility
+					noble_armies
+				}
+			}
+
+			tolerated_cultures = {
+				gascon
+				auvergnat
+				limousin
+				saintongeais
+			}
+
+			country_rank = rank_county
+			capital = toulouse
+		}
+
+
+			GUY = {
+			own_control_core = {
+				saint_gaudens #Vic. des Quatre Valles
+
+				tarbes #C. Bigorre
+			}
+			own_control_integrated = {
+			}
+
+			own_control_conquered = {
+			}
+
+			our_cores_conquered_by_others = {
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy"
+
+			government = {
+				heir_selection = salic_law
+
+				regnal_numbers = {
+					#Clovis = 4
+					#Clodomir = 1
+					#Thibert = 2
+					name_alphonse = 1
+					#Childebert = 4
+					#Clotaire = 5
+					#Caribert = 1
+					#Sigebert = 1
+					#Childéric = 3
+					#Gontran = 1
+					#Dagobert = 3
+					name_artaldus = 1
+					name_berengar = 2
+					name_christopher = 1
+					name_philip = 4
+					name_roderick = 1
+					name_thaddeus = 1
+					name_william = 1
+					name_vincent = 10
+					name_felix = 6
+					name_henry = 2
+					name_julian = 2
+				}
+
+				centralization_vs_decentralization = 10
+				aristocracy_vs_plutocracy = -75
+				serfdom_vs_free_subjects = -80
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = -25
+				offensive_vs_defensive = -20
+				land_vs_naval = -30
+				quality_vs_quantity = -30
+				belligerent_vs_conciliatory = -20
+				capital_economy_vs_traditional_economy = 70
+				individualism_vs_communalism = -30
+				outward_vs_inward = -50
+
+				reforms = {
+				}
+
+				laws = {
+					medieval_levy_law = noble_levies	#Dependence on nobles
+					cultural_traditions_law = civil_society	#Taxing the peasants
+					mining_law = nobles_mining_law	#Noble Controlled
+					precious_metal_distribution_law = unlimited_gold_export
+				}
+
+				privilege = {
+					formal_guilds
+					clergy_literacy_rights
+					auxilium_et_consilium
+					nobles_land_rights
+					primacy_of_nobility
+					noble_armies
+				}
+			}
+
+			tolerated_cultures = {
+				limousin
+				saintongeais
+				berrichon
+				languedocien
+			}
+
+			country_rank = rank_county
+			capital = tarbes
+		}
+
+			POI = {
+			own_control_core = {
+				poitiers la_roche_sur_yon montaigu thouars parthenay fontenay montmorillon
+				niort chatellerault brosse lusignan aulnay st_jean_dangely
+				talmont beauvoir mauleon_poitou la_rochelle
+			}
+			own_control_integrated = {
+			}
+
+			own_control_conquered = {
+			}
+
+			our_cores_conquered_by_others = {
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy"
+
+			government = {
+				heir_selection = salic_law
+
+				regnal_numbers = {
+					#Clovis = 4
+					#Clodomir = 1
+					#Thibert = 2
+					name_alphonse = 1
+					#Childebert = 4
+					#Clotaire = 5
+					#Caribert = 1
+					#Sigebert = 1
+					#Childéric = 3
+					#Gontran = 1
+					#Dagobert = 3
+					name_artaldus = 1
+					name_berengar = 2
+					name_christopher = 1
+					name_vincent = 4
+					name_roderick = 1
+					name_thaddeus = 1
+					name_william = 1
+					name_philip = 10
+					name_felix = 6
+					name_henry = 2
+					name_julian = 2
+				}
+
+				centralization_vs_decentralization = 10
+				aristocracy_vs_plutocracy = -75
+				serfdom_vs_free_subjects = -80
+				traditionalist_vs_innovative = -30
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = -25
+				offensive_vs_defensive = -20
+				land_vs_naval = -30
+				quality_vs_quantity = -30
+				belligerent_vs_conciliatory = -20
+				capital_economy_vs_traditional_economy = 70
+				individualism_vs_communalism = -30
+				outward_vs_inward = -50
+
+				reforms = {
+				}
+
+				laws = {
+					medieval_levy_law = noble_levies	#Dependence on nobles
+					cultural_traditions_law = civil_society	#Taxing the peasants
+					mining_law = nobles_mining_law	#Noble Controlled
+					precious_metal_distribution_law = unlimited_gold_export
+				}
+
+				privilege = {
+					formal_guilds
+					clergy_literacy_rights
+					auxilium_et_consilium
+					nobles_land_rights
+					primacy_of_nobility
+					noble_armies
+				}
+			}
+
+			tolerated_cultures = {
+				gascon
+				limousin
+				saintongeais
+				berrichon
+			}
+
+			country_rank = rank_county
+			capital = poitiers
+		}
+
+			#Burgundy (Appanage)
+		BUR = {
+			own_control_core = {
+				dijon semur_en_auxois chatillon_sur_seine
+				chalon_sur_saone charolles autun
+				semur_en_brionnais
+				avallon
+				montcenis
+				aignay arnay beaune auxonne louhans
+				macon #C. de Macon
+				beaujeu perreux trevoux #S.de Beaujeu
+				lyon riverie #C. de Lyon
+			}
+
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			government = {
+				ruler = bur_eudes_iv_burgundy
+
+				ruler_term = { character = fra_hugues_le_grand start_date = 952.12.17 end_date = 956.6.16 regnal_number = 0 }
+				ruler_term = { character = bur_otton_bourgogne start_date = 956.6.16 end_date = 965.2.23 regnal_number = 0 }
+				ruler_term = { character = bur_eudes_henri_bourgogne start_date = 965.2.23 end_date = 1002.10.15 regnal_number = 0 }
+
+				ruler_term = { character = fcb_othon_guillaume_burgundy start_date = 1002.10.15 end_date = 1004.1.1 regnal_number = 0 }
+
+				ruler_term = { character = fra_robert_ii_capet start_date = 1004.1.1 end_date = 1016.1.30 regnal_number = 0 }
+				ruler_term = { character = fra_henri_i_capet start_date = 1016.1.30 end_date = 1032.1.1 regnal_number = 1 }
+
+				ruler_term = { character = bur_robert_i_burgundian start_date = 1032.1.1 end_date = 1076.3.21 regnal_number = 1 }
+				ruler_term = { character = bur_hugues_i_burgundian start_date = 1076.3.21 end_date = 1093.8.29 regnal_number = 1 }
+				ruler_term = { character = bur_eudes_i_burgundian start_date = 1093.8.29 end_date = 1103.3.23 regnal_number = 1 }
+				ruler_term = { character = bur_hugues_ii_burgundian start_date = 1103.3.23 end_date = 1143.2.6 regnal_number = 2 }
+				ruler_term = { character = bur_eudes_ii_burgundian start_date = 1143.2.6 end_date = 1162.6.27 regnal_number = 2 }
+				ruler_term = { character = bur_hugues_iii_burgundian start_date = 1162.6.27 end_date = 1192.8.25 regnal_number = 3 }
+				ruler_term = { character = bur_eudes_iii_burgundian start_date = 1192.8.25 end_date = 1218.7.6 regnal_number = 3 }
+				ruler_term = { character = bur_hugues_iv_burgundian start_date = 1218.7.6 end_date = 1272.10.27 regnal_number = 4 }
+				ruler_term = { character = bur_robert_ii_burgundian start_date = 1272.10.27 end_date = 1306.3.21 regnal_number = 2 }
+				ruler_term = { character = bur_hugues_v_burgundian start_date = 1306.3.21 end_date = 1315.5.9 regnal_number = 5 }
+				ruler_term = { character = bur_eudes_iv_burgundy start_date = 1315.5.9 regnal_number = 4 }
+
+				regnal_numbers = {
+					name_robert = 2
+					name_henry = 1
+					name_hugh = 5
+					name_otto = 4
+				}
+
+				centralization_vs_decentralization = 30
+				aristocracy_vs_plutocracy = -35
+				serfdom_vs_free_subjects = 35
+				traditionalist_vs_innovative = 25
+				spiritualist_vs_humanist = -50
+				mercantilism_vs_free_trade = 45
+				offensive_vs_defensive = -90
+				land_vs_naval = -60
+				quality_vs_quantity = -30
+				belligerent_vs_conciliatory = -20
+				capital_economy_vs_traditional_economy = 70
+				individualism_vs_communalism = -20
+				outward_vs_inward = -20
+
+				reforms = {
+					french_appanage_reform
+				}
+			}
+
+			tolerated_cultures = {
+				arpitan
+			}
+
+			capital = dijon
+			country_rank = rank_duchy
 		}
 
 	}
