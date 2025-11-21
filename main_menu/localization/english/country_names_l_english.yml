@@ -1,4 +1,9 @@
 ﻿l_english:
+ F01_f: "Flemish Empire"
+ F01: "Great Flanders"
+ F01_ADJ: "Flemish"
+ F01_THE: "$common_string_prefix_article$"
+ F01_abbreviation: "F."
  DUMMY: "(placeholder)"
  DUMMY_ADJ: "(placeholder)"
  PIR: "Pirates"

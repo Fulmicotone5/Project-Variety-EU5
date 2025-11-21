@@ -1,0 +1,35 @@
+F01_f = {
+	level = 4
+	required_locations_fraction = 0.1
+	rule = historical
+
+	potential = {
+		has_or_had_tag = FLA
+	}
+
+	allow = {
+	}
+	
+	name = F01
+	flag = F01
+	adjective = F01_ADJ
+	tag = F01
+	color = map_PVflemish
+
+	areas = {
+		brabant_area
+		flanders_area
+		friesland_area
+		holland_area
+		wallonia_area
+		anjou_area
+		ile_de_france_area
+		champagne_area
+		normandy_area
+		lorraine_area
+		picardy_area
+	}
+	form_effect = {
+		set_country_rank = country_rank:rank_empire
+	}
+}
