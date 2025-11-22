@@ -1,4 +1,8 @@
 diplomacy_manager = { #Changes for MAM tag (PV)
+
+    scripted_oneway = { first = KOJ second = TEU type = military_sponsorship }
+    scripted_oneway = { first = KOJ second = KNI type = military_sponsorship }
+
     #-------England-------
     dependency = { first = ENG second = AQN subject_type = fiefdom }
 	
@@ -160,7 +164,6 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = FRA second = EVR subject_type = appanage }
     dependency = { first = FRA second = ETA subject_type = appanage }
     dependency = { first = FRA second = NRM subject_type = appanage }
-    dependency = { first = FRA second = ANJ subject_type = appanage }
 
     #Vassal, Fief Mouvant of France
     dependency = { first = TOU second = AMG subject_type = vassal }
@@ -299,7 +302,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = POL second = CZK subject_type = vassal }
 
     #Balkans:
-    scripted_mutual = { first = HUN second = POL type = alliance }
+    scripted_mutual = { first = TRA second = POL type = alliance }
     scripted_oneway = { first = HUN second = HAB type = embargo_nation }
     scripted_oneway = { first = POL second = HAB type = embargo_nation }
     scripted_oneway = { first = BOH second = HAB type = embargo_nation }
@@ -308,7 +311,6 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = ALB second = MTR subject_type = vassal }
     dependency = { first = ALB second = MZK subject_type = vassal }
     dependency = { first = ALB second = THP subject_type = vassal }
-    dependency = { first = HUN second = BOS subject_type = vassal }
 
     #Anatolia
     dependency = { first = AYD second = INA subject_type = vassal }

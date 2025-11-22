@@ -29,4 +29,11 @@ war_manager = {
 		start_date = 1336.2.20
 		months = 50
 	}
+	truce = {
+		attacker = CAS
+		defender = GLC
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1332.3.11
+		months = 100
+	}
 }

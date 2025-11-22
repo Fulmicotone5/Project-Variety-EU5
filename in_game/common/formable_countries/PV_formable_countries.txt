@@ -30,7 +30,10 @@ F01_f = {
 		picardy_area
 	}
 	form_effect = {
-		set_country_rank = country_rank:rank_empire
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
 	}
 }
 F02_f = {
@@ -65,7 +68,10 @@ F02_f = {
 		gresivaudan_province
 	}
 	form_effect = {
-		set_country_rank = country_rank:rank_kingdom
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
 	}
 }
 F03_f = {
@@ -106,6 +112,168 @@ F03_f = {
 		gresivaudan_province
 	}
 	form_effect = {
-		set_country_rank = country_rank:rank_kingdom
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F04_f = {
+	level = 3
+	required_locations_fraction = 1
+	rule = historical
+
+	potential = {
+		has_or_had_tag = POR
+	}
+
+	allow = {
+	}
+	
+	name = F04
+	flag = F04
+	adjective = F04_ADJ
+	tag = F04
+	color = map_PVflusi
+
+	areas = {
+		south_portugal_area
+		north_portugal_area
+		galicia_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}
+F05_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+		any_owned_location = { 
+			region = region:north_german_region 
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F05
+	flag = F05
+	adjective = F05_ADJ
+	tag = F05
+	color = map_PVngf
+	regions = {
+		north_german_region
+	}
+	areas = {
+		prussia_area
+		silesia_area
+	}
+	provinces = {
+		arnskrone_province
+		gniezno_province
+		koscian_province
+		naklo_province
+		poznan_province
+		pyzdry_province
+		znin_province
+		slesvig_province
+	}
+	locations = {
+		bydgoszcz inowroclaw
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F06_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+		any_owned_location = { 
+			region = region:south_german_region 
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F06
+	flag = F06
+	adjective = F06_ADJ
+	tag = F06
+	color = map_PVsgf
+	regions = {
+		south_german_region
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F07_f = {
+	level = 3
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:german_group }
+		any_owned_location = { 
+			or = {
+				region = region:south_german_region 
+				region = region:north_german_region 
+			}
+		}
+		government_type = government_type:theocracy
+	}
+
+	allow = {
+	}
+	
+	name = F07
+	flag = F07
+	adjective = F07_ADJ
+	tag = F07
+	color = map_PVakef
+	areas = {
+		holstein_area
+		westphalia_area
+		lower_saxony_area
+		upper_saxony_area
+		brandenburg_area
+		mecklenburg_area
+		hesse_area
+		franconia_area
+		bavaria_area
+		upper_rhine_area
+		swabia_area
+		upper_austria_area
+		austria_area
+		salzburg_area
+		styria_area
+
+	}
+
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
 	}
 }

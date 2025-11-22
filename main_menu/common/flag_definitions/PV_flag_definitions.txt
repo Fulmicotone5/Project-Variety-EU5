@@ -30,3 +30,92 @@ F03 = { # Aragon occitania
 	}	
 
 }
+F04 = { # Grande Portugal
+	flag_definition = {
+		coa = F04
+		subject_canton = F04
+		allow_overlord_canton = yes			
+		priority = 1
+	}	
+	flag_definition = {
+		coa = F04_republic
+		subject_canton = F04_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}
+}
+
+F05 = { # North Germany
+	flag_definition = {
+		coa = F05
+		subject_canton = F05	
+		priority = 5		
+	}	
+	flag_definition = {
+		coa = F05_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = F05_prussia
+		subject_canton = F05_prussia	
+		priority = 15
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					has_or_had_tag = PRU
+					has_or_had_tag = BRA
+				}
+			}
+		}
+	}
+}
+F06 = { # South Germany
+	flag_definition = {
+		coa = F06
+		subject_canton = F06
+		priority = 5		
+	}	
+	flag_definition = {
+		coa = F06_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = F06_bava
+		subject_canton = F06_bava
+		priority = 15
+		
+		trigger = {
+			scope:actor = {
+				OR = {
+					has_or_had_tag = UBV
+					has_or_had_tag = LBV
+					has_or_had_tag = BAV
+				}
+			}
+		}
+	}
+}
+F07 = { # Anointed Kingdom of east Frankia
+	flag_definition = {
+		coa = F07
+		subject_canton = F07
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F07_republic
+		subject_canton = F07_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}
+}

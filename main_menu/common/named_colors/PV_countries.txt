@@ -7,3 +7,15 @@ colors = {
 colors = {
 	map_PVaraocc = rgb { 66 135 245 }
 }
+colors = {
+	map_PVflusi = rgb { 28 82 148 }
+}
+colors = {
+	map_PVngf = rgb { 41 37 37 }
+}
+colors = {
+	map_PVsgf = rgb { 176 18 7 }
+}
+colors = {
+	map_PVakef = rgb { 225 230 161 }
+}

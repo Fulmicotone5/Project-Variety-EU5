@@ -1,8 +1,6 @@
 locations={
 	#PV
-	hospital = { tag = BYZ level = 1 location = constantinople }
-	order_headquarters = { tag = KOJ level = 1 location = jerusalem }
-	order_stronghold = { tag = KOJ level = 1 location = majdal } 
+	hospital = { tag = BYZ level = 1 location = constantinople } #PV
 	
 	#sweden
 	stockholm = { rank = town 		town_setup = important_scandinavian_town }
@@ -1007,7 +1005,7 @@ locations={
 	basra = { rank = city 		town_setup = levant_city }
 	damascus = { rank = city 	town_setup = levant_city }
 	jerusalem = { rank = city 	town_setup = levant_city }
-	majdal = { rank = city 	town_setup = italian_town }
+	majdal = { rank = city 	town_setup = levant_city }
 	mosul = { rank = city 		town_setup = levant_city }
 	nusaybin = { rank = city 	town_setup = levant_city }
 	mecca = { rank = town 	town_setup = levant_city }
@@ -1645,10 +1643,13 @@ building_manager = {
 	order_stronghold	= { tag = POR level = 1	location = avis } # Order Calatrava, Avis
 	#order_stronghold	= { tag = OPX level = 1	location = tomar } # Order of Christ
 	order_stronghold	= { tag = ARA level = 1	location = ayora } # Order of Montesa
+	order_stronghold = { tag = KOJ level = 1 location = majdal } #PV
 
 	#Order of Saint John Commanderies
 	#Aragonese Tongue (Incomplete on purpose until deciding what to do with the Iberian Orders)
 		#Grand Priory of Amposta
+	order_commandery = { tag = KNI level = 1 location = jerusalem } #PV
+	order_commandery = { tag = TEU level = 1 location = jerusalem } #PV
 	order_commandery = { tag = KNI level = 1 location = tortosa } #Amposta
 		#Grand Priory of Navarre
 	order_commandery = { tag = KNI level = 1 location = pamplona } #Puente la Reina + Biurrun + Olatz-Subiza + Zizur
@@ -2266,6 +2267,8 @@ building_manager = {
 	castle = { tag = SER level = 1 location =  kozelj }
 	castle = { tag = SER level = 1 location =  kucevo }
 	castle = { tag = SER level = 1 location =  trgoviste_SER }
+	sergeantry	= { tag = KOJ level = 1 location = jerusalem } #PV
+	armory	= { tag = KOJ level = 1 location = jerusalem } #PV
 
 
 	order_headquarters = { tag = KNI level = 1 location =  rodos }

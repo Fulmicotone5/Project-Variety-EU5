@@ -1,0 +1,11 @@
+diplomacy_manager = {
+	opinion = { first = KOJ second = MAM type = opinion_angry }
+	opinion = { first = MAM second = KOJ type = opinion_angry }
+	opinion = { first = TOU second = FRA type = opinion_angry }
+	opinion = { first = FRA second = TOU type = opinion_angry }
+	opinion = { first = MIE second = FRA type = opinion_angry }
+	opinion = { first = BRI second = FRA type = opinion_angry }
+	opinion = { first = ARS second = FRA type = opinion_angry }
+	opinion = { first = GCL second = CAS type = opinion_angry }
+	opinion = { first = TRA second = HUN type = opinion_angry }
+}

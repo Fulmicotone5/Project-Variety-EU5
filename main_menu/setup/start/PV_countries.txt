@@ -148,16 +148,12 @@ countries = {
 				nubia_proper_area
 			}
 			government = {
-				type = theocracy
+				type = monarchy
 				ruler = random
-				laws = {
-					theocratic_leadership = monastic_order
-				}
+
 
 				reforms = {
 					crusader_state
-					military_order_reform
-					enforce_religious_adherence
 				}
 
 				privilege = {
@@ -175,15 +171,17 @@ countries = {
 				quality_vs_quantity = 80
 				land_vs_naval = -40
 			}
+			accepted_cultures = {
+				levantine_culture
+			}
 
 			tolerated_cultures = {
 				venetian
 				catalan
 				neapolitan
-				castilian
+				french
 				hungarian
 				czech
-				levantine_culture
 				syriac_culture
 			}
 
@@ -224,40 +222,36 @@ countries = {
 
 			starting_technology_level = 3
 			include = "expl_western_europe"
-			include = "catholic_monarchy"
-
+			include = "catholic_monarchy_not_present"
 			government = {
-				heir_selection = salic_law
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
 
 				regnal_numbers = {
-					#Clovis = 4
-					#Clodomir = 1
-					#Thibert = 2
-					name_alphonse = 1
-					#Childebert = 4
-					#Clotaire = 5
-					#Caribert = 1
-					#Sigebert = 1
-					#Childéric = 3
-					#Gontran = 1
-					#Dagobert = 3
-					name_artaldus = 1
-					name_berengar = 2
-					name_christopher = 1
-					name_philip = 4
-					name_roderick = 1
-					name_thaddeus = 1
-					name_william = 1
-					name_vincent = 10
-					name_felix = 6
-					name_henry = 2
-					name_julian = 2
+					#Corson = 1
+					name_william = 4
+					#Bégon = 1
+					name_berengar = 1
+					name_bernard = 3
+					#Acfred = 1
+					#Frédolon = 1
+					name_raymond = 7
+					name_otto = 1
+					name_hugh = 1
+					name_pontius = 1
+					name_bertrand = 1
+					name_philippa = 1
+					name_alphonse.name_jordan = 1
+					name_simeon = 1
+					name_joanna = 1
 				}
+			}
 
 				centralization_vs_decentralization = 10
 				aristocracy_vs_plutocracy = -75
 				serfdom_vs_free_subjects = -80
-				traditionalist_vs_innovative = -30
+				traditionalist_vs_innovative = 20
 				spiritualist_vs_humanist = -50
 				mercantilism_vs_free_trade = -25
 				offensive_vs_defensive = -20
@@ -286,7 +280,6 @@ countries = {
 					primacy_of_nobility
 					noble_armies
 				}
-			}
 
 			tolerated_cultures = {
 				gascon
@@ -558,6 +551,150 @@ countries = {
 			capital = dijon
 			country_rank = rank_duchy
 		}
+		
+		NOL = { # Northumberland
+			own_control_core = {
+				newcastle hexham alnwick morpeth billingham
+				carlisle cockermouth penrith egremont
+				kendal appleby
+				durham darlington stockton
+				york scarborough bedale richmond whitby
+				hull bridlington selby norton
+				leeds pontefract skipton wakefield doncaster ripon berwick
+			}
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			capital = newcastle
+			include = "expl_western_europe"
+			include = "catholic_monarchy_english_lordship_not_present"
+			country_rank = rank_duchy
+		}
+		TRA = { #Transylvania
+			own_control_core = {
+				dabaca baita bistrita dej sic #doboka_province
+				alba_iulia aiud cetatea_balta deva felvint hateg hunedoara #feher_province
+				turda baia_de_aries cluj huedin reghin #torda_province
+				sibiu brasov cincu fagaras medias sebes sighisoara #kiralyfold_province
+				targu_mures chezdi_osorheiu covasna cristuru_secuiesc gheorgheni gurghiu odorhei sfantu_gheorghe miercurea_cluc #szekelyfold_province
+			}
+			starting_technology_level = 3
+			include = "expl_eastern_europe"
+			include = "eastern_european_catholic_monarchy_no_auxilium_no_coast_not_present"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = random
+			}
+			country_rank = rank_duchy
+			capital = huedin
+		}
+	
+		GLC = {
+			own_control_core = {
+				coruna betanzos ferrol mondonedo vivero #A Coruña
+				lugo monforte_de_lemos navia_de_suarna sarria villalba #Lugo
+				ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo #Ourense
+				santiago_compostela finisterre lalin mellid noya pontevedra tuy #Santiago de Compostela
+			}
+
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "catholic_monarchy_not_present"
+
+			country_rank = rank_kingdom
+			capital = santiago_compostela
+			government = {
+
+				ruler_term = { character = lon_ordono_ii_leon start_date = 910.1.1 end_date = 914.1.1 regnal_number = 2 }
+				ruler_term = { character = glc_sancho_ordonez start_date = 926.2.12 end_date = 929.6.10 regnal_number = 0 }
+
+				ruler_term = { character = glc_garcia_ii_jimena start_date = 1065.12.27 end_date = 1071.1.1 regnal_number = 2 }
+				ruler_term = { character = cas_sancho_ii_jimena start_date = 1071.1.1 end_date = 1072.10.7 regnal_number = 2 }
+				ruler_term = { character = glc_garcia_ii_jimena start_date = 1072.10.7 end_date = 1073.2.13 regnal_number = 2 }
+				ruler_term = { character = lon_alfonso_vi_jimena start_date = 1073.2.13 end_date = 1109.7.1 regnal_number = 6 }
+
+				ruler_term = { character = cas_alfonso_vii_burgundy start_date = 1111.9.17 end_date = 1111.11.1 regnal_number = 7 }
+			}
+
+			country_rank = rank_kingdom
+			capital = santiago_compostela
+		}
+
+		GRA = {
+			own_control_core = {
+				almeria almanzora baza gergal mojacar velez_rubio
+				granada adra almunecar guadix huescar illora loja pinar orgiva
+				malaga antequera velez_malaga cadiz algeciras arcos_de_la_frontera gibraltar jerez_de_la_frontera medina_sidonia sanlucar tarifa
+				cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche
+				huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman
+				jaen andujar baeza cazorla jodar martos ubeda sevilla carmona constantina coria_del_rio ecija moron olvera osuna sanlucar_la_mayor
+			} 
+			own_control_integrated = {
+				murcia cartagena lorca mula
+				hellin caravaca cieza segura_de_la_sierra segura_range
+			}
+
+			our_cores_conquered_by_others = {
+				olvera
+			}
+
+			starting_technology_level = 3
+			include = "expl_muslim_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+
+			government = {
+				ruler = gra_yusuf_i_nasrid
+
+				ruler_term = { character = gra_muhammad_i_nasrid start_date = 1238.5.1 end_date = 1273.1.20 regnal_number = 1 }
+				ruler_term = { character = gra_muhammad_ii_nasrid start_date = 1273.1.20 end_date = 1302.1.20 regnal_number = 2 }
+				ruler_term = {
+					character = gra_muhammad_ii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 2
+					character = gra_muhammad_iii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 3
+				}
+				ruler_term = { character = gra_muhammad_iii_nasrid start_date = 1302.4.7 end_date = 1309.3.14 regnal_number = 3 }
+				ruler_term = { character = gra_nasr_i_nasrid start_date = 1309.3.14 end_date = 1314.2.8 regnal_number = 1 }
+				ruler_term = { character = gra_ismail_i_nasrid start_date = 1314.2.8 end_date = 1325.7.8 regnal_number = 1 }
+				ruler_term = { character = gra_muhammad_iv_nasrid start_date = 1325.7.8 end_date = 1333.8.25 regnal_number = 4 }
+				ruler_term = { character = gra_yusuf_i_nasrid start_date = 1333.8.25 regnal_number = 1 }
+
+				regnal_numbers = {
+					name_muhammad = 4
+					name_nasr = 1
+					name_ishmael = 1
+					name_joseph = 1
+				}
+
+				reforms = {
+					the_jewel_of_alandalus_reform
+				}
+				laws = {
+					sharia_law = maliki_policy
+				}
+			}
+			court_language = maghrebi_dialect
+			religious_school = maliki_school
+			government = { mysticism_vs_jurisprudence = -5 }
+
+			country_rank = rank_duchy
+
+			tolerated_cultures = {
+				sephardi
+			}
+
+			capital = granada
+		}
+
 
 	}
 }
