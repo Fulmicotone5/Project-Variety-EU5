@@ -1,3 +1,9 @@
 colors = {
 	map_PVflemish = rgb { 64 131 189 }
 }
+colors = {
+	map_PVocc = rgb { 193 0 10 }
+}
+colors = {
+	map_PVaraocc = rgb { 66 135 245 }
+}

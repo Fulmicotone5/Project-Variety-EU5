@@ -40,3 +40,50 @@ F01 = {	# Empire Flanders
 		instance = { position = { 0.775 0.3 }scale = { 0.6 0.6 } } 		
 	}
 }
+
+F02 = { # Occitania
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "yellow"
+	
+	colored_emblem = { 
+		texture = "ce_cross_bosonid_provence_wide.dds"
+		color1 = "yellow_light"
+		instance = { scale = { 0.85 0.85 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "yellow_light"
+		instance = { scale = { 0.25 0.25 } position = { 0.8 0.2 } }
+	}	
+}
+
+F03 = {
+	pattern = "pattern_vertical_split_01.dds"
+	color1 = "yellow_light"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_bars_04.dds"
+		color1 = color2
+		color2 = color2
+		instance = { position = { 0 0.5 } scale = { 1 1 } }
+	}
+
+	textured_emblem = {
+		texture = "te_coa_aragon.dds"
+		instance = { position = { 0.25 0.5 } scale = { 0.53 0.56 } }
+	}
+
+	colored_emblem = {
+		texture = "ce_star_07.dds"
+		color1 = "yellow_light"
+		color2 = "yellow_light"
+		instance = { scale = { 0.2 0.2 } position = { 0.9 0.25 } }
+	}
+
+	colored_emblem = { 
+		texture = "ce_cross_bosonid_provence_wide.dds"
+		color1 = "yellow_light"
+		instance = { scale = { 0.55 0.55 } position = { 0.75 0.5 } }
+	}
+}

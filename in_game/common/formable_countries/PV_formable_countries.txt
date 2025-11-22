@@ -1,6 +1,6 @@
 F01_f = {
 	level = 4
-	required_locations_fraction = 0.1
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -31,5 +31,81 @@ F01_f = {
 	}
 	form_effect = {
 		set_country_rank = country_rank:rank_empire
+	}
+}
+F02_f = {
+	level = 2
+	required_locations_fraction = 0.8
+	rule = historical
+
+	potential = {
+		has_or_had_tag = TOU
+	}
+
+	allow = {
+	}
+	
+	name = F02
+	flag = F02
+	adjective = F02_ADJ
+	tag = F02
+	color = map_PVocc
+
+	areas = {
+		guyenne_area
+		gascony_area
+		limousin_province
+		auvergne_area
+		languedoc_area
+		provence_area
+	}
+	provinces = {
+		valentinois_province
+		viennois_province
+		gresivaudan_province
+	}
+	form_effect = {
+		set_country_rank = country_rank:rank_kingdom
+	}
+}
+F03_f = {
+	level = 3
+	required_locations_fraction = 0.8
+	rule = historical
+
+	potential = {
+		OR = {
+			has_or_had_tag = TOU
+			has_or_had_tag = ARA
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F03
+	flag = F03
+	adjective = F03_ADJ
+	tag = F03
+	color = map_PVaraocc
+
+	areas = {
+		guyenne_area
+		gascony_area
+		limousin_province
+		auvergne_area
+		languedoc_area
+		provence_area
+		catalonia_area
+		aragon_area
+		valencia_area
+	}
+	provinces = {
+		valentinois_province
+		viennois_province
+		gresivaudan_province
+	}
+	form_effect = {
+		set_country_rank = country_rank:rank_kingdom
 	}
 }
