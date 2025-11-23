@@ -7,3 +7,238 @@ KOJ = {
 
 	is_historic = yes
 }
+#Toulouse
+TOU = {
+	color = map_TOU
+	color2 = rgb { 127 170 146 }
+
+	culture_definition = languedocien
+	religion_definition = catharism
+}
+PER = {
+	#color = map_FRA
+	color = rgb { 230 66 66 }
+	culture_definition = limousin
+	religion_definition = catharism
+}
+RCC = {
+	color = rgb { 87 13 135 }
+
+	culture_definition = limousin
+	religion_definition = catharism
+}
+MRC = {
+	color = rgb { 12 241 122 }
+
+	culture_definition = berrichon
+	religion_definition = catharism
+}
+FRZ = {
+	#color = map_FRA
+	color = rgb { 211 150 35 }
+
+	culture_definition = arpitan
+	religion_definition = catharism
+}
+MDM = {
+	color = rgb { 188 46 46 }
+
+	culture_definition = gascon
+	religion_definition = catharism
+}
+#Béarn
+BRR = {
+	color = rgb { 251 212 72 }
+
+	culture_definition = gascon
+	religion_definition = catharism
+}
+AMG = {
+	#color = map_FRA
+	color = rgb { 187 206 247 }
+
+	culture_definition = gascon
+	religion_definition = catharism
+}
+AST = {
+	#color = map_FRA
+	color = rgb { 253 243 111 }
+	culture_definition = gascon
+	religion_definition = catharism
+}
+COM = {
+	#color = map_FRA
+	color = rgb { 231 66 66 }
+	culture_definition = gascon
+	religion_definition = catharism
+}
+IJO = {
+	#color = map_FRA
+	color = rgb { 235 210 49 }
+	culture_definition = gascon
+	religion_definition = catharism
+}
+GUY = {
+	#color = map_FRA
+	color = rgb { 160 237 225 }
+
+	culture_definition = gascon
+	religion_definition = catharism
+}
+FOI = {
+	#color = map_FRA
+	color = rgb { 105 106 182 }
+
+	culture_definition = languedocien
+	religion_definition = catharism
+}
+COM = {
+	#color = map_FRA
+	color = rgb { 231 66 66 }
+	culture_definition = gascon
+	religion_definition = catharism
+}
+NRB = {
+	color = map_NRB
+	color2 = rgb { 255 1 5 }
+
+	culture_definition = languedocien
+	religion_definition = catharism
+}
+VDM = {
+	#color = map_FRA
+	color = rgb { 216 38 38 }
+	culture_definition = french
+	religion_definition = catharism
+}
+AMG = {
+	#color = map_FRA
+	color = rgb { 187 206 247 }
+
+	culture_definition = gascon
+	religion_definition = catharism
+}
+MLL = {
+	color = map_MLL
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = catalan
+	religion_definition = catharism
+
+	
+}
+CLT = {
+	color = rgb { 56 215 2 }
+
+	culture_definition = auvergnat
+	religion_definition = catharism
+}
+VNT = {
+	color = rgb { 211 21 22 }
+
+	culture_definition = limousin
+	religion_definition = catharism
+}
+AUV = {
+	color = map_AUV
+	color2 = rgb { 218 155 75 }
+
+	culture_definition = auvergnat
+	religion_definition = catharism
+}
+VLN = {
+	#color = map_FRA
+	color = rgb { 107 142 246 }
+	culture_definition = vivaro_alpine
+	religion_definition = catharism
+}
+
+
+ACH = {
+	color = map_achaian
+	color2 = rgb { 157 87 123 } #new color
+
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+ATH = {
+	color = map_athenian
+	color2 = rgb { 41 188 84 } #new color
+
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+CEP = {
+	color = map_cephalonian
+	color2 = rgb { 41 188 84 } #new color
+
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+
+
+LAT = {
+	color = map_LAT
+	color2 = rgb { 200 15 5 } #new color
+
+	culture_definition = greek_culture
+	religion_definition = catholic
+
+	is_historic = yes
+}
+
+
+
+NAX = {
+	color = map_naxos
+	color2 = rgb { 42 55 197 } 
+
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+
+NEO = {
+	color = rgb { 63 72 204 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+BOD = {
+	color = rgb { 72 204 63 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+ARG = {
+	color = hsv360 { 239 70 61 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+CRT = {
+	color = rgb { 138  110  130 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+NEG = {
+	color = rgb { 95 105 100 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}
+
+SAO = {
+	color = rgb { 255 201 14 }
+	
+	culture_definition = greek_culture
+	religion_definition = catholic
+}

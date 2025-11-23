@@ -1,0 +1,20 @@
+cathar_reforms = {
+	estate = clergy_estate
+	
+	
+	potential = {
+		has_or_had_tag = TOU 
+		religion = religion:catharism
+	}
+	
+	can_revoke = {
+		government_power > 95
+	}
+	
+	country_modifier = {
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		tolerance_heretic = 0.5
+		tolerance_heathen = 0.5
+		global_clergy_estate_power = 1
+	}
+}

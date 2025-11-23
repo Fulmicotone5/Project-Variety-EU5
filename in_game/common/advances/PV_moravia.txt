@@ -1,0 +1,9 @@
+slovak_integration = {
+	age = age_1_traditions
+	icon = free_trade
+	potential = {
+		has_or_had_tag = MVA
+	}
+	cultures_capacity = 1
+	requires = feudalism_advance
+}

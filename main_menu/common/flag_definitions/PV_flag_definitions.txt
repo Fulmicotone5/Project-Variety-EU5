@@ -119,3 +119,43 @@ F07 = { # Anointed Kingdom of east Frankia
 		}
 	}
 }
+F08 = {
+	flag_definition = {
+		coa = F08
+		subject_canton = F08
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F08_republic
+		subject_canton = F08_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}
+}
+F09 = {
+	flag_definition = {
+		coa = F09
+		subject_canton = F09
+		priority = 5		
+	}	
+	flag_definition = {
+		coa = F09_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = F09_milan
+		subject_canton = F09_milan
+		priority = 15
+		
+		trigger = {
+			scope:actor = {
+				has_or_had_tag = MLO
+			}
+		}
+	}
+}

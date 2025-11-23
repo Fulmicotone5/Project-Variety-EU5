@@ -1,0 +1,97 @@
+
+lords_of_the_rhone_corridor = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = PRO
+		} 
+	}	
+	requires = written_alphabet
+
+	icon = lux_fortress_europe
+
+	global_fort_build_buildings_cost = -0.05
+	global_defensive = 0.1
+}
+
+le_livre_des_tournois = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = PRO
+		} 
+	}
+	requires = pike_square
+
+	icon = elan
+
+	monthly_army_tradition = 0.1
+	land_morale_modifier = 0.1
+}
+
+statutes_of_aix = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = PRO
+		} 
+	}
+	requires = trade_range_advance_age_2
+
+	icon = legalism_advance
+
+	tax_income_efficiency = large_tax_income_efficiency_bonus
+}
+
+rade_of_toulon = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = PRO
+		} 
+	}
+
+	icon = rudimentary_coastal_ship_repair
+
+	requires = recruitment_improvements_renaissance
+
+	global_port_build_buildings_cost = -0.1
+	global_naval_supplies_output_modifier = 0.1
+}
+
+piqure_de_marseilles = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = PRO
+		} 
+	}
+
+	icon = ira_improved_silk_road
+
+	requires = sanitation_advance
+
+	global_cloth_output_modifier = 0.1
+	global_fine_cloth_output_modifier = 0.1
+}
+
+sav_alpine_pass_control = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = F02
+			has_or_had_tag = SAV
+		} 
+	}
+	icon = road_building
+	global_road_building_time = -0.2
+	global_trade_protection_factor = 0.1
+
+	requires = paved_road_advance
+}
+

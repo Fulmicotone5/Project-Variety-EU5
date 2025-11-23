@@ -1,0 +1,468 @@
+milanese_heritage = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	army_infantry_power = 0.1
+	requires = milanese_tradition
+}
+
+renaissance_prince = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	skill_of_new_artists = 0.1
+}
+patron_of_music = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	cultural_tradition_modifier = 0.1
+}
+lowered_power_of_barons = {
+	icon = hsa_exchange_of_ideas
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	global_nobles_estate_power = -0.2
+}
+age_of_condottieri = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	mercenary_maintenance_cost = -0.1
+}
+encouragement_of_philosophers = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	global_max_literacy = 5
+}
+merchant_princes = {
+	age = age_4_reformation
+	icon = a_central_power
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	global_merchant_power = 0.1
+}
+rulership_of_enlightened_principals = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = MLO
+			has_or_had_tag = F09
+		} 
+	}
+	
+	stability_cost = -0.1
+}
+perpetual_general_captain_of_the_people = {
+	age = age_1_traditions
+	
+	potential = { or = {
+			has_or_had_tag = VER
+			has_or_had_tag = F09
+		}  }
+
+	icon = republican_foundation_law_advance
+
+	requires = legalism_advance
+
+	monthly_legitimacy = 0.1
+	monthly_republican_tradition = 0.1
+}
+
+court_of_great_refugees = {
+	age = age_2_renaissance
+	
+	potential = { or = {
+			has_or_had_tag = VER
+			has_or_had_tag = F09
+		}  }
+
+	icon = artists_advance
+
+	requires = renaissance_court
+
+	skill_of_new_artists = 0.1
+
+}
+
+consolidate_italian_holdings = {
+	age = age_2_renaissance
+	
+	potential = { or = {
+			has_or_had_tag = VER
+			has_or_had_tag = F09
+		}  }
+
+	icon = renaissance_subject_opinions_advance
+
+	requires = spy_construction_renaissance
+
+	mercenary_maintenance_cost = -0.1
+	diplomatic_capacity_modifier = 0.1
+}
+
+the_adige = {
+	age = age_2_renaissance
+	
+	potential = { or = {
+			has_or_had_tag = VER
+			has_or_had_tag = F09
+		}  }
+
+	icon = river_trade
+
+	requires = supply_depot_advance_age_2_renaissance
+	
+	global_monthly_prosperity = 0.001
+}
+ven_venetian_thalassocracy = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	global_merchant_power = 0.1
+	requires = trade_advance_age_of_trad
+}
+
+venetian_arsenal_advance = {
+	age = age_1_traditions
+	potential = { 
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		}  
+	}
+	unlock_building = venetian_arsenal
+	requires = ven_venetian_thalassocracy
+}
+ven_gothic_architecture = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	requires = ven_venetian_palaces
+	global_urban_build_buildings_cost = -0.1
+}
+
+ven_ship_mounted_gunpowder_weapons = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	navy_galley_power = 0.15
+	requires = regiment_reinforcement_speed_renaissance
+}
+
+##############################
+
+ven_printing_industry = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	diplomatic_reputation = diplomatic_reputation_mild_bonus
+	requires = diplomatic_training
+}
+
+ven_state_inquisition = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	counter_espionage = 0.33
+	requires = crown_power_advance_discovery
+}
+
+ven_magistrato_alla_sanita = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	global_disease_resistance = 0.1
+	requires = print_culture
+}
+
+ven_venetian_painting = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	cultural_tradition_modifier = 0.2
+	requires = improved_book_binding
+}
+
+##############################
+
+ven_naval_conscription = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	navy_maintenance_cost = -0.2
+	requires = assault_ability_reformation
+}
+
+ven_venetian_school_of_music = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	cultural_influence_modifier = 0.25
+	requires = imperial_ambitions
+}
+
+ven_mixed_naval_tactics = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	requires = correct_box_advance_reformation
+	navy_galley_power = 0.1
+	navy_heavy_ship_power = 0.1
+}
+
+##############################
+
+ven_provveditori_ai_beni_inculti = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = VEN
+			has_or_had_tag = F09
+		} 
+	}
+	global_monthly_food_modifier = 0.1
+	requires = cork_stoppers
+}
+
+florentine_citizen_militia = {
+	age = age_2_renaissance
+	icon = glorious_arms
+	potential = { 
+		or = {
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		} 
+	}
+
+	monthly_army_tradition = 0.03
+	
+	unlock_levy = levy_a_florentine_citizen_militia
+	
+	requires = unlock_peasant_levy_advance
+}
+
+porto_franco = {
+	age = age_4_reformation 
+	icon = maritime_advance_age_4
+	potential = {
+		OR = {
+			has_or_had_tag = TUS
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		}
+	}
+
+	trade_efficiency = small_trade_efficiency_bonus
+	
+	requires = pop_promotion_speed_age_4
+}
+
+accademia_cimento = {
+	age = age_5_absolutism
+	potential = {
+		OR = {
+			has_or_had_tag = TUS
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		}
+	}
+	
+	global_burghers_max_literacy = 10	
+	
+	requires = scientific_revolution_advance
+}
+
+medici_porcelain = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		} 
+	}
+
+	global_porcelain_output_modifier = 0.05 
+	monthly_prestige = 0.1
+	
+	requires = porcelain_manufactor_advance
+}
+
+tuscan_municipal_reforms = {
+	age = age_5_absolutism
+	icon = city_building_advance 
+	potential = {
+		OR = {
+			has_or_had_tag = TUS
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		}
+	}
+	
+	government_reform_slots = 1	
+	
+	requires = scientific_revolution_advance
+}
+
+tuscan_physiocratic_reforms = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = TUS
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		}
+	}
+	
+	global_max_rgo_size_modifier = 0.10
+	global_life_expectancy = 2
+	
+	requires = industrialization_advance
+}
+
+tuscan_new_trade_system = {
+	age = age_6_revolutions
+	icon = bank_of_the_medici
+	potential = {
+		OR = {
+			has_or_had_tag = TUS
+			has_or_had_tag = FLO
+			has_or_had_tag = F09
+		}
+	}
+	
+	global_crown_estate_power = 0.1
+	global_trade_center_power = 0.05
+	
+	requires = industrialization_advance
+}
+
+genoese_banking_traditions = {
+	or = {
+			has_or_had_tag = GEN
+			has_or_had_tag = F09
+		} 
+
+	age = age_1_traditions
+	
+	bank_interest = -0.01
+		
+	requires = medieval_administration
+	
+}
+
+genoese_maritime_diplomacy = {
+	or = {
+			has_or_had_tag = GEN
+			has_or_had_tag = F09
+		} 
+
+	age = age_1_traditions
+	
+	max_diplomats = 2
+}
+
+slave_manned_galleys = {
+	or = {
+			has_or_had_tag = GEN
+			has_or_had_tag = F09
+		} 
+
+	age = age_1_traditions
+	
+	unlock_building = galley_barracks
+}
+
+genoese_flexibility = {
+	or = {
+			has_or_had_tag = GEN
+			has_or_had_tag = F09
+		} 
+
+	age = age_3_discovery
+	navy_maintenance_cost = -0.05
+	can_convert_galleys_to_light = yes
+}
+
+genoese_school = {
+	potential = {
+		or = {
+			has_or_had_tag = GEN
+			has_or_had_tag = F09
+		} 
+	}
+
+	age = age_5_absolutism
+	cultural_tradition_modifier = 0.1
+	cultural_influence_modifier = 0.1
+}

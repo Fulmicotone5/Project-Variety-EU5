@@ -1,0 +1,17 @@
+villes_franches = {
+	estate = burghers_estate
+
+	potential = {
+		OR = {
+			tag = FRA
+			tag = F01
+		}
+	}
+
+	country_modifier = {
+		monthly_towards_centralization = societal_value_monthly_move
+		global_migration_speed_modifier = 0.05
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_burghers_estate_power = 0.33
+	}
+}

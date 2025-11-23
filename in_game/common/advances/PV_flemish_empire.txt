@@ -1,0 +1,158 @@
+french_heritage = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	nobles_estate_levy_size = 1.0
+	
+	requires = french_tradition
+}
+elan = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	land_morale_modifier = 0.2
+}
+estates_general = {
+	age = age_3_discovery
+	country_cabinet_efficiency = 0.1
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+}
+
+fra_gendarmes = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	army_cavalry_power = 0.1
+	army_maintenance_cost = -0.05
+}
+
+fra_integration_of_new_territories = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	global_integration_speed_modifier = 0.2
+}
+
+fra_reliance_on_privateers = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	hire_privateer_cost_modifier = -0.1
+	privateer_maintenance_cost_modifier = -0.1
+}
+
+fra_reformation_of_taxation = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	tax_income_efficiency = medium_tax_income_efficiency_bonus
+}
+
+fra_school_of_fontainebleau = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	invite_artist_cost_modifier = -0.25
+	num_possible_artists = 1
+}
+
+vauban_fortifications = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	fort_limit_modifier = 0.2
+}
+
+the_philosophes = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	research_speed_modifier = 0.05
+}
+
+fra_expansion_of_france = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	casus_belli_creation_speed_modifier = 0.25
+}
+
+liberty_egalite_fraternity = {
+	age = age_6_revolutions
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+		is_revolutionary = yes
+	}
+	tolerance_heretic = 1
+	tolerance_heathen = 1
+
+	allow_children = no
+}
+fra_code_civil = {
+	age = age_6_revolutions
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	legislative_efficiency = 0.2
+}
+french_ambition = {
+	age = age_6_revolutions
+	potential = {
+		or = {
+			has_or_had_tag = FRA
+			has_or_had_tag = F01
+		}
+	}
+	discipline = 0.05
+}

@@ -19,3 +19,9 @@ colors = {
 colors = {
 	map_PVakef = rgb { 225 230 161 }
 }
+colors = {
+	map_PVcarpann = rgb { 12 69 41 }
+}
+colors = {
+	map_PVitac = rgb { 15 94 36 }
+}

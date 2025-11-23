@@ -28,6 +28,8 @@ F01_f = {
 		normandy_area
 		lorraine_area
 		picardy_area
+		poitou_area
+		orleanais_area
 	}
 	form_effect = {
 		if = {
@@ -273,6 +275,129 @@ F07_f = {
 	form_effect = {
 		if = {
 			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F08_f = {
+	level = 4
+	required_locations_fraction = 0.9
+	rule = historical
+
+	potential = {
+		any_owned_location = { 
+			or = {
+				region = region:carpathia_region 
+				region = region:balkan_region
+				region = region:ruthenia_region
+			}
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F08
+	flag = F08
+	adjective = F08_ADJ
+	tag = F08
+	color = map_PVcarpann
+	areas = {
+		red_ruthenia_area
+		slavonia_area
+
+	}
+	regions = {
+		carpathia_region
+	}
+	provinces = {
+		krakow_province
+		nowy_sacz_province
+		pilzno_province
+		szczyrzyc_province
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}
+NSE_f = {
+	level = 4
+	required_locations_fraction = 0.5
+	rule = historical
+	 
+	potential = {
+		religion = religion:norse
+	}
+
+	allow = {
+	}
+	
+	name = NSE
+	flag = NSE
+	adjective = NSE_ADJ
+	tag = NSE
+	color = map_NSE
+
+	regions = {
+		great_britain_region
+		ireland_region
+		scandinavian_region
+		north_atlantic_islands_region
+	}
+	form_effect = {
+	}
+}
+F09_f = {
+	level = 2
+	required_locations_fraction = 0.9
+	rule = historical
+
+	potential = {
+		or = {
+			culture = culture:lombard
+			culture = culture:piedmontese
+			culture = culture:venetian
+			culture = culture:ligurian
+			culture = culture:emilian
+			culture = culture:friulan
+			culture = culture:ladin
+			culture = culture:tuscan
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F09
+	flag = F09
+	adjective = F09_ADJ
+	tag = F09
+	color = map_PVitac
+	areas = {
+		emilia_area
+		liguria_area
+		lombardy_area
+		piemonte_area
+		tuscany_area
+		veneto_area
+
+	}
+	provinces = {
+		trentino_province
+		istria_province
+	}
+	locations = {
+		bolzano
+		cavalese pieve trieste ilirska_bistrica fiume gorizia cittacastello perugia
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 2 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
 		}
 	}

@@ -17,3 +17,57 @@ consolidated_corruption_of_the_nobles_PV = {
 		global_nobles_estate_power = 1
 	}
 }
+alodial_properties = {
+	estate = nobles_estate
+	
+	
+	potential = {
+		has_or_had_tag = TOU 
+	}
+	
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+		global_nobles_estate_power = 1.5
+		nobles_estate_max_tax = 0.2
+	}
+}
+noble_armies = { 
+	estate = nobles_estate
+
+	potential = {
+		OR = {
+			tag = FRA
+			tag = KOR
+			tag = F01
+		}
+	}
+
+	country_modifier = {
+		nobles_estate_levy_size = 0.5
+		monthly_towards_aristocracy = societal_value_minor_monthly_move
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.50
+
+		nobles_estate_satisfaction_decay = 0.02
+
+	}
+}
+chancellor_nobles = { 
+	estate = nobles_estate
+
+	potential = {
+		OR = {
+			tag = FRA
+			tag = F01
+		}
+	}
+
+	country_modifier = {
+		country_cabinet_efficiency = 0.1
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.50
+	}
+}
