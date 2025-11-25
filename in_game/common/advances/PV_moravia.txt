@@ -5,5 +5,119 @@ slovak_integration = {
 		has_or_had_tag = MVA
 	}
 	cultures_capacity = 1
+	requires = cultural_acceptance_advance
+}
+legacy_greatm = {
+	age = age_1_traditions
+	icon = great_sejm_reforms
+	potential = {
+		has_or_had_tag = MVA
+	}
+	antagonism_culture_influence = -0.25
+	
+	requires = scriptorium_advance
+}
+
+fortified_settlements = {
+	age = age_1_traditions
+	icon = fortified_towns
+	potential = {
+		has_or_had_tag = MVA
+	}
+	global_defensive = 0.1
+
 	requires = feudalism_advance
+}
+
+
+carolingian_influ = {
+	age = age_1_traditions
+	icon = monarchy_reform_traditions_advance
+	potential = {
+		has_or_had_tag = MVA
+	}
+	cultural_tradition = 0.1
+
+	requires = cultural_traditions_law_advance
+}
+
+tales_of_greatn = {
+	age = age_2_renaissance
+	icon = dai_thuan_thien
+	potential = {
+		has_or_had_tag = MVA
+	}
+	global_war_score_cost = -0.1
+	antagonism_received_modifier = -0.1
+
+	requires = war_no_cb_cost_modifier_renaissance_advance
+}
+
+slavic_liter = {
+	age = age_2_renaissance
+	icon = global_nobles_max_literacy_advance
+	potential = {
+		has_or_had_tag = MVA
+	}
+	cultural_influence = 0.15
+
+	requires = university_advance
+}
+
+moravian_craft = {
+	age = age_3_discovery
+	icon = raj_martial_smiths
+	potential = {
+		has_or_had_tag = MVA
+	}
+	global_tools_output_modifier = 0.1
+
+	requires = faceting
+}
+culturalcrossroad = {
+	age = age_3_discovery
+	icon = army_country_diplo_range_advance
+	potential = {
+		has_or_had_tag = MVA
+	}
+	global_monthly_prosperity = 0.0005
+	non_rural_migration_attraction = 0.1
+	global_migration_speed_modifier = 0.1
+
+	requires = print_culture
+}
+
+
+long_distance_trades = {
+	age = age_3_discovery 
+	icon = exploit_the_alpine_trade
+	potential = {
+		has_or_had_tag = MVA
+	}
+	trade_range_modifier = 0.3
+
+	requires = supply_lines
+}
+hearth_of_europe = {
+	age = age_4_reformation 
+	icon = efficient_mining
+	potential = {
+		has_or_had_tag = MVA
+	}
+	trade_efficiency = 0.1
+	global_migration_speed_modifier = 0.1
+	global_iron_output_modifier = 0.05
+
+	requires = global_trade_advance
+}
+panslavism = {
+	age = age_5_absolutism
+	icon = cultural_acceptance_advance
+	potential = {
+		has_or_had_tag = MVA
+	}
+	cultures_capacity = 2
+	add_accepted_culture_cost_modifier = -0.25
+
+	requires = powerful_statues
 }

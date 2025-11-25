@@ -1,0 +1,256 @@
+bos_land_of_many_churches = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = F14
+		}
+	}
+	icon = diplomatic_influence
+	tolerance_heretic = 2
+
+	requires = medieval_administration
+}
+
+bos_cultural_customs = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = F14
+		}
+	}
+	icon = scholasticism
+	cultural_tradition_modifier = 0.2
+
+	requires = guilds
+}
+
+bos_katun_communities = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = F14
+		}
+	}
+	icon = merchants_and_trade
+	global_max_rural_control = 0.05
+
+	requires = global_clergy_max_literacy_advance
+}
+
+bos_influence_of_the_stanak = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+				has_or_had_tag = BOS
+				has_or_had_tag = F14
+			}
+	}
+	icon = laws
+	nobles_estate_agenda_impact = 0.1
+
+	requires = global_clergy_max_literacy_advance
+	
+}
+
+bos_defiant_terrain = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = F14
+		}
+	}
+	icon = supply_depot_advance_age_3_discovery
+	global_hostile_attrition = 1
+
+	requires = paved_road_advance
+}
+
+bos_kingly_ambitions = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = F14
+		}
+	}
+	icon = crown_power_advance_renaissance
+	army_infantry_power = 0.05
+	monthly_legitimacy = 0.05
+
+	requires = regulate_court_procedures
+}
+
+cro_maritime_connections = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+	}
+	icon = merchant_power_from_maritime_reformation_advance
+	global_maritime_presence_modifier = 0.25
+
+	requires = medieval_administration
+}
+
+cro_reliance_on_adriatic = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+	}
+	icon = merchants_and_trade
+	global_fish_output_modifier = 0.1
+	global_salt_output_modifier = 0.1
+
+	requires = guilds
+}
+
+cro_trade_posts = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+		religion = religion:catholic
+	}
+	icon = merchants_and_trade
+	global_merchant_capacity_modifier = 0.1
+
+	requires = global_clergy_max_literacy_advance
+}
+
+cro_influx_of_foreign_knowledge = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+	}
+	icon = safe_exploration_techniques_advance
+	hire_artist_cost_modifier = -0.025
+	research_speed_modifier = 0.03
+
+	requires = global_clergy_max_literacy_advance
+	
+}
+
+cro_antemurale_christianitatis = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+		religion.group = religion_group:christian
+	}
+	icon = glorious_arms
+	tolerance_own = 0.5
+	global_manpower_modifier = 0.1
+
+	requires = paved_road_advance
+	allow_children = no
+}
+
+cro_pandurs_recruitment = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = CRO
+			has_or_had_tag = F14
+		}
+	}
+	icon = expansionism
+	army_infantry_power = 0.05
+
+	requires = napoleonic_warfare
+}
+
+
+
+rallying_the_troops = {
+	age = age_2_renaissance 
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}
+	regiment_reinforcement_speed = 0.1
+	
+	requires = drill_army_advance
+}
+
+the_rebirth_of_the_patriarchate = {
+	age = age_4_reformation 
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}
+	clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+	
+	requires = power_projection_advance_3
+}
+
+reform_the_ecclesiastical_authorities = {
+	age = age_4_reformation 
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}
+	monthly_religious_influence = 0.2
+	
+	requires = leader_recruit_cost_advance
+}
+
+balkan_hajduks = {
+	age = age_5_absolutism 
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}
+	land_morale_modifier = 0.1
+	
+	requires = supply_depot_advance_age_5_absolutism
+}
+
+foreign_relations_bureau = {
+	age = age_5_absolutism 
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}	
+	diplomatic_capacity = 1
+	
+	requires = power_projection_advance_5
+}
+
+military_modernization = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = SER
+			has_or_had_tag = F14
+		}
+	}
+	army_infantry_power = 0.1
+	
+	requires = recruitment_improvements_revolutions
+}

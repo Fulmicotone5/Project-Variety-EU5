@@ -159,3 +159,76 @@ F09 = {
 		}
 	}
 }
+F10 = { # Great Moravia
+	flag_definition = {
+		coa = F10
+		subject_canton = F10
+		priority = 1		
+	}	
+}
+F11 = {
+	flag_definition = {
+		coa = F11
+		subject_canton = F11
+		priority = 1		
+	}	
+}
+F12 = {
+	flag_definition = {
+		coa = F12
+		subject_canton = F12
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F12_republic
+		subject_canton = F12_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}
+}
+F13 = { # Danube
+	flag_definition = {
+		coa = F13
+		subject_canton = F13
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F13_republic
+		subject_canton = F13_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}
+}
+F14 = { 
+	flag_definition = {
+		coa = F14_republic
+		subject_canton = F14_republic
+		allow_overlord_canton = no		
+		priority = 1
+	}
+	flag_definition = {
+		coa = F14
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}		
+}
+F15 = { # Imperial Church of Italia
+	flag_definition = {
+		coa = F15
+		subject_canton = F15
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F15_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+}

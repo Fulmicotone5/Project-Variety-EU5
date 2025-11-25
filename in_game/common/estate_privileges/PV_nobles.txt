@@ -34,6 +34,23 @@ alodial_properties = {
 		nobles_estate_max_tax = 0.2
 	}
 }
+occitan_nobility = {
+	estate = nobles_estate
+	
+	
+	potential = {
+		has_or_had_tag = TOU 
+	}
+	
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 0.5
+		nobles_estate_levy_size = 0.25
+	}
+}
 noble_armies = { 
 	estate = nobles_estate
 
@@ -69,5 +86,38 @@ chancellor_nobles = {
 		country_cabinet_efficiency = 0.1
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 0.50
+	}
+}
+PV_ruling_elites = {
+	estate = nobles_estate
+	
+	
+	potential = {
+		has_or_had_tag = MVA 
+	}
+	
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 1
+		nobles_estate_max_tax = 0.1
+	}
+}
+PV_groschen = {
+	estate = nobles_estate
+	
+	
+	potential = {
+		has_or_had_tag = MVA 
+	}
+	
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		global_nobles_estate_power = 1
+		minting_income_factor = 0.05
 	}
 }

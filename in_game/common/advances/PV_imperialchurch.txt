@@ -1,0 +1,79 @@
+############################
+# age_1_traditions
+############################
+
+italian_universities = {
+	age = age_1_traditions
+	icon = scholasticism
+
+	potential = {
+		OR = {
+			has_or_had_tag = ITA
+			has_or_had_tag = F15
+		}
+	}
+	global_max_literacy = 5
+	global_monthly_literacy = 0.01
+
+	requires = guilds
+}
+
+############################
+# age_2_renaissance
+############################
+
+italy_great_families = {
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+	potential = {
+		OR = {
+			has_or_had_tag = ITA
+			has_or_had_tag = F15
+		}
+	}
+	monthly_prestige = 0.1
+	diplomatic_capacity_modifier = 0.1
+	
+	requires = correct_box_advance_renaissance
+}
+
+############################
+# age_3_discovery
+############################
+
+italian_innovativeness = {
+	age = age_3_discovery
+	icon = genoese_banking_traditions
+
+	potential = {
+		OR = {
+			has_or_had_tag = ITA
+			has_or_had_tag = F15
+		}
+	}
+	embrace_institution_cost_modifier = -0.2
+
+	requires = study_institutions_advance
+}
+
+centralize_the_states = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			has_or_had_tag = PAP
+			has_or_had_tag = F15
+		}
+	}
+	global_crown_estate_power = 0.25
+}
+
+pap_legacy_of_the_military_orders = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = PAP
+			has_or_had_tag = F15
+		}
+	}
+	discipline = 0.05
+}

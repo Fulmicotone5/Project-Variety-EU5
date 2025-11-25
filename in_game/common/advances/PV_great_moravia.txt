@@ -1,0 +1,163 @@
+hab_expert_mountaineers = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = TIR
+			has_or_had_tag = STY
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	global_distance_from_capital_cost_modifier = -0.05
+
+	requires = renaissance_urbanisation
+}
+austrian_military_flexibility = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = STY
+			has_or_had_tag = TIR
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	military_tactics = 0.1
+	hire_mercenary_premium_cost_modifier = -0.1
+	
+	requires = pike_square
+}
+military_border = {
+	age = age_5_absolutism
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	global_migration_speed_modifier = 0.1
+	discipline = 0.03
+
+	requires = army_movement_speed_absolutism
+}
+#Age of Revolutions
+austrian_ambition = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	country_child_education = 0.4
+	skill_of_new_artists = 0.2
+
+	requires = enlightened_court
+}
+austrian_state_industrialization = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	global_production_efficiency = large_production_efficiency_bonus
+
+	requires = joint_stock_companies
+}
+multicultural_empire = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	cultures_capacity = 3
+
+	requires = rights_of_man
+}
+imperial_artillery = {
+	age = age_6_revolutions
+	potential = {
+		OR = {
+			has_or_had_tag = HAB
+			has_or_had_tag = F10
+			has_or_had_tag = F13
+		}
+	}
+	army_artillery_power = 0.1
+	army_artillery_build_cost_modifier = -0.1
+
+	requires = the_gold_standard
+}
+students_of_foreign_courts = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = BOH
+			has_or_had_tag = F10
+			has_or_had_tag = F12
+			has_or_had_tag = F13
+		}
+	}
+	
+	country_child_education = 0.1
+	global_nobles_max_literacy = 5
+	requires = chancery_advance
+}
+
+wagenburg = {
+	age = age_2_renaissance
+	potential = {
+		OR = {
+			has_or_had_tag = BOH
+			has_or_had_tag = F10
+			has_or_had_tag = F12
+			has_or_had_tag = F13
+		}
+	}
+	
+	unlock_unit = a_wagenburg
+
+	requires = unlock_supply_carts
+}
+urbanization_decrees = {
+	age = age_2_renaissance
+
+	potential = {
+		OR = {
+			has_or_had_tag = BOH
+			has_or_had_tag = F10
+			has_or_had_tag = F12
+			has_or_had_tag = F13
+		}
+	}
+
+	global_pop_promotion_speed_modifier = 0.1
+	global_production_efficiency = small_production_efficiency_bonus
+
+}
+
+bohemian_crystal = {
+	age = age_3_discovery
+
+	potential = {
+		OR = {
+			has_or_had_tag = BOH
+			has_or_had_tag = F10
+			has_or_had_tag = F12
+			has_or_had_tag = F13
+		}
+	}
+
+	global_glass_output_modifier = 0.2
+	monthly_prestige = 0.1
+}

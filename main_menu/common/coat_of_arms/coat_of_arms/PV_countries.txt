@@ -2,7 +2,7 @@ F01_republic = {
 	pattern = "pattern_tricolor_horizontal_01.dds"
 	color1 = "black"
 	color2 = "yellow"
-	color3 = "blue"
+	color3 = "blue_dark"
 
 
 }
@@ -302,15 +302,16 @@ F08 = {
 }
 
 F09_republic = { # Italian Federation
-	pattern = "pattern_tricolor_vertical_01.dds"
-	color1 = "green"
+		pattern = "pattern_rhombus.dds"
+	color1 = "red"
 	color2 = "white"
-	color3 = "red"
 
-	textured_emblem = {
-		texture = "te_coa_ita.dds"
-		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
-	}	
+	colored_emblem = {
+		texture = "ce_square.dds"
+		color1 = "green"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+
 }
 F09 = {
 	pattern = "pattern_solid.dds"
@@ -368,4 +369,250 @@ F09_milan = {
 		texture = "te_coa_milan.dds"
 		instance = { scale = { 0.29 0.29 } position = { 0.33 0.5 } }
 	}		
+}
+F10 = {
+	pattern = "pattern_horizontal_split_02.dds"
+	color1 = "yellow"
+	color2 = "red"
+	
+	colored_emblem = {
+		texture = "ce_dharmachakra_india.dds"
+		color1 = "yellow_dark"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_wreath_thin.dds"
+		color1 = "yellow_dark"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = "white"
+		color2 = "red"
+		instance = { scale = { 0.58 0.58 } position = { 0.5 0.48 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_eagle_crowned_shield_short_tail.dds"
+		color1 = "red"
+		color2 = "yellow_dark"
+		color3 = "yellow"
+		instance = { scale = { 0.37 0.45 } position = { 0.5 0.49 } }
+	}	 
+	colored_emblem = {
+		texture = "ce_crown_st_edward.dds"
+		color1 = "yellow"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.43 0.34 } position = { 0.5 0.19 } }
+	}	
+}
+F11 = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "green"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_bars_04.dds"
+		color1 = "yellow_light"
+		instance = { position = { 0 0.5 } scale = { 1 1 } }
+	}
+	colored_emblem = {
+		texture = "ce_bars_04.dds"
+		color1 = "red"
+		instance = { position = { 0 0.4 } scale = { 1 1 } }
+	}
+
+	textured_emblem = {
+		texture = "te_coa_aragon.dds"
+		instance = { position = { 0.5 0.5 } scale = { 0.65 0.65 } }
+	}
+
+}
+F12 = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "red"
+	color2 = "white"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal_02.dds"
+		color1 = "blue_light"
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 1 1 } position = { 1.0 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.44 } position = { 0.25 0.49 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_lion_rampant_forked_crowned_shield.dds"
+		color1 = "white"
+		color2 = "yellow"
+		color3 = "red"
+		instance = { scale = { 0.32 0.32 } position = { 0.25 0.49 } }
+	}	
+	colored_emblem = {
+		texture = "ce_crown_simple.dds"
+		color1 = "yellow_light"
+		color2 = "green"
+		color3 = "white"
+		instance = { scale = { 0.36 0.36 } position = { 0.25 0.27 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_bav.dds"
+		instance = { scale = { 0.3 0.34 } position = { 0.75 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_crown_ducal.dds"
+		color1 = "yellow_light"
+		color2 = "green"
+		color3 = "green"
+		instance = { scale = { 0.36 0.36 } position = { 0.75 0.28 } }
+	}
+}
+F12_republic = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "blue_light"
+	color2 = "white"
+	color3 = "red"
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		instance = { scale = { 0.55 0.55 } position = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_lion_rampant_forked_crowned_shield.dds"
+		color1 = "blue_light"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}	
+}
+F13 = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "yellow"
+	color2 = "red"
+	color3 = hsv360 	{	230	80	30	}
+
+	colored_emblem = {
+		texture = "ce_shield_accolade_02.dds"
+		color1 = "red"
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }		
+	}		
+	colored_emblem = {
+		texture = "ce_lion_rampant_queue_forchee_crowned_shield.dds"
+		color1 = "white"
+		color2 = "red"
+		color3 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}	
+}
+F13_republic = {
+	pattern = "pattern_rhombus.dds"
+	color1 = hsv360 	{	230	80	30	}
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_eagle_double_headed_shield.dds"
+		color1 = hsv360 	{	230	80	30	}
+		color2 = "red"
+		color3 = "white"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}	
+}
+IL1 = { 
+	flag_definition = {
+		coa = IL1
+		subject_canton = IL1
+		allow_overlord_canton = no		
+		priority = 1
+	}
+	flag_definition = {
+		coa = IL1_mon
+		priority = 1500
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}		
+}
+F14={
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
+
+
+}
+F14_republic ={
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+
+	textured_emblem = {
+		texture = "te_coa_IL1rep.dds"
+	}
+}
+F15 = {
+	pattern = "pattern_tricolor_horizontal_01.dds"
+	color1 = "yellow"
+	color2 = "white"
+	color3 = "saffron"
+
+	colored_emblem = {
+		texture = "ce_shield_plc.dds"
+		color1 = "red"
+		color2 = "yellow_light"
+		instance = { scale = { 0.45 0.45 } position = { 0.72 0.47 } }
+	}	
+	colored_emblem = {
+		texture = "ce_keys_st_peter_knot.dds"
+		color1 = "yellow"
+		color2 = "white"
+		color3 = "white"
+		instance = { scale = { 0.22 0.25 } position = { 0.72 0.47 } }
+	}	
+	colored_emblem = {
+		texture = "ce_mitre.dds"
+		color1 = "white"
+		color2 = "yellow_light"
+		color3 = "red"
+		instance = { scale = { 0.25 0.25 } position = { 0.72 0.23 } }
+	}	
+	colored_emblem = {
+		texture = "ce_shield_plc.dds"
+		color1 = "white"
+		color2 = "yellow_light"
+		instance = { scale = { 0.45 0.45 } position = { 0.28 0.47 } }
+	}	
+	colored_emblem = {
+		texture = "ce_eagle.dds"
+		color1 = "black"
+		color2 = "yellow"
+		instance = { scale = { 0.25 0.28 } position = { 0.28 0.47 } }
+	}
+	colored_emblem = {
+		texture = "ce_crown_imperial_austria.dds"
+		color1 = "yellow_light"
+		color2 = "white"
+		color3 = "blue"
+		instance = { scale = { 0.36 0.36 } position = { 0.28 0.23 } }
+	}
+}
+
+F15_republic = {
+	
+	pattern = "pattern_border_venice.dds"
+	color1 = "red"
+	color2 = "orange"
+
+	colored_emblem = {
+		texture = "ce_chi_rho.dds"
+		color1 = "white"
+		instance = { scale = { 0.9 0.9 } position = { 0.5 0.51 } }
+	}	
+
 }

@@ -3,6 +3,8 @@ hun_composite_light_cavalry = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 
@@ -17,6 +19,8 @@ hun_castle_warriors = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -32,6 +36,7 @@ hun_multi_culturalism = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -45,6 +50,8 @@ hun_renaissance_knowledge = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 
@@ -62,6 +69,8 @@ hun_found_the_black_army = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -75,6 +84,7 @@ hun_reformed_coinage = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -98,68 +108,14 @@ hun_bulwark_of_christianity = {
 	global_manpower_modifier = 0.1
 }
 
-hun_hungarian_hussars = {
-	age = age_4_reformation
-	potential = {
-		has_or_had_tag = HUN
-	}
-	unlock_unit = a_hungarian_hussars
-
-	requires = unlock_pistoleers_advance
-}
-
-hun_hungarian_reformation = {
-	potential = { 
-		has_or_had_tag = HUN 
-		OR = {
-			religion = religion:calvinist
-			religion = religion:lutheran
-			religion = religion:anglican
-			religion = religion:lollardy
-			religion = religion:hussite
-		}
-	}
-	
-	age = age_4_reformation
-	national_church_power_cost_modifier = -0.2
-	tolerance_own = 1
-	requires = war_score_reformations_advance
-}
-
-hun_the_catholic_shield = {
-	potential = { 
-		has_or_had_tag = HUN 
-		religion = religion:catholic
-	}
-	
-	age = age_4_reformation
-	monthly_religious_influence = 0.1
-	tolerance_own = 1
-	requires = war_score_reformations_advance
-}
-
-hun_realm_of_many_religions = {
-	potential = { 
-		has_or_had_tag = HUN 
-		NOR = { 
-			religion = religion:catholic
-			religion = religion:calvinist
-			religion = religion:lutheran
-		}
-	}
-	
-	age = age_4_reformation
-	tolerance_heretic = 1
-	tolerance_heathen = 1
-	requires = war_score_reformations_advance
-}
-
 ##############################
 hun_curtailed_peasantry = {
 	potential = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -174,6 +130,8 @@ hun_revolutionized_military_tactics = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -189,6 +147,8 @@ hun_strengthened_towns = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
+			has_or_had_tag = F13
 		} 
 	}
 	
@@ -204,6 +164,7 @@ hun_hungarian_unity = {
 		or = {
 			has_or_had_tag = HUN
 			has_or_had_tag = F08
+			has_or_had_tag = F10
 		} 
 	}
 	
@@ -218,6 +179,7 @@ cunning_diplomacy = {#PV
 		or = {
 				has_or_had_tag = WAL
 				has_or_had_tag = F08
+				has_or_had_tag = F13
 			} 
 	}
 	diplomatic_reputation = diplomatic_reputation_mild_bonus

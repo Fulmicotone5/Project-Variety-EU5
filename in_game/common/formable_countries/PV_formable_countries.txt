@@ -157,7 +157,7 @@ F05_f = {
 
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
-		any_owned_location = { 
+		capital ?= {
 			region = region:north_german_region 
 		}
 	}
@@ -204,7 +204,7 @@ F06_f = {
 
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
-		any_owned_location = { 
+		capital ?= {
 			region = region:south_german_region 
 		}
 	}
@@ -235,7 +235,7 @@ F07_f = {
 
 	potential = {
 		culture = { has_culture_group = culture_group:german_group }
-		any_owned_location = { 
+		capital ?= {
 			or = {
 				region = region:south_german_region 
 				region = region:north_german_region 
@@ -281,7 +281,7 @@ F07_f = {
 }
 F08_f = {
 	level = 4
-	required_locations_fraction = 0.9
+	required_locations_fraction = 0.85
 	rule = historical
 
 	potential = {
@@ -397,8 +397,244 @@ F09_f = {
 
 	form_effect = {
 		if = {
-			limit = { country_rank_level < 2 }
+			limit = { country_rank_level < 3 }
 			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F10_f = {
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		has_or_had_tag = MVA
+	}
+
+	allow = {
+	}
+	
+	name = F10
+	flag = F10
+	adjective = F10_ADJ
+	tag = F10
+	color = map_PVmorav
+
+	areas = {
+		red_ruthenia_area
+		slovakia_area
+		transdanubia_area
+		south_alfold_area
+		north_alfold_area
+		austria_area
+		bohemia_area
+		moravia_area
+		silesia_area
+		lesser_poland_area
+	}
+	provinces = {
+		oberlausitz_province
+		niederlausitz_province
+		elbtal_province
+		leipziger_bucht_province
+		erzgebirge_province
+	}
+	locations = {
+		krasnystaw
+		chelm
+		ugrovesk
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F11_f = {
+	level = 3
+	required_locations_fraction = 0.9
+	rule = historical
+
+	potential = {
+		has_or_had_tag = ARA
+	}
+
+	allow = {
+	}
+	
+	name = F11
+	flag = F11
+	adjective = F11_ADJ
+	tag = F11
+	color = map_PVaraita
+
+	areas = {
+		basilicata_area
+		apulia_area
+		abruzzo_area
+		campania_area
+		sicily_area
+		catalonia_area
+		aragon_area
+		valencia_area
+		sardinia_area
+		balearics_area
+	}
+	provinces = {
+	}
+	form_effect = {
+	}
+}
+F12_f = {
+	level = 3
+	required_locations_fraction = 0.9
+	rule = historical
+
+	potential = {
+		OR = {
+			has_or_had_tag = BOH
+			has_or_had_tag = UBV
+			has_or_had_tag = LBV
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F12
+	flag = F12
+	adjective = F12_ADJ
+	tag = F12
+	color = map_PVbohbav
+
+	areas = {
+		bohemia_area
+		bavaria_area
+	}
+	provinces = {
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}
+F13_f = {
+	level = 4
+	required_locations_fraction = 0.85
+	rule = historical
+
+	potential = {
+		any_owned_location = { 
+			or = {
+				region = region:carpathia_region 
+				region = region:balkan_region
+				region = region:ruthenia_region
+				area = area:moravia_area
+				area = area:bohemia_area
+			}
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F13
+	flag = F13
+	adjective = F13_ADJ
+	tag = F13
+	color = map_PVempireda
+	areas = {
+		moravia_area
+		bohemia_area
+		austria_area
+	}
+	regions = {
+		carpathia_region
+	}
+	provinces = {
+		north_dobruja_province
+
+	}
+
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}
+F14_f = {
+	level = 3
+	required_locations_fraction = 0.6
+	rule = historical
+
+	potential = {
+		OR = {
+			has_or_had_tag = BOS
+			has_or_had_tag = CRO
+			has_or_had_tag = ALB
+		}
+	}
+
+	allow = {
+	}
+	
+	name = F14
+	flag = F14
+	adjective = F14_ADJ
+	tag = F14
+	color = map_PVilly
+	areas = {
+		slavonia_area
+		croatia_area
+		bosnia_area
+		serbia_area
+		albania_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F15_f = {
+	level = 4
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		capital ?= {
+			region = region:italy_region
+		}
+		government_type = government_type:theocracy
+	}
+
+	
+	name = F15
+	flag = F15
+	adjective = F15_ADJ
+	tag = F15
+	color = map_PVimpchu
+
+	regions = {
+		italy_region
+	}
+	provinces = {
+		trentino_province
+		istria_province
+	}
+	locations = {
+		bolzano
+		cavalese pieve trieste ilirska_bistrica fiume gorizia cittacastello perugia
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
 		}
 	}
 }

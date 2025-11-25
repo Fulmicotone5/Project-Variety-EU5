@@ -25,3 +25,21 @@ colors = {
 colors = {
 	map_PVitac = rgb { 15 94 36 }
 }
+colors = {
+	map_PVmorav = rgb { 204 170 57 }
+}
+colors = {
+	map_PVaraita = rgb { 255 134 46 }
+}
+colors = {
+	map_PVbohbav = rgb { 197 220 235 }
+}
+colors = {
+	map_PVempireda = rgb { 16 82 122 }
+}
+colors = {
+	map_PVilly = rgb { 37 128 174 }
+}
+colors = {
+	map_PVimpchu = rgb { 164 168 118 }
+}

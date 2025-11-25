@@ -1,0 +1,96 @@
+university_naples = {
+	age = age_1_traditions
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			culture = culture:neapolitan
+		}
+	}
+	global_institution_growth_modifier = 0.2
+	
+	requires = library_advance
+}
+mercantile_spirit = {
+	age = age_1_traditions
+	icon = a_central_power
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			has_or_had_tag = TWS
+		}
+	}
+	trade_efficiency = small_trade_efficiency_bonus
+	
+	requires = trade_advance_age_of_trad
+}
+consolidate_the_royal_domain = {
+	age = age_2_renaissance
+	icon = court_accounting
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			has_or_had_tag = TWS
+		}
+	}
+	global_crown_estate_power = 0.1
+	
+	requires = renaissance_thought
+}
+encouraged_city_living = {
+	age = age_3_discovery
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			has_or_had_tag = TWS
+		}
+	}
+	non_rural_migration_attraction = 0.2
+	global_burghers_city_desired_pop = 0.5
+	
+	requires = printing_press_advance
+}
+expanded_arsenale = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			has_or_had_tag = TWS
+		}
+	}
+	ship_build_speed = 0.1
+	
+	requires = maritime_advance_age_4
+}
+city_of_artists = {
+	age = age_4_reformation
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			culture = culture:neapolitan
+		}
+	}
+	skill_of_new_artists = 0.1
+	invite_artist_cost_modifier = -0.25
+	
+	requires = artists_advance_reformations
+}
+a_central_power = {
+	age = age_5_absolutism
+	icon = diplomatic_range_age_1
+	potential = {
+		OR = {
+			has_or_had_tag = NAP
+			has_or_had_tag = F11
+			has_or_had_tag = TWS
+		}
+	}
+	max_diplomats = 2
+	
+	requires = relations_absolutism_advance
+}
