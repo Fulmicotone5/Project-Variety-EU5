@@ -8,4 +8,8 @@ diplomacy_manager = {
 	opinion = { first = ARS second = FRA type = opinion_angry }
 	opinion = { first = GCL second = CAS type = opinion_angry }
 	opinion = { first = TRA second = HUN type = opinion_angry }
+	opinion = { first = NOL second = P01 type = opinion_good_relations }
+	opinion = { first = P01 second = NOL type = opinion_good_relations }
+	opinion = { first = NOL second = ENG type = opinion_angry }
+	opinion = { first = P01 second = ENG type = opinion_angry }
 }

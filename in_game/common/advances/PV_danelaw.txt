@@ -1,0 +1,92 @@
+warrir_aristocracy = {
+	age = age_1_traditions
+	icon = mandinka_warrior_spirit
+	potential = {
+		has_or_had_tag = P01
+	}
+	army_infantry_power = 0.05
+
+	requires = unlock_armored_horsemen_advance
+}
+viking_heritage = {
+	age = age_1_traditions
+	icon = warriors_unity
+	potential = {
+		has_or_had_tag = P01
+	}
+	army_reinforce_cost = -0.1
+	global_manpower_modifier = 0.1
+	
+	requires = mapmaking
+}
+
+
+legacy_of_great_warriors = {
+	age = age_1_traditions
+	icon = call_of_our_forefathers
+	potential = {
+		has_or_had_tag = P01
+	}
+	land_morale_modifier = 0.1
+	monthly_army_tradition = 0.05
+
+	requires = organized_religion
+}
+
+last_bastion_of_norse_culture = {
+	age = age_2_renaissance
+	icon = hiberno_norman_keeps_advance
+	potential = {
+		has_or_had_tag = P01
+	}
+	cultural_tradition = 0.25
+
+	requires = renaissance_advance
+}
+
+norse_renaissance = {
+	age = age_2_renaissance
+	icon = embellish_baroque_art
+	potential = {
+		has_or_had_tag = P01
+	}
+	global_monthly_prosperity = 0.001
+
+	requires = university_advance
+}
+
+linguistic_dominance = {
+	age = age_3_discovery
+	icon = preserving_of_local_languages
+	potential = {
+		has_or_had_tag = P01
+	}
+	cultural_influence = 0.15
+	global_integration_speed_modifier = 0.2
+
+	requires = paper_workshop_advance
+}
+sailors_of_the_north_sea = {
+	age = age_4_reformation
+	icon = ship_building_advance
+	potential = {
+		has_or_had_tag = P01
+	}
+	trade_range_modifier = 0.5
+
+	requires = global_trade_advance
+}
+
+
+reformed_danelaw = {
+	age = age_4_reformation 
+	icon = reforms_of_the_posadnichestvo
+	potential = {
+		has_or_had_tag = P01
+	}
+	global_monthly_prosperity = 0.0005
+	non_rural_migration_attraction = 0.1
+	global_migration_speed_modifier = 0.1
+
+	requires = legitimization_of_power_law_advance
+}

@@ -1,6 +1,6 @@
 NGame = {
-	HOUR_TICK = 24
-	MORNING_OFFSET = 0
+	HOUR_TICK = 4
+	MORNING_OFFSET = 7
 
 	GAME_SPEED_SCALES = {	# Factors to scale speed
 		0.75
@@ -10,7 +10,7 @@ NGame = {
 		5
 	}
 	HOTJOIN_TICK_LIMIT = 6
-	EVENT_MP_TIMEOUT_MONTHS = 12
+	EVENT_MP_TIMEOUT_MONTHS = 6
 }
 
 NCountry = {
@@ -19,8 +19,8 @@ NCountry = {
 }
 
 NUnit = {
-	ARMY_MOVEMENT_SPEED = 0.5
-	NAVY_MOVEMENT_SPEED = 0.8
+	ARMY_MOVEMENT_SPEED = 0.26
+	NAVY_MOVEMENT_SPEED = 1.0
 }
 
 NCombat = {

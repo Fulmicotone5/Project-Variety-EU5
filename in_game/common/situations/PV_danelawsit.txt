@@ -1,0 +1,25 @@
+#PV_danelawsit = {
+
+#	image = "gfx/interface/illustrations/situation/little_ice_age.dds"
+
+
+#	monthly_spawn_chance = monthly_spawn_chance_unique
+#	hint_tag = hint_PV_danelawsit
+#	can_start = {
+#		current_date > 1337.4.1
+#		current_date < 1350
+#	}
+#	can_end = {
+#		OR = {
+	#		AND = {
+	#			owns = location:lincoln
+#				owns = location:leicester
+#				owns = location:derby
+#				owns = location:nottingham
+#				owns = location:rutland
+	#		}
+	#		NOT = {
+#				exists = root
+#			}
+#			NOT = {
+#				owns = location:lincoln

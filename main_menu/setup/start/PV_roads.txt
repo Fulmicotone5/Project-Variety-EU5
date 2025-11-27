@@ -1,0 +1,10 @@
+road_network = {
+	lincoln = boston
+	boston = spalding
+	spalding = lynn
+	lynn = bury
+	lynn = thetford
+	thetford = norwich
+	bury = lavenham
+
+}

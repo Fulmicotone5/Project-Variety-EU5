@@ -121,3 +121,19 @@ PV_groschen = {
 		minting_income_factor = 0.05
 	}
 }
+vapnatak = { 
+	estate = nobles_estate
+
+	potential = {
+		tag = P01
+	}
+
+	country_modifier = {
+		nobles_estate_levy_size = 0.4
+		monthly_towards_decentralization = societal_value_minor_monthly_move
+		monthly_towards_aristocracy = societal_value_large_monthly_move
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 1
+
+	}
+}

@@ -8,6 +8,13 @@
 			tag = F15
 		}
 	}
+	text = {#PV
+		localization_key = rank_empire_danelaw
+		trigger = {
+			tag = P01
+			country_rank_is_duchy = yes
+		}
+	}
 	text = {
 		localization_key = rank_kingdom_east_frankia
 		trigger = {

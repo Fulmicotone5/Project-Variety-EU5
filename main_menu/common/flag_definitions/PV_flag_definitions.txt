@@ -232,3 +232,17 @@ F15 = { # Imperial Church of Italia
 		}
 	}	
 }
+P01 = { 
+	flag_definition = {
+		coa = P01
+		subject_canton = P01
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = P01_republic
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+}

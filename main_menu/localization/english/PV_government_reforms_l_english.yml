@@ -1,3 +1,11 @@
 ﻿l_english:
  crusader_state: "Crusader State"
  crusader_state_desc: "A crusader state is a feudal territory established by Western Europeans in the Levant after a [crusade|e]."
+ PV_danelaw: "Danelaw"
+ PV_danelaw_desc: "Initially established as an administrative region under the Kingdom of Denmark, the Danelaw has gradually evolved into a de facto independent country, particularly following the Danish king's abandonment of our traditional religion."
+ PV_last_borough: "The Last Borough"
+ PV_last_borough_desc: "Lincún, the final remaining borough of the five that once comprised the Danelaw, has become a symbol of our ongoing resistance against English dominance."
+ PV_five_bur: "The Five Boroughs of the Danelaw"
+ PV_five_bur_desc: "The five founding boroughs of the Danelaw have been successfully restored, and these cities now serve as the cultural and political centers of the country."
+ centralized_authority: "Centralized Authority"
+ centralized_authority_desc: "Originally established as a decentralized administrative region representing a foreign kingdom, our country has since evolved into a fully sovereign state capable of rivaling any European power."

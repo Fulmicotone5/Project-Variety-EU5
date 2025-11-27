@@ -1,0 +1,31 @@
+NSE_f = {
+	level = 4
+	required_locations_fraction = 0.5
+	rule = historical
+	 
+	potential = {
+		religion = religion:norse
+	}
+
+	allow = {
+	}
+	
+	name = NSE
+	flag = NSE
+	adjective = NSE_ADJ
+	tag = NSE
+	color = map_NSE
+
+	regions = {
+		great_britain_region
+		ireland_region
+		scandinavian_region
+		north_atlantic_islands_region
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}

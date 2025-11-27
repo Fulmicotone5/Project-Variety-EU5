@@ -883,5 +883,71 @@ countries = {
 			country_rank = rank_duchy
 		}
 
+		P01 = {
+			own_control_core = {
+				ipswich bury lowestoft lavenham norwich lynn yarmouth thetford fakenham lincoln boston grimsby grantham louth spalding
+			}
+			our_cores_conquered_by_others = {
+				leicester loughborough bosworth rutland colchester chelmsford prittlewell hedingham walden barking cambridge ely huntingdon royston
+				northampton kettering derby glossop chesterfield nottingham newark retford lancaster blackburn liverpool preston manchester pennines_01 pennines_02
+				york scarborough bedale richmond whitby north_york_moors hull bridlington selby norton leeds pontefract skipton wakefield doncaster ripon pennines_04 pennines_05 pennines_06
+			}
+			country_rank = rank_duchy
+			include = "expl_scandinavia"
+			discovered_areas = {
+			}
+			government = {
+				type = monarchy
+				ruler = random
+
+
+				reforms = {
+					PV_danelaw
+					PV_last_borough
+				}
+
+				privilege = {
+					communal_lands
+					primacy_of_nobility
+					manorial_courts
+					noble_marriage_rights
+					noble_fortification_licenses
+					auxilium_et_consilium
+					building_rights
+					formal_guilds
+					vapnatak
+					sponsor_maritime_contracts
+					building_roads_rights
+					peasants_allowed_weapons_privilege
+					sokeman
+					clergy_strengthen_faith
+					clergy_enforced_unity
+					clergy_land_rights
+				}
+
+				centralization_vs_decentralization = 30
+				aristocracy_vs_plutocracy = -85
+				serfdom_vs_free_subjects = 25
+				traditionalist_vs_innovative = -10
+				spiritualist_vs_humanist = -80
+				mercantilism_vs_free_trade = -50
+				offensive_vs_defensive = 90
+				land_vs_naval = -20
+				quality_vs_quantity = 50
+				belligerent_vs_conciliatory = -10
+				capital_economy_vs_traditional_economy = 90
+				individualism_vs_communalism = 20
+				outward_vs_inward = -50
+			}
+			accepted_cultures = {
+			}
+
+			tolerated_cultures = {
+
+			}
+
+			capital = lincoln
+		}
+
 	}
 }

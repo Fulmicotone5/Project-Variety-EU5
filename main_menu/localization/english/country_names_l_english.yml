@@ -70,6 +70,11 @@
  rank_empire_imperial_church_ADJ: "Imperial"
  rank_empire_imperial_church_ruler_male: "Pope Emperor"
  rank_empire_imperial_church_ruler_female: "Pope Empress"
+ P01: "Danelaw"
+ P01_THE: "$common_string_prefix_article$"
+ P01_ADJ: "Danelaw"
+ P01_abbreviation: "D."
+ rank_empire_danelaw: "Administration"
 
  DUMMY: "(placeholder)"
  DUMMY_ADJ: "(placeholder)"

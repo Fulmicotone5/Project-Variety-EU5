@@ -1,0 +1,13 @@
+﻿l_english:
+
+ daneflavor.1.title: "The Last Norse Bastion"
+ daneflavor.1.desc: "Initially established as an administrative region under the Kingdom of Denmark, the [ROOT.GetCountry.GetName] has gradually evolved into a de facto independent entity, particularly following the Danish monarch's abandonment of our traditional religion. Historically, the [ROOT.GetCountry.GetName] was centered around five key [ShowLocationName('lincoln')], [ShowLocationName('leicester')], [ShowLocationName('derby')], [ShowLocationName('nottingham')], and [ShowLocationName('rutland')]—that served as cultural and administrative hubs, forming the backbone of the region's strength.\nHowever, following numerous conflicts, only [ShowLocationName('lincoln')], our capital, remains as the sole remaining borough.\nThe reconquest of our stolen territory constitutes the first step toward reestablishing ourselves as the sovereign rulers of this land."
+ daneflavor.1.a: "May the gods assist us in this endeavor"
+
+ daneflavor.2.title: "The Birth of a New Kingdom"
+ daneflavor.2.desc: "The five founding boroughs of [ROOT.GetCountry.GetName] have been successfully restored, and these cities will now serve as the cultural and political centers of the nation.\nWith the reclaiming of its territory, the country is prepared to transition from an aspirational state to a duly established kingdom.\nToday marks the birth of a new Kingdom, the Kingdom of [ROOT.GetCountry.GetName]."
+ daneflavor.2.a: "Long Live [ROOT.GetCountry.GetName]!"
+
+ daneflavor.3.title: "Lincún has Fallen!"
+ daneflavor.3.desc: "Lincún, or [ShowLocationName('lincoln')] as the English call it, was a key [ROOT.GetCountry.GetAdjective] city of the [ROOT.GetCountry.GetName] for centuries before finally being lost to the invasor.\nMay the Gods have mercy!"
+ daneflavor.3.a: "Hard times are ahead of us"

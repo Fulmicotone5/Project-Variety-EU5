@@ -1,0 +1,9 @@
+#hint_PV_danelawsit = {
+#	priority = {
+#		can_see_situation = situation:PV_danelawsit
+#	}
+#	hide = {
+#		NOT = { is_situation_active = situation:PV_danelawsit }
+#	}
+#	sort_priority = 200 #React now!
+#}

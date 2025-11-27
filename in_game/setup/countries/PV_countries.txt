@@ -249,3 +249,10 @@ CYP = {
 	culture_definition = greek_culture
 	religion_definition = catholic
 }
+
+P01 = {
+	color = rgb { 168 45 45 }
+
+	culture_definition = norse_gael
+	religion_definition = norse
+}

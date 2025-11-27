@@ -1,0 +1,103 @@
+namespace = daneflavor
+
+daneflavor.1 = {
+	type = country_event
+	title = daneflavor.1.title
+	desc = daneflavor.1.desc
+
+	fire_only_once = yes
+
+	image = "gfx/interface/illustrations/situation/little_ice_age.dds"
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+
+
+	trigger = {
+		has_or_had_tag = P01
+	}
+
+
+	option = {
+		name = daneflavor.1.a
+
+	}
+}
+
+
+daneflavor.2 = {
+	type = country_event
+	title = daneflavor.2.title
+	desc = daneflavor.2.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		owns = location:lincoln
+		owns = location:leicester
+		owns = location:derby
+		owns = location:nottingham
+		owns = location:rutland
+	}
+
+	option = {
+		name = daneflavor.2.a
+		add_prestige = prestige_severe_bonus
+		if = {
+				limit = { has_reform = government_reform:PV_last_borough }
+				remove_reform = government_reform:PV_last_borough
+				add_reform = government_reform:PV_five_bur
+			}
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+
+daneflavor.3 = {
+	type = country_event
+	title = daneflavor.3.title
+	desc = daneflavor.3.desc
+
+	fire_only_once = yes
+
+	image = "gfx/interface/illustrations/disaster/placeholder.dds"
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			owns = location:lincoln
+		}
+	}
+	
+
+	option = {
+		name = daneflavor.3.a
+		add_prestige = -50
+	}
+}

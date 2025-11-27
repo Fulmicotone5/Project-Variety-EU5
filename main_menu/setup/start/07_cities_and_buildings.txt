@@ -41,9 +41,10 @@ locations={
 	norwich = { rank = town 		town_setup = british_town}
 	oxford = { rank = town 			town_setup = british_town}
 	cambridge = { rank = town 		town_setup = british_town}
-	lincoln = { rank = town 		town_setup = british_town}
+	lincoln = { rank = city 		town_setup = italian_city}
+	lavenham = { rank = city 		town_setup = italian_city}
 	salisbury = { rank = town 		town_setup = british_town}
-	lynn = { rank = town 			town_setup = british_town_port}
+	lynn = { rank = city 			town_setup = greek_city_port}
 	colchester = { rank = town 		town_setup = british_town_port}
 	boston = { rank = town 			town_setup = british_town_port}
 	inverness = { rank = town		town_setup = british_town_port}
