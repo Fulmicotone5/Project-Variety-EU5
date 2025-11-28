@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ unconditional_surrender: "无条件投降"
+ unconditional_surrender_act: "允许[SCOPE.sCountry('recipient').GetName]立即占领所有地点"
+ unconditional_surrender_desc: "我们将交出所有地点控制权，允许对方立即实施占领"
+ unconditional_surrender_effect_text: "[SCOPE.sCountry('actor').GetName]已向[SCOPE.sCountry('recipient').GetName]无条件投降"
+ unconditional_surrender_effect_text_past: "[SCOPE.sCountry('actor').GetName]已向[SCOPE.sCountry('recipient').GetName]无条件投降"
+ PROPOSE_unconditional_surrender: "向$RECIPIENT$无条件投降？\n$INFO$。"
+ choose_war_to_unconditional_surrender: "点击选择一个国家，以向其无条件投降。"

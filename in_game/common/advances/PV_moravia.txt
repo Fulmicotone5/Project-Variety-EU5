@@ -13,7 +13,7 @@ legacy_greatm = {
 	potential = {
 		has_or_had_tag = MVA
 	}
-	antagonism_culture_influence = -0.25
+	antagonism_received_modifier = -0.15
 	
 	requires = scriptorium_advance
 }

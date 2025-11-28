@@ -158,11 +158,11 @@ country_base_values = {
 	estate_building_destruction_satisfaction_impact = -0.01
 	
 
-	peace_offer_fairness = -0.5 #PV
-	aggressiveness_modifier = 0.5
-	expected_warscore_modifier = 0.5
-	win_war_chance_threshold = -0.2
-	antagonism_tolerance = 100 #PV
+	peace_offer_fairness = -1 #PV
+	aggressiveness_modifier = 1
+	expected_warscore_modifier = 1
+	win_war_chance_threshold = -0.5
+	antagonism_tolerance = 200 #PV
 	war_declaration_stab_hit_tolerance = 0
 	war_declaration_war_exhaustion_tolerance = 0
 	

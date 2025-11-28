@@ -101,3 +101,309 @@ daneflavor.3 = {
 		add_prestige = -50
 	}
 }
+
+daneflavor.4 = {
+	type = country_event
+	title = daneflavor.4.title
+	desc = daneflavor.4.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		owns = location:leicester
+		location:leicester = {
+			NOT = {
+				location_rank = location_rank:town
+			}
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	option = {
+		name = daneflavor.4.a
+		add_gold = -200
+		location:leicester = {
+			change_location_rank = location_rank:town
+			construct_building = {
+					building_type = building_type:temple
+			}
+		}
+	}
+	option = {
+		name = daneflavor.4.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = daneflavor.4.c
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_gold = 300
+	}
+}
+daneflavor.5 = {
+	type = country_event
+	title = daneflavor.5.title
+	desc = daneflavor.5.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		owns = location:nottingham
+		location:nottingham = {
+			NOT = {
+				location_rank = location_rank:town
+			}
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	option = {
+		name = daneflavor.5.a
+		add_gold = -200
+		location:nottingham = {
+			change_location_rank = location_rank:town
+			construct_building = {
+					building_type = building_type:temple
+			}
+		}
+	}
+	option = {
+		name = daneflavor.5.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = daneflavor.5.c
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_gold = 250
+	}
+}
+
+daneflavor.6 = {
+	type = country_event
+	title = daneflavor.6.title
+	desc = daneflavor.6.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		owns = location:derby
+		location:derby = {
+			NOT = {
+				location_rank = location_rank:town
+			}
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	option = {
+		name = daneflavor.6.a
+		add_gold = -200
+		location:derby = {
+			change_location_rank = location_rank:town
+			construct_building = {
+					building_type = building_type:temple
+			}
+		}
+	}
+	option = {
+		name = daneflavor.6.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = daneflavor.6.c
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_gold = 250
+	}
+}
+daneflavor.7 = {
+	type = country_event
+	title = daneflavor.7.title
+	desc = daneflavor.7.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		owns = location:rutland
+		location:rutland = {
+			NOT = {
+				location_rank = location_rank:town
+			}
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	option = {
+		name = daneflavor.7.a
+		add_gold = -200
+		location:rutland = {
+			change_location_rank = location_rank:town
+			construct_building = {
+					building_type = building_type:temple
+			}
+		}
+	}
+	option = {
+		name = daneflavor.7.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = daneflavor.7.c
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_gold = 300
+	}
+}
+daneflavor.8 = {
+	type = country_event
+	title = daneflavor.8.title
+	desc = daneflavor.8.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		owns = location:london
+		owns = location:lincoln
+		location:london = {
+			is_capital = no
+		}
+		location:boston = {
+			is_capital = no
+		}
+	}
+
+	option = {
+		name = daneflavor.8.a
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.15
+		}
+	}
+	option = {
+		name = daneflavor.8.b
+
+		trigger = {
+			owns = location:boston
+		}
+		if = {
+			limit = {
+				location:boston = {
+					NOT = {
+						location_rank = location_rank:city
+					}
+				}
+			}
+			location:boston = {
+				change_location_rank = location_rank:city
+			}
+		}
+		add_gold = -1000
+		set_capital = location:boston
+		change_societal_value = { type = land_vs_naval	value = 25	}
+		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }
+	}
+	option = {
+		name = daneflavor.8.c
+		set_capital = location:london
+		change_societal_value = { type = land_vs_naval	value = 25	}
+		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }
+	}
+}

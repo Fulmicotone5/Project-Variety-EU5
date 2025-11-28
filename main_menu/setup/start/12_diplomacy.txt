@@ -1,5 +1,4 @@
 diplomacy_manager = { #Changes for MAM tag (PV)
-    scripted_mutual = { first = NOL second = P01 type = alliance }
     scripted_oneway = { first = KOJ second = TEU type = military_sponsorship }
     scripted_oneway = { first = KOJ second = KNI type = military_sponsorship }
 
@@ -159,6 +158,8 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = TOU second = AMG subject_type = vassal }
     dependency = { first = TOU second = CLT subject_type = vassal }
     dependency = { first = TOU second = VNT subject_type = vassal }
+    dependency = { first = TOU second = PER subject_type = vassal }
+    dependency = { first = FRZ second = PER subject_type = vassal }
     dependency = { first = TOU second = VDM subject_type = appanage }
     dependency = { first = TOU second = AUV subject_type = appanage }
     dependency = { first = FRA second = BAR subject_type = vassal }

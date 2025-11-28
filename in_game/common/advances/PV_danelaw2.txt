@@ -1,0 +1,48 @@
+unlock_early_longbowmen_advance = {
+	age = age_1_traditions
+	requires = city_building_advance
+	potential = {
+		OR = {
+			has_or_had_tag = WLS
+			has_or_had_tag = P01
+			has_or_had_tag = NOL
+			culture = culture:welsh
+			culture = culture:northumbrian
+			culture = culture:norse_gael
+		}
+	}
+	unlock_levy = levy_a_early_longbowmen
+	unlock_estate_privilege = peasants_yeomanry
+}
+
+unlock_longbowmen_advance = {
+	age = age_2_renaissance
+	requires = unlock_men_at_arms_advance
+	potential = {
+		OR = {
+			has_or_had_tag = WLS
+			has_or_had_tag = P01
+			has_or_had_tag = NOL
+			culture = culture:welsh
+			culture = culture:northumbrian
+			culture = culture:norse_gael
+		}
+	}
+	unlock_levy = levy_a_longbowmen
+}
+
+unlock_late_longbowmen_advance = {
+	age = age_3_discovery
+	requires = unlock_halberdiers_advance
+	potential = {
+		OR = {
+			has_or_had_tag = WLS
+			has_or_had_tag = P01
+			has_or_had_tag = NOL
+			culture = culture:welsh
+			culture = culture:northumbrian
+			culture = culture:norse_gael
+		}
+	}
+	unlock_levy = levy_a_late_longbowmen
+}

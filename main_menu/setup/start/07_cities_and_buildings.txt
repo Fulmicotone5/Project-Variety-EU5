@@ -1,6 +1,4 @@
 locations={
-	#PV
-	hospital = { tag = BYZ level = 1 location = constantinople } #PV
 	
 	#sweden
 	stockholm = { rank = town 		town_setup = important_scandinavian_town }

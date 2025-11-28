@@ -78,18 +78,16 @@ PV_last_borough = {
 	years = 2
 }
 PV_five_bur = {
-	unique = yes
-	government = monarchy
 
 	country_modifier = {
 		global_fort_build_buildings_cost = -0.1
 		global_defensive = 0.15
-		tax_efficiency = 0.05
+		tax_income_efficiency = 0.05
 		government_size = 1
 	}
 
 	potential = {
-		always = no
+		has_or_had_tag = P01
 	}
 
 	allow = {
@@ -106,14 +104,13 @@ PV_five_bur = {
 	years = 2
 }
 centralized_authority = {
-	unique = yes
-	government = monarchy
 
 	country_modifier = {
 		global_crown_estate_power = 0.5
 		court_spending_cost = 0.01
-		country_cabinet_efficiency = 0.05
+		country_cabinet_efficiency = 0.1
 		monthly_towards_centralization = 0.25
+		government_reform_slots = 1
 	}
 
 	potential = {

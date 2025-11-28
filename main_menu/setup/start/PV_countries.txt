@@ -892,18 +892,25 @@ countries = {
 				northampton kettering derby glossop chesterfield nottingham newark retford lancaster blackburn liverpool preston manchester pennines_01 pennines_02
 				york scarborough bedale richmond whitby north_york_moors hull bridlington selby norton leeds pontefract skipton wakefield doncaster ripon pennines_04 pennines_05 pennines_06
 			}
+			starting_technology_level = 3
 			country_rank = rank_duchy
 			include = "expl_scandinavia"
 			discovered_areas = {
 			}
 			government = {
 				type = monarchy
+				heir_selection = cognatic_primogeniture
 				ruler = random
+
+				parliament = {
+					parliament_type = council
+				}
 
 
 				reforms = {
 					PV_danelaw
 					PV_last_borough
+					galley_lords_reform
 				}
 
 				privilege = {
@@ -924,6 +931,21 @@ countries = {
 					clergy_enforced_unity
 					clergy_land_rights
 				}
+				laws = {
+				administrative_system = central_councils
+				censorship = limited_censorship
+				cultural_traditions_law = martial_society
+				legal_code_law = traditional_law_policy
+				distribution_of_power_law = dop_traditional_distribution_of_power
+				education_masses_law = basic_religious_education
+				feudal_de_jure_law = by_blood
+				heir_religion_law = heir_same_religion
+				maritime_law = protect_trade_routes
+				medieval_levy_law = noble_levies
+				piracy_law = anti_piracy_policy
+				royal_court_customs_law = itinerant_court_policy
+				immigration_law = open_borders_law
+				}
 
 				centralization_vs_decentralization = 30
 				aristocracy_vs_plutocracy = -85
@@ -932,9 +954,9 @@ countries = {
 				spiritualist_vs_humanist = -80
 				mercantilism_vs_free_trade = -50
 				offensive_vs_defensive = 90
-				land_vs_naval = -20
+				land_vs_naval = 40
 				quality_vs_quantity = 50
-				belligerent_vs_conciliatory = -10
+				belligerent_vs_conciliatory = -40
 				capital_economy_vs_traditional_economy = 90
 				individualism_vs_communalism = 20
 				outward_vs_inward = -50

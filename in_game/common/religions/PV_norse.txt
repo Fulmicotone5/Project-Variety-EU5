@@ -1,0 +1,14 @@
+norse = { 
+	color = color_norse
+	group = folk_european_group
+
+	religious_aspects = 3
+	
+	definition_modifier = {
+		auto_slave_raid_different_religion = yes
+	}
+
+	tags = {
+		folk_european_gfx pagan_gfx
+	}
+}

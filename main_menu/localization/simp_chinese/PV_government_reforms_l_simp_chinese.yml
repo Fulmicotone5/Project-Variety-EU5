@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ crusader_state: "十字军国家"
+ crusader_state_desc: "十字军国家是指[crusade|e]后西欧人在黎凡特地区建立的封建领地。"
+ PV_danelaw: "丹麦法区"
+ PV_danelaw_desc: "最初作为丹麦王国辖下的行政区划，丹麦法区已逐渐演变为实际独立的国家——尤其是在丹麦国王背弃我们传统信仰之后。"
+ PV_last_borough: "最后的自治镇"
+ PV_last_borough_desc: "林昆，这个曾组成丹麦法区的五个自治镇中仅存的一个，已成为我们持续抵抗英格兰统治的标志。"
+ PV_five_bur: "丹麦法区五城镇"
+ PV_five_bur_desc: "丹麦法区的五大创始自治镇已成功光复，这些城市如今是国家的文化与政治中心。"
+ centralized_authority: "中央集权"
+ centralized_authority_desc: "这个最初代表外国王权的分散行政区，现已发展成为能与欧洲列强分庭抗礼的完全主权国家。"

@@ -6627,6 +6627,7 @@ wycombe = {
 }
 leicester = {
 	define_pop = {	type = peasants	size = 20.084	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
 }
 loughborough = {
 	define_pop = {	type = peasants	size = 7.803	culture = english	religion = catholic }
@@ -6634,14 +6635,15 @@ loughborough = {
 }
 bosworth = {
 	define_pop = {	type = peasants	size = 15.483	culture = english	religion = catholic }
+	define_pop = { type = peasants	size = 7.137	culture = norse_gael religion = norse }
 }
 rutland = {
-	define_pop = {	type = peasants	size = 8.168	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 7.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 18.168	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 17.137	culture = norse_gael religion = norse }
 }
 derby = {
-	define_pop = {	type = peasants	size = 11.780	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 21.780	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 20.137	culture = norse_gael religion = norse }
 }
 glossop = {
 	define_pop = {	type = peasants	size = 10.126	culture = english	religion = catholic }
@@ -6652,8 +6654,8 @@ chesterfield = {
 	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
 }
 nottingham = {
-	define_pop = {	type = peasants	size = 8.943	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 7.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 18.943	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 17.137	culture = norse_gael religion = norse }
 }
 newark = {
 	define_pop = {	type = peasants	size = 6.370	culture = english	religion = catholic }
@@ -6767,7 +6769,7 @@ pennines_02 = {
 }
 york = {
 	define_pop = {	type = peasants	size = 16.941	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 8.469	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 8.469	culture = norse_gael religion = norse }
 }
 scarborough = {
 	define_pop = {	type = peasants	size = 17.419	culture = northumbrian	religion = catholic }
@@ -6785,43 +6787,43 @@ north_york_moors = {
 }
 hull = {
 	define_pop = {	type = peasants	size = 13.424	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.712	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 6.712	culture = norse_gael religion = norse }
 }
 bridlington = {
 	define_pop = {	type = peasants	size = 10.811	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.712	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 6.712	culture = norse_gael religion = norse }
 }
 selby = {
 	define_pop = {	type = peasants	size = 12.121	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.060	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 6.060	culture = norse_gael religion = norse }
 }
 norton = {
 	define_pop = {	type = peasants	size = 12.725	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.363	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 6.363	culture = norse_gael religion = norse }
 }
 leeds = {
-	define_pop = {	type = peasants	size = 8.292	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 8.292	culture = norse_gael religion = norse }
 	define_pop = {	type = peasants	size = 4.145	culture = northumbrian	religion = catholic }
 }
 pontefract = {
-	define_pop = {	type = peasants	size = 9.427	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 9.427	culture = norse_gael religion = norse }
 	define_pop = {	type = peasants	size = 4.713	culture = northumbrian	religion = catholic }
 }
 skipton = {
 	define_pop = {	type = peasants	size = 8.053	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.026	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 4.026	culture = norse_gael religion = norse }
 }
 wakefield = {
-	define_pop = {	type = peasants	size = 8.506	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 8.506	culture = norse_gael religion = norse }
 	define_pop = {	type = peasants	size = 4.253	culture = northumbrian	religion = catholic }
 }
 doncaster = {
-	define_pop = {	type = peasants	size = 10.560	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 10.560	culture = norse_gael religion = norse }
 	define_pop = {	type = peasants	size = 5.280	culture = northumbrian	religion = catholic }
 }
 ripon = {
 	define_pop = {	type = peasants	size = 9.548	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.773	culture = english	religion = catholic }
+	define_pop = {	type = peasants	size = 4.773	culture = norse_gael religion = norse }
 }
 pennines_04 = {
 }
@@ -8207,113 +8209,113 @@ angers = {
 	define_pop = {	type = nobles	size = 0.032	culture = angevin	religion = catholic }
 	define_pop = {	type = clergy	size = 0.114	culture = angevin	religion = catholic }
 	define_pop = {	type = burghers	size = 4.424	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 51.832	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 41.832	culture = angevin	religion = catholic }
 }
 bauge = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 46.535	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 36.535	culture = angevin	religion = catholic }
 }
 beaupreau = {
-	define_pop = {	type = peasants	size = 31.264	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 21.264	culture = angevin	religion = catholic }
 }
 chateau_gontier = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 40.941	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 30.941	culture = angevin	religion = catholic }
 }
 le_lude = {
-	define_pop = {	type = peasants	size = 27.582	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 17.582	culture = angevin	religion = catholic }
 }
 loudun = {
 	define_pop = {	type = clergy	size = 0.009	culture = poitevin	religion = catholic }
 	define_pop = {	type = peasants	size = 24.724	culture = poitevin	religion = catholic }
-	define_pop = {	type = peasants	size = 13.313	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 3.313	culture = french	religion = catholic }
 }
 passavant = {
-	define_pop = {	type = peasants	size = 36.529	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 26.529	culture = angevin	religion = catholic }
 }
 saumur = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 45.719	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 35.719	culture = angevin	religion = catholic }
 }
 mayenne = {
 	define_pop = {	type = nobles	size = 0.018	culture = angevin	religion = catholic }
 	define_pop = {	type = clergy	size = 0.019	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 36.092	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 26.092	culture = angevin	religion = catholic }
 }
 laval = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 37.017	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 27.017	culture = angevin	religion = catholic }
 }
 sainte_suzanne = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 15.452	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 5.452	culture = angevin	religion = catholic }
 }
 villaines = {
-	define_pop = {	type = peasants	size = 27.693	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 17.693	culture = angevin	religion = catholic }
 }
 le_mans = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 41.793	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 31.793	culture = angevin	religion = catholic }
 	define_pop = {	type = peasants	size = 1.433	culture = ashkenazi	religion = judaism }
 }
 beaumont_au_maine = {
 	define_pop = {	type = clergy	size = 0.009	culture = angevin	religion = catholic }
-	define_pop = {	type = peasants	size = 32.604	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 22.604	culture = angevin	religion = catholic }
 }
 chateau_du_loir = {
-	define_pop = {	type = peasants	size = 26.596	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 16.596	culture = angevin	religion = catholic }
 }
 sable = {
-	define_pop = {	type = peasants	size = 37.670	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 27.670	culture = angevin	religion = catholic }
 }
 st_calais = {
-	define_pop = {	type = peasants	size = 35.973	culture = angevin	religion = catholic }
+	define_pop = {	type = peasants	size = 25.973	culture = angevin	religion = catholic }
 }
 mortagne = {
 	define_pop = {	type = nobles	size = 0.006	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 26.288	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 16.288	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 17.525	culture = angevin	religion = catholic }
 }
 alluyes = {
 	define_pop = {	type = clergy	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 14.743	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 4.743	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 4.914	culture = angevin	religion = catholic }
 }
 belleme = {
 	define_pop = {	type = nobles	size = 0.006	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 24.553	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 14.553	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 16.368	culture = angevin	religion = catholic }
 }
 senonches = {
-	define_pop = {	type = peasants	size = 20.443	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 10.443	culture = french	religion = catholic }
 }
 clermont = {
 	define_pop = {	type = nobles	size = 0.025	culture = auvergnat	religion = catharism }
 	define_pop = {	type = clergy	size = 0.085	culture = auvergnat	religion = catharism }
 	define_pop = {	type = burghers	size = 1.998	culture = auvergnat	religion = catharism }
-	define_pop = {	type = peasants	size = 28.171	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 18.171	culture = auvergnat	religion = catharism }
 	define_pop = {	type = peasants	size = 0.788	culture = sephardi	religion = judaism }
 }
 allegre = {
-	define_pop = {	type = peasants	size = 29.103	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 19.103	culture = auvergnat	religion = catharism }
 }
 brioude = {
 	define_pop = {	type = clergy	size = 0.009	culture = auvergnat	religion = catharism }
-	define_pop = {	type = peasants	size = 47.766	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 37.766	culture = auvergnat	religion = catharism }
 }
 riom = {
 	define_pop = {	type = nobles	size = 0.019	culture = auvergnat	religion = catharism }
 	define_pop = {	type = clergy	size = 0.019	culture = auvergnat	religion = catharism }
-	define_pop = {	type = peasants	size = 26.580	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 16.580	culture = auvergnat	religion = catharism }
 	define_pop = {	type = peasants	size = 5.530	culture = berrichon	religion = catharism }
 }
 thiers = {
 	define_pop = {	type = clergy	size = 0.009	culture = auvergnat	religion = catharism }
-	define_pop = {	type = peasants	size = 31.062	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 21.062	culture = auvergnat	religion = catharism }
 	define_pop = {	type = peasants	size = 1.634	culture = auvergnat	religion = waldensian }
 }
 vic_le_comte = {
-	define_pop = {	type = peasants	size = 26.681	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 16.681	culture = auvergnat	religion = catharism }
 }
 vodable = {
 	define_pop = {	type = nobles	size = 0.009	culture = auvergnat	religion = catharism }
@@ -8323,28 +8325,28 @@ vodable = {
 bourbon = {
 	define_pop = {	type = nobles	size = 0.008	culture = berrichon	religion = catharism }
 	define_pop = {	type = clergy	size = 0.019	culture = berrichon	religion = catharism }
-	define_pop = {	type = peasants	size = 39.747	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 29.747	culture = berrichon	religion = catharism }
 }
 huriel = {
 	define_pop = {	type = clergy	size = 0.009	culture = berrichon	religion = catharism }
-	define_pop = {	type = peasants	size = 49.891	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 39.891	culture = berrichon	religion = catharism }
 }
 jaligny = {
-	define_pop = {	type = peasants	size = 22.059	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 12.059	culture = berrichon	religion = catharism }
 }
 molins = {
 	define_pop = {	type = clergy	size = 0.009	culture = berrichon	religion = catharism }
-	define_pop = {	type = peasants	size = 24.333	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 14.333	culture = berrichon	religion = catharism }
 }
 montlucon = {
 	define_pop = {	type = clergy	size = 0.009	culture = limousin	religion = catharism }
-	define_pop = {	type = peasants	size = 38.102	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 28.102	culture = berrichon	religion = catharism }
 }
 st_gerand = {
-	define_pop = {	type = peasants	size = 19.785	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 9.785	culture = berrichon	religion = catharism }
 }
 vichy = {
-	define_pop = {	type = peasants	size = 25.621	culture = berrichon	religion = catharism }
+	define_pop = {	type = peasants	size = 15.621	culture = berrichon	religion = catharism }
 }
 chambon = {
 	define_pop = {	type = peasants	size = 13.358	culture = limousin	religion = catharism }
@@ -8355,7 +8357,7 @@ herment = {
 	define_pop = {	type = peasants	size = 6.262	culture = limousin	religion = catharism }
 }
 montaigut = {
-	define_pop = {	type = peasants	size = 33.424	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 23.424	culture = auvergnat	religion = catharism }
 	define_pop = {	type = peasants	size = 5.776	culture = berrichon	religion = catharism }
 }
 tour_auvergne = {
@@ -8377,7 +8379,7 @@ saint_flour = {
 	define_pop = {	type = nobles	size = 0.013	culture = auvergnat	religion = catharism }
 	define_pop = {	type = clergy	size = 0.085	culture = auvergnat	religion = catharism }
 	define_pop = {	type = burghers	size = 1.998	culture = auvergnat	religion = catharism }
-	define_pop = {	type = peasants	size = 39.719	culture = auvergnat	religion = catharism }
+	define_pop = {	type = peasants	size = 29.719	culture = auvergnat	religion = catharism }
 }
 quimper = {
 	define_pop = {	type = clergy	size = 0.009	culture = breton	religion = catholic }
@@ -8399,20 +8401,20 @@ nantes = {
 	define_pop = {	type = nobles	size = 0.012	culture = gallo	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = gallo	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = gallo	religion = catholic }
-	define_pop = {	type = peasants	size = 35.387	culture = gallo	religion = catholic }
+	define_pop = {	type = peasants	size = 25.387	culture = gallo	religion = catholic }
 	define_pop = {	type = peasants	size = 6.394	culture = breton	religion = catholic }
 }
 blain = {
-	define_pop = {	type = peasants	size = 40.139	culture = gallo	religion = catholic }
+	define_pop = {	type = peasants	size = 30.139	culture = gallo	religion = catholic }
 	define_pop = {	type = peasants	size = 7.254	culture = breton	religion = catholic }
 }
 chateaubriant = {
 	define_pop = {	type = clergy	size = 0.009	culture = gallo	religion = catholic }
-	define_pop = {	type = peasants	size = 48.569	culture = gallo	religion = catholic }
+	define_pop = {	type = peasants	size = 38.569	culture = gallo	religion = catholic }
 }
 guerande = {
 	define_pop = {	type = clergy	size = 0.009	culture = gallo	religion = catholic }
-	define_pop = {	type = peasants	size = 26.407	culture = gallo	religion = catholic }
+	define_pop = {	type = peasants	size = 16.407	culture = gallo	religion = catholic }
 	define_pop = {	type = peasants	size = 8.802	culture = breton	religion = catholic }
 }
 machecoul = {
@@ -8609,39 +8611,39 @@ grancey = {
 }
 la_mothe_en_bassigny = {
 	define_pop = {	type = clergy	size = 0.009	culture = lorrain	religion = catholic }
-	define_pop = {	type = peasants	size = 24.074	culture = lorrain	religion = catholic }
+	define_pop = {	type = peasants	size = 14.074	culture = lorrain	religion = catholic }
 }
 langres = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 3.766	culture = burgundian	religion = catholic }
-	define_pop = {	type = peasants	size = 21.345	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 11.345	culture = champenais	religion = catholic }
 }
 vaucouleurs = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 15.048	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 5.048	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 5.016	culture = lorrain	religion = catholic }
 }
 meaux = {
-	define_pop = {	type = peasants	size = 37.748	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 27.748	culture = french	religion = catholic }
 }
 broyes = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 46.388	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 36.388	culture = champenais	religion = catholic }
 }
 chateau_thierry = {
 	define_pop = {	type = peasants	size = 30.900	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 16.898	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 6.898	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.482	culture = ashkenazi	religion = judaism }
 }
 nogent_sur_seine = {
 	define_pop = {	type = peasants	size = 17.149	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 9.378	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 3.378	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.267	culture = ashkenazi	religion = judaism }
 }
 provins = {
 	define_pop = {	type = nobles	size = 0.016	culture = french	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 22.112	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 12.112	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 3.996	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 0.532	culture = ashkenazi	religion = judaism }
 }
@@ -8649,7 +8651,7 @@ troyes = {
 	define_pop = {	type = nobles	size = 0.054	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.104	culture = champenais	religion = catholic }
 	define_pop = {	type = burghers	size = 4.424	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 37.974	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 27.974	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 0.968	culture = ashkenazi	religion = judaism }
 }
 brienne = {
@@ -8658,12 +8660,12 @@ brienne = {
 	define_pop = {	type = peasants	size = 6.677	culture = champenais	religion = catholic }
 }
 villemaur = {
-	define_pop = {	type = peasants	size = 21.195	culture = burgundian	religion = catholic }
+	define_pop = {	type = peasants	size = 11.195	culture = burgundian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.766	culture = champenais	religion = catholic }
 }
 vitry_en_pertois = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 36.629	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 26.629	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 0.441	culture = ashkenazi	religion = judaism }
 }
 joinville = {
@@ -8674,7 +8676,7 @@ joinville = {
 }
 bar_sur_aube = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 37.774	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 27.774	culture = champenais	religion = catholic }
 }
 rosnay = {
 	define_pop = {	type = peasants	size = 11.903	culture = champenais	religion = catholic }
@@ -8683,18 +8685,18 @@ reims = {
 	define_pop = {	type = nobles	size = 0.025	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = champenais	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 34.591	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 24.591	culture = champenais	religion = catholic }
 }
 chalons_champagne = {
 	define_pop = {	type = nobles	size = 0.016	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = champenais	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 21.811	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 11.811	culture = champenais	religion = catholic }
 }
 epernay = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 40.797	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 30.797	culture = champenais	religion = catholic }
 }
 menehould = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
@@ -8703,17 +8705,17 @@ menehould = {
 }
 vertus = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 26.289	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 16.289	culture = champenais	religion = catholic }
 }
 rethel = {
 	define_pop = {	type = nobles	size = 0.009	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.019	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 55.161	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 45.161	culture = champenais	religion = catholic }
 }
 chateau_porcien = {
 	define_pop = {	type = nobles	size = 0.009	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 42.751	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 32.751	culture = champenais	religion = catholic }
 }
 grandpre = {
 	define_pop = {	type = clergy	size = 0.009	culture = champenais	religion = catholic }
@@ -9078,43 +9080,43 @@ crepy = {
 	define_pop = {	type = peasants	size = 6.762	culture = picard	religion = catholic }
 }
 senlis = {
-	define_pop = {	type = peasants	size = 40.961	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 30.961	culture = french	religion = catholic }
 }
 nemours = {
-	define_pop = {	type = peasants	size = 45.011	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 25.011	culture = french	religion = catholic }
 }
 brie_comte_robert = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 25.559	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 15.559	culture = french	religion = catholic }
 }
 melun = {
-	define_pop = {	type = peasants	size = 29.491	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 19.491	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.297	culture = ashkenazi	religion = judaism }
 }
 paris = {
 	define_pop = {	type = nobles	size = 0.092	culture = french	religion = catholic }
 	define_pop = {	type = burghers	size = 4.187	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 236.071	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 206.071	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 14.042	culture = ashkenazi	religion = judaism }
 }
 corbeil = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 40.939	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 30.939	culture = french	religion = catholic }
 }
 mantes = {
 	define_pop = {	type = clergy	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 22.626	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 12.626	culture = french	religion = catholic }
 }
 monfort_lamaury = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 28.554	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 18.554	culture = french	religion = catholic }
 }
 montmorency = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 34.646	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 24.646	culture = french	religion = catholic }
 }
 soissons = {
-	define_pop = {	type = peasants	size = 29.208	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 19.208	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 7.393	culture = picard	religion = catholic }
 	define_pop = {	type = peasants	size = 0.706	culture = ashkenazi	religion = judaism }
 }
@@ -9133,7 +9135,7 @@ laon = {
 	define_pop = {	type = nobles	size = 0.016	culture = champenais	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = champenais	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = champenais	religion = catholic }
-	define_pop = {	type = peasants	size = 20.870	culture = champenais	religion = catholic }
+	define_pop = {	type = peasants	size = 10.870	culture = champenais	religion = catholic }
 	define_pop = {	type = peasants	size = 3.682	culture = picard	religion = catholic }
 }
 noyon = {
@@ -9594,20 +9596,20 @@ caen = {
 	define_pop = {	type = nobles	size = 0.022	culture = norman	religion = catholic }
 	define_pop = {	type = clergy	size = 0.085	culture = norman	religion = catholic }
 	define_pop = {	type = burghers	size = 1.998	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 58.901	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 48.901	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 2.104	culture = ashkenazi	religion = judaism }
 }
 bayeux = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 43.804	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 33.804	culture = norman	religion = catholic }
 }
 domfront = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 22.335	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 12.335	culture = norman	religion = catholic }
 }
 falaise = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 40.422	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 30.422	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 0.408	culture = ashkenazi	religion = judaism }
 }
 pont_douilly = {
@@ -9615,39 +9617,39 @@ pont_douilly = {
 }
 vire = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 23.248	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 13.248	culture = norman	religion = catholic }
 }
 fecamp = {
-	define_pop = {	type = peasants	size = 67.246	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 57.246	culture = norman	religion = catholic }
 }
 arques = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 40.668	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 30.668	culture = norman	religion = catholic }
 }
 aumale = {
 	define_pop = {	type = nobles	size = 0.009	culture = norman	religion = catholic }
 	define_pop = {	type = clergy	size = 0.019	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 25.309	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 15.309	culture = norman	religion = catholic }
 }
 longueville = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 21.963	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 11.963	culture = norman	religion = catholic }
 }
 tancarville = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 75.359	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 65.359	culture = norman	religion = catholic }
 }
 coutances = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 48.299	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 38.299	culture = norman	religion = catholic }
 }
 cherbourg = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 49.576	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 39.576	culture = norman	religion = catholic }
 }
 avranches = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 51.862	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 41.862	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 0.523	culture = ashkenazi	religion = judaism }
 }
 jersey = {
@@ -9657,62 +9659,62 @@ jersey = {
 }
 mortain = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 31.603	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 21.603	culture = norman	religion = catholic }
 }
 st_sauveur = {
-	define_pop = {	type = peasants	size = 50.103	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 40.103	culture = norman	religion = catholic }
 }
 evreux = {
 	define_pop = {	type = nobles	size = 0.019	culture = norman	religion = catholic }
 	define_pop = {	type = clergy	size = 0.019	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 35.542	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 25.542	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 3.993	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.398	culture = ashkenazi	religion = judaism }
 }
 alencon = {
 	define_pop = {	type = nobles	size = 0.009	culture = norman	religion = catholic }
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 45.137	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 35.137	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 7.965	culture = angevin	religion = catholic }
 }
 argentan = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 62.423	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 52.423	culture = norman	religion = catholic }
 }
 bernay = {
-	define_pop = {	type = peasants	size = 48.846	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 38.846	culture = norman	religion = catholic }
 }
 harcourt = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 44.253	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 34.253	culture = norman	religion = catholic }
 }
 laigle = {
-	define_pop = {	type = peasants	size = 36.234	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 26.234	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 6.394	culture = angevin	religion = catholic }
 }
 rouen = {
 	define_pop = {	type = nobles	size = 0.032	culture = norman	religion = catholic }
 	define_pop = {	type = clergy	size = 0.114	culture = norman	religion = catholic }
 	define_pop = {	type = burghers	size = 4.424	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 73.224	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 63.224	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 3.184	culture = ashkenazi	religion = judaism }
 }
 gisors = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 47.755	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 37.755	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 5.365	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.535	culture = ashkenazi	religion = judaism }
 }
 lisieux = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 56.314	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 46.314	culture = norman	religion = catholic }
 }
 louviers = {
-	define_pop = {	type = peasants	size = 29.774	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 19.774	culture = norman	religion = catholic }
 }
 pont_audemer = {
 	define_pop = {	type = clergy	size = 0.009	culture = norman	religion = catholic }
-	define_pop = {	type = peasants	size = 51.875	culture = norman	religion = catholic }
+	define_pop = {	type = peasants	size = 41.875	culture = norman	religion = catholic }
 	define_pop = {	type = peasants	size = 1.017	culture = ashkenazi	religion = judaism }
 }
 chateauroux = {
@@ -9753,7 +9755,7 @@ chartres = {
 	define_pop = {	type = peasants	size = 0.535	culture = ashkenazi	religion = judaism }
 }
 auneau = {
-	define_pop = {	type = peasants	size = 25.908	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 15.908	culture = french	religion = catholic }
 }
 dreux = {
 	define_pop = {	type = nobles	size = 0.025	culture = french	religion = catholic }
@@ -9763,7 +9765,7 @@ dreux = {
 }
 etampes = {
 	define_pop = {	type = nobles	size = 0.009	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 43.938	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 33.938	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.443	culture = ashkenazi	religion = judaism }
 }
 bourges = {
@@ -9773,7 +9775,7 @@ bourges = {
 	define_pop = {	type = peasants	size = 1.528	culture = ashkenazi	religion = judaism }
 }
 gien = {
-	define_pop = {	type = peasants	size = 16.109	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 6.109	culture = french	religion = catholic }
 }
 sancerre = {
 	define_pop = {	type = nobles	size = 0.019	culture = berrichon	religion = catholic }
@@ -9787,35 +9789,35 @@ vierzon = {
 	define_pop = {	type = peasants	size = 23.899	culture = berrichon	religion = catholic }
 }
 orleans = {
-	define_pop = {	type = peasants	size = 37.951	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 27.951	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 2.235	culture = ashkenazi	religion = judaism }
 }
 beaugency = {
-	define_pop = {	type = peasants	size = 36.456	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 26.456	culture = french	religion = catholic }
 }
 montargis = {
-	define_pop = {	type = peasants	size = 23.544	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 13.544	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 10.236	culture = burgundian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.340	culture = ashkenazi	religion = judaism }
 }
 sully = {
-	define_pop = {	type = peasants	size = 36.394	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 26.394	culture = french	religion = catholic }
 }
 vitry_aux_loges = {
-	define_pop = {	type = peasants	size = 35.209	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 25.209	culture = french	religion = catholic }
 }
 tours = {
-	define_pop = {	type = peasants	size = 63.307	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 53.307	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 1.957	culture = ashkenazi	religion = judaism }
 }
 amboise = {
-	define_pop = {	type = peasants	size = 22.328	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 12.328	culture = french	religion = catholic }
 }
 chatillon_sur_indre = {
 	define_pop = {	type = peasants	size = 29.568	culture = berrichon	religion = catholic }
 }
 chinon = {
-	define_pop = {	type = peasants	size = 40.121	culture = french	religion = catholic }
+	define_pop = {	type = peasants	size = 30.121	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.404	culture = ashkenazi	religion = judaism }
 }
 loches = {
@@ -10622,31 +10624,31 @@ toro = {
 }
 avila = {
 	define_pop = {	type = clergy	size = 0.051	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 36.688	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 26.688	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.236	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.297	culture = andalusi	religion = sunni }
 }
 adrada = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 18.775	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.775	culture = castilian	religion = catholic }
 }
 arevalo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 31.922	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 21.922	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.750	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 4.882	culture = andalusi	religion = sunni }
 }
 las_navas = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.610	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.610	culture = castilian	religion = catholic }
 }
 oropesa = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 11.665	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.665	culture = castilian	religion = catholic }
 }
 villatoro = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 26.449	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.449	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.327	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.162	culture = andalusi	religion = sunni }
 }
@@ -10659,13 +10661,13 @@ burgos = {
 	define_pop = {	type = burghers	size = 0.333	culture = sephardi	religion = judaism }
 	define_pop = {	type = burghers	size = 0.110	culture = french	religion = catholic }
 	define_pop = {	type = burghers	size = 0.110	culture = gascon	religion = catholic }
-	define_pop = {	type = peasants	size = 33.501	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 13.501	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.750	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.761	culture = andalusi	religion = sunni }
 }
 briviesca = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 31.456	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 11.456	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.714	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.789	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 1.859	culture = basque	religion = catholic }
@@ -10673,7 +10675,7 @@ briviesca = {
 logrono = {
 	define_pop = {	type = nobles	size = 0.017	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.223	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 35.129	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 25.129	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.845	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.375	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.375	culture = gascon	religion = catholic }
@@ -10681,87 +10683,87 @@ logrono = {
 }
 miranda_de_ebro = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 21.837	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 11.837	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.977	culture = basque	religion = catholic }
 }
 najera = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 27.417	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 17.417	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.663	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 4.849	culture = basque	religion = catholic }
 }
 villarcayo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 25.063	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 15.063	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.262	culture = basque	religion = catholic }
 }
 demanda_range = {
 }
 lerma = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 30.199	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 20.199	culture = castilian	religion = catholic }
 }
 aranda_de_duero = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 30.815	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 20.815	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.423	culture = andalusi	religion = sunni }
 }
 castrojeriz = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 24.227	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 14.227	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.426	culture = sephardi	religion = judaism }
 }
 sto_domingo_silos = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 20.543	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 10.543	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.281	culture = andalusi	religion = sunni }
 }
 villadiego = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 21.645	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 11.645	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.334	culture = sephardi	religion = judaism }
 }
 palencia = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 37.336	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 27.336	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.766	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.382	culture = andalusi	religion = sunni }
 }
 aguilar_de_campoo = {
 	define_pop = {	type = nobles	size = 0.025	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.785	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.785	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.613	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.070	culture = leonese	religion = catholic }
 }
 carrion_de_los_condes = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 20.708	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 10.708	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.240	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.240	culture = gascon	religion = catholic }
 	define_pop = {	type = peasants	size = 2.889	culture = leonese	religion = catholic }
 }
 monzon_campos = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 26.875	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 16.875	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.721	culture = sephardi	religion = judaism }
 }
 palenzuela = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 26.683	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 16.683	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.604	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.030	culture = andalusi	religion = sunni }
 }
 saldana = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.449	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.449	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.225	culture = french	religion = catholic }
 	define_pop = {	type = peasants	size = 0.225	culture = gascon	religion = catholic }
 	define_pop = {	type = peasants	size = 2.713	culture = leonese	religion = catholic }
 }
 reinosa = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.802	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.802	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 4.933	culture = leonese	religion = catholic }
 }
 segovia = {
@@ -10769,29 +10771,29 @@ segovia = {
 	define_pop = {	type = clergy	size = 0.077	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.361	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.445	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 42.569	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 32.569	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.434	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.826	culture = andalusi	religion = sunni }
 }
 cuellar = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 37.865	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 27.865	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 4.302	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 0.859	culture = sephardi	religion = judaism }
 }
 fuentiduena = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 35.362	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 25.362	culture = castilian	religion = catholic }
 }
 pedraza = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 30.891	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 20.891	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.207	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.199	culture = andalusi	religion = sunni }
 }
 sepulveda = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 50.079	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 40.079	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.503	culture = andalusi	religion = sunni }
 }
 eastern_central_system1 = {
@@ -10802,52 +10804,52 @@ eastern_central_system3 = {
 }
 soria = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 25.466	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 15.466	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.868	culture = sephardi	religion = judaism }
 }
 agreda = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.132	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.132	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.160	culture = andalusi	religion = sunni }
 }
 almazan = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.000	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.000	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.999	culture = andalusi	religion = sunni }
 }
 arnedo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 32.472	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 22.472	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.760	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.903	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 2.947	culture = basque	religion = catholic }
 }
 berlanga = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.161	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.161	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.411	culture = andalusi	religion = sunni }
 }
 burgo_de_osma = {
 	define_pop = {	type = clergy	size = 0.051	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.917	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.917	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.875	culture = andalusi	religion = sunni }
 }
 calahorra = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 33.762	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 23.762	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.791	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.981	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 3.102	culture = basque	religion = catholic }
 }
 calatanazor = {
 	define_pop = {	type = clergy	size = 0.051	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.792	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.792	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.920	culture = andalusi	religion = sunni }
 }
 medinaceli = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.731	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.731	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.197	culture = andalusi	religion = sunni }
 }
 urbion_peaks = {
@@ -10859,13 +10861,13 @@ santander = {
 	define_pop = {	type = burghers	size = 0.036	culture = english	religion = catholic }
 	define_pop = {	type = burghers	size = 0.036	culture = low_franconian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.036	culture = gascon	religion = catholic }
-	define_pop = {	type = peasants	size = 26.695	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 16.695	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 17.796	culture = leonese	religion = catholic }
 }
 laredo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.430	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 31.944	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 21.944	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.375	culture = english	religion = catholic }
 	define_pop = {	type = peasants	size = 0.375	culture = gascon	religion = catholic }
 	define_pop = {	type = peasants	size = 0.751	culture = sephardi	religion = judaism }
@@ -10881,7 +10883,7 @@ san_vicente_barquera = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.430	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 6.283	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 25.136	culture = leonese	religion = catholic }
+	define_pop = {	type = peasants	size = 15.136	culture = leonese	religion = catholic }
 }
 picos_de_europa = {
 }
@@ -10891,13 +10893,13 @@ valladolid = {
 	define_pop = {	type = burghers	size = 2.936	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.640	culture = sephardi	religion = judaism }
 	define_pop = {	type = burghers	size = 0.640	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 32.886	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 22.886	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.739	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.702	culture = andalusi	religion = sunni }
 }
 medina_de_rioseco = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 20.881	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 10.881	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.580	culture = leonese	religion = catholic }
 }
 medina_del_campo = {
@@ -10905,19 +10907,19 @@ medina_del_campo = {
 	define_pop = {	type = clergy	size = 0.077	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.361	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.445	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 41.720	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 31.720	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.944	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 4.731	culture = andalusi	religion = sunni }
 }
 penafiel = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 30.871	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 20.871	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.699	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.506	culture = andalusi	religion = sunni }
 }
 tordesillas = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 29.163	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 19.163	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.655	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 3.283	culture = andalusi	religion = sunni }
 }
@@ -10992,12 +10994,12 @@ merida = {
 }
 azuaga = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.474	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.474	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.361	culture = sephardi	religion = judaism }
 }
 llerena = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 18.096	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.096	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.406	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.829	culture = andalusi	religion = sunni }
 }
@@ -11015,13 +11017,13 @@ montanchez = {
 }
 zafra = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 15.213	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.213	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.341	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.538	culture = andalusi	religion = sunni }
 }
 plasencia = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 18.432	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.432	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.414	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.863	culture = andalusi	religion = sunni }
 }
@@ -11042,31 +11044,31 @@ jaraicejo = {
 }
 valverde = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.157	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.157	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.352	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.175	culture = andalusi	religion = sunni }
 }
 trujillo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.614	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.614	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.305	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.376	culture = andalusi	religion = sunni }
 }
 escurial = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.861	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.861	culture = castilian	religion = catholic }
 }
 herrera = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.332	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.332	culture = castilian	religion = catholic }
 }
 puebla_de_alcocer = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.339	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.339	culture = castilian	religion = catholic }
 }
 villanueva_de_la_serena = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.783	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.783	culture = castilian	religion = catholic }
 }
 belalcazar = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
@@ -11074,13 +11076,13 @@ belalcazar = {
 }
 medellin = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 18.569	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.569	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.416	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.877	culture = andalusi	religion = sunni }
 }
 zalamea = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.559	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.559	culture = castilian	religion = catholic }
 }
 vitoria = {
 	define_pop = {	type = nobles	size = 0.008	culture = basque	religion = catholic }
@@ -12152,7 +12154,7 @@ torres_novas = {
 }
 alarcon = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.884	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.884	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.540	culture = andalusi	religion = sunni }
 }
 belmonte = {
@@ -12162,29 +12164,29 @@ belmonte = {
 }
 iniesta = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.162	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.162	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.349	culture = andalusi	religion = sunni }
 }
 jorquera = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.331	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.331	culture = castilian	religion = catholic }
 }
 moya = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 11.743	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.743	culture = castilian	religion = catholic }
 }
 san_clemente = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.018	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.018	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.654	culture = andalusi	religion = sunni }
 }
 requena = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.065	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.065	culture = castilian	religion = catholic }
 }
 alcaraz = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.649	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.649	culture = castilian	religion = catholic }
 }
 lezuza = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
@@ -12192,11 +12194,11 @@ lezuza = {
 }
 alhambra_location = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.027	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.027	culture = castilian	religion = catholic }
 }
 montiel = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 11.036	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.036	culture = castilian	religion = catholic }
 }
 villapalacios = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
@@ -12209,66 +12211,66 @@ villarobledo = {
 guadalajara = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 22.718	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 12.718	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.465	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.231	culture = andalusi	religion = sunni }
 }
 brihuega = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.549	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.549	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.124	culture = andalusi	religion = sunni }
 }
 buitrago_de_lozoya = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 23.585	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 13.585	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.235	culture = andalusi	religion = sunni }
 }
 cobeta = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 15.046	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.046	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.150	culture = andalusi	religion = sunni }
 }
 siguenza = {
 	define_pop = {	type = clergy	size = 0.051	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 23.988	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 13.988	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.486	culture = sephardi	religion = judaism }
 }
 zorita = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 11.727	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 1.727	culture = castilian	religion = catholic }
 }
 cuenca = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.051	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.175	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.175	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.320	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.607	culture = andalusi	religion = sunni }
 }
 beteta = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.001	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 3.001	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.442	culture = andalusi	religion = sunni }
 }
 canete = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 10.785	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.785	culture = castilian	religion = catholic }
 }
 huete = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.929	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.929	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.338	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.695	culture = andalusi	religion = sunni }
 }
 molina_de_aragon = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.948	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.948	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.881	culture = andalusi	religion = sunni }
 }
 pareja = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 10.663	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.663	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.241	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.211	culture = andalusi	religion = sunni }
 }
@@ -12283,7 +12285,7 @@ iberian_system = {
 madrid = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 29.348	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 19.348	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 2.256	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.644	culture = andalusi	religion = sunni }
 }
@@ -12291,51 +12293,51 @@ alcala_de_henares = {
 	define_pop = {	type = nobles	size = 0.011	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.120	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.807	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.121	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.121	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.662	culture = andalusi	religion = sunni }
 }
 colmenar = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 16.169	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 6.169	culture = castilian	religion = catholic }
 }
 el_escorial = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 15.314	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 5.314	culture = castilian	religion = catholic }
 }
 maqueda = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.379	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.379	culture = castilian	religion = catholic }
 }
 ocana = {
 	define_pop = {	type = clergy	size = 0.180	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 22.753	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 12.753	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.906	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 4.540	culture = andalusi	religion = sunni }
 }
 alcazar_de_san_juan = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.375	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.375	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.355	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.177	culture = andalusi	religion = sunni }
 }
 chinchon = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.837	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.837	culture = castilian	religion = catholic }
 }
 consuegra = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.125	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.125	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.349	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.173	culture = andalusi	religion = sunni }
 }
 tomelloso = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.477	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.477	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.940	culture = andalusi	religion = sunni }
 }
 ucles = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.947	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.947	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.451	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 2.266	culture = andalusi	religion = sunni }
 }
@@ -12345,7 +12347,7 @@ toledo = {
 	define_pop = {	type = burghers	size = 2.718	culture = castilian	religion = catholic }
 	define_pop = {	type = burghers	size = 0.642	culture = sephardi	religion = judaism }
 	define_pop = {	type = burghers	size = 0.642	culture = french	religion = catholic }
-	define_pop = {	type = peasants	size = 58.348	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 48.348	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.966	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 5.244	culture = andalusi	religion = sunni }
 }
@@ -12358,23 +12360,23 @@ guadalupe = {
 illescas = {
 	define_pop = {	type = nobles	size = 0.008	culture = castilian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.512	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.512	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.115	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.318	culture = andalusi	religion = sunni }
 }
 los_yebenes = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.046	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.046	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.337	culture = andalusi	religion = sunni }
 }
 navalucillos = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.813	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 2.813	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 1.422	culture = andalusi	religion = sunni }
 }
 puebla_de_montalban = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 26.848	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 16.848	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.268	culture = andalusi	religion = sunni }
 }
 puente_arzobispo = {
@@ -12384,12 +12386,12 @@ puente_arzobispo = {
 }
 talavera_de_la_reina = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 28.686	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 18.686	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.588	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 0.293	culture = andalusi	religion = sunni }
 }
 ciudad_real = {
-	define_pop = {	type = peasants	size = 18.755	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.755	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.377	culture = sephardi	religion = judaism }
 }
 almaden = {
@@ -12399,25 +12401,25 @@ almaden = {
 }
 almodovar_del_campo = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 17.649	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 7.649	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.358	culture = sephardi	religion = judaism }
 }
 calatrava = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.311	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.311	culture = castilian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.326	culture = sephardi	religion = judaism }
 }
 malagon = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 14.859	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 4.859	culture = castilian	religion = catholic }
 }
 manzanares = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 18.699	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 8.699	culture = castilian	religion = catholic }
 }
 puertollano = {
 	define_pop = {	type = clergy	size = 0.008	culture = castilian	religion = catholic }
-	define_pop = {	type = peasants	size = 19.246	culture = castilian	religion = catholic }
+	define_pop = {	type = peasants	size = 9.246	culture = castilian	religion = catholic }
 }
 madrona_range = {
 }
@@ -12446,7 +12448,7 @@ jerez_de_la_frontera = {
 	define_pop = {	type = clergy	size = 0.077	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 1.585	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 0.222	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 11.540	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 6.540	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 0.393	culture = sephardi	religion = judaism }
 }
 medina_sidonia = {
@@ -12470,7 +12472,7 @@ cordoba = {
 	define_pop = {	type = clergy	size = 0.223	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 3.145	culture = andalusi	religion = sunni }
 	define_pop = {	type = burghers	size = 0.857	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 41.907	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 31.907	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 0.945	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 4.734	culture = castilian	religion = catholic }
 }
@@ -12487,7 +12489,7 @@ carpio = {
 }
 espiel = {
 	define_pop = {	type = clergy	size = 0.008	culture = andalusi	religion = sunni }
-	define_pop = {	type = peasants	size = 16.824	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 6.824	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 0.379	culture = sephardi	religion = judaism }
 	define_pop = {	type = peasants	size = 1.901	culture = castilian	religion = catholic }
 }
@@ -12497,7 +12499,7 @@ fuenteovejuna = {
 }
 lucena = {
 	define_pop = {	type = clergy	size = 0.008	culture = andalusi	religion = sunni }
-	define_pop = {	type = peasants	size = 16.578	culture = andalusi	religion = sunni }
+	define_pop = {	type = peasants	size = 6.578	culture = andalusi	religion = sunni }
 	define_pop = {	type = peasants	size = 0.335	culture = sephardi	religion = judaism }
 }
 palma_del_rio = {
@@ -26478,7 +26480,7 @@ constantinople = {
 	define_pop = {	type = burghers	size = 7.029	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = burghers	size = 0.589	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = burghers	size = 1.322	culture = romanyoti	religion = judaism }
-	define_pop = {	type = peasants	size = 303.086	culture = greek_culture	religion = orthodox }
+	define_pop = {	type = peasants	size = 253.086	culture = greek_culture	religion = orthodox }
 	define_pop = {	type = peasants	size = 3.186	culture = armenian_culture	religion = miaphysite }
 	define_pop = {	type = peasants	size = 4.273	culture = romanyoti	religion = judaism }
 }

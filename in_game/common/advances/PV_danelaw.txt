@@ -8,6 +8,22 @@ warrir_aristocracy = {
 
 	requires = unlock_armored_horsemen_advance
 }
+
+noanta = {
+	age = age_1_traditions
+	icon = organized_religion
+	potential = {
+		or = {
+			has_or_had_tag = P01
+			has_or_had_tag = TOU
+		}
+
+	}
+	antagonism_received_modifier = -0.25
+
+	requires = unlock_armored_horsemen_advance
+}
+
 viking_heritage = {
 	age = age_1_traditions
 	icon = warriors_unity
@@ -19,6 +35,7 @@ viking_heritage = {
 	
 	requires = mapmaking
 }
+
 
 
 legacy_of_great_warriors = {
