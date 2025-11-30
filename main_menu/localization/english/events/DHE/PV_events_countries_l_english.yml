@@ -12,7 +12,7 @@
  daneflavor.3.desc: "Lincún, or [ShowLocationName('lincoln')] as the English call it, was a key [ROOT.GetCountry.GetAdjective] city of the [ROOT.GetCountry.GetName] for centuries before finally being lost to the invasor.\nMay the Gods have mercy!"
  daneflavor.3.a: "Hard times are ahead of us"
  daneflavor.4.title: "Rebuilding [ShowLocationName('leicester')]"
- daneflavor.4.desc: "[ShowLocationName('`')], one of the five founding boroughs, has, after decades of neglect by the English authorities, been reduced to an abandoned and forgotten land. Fortunately, a group of aristocrats from the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|l] has assembled nearly sufficient funds to undertake the restoration of the town and restore it to its former glory; however, they require a modest contribution from the state to initiate the project."
+ daneflavor.4.desc: "[ShowLocationName('leicester')], one of the five founding boroughs, has, after decades of neglect by the English authorities, been reduced to an abandoned and forgotten land. Fortunately, a group of aristocrats from the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|l] has assembled nearly sufficient funds to undertake the restoration of the town and restore it to its former glory; however, they require a modest contribution from the state to initiate the project."
  daneflavor.4.a: "[ShowLocationName('leicester')] shall be restored!"
  daneflavor.4.b: "We cannot afford that."
  daneflavor.4.c: "Those funds will better used in the hands of the state."

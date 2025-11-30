@@ -15,6 +15,13 @@
 			country_rank_is_duchy = yes
 		}
 	}
+	text = {#PV
+		localization_key = rank_empire_nordsee
+		trigger = {
+			tag = NSE
+			country_rank_is_kingdom = yes
+		}
+	}
 	text = {
 		localization_key = rank_kingdom_east_frankia
 		trigger = {

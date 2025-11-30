@@ -1,0 +1,10 @@
+TRY_INJECT:winter_mild = {
+	local_monthly_food_modifier = -0.2
+}
+
+TRY_INJECT:winter_normal = {
+	local_monthly_food_modifier = -0.35
+}
+TRY_INJECT:winter_severe = {
+	local_monthly_food_modifier = -0.5
+}

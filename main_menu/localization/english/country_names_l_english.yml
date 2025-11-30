@@ -75,6 +75,8 @@
  P01_ADJ: "Danelaw"
  P01_abbreviation: "D."
  rank_empire_danelaw: "Administration"
+ rank_empire_nordsee: "Kingdom"
+ rank_empire_nordsee_prefix: "High"
 
  DUMMY: "(placeholder)"
  DUMMY_ADJ: "(placeholder)"
