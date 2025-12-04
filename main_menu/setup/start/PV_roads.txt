@@ -6,5 +6,20 @@ road_network = {
 	lynn = thetford
 	thetford = norwich
 	bury = lavenham
-
+	cape_spear = bacalhieu
+	bacalhieu = placentia
+	bacalhieu = mollyhuajeck
+	mollyhuajeck = mekwiskajk
+	mekwiskajk = akilasiewakik
+	akilasiewakik = walnaypek
+	walnaypek = baie_verte
+	baie_verte = upsukdaskooch
+	upsukdaskooch = wipetikil
+	wipetikil = belle_isle
+	misha_shipu = kenamu
+	kenamu = aivitok
+	aivitok = inutsualak
+	inutsualak = natsitok
+	onekama = wequetong
+	wequetong = cheboygan
 }

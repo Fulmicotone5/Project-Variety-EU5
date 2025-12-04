@@ -1,84 +1,103 @@
 TRY_REPLACE:city_upgrade = {
 	scaled_gold = 35
 	min_scale = 2000
+	max_scale = 12000
 }
 
 TRY_REPLACE:town_upgrade = {
 	scaled_gold = 12
 	min_scale = 500
+	max_scale = 4000
 }
 
 TRY_REPLACE:expand_rgo_mining = {
 	scaled_gold = 1
 	min_scale = 40
+	max_scale = 400
 }
 
 TRY_REPLACE:expand_rgo_farming = {
 	scaled_gold = 1
 	min_scale = 35
+	max_scale = 400
 }
 
 TRY_REPLACE:expand_rgo_hunting = {
 	scaled_gold = 1
 	min_scale = 35
+	max_scale = 400
 }
 
 TRY_REPLACE:expand_rgo_gathering = {
 	scaled_gold = 1
 	min_scale = 35
+	max_scale = 400
 }
 
 TRY_REPLACE:expand_rgo_forestry = {
 	scaled_gold = 1
 	min_scale = 35
+	max_scale = 400
 }
 
 TRY_REPLACE:p_building_age_1_traditions = {
 	scaled_gold = 1
 	min_scale = 40
+	max_scale = 400
 }
 TRY_REPLACE:p_building_age_2_renaissance = {
 	scaled_gold = 2
 	min_scale = 100
+	max_scale = 1000
 }
 TRY_REPLACE:p_building_age_3_discovery = {
 	scaled_gold = 4
 	min_scale = 200
+	max_scale = 2000
 }
 TRY_REPLACE:p_building_age_4_reformation = {
 	scaled_gold = 8
 	min_scale = 400
+	max_scale = 4000
 }
 TRY_REPLACE:p_building_age_5_absolutism = {
 	scaled_gold = 16
 	min_scale = 800
+	max_scale = 8000
 }
 TRY_REPLACE:p_building_age_6_revolutions = {
 	scaled_gold = 25
 	min_scale = 1200
+	max_scale = 12000
 }
 
 TRY_REPLACE:p_expensive_building_age_1_traditions = {
 	scaled_gold = 3
 	min_scale = 200
+	max_scale = 2000
 }
 TRY_REPLACE:p_expensive_building_age_2_renaissance = {
 	scaled_gold = 6
 	min_scale = 400
+	max_scale = 4000
 }
 TRY_REPLACE:p_expensive_building_age_3_discovery = {
 	scaled_gold = 12
 	min_scale = 800
+	max_scale = 8000
 }
 TRY_REPLACE:p_expensive_building_age_4_reformation = {
 	scaled_gold = 24
 	min_scale = 1600
+	max_scale = 16000
 }
 TRY_REPLACE:p_expensive_building_age_5_absolutism = {
 	scaled_gold = 48
 	min_scale = 3200
+	max_scale = 32000
 }
 TRY_REPLACE:p_expensive_building_age_6_revolutions = {
 	scaled_gold = 60
 	min_scale = 5000
+	max_scale = 50000
 }

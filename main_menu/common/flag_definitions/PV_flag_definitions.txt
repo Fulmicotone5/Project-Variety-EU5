@@ -246,3 +246,52 @@ P01 = {
 		}
 	}	
 }
+P02 = { 
+	flag_definition = {
+		coa = P02
+		subject_canton = P02
+		priority = 1		
+	}	
+}
+P03 = { 
+	flag_definition = {
+		coa = P03
+		subject_canton = P03
+		priority = 1		
+	}	
+}
+P04 = { 
+	flag_definition = {
+		coa = P04
+		subject_canton = P04
+		priority = 1		
+	}	
+}
+F16 = {
+	flag_definition = {
+		coa = F16
+		subject_canton = F16
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F16_rep
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+}
+F17 = {
+	flag_definition = {
+		coa = F17
+		subject_canton = F17
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F17_rep
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+}

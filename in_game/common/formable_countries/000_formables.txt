@@ -1,6 +1,6 @@
 NSE_f = {
 	level = 3
-	required_locations_fraction = 0.05
+	required_locations_fraction = 0.5
 	rule = historical
 	 
 	potential = {

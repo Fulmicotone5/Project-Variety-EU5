@@ -43,3 +43,9 @@ colors = {
 colors = {
 	map_PVimpchu = rgb { 164 168 118 }
 }
+colors = {
+	map_PVvinland = rgb { 148 191 242 }
+}
+colors = {
+	map_F17 = rgb { 13 6 61 }
+}

@@ -3,7 +3,10 @@ sokeman = {
 	
 	
 	potential = {
-		has_or_had_tag = P01 
+		OR = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+		}
 	}
 	
 	can_revoke = {

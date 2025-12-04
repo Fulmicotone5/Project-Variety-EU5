@@ -616,3 +616,156 @@ F15_f = {
 		}
 	}
 }
+F16_f = {
+	level = 3
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		religion = religion:norse
+	}
+	allow = {
+		government_type = government_type:monarchy
+		NOT = {
+			has_estate_privilege = estate_privilege:tribal_autonomy
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:P02
+				this != c:P02
+			}
+			custom_tooltip = {
+				text = triggerP02
+				OR = {
+					tag = P02
+					NOT = { country_exists = c:P02 }
+					c:P02 = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:P03
+				this != c:P03
+			}
+			custom_tooltip = {
+				text = triggerP03
+				OR = {
+					tag = P03
+					NOT = { country_exists = c:P03 }
+					c:P03 = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:P04
+				this != c:P04
+			}
+			custom_tooltip = {
+				text = triggerP04
+				OR = {
+					tag = P04
+					NOT = { country_exists = c:P04 }
+					c:P04 = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:P05
+				this != c:P05
+			}
+			custom_tooltip = {
+				text = triggerP05
+				OR = {
+					tag = P05
+					NOT = { country_exists = c:P05 }
+					c:P05 = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:P06
+				this != c:P06
+			}
+			custom_tooltip = {
+				text = triggerP06
+				OR = {
+					tag = P06
+					NOT = { country_exists = c:P06 }
+					c:P06 = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+	}
+
+	
+	name = F16
+	flag = F16
+	adjective = F16_ADJ
+	tag = F16
+	color = map_PVvinland
+
+	regions = {
+		canada_region
+	}
+	areas = {
+		ohio_area
+        michigan_area
+        illinois_area
+        wisconsin_area
+        indiana_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F17_f = {
+	level = 4
+	required_locations_fraction = 0.5
+	rule = historical
+	 
+	potential = {
+		religion = religion:norse
+	}
+
+	allow = {
+		or = {
+			has_or_had_tag = NSE
+			has_or_had_tag = F16
+		}
+	}
+	
+	name = F17
+	flag = F17
+	adjective = F17_ADJ
+	tag = F17
+	color = map_F17
+
+	regions = {
+		great_britain_region
+		ireland_region
+		scandinavian_region
+		north_atlantic_islands_region
+		canada_region
+
+	}
+	areas = {
+		ohio_area
+        michigan_area
+        illinois_area
+        wisconsin_area
+        indiana_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}

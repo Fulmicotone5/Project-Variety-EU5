@@ -1,4 +1,18 @@
 locations={
+	#PV
+	wabuk = { rank = city 	town_setup = italian_coastal_city }
+	kuujjuarapik = { rank = city 	town_setup = italian_coastal_city }
+	misha_shipu = { rank = city 	town_setup = italian_coastal_city }
+	natsitok = { rank = town 			town_setup = italian_coastal_town }
+	akilasiewakik = { rank = town 			town_setup = italian_coastal_town }
+	bacalhieu = { rank = city 	town_setup = italian_coastal_city }
+	cape_spear = { rank = town 			town_setup = italian_coastal_town }
+	placentia = { rank = town 			town_setup = italian_coastal_town }
+	belle_isle = { rank = city 			town_setup = italian_trading_capital }
+	onekama = { rank = city 			town_setup = italian_trading_capital }
+	cheboygan = { rank = town 			town_setup = italian_coastal_town }
+	mississagi = { rank = town 			town_setup = italian_coastal_town }
+	uashat = { rank = city 	town_setup = italian_coastal_city }
 	
 	#sweden
 	stockholm = { rank = town 		town_setup = important_scandinavian_town }

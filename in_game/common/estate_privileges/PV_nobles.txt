@@ -125,7 +125,10 @@ vapnatak = {
 	estate = nobles_estate
 
 	potential = {
-		tag = P01
+		OR = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+		}
 	}
 
 	country_modifier = {

@@ -256,3 +256,34 @@ P01 = {
 	culture_definition = norse_gael
 	religion_definition = norse
 }
+
+P02 = {
+	color = rgb { 24 161 138 }
+
+	culture_definition = PV_vinlander
+	religion_definition = norse
+}
+P03 = {
+	color = rgb { 72 107 15 }
+
+	culture_definition = PV_vinlander
+	religion_definition = norse
+}
+P04 = {
+	color = rgb { 113 145 61 }
+
+	culture_definition = PV_vinlander
+	religion_definition = norse
+}
+P05 = {
+	color = rgb { 4 105 95 }
+
+	culture_definition = PV_vinlander
+	religion_definition = norse
+}
+P06 = {
+	color = rgb { 13 99 22 }
+
+	culture_definition = PV_vinlander
+	religion_definition = norse
+}

@@ -1,0 +1,18 @@
+PV_vinlander = {
+	language = icelandic_dialect
+	
+	color = rgb { 84 17 11 }
+	
+	tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+	opinions = {
+		icelandic = kindred
+		norwegian = kindred
+		norse_gael = positive
+	}
+	
+
+	use_patronym = yes
+
+	dynasty_name_type = patronym
+}

@@ -1,0 +1,32 @@
+TRY_INJECT:vassal = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:uc_bey = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:tusi = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:tributary = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:march = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:fiefdom = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:dominion = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}
+TRY_INJECT:appanage = {
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}

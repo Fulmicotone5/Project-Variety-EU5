@@ -114,16 +114,50 @@ centralized_authority = {
 	}
 
 	potential = {
-		has_or_had_tag = P01 
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 
 	allow = {
 		NOT = {
 			has_estate_privilege = estate_privilege:vapnatak
 		}
-		has_reform = government_reform:PV_five_bur
+		or = {
+			has_reform = government_reform:PV_five_bur
+			has_or_had_tag = P02
+		}
 	}	
 	
+
+	years = 2
+}
+
+PV_vinland = {
+	major = yes
+
+	country_modifier = {
+		colonial_maintenance_cost = -0.10
+		global_pop_conversion_speed_modifier = 0.25
+		global_integration_speed_modifier = 0.25
+		government_reform_slots = 1
+		capital_movement_cost_modifier = -0.25
+	}
+
+	potential = {
+		OR = {
+			has_or_had_tag = P02
+			has_or_had_tag = P03
+			has_or_had_tag = P04
+		}
+	}	
+	
+	
+	locked = {
+		always = yes
+	}
 
 	years = 2
 }

@@ -1,0 +1,96 @@
+legacy_of_exp = {
+	age = age_1_traditions
+	icon = maritime_advance_age_2
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+	}
+	exploration_maintenance_cost = -0.15
+	exploration_mission_speed = 0.2
+
+	requires = unlock_armored_horsemen_advance
+}
+
+the_new_world = {
+	age = age_2_renaissance
+	icon = ushkuiniks
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+
+	}
+	global_monthly_development = 0.002
+
+	requires = rgo_size_advance_renaissance
+}
+expanded_cabinetPV = {
+	age = age_2_renaissance
+	icon = cabinet_laws_advance
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+
+	}
+	government_size = 1
+
+	requires = bureaucracy_law_advance
+}
+frontier_colonizationPV = {
+	age = age_3_discovery
+	icon = colonies
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+	}
+	colonial_migration_size_modifier = 0.25
+	
+	requires = colonial_charters
+}
+continental_roads = {
+	age = age_3_discovery
+	icon = mountain_roads
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+	}
+	land_cost_on_distance_from_capital_modifier = -0.1
+	build_gravel_road_cost_modifier = -0.1
+	build_paved_road_cost_modifier = -0.1
+	build_modern_road_cost_modifier = -0.1
+
+	requires = frontier_colonizationPV
+}
+artic_cities = {
+	age = age_3_discovery
+	icon = hai_bustling_towns
+	potential = {
+		has_or_had_tag = P02
+	}
+	city_upgrade_cost_modifier = -0.1
+	town_upgrade_cost_modifier = -0.1
+
+	requires = crown_power_advance_discovery
+}
+a_new_motherland = {
+	age = age_4_reformation
+	icon = land_of_the_ancestors
+	potential = {
+		or = {
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
+	}
+	global_population_growth = 0.0005
+
+	requires = power_projection_advance_3
+}

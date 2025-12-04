@@ -2,7 +2,11 @@ warrir_aristocracy = {
 	age = age_1_traditions
 	icon = mandinka_warrior_spirit
 	potential = {
-		has_or_had_tag = P01
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 	army_infantry_power = 0.05
 
@@ -28,7 +32,11 @@ viking_heritage = {
 	age = age_1_traditions
 	icon = warriors_unity
 	potential = {
-		has_or_had_tag = P01
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 	army_reinforce_cost = -0.1
 	global_manpower_modifier = 0.1
@@ -42,7 +50,11 @@ legacy_of_great_warriors = {
 	age = age_1_traditions
 	icon = call_of_our_forefathers
 	potential = {
-		has_or_had_tag = P01
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 	land_morale_modifier = 0.1
 	monthly_army_tradition = 0.05
@@ -65,7 +77,11 @@ norse_renaissance = {
 	age = age_2_renaissance
 	icon = embellish_baroque_art
 	potential = {
-		has_or_had_tag = P01
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 	global_monthly_prosperity = 0.001
 
@@ -76,7 +92,11 @@ linguistic_dominance = {
 	age = age_3_discovery
 	icon = preserving_of_local_languages
 	potential = {
-		has_or_had_tag = P01
+		or = {
+			has_or_had_tag = P01 
+			has_or_had_tag = P02
+			has_or_had_tag = F17 
+		}
 	}
 	cultural_influence = 0.15
 	global_integration_speed_modifier = 0.2

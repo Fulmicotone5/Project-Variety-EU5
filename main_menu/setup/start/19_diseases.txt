@@ -96,6 +96,7 @@ disease_outbreak_manager = {
             polynesia_region
             micronesia_region
             melanesia_region
+            canada_region
         }
     }
     
@@ -136,6 +137,7 @@ disease_outbreak_manager = {
             xinjiang_region
             tibet_region
             hindustan_region
+            canada_region
         }
         areas = { provence_area }
     }
@@ -210,6 +212,7 @@ disease_outbreak_manager = {
             polynesia_region
             micronesia_region
             melanesia_region
+            canada_region
         }
     }
 
@@ -283,6 +286,7 @@ disease_outbreak_manager = {
             polynesia_region
             micronesia_region
             melanesia_region
+            canada_region
         }
     }
 
@@ -356,6 +360,7 @@ disease_outbreak_manager = {
             polynesia_region
             micronesia_region
             melanesia_region
+            canada_region
         }
     }
 
@@ -366,6 +371,16 @@ disease_outbreak_manager = {
 			europe
 			asia
 			africa
+        }
+        regions = {
+            canada_region
+        }
+        areas = {
+            ohio_area
+            michigan_area
+            illinois_area
+            wisconsin_area
+            indiana_area
         }
     }
 

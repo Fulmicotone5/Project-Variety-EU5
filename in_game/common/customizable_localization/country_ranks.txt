@@ -1,18 +1,46 @@
 ﻿country_flavor = {
 	type = country
-
+	text = {#PV
+		localization_key = rank_yarldom
+		trigger = {
+			country_rank_is_duchy = yes
+			OR = {
+				tag = P01
+				tag = P02
+			}
+		}
+	}
+	text = {#PV
+		localization_key = rank_morkdom
+		trigger = {
+			OR = {
+				is_subject_type = PV_morkdom
+				tag = P03
+				tag = P04
+			}
+		}
+	}
+	text = {#PV
+		localization_key = rank_hersirdom
+		trigger = {
+			OR = {
+				tag = P05
+				tag = P06
+			}
+		}
+	}
+	text = {#PV
+		localization_key = rank_empire_nordheim
+		trigger = {
+			government_type = government_type:monarchy
+			tag = F17
+		}
+	}
 	text = {#PV
 		localization_key = rank_empire_imperial_church
 		trigger = {
 			government_type = government_type:theocracy
 			tag = F15
-		}
-	}
-	text = {#PV
-		localization_key = rank_empire_danelaw
-		trigger = {
-			tag = P01
-			country_rank_is_duchy = yes
 		}
 	}
 	text = {#PV

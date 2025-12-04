@@ -138,7 +138,7 @@ daneflavor.4 = {
 
 	option = {
 		name = daneflavor.4.a
-		add_gold = -200
+		add_gold = -100
 		location:leicester = {
 			change_location_rank = location_rank:town
 			construct_building = {
@@ -196,7 +196,7 @@ daneflavor.5 = {
 
 	option = {
 		name = daneflavor.5.a
-		add_gold = -200
+		add_gold = -150
 		location:nottingham = {
 			change_location_rank = location_rank:town
 			construct_building = {
@@ -255,7 +255,7 @@ daneflavor.6 = {
 
 	option = {
 		name = daneflavor.6.a
-		add_gold = -200
+		add_gold = -150
 		location:derby = {
 			change_location_rank = location_rank:town
 			construct_building = {
@@ -313,7 +313,7 @@ daneflavor.7 = {
 
 	option = {
 		name = daneflavor.7.a
-		add_gold = -200
+		add_gold = -100
 		location:rutland = {
 			change_location_rank = location_rank:town
 			construct_building = {
@@ -395,7 +395,7 @@ daneflavor.8 = {
 				change_location_rank = location_rank:city
 			}
 		}
-		add_gold = -1000
+		add_gold = -800
 		set_capital = location:boston
 		change_societal_value = { type = land_vs_naval	value = 25	}
 		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }

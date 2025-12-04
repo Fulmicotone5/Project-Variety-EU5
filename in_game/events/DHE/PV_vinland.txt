@@ -1,0 +1,283 @@
+namespace = vinflavor
+vinflavor.1 = {
+	type = country_event
+	title = vinflavor.1.title
+	desc = vinflavor.1.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/columbian_exchange.dds"
+	dynamic_historical_event = {
+		tag = P02
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_or_had_tag = P02
+	}
+	option = {
+		name = vinflavor.1.a
+	}
+}
+
+vinflavor.2 = {
+	type = country_event
+	title = vinflavor.2.title
+	desc = vinflavor.2.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			event_illustration_estate_background_effect = {
+				background = estate_type:nobles_estate
+			}
+			scope:from = {
+				event_illustration_estate_foreground_effect = {
+					foreground = estate_type:nobles_estate
+				}
+			}
+		}
+	}
+	trigger = {
+		owns = location:bacalhieu
+		location:bacalhieu = {
+			is_capital = yes
+		}
+	}
+	option = {
+		name = vinflavor.2.a
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = -0.05
+		}
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = 0.1
+		}
+	}
+	option = {
+		name = vinflavor.2.b
+		trigger = {
+			owns = location:akilasiewakik
+		}
+		if = {
+			limit = {
+				location:akilasiewakik = {
+					NOT = {
+						location_rank = location_rank:city
+					}
+				}
+			}
+			location:akilasiewakik = {
+				change_location_rank = location_rank:city
+			}
+		}
+		add_gold = -800
+		set_capital = location:akilasiewakik
+	}
+	option = {
+		name = vinflavor.2.c
+		trigger = {
+			owns = location:belle_isle
+		}
+		set_capital = location:belle_isle
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = 0.15
+		}
+	}
+	option = {
+		name = vinflavor.2.d
+		trigger = {
+			owns = location:uashat
+		}
+		set_capital = location:uashat
+		change_societal_value = {
+			type = land_vs_naval
+			value = 25
+		}
+	}
+}
+
+vinflavor.3 = {
+	type = country_event
+	title = vinflavor.3.title
+	desc = vinflavor.3.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/disaster/placeholder.dds"
+	dynamic_historical_event = {
+		tag = P02
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		country_exists = c:P06
+		NOT = {
+			c:P06 = {
+				is_subject_or_below_of = root
+			}
+		}
+	}
+	immediate = {
+		c:P06 = {
+			save_scope_as = target_country
+		}
+	}
+	option = {
+		name = vinflavor.3.a
+		c:P02 = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = scope:target_country.capital.province
+			}
+		}
+	}
+}
+
+vinflavor.4 = {
+	type = country_event
+	title = vinflavor.4.title
+	desc = vinflavor.4.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				NOT = {
+					country_exists = c:P06
+				}
+				owns = location:misha_shipu
+			}
+			c:P06 = {
+				is_subject_or_below_of = root
+			}
+		}
+	}
+	option = {
+		name = vinflavor.4.a
+		add_prestige = 10
+		location:misha_shipu = {
+			change_development = development_extreme_bonus
+		}
+		capital = {
+			change_development = development_extreme_bonus
+		}
+	}
+}
+
+vinflavor.5 = {
+	type = country_event
+	title = vinflavor.5.title
+	desc = vinflavor.5.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		government_type = government_type:monarchy
+	}
+	option = {
+		name = vinflavor.5.a
+		change_societal_value = {
+			type = centralization_vs_decentralization
+			value = -25
+		}
+		add_legitimacy = 25
+		add_stability = 10
+		add_gold = 100
+	}
+}
+
+vinflavor.6 = {
+	type = country_event
+	title = vinflavor.6.title
+	desc = vinflavor.6.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			event_illustration_estate_background_effect = {
+				background = estate_type:nobles_estate
+			}
+			scope:from = {
+				event_illustration_estate_foreground_effect = {
+					foreground = estate_type:nobles_estate
+				}
+			}
+		}
+	}
+	trigger = {
+		has_or_had_tag = P02
+		has_or_had_tag = F16
+	}
+	option = {
+		name = vinflavor.6.a
+		every_province = {
+			limit = {
+				owner ?= root
+			}
+			every_location_in_province = {
+				limit = {
+					OR = {
+						location_rank = location_rank:town
+						location_rank = location_rank:city
+					}
+				}
+				change_development = development_extreme_bonus
+			}
+		}
+	}
+}
