@@ -719,6 +719,11 @@ countries = {
 			}
 			country_rank = rank_duchy
 			capital = huedin
+			tolerated_cultures = {
+				hungarian
+				german_transylvanian
+				szekely_culture
+			}
 		}
 	
 		GLC = {

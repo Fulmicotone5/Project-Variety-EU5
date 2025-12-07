@@ -1,0 +1,9 @@
+trans_diversity = {
+	age = age_1_traditions
+	icon = free_trade
+	potential = {
+		has_or_had_tag = TRA
+	}
+	cultures_capacity = 2
+	requires = cultural_acceptance_advance
+}

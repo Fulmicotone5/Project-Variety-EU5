@@ -5,6 +5,10 @@ PV_vinlander = {
 	
 	tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
 
+	culture_groups = {
+		scandinavian_group
+	}
+
 	opinions = {
 		icelandic = kindred
 		norwegian = kindred

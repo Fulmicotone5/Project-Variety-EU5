@@ -287,3 +287,95 @@ P06 = {
 	culture_definition = PV_vinlander
 	religion_definition = norse
 }
+WLS = {
+	color = map_WLS
+	color2 = rgb { 16 41 202 }
+
+	culture_definition = welsh # totally controlled by Anglo-Normans
+	religion_definition = catholic
+	
+	unit_color0 = hsv360{ 358 70 45 }
+	unit_color1 = green
+	unit_color2 = red
+
+	
+}
+
+GWR = {
+	color = hsv360 { 185 75 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+GMG = {
+	color = hsv360 { 125 80 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+MAC = {
+	color =hsv360 { 200 85 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+AUD = {
+	color = hsv360 { 355 85 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+BRO = {
+	color = hsv360 { 215 75 90 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+POS = {
+	color = hsv360 { 150 80 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+EWY = {
+	color = hsv360 { 30 85 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+CMS = {
+	color = hsv360 { 95 75 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+PMB = {
+	color = hsv360 { 165 80 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+DEN = {
+	color = hsv360 { 240 75 95 }
+	color2 = hsv { 0 0 0.38 }
+
+	culture_definition = welsh
+	religion_definition = catholic
+}
+
+TRA = {
+	color = map_transylvanian
+	color2 = rgb { 211  207  173 }
+
+	culture_definition = transylvanian
+	religion_definition = catholic
+}

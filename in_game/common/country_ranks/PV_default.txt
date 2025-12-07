@@ -2,10 +2,10 @@
 	rank_modifier = {
 		great_power_score_exempt_from_forfeit = -190 #PV
 		peace_offer_fairness = -1 #PV
-		aggressiveness_modifier = 1
-		expected_warscore_modifier = 1
+		aggressiveness_modifier = 2
+		expected_warscore_modifier = 5
 		win_war_chance_threshold = -0.5
-		antagonism_tolerance = 200 #PV
+		antagonism_tolerance = 600 #PV
 	}
 }
 
@@ -13,10 +13,10 @@ TRY_INJECT:rank_kingdom = {
 	rank_modifier = {
 		great_power_score_exempt_from_forfeit = -90 #PV
 		peace_offer_fairness = -1 #PV
-		aggressiveness_modifier = 1
-		expected_warscore_modifier = 1
+		aggressiveness_modifier = 2
+		expected_warscore_modifier = 5
 		win_war_chance_threshold = -0.5
-		antagonism_tolerance = 200 #PV
+		antagonism_tolerance = 600 #PV
 	}
 }
 
@@ -24,9 +24,9 @@ TRY_INJECT:rank_duchy = {
 	rank_modifier = {
 		great_power_score_exempt_from_forfeit = -40 #PV
 		peace_offer_fairness = -1 #PV
-		aggressiveness_modifier = 1
-		expected_warscore_modifier = 1
+		aggressiveness_modifier = 2
+		expected_warscore_modifier = 5
 		win_war_chance_threshold = -0.5
-		antagonism_tolerance = 200 #PV
+		antagonism_tolerance = 600 #PV
 	}
 }

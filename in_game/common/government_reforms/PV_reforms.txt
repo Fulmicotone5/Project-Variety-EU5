@@ -129,6 +129,7 @@ centralized_authority = {
 			has_reform = government_reform:PV_five_bur
 			has_or_had_tag = P02
 		}
+		government_type = government_type:monarchy
 	}	
 	
 

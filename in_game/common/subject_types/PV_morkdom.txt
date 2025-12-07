@@ -97,14 +97,7 @@ PV_morkdom = {
 		union ?= {
 			remove_country_from_international_organization = root
 		}
-		if = {
-			limit = {
-				exists = scope:future_overlord.ruler
-				NOT = { ruler ?= scope:future_overlord.ruler }
-			}
-			set_new_foreign_ruler = scope:future_overlord.ruler
-		}
-		
+
 		if = {
 			limit = {
 				culture = {

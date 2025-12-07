@@ -1,0 +1,208 @@
+namespace = touflavor
+touflavor.1 = {
+	type = country_event
+	title = touflavor.1.title
+	desc = touflavor.1.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/situation/council_of_trent.dds"
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		has_or_had_tag = TOU
+	}
+	option = {
+		name = touflavor.1.a
+	}
+}
+
+touflavor.2 = {
+	type = country_event
+	title = touflavor.2.title
+	desc = touflavor.2.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 20
+	}
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	trigger = {
+		owns = location:toulouse
+		
+	}
+	option = {
+		name = touflavor.2.a
+		culture = { add_cultural_influence = cultural_influence_weak_bonus }
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = 0.05
+		}
+		add_gold = -50
+	}
+	option = {
+		name = touflavor.2.b
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = -0.05
+		}
+	}
+}
+
+touflavor.3 = {
+	type = country_event
+	title = touflavor.3.title
+	desc = touflavor.3.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	image = "gfx/interface/illustrations/disaster/placeholder.dds"
+	trigger = {
+		country_exists = c:AQN
+		NOT = {
+			c:AQN = {
+				is_subject_or_below_of = root
+			}
+		}
+	}
+	immediate = {
+		c:AQN = {
+			save_scope_as = target_country
+		}
+	}
+	option = {
+		name = touflavor.3.a
+		c:TOU = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = scope:target_country.capital.province
+			}
+		}
+	}
+}
+
+touflavor.4 = {
+	type = country_event
+	title = touflavor.4.title
+	desc = touflavor.4.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	illustration_tags = {
+		10 = armed
+        10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+	trigger = {
+		not = {
+				has_estate_privilege = estate_privilege:cathar_reforms
+			}
+	}
+	option = {
+		name = touflavor.4.a
+		grant_estate_privilege = estate_privilege:cathar_reforms
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.05 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.25 }
+	}
+	option = {
+		name = touflavor.4.b
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = -0.05 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_bonus }
+	}
+}
+
+touflavor.5 = {
+	type = country_event
+	title = touflavor.5.title
+	desc = touflavor.5.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = TOU
+		has_or_had_tag = F02
+	}
+	option = {
+		name = touflavor.5.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+	}
+}
+
+touflavor.6 = {
+	type = country_event
+	title = touflavor.6.title
+	desc = touflavor.6.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+			}
+			event_illustration_estate_background_effect = {
+				background = estate_type:nobles_estate
+			}
+			scope:from = {
+				event_illustration_estate_foreground_effect = {
+					foreground = estate_type:nobles_estate
+				}
+			}
+		}
+	}
+	trigger = {
+		has_or_had_tag = TOU
+		has_or_had_tag = F03
+	}
+	option = {
+		name = touflavor.6.a
+		add_legitimacy = 25
+		add_stability = 10
+	}
+}

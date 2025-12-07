@@ -431,7 +431,7 @@ F10_f = {
 }
 F11_f = {
 	level = 3
-	required_locations_fraction = 0.9
+	required_locations_fraction = 0.75
 	rule = historical
 
 	potential = {
@@ -458,6 +458,7 @@ F11_f = {
 		valencia_area
 		sardinia_area
 		balearics_area
+		liguria_area
 	}
 	provinces = {
 	}

@@ -24,7 +24,6 @@ disease_outbreak_manager = {
         resistance = 0.1
         regions = {
             #Europe
-            scandinavian_region
             north_atlantic_islands_region
             north_german_region
             great_britain_region
@@ -66,6 +65,7 @@ disease_outbreak_manager = {
         resistance = 0.4
         regions = {
             #Asia
+            scandinavian_region
             crescent_region
             arabia_region
             persia_region
