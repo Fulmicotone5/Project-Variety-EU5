@@ -10,3 +10,18 @@ TRY_INJECT:power_projection = {
 	great_power_score = 10
  
 }
+TRY_REPLACE:prestige = {
+	scales_with = {
+		value = prestige
+		multiply = 0.01
+	}
+
+	global_trade_center_power = 0.05
+	diplomatic_reputation = diplomatic_reputation_severe_bonus
+	skill_of_new_artists = 0.1
+
+	great_power_score_exempt_from_forfeit = 15
+
+	antagonism_monthly_change_modifier = 0.5
+ 
+}

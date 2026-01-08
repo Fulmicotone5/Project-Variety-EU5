@@ -157,17 +157,7 @@ ven_venetian_thalassocracy = {
 	requires = trade_advance_age_of_trad
 }
 
-venetian_arsenal_advance = {
-	age = age_1_traditions
-	potential = { 
-		or = {
-			has_or_had_tag = VEN
-			has_or_had_tag = F09
-		}  
-	}
-	unlock_building = venetian_arsenal
-	requires = ven_venetian_thalassocracy
-}
+
 ven_gothic_architecture = {
 	age = age_2_renaissance
 	potential = {
@@ -295,22 +285,6 @@ ven_provveditori_ai_beni_inculti = {
 	requires = cork_stoppers
 }
 
-florentine_citizen_militia = {
-	age = age_2_renaissance
-	icon = glorious_arms
-	potential = { 
-		or = {
-			has_or_had_tag = FLO
-			has_or_had_tag = F09
-		} 
-	}
-
-	monthly_army_tradition = 0.03
-	
-	unlock_levy = levy_a_florentine_citizen_militia
-	
-	requires = unlock_peasant_levy_advance
-}
 
 porto_franco = {
 	age = age_4_reformation 

@@ -1,142 +1,418 @@
 countries = {
 	countries = {
 		#Project Variety
-		
-	CAS = {
-		own_control_core = {
-			avila adrada arevalo las_navas oropesa villatoro
-			burgos aranda_de_duero briviesca castrojeriz lerma logrono miranda_de_ebro najera sto_domingo_silos villadiego villarcayo
-			palencia aguilar_de_campoo carrion_de_los_condes monzon_campos palenzuela saldana reinosa
-			segovia cuellar fuentiduena pedraza sepulveda
-			soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
-			santander laredo potes san_vicente_barquera
-			valladolid medina_de_rioseco medina_del_campo penafiel tordesillas
-			cuenca alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena torralba
-			madrid alcala_de_henares brihuega buitrago_de_lozoya cobeta colmenar el_escorial guadalajara maqueda siguenza zorita
-			ciudad_real alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
-			toledo alcazar_de_san_juan chinchon consuegra guadalupe illescas los_yebenes navalucillos ocana puebla_de_montalban puente_arzobispo talavera_de_la_reina tomelloso ucles
-			badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
-			caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
-			plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea
-			coruna betanzos ferrol mondonedo vivero
-			lugo monforte_de_lemos navia_de_suarna sarria villalba
-			ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo
-			santiago_compostela finisterre lalin mellid noya pontevedra tuy
-			oviedo aviles cangas castropol llanes mieres tineo villaviciosa
-			leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
-			salamanca alba_de_tormes bejar ciudad_rodrigo coria ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes
-			zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
-			cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche santa_eufemia
-			jaen andujar baeza cazorla jodar martos ubeda
-			murcia albacete caravaca cartagena chinchilla cieza hellin lorca mula segura_de_la_sierra villena
-			sevilla arcos_de_la_frontera cadiz carmona constantina ecija jerez_de_la_frontera medina_sidonia moron olvera osuna sanlucar tarifa
-			huelva almonaster_la_real aracena aroche ayamonte coria_del_rio niebla puebla_de_guzman sanlucar_la_mayor
-			bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
-		}
-
-		our_cores_conquered_by_others = {
-			jumilla
-		}
-
-		starting_technology_level = 3
-		include = "expl_mediterranean"
-		include = "expl_silk_road_west"
-		include = "expl_silk_road_center"
-		include = "expl_silk_road_east"
-		include = "expl_indian_trade_route"
-		include = "iberian_monarchy_no_auxilium"
-
-		government = {
-			ruler = cas_alfonso_xi_burgundy
-			heir = cas_pedro_i_burgundy
-
-			ruler_term = { character = cas_sancho_ii_jimena start_date = 1065.12.27 end_date = 1072.10.7 regnal_number = 2 }
-			ruler_term = { character = lon_alfonso_vi_jimena start_date = 1072.10.7 end_date = 1109.7.1 regnal_number = 6 }
-			ruler_term = { character = lon_urraca_i_jimena start_date = 1109.7.1 end_date = 1126.3.8 regnal_number = 1 }
-
-			ruler_term = { character = cas_alfonso_vii_burgundy start_date = 1126.3.8 end_date = 1157.8.21 regnal_number = 7 }
-			ruler_term = { character = cas_sancho_iii_burgundy start_date = 1157.8.21 end_date = 1158.8.31 regnal_number = 3 }
-			ruler_term = { character = cas_alfonso_viii_burgundy start_date = 1158.8.31 end_date = 1214.10.6 regnal_number = 8 }
-			ruler_term = { character = cas_enrique_i_burgundy start_date = 1214.10.6 end_date = 1217.6.6 regnal_number = 1 }
-			ruler_term = { character = cas_berenguela_i_burgundy start_date = 1217.6.6 end_date = 1217.7.1 regnal_number = 1 }
-			ruler_term = { character = cas_fernando_iii_burgundy start_date = 1217.7.1 end_date = 1252.5.30 regnal_number = 3 }
-			ruler_term = { character = cas_alfonso_x_burgundy start_date = 1252.5.30 end_date = 1284.4.4 regnal_number = 10 }
-			ruler_term = { character = cas_sancho_iv_burgundy start_date = 1284.4.4 end_date = 1295.4.25 regnal_number = 4 }
-			ruler_term = { character = cas_fernando_iv_burgundy start_date = 1295.4.25 end_date = 1312.9.7 regnal_number = 4 }
-			ruler_term = { character = cas_alfonso_xi_burgundy start_date = 1312.9.7 regnal_number = 11 }
-
-			regnal_numbers = {
-				name_pelagius = 1
-				name_alphonse = 11
-				name_froila = 2
-				name_aurelius = 1
-				name_ramiro = 3
-				name_ordono = 4
-				name_garcia = 2
-				name_sancho = 4
-				name_ferdinand = 4
-				name_urraca = 1
-				name_henry = 1
-				name_berengaria = 1
+		CAS = {
+			own_control_core = {
+				avila
+				adrada
+				arevalo
+				las_navas
+				oropesa
+				villatoro
+				burgos
+				aranda_de_duero
+				briviesca
+				castrojeriz
+				lerma
+				logrono
+				miranda_de_ebro
+				najera
+				sto_domingo_silos
+				villadiego
+				villarcayo
+				palencia
+				aguilar_de_campoo
+				carrion_de_los_condes
+				monzon_campos
+				palenzuela
+				saldana
+				reinosa
+				segovia
+				cuellar
+				fuentiduena
+				pedraza
+				sepulveda
+				soria
+				agreda
+				almazan
+				berlanga
+				burgo_de_osma
+				calahorra
+				calatanazor
+				medinaceli
+				arnedo
+				santander
+				laredo
+				potes
+				san_vicente_barquera
+				valladolid
+				medina_de_rioseco
+				medina_del_campo
+				penafiel
+				tordesillas
+				cuenca
+				alarcon
+				belmonte
+				beteta
+				canete
+				huete
+				iniesta
+				jorquera
+				molina_de_aragon
+				moya
+				pareja
+				san_clemente
+				requena
+				torralba
+				madrid
+				alcala_de_henares
+				brihuega
+				buitrago_de_lozoya
+				cobeta
+				colmenar
+				el_escorial
+				guadalajara
+				maqueda
+				siguenza
+				zorita
+				ciudad_real
+				alcaraz
+				almaden
+				almodovar_del_campo
+				calatrava
+				lezuza
+				malagon
+				manzanares
+				puertollano
+				alhambra_location
+				montiel
+				villapalacios
+				villarobledo
+				toledo
+				alcazar_de_san_juan
+				chinchon
+				consuegra
+				guadalupe
+				illescas
+				los_yebenes
+				navalucillos
+				ocana
+				puebla_de_montalban
+				puente_arzobispo
+				talavera_de_la_reina
+				tomelloso
+				ucles
+				badajoz
+				albuquerque
+				azuaga
+				barcarrota
+				jerez_de_los_caballeros
+				llerena
+				merida
+				monesterio
+				villanueva_del_fresno
+				zafra
+				caceres
+				alcantara
+				arroyo
+				brozas
+				galisteo
+				granadilla
+				montanchez
+				valencia_de_alcantara
+				plasencia
+				belalcazar
+				escurial
+				herrera
+				jaraicejo
+				medellin
+				puebla_de_alcocer
+				trujillo
+				valverde
+				villanueva_de_la_serena
+				zalamea
+				coruna
+				betanzos
+				ferrol
+				mondonedo
+				vivero
+				lugo
+				monforte_de_lemos
+				navia_de_suarna
+				sarria
+				villalba
+				ourense
+				barco_de_valdeorras
+				ginzo_de_limia
+				monterrey
+				ribadavia
+				viana_bolo
+				santiago_compostela
+				finisterre
+				lalin
+				mellid
+				noya
+				pontevedra
+				tuy
+				oviedo
+				aviles
+				cangas
+				castropol
+				llanes
+				mieres
+				tineo
+				villaviciosa
+				leon
+				astorga
+				castrocalbon
+				mansilla
+				ponferrada
+				riano
+				sahagun
+				villablino
+				villafranca_bierzo
+				salamanca
+				alba_de_tormes
+				bejar
+				ciudad_rodrigo
+				coria
+				ledesma
+				matilla_de_canos
+				piedrahita
+				san_felices
+				yecla_de_yeltes
+				zamora
+				alba_de_aliste
+				alcanices
+				benavente
+				fermoselle
+				puebla_de_sanabria
+				toro
+				villalpando
+				cordoba
+				baena
+				carpio
+				espiel
+				fuenteovejuna
+				lucena
+				palma_del_rio
+				pedroche
+				santa_eufemia
+				jaen
+				andujar
+				baeza
+				cazorla
+				jodar
+				martos
+				ubeda
+				murcia
+				albacete
+				caravaca
+				cartagena
+				chinchilla
+				cieza
+				hellin
+				lorca
+				mula
+				segura_de_la_sierra
+				villena
+				sevilla
+				arcos_de_la_frontera
+				cadiz
+				carmona
+				constantina
+				ecija
+				jerez_de_la_frontera
+				medina_sidonia
+				moron
+				olvera
+				osuna
+				sanlucar
+				tarifa
+				huelva
+				almonaster_la_real
+				aracena
+				aroche
+				ayamonte
+				coria_del_rio
+				niebla
+				puebla_de_guzman
+				sanlucar_la_mayor
+				bilbao
+				anana
+				durango
+				onate
+				salvatierra
+				san_sebastian
+				tolosa
+				valmaseda
+				vitoria
 			}
-
-			reforms = {
-				crown_castile_reform
-				feudal_nobility
+			our_cores_conquered_by_others = {
+				jumilla
 			}
-
-			privilege = {
-				#Noblity
-				monetary_fiefs
-				consolidated_corruption_of_the_nobles_PV
-				#Clergy
-				clergy_military_orders
-				#Commoners
-				ayuntamientos
-				cas_caballeros_villanos
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "iberian_monarchy_no_auxilium"
+			government = {
+				ruler = cas_alfonso_xi_burgundy
+				heir = cas_pedro_i_burgundy
+				ruler_term = {
+					character = cas_sancho_ii_jimena
+					start_date = 1065.12.27
+					end_date = 1072.10.7
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = lon_alfonso_vi_jimena
+					start_date = 1072.10.7
+					end_date = 1109.7.1
+					regnal_number = 6
+				}
+				ruler_term = {
+					character = lon_urraca_i_jimena
+					start_date = 1109.7.1
+					end_date = 1126.3.8
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = cas_alfonso_vii_burgundy
+					start_date = 1126.3.8
+					end_date = 1157.8.21
+					regnal_number = 7
+				}
+				ruler_term = {
+					character = cas_sancho_iii_burgundy
+					start_date = 1157.8.21
+					end_date = 1158.8.31
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = cas_alfonso_viii_burgundy
+					start_date = 1158.8.31
+					end_date = 1214.10.6
+					regnal_number = 8
+				}
+				ruler_term = {
+					character = cas_enrique_i_burgundy
+					start_date = 1214.10.6
+					end_date = 1217.6.6
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = cas_berenguela_i_burgundy
+					start_date = 1217.6.6
+					end_date = 1217.7.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = cas_fernando_iii_burgundy
+					start_date = 1217.7.1
+					end_date = 1252.5.30
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = cas_alfonso_x_burgundy
+					start_date = 1252.5.30
+					end_date = 1284.4.4
+					regnal_number = 10
+				}
+				ruler_term = {
+					character = cas_sancho_iv_burgundy
+					start_date = 1284.4.4
+					end_date = 1295.4.25
+					regnal_number = 4
+				}
+				ruler_term = {
+					character = cas_fernando_iv_burgundy
+					start_date = 1295.4.25
+					end_date = 1312.9.7
+					regnal_number = 4
+				}
+				ruler_term = {
+					character = cas_alfonso_xi_burgundy
+					start_date = 1312.9.7
+					regnal_number = 11
+				}
+				regnal_numbers = {
+					name_pelagius = 1
+					name_alphonse = 11
+					name_froila = 2
+					name_aurelius = 1
+					name_ramiro = 3
+					name_ordono = 4
+					name_garcia = 2
+					name_sancho = 4
+					name_ferdinand = 4
+					name_urraca = 1
+					name_henry = 1
+					name_berengaria = 1
+				}
+				reforms = {
+					crown_castile_reform
+					feudal_nobility
+				}
+				privilege = {
+					#Noblity
+					monetary_fiefs
+					consolidated_corruption_of_the_nobles_PV
+					#Clergy
+					clergy_military_orders
+					#Commoners
+					ayuntamientos
+					cas_caballeros_villanos
+				}
+				laws = {
+					administrative_system = adelantamiento_system
+					distribution_of_power_law = dop_law_castilian_courts
+					legal_code_law = siete_partidas_law
+					medieval_levy_law = alarde
+					mesta_council_law = quadrillas_organization
+					royal_court_customs_law = itinerant_court_policy
+				}
+				aristocracy_vs_plutocracy = -40
+				serfdom_vs_free_subjects = -15
+				mercantilism_vs_free_trade = -40
+				belligerent_vs_conciliatory = -15
+				outward_vs_inward = -30
 			}
-
-			laws = {
-				administrative_system = adelantamiento_system
-				distribution_of_power_law = dop_law_castilian_courts
-				legal_code_law = siete_partidas_law
-				medieval_levy_law = alarde
-				mesta_council_law = quadrillas_organization
-				royal_court_customs_law = itinerant_court_policy
+			country_rank = rank_kingdom
+			capital = valladolid
+			ai_advance_preference_tags = {
+				exploration = 5
 			}
-
-			aristocracy_vs_plutocracy = -40
-			serfdom_vs_free_subjects = -15
-			mercantilism_vs_free_trade = -40
-			belligerent_vs_conciliatory = -15
-			outward_vs_inward = -30
+			accepted_cultures = {
+				leonese
+				galician
+				basque
+			}
+			tolerated_cultures = {
+				sephardi
+			}
 		}
-
-		country_rank = rank_kingdom
-		capital = valladolid
-
-		ai_advance_preference_tags = {
-			exploration = 5
-		}
-
-		accepted_cultures = { 
-			leonese
-			galician			
-			basque
-		}
-		tolerated_cultures = { 
-			sephardi
-		}
-		
-	}
-
 		BQA = {
 			own_control_core = {
-				benghazi ajdabiya al_bayda al_khuimat barca derna mechili msus qaminis suluntah tmimi
-				awjila el_agheila
-				tobruk siwa bahariyya
+				benghazi
+				ajdabiya
+				al_bayda
+				al_khuimat
+				barca
+				derna
+				mechili
+				msus
+				qaminis
+				suluntah
+				tmimi
+				awjila
+				el_agheila
+				tobruk
+				siwa
+				bahariyya
 			}
-
 			starting_technology_level = 3
 			include = "expl_muslim_mediterranean"
 			include = "muslim_monarchy_no_abrahamic_dhimmi"
@@ -146,47 +422,118 @@ countries = {
 				ruler = bqa_fayed_ibn_muqaddam
 			}
 			religious_school = maliki_school
-			government = { mysticism_vs_jurisprudence = -5 }
-
+			government = {
+				mysticism_vs_jurisprudence = -5
+			}
 			tolerated_cultures = {
 				eastern_amazigh
 			}
-
 			capital = barca
 			dynasty = heib_dynasty
 		}
-
 		MAM = {
 			own_control_core = {
-				alexandria el_alamein damanhur ramsis kafr_saqr kharibta rashid wadi_el_natrun
-				cairo atfih beni_suef faiyum giza dakahla
-				damietta al_mima el_burullus el_mahalla fuwa menouf samanoud tidah
-				mansoura bilbeis faqus ushmum_tannah qalyub tarrana tinnis
-				suez saint_anthony saint_paul_anchorite
+				alexandria
+				el_alamein
+				damanhur
+				ramsis
+				kafr_saqr
+				kharibta
+				rashid
+				wadi_el_natrun
+				cairo
+				atfih
+				beni_suef
+				faiyum
+				giza
+				dakahla
+				damietta
+				al_mima
+				el_burullus
+				el_mahalla
+				fuwa
+				menouf
+				samanoud
+				tidah
+				mansoura
+				bilbeis
+				faqus
+				ushmum_tannah
+				qalyub
+				tarrana
+				tinnis
+				suez
+				saint_anthony
+				saint_paul_anchorite
 				el_tor
-				edfu esna qena hiw qus
-				asyut el_balyana el_buwit akhmim manfalut
-				minya ashmunayn el_bahnasa sharuna tahna
-				kharga baris el_qasr qasr_farafra
+				edfu
+				esna
+				qena
+				hiw
+				qus
+				asyut
+				el_balyana
+				el_buwit
+				akhmim
+				manfalut
+				minya
+				ashmunayn
+				el_bahnasa
+				sharuna
+				tahna
+				kharga
+				baris
+				el_qasr
+				qasr_farafra
 			}
-
 			own_control_integrated = {
-				el_arish nekhel qatya warrada
-				matruh sallum
-				el_qoseir ras_gharib safaga
-				el_jundi faran nuweiba saint_katrine
-				ayntab dluk
-				umluj al_hawra al_manjur al_maramiyah
-				al_ula al_bleiteh al_farah_ula al_marwa az_zubayir mughayra
-				duba ad_disah al_azlam al_wajh bada_yaqub bir_al_qurr
-				tabuk_arabia al_khanbarah al_muazzam al_ukhaydir bajdah bir_ibn_hermas dhat_al_hajj
-				aynuna al_bad al_muwaylih haql makna
+				el_arish
+				nekhel
+				qatya
+				warrada
+				matruh
+				sallum
+				el_qoseir
+				ras_gharib
+				safaga
+				el_jundi
+				faran
+				nuweiba
+				saint_katrine
+				ayntab
+				dluk
+				umluj
+				al_hawra
+				al_manjur
+				al_maramiyah
+				al_ula
+				al_bleiteh
+				al_farah_ula
+				al_marwa
+				az_zubayir
+				mughayra
+				duba
+				ad_disah
+				al_azlam
+				al_wajh
+				bada_yaqub
+				bir_al_qurr
+				tabuk_arabia
+				al_khanbarah
+				al_muazzam
+				al_ukhaydir
+				bajdah
+				bir_ibn_hermas
+				dhat_al_hajj
+				aynuna
+				al_bad
+				al_muwaylih
+				haql
+				makna
 			}
-
 			own_control_conquered = {
 				iskenderun
 			}
-
 			include = "expl_muslim_mediterranean"
 			include = "expl_horn_of_africa"
 			include = "muslim_monarchy"
@@ -194,35 +541,59 @@ countries = {
 			government = {
 				type = monarchy
 				heir_selection = mamluk_succesion
-				ruler_term = { character = mam_an_nasir_bahri start_date = 1293.1.1 end_date = 1294.1.1 regnal_number = 1 }
-				ruler_term = { character = mam_al_adil_kitbugha start_date = 1294.1.1 end_date = 1296.12.7 regnal_number = 1 }
-				ruler_term = { character = mam_lajin_al_mansuri start_date = 1296.12.7 end_date = 1299.1.16 regnal_number = 1 }
-				ruler_term = { character = mam_an_nasir_bahri start_date = 1299.1.16 end_date = 1309.4.1 regnal_number = 1 }
-				ruler_term = { character = mam_baybars_ii start_date = 1309.4.1 end_date = 1310.3.5 regnal_number = 2 }
-				ruler_term = { character = mam_an_nasir_bahri start_date = 1310.3.5 regnal_number = 1 }
+				ruler_term = {
+					character = mam_an_nasir_bahri
+					start_date = 1293.1.1
+					end_date = 1294.1.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = mam_al_adil_kitbugha
+					start_date = 1294.1.1
+					end_date = 1296.12.7
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = mam_lajin_al_mansuri
+					start_date = 1296.12.7
+					end_date = 1299.1.16
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = mam_an_nasir_bahri
+					start_date = 1299.1.16
+					end_date = 1309.4.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = mam_baybars_ii
+					start_date = 1309.4.1
+					end_date = 1310.3.5
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = mam_an_nasir_bahri
+					start_date = 1310.3.5
+					regnal_number = 1
+				}
 				ruler = mam_an_nasir_bahri
 				regnal_numbers = {
 					lajin = 1
 					name_baybars = 2
 				}
-
 				reforms = {
 					mamluk_government
 				}
-
 				privilege = {
 					#Nobles
 					elaborate_court_ceremonies
 					banal_lordship
 					consolidated_corruption_of_the_nobles_PV
-
 					#Ulama
 					waqf_payments
-
 					#Burghers
 					trade_monopolies
 				}
-
 				spiritualist_vs_humanist = -10
 				belligerent_vs_conciliatory = -30
 				quality_vs_quantity = -10
@@ -236,32 +607,78 @@ countries = {
 					iqta_law = lenient_taxation
 				}
 			}
-			religious_school = shafii_school #While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
-			government = { mysticism_vs_jurisprudence = 20 }
-			
-
+			religious_school = shafii_school			#While Egypt today is mostly Hanafi, the $mamluks$ favored Shaafi over the rest
+			government = {
+				mysticism_vs_jurisprudence = 20
+			}
 			tolerated_cultures = {
 				upper_egyptian_culture
-				coptic_culture mizrahi #else they be slaves
+				coptic_culture
+				mizrahi				#else they be slaves
 				libyan_arabic_culture
 				bedouin_culture
 				eastern_amazigh
 				mizrahi
 			}
-
-		capital = cairo
+			capital = cairo
 		}
-
 		KOJ = {
 			own_control_core = {
-				jerusalem acre amman aqaba beersheba gaza hebron karak maan majdal nablus safed sughar jaffa al_quwayrah sidon madaba shoubak
+				jerusalem
+				acre
+				amman
+				aqaba
+				beersheba
+				gaza
+				hebron
+				karak
+				maan
+				majdal
+				nablus
+				safed
+				sughar
+				jaffa
+				al_quwayrah
+				sidon
+				madaba
+				shoubak
 			}
 			own_control_integrated = {
-				beirut baalbek deir_qamar tripoli_syria
-				ayntab dluk iskenderun damascus al_bab aleppo antioch arsuz artah baniyas dabiq hama homs idlib jabbul jableh kafartab latakia manbij maskanah masyaf nabek qusayr tartus zardana
+				beirut
+				baalbek
+				deir_qamar
+				tripoli_syria
+				ayntab
+				dluk
+				iskenderun
+				damascus
+				al_bab
+				aleppo
+				antioch
+				arsuz
+				artah
+				baniyas
+				dabiq
+				hama
+				homs
+				idlib
+				jabbul
+				jableh
+				kafartab
+				latakia
+				manbij
+				maskanah
+				masyaf
+				nabek
+				qusayr
+				tartus
+				zardana
 			}
 			own_control_conquered = {
-				el_arish nekhel qatya warrada
+				el_arish
+				nekhel
+				qatya
+				warrada
 			}
 			country_rank = rank_kingdom
 			include = "catholic_military_order"
@@ -279,22 +696,16 @@ countries = {
 			government = {
 				type = monarchy
 				ruler = random
-
-
 				reforms = {
 					crusader_state
 				}
-
 				privilege = {
 					#Nobles
-
 					#Ulama
 					clergy_strengthen_faith
-
 					#Burghers
 					trade_monopolies
 				}
-
 				spiritualist_vs_humanist = -90
 				belligerent_vs_conciliatory = -70
 				quality_vs_quantity = 80
@@ -303,7 +714,6 @@ countries = {
 			accepted_cultures = {
 				levantine_culture
 			}
-
 			tolerated_cultures = {
 				venetian
 				catalan
@@ -313,42 +723,82 @@ countries = {
 				czech
 				syriac_culture
 			}
-
 			capital = jerusalem
 		}
-
 		TOU = {
 			own_control_core = {
-				clermont 
-
-				cahors mirepoix limoux carcassonne lavaur castelnaudary condom nerac bazas agen
-				bergerac montauban albi millau saint_pons beziers agde sauveterre_de_guyenne
-				figeac villefranche
-				limeuil sarlat marmande montflanquin
-				mauriac riom tour_auvergne brioude saint_flour vodable
-				montaigut herment
-
-				tulle #Limousin
-				limoges nontron segur st_leonard aixe thiviers #Vic. Limoges
-				turenne gourdon #Vic.Turenne
-				mende #C. de Gevaudan
-				macon #C. de Macon
-				beaujeu perreux trevoux #S.de Beaujeu
-				lyon riverie #C. de Lyon
-				le_puy #C. du Velay
-				viviers # C. de Viviers
-				nimes uzes melgueil
-				french_ales #S. Ales
-				chambon #B. de Combraille
-
-
-				lodeve #C. Lodeve
-
-				fenouillet toulouse verdun_sur_garonne villemur
-				peyrusse entraigues st_affrique
-				allegre chalancon peyre chateauneuf_de_randon florac st_ambroix bourganeuf
+				clermont
+				cahors
+				mirepoix
+				limoux
+				carcassonne
+				lavaur
+				castelnaudary
+				condom
+				nerac
+				bazas
+				agen
+				bergerac
+				montauban
+				albi
+				millau
+				saint_pons
+				beziers
+				agde
+				sauveterre_de_guyenne
+				figeac
+				villefranche
+				limeuil
+				sarlat
+				marmande
+				montflanquin
+				mauriac
+				riom
+				tour_auvergne
+				brioude
+				saint_flour
+				vodable
+				montaigut
+				herment
+				tulle				#Limousin
+				limoges
+				nontron
+				segur
+				st_leonard
+				aixe
+				thiviers				#Vic. Limoges
+				turenne
+				gourdon				#Vic.Turenne
+				mende				#C. de Gevaudan
+				macon				#C. de Macon
+				beaujeu
+				perreux
+				trevoux				#S.de Beaujeu
+				lyon
+				riverie				#C. de Lyon
+				le_puy				#C. du Velay
+				viviers				# C. de Viviers
+				nimes
+				uzes
+				melgueil
+				french_ales				#S. Ales
+				chambon				#B. de Combraille
+				lodeve				#C. Lodeve
+				fenouillet
+				toulouse
+				verdun_sur_garonne
+				villemur
+				peyrusse
+				entraigues
+				st_affrique
+				allegre
+				chalancon
+				peyre
+				chateauneuf_de_randon
+				florac
+				st_ambroix
+				bourganeuf
 			}
-
 			starting_technology_level = 3
 			include = "expl_western_europe"
 			include = "catholic_monarchy_not_present"
@@ -356,7 +806,6 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
-
 				regnal_numbers = {
 					#Corson = 1
 					name_william = 4
@@ -376,74 +825,60 @@ countries = {
 					name_joanna = 1
 				}
 			}
-
-				centralization_vs_decentralization = 10
-				aristocracy_vs_plutocracy = -75
-				serfdom_vs_free_subjects = -80
-				traditionalist_vs_innovative = 20
-				spiritualist_vs_humanist = -50
-				mercantilism_vs_free_trade = -25
-				offensive_vs_defensive = -20
-				land_vs_naval = -30
-				quality_vs_quantity = -30
-				belligerent_vs_conciliatory = -20
-				capital_economy_vs_traditional_economy = 70
-				individualism_vs_communalism = -30
-				outward_vs_inward = -50
-
-				reforms = {
-				}
-
-				laws = {
-					medieval_levy_law = noble_levies	#Dependence on nobles
-					cultural_traditions_law = civil_society	#Taxing the peasants
-					mining_law = nobles_mining_law	#Noble Controlled
-					precious_metal_distribution_law = unlimited_gold_export
-				}
-
-				privilege = {
-					formal_guilds
-					clergy_literacy_rights
-					auxilium_et_consilium
-					nobles_land_rights
-					primacy_of_nobility
-					noble_armies
-				}
-
+			centralization_vs_decentralization = 10
+			aristocracy_vs_plutocracy = -75
+			serfdom_vs_free_subjects = -80
+			traditionalist_vs_innovative = 20
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = -25
+			offensive_vs_defensive = -20
+			land_vs_naval = -30
+			quality_vs_quantity = -30
+			belligerent_vs_conciliatory = -20
+			capital_economy_vs_traditional_economy = 70
+			individualism_vs_communalism = -30
+			outward_vs_inward = -50
+			reforms = {
+			}
+			laws = {
+				medieval_levy_law = noble_levies				#Dependence on nobles
+				cultural_traditions_law = civil_society				#Taxing the peasants
+				mining_law = nobles_mining_law				#Noble Controlled
+				precious_metal_distribution_law = unlimited_gold_export
+			}
+			privilege = {
+				formal_guilds
+				clergy_literacy_rights
+				auxilium_et_consilium
+				nobles_land_rights
+				primacy_of_nobility
+				noble_armies
+			}
 			tolerated_cultures = {
 				gascon
 				auvergnat
 				limousin
 				saintongeais
 			}
-
 			country_rank = rank_duchy
 			capital = toulouse
 		}
-
-
-			GUY = {
+		GUY = {
 			own_control_core = {
-				saint_gaudens #Vic. des Quatre Valles
-
-				tarbes #C. Bigorre
+				saint_gaudens				#Vic. des Quatre Valles
+				tarbes				#C. Bigorre
 			}
 			own_control_integrated = {
 			}
-
 			own_control_conquered = {
 			}
-
 			our_cores_conquered_by_others = {
 			}
-
 			starting_technology_level = 3
 			include = "expl_western_europe"
 			include = "catholic_monarchy"
-
 			government = {
 				heir_selection = salic_law
-
 				regnal_numbers = {
 					#Clovis = 4
 					#Clodomir = 1
@@ -468,7 +903,6 @@ countries = {
 					name_henry = 2
 					name_julian = 2
 				}
-
 				centralization_vs_decentralization = 10
 				aristocracy_vs_plutocracy = -75
 				serfdom_vs_free_subjects = -80
@@ -482,17 +916,14 @@ countries = {
 				capital_economy_vs_traditional_economy = 70
 				individualism_vs_communalism = -30
 				outward_vs_inward = -50
-
 				reforms = {
 				}
-
 				laws = {
-					medieval_levy_law = noble_levies	#Dependence on nobles
-					cultural_traditions_law = civil_society	#Taxing the peasants
-					mining_law = nobles_mining_law	#Noble Controlled
+					medieval_levy_law = noble_levies					#Dependence on nobles
+					cultural_traditions_law = civil_society					#Taxing the peasants
+					mining_law = nobles_mining_law					#Noble Controlled
 					precious_metal_distribution_law = unlimited_gold_export
 				}
-
 				privilege = {
 					formal_guilds
 					clergy_literacy_rights
@@ -502,40 +933,46 @@ countries = {
 					noble_armies
 				}
 			}
-
 			tolerated_cultures = {
 				limousin
 				saintongeais
 				berrichon
 				languedocien
 			}
-
 			country_rank = rank_county
 			capital = tarbes
 		}
-
-			POI = {
+		POI = {
 			own_control_core = {
-				poitiers la_roche_sur_yon montaigu thouars parthenay fontenay montmorillon
-				niort chatellerault brosse lusignan aulnay st_jean_dangely
-				talmont beauvoir mauleon_poitou la_rochelle
+				poitiers
+				la_roche_sur_yon
+				montaigu
+				thouars
+				parthenay
+				fontenay
+				montmorillon
+				niort
+				chatellerault
+				brosse
+				lusignan
+				aulnay
+				st_jean_dangely
+				talmont
+				beauvoir
+				mauleon_poitou
+				la_rochelle
 			}
 			own_control_integrated = {
 			}
-
 			own_control_conquered = {
 			}
-
 			our_cores_conquered_by_others = {
 			}
-
 			starting_technology_level = 3
 			include = "expl_western_europe"
 			include = "catholic_monarchy"
-
 			government = {
 				heir_selection = salic_law
-
 				regnal_numbers = {
 					#Clovis = 4
 					#Clodomir = 1
@@ -560,7 +997,6 @@ countries = {
 					name_henry = 2
 					name_julian = 2
 				}
-
 				centralization_vs_decentralization = 10
 				aristocracy_vs_plutocracy = -75
 				serfdom_vs_free_subjects = -80
@@ -574,17 +1010,14 @@ countries = {
 				capital_economy_vs_traditional_economy = 70
 				individualism_vs_communalism = -30
 				outward_vs_inward = -50
-
 				reforms = {
 				}
-
 				laws = {
-					medieval_levy_law = noble_levies	#Dependence on nobles
-					cultural_traditions_law = civil_society	#Taxing the peasants
-					mining_law = nobles_mining_law	#Noble Controlled
+					medieval_levy_law = noble_levies					#Dependence on nobles
+					cultural_traditions_law = civil_society					#Taxing the peasants
+					mining_law = nobles_mining_law					#Noble Controlled
 					precious_metal_distribution_law = unlimited_gold_export
 				}
-
 				privilege = {
 					formal_guilds
 					clergy_literacy_rights
@@ -594,66 +1027,151 @@ countries = {
 					noble_armies
 				}
 			}
-
 			tolerated_cultures = {
 				gascon
 				limousin
 				saintongeais
 				berrichon
 			}
-
 			country_rank = rank_county
 			capital = poitiers
 		}
-
-			#Burgundy (Appanage)
+		#Burgundy (Appanage)
 		BUR = {
 			own_control_core = {
-				dijon semur_en_auxois chatillon_sur_seine
-				chalon_sur_saone charolles autun
+				dijon
+				semur_en_auxois
+				chatillon_sur_seine
+				chalon_sur_saone
+				charolles
+				autun
 				semur_en_brionnais
 				avallon
 				montcenis
-				aignay arnay beaune auxonne louhans
-				macon #C. de Macon
-				beaujeu perreux trevoux #S.de Beaujeu
-				lyon riverie #C. de Lyon
+				aignay
+				arnay
+				beaune
+				auxonne
+				louhans
+				macon				#C. de Macon
+				beaujeu
+				perreux
+				trevoux				#S.de Beaujeu
+				lyon
+				riverie				#C. de Lyon
 			}
-
 			starting_technology_level = 3
 			include = "expl_western_europe"
 			include = "catholic_monarchy_no_coast"
 			government = {
 				ruler = bur_eudes_iv_burgundy
-
-				ruler_term = { character = fra_hugues_le_grand start_date = 952.12.17 end_date = 956.6.16 regnal_number = 0 }
-				ruler_term = { character = bur_otton_bourgogne start_date = 956.6.16 end_date = 965.2.23 regnal_number = 0 }
-				ruler_term = { character = bur_eudes_henri_bourgogne start_date = 965.2.23 end_date = 1002.10.15 regnal_number = 0 }
-
-				ruler_term = { character = fcb_othon_guillaume_burgundy start_date = 1002.10.15 end_date = 1004.1.1 regnal_number = 0 }
-
-				ruler_term = { character = fra_robert_ii_capet start_date = 1004.1.1 end_date = 1016.1.30 regnal_number = 0 }
-				ruler_term = { character = fra_henri_i_capet start_date = 1016.1.30 end_date = 1032.1.1 regnal_number = 1 }
-
-				ruler_term = { character = bur_robert_i_burgundian start_date = 1032.1.1 end_date = 1076.3.21 regnal_number = 1 }
-				ruler_term = { character = bur_hugues_i_burgundian start_date = 1076.3.21 end_date = 1093.8.29 regnal_number = 1 }
-				ruler_term = { character = bur_eudes_i_burgundian start_date = 1093.8.29 end_date = 1103.3.23 regnal_number = 1 }
-				ruler_term = { character = bur_hugues_ii_burgundian start_date = 1103.3.23 end_date = 1143.2.6 regnal_number = 2 }
-				ruler_term = { character = bur_eudes_ii_burgundian start_date = 1143.2.6 end_date = 1162.6.27 regnal_number = 2 }
-				ruler_term = { character = bur_hugues_iii_burgundian start_date = 1162.6.27 end_date = 1192.8.25 regnal_number = 3 }
-				ruler_term = { character = bur_eudes_iii_burgundian start_date = 1192.8.25 end_date = 1218.7.6 regnal_number = 3 }
-				ruler_term = { character = bur_hugues_iv_burgundian start_date = 1218.7.6 end_date = 1272.10.27 regnal_number = 4 }
-				ruler_term = { character = bur_robert_ii_burgundian start_date = 1272.10.27 end_date = 1306.3.21 regnal_number = 2 }
-				ruler_term = { character = bur_hugues_v_burgundian start_date = 1306.3.21 end_date = 1315.5.9 regnal_number = 5 }
-				ruler_term = { character = bur_eudes_iv_burgundy start_date = 1315.5.9 regnal_number = 4 }
-
+				ruler_term = {
+					character = fra_hugues_le_grand
+					start_date = 952.12.17
+					end_date = 956.6.16
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = bur_otton_bourgogne
+					start_date = 956.6.16
+					end_date = 965.2.23
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = bur_eudes_henri_bourgogne
+					start_date = 965.2.23
+					end_date = 1002.10.15
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = fcb_othon_guillaume_burgundy
+					start_date = 1002.10.15
+					end_date = 1004.1.1
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = fra_robert_ii_capet
+					start_date = 1004.1.1
+					end_date = 1016.1.30
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = fra_henri_i_capet
+					start_date = 1016.1.30
+					end_date = 1032.1.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = bur_robert_i_burgundian
+					start_date = 1032.1.1
+					end_date = 1076.3.21
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = bur_hugues_i_burgundian
+					start_date = 1076.3.21
+					end_date = 1093.8.29
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = bur_eudes_i_burgundian
+					start_date = 1093.8.29
+					end_date = 1103.3.23
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = bur_hugues_ii_burgundian
+					start_date = 1103.3.23
+					end_date = 1143.2.6
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = bur_eudes_ii_burgundian
+					start_date = 1143.2.6
+					end_date = 1162.6.27
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = bur_hugues_iii_burgundian
+					start_date = 1162.6.27
+					end_date = 1192.8.25
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = bur_eudes_iii_burgundian
+					start_date = 1192.8.25
+					end_date = 1218.7.6
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = bur_hugues_iv_burgundian
+					start_date = 1218.7.6
+					end_date = 1272.10.27
+					regnal_number = 4
+				}
+				ruler_term = {
+					character = bur_robert_ii_burgundian
+					start_date = 1272.10.27
+					end_date = 1306.3.21
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = bur_hugues_v_burgundian
+					start_date = 1306.3.21
+					end_date = 1315.5.9
+					regnal_number = 5
+				}
+				ruler_term = {
+					character = bur_eudes_iv_burgundy
+					start_date = 1315.5.9
+					regnal_number = 4
+				}
 				regnal_numbers = {
 					name_robert = 2
 					name_henry = 1
 					name_hugh = 5
 					name_otto = 4
 				}
-
 				centralization_vs_decentralization = 30
 				aristocracy_vs_plutocracy = -35
 				serfdom_vs_free_subjects = 35
@@ -667,29 +1185,49 @@ countries = {
 				capital_economy_vs_traditional_economy = 70
 				individualism_vs_communalism = -20
 				outward_vs_inward = -20
-
 				reforms = {
 					french_appanage_reform
 				}
 			}
-
 			tolerated_cultures = {
 				arpitan
 			}
-
 			capital = dijon
 			country_rank = rank_duchy
 		}
-		
-		NOL = { # Northumberland
+		NOL = {
+			# Northumberland
 			own_control_core = {
-				newcastle hexham alnwick morpeth billingham
-				carlisle cockermouth penrith egremont
-				kendal appleby
-				durham darlington stockton
-				york scarborough bedale richmond whitby
-				hull bridlington selby norton
-				leeds pontefract skipton wakefield doncaster ripon berwick
+				newcastle
+				hexham
+				alnwick
+				morpeth
+				billingham
+				carlisle
+				cockermouth
+				penrith
+				egremont
+				kendal
+				appleby
+				durham
+				darlington
+				stockton
+				york
+				scarborough
+				bedale
+				richmond
+				whitby
+				hull
+				bridlington
+				selby
+				norton
+				leeds
+				pontefract
+				skipton
+				wakefield
+				doncaster
+				ripon
+				berwick
 			}
 			government = {
 				type = monarchy
@@ -701,13 +1239,42 @@ countries = {
 			include = "catholic_monarchy_english_lordship_not_present"
 			country_rank = rank_duchy
 		}
-		TRA = { #Transylvania
+		TRA = {
+			#Transylvania
 			own_control_core = {
-				dabaca baita bistrita dej sic #doboka_province
-				alba_iulia aiud cetatea_balta deva felvint hateg hunedoara #feher_province
-				turda baia_de_aries cluj huedin reghin #torda_province
-				sibiu brasov cincu fagaras medias sebes sighisoara #kiralyfold_province
-				targu_mures chezdi_osorheiu covasna cristuru_secuiesc gheorgheni gurghiu odorhei sfantu_gheorghe miercurea_cluc #szekelyfold_province
+				dabaca
+				baita
+				bistrita
+				dej
+				sic				#doboka_province
+				alba_iulia
+				aiud
+				cetatea_balta
+				deva
+				felvint
+				hateg
+				hunedoara				#feher_province
+				turda
+				baia_de_aries
+				cluj
+				huedin
+				reghin				#torda_province
+				sibiu
+				brasov
+				cincu
+				fagaras
+				medias
+				sebes
+				sighisoara				#kiralyfold_province
+				targu_mures
+				chezdi_osorheiu
+				covasna
+				cristuru_secuiesc
+				gheorgheni
+				gurghiu
+				odorhei
+				sfantu_gheorghe
+				miercurea_cluc				#szekelyfold_province
 			}
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
@@ -725,15 +1292,32 @@ countries = {
 				szekely_culture
 			}
 		}
-	
 		GLC = {
 			own_control_core = {
-				coruna betanzos ferrol mondonedo vivero #A Coruña
-				lugo monforte_de_lemos navia_de_suarna sarria villalba #Lugo
-				ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo #Ourense
-				santiago_compostela finisterre lalin mellid noya pontevedra tuy #Santiago de Compostela
+				coruna
+				betanzos
+				ferrol
+				mondonedo
+				vivero				#A Coruña
+				lugo
+				monforte_de_lemos
+				navia_de_suarna
+				sarria
+				villalba				#Lugo
+				ourense
+				barco_de_valdeorras
+				ginzo_de_limia
+				monterrey
+				ribadavia
+				viana_bolo				#Ourense
+				santiago_compostela
+				finisterre
+				lalin
+				mellid
+				noya
+				pontevedra
+				tuy				#Santiago de Compostela
 			}
-
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -741,44 +1325,129 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			include = "catholic_monarchy_not_present"
-
 			country_rank = rank_kingdom
 			capital = santiago_compostela
 			government = {
-
-				ruler_term = { character = lon_ordono_ii_leon start_date = 910.1.1 end_date = 914.1.1 regnal_number = 2 }
-				ruler_term = { character = glc_sancho_ordonez start_date = 926.2.12 end_date = 929.6.10 regnal_number = 0 }
-
-				ruler_term = { character = glc_garcia_ii_jimena start_date = 1065.12.27 end_date = 1071.1.1 regnal_number = 2 }
-				ruler_term = { character = cas_sancho_ii_jimena start_date = 1071.1.1 end_date = 1072.10.7 regnal_number = 2 }
-				ruler_term = { character = glc_garcia_ii_jimena start_date = 1072.10.7 end_date = 1073.2.13 regnal_number = 2 }
-				ruler_term = { character = lon_alfonso_vi_jimena start_date = 1073.2.13 end_date = 1109.7.1 regnal_number = 6 }
-
-				ruler_term = { character = cas_alfonso_vii_burgundy start_date = 1111.9.17 end_date = 1111.11.1 regnal_number = 7 }
+				ruler_term = {
+					character = lon_ordono_ii_leon
+					start_date = 910.1.1
+					end_date = 914.1.1
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = glc_sancho_ordonez
+					start_date = 926.2.12
+					end_date = 929.6.10
+					regnal_number = 0
+				}
+				ruler_term = {
+					character = glc_garcia_ii_jimena
+					start_date = 1065.12.27
+					end_date = 1071.1.1
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = cas_sancho_ii_jimena
+					start_date = 1071.1.1
+					end_date = 1072.10.7
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = glc_garcia_ii_jimena
+					start_date = 1072.10.7
+					end_date = 1073.2.13
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = lon_alfonso_vi_jimena
+					start_date = 1073.2.13
+					end_date = 1109.7.1
+					regnal_number = 6
+				}
+				ruler_term = {
+					character = cas_alfonso_vii_burgundy
+					start_date = 1111.9.17
+					end_date = 1111.11.1
+					regnal_number = 7
+				}
 			}
-
 			country_rank = rank_kingdom
 			capital = santiago_compostela
 		}
-
 		GRA = {
 			own_control_core = {
-				almeria almanzora baza gergal mojacar velez_rubio
-				granada adra almunecar guadix huescar illora loja pinar orgiva
-				malaga antequera velez_malaga cadiz algeciras arcos_de_la_frontera gibraltar jerez_de_la_frontera medina_sidonia sanlucar tarifa
-				cordoba baena carpio espiel fuenteovejuna lucena palma_del_rio pedroche
-				huelva almonaster_la_real aracena aroche ayamonte niebla puebla_de_guzman
-				jaen andujar baeza cazorla jodar martos ubeda sevilla carmona constantina coria_del_rio ecija moron olvera osuna sanlucar_la_mayor
-			} 
-			own_control_integrated = {
-				murcia cartagena lorca mula
-				hellin caravaca cieza segura_de_la_sierra segura_range
+				almeria
+				almanzora
+				baza
+				gergal
+				mojacar
+				velez_rubio
+				granada
+				adra
+				almunecar
+				guadix
+				huescar
+				illora
+				loja
+				pinar
+				orgiva
+				malaga
+				antequera
+				velez_malaga
+				cadiz
+				algeciras
+				arcos_de_la_frontera
+				gibraltar
+				jerez_de_la_frontera
+				medina_sidonia
+				sanlucar
+				tarifa
+				cordoba
+				baena
+				carpio
+				espiel
+				fuenteovejuna
+				lucena
+				palma_del_rio
+				pedroche
+				huelva
+				almonaster_la_real
+				aracena
+				aroche
+				ayamonte
+				niebla
+				puebla_de_guzman
+				jaen
+				andujar
+				baeza
+				cazorla
+				jodar
+				martos
+				ubeda
+				sevilla
+				carmona
+				constantina
+				coria_del_rio
+				ecija
+				moron
+				olvera
+				osuna
+				sanlucar_la_mayor
 			}
-
+			own_control_integrated = {
+				murcia
+				cartagena
+				lorca
+				mula
+				hellin
+				caravaca
+				cieza
+				segura_de_la_sierra
+				segura_range
+			}
 			our_cores_conquered_by_others = {
 				olvera
 			}
-
 			starting_technology_level = 3
 			include = "expl_muslim_mediterranean"
 			include = "expl_silk_road_west"
@@ -786,29 +1455,65 @@ countries = {
 			include = "expl_silk_road_east"
 			include = "expl_indian_trade_route"
 			include = "muslim_monarchy_no_abrahamic_dhimmi"
-
 			government = {
 				ruler = gra_yusuf_i_nasrid
-
-				ruler_term = { character = gra_muhammad_i_nasrid start_date = 1238.5.1 end_date = 1273.1.20 regnal_number = 1 }
-				ruler_term = { character = gra_muhammad_ii_nasrid start_date = 1273.1.20 end_date = 1302.1.20 regnal_number = 2 }
 				ruler_term = {
-					character = gra_muhammad_ii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 2
-					character = gra_muhammad_iii_nasrid start_date = 1302.1.20 end_date = 1302.4.7 regnal_number = 3
+					character = gra_muhammad_i_nasrid
+					start_date = 1238.5.1
+					end_date = 1273.1.20
+					regnal_number = 1
 				}
-				ruler_term = { character = gra_muhammad_iii_nasrid start_date = 1302.4.7 end_date = 1309.3.14 regnal_number = 3 }
-				ruler_term = { character = gra_nasr_i_nasrid start_date = 1309.3.14 end_date = 1314.2.8 regnal_number = 1 }
-				ruler_term = { character = gra_ismail_i_nasrid start_date = 1314.2.8 end_date = 1325.7.8 regnal_number = 1 }
-				ruler_term = { character = gra_muhammad_iv_nasrid start_date = 1325.7.8 end_date = 1333.8.25 regnal_number = 4 }
-				ruler_term = { character = gra_yusuf_i_nasrid start_date = 1333.8.25 regnal_number = 1 }
-
+				ruler_term = {
+					character = gra_muhammad_ii_nasrid
+					start_date = 1273.1.20
+					end_date = 1302.1.20
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = gra_muhammad_ii_nasrid
+					start_date = 1302.1.20
+					end_date = 1302.4.7
+					regnal_number = 2
+					character = gra_muhammad_iii_nasrid
+					start_date = 1302.1.20
+					end_date = 1302.4.7
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = gra_muhammad_iii_nasrid
+					start_date = 1302.4.7
+					end_date = 1309.3.14
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = gra_nasr_i_nasrid
+					start_date = 1309.3.14
+					end_date = 1314.2.8
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = gra_ismail_i_nasrid
+					start_date = 1314.2.8
+					end_date = 1325.7.8
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = gra_muhammad_iv_nasrid
+					start_date = 1325.7.8
+					end_date = 1333.8.25
+					regnal_number = 4
+				}
+				ruler_term = {
+					character = gra_yusuf_i_nasrid
+					start_date = 1333.8.25
+					regnal_number = 1
+				}
 				regnal_numbers = {
 					name_muhammad = 4
 					name_nasr = 1
 					name_ishmael = 1
 					name_joseph = 1
 				}
-
 				reforms = {
 					the_jewel_of_alandalus_reform
 				}
@@ -818,42 +1523,119 @@ countries = {
 			}
 			court_language = maghrebi_dialect
 			religious_school = maliki_school
-			government = { mysticism_vs_jurisprudence = -5 }
-
+			government = {
+				mysticism_vs_jurisprudence = -5
+			}
 			country_rank = rank_duchy
-
 			tolerated_cultures = {
 				sephardi
 			}
-
 			capital = granada
 		}
-		MVA = {	#Moravia
+		MVA = {
+			#Moravia
 			own_control_core = {
-				olomouc prostejov zabreh sumperk
-				brno pernstejn hodonin vyskov
-				znojmo bitov dacice jihlava
-				hradiste vizovice prerov pribor
-				hont banska_bystrica kremnica krupina stary_tekov zvolen
-				nograd balassagyarmat gemer podmuran rimavska_sobota roznava salgotarjan
-				bratislava hlohovec holic nitra prievidza samorin trnava
-				trencin povazska_bystrica zilina oravsky_podzamok turciansky_svaty_martin liptovsky_mikulas western_carpathians1 western_carpathians2 levoca presov lubica bardejov nowy_targ
+				olomouc
+				prostejov
+				zabreh
+				sumperk
+				brno
+				pernstejn
+				hodonin
+				vyskov
+				znojmo
+				bitov
+				dacice
+				jihlava
+				hradiste
+				vizovice
+				prerov
+				pribor
+				hont
+				banska_bystrica
+				kremnica
+				krupina
+				stary_tekov
+				zvolen
+				nograd
+				balassagyarmat
+				gemer
+				podmuran
+				rimavska_sobota
+				roznava
+				salgotarjan
+				bratislava
+				hlohovec
+				holic
+				nitra
+				prievidza
+				samorin
+				trnava
+				trencin
+				povazska_bystrica
+				zilina
+				oravsky_podzamok
+				turciansky_svaty_martin
+				liptovsky_mikulas
+				western_carpathians1
+				western_carpathians2
+				levoca
+				presov
+				lubica
+				bardejov
+				nowy_targ
 			}
-
 			government = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = boh_charles_iv_luxembourg
-
-				ruler_term = { character = boh_otakar_ii_premyslid start_date = 1253.12.23 end_date = 1278.8.26 regnal_number = 1 }
-				ruler_term = { character = hab_rudolf_i_habsburg start_date = 1278.8.26 end_date = 1283.1.1 regnal_number = 1 }
-				ruler_term = { character = boh_wenceslaus_ii_premyslid start_date = 1283.1.1 end_date = 1305.6.21 regnal_number = 1 }
-				ruler_term = { character = boh_wenceslaus_iii_premyslid start_date = 1305.6.21 end_date = 1306.8.4 regnal_number = 2 }
-				ruler_term = { character = boh_rudolf_habsburg start_date = 1306.8.4 end_date = 1307.7.3 regnal_number = 2 }
-				ruler_term = { character = tir_henry_gorizia start_date = 1307.7.3 end_date = 1310.8.31 regnal_number = 1 }
-				ruler_term = { character = boh_john_luxembourg start_date = 1310.8.31 end_date = 1333.1.1 regnal_number = 1 }
-				ruler_term = { character = boh_charles_iv_luxembourg start_date = 1333.1.1 regnal_number = 1 }
-
+				ruler_term = {
+					character = boh_otakar_ii_premyslid
+					start_date = 1253.12.23
+					end_date = 1278.8.26
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = hab_rudolf_i_habsburg
+					start_date = 1278.8.26
+					end_date = 1283.1.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = boh_wenceslaus_ii_premyslid
+					start_date = 1283.1.1
+					end_date = 1305.6.21
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = boh_wenceslaus_iii_premyslid
+					start_date = 1305.6.21
+					end_date = 1306.8.4
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = boh_rudolf_habsburg
+					start_date = 1306.8.4
+					end_date = 1307.7.3
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = tir_henry_gorizia
+					start_date = 1307.7.3
+					end_date = 1310.8.31
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = boh_john_luxembourg
+					start_date = 1310.8.31
+					end_date = 1333.1.1
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = boh_charles_iv_luxembourg
+					start_date = 1333.1.1
+					regnal_number = 1
+				}
 				regnal_numbers = {
 					name_conrad = 1
 					name_vladislav = 3
@@ -865,7 +1647,6 @@ countries = {
 					name_john = 1
 					name_charles = 1
 				}
-
 				reforms = {
 					margraviate
 				}
@@ -874,75 +1655,342 @@ countries = {
 					PV_groschen
 				}
 			}
-
 			tolerated_cultures = {
 				danube_bavarian
 			}
 			accepted_cultures = {
 				slovak
 			}
-
 			capital = olomouc
 			include = "catholic_monarchy_no_coast"
 			include = "expl_northern_europe"
 			country_rank = rank_duchy
 		}
-
 		P02 = {
 			own_control_core = {
-				gaspe chicchoc marsoui pewjeg cascapedia paspebiac matapedia matane
-				rimouski mitis amqui causapscal kakouna molsemtekw temiscouata kamouraska
-				kikonteku kamitsisit etchemin wachilmezi onkobagag sartigan wolastoq
-				stadacona andawaohie ontaretse ahwendoe ondaonnentakwi aunona taoondewake kouate
-				mingan pigou aguanish natashquan manapakuaniskau uanaman upuahpukau notiskuan anticosti natigostec
-				mecatina kegaska coacoachou napetipi mecatina_hills
-				uashat nipisso nipissis caopacho opocopa mistecapiu 
-				ouiauirabugu toulnustouc capotigamau manicouagan mouchalagane kapuameut piletisipuk  manicouagan_depression lake_manicouagan lake_mouchalagane
-				pessamit betsiamites pipmuacan itomamo kitchesatsiou manouanis tetepisca essipit manouane lake_pipmuacan
-				chicoutimi shipshaw onatchiway outapimiskou metabetchouane tadoussac
-				opiticiwan oskelaneo minkaniciciw wemotaci maskotci metabeskega kokokachi cikakw_sipi kiskissink wayagamac
-				kitigan_zibi baskatong poigan picanoc tapani kiamika kanegaok
-				temiscamingue maganasipi kippawa winneway kinojevis osisko kitcisakik kakibonga cawassiemica capimitchigama  lake_temiscamingue
-				quinze_lake preissac_lake
-				mistassibi samaqua ouasimesca nestaocano tchitogama peribonka onistagane machisque eastern_peribonka_hills
-				ashuapmushuan kanishushteu chigoubiche nicabau ouiatchouaniche lake_saint_jean
-				wigwomadensis masolian yamaska wdpesek lake_champlain
-				hochelaga kemoimenahan ahkwesasne otennienontant makigotekw loigan_sibo lake_of_two_mountains
-				kiwetin_sipi mikiwam outaragasipi
-				alsigontekw wolinak wabanaki arthabaska nebesek
-				nikitotegwak megantic maskikogamak coaticook memphremagog wigwomadenek wagowategok lake_memphremagog
-				ekwentondie yamachiche shawinigan mekinac matawin lake_saint_pierre
-				nagatinong weskarini okaisipi quyon nichabau
-				malartic_lake malartic wasakin chicobi harricana obaska megiscane 
-				matagami_lake waswanipi_lake poncheville_lake
-				opawica opemisca waswanipi maicasagi soscumica nottaway missicabi
-				waskaganish kaipeshimushich nemasca kapitukamach kauakiekamatsh natastan nistam kamashikamach ouagama  lake_evans
-				mistissini cawachagamite shipastouk mistassiniish chibougamau temiscamie mistassini_hills lake_chibougamau lake_mistassini lake_albanel
-				pitchibourenik caisaboscai chistamikap nasacauso neoskweskau cauouatstacau eastmain_hills
-				mistimakan chisasibi maquatua atikuan lake_sakami
-				nichicun misask wahemen naococane otish_mountains lake_nichicun lake_naococane 
-				belle_isle wipetikil naskwotchu mekapisk 
-				eimastukwek epwikek kutapuskuj pgotapesg upsukdaskooch wli_qospem
-				gosaoie nogamsig meelpaeg amasipukwek sibook annieopsquotch_mountains
-				baie_verte walnaypek akilasiewakik
-				cape_spear bacalhieu mekwiskajk mollyhuajeck 
-				placentia cape_race maqtewey nukamkiajijk miquelon
-				elsiktuk tignish malpeque tapu_tuitn pukusamkek
-					menageesenog
+				gaspe
+				chicchoc
+				marsoui
+				pewjeg
+				cascapedia
+				paspebiac
+				matapedia
+				matane
+				rimouski
+				mitis
+				amqui
+				causapscal
+				kakouna
+				molsemtekw
+				temiscouata
+				kamouraska
+				kikonteku
+				kamitsisit
+				etchemin
+				wachilmezi
+				onkobagag
+				sartigan
+				wolastoq
+				stadacona
+				andawaohie
+				ontaretse
+				ahwendoe
+				ondaonnentakwi
+				aunona
+				taoondewake
+				kouate
+				mingan
+				pigou
+				aguanish
+				natashquan
+				manapakuaniskau
+				uanaman
+				upuahpukau
+				notiskuan
+				anticosti
+				natigostec
+				mecatina
+				kegaska
+				coacoachou
+				napetipi
+				mecatina_hills
+				uashat
+				nipisso
+				nipissis
+				caopacho
+				opocopa
+				mistecapiu
+				ouiauirabugu
+				toulnustouc
+				capotigamau
+				manicouagan
+				mouchalagane
+				kapuameut
+				piletisipuk
+				manicouagan_depression
+				lake_manicouagan
+				lake_mouchalagane
+				pessamit
+				betsiamites
+				pipmuacan
+				itomamo
+				kitchesatsiou
+				manouanis
+				tetepisca
+				essipit
+				manouane
+				lake_pipmuacan
+				chicoutimi
+				shipshaw
+				onatchiway
+				outapimiskou
+				metabetchouane
+				tadoussac
+				opiticiwan
+				oskelaneo
+				minkaniciciw
+				wemotaci
+				maskotci
+				metabeskega
+				kokokachi
+				cikakw_sipi
+				kiskissink
+				wayagamac
+				kitigan_zibi
+				baskatong
+				poigan
+				picanoc
+				tapani
+				kiamika
+				kanegaok
+				temiscamingue
+				maganasipi
+				kippawa
+				winneway
+				kinojevis
+				osisko
+				kitcisakik
+				kakibonga
+				cawassiemica
+				capimitchigama
+				lake_temiscamingue
+				quinze_lake
+				preissac_lake
+				mistassibi
+				samaqua
+				ouasimesca
+				nestaocano
+				tchitogama
+				peribonka
+				onistagane
+				machisque
+				eastern_peribonka_hills
+				ashuapmushuan
+				kanishushteu
+				chigoubiche
+				nicabau
+				ouiatchouaniche
+				lake_saint_jean
+				wigwomadensis
+				masolian
+				yamaska
+				wdpesek
+				lake_champlain
+				hochelaga
+				kemoimenahan
+				ahkwesasne
+				otennienontant
+				makigotekw
+				loigan_sibo
+				lake_of_two_mountains
+				kiwetin_sipi
+				mikiwam
+				outaragasipi
+				alsigontekw
+				wolinak
+				wabanaki
+				arthabaska
+				nebesek
+				nikitotegwak
+				megantic
+				maskikogamak
+				coaticook
+				memphremagog
+				wigwomadenek
+				wagowategok
+				lake_memphremagog
+				ekwentondie
+				yamachiche
+				shawinigan
+				mekinac
+				matawin
+				lake_saint_pierre
+				nagatinong
+				weskarini
+				okaisipi
+				quyon
+				nichabau
+				malartic_lake
+				malartic
+				wasakin
+				chicobi
+				harricana
+				obaska
+				megiscane
+				matagami_lake
+				waswanipi_lake
+				poncheville_lake
+				opawica
+				opemisca
+				waswanipi
+				maicasagi
+				soscumica
+				nottaway
+				missicabi
+				waskaganish
+				kaipeshimushich
+				nemasca
+				kapitukamach
+				kauakiekamatsh
+				natastan
+				nistam
+				kamashikamach
+				ouagama
+				lake_evans
+				mistissini
+				cawachagamite
+				shipastouk
+				mistassiniish
+				chibougamau
+				temiscamie
+				mistassini_hills
+				lake_chibougamau
+				lake_mistassini
+				lake_albanel
+				pitchibourenik
+				caisaboscai
+				chistamikap
+				nasacauso
+				neoskweskau
+				cauouatstacau
+				eastmain_hills
+				mistimakan
+				chisasibi
+				maquatua
+				atikuan
+				lake_sakami
+				nichicun
+				misask
+				wahemen
+				naococane
+				otish_mountains
+				lake_nichicun
+				lake_naococane
+				belle_isle
+				wipetikil
+				naskwotchu
+				mekapisk
+				eimastukwek
+				epwikek
+				kutapuskuj
+				pgotapesg
+				upsukdaskooch
+				wli_qospem
+				gosaoie
+				nogamsig
+				meelpaeg
+				amasipukwek
+				sibook
+				annieopsquotch_mountains
+				baie_verte
+				walnaypek
+				akilasiewakik
+				cape_spear
+				bacalhieu
+				mekwiskajk
+				mollyhuajeck
+				placentia
+				cape_race
+				maqtewey
+				nukamkiajijk
+				miquelon
+				elsiktuk
+				tignish
+				malpeque
+				tapu_tuitn
+				pukusamkek
+				menageesenog
 				ainslie_lake
-					askataliank cheticamp ingonish qospemk apaqtukowatek sipuk kluskapewiktuk bras_dor_lake
-				pictou chignecto maccan tatamagouche antigonish
-				canso kekwapskuk wikipoq weljuik
-				jijkwtuk cobequid shubenacadie kennetook 
-				kjipuktuk wetewatoqsik musquedoboit aspotogan esekatik
-				nmejuaqnek nictaux wekwayik chebogue muinawamek nisiamk oqumkikiak
-				chipoudy petitcodiac memramcook richibucto kouchibouguac miramichi neguac anagance seeboosis
-				nepisiguit tracadie caraquet restigouche maleagit pogomeg asoqasqoq 
-				madawaska negoot becaguimec siegas
-				menahkwesk mispec kennebecasis washademoak otnabog kcheeminpink canaan_bog grand_lake_ca
-				nashwaak oromocto meductic welamooktook pokiok
-				grand_manan pocologan chamcook magaguadavic
-				
+				askataliank
+				cheticamp
+				ingonish
+				qospemk
+				apaqtukowatek
+				sipuk
+				kluskapewiktuk
+				bras_dor_lake
+				pictou
+				chignecto
+				maccan
+				tatamagouche
+				antigonish
+				canso
+				kekwapskuk
+				wikipoq
+				weljuik
+				jijkwtuk
+				cobequid
+				shubenacadie
+				kennetook
+				kjipuktuk
+				wetewatoqsik
+				musquedoboit
+				aspotogan
+				esekatik
+				nmejuaqnek
+				nictaux
+				wekwayik
+				chebogue
+				muinawamek
+				nisiamk
+				oqumkikiak
+				chipoudy
+				petitcodiac
+				memramcook
+				richibucto
+				kouchibouguac
+				miramichi
+				neguac
+				anagance
+				seeboosis
+				nepisiguit
+				tracadie
+				caraquet
+				restigouche
+				maleagit
+				pogomeg
+				asoqasqoq
+				madawaska
+				negoot
+				becaguimec
+				siegas
+				menahkwesk
+				mispec
+				kennebecasis
+				washademoak
+				otnabog
+				kcheeminpink
+				canaan_bog
+				grand_lake_ca
+				nashwaak
+				oromocto
+				meductic
+				welamooktook
+				pokiok
+				grand_manan
+				pocologan
+				chamcook
+				magaguadavic
 			}
 			starting_technology_level = 3
 			country_rank = rank_duchy
@@ -953,72 +2001,63 @@ countries = {
 			}
 			discovered_areas = {
 				#east_coast_region
-			illinois_area
-			wisconsin_area
-			indiana_area
-			kentucky_area
-			tennessee_area
-			#louisiana_region
-			missouri_area
-			iowa_area
-			arkansas_area
-			central_plains_area
-			superior_area
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+				superior_area
 			}
 			government = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
-
 				parliament = {
 					parliament_type = assembly
 				}
-
-
 				reforms = {
 					PV_vinland
 					galley_lords_reform
 				}
-
 				privilege = {
 					sponsor_maritime_contracts
 					nobility_council
-				nobles_land_rights
-				tribal_autonomy
-
-				#clergy
-				embellish_great_works_of_faith
-
-				#burghers
-				urban_development_grants
-				market_fairs
-
-				#Commoners
-				peasants_autonomous_villages
-				communal_lands
-				allow_hunting
-				partial_yield
-				peasants_free_peasantry
-		
-				tribes_tribal_levies
-				tribes_allow_gatherings
+					nobles_land_rights
+					tribal_autonomy
+					#clergy
+					embellish_great_works_of_faith
+					#burghers
+					urban_development_grants
+					market_fairs
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					tribes_tribal_levies
+					tribes_allow_gatherings
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1035,37 +2074,78 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
 			currency_data = {
-			gold = 500
-			stability = 60
-			prestige = 5
-			tribal_cohesion = 60
+				gold = 500
+				stability = 60
+				prestige = 5
+				tribal_cohesion = 60
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = bacalhieu
 		}
 		P05 = {
 			own_control_core = {
-				kuujjuarapik qingaaluk tupialuviniq wiyashakimi nastapoka lake_bienville lake_tasiujaq lake_wiyashakami seal_lake
-				kuujjuaq kuuvik natuak kasuswapaskau koskoak ungava_peninsula
-					sanikiluaq
-					amadjuak_lake lake_minto lake_payne
-					pangnirtung iglunga iqaluit kimmirut
-					amadjuak kinngait baffin_island
-				caniapiscau kasakaupuyau wayustikw mistanipi chipisipi katataskatikw misinichikw otelnuk kawachisakau kawachikamasu enchukamao  lake_caniapiscau
-				qikirtajuaq kamusawawasich kawawasukutisich kaypikupau mistinatwayasu kamiskayachuuch qurlutuq labrador_hills
-				kangiqsualujjuaq imaapik siimitalik uashekanau mistinatuakamau mushuau kausseskait tupirvialuit koroc quebec_torngats
-				
+				kuujjuarapik
+				qingaaluk
+				tupialuviniq
+				wiyashakimi
+				nastapoka
+				lake_bienville
+				lake_tasiujaq
+				lake_wiyashakami
+				seal_lake
+				kuujjuaq
+				kuuvik
+				natuak
+				kasuswapaskau
+				koskoak
+				ungava_peninsula
+				sanikiluaq
+				amadjuak_lake
+				lake_minto
+				lake_payne
+				pangnirtung
+				iglunga
+				iqaluit
+				kimmirut
+				amadjuak
+				kinngait
+				baffin_island
+				caniapiscau
+				kasakaupuyau
+				wayustikw
+				mistanipi
+				chipisipi
+				katataskatikw
+				misinichikw
+				otelnuk
+				kawachisakau
+				kawachikamasu
+				enchukamao
+				lake_caniapiscau
+				qikirtajuaq
+				kamusawawasich
+				kawawasukutisich
+				kaypikupau
+				mistinatwayasu
+				kamiskayachuuch
+				qurlutuq
+				labrador_hills
+				kangiqsualujjuaq
+				imaapik
+				siimitalik
+				uashekanau
+				mistinatuakamau
+				mushuau
+				kausseskait
+				tupirvialuit
+				koroc
+				quebec_torngats
 			}
 			starting_technology_level = 3
 			country_rank = rank_county
@@ -1076,70 +2156,61 @@ countries = {
 			}
 			discovered_areas = {
 				#east_coast_region
-			illinois_area
-			wisconsin_area
-			indiana_area
-			kentucky_area
-			tennessee_area
-			#louisiana_region
-			missouri_area
-			iowa_area
-			arkansas_area
-			central_plains_area
-			superior_area
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+				superior_area
 			}
 			government = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
-
 				parliament = {
 					parliament_type = assembly
 				}
-
-
 				reforms = {
 				}
-
 				privilege = {
 					sponsor_maritime_contracts
 					nobility_council
-				nobles_land_rights
-				tribal_autonomy
-
-				#clergy
-				embellish_great_works_of_faith
-
-				#burghers
-				urban_development_grants
-				market_fairs
-
-				#Commoners
-				peasants_autonomous_villages
-				communal_lands
-				allow_hunting
-				partial_yield
-				peasants_free_peasantry
-		
-				tribes_tribal_levies
-				tribes_allow_gatherings
+					nobles_land_rights
+					tribal_autonomy
+					#clergy
+					embellish_great_works_of_faith
+					#burghers
+					urban_development_grants
+					market_fairs
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					tribes_tribal_levies
+					tribes_allow_gatherings
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1156,33 +2227,66 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
 			currency_data = {
-			gold = 500
-			stability = 60
-			prestige = 5
-			tribal_cohesion = 80
+				gold = 500
+				stability = 60
+				prestige = 5
+				tribal_cohesion = 80
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = kuujjuarapik
 		}
 		P06 = {
 			own_control_core = {
-				nunainguk navchak kingmirtok napaktok okak aulatsivik ukasikalik agvituk kaipokok aillik tessuialluk
-				misha_shipu tikigaksuagusik aivitok kenamu sheshatshiu kauipushkakamat kamassekutinat hamilton_inlet grand_lake
-				shabogamo ashuanipi kepimits muhaukamau atikonak kamassekuakamat nipissu winokapau  ashuanipi_lake shabogamo_lake
-				mishikamau menutinau ushkau_nipi attikamagen petitsikapau hamilton_highlands attikamagen_lake lake_petitsikapau 
-				catucto red_bay ikkatuluk uivvatok natsitok inutsualak
-				
+				nunainguk
+				navchak
+				kingmirtok
+				napaktok
+				okak
+				aulatsivik
+				ukasikalik
+				agvituk
+				kaipokok
+				aillik
+				tessuialluk
+				misha_shipu
+				tikigaksuagusik
+				aivitok
+				kenamu
+				sheshatshiu
+				kauipushkakamat
+				kamassekutinat
+				hamilton_inlet
+				grand_lake
+				shabogamo
+				ashuanipi
+				kepimits
+				muhaukamau
+				atikonak
+				kamassekuakamat
+				nipissu
+				winokapau
+				ashuanipi_lake
+				shabogamo_lake
+				mishikamau
+				menutinau
+				ushkau_nipi
+				attikamagen
+				petitsikapau
+				hamilton_highlands
+				attikamagen_lake
+				lake_petitsikapau
+				catucto
+				red_bay
+				ikkatuluk
+				uivvatok
+				natsitok
+				inutsualak
 			}
 			starting_technology_level = 3
 			country_rank = rank_county
@@ -1193,70 +2297,61 @@ countries = {
 			}
 			discovered_areas = {
 				#east_coast_region
-			illinois_area
-			wisconsin_area
-			indiana_area
-			kentucky_area
-			tennessee_area
-			#louisiana_region
-			missouri_area
-			iowa_area
-			arkansas_area
-			central_plains_area
-			superior_area
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+				superior_area
 			}
 			government = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
-
 				parliament = {
 					parliament_type = assembly
 				}
-
-
 				reforms = {
 				}
-
 				privilege = {
 					sponsor_maritime_contracts
 					nobility_council
-				nobles_land_rights
-				tribal_autonomy
-
-				#clergy
-				embellish_great_works_of_faith
-
-				#burghers
-				urban_development_grants
-				market_fairs
-
-				#Commoners
-				peasants_autonomous_villages
-				communal_lands
-				allow_hunting
-				partial_yield
-				peasants_free_peasantry
-		
-				tribes_tribal_levies
-				tribes_allow_gatherings
+					nobles_land_rights
+					tribal_autonomy
+					#clergy
+					embellish_great_works_of_faith
+					#burghers
+					urban_development_grants
+					market_fairs
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					tribes_tribal_levies
+					tribes_allow_gatherings
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1273,46 +2368,135 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
 			currency_data = {
-			gold = 500
-			stability = 60
-			prestige = 5
-			tribal_cohesion = 80
+				gold = 500
+				stability = 60
+				prestige = 5
+				tribal_cohesion = 80
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = misha_shipu
 		}
 		P03 = {
 			own_control_core = {
-								kinosao_sipi atikaki mukutawa lake_winnipeg cross_lake
-				lake_st_martin cedar_lake 
-				pikwitonei anipitapiskow poskatinak   sipiwesk_lake split_lake cormorant_lake talbot_lake
-				nunatonowago kanaskipenaski kaministikowak echimamish eyapaysis   island_lake gods_lake molson_lake oxford_lake
-				numaykoos mistutikumak opuskowin kapuskaywak  granville_lake southern_indian_lake  
-				shethanei tadoule kapuskaypachik thlewiaza mistahi   tadoule_lake
-				kamisak machichi kichekokotic sowunusiske
-				wapusk des_nedhe nunalla
-				nueltin tatinnai thaolintoa tha_anne  dubawnt_lake angikuni_lake tulemalu_lake yathkyed_lake tebesjuak_lake aberdeen_lake lake_nueltin baker_lake tehek_lake lake_kasba
-				 croix_lake basswood_lake
-					obishikokaang waaninaawangang
-					 lac_seul lake_of_the_woods rainy_lake
-				ogoki miniss atikokiwam matapesatakun petawanga pichinamei makokibatan kagianagami  ogoki_lake lake_saint_joseph
-				winisk kinusheo wabuk asheweig tabasokwia shibogama wapikopa wunnumin wapitotem  attawapiskat_lake lake_wunnumin
-				washeo niskibi shagamu ministik  big_trout_lake
-				attawapiskat ekwan otadaonanis patchepawapoka lakitusaki
-				kashechewan wabimeig mammamattawa wapiskau kinosheo pagashi tchakashapug 
-				moosonee abimatinu takwata wawiyastan kwetabohigan kagawask mesagami olimisk  kesagami_lake
-				mahnahwoonan sivukutaitiarruvik akimiski
+				kinosao_sipi
+				atikaki
+				mukutawa
+				lake_winnipeg
+				cross_lake
+				lake_st_martin
+				cedar_lake
+				pikwitonei
+				anipitapiskow
+				poskatinak
+				sipiwesk_lake
+				split_lake
+				cormorant_lake
+				talbot_lake
+				nunatonowago
+				kanaskipenaski
+				kaministikowak
+				echimamish
+				eyapaysis
+				island_lake
+				gods_lake
+				molson_lake
+				oxford_lake
+				numaykoos
+				mistutikumak
+				opuskowin
+				kapuskaywak
+				granville_lake
+				southern_indian_lake
+				shethanei
+				tadoule
+				kapuskaypachik
+				thlewiaza
+				mistahi
+				tadoule_lake
+				kamisak
+				machichi
+				kichekokotic
+				sowunusiske
+				wapusk
+				des_nedhe
+				nunalla
+				nueltin
+				tatinnai
+				thaolintoa
+				tha_anne
+				dubawnt_lake
+				angikuni_lake
+				tulemalu_lake
+				yathkyed_lake
+				tebesjuak_lake
+				aberdeen_lake
+				lake_nueltin
+				baker_lake
+				tehek_lake
+				lake_kasba
+				croix_lake
+				basswood_lake
+				obishikokaang
+				waaninaawangang
+				lac_seul
+				lake_of_the_woods
+				rainy_lake
+				ogoki
+				miniss
+				atikokiwam
+				matapesatakun
+				petawanga
+				pichinamei
+				makokibatan
+				kagianagami
+				ogoki_lake
+				lake_saint_joseph
+				winisk
+				kinusheo
+				wabuk
+				asheweig
+				tabasokwia
+				shibogama
+				wapikopa
+				wunnumin
+				wapitotem
+				attawapiskat_lake
+				lake_wunnumin
+				washeo
+				niskibi
+				shagamu
+				ministik
+				big_trout_lake
+				attawapiskat
+				ekwan
+				otadaonanis
+				patchepawapoka
+				lakitusaki
+				kashechewan
+				wabimeig
+				mammamattawa
+				wapiskau
+				kinosheo
+				pagashi
+				tchakashapug
+				moosonee
+				abimatinu
+				takwata
+				wawiyastan
+				kwetabohigan
+				kagawask
+				mesagami
+				olimisk
+				kesagami_lake
+				mahnahwoonan
+				sivukutaitiarruvik
+				akimiski
 			}
 			starting_technology_level = 3
 			country_rank = rank_duchy
@@ -1323,72 +2507,63 @@ countries = {
 			}
 			discovered_areas = {
 				#east_coast_region
-			illinois_area
-			wisconsin_area
-			indiana_area
-			kentucky_area
-			tennessee_area
-			#louisiana_region
-			missouri_area
-			iowa_area
-			arkansas_area
-			central_plains_area
-			superior_area
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+				superior_area
 			}
 			government = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
-
 				parliament = {
 					parliament_type = assembly
 				}
-
-
 				reforms = {
 					PV_vinland
 				}
-
 				privilege = {
 					vapnatak
 					sokeman
 					nobility_council
-				nobles_land_rights
-				tribal_autonomy
-
-				#clergy
-				embellish_great_works_of_faith
-
-				#burghers
-				urban_development_grants
-				market_fairs
-
-				#Commoners
-				peasants_autonomous_villages
-				communal_lands
-				allow_hunting
-				partial_yield
-				peasants_free_peasantry
-		
-				tribes_tribal_levies
-				tribes_allow_gatherings
+					nobles_land_rights
+					tribal_autonomy
+					#clergy
+					embellish_great_works_of_faith
+					#burghers
+					urban_development_grants
+					market_fairs
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					tribes_tribal_levies
+					tribes_allow_gatherings
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1405,136 +2580,452 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
 			currency_data = {
-			gold = 500
-			stability = 60
-			prestige = 5
-			tribal_cohesion = 80
+				gold = 500
+				stability = 60
+				prestige = 5
+				tribal_cohesion = 80
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = wabuk
 		}
 		P04 = {
 			own_control_core = {
-				baawitigong batchawana michipicoten agawa_superior manitowik pekatek aguasabon  penokean_hills
-				nipigon namewaminikan ombabika wabinosh kaitotikwia onaman_lake lake_nipigon
-				kaministiquia kakabeka neebing minong
-				kapuskasing missinaibi nemegosenda otapingshewee tionaga wakusimi mattawishkwia 
-				kenogamissi mattagami buskegau mistango nahma piscoutagami mattawasaga lake_abitibi
-				nagagami watistiguam achikamii kabinakagami pagwachuan ginoogaming
-				bay_of_quinte central_lake_ontario niagara_basin
-				eastern_erie_basin central_erie_basin pelee_island
-					lake_st_clair
-					northern_lake_huron deadmans_point cunningham_point georgian_bay manitoulin_channel
-					southern_lake_huron clark_point blue_point
-					whitefish_point saginaw_bay
-				green_bay strait_of_makinac traverse_bay
-					middle_lake_michigan south_lake_michigan wind_point
-				au_sable_point whitefish_bay michipicoten_bay
-					pukaskwa_point keweenaw_bay
-				schreiber_channel black_bay
-					 chequamegon_bay thunder_bay
-					keweenaw_coast copper_harbor
-				aulatsivik_island sloop_harbour_point hawke_island
-					black_bear_bay kaipokok_bay
-					labrador_sea canada_high_sea9
-					canada_high_sea6 canada_high_sea7
-				frobisher_bay cumberland_sound north_aulatsivik_island okak_bay
-					hatten_headland edgell_island popham_bay angijak_island dyer_cape
-					baffin_bay
-					baffin_high_sea2 baffin_high_sea4 canada_high_sea2 canada_high_sea4
-				anticosti_channel grosse_island saint_lawrence_gulf gulf_of_saint_lawrence saint_georges_bay st_george_bay cabot_strait
-					bay_of_islands esquiman_channel amour_point
-				mouth_of_saint_lawrence saguenay_fjord saint_lawrence_estuary boisvert_point anglais_point cartier_point coast_of_gaspe
-				sept_iles_bay gamache_bay honguedo_strait mingan_islands lake_island bilodeau_point anticosti_coast
-				mecatina_islands saint_agustin_bay les_blacklands vieux_poste_point
-				rouge_cape quero_bank havre_aubert_cape
-					northumberland_strait tatamagouche_bay pictou_banks strait_of_canso
-				malpeque_bay abegweit_passage miramichi_bay gaspe_bay chaleur_bay bradelle_valley
-				laurentian_channel burgeo_bank hermitage_channel hermitage_bay fortune_bay st_pierre_bank
-					canada_high_sea16
-					placentia_bay green_bank trepassey_bay conception_bay bonavista_bay
-					canada_high_sea13 canada_high_sea14 canada_high_sea15 
-					canada_high_sea11 canada_high_sea12
-				groais_island notre_dame_bay freels_cape notre_dame_channel grey_islands
-					canada_high_sea10
-				brown_bank bacarro_bank lahave_bank emerald_bank
-					canada_high_sea19 canada_high_sea20 canada_high_sea21
-				sydney_bight misaine_bank middle_bank canso_bank
-					canada_high_sea17 canada_high_sea18 
-				grand_manan_basin bay_of_fundy chignecto_bay minas_basin
-					pen_islands mouth_of_the_winisk shagamu_coast kamisak_coast mouth_of_thlewiaza
-					thompson_point churchill_shoal dawson_inlet rankin_inlet chesterfield_inlet
-					hudson_bay1 hudson_bay_high_sea11 hudson_bay_high_sea12 hudson_bay_high_sea14
-				 salluit_fjord charles_island king_george_sound diana_bay akpatok_island1 akpatok_island2
-					 aquiatulavik_bay jubilee_island glencoe_island big_island saddleback_island
-					keglo_bay alukpaluk_bay forbes_sound ungava_bay_high_sea
+				baawitigong
+				batchawana
+				michipicoten
+				agawa_superior
+				manitowik
+				pekatek
+				aguasabon
+				penokean_hills
+				nipigon
+				namewaminikan
+				ombabika
+				wabinosh
+				kaitotikwia
+				onaman_lake
+				lake_nipigon
+				kaministiquia
+				kakabeka
+				neebing
+				minong
+				kapuskasing
+				missinaibi
+				nemegosenda
+				otapingshewee
+				tionaga
+				wakusimi
+				mattawishkwia
+				kenogamissi
+				mattagami
+				buskegau
+				mistango
+				nahma
+				piscoutagami
+				mattawasaga
+				lake_abitibi
+				nagagami
+				watistiguam
+				achikamii
+				kabinakagami
+				pagwachuan
+				ginoogaming
+				bay_of_quinte
+				central_lake_ontario
+				niagara_basin
+				eastern_erie_basin
+				central_erie_basin
+				pelee_island
+				lake_st_clair
+				northern_lake_huron
+				deadmans_point
+				cunningham_point
+				georgian_bay
+				manitoulin_channel
+				southern_lake_huron
+				clark_point
+				blue_point
+				whitefish_point
+				saginaw_bay
+				green_bay
+				strait_of_makinac
+				traverse_bay
+				middle_lake_michigan
+				south_lake_michigan
+				wind_point
+				au_sable_point
+				whitefish_bay
+				michipicoten_bay
+				pukaskwa_point
+				keweenaw_bay
+				schreiber_channel
+				black_bay
+				chequamegon_bay
+				thunder_bay
+				keweenaw_coast
+				copper_harbor
+				aulatsivik_island
+				sloop_harbour_point
+				hawke_island
+				black_bear_bay
+				kaipokok_bay
+				labrador_sea
+				canada_high_sea9
+				canada_high_sea6
+				canada_high_sea7
+				frobisher_bay
+				cumberland_sound
+				north_aulatsivik_island
+				okak_bay
+				hatten_headland
+				edgell_island
+				popham_bay
+				angijak_island
+				dyer_cape
+				baffin_bay
+				baffin_high_sea2
+				baffin_high_sea4
+				canada_high_sea2
+				canada_high_sea4
+				anticosti_channel
+				grosse_island
+				saint_lawrence_gulf
+				gulf_of_saint_lawrence
+				saint_georges_bay
+				st_george_bay
+				cabot_strait
+				bay_of_islands
+				esquiman_channel
+				amour_point
+				mouth_of_saint_lawrence
+				saguenay_fjord
+				saint_lawrence_estuary
+				boisvert_point
+				anglais_point
+				cartier_point
+				coast_of_gaspe
+				sept_iles_bay
+				gamache_bay
+				honguedo_strait
+				mingan_islands
+				lake_island
+				bilodeau_point
+				anticosti_coast
+				mecatina_islands
+				saint_agustin_bay
+				les_blacklands
+				vieux_poste_point
+				rouge_cape
+				quero_bank
+				havre_aubert_cape
+				northumberland_strait
+				tatamagouche_bay
+				pictou_banks
+				strait_of_canso
+				malpeque_bay
+				abegweit_passage
+				miramichi_bay
+				gaspe_bay
+				chaleur_bay
+				bradelle_valley
+				laurentian_channel
+				burgeo_bank
+				hermitage_channel
+				hermitage_bay
+				fortune_bay
+				st_pierre_bank
+				canada_high_sea16
+				placentia_bay
+				green_bank
+				trepassey_bay
+				conception_bay
+				bonavista_bay
+				canada_high_sea13
+				canada_high_sea14
+				canada_high_sea15
+				canada_high_sea11
+				canada_high_sea12
+				groais_island
+				notre_dame_bay
+				freels_cape
+				notre_dame_channel
+				grey_islands
+				canada_high_sea10
+				brown_bank
+				bacarro_bank
+				lahave_bank
+				emerald_bank
+				canada_high_sea19
+				canada_high_sea20
+				canada_high_sea21
+				sydney_bight
+				misaine_bank
+				middle_bank
+				canso_bank
+				canada_high_sea17
+				canada_high_sea18
+				grand_manan_basin
+				bay_of_fundy
+				chignecto_bay
+				minas_basin
+				pen_islands
+				mouth_of_the_winisk
+				shagamu_coast
+				kamisak_coast
+				mouth_of_thlewiaza
+				thompson_point
+				churchill_shoal
+				dawson_inlet
+				rankin_inlet
+				chesterfield_inlet
+				hudson_bay1
+				hudson_bay_high_sea11
+				hudson_bay_high_sea12
+				hudson_bay_high_sea14
+				salluit_fjord
+				charles_island
+				king_george_sound
+				diana_bay
+				akpatok_island1
+				akpatok_island2
+				aquiatulavik_bay
+				jubilee_island
+				glencoe_island
+				big_island
+				saddleback_island
+				keglo_bay
+				alukpaluk_bay
+				forbes_sound
+				ungava_bay_high_sea
 				northwestern_passage
-					vauquelin_point belcher_islands_coast5
-					salikuit_islands mctavish_island drayton_island kongaluk_bay cape_smith digges_island
-					gods_mercy_bay netcheck_cape evans_strait santianna_point coats_island3 leyson_point
-					mansel_island3
-					
-					hudson_bay_high_sea4 hudson_bay_high_sea5
-					hudson_bay_high_sea9 hudson_bay_high_sea16
-					hudson_bay2 hudson_bay3
-				kakachischuan_point cape_hope_islands cape_henrietta_maria bear_islands
-				kaniatarahontsi ahkwesasne_ny ahna_wate
-				waawiiyaataanong giwitatigweiasibi osaakiiwaki shiawasee
-				saginaw shebeon tittabawassee saganing
-				cheboygan wequetong asiniike manistee
-				muskegon onekama mastigon
-				wabenasibi owashtanong kalamazoo sakiwasipi wapikisko
-				mackinac tahquamenon manistique
-				ishpeming menominee keweenaw chicagon ontonagon
-				millioke kenosha sheboygan koshkonong
-				boojwiikwedong manitowoc oconto peshtigo muhwaosipi lake_winnebago
-				meskousing aupuhkirakanewe whaypaw kakaling
-				mendota pecatonica_wi kiwigapawa
-				gaamiskwaabikaang chequamegon kayeskikan mishkwagokag kinnickinnic
-				enookwasaneenah waumandee hahatououadeba pokegama odaawaa sappah
-				cuyahoga ashtabula mahoning_oh tuscarawas
-				muskingum captina conotton
-				olentangy chianouske scioto ethapetha hocking kokosing
-				sandusky maumee qusquasrundee shapoquate
-				assereniet mameiwasipi mineami pickawillany
-				erie saucunk shenango tionesta kittaning punxsutawney
-				ambraw osanamon okaw
-				checagou tiatiki pisticoui
-				kishwaukee ahsenisiipi pecatonica
-				theakeiki waupecan matsigame
-				tiotoren kanentaweron thahnawate cattaraugus ahouenro
-				nemadji wissakode makoua
-				oheyandewa aankwaahsakwa wapinippi
+				vauquelin_point
+				belcher_islands_coast5
+				salikuit_islands
+				mctavish_island
+				drayton_island
+				kongaluk_bay
+				cape_smith
+				digges_island
+				gods_mercy_bay
+				netcheck_cape
+				evans_strait
+				santianna_point
+				coats_island3
+				leyson_point
+				mansel_island3
+				hudson_bay_high_sea4
+				hudson_bay_high_sea5
+				hudson_bay_high_sea9
+				hudson_bay_high_sea16
+				hudson_bay2
+				hudson_bay3
+				kakachischuan_point
+				cape_hope_islands
+				cape_henrietta_maria
+				bear_islands
+				kaniatarahontsi
+				ahkwesasne_ny
+				ahna_wate
+				waawiiyaataanong
+				giwitatigweiasibi
+				osaakiiwaki
+				shiawasee
+				saginaw
+				shebeon
+				tittabawassee
+				saganing
+				cheboygan
+				wequetong
+				asiniike
+				manistee
+				muskegon
+				onekama
+				mastigon
+				wabenasibi
+				owashtanong
+				kalamazoo
+				sakiwasipi
+				wapikisko
+				mackinac
+				tahquamenon
+				manistique
+				ishpeming
+				menominee
+				keweenaw
+				chicagon
+				ontonagon
+				millioke
+				kenosha
+				sheboygan
+				koshkonong
+				boojwiikwedong
+				manitowoc
+				oconto
+				peshtigo
+				muhwaosipi
+				lake_winnebago
+				meskousing
+				aupuhkirakanewe
+				whaypaw
+				kakaling
+				mendota
+				pecatonica_wi
+				kiwigapawa
+				gaamiskwaabikaang
+				chequamegon
+				kayeskikan
+				mishkwagokag
+				kinnickinnic
+				enookwasaneenah
+				waumandee
+				hahatououadeba
+				pokegama
+				odaawaa
+				sappah
+				cuyahoga
+				ashtabula
+				mahoning_oh
+				tuscarawas
+				muskingum
+				captina
+				conotton
+				olentangy
+				chianouske
+				scioto
+				ethapetha
+				hocking
+				kokosing
+				sandusky
+				maumee
+				qusquasrundee
+				shapoquate
+				assereniet
+				mameiwasipi
+				mineami
+				pickawillany
+				erie
+				saucunk
+				shenango
+				tionesta
+				kittaning
+				punxsutawney
+				ambraw
+				osanamon
+				okaw
+				checagou
+				tiatiki
+				pisticoui
+				kishwaukee
+				ahsenisiipi
+				pecatonica
+				theakeiki
+				waupecan
+				matsigame
+				tiotoren
+				kanentaweron
+				thahnawate
+				cattaraugus
+				ahouenro
+				nemadji
+				wissakode
+				makoua
+				oheyandewa
+				aankwaahsakwa
+				wapinippi
 				agouasaque
-				wapahani quiaghtena mississinewa
-				kankakee pakamik wabash
-				kociihsasiipi tippecanoe micewehudehik kineepikwameekwa
-				cataraqui kahwenoke toniato gananoque opinicon
-				kitchissippi pasapkedjinawong onontchataronon maizinaazibi matoueska kinozhesipi pikwakanagan petawawa
-				napanee ganneious ganaraska quinte
-				otonabee kawartha mazinaw skootamatta kamaniskeg catchacoma kashagawigamog
-				macassa niagara nissouri kandoucho kenhionatatie
-				tekahionhake kanagio ganatchio bkwejanong
-				menesetung saugeen dehskan_ziibi nochemoweniing
-				etharita ehwae garafraxa eramosa
-				ouentarionk cahiague kaotia scanonaenrat ossossane lake_simcoe
-				tkaronto oshawa scugog haskaont missinihe tetioneshohon 
-				shawanaga cognashene kahshe magnetawan
-				nosbonsing nipissing powassan memesagamesing nemag lake_nipissing
-				wanapitei onaping pogamasing temagami wanapitei_lake
-				manitoulin wemitigoj eskimanetigon mississagi
-				matabichuan matachewan sessekinika mattawa opimika
+				wapahani
+				quiaghtena
+				mississinewa
+				kankakee
+				pakamik
+				wabash
+				kociihsasiipi
+				tippecanoe
+				micewehudehik
+				kineepikwameekwa
+				cataraqui
+				kahwenoke
+				toniato
+				gananoque
+				opinicon
+				kitchissippi
+				pasapkedjinawong
+				onontchataronon
+				maizinaazibi
+				matoueska
+				kinozhesipi
+				pikwakanagan
+				petawawa
+				napanee
+				ganneious
+				ganaraska
+				quinte
+				otonabee
+				kawartha
+				mazinaw
+				skootamatta
+				kamaniskeg
+				catchacoma
+				kashagawigamog
+				macassa
+				niagara
+				nissouri
+				kandoucho
+				kenhionatatie
+				tekahionhake
+				kanagio
+				ganatchio
+				bkwejanong
+				menesetung
+				saugeen
+				dehskan_ziibi
+				nochemoweniing
+				etharita
+				ehwae
+				garafraxa
+				eramosa
+				ouentarionk
+				cahiague
+				kaotia
+				scanonaenrat
+				ossossane
+				lake_simcoe
+				tkaronto
+				oshawa
+				scugog
+				haskaont
+				missinihe
+				tetioneshohon
+				shawanaga
+				cognashene
+				kahshe
+				magnetawan
+				nosbonsing
+				nipissing
+				powassan
+				memesagamesing
+				nemag
+				lake_nipissing
+				wanapitei
+				onaping
+				pogamasing
+				temagami
+				wanapitei_lake
+				manitoulin
+				wemitigoj
+				eskimanetigon
+				mississagi
+				matabichuan
+				matachewan
+				sessekinika
+				mattawa
+				opimika
 			}
 			starting_technology_level = 3
 			country_rank = rank_duchy
@@ -1545,72 +3036,63 @@ countries = {
 			}
 			discovered_areas = {
 				#east_coast_region
-			illinois_area
-			wisconsin_area
-			indiana_area
-			kentucky_area
-			tennessee_area
-			#louisiana_region
-			missouri_area
-			iowa_area
-			arkansas_area
-			central_plains_area
-			superior_area
+				illinois_area
+				wisconsin_area
+				indiana_area
+				kentucky_area
+				tennessee_area
+				#louisiana_region
+				missouri_area
+				iowa_area
+				arkansas_area
+				central_plains_area
+				superior_area
 			}
 			government = {
 				type = tribe
 				heir_selection = tribal_oldest_male
 				ruler = random
-
 				parliament = {
 					parliament_type = assembly
 				}
-
-
 				reforms = {
 					PV_vinland
 				}
-
 				privilege = {
 					vapnatak
 					sokeman
 					nobility_council
-				nobles_land_rights
-				tribal_autonomy
-
-				#clergy
-				embellish_great_works_of_faith
-
-				#burghers
-				urban_development_grants
-				market_fairs
-
-				#Commoners
-				peasants_autonomous_villages
-				communal_lands
-				allow_hunting
-				partial_yield
-				peasants_free_peasantry
-		
-				tribes_tribal_levies
-				tribes_allow_gatherings
+					nobles_land_rights
+					tribal_autonomy
+					#clergy
+					embellish_great_works_of_faith
+					#burghers
+					urban_development_grants
+					market_fairs
+					#Commoners
+					peasants_autonomous_villages
+					communal_lands
+					allow_hunting
+					partial_yield
+					peasants_free_peasantry
+					tribes_tribal_levies
+					tribes_allow_gatherings
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 20
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1627,34 +3109,87 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
 			currency_data = {
-			gold = 500
-			stability = 60
-			prestige = 5
-			tribal_cohesion = 80
+				gold = 500
+				stability = 60
+				prestige = 5
+				tribal_cohesion = 80
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = onekama
 		}
-
 		P01 = {
 			own_control_core = {
-				ipswich bury lowestoft lavenham norwich lynn yarmouth thetford fakenham lincoln boston grimsby grantham louth spalding
+				ipswich
+				bury
+				lowestoft
+				lavenham
+				norwich
+				lynn
+				yarmouth
+				thetford
+				fakenham
+				lincoln
+				boston
+				grimsby
+				grantham
+				louth
+				spalding
 			}
 			our_cores_conquered_by_others = {
-				leicester loughborough bosworth rutland colchester chelmsford prittlewell hedingham walden barking cambridge ely huntingdon royston
-				northampton kettering derby glossop chesterfield nottingham newark retford lancaster blackburn liverpool preston manchester pennines_01 pennines_02
-				york scarborough bedale richmond whitby north_york_moors hull bridlington selby norton leeds pontefract skipton wakefield doncaster ripon pennines_04 pennines_05 pennines_06
+				leicester
+				loughborough
+				bosworth
+				rutland
+				colchester
+				chelmsford
+				prittlewell
+				hedingham
+				walden
+				barking
+				cambridge
+				ely
+				huntingdon
+				royston
+				northampton
+				kettering
+				derby
+				glossop
+				chesterfield
+				nottingham
+				newark
+				retford
+				lancaster
+				blackburn
+				liverpool
+				preston
+				manchester
+				pennines_01
+				pennines_02
+				york
+				scarborough
+				bedale
+				richmond
+				whitby
+				north_york_moors
+				hull
+				bridlington
+				selby
+				norton
+				leeds
+				pontefract
+				skipton
+				wakefield
+				doncaster
+				ripon
+				pennines_04
+				pennines_05
+				pennines_06
 			}
 			starting_technology_level = 3
 			country_rank = rank_duchy
@@ -1665,18 +3200,14 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
-
 				parliament = {
 					parliament_type = council
 				}
-
-
 				reforms = {
 					PV_danelaw
 					PV_last_borough
 					galley_lords_reform
 				}
-
 				privilege = {
 					communal_lands
 					primacy_of_nobility
@@ -1696,21 +3227,20 @@ countries = {
 					clergy_land_rights
 				}
 				laws = {
-				administrative_system = central_councils
-				censorship = limited_censorship
-				cultural_traditions_law = martial_society
-				legal_code_law = traditional_law_policy
-				distribution_of_power_law = dop_traditional_distribution_of_power
-				education_masses_law = basic_religious_education
-				feudal_de_jure_law = by_blood
-				heir_religion_law = heir_same_religion
-				maritime_law = protect_trade_routes
-				medieval_levy_law = noble_levies
-				piracy_law = anti_piracy_policy
-				royal_court_customs_law = itinerant_court_policy
-				immigration_law = open_borders_law
+					administrative_system = central_councils
+					censorship = limited_censorship
+					cultural_traditions_law = martial_society
+					legal_code_law = traditional_law_policy
+					distribution_of_power_law = dop_traditional_distribution_of_power
+					education_masses_law = basic_religious_education
+					feudal_de_jure_law = by_blood
+					heir_religion_law = heir_same_religion
+					maritime_law = protect_trade_routes
+					medieval_levy_law = noble_levies
+					piracy_law = anti_piracy_policy
+					royal_court_customs_law = itinerant_court_policy
+					immigration_law = open_borders_law
 				}
-
 				centralization_vs_decentralization = 30
 				aristocracy_vs_plutocracy = -85
 				serfdom_vs_free_subjects = 25
@@ -1727,13 +3257,159 @@ countries = {
 			}
 			accepted_cultures = {
 			}
-
 			tolerated_cultures = {
-
 			}
-
 			capital = lincoln
 		}
+		SIL = {
+			own_control_core = {
+				glogow
+				gora
+				kozuchow
+				szprotawa
+				zielona_gora
+				legnica
+				boleslawiec
+				jawor
+				wolow
+				zlotoryja
+				olesnica
+				milicz
+				namyslow
+				sycow
+				trzebnica
+				opava
+				fryvaldov
+				glubczyce
+				hlucin
+				krnov
+				opole
+				kluczbork
+				lubliniec
+				olesno
+				prudnik
+				strzelce_opolskie
+				swidnica
+				kamienna_gora
+				rychbach
+				niemcza
+				ziebice
+				tesin
+				bielsko
+				bytom
+				kozle
+				pszczyna
+				raciborz
+				siewierz
+				toszek
+				wroclaw
+				brzeg
+				grodkow
+				nysa
+				niemodlin
+				olawa
+				sroda_slaska
+				zagan
+				krosno_odrzanskie
+				sulechow
+				zary
+				gorlitz
+				bautzen
+				zittau
+				hoyerswerda
+				rothenburg_oberlausitz
+				marienstern
+				hradec_kralove
+				jicin
+				klodzko
+				nachod
+				podebrady
+				mlada_boleslav
+				frydlant
+				turnov
+				decin
+				litomerice
+			}
+			starting_technology_level = 3
+			include = "expl_eastern_europe"
+			include = "eastern_european_catholic_monarchy_no_coast"
+			include = "eastern_european_catholic"
+			country_rank = rank_duchy
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = oel_konrad_i_piast
+				ruler_term = {
+					character = oel_konrad_i_piast
+					start_date = 1321.1.1
+					regnal_number = 1
+				}
+				regnal_numbers = {
+					name_conrad = 1
+					Bolko = 1
+					name_henry = 1
+					name_nicholas = 2
+					Przemko = 1
+				}
+				privilege = {
+					communal_lands
+					primacy_of_nobility
+					noble_marriage_rights
+					auxilium_et_consilium
+					formal_guilds
+					sponsor_maritime_contracts
+					building_roads_rights
+					peasants_allowed_weapons_privilege
+				}
+			}
+			tolerated_cultures = {
+				german_silesian
+			}
+			capital = wroclaw
+			dynasty = piast_dynasty
+		}
+		ANS = {	#Ansbach
+			own_control_core = {
+				ansbach wunsiedel bayreuth neustadt schwabach
+				kulmbach
+				hof plauen
+				cheb
+			}
 
+			starting_technology_level = 3
+			include = "expl_western_europe"
+			include = "catholic_monarchy_no_coast"
+			include = "expl_northern_europe"
+			include = "german_principality"
+			government = {
+				ruler = ans_johann_ii_von_nurnberg
+
+				ruler_term = { character = ans_friedrich_i_von_nurnberg start_date = 1192.1.1 end_date = 1204.1.1 regnal_number = 1 }
+				ruler_term = { character = hoh_friedrich_iv_von_zollern start_date = 1204.1.1 end_date = 1214.1.1 regnal_number = 2 }
+				ruler_term = {
+					character = hhb_friedrich_iv_von_zollern start_date = 1214.1.1 end_date = 1255.1.1 regnal_number = 2
+					character = ans_konrad_i_von_nurnberg start_date = 1214.1.1 end_date = 1255.1.1 regnal_number = 1
+				}
+				ruler_term = { character = ans_konrad_i_von_nurnberg start_date = 1255.1.1 end_date = 1262.1.1 regnal_number = 1 }
+				ruler_term = { character = ans_friedrich_iii_von_nurnberg start_date = 1262.1.1 end_date = 1297.8.14 regnal_number = 3 }
+				ruler_term = { character = ans_johann_i_von_nurnberg start_date = 1297.8.14 end_date = 1300.1.1 regnal_number = 1 }
+				ruler_term = { character = ans_friedrich_iv_von_nurnberg start_date = 1300.1.1 end_date = 1332.5.19 regnal_number = 4 }
+				ruler_term = { character = ans_johann_ii_von_nurnberg start_date = 1332.5.19 regnal_number = 2 }
+
+				regnal_numbers = {
+					name_frederick = 4
+					name_conrad = 1
+					name_john = 2
+				}
+			}
+
+			tolerated_cultures = {
+				upper_palatine
+			}
+
+			country_rank = rank_county
+			capital = ansbach
+			dynasty = hohenzollern_dynasty
+		}
 	}
 }

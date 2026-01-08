@@ -4420,9 +4420,10 @@ schleiz = {
 	define_pop = {	type = peasants	size = 36.329	culture = east_franconian	religion = catholic }
 }
 hof = {
-	define_pop = {	type = nobles	size = 0.019	culture = east_franconian	religion = catholic }
-	define_pop = {	type = clergy	size = 0.019	culture = east_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 21.877	culture = east_franconian	religion = catholic }
+	define_pop = {	type = nobles	size = 0.025	culture = east_franconian	religion = catholic }
+	define_pop = {	type = burghers	size = 4.563	culture = east_franconian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.138	culture = east_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 81.877	culture = east_franconian	religion = catholic }
 }
 erfurt = {
 	define_pop = {	type = nobles	size = 0.025	culture = saxon	religion = catholic }
@@ -5830,7 +5831,7 @@ schwabach = {
 ansbach = {
 	define_pop = {	type = nobles	size = 0.012	culture = east_franconian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.025	culture = east_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 12.925	culture = east_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 42.925	culture = east_franconian	religion = catholic }
 }
 uffenheim = {
 	define_pop = {	type = nobles	size = 0.021	culture = east_franconian	religion = catholic }
@@ -5897,7 +5898,7 @@ wunsiedel = {
 }
 kulmbach = {
 	define_pop = {	type = clergy	size = 0.012	culture = east_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 13.900	culture = east_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 33.900	culture = east_franconian	religion = catholic }
 }
 eschenbach = {
 	define_pop = {	type = clergy	size = 0.011	culture = danube_bavarian	religion = catholic }
@@ -5916,7 +5917,7 @@ bamberg = {
 	define_pop = {	type = nobles	size = 0.010	culture = east_franconian	religion = catholic }
 	define_pop = {	type = clergy	size = 0.088	culture = east_franconian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.086	culture = east_franconian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.913	culture = east_franconian	religion = catholic }
+	define_pop = {	type = peasants	size = 46.913	culture = east_franconian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.069	culture = ashkenazi	religion = judaism }
 }
 hassfurt = {
@@ -6292,7 +6293,7 @@ domazlice = {
 }
 klatovy = {
 	define_pop = {	type = clergy	size = 0.005	culture = czech	religion = catholic }
-	define_pop = {	type = peasants	size = 19.230	culture = czech	religion = catholic }
+	define_pop = {	type = peasants	size = 9.230	culture = czech	religion = catholic } #PV
 	define_pop = {	type = peasants	size = 1.112	culture = danube_bavarian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.225	culture = ashkenazi	religion = judaism }
 }
@@ -6302,9 +6303,9 @@ tachov = {
 	define_pop = {	type = peasants	size = 2.367	culture = upper_palatine	religion = catholic }
 	define_pop = {	type = peasants	size = 0.238	culture = ashkenazi	religion = judaism }
 }
-tepla = {
+tepla = { #PV
 	define_pop = {	type = clergy	size = 0.032	culture = czech	religion = catholic }
-	define_pop = {	type = peasants	size = 33.617	culture = czech	religion = catholic }
+	define_pop = {	type = peasants	size = 13.617	culture = czech	religion = catholic }
 	define_pop = {	type = peasants	size = 6.448	culture = east_franconian	religion = catholic }
 }
 caslav = {
@@ -7399,8 +7400,6 @@ cardigan = {
 aberystwyth = {
 	define_pop = {	type = clergy	size = 0.008	culture = welsh	religion = catholic }
 	define_pop = {	type = peasants	size = 11.962	culture = welsh	religion = catholic }
-}
-dyfi_estuary = {
 }
 carnarvon = {
 	define_pop = {	type = nobles	size = 0.008	culture = english	religion = catholic }
@@ -17855,7 +17854,7 @@ wroclaw = {
 	define_pop = {	type = clergy	size = 0.036	culture = german_silesian	religion = catholic }
 	define_pop = {	type = burghers	size = 1.106	culture = german_silesian	religion = catholic }
 	define_pop = {	type = peasants	size = 10.325	culture = german_silesian	religion = catholic }
-	define_pop = {	type = peasants	size = 23.446	culture = silesian	religion = catholic }
+	define_pop = {	type = peasants	size = 83.446	culture = silesian	religion = catholic }
 	define_pop = {	type = peasants	size = 0.687	culture = ashkenazi	religion = judaism }
 }
 brzeg = {
@@ -20459,13 +20458,9 @@ iagorlic = {
 	define_pop = {	type = tribesmen	size = 2.300	culture = crimean	religion = tengri }
 	define_pop = {	type = slaves	size = 0.964	culture = moldovan	religion = orthodox }
 }
-berezan_liman = {
-}
 khadzhibey_liman = {
 }
 kuialnyk_liman = {
-}
-tylihul_liman = {
 }
 dashev = {
 	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = sunni }
@@ -20990,8 +20985,6 @@ berdiansk = {
 	define_pop = {	type = peasants	size = 1.205	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 1.393	culture = crimean	religion = tengri }
 }
-molochnyi_liman = {
-}
 taganrog = {
 	define_pop = {	type = clergy	size = 0.005	culture = mongolian_culture	religion = sunni }
 	define_pop = {	type = peasants	size = 0.925	culture = crimean	religion = sunni }
@@ -21027,8 +21020,6 @@ vasylivka = {
 	define_pop = {	type = peasants	size = 0.536	culture = crimean	religion = sunni }
 	define_pop = {	type = peasants	size = 1.238	culture = crimean	religion = tengri }
 	define_pop = {	type = tribesmen	size = 1.801	culture = crimean	religion = tengri }
-}
-mius_liman = {
 }
 bakhmut = {
 	define_pop = {	type = clergy	size = 0.009	culture = mongolian_culture	religion = sunni }

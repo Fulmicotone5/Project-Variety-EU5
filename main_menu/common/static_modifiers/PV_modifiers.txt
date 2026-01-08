@@ -8,3 +8,7 @@ TRY_INJECT:winter_normal = {
 TRY_INJECT:winter_severe = {
 	local_monthly_food_modifier = -0.5
 }
+TRY_INJECT:country_art = {
+	cultural_influence = 1
+ 
+}

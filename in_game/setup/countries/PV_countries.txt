@@ -7,6 +7,15 @@ KOJ = {
 
 	is_historic = yes
 }
+SIL = {
+	color = map_SIL
+	color2 = rgb { 84 166 93 }
+
+	culture_definition = silesian
+	religion_definition = catholic
+
+	is_historic = yes
+}
 #Toulouse
 TOU = {
 	color = map_TOU

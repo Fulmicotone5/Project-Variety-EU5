@@ -1,32 +1,61 @@
 TRY_INJECT:vassal = {
+	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:uc_bey = {
+	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:tusi = {
+	great_power_score_transfer = -0.1
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:tributary = {
+	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:march = {
+	great_power_score_transfer = -0.5
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:fiefdom = {
+	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:dominion = {
+	great_power_score_transfer = -0.5
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
 }
 TRY_INJECT:appanage = {
+	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
+}
+TRY_INJECT:imperial_free_city = {
+	great_power_score_transfer = -0.1
+}
+TRY_INJECT:direct_imperial_free_city = {
+	great_power_score_transfer = -0.25
+}
+TRY_INJECT:colonial_nation = {
+	great_power_score_transfer = -0.75
+}
+TRY_INJECT:conquistador = {
+	great_power_score_transfer = -0.5
+}
+TRY_INJECT:samanta = {
+	great_power_score_transfer = -0.1
+}
+TRY_INJECT:maha_samanta = {
+	great_power_score_transfer = -0.25
+}
+TRY_INJECT:pradhana_maha_samanta = {
+	great_power_score_transfer = -0.75
 }

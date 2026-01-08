@@ -27,6 +27,7 @@ TRY_REPLACE:harbor_administration = {
 			country_type = pop
 			country_type = building
 		}
+		societal_value:land_vs_naval > 10
 	}
 
 

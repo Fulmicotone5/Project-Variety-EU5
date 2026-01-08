@@ -47,7 +47,7 @@ PV_morkdom = {
 
 	minimum_opinion_for_offer = 150
 
-	great_power_score_transfer = 0.5 # the amount of Great Power Score that is transferred from the Subject to the Overlord
+	great_power_score_transfer = 0 # the amount of Great Power Score that is transferred from the Subject to the Overlord
 	
 	institution_spread_to_overlord = monthly_institution_spread_severe
 	institution_spread_to_subject = monthly_institution_spread_severe

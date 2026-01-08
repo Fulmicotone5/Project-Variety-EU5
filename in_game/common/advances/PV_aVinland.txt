@@ -12,6 +12,18 @@ legacy_of_exp = {
 
 	requires = unlock_armored_horsemen_advance
 }
+vestrlandernav = {
+	age = age_1_traditions
+	icon = ship_building_advance
+	potential = {
+		has_or_had_tag = P02
+
+	}
+	trade_range	= 500
+	allow_open_sea_exploration = yes
+
+	requires = ship_building_advance
+}
 
 the_new_world = {
 	age = age_2_renaissance

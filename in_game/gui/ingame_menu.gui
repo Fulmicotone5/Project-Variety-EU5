@@ -50,31 +50,31 @@ window = {
 		paused_indicator = {
 			parentanchor = center
 			visible_at_creation = no
-			visible = "[And4(Not(IsSaving), Not(IsWritingDumps), Not(IsRecalculatingCacheData), Not(IsDisconnecting))]"
+			visible = "[And5(Not(IsSaving), Not(IsWritingDumps), Not(IsRecalculatingCacheData), Not(IsDisconnecting), Not(IsLobbyOpen))]"
 		}
 
 		saving_indicator = {
 			parentanchor = center
 			visible_at_creation = no
-			visible = "[IsSaving]"
+			visible = "[And(IsSaving, Not(IsLobbyOpen))]"
 		}
 
 		oos_indicator = {
 			parentanchor = center
 			visible_at_creation = no
-			visible = "[IsWritingDumps]"
+			visible = "[And(IsWritingDumps, Not(IsLobbyOpen))]"
 		}
 
 		recalculate_indicator = {
 			parentanchor = center
 			visible_at_creation = no
-			visible = "[And(IsRecalculatingCacheData, GameIsMultiplayer)]"
+			visible = "[And3(IsRecalculatingCacheData, GameIsMultiplayer, Not(IsLobbyOpen))]"
 		}
 
 		disconnecting_indicator = {
 			parentanchor = center
 			visible_at_creation = no
-			visible = "[And4(IsDisconnecting, Not(IsSaving), Not(IsWritingDumps), Not(IsRecalculatingCacheData))]"
+			visible = "[And5(IsDisconnecting, Not(IsSaving), Not(IsWritingDumps), Not(IsRecalculatingCacheData), Not(IsLobbyOpen))]"
 		}
 	}
 
@@ -107,10 +107,17 @@ window = {
 				size = {-1 60 }
 				layoutpolicy_horizontal = expanding
 				using = color_black_texture
-				
-				text = "[GetShortVersionInfoString]"
-				font = StandardGameFont
-				default_format = "#color_gold"
+
+				text_multi = {
+					parentanchor = center
+					size = { 95% 100% }
+					autoresize = no
+					align = center
+					text = "[GetShortVersionInfoString]"
+					font = StandardGameFont
+					default_format = "#color_gold"
+				}
+
 				onclick = "[VersionInfoOnClick]"
 				tooltip_enabled = no
 
@@ -282,7 +289,7 @@ template frontend_menu_middle_template {
 		using = FrontEndMiddleSectionButton
 		name = "load_ingame_button"
 		text = "LOAD_GAME"
-		enabled = "[And(Not(IsShowingDialog), Not(GameIsMultiplayer))]"
+		enabled = "[And3(Not(IsShowingDialog), Not(GameIsMultiplayer), Not(GameIsIronman))]"
 		tooltipwidget = {
 			BasicFunctionalTooltip = {}
 		}
@@ -290,9 +297,9 @@ template frontend_menu_middle_template {
 			click_type = left
 			click_mode = single
 			title = "LOAD_GAME"
-			conditions = "[MakeItFailIf(GameIsMultiplayer, PauseMenu.LoadIngameTooltip)]"
+			conditions = "[PauseMenu.LoadIngameTooltip]"
 			on_action = "[PauseMenu.LoadIngame]"
-			enabled = "[And(Not(IsShowingDialog), Not(GameIsMultiplayer))]"
+			enabled = "[And3(Not(IsShowingDialog), Not(GameIsMultiplayer), Not(GameIsIronman))]"
 		} 
 	}
 
@@ -323,8 +330,8 @@ template frontend_menu_middle_template {
 			click_type = left
 			click_mode = single
 			title = "PAUSE_MENU_SWITCH_COUNTRY"
-			conditions = "[MakeItFailIf(GameIsMultiplayer, PauseMenu.GetOpenLobbyTooltip)]"
-			on_action = "[PauseMenu.LoadIngame]"
+			conditions = "[PauseMenu.GetOpenLobbyTooltip]"
+			on_action = "[PauseMenu.OpenLobby]"
 			enabled = "[And(Not(IsShowingDialog), PauseMenu.CanOpenLobby)]"
 		} 
 	}
@@ -341,6 +348,31 @@ template frontend_menu_middle_template {
 		visible = "[PauseMenu.IsAchievementsAvailable]"
 		onclick = "[PauseMenu.OpenAchievements]"
 		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_ACHIEVEMENTS_TOOLTIP" } } }
+	}
+
+	button_wax = {
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/button_wax_blue.dds"
+		}
+		block "small_button_size" { size = { -1 45 } }
+		using = FrontEndMiddleSectionButton
+		text = "SETTINGS_HEADER"
+		# enabled = "[Not(IsShowingDialog)]"
+		onclick = "[PauseMenu.OpenSettings]"
+		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_SETTINGS_TOOLTIP" } } }
+	}
+
+
+	button_wax = {
+		blockoverride "button_texture" {
+			texture = "gfx/interface/buttons/button_wax_blue.dds"
+		}
+		block "small_button_size" { size = { -1 45 } }
+		using = FrontEndMiddleSectionButton
+		text = "MESSAGE_SETTINGS"
+		enabled = "[Not(IsShowingDialog)]"
+		onclick = "[PauseMenu.OpenMessageSettings('(bool)yes')]"
+		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_MESSAGE_SETTINGS" } } }
 	}
 
 	button_wax = {
@@ -367,30 +399,6 @@ template frontend_menu_middle_template {
 		enabled = "[Not(IsShowingDialog)]"
 		onclick = "[PauseMenu.OpenAiSettings]"
 		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_AI_SETTINGS_TOOLTIP" } } }
-	}
-
-	button_wax = {
-		blockoverride "button_texture" {
-			texture = "gfx/interface/buttons/button_wax_blue.dds"
-		}
-		block "small_button_size" { size = { -1 45 } }
-		using = FrontEndMiddleSectionButton
-		text = "MESSAGE_SETTINGS"
-		enabled = "[Not(IsShowingDialog)]"
-		onclick = "[PauseMenu.OpenMessageSettings('(bool)yes')]"
-		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_MESSAGE_SETTINGS" } } }
-	}
-
-	button_wax = {
-		blockoverride "button_texture" {
-			texture = "gfx/interface/buttons/button_wax_blue.dds"
-		}
-		block "small_button_size" { size = { -1 45 } }
-		using = FrontEndMiddleSectionButton
-		text = "SETTINGS_HEADER"
-		# enabled = "[Not(IsShowingDialog)]"
-		onclick = "[PauseMenu.OpenSettings]"
-		tooltipwidget = { LeftClickButtonTooltip = { blockoverride "onclick_text" { text = "PAUSE_MENU_SETTINGS_TOOLTIP" } } }
 	}
 
 	hbox = {

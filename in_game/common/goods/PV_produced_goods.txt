@@ -1,0 +1,3 @@
+TRY_INJECT:masonry = {
+	ai_rgo_expansion_priority = 0.35
+}

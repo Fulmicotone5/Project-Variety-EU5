@@ -113,7 +113,7 @@ daneflavor.4 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 5
 	}
 
 	illustration_tags = {
@@ -171,7 +171,7 @@ daneflavor.5 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 5
 	}
 
 	illustration_tags = {
@@ -230,7 +230,7 @@ daneflavor.6 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 5
 	}
 
 	illustration_tags = {
@@ -288,7 +288,7 @@ daneflavor.7 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 5
 	}
 
 	illustration_tags = {
@@ -405,5 +405,93 @@ daneflavor.8 = {
 		set_capital = location:london
 		change_societal_value = { type = land_vs_naval	value = 25	}
 		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }
+	}
+}
+daneflavor.9 = {
+	type = country_event
+	title = daneflavor.9.title
+	desc = daneflavor.9.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	trigger = {
+		has_or_had_tag = P01
+	}
+
+	option = {
+		name = daneflavor.9.a
+		capital = {
+			change_prosperity = prosperity_weak_bonus
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.05
+		}
+	}
+	option = {
+		name = daneflavor.9.b
+		add_gold = -100
+		capital = {
+			change_prosperity = prosperity_severe_bonus
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.15
+		}
+		add_legitimacy = legitimacy_severe_bonus
+		add_prestige = prestige_mild_bonus
+	}
+}
+daneflavor.10 = {
+	type = country_event
+	title = daneflavor.10.title
+	desc = daneflavor.10.desc
+	image = "gfx/interface/illustrations/situation/black_death.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1361.1.1
+		to = 1800.1.1
+		monthly_chance = 5
+	}
+
+
+	trigger = {
+		owns = location:london
+		location:london = {
+			is_capital = yes
+		}
+	}
+
+	option = {
+		name = daneflavor.10.a
+		location:london = {
+			change_prosperity = prosperity_severe_penalty
+		}
+	}
+	option = {
+		name = daneflavor.10.b
+		add_gold = -50
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.05
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.05
+		}
 	}
 }

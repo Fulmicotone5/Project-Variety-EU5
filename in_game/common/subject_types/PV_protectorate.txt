@@ -40,7 +40,7 @@ protectorate = {
 	fleet_basing_rights = yes
 	
 
-	great_power_score_transfer = 0.25 # the amount of Great Power Score that is transferred from the Subject to the Overlord
+	great_power_score_transfer = 0 # the amount of Great Power Score that is transferred from the Subject to the Overlord
 	
 	overlord_modifier = {
 	}

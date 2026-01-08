@@ -13,37 +13,37 @@ TRY_REPLACE:town_upgrade = {
 TRY_REPLACE:expand_rgo_mining = {
 	scaled_gold = 1
 	min_scale = 40
-	max_scale = 400
+	max_scale = 600
 }
 
 TRY_REPLACE:expand_rgo_farming = {
 	scaled_gold = 1
 	min_scale = 35
-	max_scale = 400
+	max_scale = 600
 }
 
 TRY_REPLACE:expand_rgo_hunting = {
 	scaled_gold = 1
 	min_scale = 35
-	max_scale = 400
+	max_scale = 600
 }
 
 TRY_REPLACE:expand_rgo_gathering = {
 	scaled_gold = 1
 	min_scale = 35
-	max_scale = 400
+	max_scale = 600
 }
 
 TRY_REPLACE:expand_rgo_forestry = {
 	scaled_gold = 1
 	min_scale = 35
-	max_scale = 400
+	max_scale = 600
 }
 
 TRY_REPLACE:p_building_age_1_traditions = {
 	scaled_gold = 1
 	min_scale = 40
-	max_scale = 400
+	max_scale = 600
 }
 TRY_REPLACE:p_building_age_2_renaissance = {
 	scaled_gold = 2

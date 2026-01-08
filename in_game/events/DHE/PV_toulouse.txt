@@ -139,6 +139,7 @@ touflavor.5 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TOU
+		tag = F02
 		from = 1300.1.1
 		to = 1800.1.1
 		monthly_chance = 100
@@ -173,6 +174,7 @@ touflavor.6 = {
 	fire_only_once = yes
 	dynamic_historical_event = {
 		tag = TOU
+		tag = F03
 		from = 1300.1.1
 		to = 1800.1.1
 		monthly_chance = 100
@@ -204,5 +206,144 @@ touflavor.6 = {
 		name = touflavor.6.a
 		add_legitimacy = 25
 		add_stability = 10
+	}
+}
+touflavor.7 = {
+	type = country_event
+	title = touflavor.7.title
+	desc = touflavor.7.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		tag = F02
+		tag = F03
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:nobles_estate }
+		location:toulouse = {
+			save_scope_as = target_location
+		}
+		location:castelnaudary = {
+			save_scope_as = target_location2
+		}
+		location:carcassonne = {
+			save_scope_as = target_location3
+		}
+		location:narbonne = {
+			save_scope_as = target_location4
+		}
+		location:beziers = {
+			save_scope_as = target_location5
+		}
+		location:agde = {
+			save_scope_as = target_location6
+		}
+	}
+	trigger = {
+		owns = location:toulouse
+		owns = location:castelnaudary
+		owns = location:carcassonne
+		owns = location:narbonne
+		owns = location:beziers
+		owns = location:agde
+		location:toulouse = {
+			is_capital = yes
+		}
+	}
+	option = {
+		name = touflavor.7.a
+		historical_option = yes
+		scope:target_location = {
+			add_road_to = {
+				target = scope:target_location2
+				type = modern_road
+			}
+		}
+		scope:target_location2 = {
+			add_road_to = {
+				target = scope:target_location3
+				type = modern_road
+			}
+		}
+		scope:target_location3 = {
+			add_road_to = {
+				target = scope:target_location4
+				type = modern_road
+			}
+		}
+		scope:target_location4 = {
+			add_road_to = {
+				target = scope:target_location5
+				type = modern_road
+			}
+		}
+		scope:target_location5 = {
+			add_road_to = {
+				target = scope:target_location6
+				type = modern_road
+			}
+		}
+		add_gold = -250
+	}
+	option = {
+		name = touflavor.7.b
+		add_stability = stability_mild_bonus
+	}
+}
+
+touflavor.9 = {
+	type = country_event
+	title = touflavor.9.title
+	desc = touflavor.9.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = TOU
+		tag = F02
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	trigger = {
+		has_or_had_tag = TOU
+	}
+
+	option = {
+		name = touflavor.9.a
+		capital = {
+			change_prosperity = prosperity_weak_bonus
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.05
+		}
+	}
+	option = {
+		name = touflavor.9.b
+		add_gold = -100
+		capital = {
+			change_prosperity = prosperity_severe_bonus
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.15
+		}
+		add_legitimacy = legitimacy_severe_bonus
+		add_prestige = prestige_mild_bonus
 	}
 }

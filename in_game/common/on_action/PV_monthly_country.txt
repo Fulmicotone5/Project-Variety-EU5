@@ -4,11 +4,68 @@ monthly_country_pulse = {
 			limit = {
 				is_ai = yes
 				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
 			}
-			add_legitimacy = 1
-			add_stability = 1
-			add_gold = 10
-			add_antagonism = -10
+			add_legitimacy = 2
+			add_stability = 2
+			add_gold = 20
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_2_renaissance
+			}
+			add_gold = 50
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_3_discovery
+			}
+			add_gold = 200
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_4_reformation
+			}
+			add_gold = 1000
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_5_absolutism
+			}
+			add_gold = 4000
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_6_revolutions
+			}
+			add_gold = 12000
 		}
 	}
 }
