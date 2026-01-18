@@ -495,3 +495,109 @@ daneflavor.10 = {
 		}
 	}
 }
+daneflavor.11 = {
+	type = country_event
+	title = daneflavor.1.title
+	desc = daneflavor.11.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	trigger = {
+		religion = religion:norse
+		country_exists = c:NOL
+		location:doncaster = {
+			owner = c:NOL
+		}
+		
+	
+	}
+
+	illustration_tags = {
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_background_effect = { background = estate_type:peasants_estate }
+
+		location:doncaster = {
+			save_scope_as = origin_provincepv
+		}
+		location:lincoln = {
+			save_scope_as = target_location2
+		}
+		
+	}
+
+	option = {
+		name = daneflavor.11.a
+		add_migration = {
+			owner = root
+			from = scope:origin_provincepv.province_definition
+			to = scope:target_location2.province_definition
+			religion = religion:norse
+			amount = 0.100
+			months = 12
+		}
+		
+		c:NOL = { add_opinion = { target = root  modifier = opinion_mildly_displeased } }
+	}
+}
+daneflavor.12 = {
+	type = country_event
+	title = daneflavor.12.title
+	desc = daneflavor.12.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	trigger = {
+		religion = religion:norse
+		country_exists = c:ENG
+		location:chesterfield = {
+			owner = c:ENG
+		}
+		
+	
+	}
+
+	illustration_tags = {
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_background_effect = { background = estate_type:peasants_estate }
+
+		location:chesterfield = {
+			save_scope_as = origin_provincepv
+		}
+		location:lincoln = {
+			save_scope_as = target_location2
+		}
+		
+	}
+
+	option = {
+		name = daneflavor.12.a
+		add_migration = {
+			owner = root
+			from = scope:origin_provincepv.province_definition
+			to = scope:target_location2.province_definition
+			religion = religion:norse
+			amount = 0.100
+			months = 12
+		}
+		
+		c:ENG = { add_opinion = { target = root  modifier = opinion_mildly_displeased } }
+	}
+}

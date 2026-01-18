@@ -1,3 +1,26 @@
 TRY_INJECT:masonry = {
 	ai_rgo_expansion_priority = 0.35
 }
+
+preserved_meat = {
+	category = produced
+	color = goods_beeswax
+
+	food = 4
+
+	default_market_price = 2.5
+	transport_cost = 0.5
+	
+	demand_add = {	
+		all = 0.001
+	}
+	demand_multiply = {
+		upper = 10
+		burghers = 1.2
+		slaves = 0
+		tribesmen = 1.2
+	}
+
+
+
+}

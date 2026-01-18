@@ -157,7 +157,7 @@ F04_f = {
 }
 F05_f = {
 	level = 3
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.55
 	rule = historical
 
 	potential = {
@@ -204,7 +204,7 @@ F05_f = {
 }
 F06_f = {
 	level = 3
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.55
 	rule = historical
 
 	potential = {

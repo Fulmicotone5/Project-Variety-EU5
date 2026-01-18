@@ -1,6 +1,13 @@
+TRY_INJECT:age_1_traditions = {
+	modifier = {
+		global_pop_food_consumption = -0.4
+	}
+}
+
 TRY_INJECT:age_2_renaissance = {
 	modifier = {
 		force_army_maintenance = yes
+		global_pop_food_consumption = -0.25
 	}
 }
 

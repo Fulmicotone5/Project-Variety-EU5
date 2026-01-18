@@ -298,6 +298,96 @@ touflavor.7 = {
 	}
 }
 
+touflavor.8 = {
+	type = country_event
+	title = touflavor.8.title
+	desc = touflavor.8.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		tag = F02
+		tag = F03
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 20
+	}
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:nobles_estate }
+		location:toulouse = {
+			save_scope_as = target_location
+		}
+		location:aspet = {
+			save_scope_as = target_location2
+		}
+		location:vielha = {
+			save_scope_as = target_location3
+		}
+		location:talarn = {
+			save_scope_as = target_location4
+		}
+		location:benabarre = {
+			save_scope_as = target_location5
+		}
+		location:balaguer = {
+			save_scope_as = target_location6
+		}
+	}
+	trigger = {
+		owns = location:toulouse
+		owns = location:aspet
+		owns = location:vielha
+		owns = location:talarn
+		owns = location:benabarre
+		owns = location:balaguer
+		location:toulouse = {
+			is_capital = yes
+		}
+	}
+	option = {
+		name = touflavor.8.a
+		historical_option = yes
+		scope:target_location = {
+			add_road_to = {
+				target = scope:target_location2
+				type = modern_road
+			}
+		}
+		scope:target_location2 = {
+			add_road_to = {
+				target = scope:target_location3
+				type = modern_road
+			}
+		}
+		scope:target_location3 = {
+			add_road_to = {
+				target = scope:target_location4
+				type = modern_road
+			}
+		}
+		scope:target_location4 = {
+			add_road_to = {
+				target = scope:target_location5
+				type = modern_road
+			}
+		}
+		scope:target_location4 = {
+			add_road_to = {
+				target = scope:target_location6
+				type = modern_road
+			}
+		}
+		add_gold = -500
+	}
+	option = {
+		name = touflavor.8.b
+		add_stability = stability_mild_bonus
+	}
+}
+
 touflavor.9 = {
 	type = country_event
 	title = touflavor.9.title
@@ -345,5 +435,105 @@ touflavor.9 = {
 		}
 		add_legitimacy = legitimacy_severe_bonus
 		add_prestige = prestige_mild_bonus
+	}
+}
+touflavor.10 = {
+	type = country_event
+	title = touflavor.10.title
+	desc = touflavor.10.desc
+  
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = TOU
+		tag = F02
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	trigger = {
+		religion = religion:catharism
+		country_exists = c:PRO
+		location:digne = {
+			owner = c:PRO
+		}
+		
+	
+	}
+
+	illustration_tags = {
+        10 = exterior
+    }
+
+	immediate = {
+		event_illustration_estate_background_effect = { background = estate_type:peasants_estate }
+
+		location:digne = {
+			save_scope_as = origin_provincepv
+		}
+		location:toulouse = {
+			save_scope_as = target_location2
+		}
+		
+	}
+
+	option = {
+		name = touflavor.10.a
+		add_migration = {
+			owner = root
+			from = scope:origin_provincepv.province_definition
+			to = scope:target_location2.province_definition
+			religion = religion:catharism
+			amount = 0.100
+			months = 12
+		}
+		
+		c:PRO = { add_opinion = { target = root  modifier = opinion_mildly_displeased } }
+	}
+}
+
+touflavor.11 = {
+	type = country_event
+	title = touflavor.11.title
+	desc = touflavor.11.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = TOU
+		from = 1338.1.1
+		to = 1800.1.1
+		monthly_chance = 10
+	}
+	image = "gfx/interface/illustrations/disaster/placeholder.dds"
+	trigger = {
+		religion = religion:catharism
+		country_exists = c:MLL
+		NOT = {
+			c:MLL = {
+				is_subject_or_below_of = root
+			}
+		}
+	}
+	immediate = {
+		c:MLL = {
+			save_scope_as = target_country
+		}
+	}
+	option = {
+		name = touflavor.11.a
+		c:TOU = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:perpignan.province
+			}
+		}
+		c:MLL = { add_opinion = { target = root  modifier = opinion_displeased } }
+		c:ARA = { add_opinion = { target = root  modifier = opinion_displeased } }
+	}
+	option = {
+		name = touflavor.11.b
+		c:MLL = { add_opinion = { target = root  modifier = opinion_good_relations } }
+		c:ARA = { add_opinion = { target = root  modifier = opinion_good_relations } }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.05 }
 	}
 }

@@ -127,15 +127,6 @@ AMG = {
 	culture_definition = gascon
 	religion_definition = catharism
 }
-MLL = {
-	color = map_MLL
-	color2 = rgb { 16 41 202 }
-
-	culture_definition = catalan
-	religion_definition = catharism
-
-	
-}
 CLT = {
 	color = rgb { 56 215 2 }
 

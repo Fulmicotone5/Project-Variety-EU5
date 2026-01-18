@@ -1386,6 +1386,9 @@ building_manager = {
 	#Hanseatic Town Hall
 	hanseatic_town_hall = { tag = HSA level = 1 location = lubeck }
 
+	# PV smoking houses
+
+
 	#Banking families
 	banking_office = { tag = PRZ level = 1 location = florence }
 	banking_office = { tag = PRZ level = 1 location = london }

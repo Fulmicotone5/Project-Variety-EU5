@@ -1,0 +1,6 @@
+local_preserved_meat_output_modifier = {
+	positive = "gfx/interface/icons/modifier_types/city_upgrade_cost_modifier.dds" 
+}
+global_preserved_meat_output_modifier = {
+	positive = "gfx/interface/icons/modifier_types/city_upgrade_cost_modifier.dds" 
+}

@@ -11529,22 +11529,23 @@ perpignan = {
 	define_pop = {	type = clergy	size = 0.077	culture = catalan	religion = catholic }
 	define_pop = {	type = burghers	size = 1.721	culture = catalan	religion = catholic }
 	define_pop = {	type = burghers	size = 0.215	culture = sephardi	religion = judaism }
-	define_pop = {	type = burghers	size = 0.215	culture = languedocien	religion = catholic }
-	define_pop = {	type = peasants	size = 34.463	culture = catalan	religion = catholic }
+	define_pop = {	type = burghers	size = 0.215	culture = languedocien	religion = catharism }
+	define_pop = {	type = peasants	size = 24.463	culture = catalan	religion = catharism }
+	define_pop = {	type = peasants	size = 10.783	culture = catalan	religion = catholic }
 	define_pop = {	type = peasants	size = 0.829	culture = sephardi	religion = judaism }
-	define_pop = {	type = peasants	size = 6.228	culture = languedocien	religion = catholic }
+	define_pop = {	type = peasants	size = 6.228	culture = languedocien	religion = catharism }
 }
 prades = {
 	define_pop = {	type = clergy	size = 0.008	culture = catalan	religion = catholic }
-	define_pop = {	type = peasants	size = 14.882	culture = catalan	religion = catholic }
-	define_pop = {	type = peasants	size = 0.783	culture = catalan	religion = catharism }
+	define_pop = {	type = peasants	size = 14.882	culture = catalan	religion = catharism }
+	define_pop = {	type = peasants	size = 0.783	culture = catalan	religion = catholic }
 }
 puigcerda = {
 	define_pop = {	type = nobles	size = 0.009	culture = catalan	religion = catholic }
 	define_pop = {	type = clergy	size = 0.077	culture = catalan	religion = catholic }
 	define_pop = {	type = burghers	size = 1.807	culture = catalan	religion = catholic }
-	define_pop = {	type = peasants	size = 11.605	culture = catalan	religion = catholic }
-	define_pop = {	type = peasants	size = 0.610	culture = catalan	religion = catharism }
+	define_pop = {	type = peasants	size = 6.605	culture = catalan	religion = catharism }
+	define_pop = {	type = peasants	size = 5.610	culture = catalan	religion = catholic }
 }
 lagoon_of_salses = {
 }

@@ -29,3 +29,121 @@ TRY_INJECT:cathedral = {
 		monthly_religious_influence = 0.01
 	}
 }
+
+smokehouse = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = guild_max_level
+	
+	category = basic_industry_category
+	
+	employment_size = generic_peasant_building_employment
+	
+	
+	town = yes
+	city = yes
+	rural_settlement = yes
+
+	
+
+	build_time = guild_build_time
+	
+	unique_production_methods = {
+		wood_smoked = {
+			livestock = 2
+			lumber = 1
+			
+			
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			
+			category = guild_input
+		}
+
+		charcoal_smoked = {
+			livestock = 2
+			coal = 0.75
+			
+			
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			
+			category = guild_input
+		}
+		wood_smoked_fish = {
+			fish = 2
+			lumber = 1
+			
+			
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			
+			category = guild_input
+		}
+	
+		coal_smoked_fish = {
+			fish = 2
+			coal = 0.75
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+		wood_smoked_wild_game = {
+			wild_game = 1.5
+			lumber = 0.5
+
+			
+			produced = preserved_meat
+			output = 1
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+		charcoal_smoked_wild_game = {
+			wild_game = 1.5
+			coal = 0.35
+			
+			produced = preserved_meat
+			output = 1
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+		salted_livestock = {
+			livestock = 2
+			salt = 1
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+		salted_fish = {
+			fish = 2
+			salt = 1
+			
+			produced = preserved_meat
+			output = 2
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+		salted_wild_game = {
+			wild_game = 1.5
+			salt = 0.5
+			
+			produced = preserved_meat
+			output = 1
+			debug_max_profit = 0.75
+			category = guild_input
+		}
+
+	}
+
+	construction_demand = basic_construction_needs
+}

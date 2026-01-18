@@ -1,0 +1,15 @@
+TRY_INJECT:soldier_building_maintenance = {
+	preserved_meat = 0.1
+}
+TRY_INJECT:early_soldier_building_maintenance = {
+	preserved_meat = 0.05
+}
+TRY_INJECT:monastery_maintenance = {
+	preserved_meat = 0.1
+}
+TRY_INJECT:hab_reformed_monastery_maintenance = {
+	preserved_meat = 0.05
+}
+TRY_INJECT:temple_maintenance = {
+	preserved_meat = 0.05
+}
