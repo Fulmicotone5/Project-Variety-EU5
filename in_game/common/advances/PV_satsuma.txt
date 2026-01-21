@@ -1,0 +1,66 @@
+smz_satsuma_shugo = {
+	icon = kkc_disinguished_family_in_kyushu
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = P07
+	}
+
+	requires = written_alphabet
+
+	army_infantry_power = 0.1
+}
+
+smz_tsurinobuse = {
+	icon = jap_ichiban_yari
+	age = age_3_discovery
+	potential = {
+		has_or_had_tag = P07
+	}
+
+	requires = pike_square
+
+	discipline = 0.05
+}
+
+smz_shimazu_charge = {
+	icon = jap_ichiban_yari
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = P07
+	}
+
+	requires = assault_ability_reformation
+
+	land_morale_modifier = 0.1
+}
+
+smz_tanegashima = {
+	icon = oda_triple_firing
+	age = age_4_reformation
+	potential = {
+		has_or_had_tag = P07
+	}
+
+	allow = {
+		OR = {
+			NOT = { exists = international_organization:japanese_shogunate }
+			international_organization:japanese_shogunate ?= { has_variable = firearms_production }
+		}
+	}
+
+	requires = imperial_ambitions
+
+	army_infantry_power = 0.1
+}
+
+smz_early_westernization = {
+	icon = otm_nanban_trade
+	age = age_5_absolutism
+	potential = {
+		has_or_had_tag = P07
+	}
+
+	requires = scientific_mapping_advance
+
+	research_speed_modifier = 0.05
+}

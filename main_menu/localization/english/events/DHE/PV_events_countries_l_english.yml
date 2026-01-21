@@ -120,3 +120,13 @@
  touflavor.11.desc: "The Kingdom of [GetCountry('MLL').GetName], although centered in [ShowProvinceDefinitionName('mallorca_province')], happens to own some lands bordering our country in which the majority of the population follows [ShowReligionName('catharism')].\nIn the recent years, the treatment towards the aformentioned population has gotten worse, and the bishop of [ShowLocationName('perpignan')] has sent us a cry for help to come and free those land from the [ShowReligionAdjective('catholic')] oppressor."
  touflavor.11.a: "We must answer the call!"
  touflavor.11.b: "We cannot afford a war right now."
+ pruflavor.1.title: "The Birth of a Predestined Child"
+ pruflavor.1.desc: "This newborn child, named [SCOPE.sCharacter('new_heir').GetName], son of [SCOPE.sCharacter('target_character').GetName] and heir to the throne of [ROOT.GetCountry.GetName], is blessed with an aura of destiny. As he will grow, it is said he will shape the course of the country, inspiring his people and forging a legacy that will resonate through generations as the greatest king of [ROOT.GetCountry.GetName]."
+ pruflavor.1.a: "Could it be the start of a new 'Great' chapter in the history of [ROOT.GetCountry.GetName]?"
+ pruflavor.1.historical_info: "Frederick the Great, King of Prussia from 1740 to 1786, was a prominent enlightened monarch who promoted religious tolerance, legal reform and education, embodying the ideals of Enlightenment while maintaining strong military prowess. His military genius was evident in his innovative tactics and strategic acumen, leading Prussia to numerous victories in battles such as the Battle of Liegnitz, in which he managed to force to a retreat an army of 100000 men with just 24000 men. His strategic and tactical brilliance allowed him to defeat armies twice his size five times in his military career, and his success established Prussia as a major European power."
+ 
+ burflavor.1.title: "The [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|l] Require Action"
+ burflavor.1.desc: "[ROOT.GetCountry.GetName], once a fiery Kingdom, has been reduced to a mere duchy under the Crown of [GetCountry('FRA').GetName]. Because of the inept [overlord|e], [ROOT.GetCountry.GetName] now risks to be dragged into a useless conflict against [GetCountry('ENG').GetName], and the [ROOT.GetCountry.GetGovernment.GetEstateName('nobles_estate')|l] has already expressed its dissatisfaction with the situation, demanding that the Duke take action against [GetCountry('FRA').GetName]."
+ burflavor.1.a: "Demand Independence!"
+ burflavor.1.b: "Demand for greater autonomy from [GetCountry('FRA').GetName]"
+ burflavortooltip.a.tt: "#N Some events will not trigger if [ROOT.GetCountry.GetName] is not independent"

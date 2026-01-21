@@ -162,3 +162,25 @@ PV_vinland = {
 
 	years = 2
 }
+
+japanese_clan_PV = {
+	major = yes
+
+	country_modifier = {
+		exploration_mission_speed = 0.15
+		exploration_maintenance_cost = -0.15
+		global_pop_conversion_speed_modifier = 0.25
+		government_reform_slots = 1
+	}
+
+	potential = {
+		has_or_had_tag = P07
+	}	
+	
+	
+	locked = {
+		always = yes
+	}
+
+	years = 2
+}

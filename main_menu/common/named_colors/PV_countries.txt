@@ -49,3 +49,9 @@ colors = {
 colors = {
 	map_F17 = rgb { 13 6 61 }
 }
+colors = {
+	map_PVf18 = rgb { 38 64 181 }
+}
+colors = {
+	map_PVf19 = rgb { 90 136 191 }
+}

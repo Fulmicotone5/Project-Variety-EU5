@@ -3,7 +3,7 @@
 	hint_tag = hint_sengoku
 
 	can_start = {
-		current_year >= 1338 #To give a bit of margin of 'free wars' during the nanbokucho
+		current_year >= 1342 #To give a bit of margin of 'free wars' during the nanbokucho PV
 		international_organization:japanese_shogunate = {
 			OR = {
 				international_organization_has_leader = no

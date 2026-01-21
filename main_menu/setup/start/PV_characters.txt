@@ -1,0 +1,163 @@
+character_db={
+
+	jap_shimazu_tadahisa = {
+		first_name = { name = name_tadahisa } #忠久
+		culture = saigoku_culture
+		religion = shinto
+		birth_date = 1179.12.30
+		birth = osaka
+		death_date = 1227.8.1
+		dynasty = shimazu_dynasty
+		tag = P07
+	}
+
+	jap_shimazu_tadatoki = {
+		first_name = { name = name_tadatoki } #忠時
+		culture = tougoku_culture
+		religion = shinto
+		birth_date = 1202.1.1 #Exact date unknown
+		birth = kamakura
+		death_date = 1272.5.8
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_tadahisa
+		tag = P07
+	}
+
+	jap_shimazu_hisatsune = {
+		first_name = { name = name_hisatsune } #久経
+		culture = tougoku_culture
+		religion = shinto
+		birth_date = 1225.1.1 #Exact date unknown
+		birth = kamakura
+		death_date = 1284.5.7
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_tadatoki
+		tag = P07
+	}
+
+	jap_shimazu_tadamune = {
+		first_name = { name = name_tadamune_alternative } #忠宗
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1251.1.1 #Exact date unknown
+		birth = satsuma
+		death_date = 1325.12.17
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_hisatsune
+		tag = P07
+	}
+
+	jap_shimazu_sadahisa = {
+		first_name = { name = name_sadahisa } #貞久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1269.5.10
+		birth = satsuma
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_tadamune
+		spouse = jap_ootomo_chikatoki_no_musume
+		tag = P07
+	}
+
+
+	jap_niiro_tokihisa = {
+		first_name = { name = name_tokihisa } #時久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1290.1.1 #Unknown
+		birth = satsuma
+		dynasty = niiro_dynasty
+		father = jap_shimazu_tadamune
+		spouse = "random"
+		tag = P07
+	}
+
+	jap_niiro_sanehisa = {
+		first_name = { name = name_sanehisa } #実久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1310.1.1 #Unknown
+		birth = satsuma
+		dynasty = niiro_dynasty
+		father = jap_niiro_tokihisa
+		spouse = "random"
+		tag = P07
+	}
+
+	jap_hongou_suketada = {
+		first_name = { name = name_suketada } #資忠
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1320.1.1 #Unknown
+		birth = satsuma
+		dynasty = shimazu_dynasty #Founder of Hongou clan, but not until 1352
+		father = jap_shimazu_tadamune
+		tag = P07
+	}
+
+	jap_kawakami_yorihisa = {
+		first_name = { name = name_yorihisa_alternative } #頼久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1300.1.1 #Unknown
+		birth = satsuma
+		dynasty = shimazu_dynasty #Founder of Kawakami clan, but not until 1352
+		father = jap_shimazu_sadahisa
+		timed_modifier = {
+			modifier = "bastard"
+			start_date = 1300.1.1
+			date = 9999.1.1
+			size = 1
+		}
+		spouse = "random"
+		tag = P07
+	}
+
+	jap_shimazu_munehisa = {
+		first_name = { name = name_munehisa } #宗久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1322.1.1 #Exact date unknown
+		birth = satsuma
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_sadahisa
+		mother = jap_ootomo_chikatoki_no_musume
+		tag = P07
+	}
+
+	jap_shimazu_morohisa = {
+		first_name = { name = name_morohisa } #師久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1325.9.23
+		birth = satsuma
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_sadahisa
+		mother = jap_ootomo_chikatoki_no_musume
+		tag = P07
+	}
+
+	jap_shimazu_ujihisa = {
+		first_name = { name = name_ujihisa } #氏久
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1328.5.21
+		birth = satsuma
+		dynasty = shimazu_dynasty
+		father = jap_shimazu_sadahisa
+		mother = jap_ootomo_chikatoki_no_musume
+		tag = P07
+	}
+
+	jap_shimazu_tadatsune = {
+		first_name = { name = name_tadatsune_alternative2 } #忠経
+		culture = kyushu_culture
+		religion = shinto
+		birth_date = 1220.1.1 #Unknown
+		birth = satsuma
+		death_date = 1300.1.1 #Unknown
+		father = jap_shimazu_tadatoki
+		dynasty = shimazu_dynasty
+		tag = P07
+	}
+}

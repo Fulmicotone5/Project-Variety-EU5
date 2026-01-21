@@ -287,6 +287,12 @@ P06 = {
 	culture_definition = PV_vinlander
 	religion_definition = norse
 }
+P07 = {
+	color = rgb { 13 34 128 }
+
+	culture_definition = kyushu_culture
+	religion_definition = shinto
+}
 WLS = {
 	color = map_WLS
 	color2 = rgb { 16 41 202 }

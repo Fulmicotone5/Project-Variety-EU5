@@ -152,7 +152,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = FRA second = DRE subject_type = appanage }
     dependency = { first = FRA second = EVR subject_type = appanage }
     dependency = { first = FRA second = ETA subject_type = appanage }
-    dependency = { first = FRA second = NRM subject_type = appanage }
+    dependency = { first = FRA second = NRM subject_type = protectorate }
 
     #Vassal, Fief Mouvant of France
     dependency = { first = TOU second = AMG subject_type = vassal }
@@ -162,15 +162,12 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = FRZ second = PER subject_type = vassal }
     dependency = { first = TOU second = VDM subject_type = appanage }
     dependency = { first = TOU second = AUV subject_type = appanage }
-    dependency = { first = FRA second = BAR subject_type = vassal }
     dependency = { first = FRA second = BLS subject_type = vassal }
     dependency = { first = FRA second = MRT subject_type = vassal }
     dependency = { first = FRA second = TON subject_type = vassal }
     dependency = { first = FRA second = MON subject_type = vassal }
     dependency = { first = FRA second = AUM subject_type = vassal }
     dependency = { first = FRA second = ROU subject_type = vassal }
-    dependency = { first = FRA second = NEV subject_type = vassal } #In a PU with FLA
-    dependency = { first = FRA second = RET subject_type = vassal } #In a PU with FLA
 
     #Vassals of vassals
     dependency = { first = ANJ second = MIE subject_type = fiefdom }

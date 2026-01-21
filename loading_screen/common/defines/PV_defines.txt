@@ -14,7 +14,7 @@ NGame = {
 }
 
 NCountry = {
-
+	MERCHANT_MAINTENANCE_COST = 0.25
 	MAXIMUM_GOLD = 999999999
 }
 

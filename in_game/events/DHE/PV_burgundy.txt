@@ -1,0 +1,44 @@
+namespace = burflavor
+
+burflavor.1 = { 
+	type = country_event
+	title = burflavor.1.title
+	desc = burflavor.1.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		is_independent_or_autonomous_subject = no
+		is_situation_active = situation:hundred_years_war
+	}
+
+	option = {
+		name = burflavor.1.a
+		historical_option = yes
+		c:FRA = {
+			cancel_subject = c:BUR
+		}
+	}
+	option = {
+		name = burflavor.1.b
+		add_stability = stability_mild_bonus
+		change_subject_type = subject_type:protectorate
+		custom_tooltip = burflavortooltip.a.tt
+	}
+
+}

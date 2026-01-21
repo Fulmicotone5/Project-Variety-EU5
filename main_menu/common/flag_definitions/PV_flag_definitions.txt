@@ -295,3 +295,31 @@ F17 = {
 		}
 	}	
 }
+F18 = {
+	flag_definition = {
+		coa = F18_monarchy
+		subject_canton = F18_monarchy
+		priority = 1		
+	}	
+	flag_definition = {
+		coa = F18
+		priority = 15
+		trigger = { 
+			coa_def_republic_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = F18_theo
+		priority = 15
+		trigger = { 
+			coa_def_theocracy_trigger = yes
+		}
+	}
+}
+F19 = { 
+	flag_definition = {
+		coa = F19
+		subject_canton = F19
+		priority = 1		
+	}	
+}

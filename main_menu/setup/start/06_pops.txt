@@ -39874,6 +39874,8 @@ taihe = {
 }
 amis = {
 	define_pop = {	type = tribesmen	size = 14.360	culture = formosan_culture	religion = formosan_religion }
+	define_pop = {	type = clergy	size = 0.050	culture = kyushu_culture	religion = shinto }
+	define_pop = {	type = peasants	size = 5.074	culture = kyushu_culture	religion = shinto }
 }
 paiwan = {
 	define_pop = {	type = tribesmen	size = 7.049	culture = formosan_culture	religion = formosan_religion }
@@ -42088,8 +42090,8 @@ tokunoshima = {
 }
 urasoe = {
 	define_pop = {	type = nobles	size = 0.020	culture = ryukyu_culture	religion = utaki_religion }
-	define_pop = {	type = clergy	size = 0.015	culture = ryukyu_culture	religion = utaki_religion }
-	define_pop = {	type = peasants	size = 14.787	culture = ryukyu_culture	religion = utaki_religion }
+	define_pop = {	type = clergy	size = 0.015	culture = ryukyu_culture	religion = shinto }
+	define_pop = {	type = peasants	size = 14.787	culture = ryukyu_culture	religion = shinto }
 	define_pop = {	type = tribesmen	size = 16.583	culture = ryukyu_culture	religion = utaki_religion }
 }
 nakijin = {
@@ -67371,6 +67373,8 @@ kuamut = {
 lahad_datu = {
 	define_pop = {	type = slaves	size = 1.656	culture = dusun_culture	religion = momolianism_religion }
 	define_pop = {	type = slaves	size = 0.414	culture = sama_culture	religion = anitism_religion }
+	define_pop = {	type = clergy	size = 0.050	culture = kyushu_culture	religion = shinto }
+	define_pop = {	type = peasants	size = 10.074	culture = kyushu_culture	religion = shinto }
 }
 lokan = {
 	define_pop = {	type = clergy	size = 0.007	culture = dusun_culture	religion = momolianism_religion }
@@ -68846,6 +68850,8 @@ tagudin = {
 bigan = {
 	define_pop = {	type = peasants	size = 9.215	culture = ilocano_culture	religion = anitism_religion }
 	define_pop = {	type = tribesmen	size = 9.960	culture = ilocano_culture	religion = anitism_religion }
+	define_pop = {	type = clergy	size = 0.050	culture = kyushu_culture	religion = shinto }
+	define_pop = {	type = peasants	size = 5.074	culture = kyushu_culture	religion = shinto }
 }
 malukkit = {
 	define_pop = {	type = tribesmen	size = 11.505	culture = ilocano_culture	religion = anitism_religion }
@@ -101333,6 +101339,8 @@ woolna = {
 }
 maung = {
 	define_pop = {	type = tribesmen	size = 0.363	culture = maung_culture	religion = dreamtime_religion }
+	define_pop = {	type = clergy	size = 0.005	culture = kyushu_culture	religion = shinto }
+	define_pop = {	type = peasants	size = 5.074	culture = kyushu_culture	religion = shinto }
 }
 konbudj = {
 	define_pop = {	type = tribesmen	size = 0.256	culture = konbudj_culture	religion = dreamtime_religion }

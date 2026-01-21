@@ -1,252 +1,399 @@
 countries = {
 	countries = {
 		#Project Variety
+
+	ENG = { # England
+		own_control_core = {
+			appleby hythe alnwick bedford dunstable birmingham boston bosworth shoreham lewes bristol buckingham bury glossop cambridge canterbury carlisle rochester cheltenham chelmsford chesterfield chichester chippenham cockermouth colchester kettering coventry cirencester derby dover gloucester grimsby guildford reigate harrow hastings hedingham hertford hexham hull huntingdon ipswich kendal grantham penrith kidderminster leeds leicester lincoln london loughborough lowestoft lynn daventry newark newcastle northampton norwich nottingham oxford ely  portsmouth amesbury lymington retford rutland salisbury southampton prittlewell kingston stafford stoke stratford trowbridge barking wight winchester windsor worcester yarmouth york scarborough tamworth bedale richmond whitby bridlington selby pontefract skipton wakefield louth thetford fakenham reading tonbridge henley royston aylesbury wycombe lavenham abingdon st_albans banbury walden spalding woking morpeth billingham norton ripon doncaster egremont basingstoke
+
+			# Earldom of Chester
+			#chester macclesfield nantwich
+
+			# English towns on the Welsh March
+			shrewsbury hereford
+		}
+		own_control_integrated = {
+			# Earldom of Chester
+			# cornwall
+			# channel
+			jersey
+			# france			
+			abbeville montreuil #Ponthieu
+		}
+		own_control_conquered = {
+			berwick
+			launceston truro bodmin taunton wells  minehead portishead bath plymouth exeter barnstaple bideford bampton okehampton poole weymouth shaftesbury dorchester
+		}
+
+		include = "catholic_monarchy"
+
+		starting_technology_level = 3
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+			ruler = eng_edward_iii
+
+			ruler_term = {	 character = eng_alfred_the_great start_date = 886.1.1 end_date = 899.10.26 regnal_number = 0	}
+			ruler_term = {	 character = eng_edward_the_elder start_date = 899.10.26 end_date = 924.7.17 regnal_number = 0	}
+			ruler_term = {	 character = eng_athelstan_the_glorious start_date = 924.7.17 end_date = 939.10.27 regnal_number = 0	}
+			ruler_term = {	 character = eng_edmund_the_magnificent start_date = 939.10.27 end_date = 946.5.26 regnal_number = 0	}
+			ruler_term = {	 character = eng_eadred start_date = 946.5.26 end_date = 955.11.23 regnal_number = 0	}
+			ruler_term = {	 character = eng_eadwig start_date = 955.11.23 end_date = 959.10.1 regnal_number = 0	}
+			ruler_term = {	 character = eng_edgar_the_peaceful start_date = 959.10.1 end_date = 975.7.8 regnal_number = 0	}
+			ruler_term = {	 character = eng_edward_the_martyr start_date = 975.7.8 end_date = 978.3.18 regnal_number = 0	}
+			ruler_term = {	 character = eng_ethelred_the_unready start_date = 978.3.18 end_date = 1013.12.25 regnal_number = 0	}
+
+			ruler_term = {	 character = eng_sweyn_forkbeard start_date = 1013.12.25 end_date = 1014.2.3 regnal_number = 0	}
+
+			ruler_term = {	 character = eng_ethelred_the_unready start_date = 1014.2.3 end_date = 1016.4.23 regnal_number = 0	}
+
+			ruler_term = { character = eng_edmund_ironside start_date = 1016.4.23 end_date = 1016.11.18 regnal_number = 0 }
+
+			ruler_term = { character = eng_cnut_the_great start_date = 1016.11.18 end_date = 1035.11.12 regnal_number = 0 }
+			ruler_term = { character = eng_harold_harefoot start_date = 1035.11.12 end_date = 1040.3.17 regnal_number = 0 }
+
+			ruler_term = { character = eng_harthacnute start_date = 1040.3.17 end_date = 1042.6.8 regnal_number = 0 }
+
+			ruler_term = { character = eng_edward_the_confessor start_date = 1042.6.8 end_date = 1066.1.5 regnal_number = 0 }
+
+			ruler_term = {	 character = eng_harold_godwinson start_date = 1066.1.6 end_date = 1066.10.14 regnal_number = 0	}
+
+			# regnal numbering usually starts with the Norman Invasion
+			ruler_term = {	 character = eng_william_the_conquerer start_date = 1066.12.25 end_date = 1087.9.9 regnal_number = 1	}
+			ruler_term = {	 character = eng_william_ii_rufus start_date = 1087.9.26 end_date = 1100.7.2 regnal_number = 2	}
+			ruler_term = {	 character = eng_henry_i start_date = 1100.7.5 end_date = 1135.12.1 regnal_number = 1	}
+
+			ruler_term = {	 character = eng_stephen_i start_date = 1135.12.22 end_date = 1154.10.25 regnal_number = 1	}
+
+			ruler_term = {	 character = eng_henry_ii_curtmantle start_date = 1154.12.19 end_date = 1189.7.6 regnal_number = 2	}
+			ruler_term = {	 character = eng_richard_i_lionheart start_date = 1189.9.3 end_date = 1199.4.6 regnal_number = 1	}
+			ruler_term = {	 character = eng_john_lackland start_date = 1199.5.27 end_date = 1216.10.19 regnal_number = 1	}
+
+			ruler_term = {	 character = eng_henry_iii start_date = 1216.10.28 end_date = 1272.11.16 regnal_number = 3	}
+			ruler_term = {	 character = eng_edward_i start_date = 1272.11.20 end_date = 1307.7.8 regnal_number = 1	}
+			ruler_term = {	 character = eng_edward_ii start_date = 1307.7.8 end_date = 1327.1.20 regnal_number = 2	}
+			ruler_term = {	 character = eng_edward_iii start_date = 1327.1.25 regnal_number = 3 }
+
+			regnal_numbers = {
+				name_william = 2
+				name_henry = 3
+				name_stephen = 1
+				name_richard = 2
+				name_john = 1
+				name_edward = 3
+			}
+
+			reforms = {
+				magna_carta_reform
+			}
+			privilege = {
+				#nobles
+				auxilium_et_consilium
+				nobles_land_rights
+				noble_marriage_rights
+				noble_fortification_licenses
+				manorial_courts
+				primacy_of_nobility
+				consolidated_corruption_of_the_nobles_PV
+
+				#burghers
+				formal_guilds
+				market_fairs
+				shipwright_contracts
+
+				#clergy
+				clergy_literacy_rights
+				clergy_enforced_unity
+
+				#peasants
+				peasants_yeomanry
+				access_to_royal_and_ecclesiastical_courts
+				peasants_allowed_weapons_privilege
+			}
+			laws = {
+				distribution_of_power_law = dop_law_english_parliament
+				language_of_pleading = language_of_pleading_court
+				legal_code_law = common_law_policy
+				medieval_levy_law = longbow_competitions
+				feudal_de_jure_law = by_tradition
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+			}
+
+			centralization_vs_decentralization = 30
+			aristocracy_vs_plutocracy = -60
+			serfdom_vs_free_subjects = -10
+			traditionalist_vs_innovative = -40
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = -25
+			offensive_vs_defensive = 0
+			land_vs_naval = 0
+			quality_vs_quantity = -20
+			belligerent_vs_conciliatory = -25
+
+			capital_economy_vs_traditional_economy = 30
+			individualism_vs_communalism = -25
+			outward_vs_inward = -60
+
+
+		}
+
+		accepted_cultures = {
+			northumbrian
+		}
+		tolerated_cultures = { cornish welsh }
+
+		court_language = norman_dialect
+		country_rank = rank_kingdom
+		capital = london
+
+		include = "expl_western_europe"
+
+		ai_advance_preference_tags = {
+			exploration = 5
+		}
+	}
+
+		
+	FRA = {
+		own_control_core = {
+			paris brie_comte_robert corbeil montmorency
+			beauvais saint_quentin noyon
+			ribemont laon
+			bergerac montauban albi millau saint_pons beziers agde sauveterre_de_guyenne
+			figeac villefranche chaumont_vexin
+
+		}
+		own_control_integrated = {
+			braine
+			mauriac riom tour_auvergne brioude saint_flour vodable
+			montaigut herment
+
+
+			soissons crepy #Valois (Own by the ruler)
+		}
+
+		own_control_conquered = {
+			clermont montargis sens saint_florentin senlis nemours melun
+			amiens breteuil corbie nesle peronne
+			bar_sur_seine
+			tours chinon loches chatillon_sur_indre #D. de Touraine
+			loudun
+			chartres auneau #C. Chartres
+			turenne gourdon #Vic.Turenne
+			mende #C. de Gevaudan
+			langres grancey #D. de Langres
+			le_puy #C. du Velay
+			viviers # C. de Viviers
+			nimes uzes melgueil
+			french_ales #S. Ales
+			chambon #B. de Combraille
+			chalons_champagne #C. de Chalon
+			reims #D. Reims
+
+			amboise #S.
+
+			orleans sully vitry_aux_loges #D. de Orleans, Appanage in 1344
+
+			issoudun bourges lignieres sancoins vierzon #Berry(On October 1360, King John II created the title)
+
+			chateauroux boussac #S. de Chateauroux
+
+			tarbes #C. Bigorre
+			lodeve #C. Lodeve
+
+			fenouillet toulouse verdun_sur_garonne villemur
+			meaux
+			provins
+			peyrusse entraigues st_affrique
+			allegre chalancon peyre chateauneuf_de_randon florac st_ambroix
+
+			lille douai tournai #From Flanders after the Treaty of Athis-sur-Orge
+
+			poitiers la_roche_sur_yon montaigu thouars parthenay fontenay montmorillon
+			niort bourganeuf chatellerault brosse lusignan aulnay st_jean_dangely
+			talmont beauvoir mauleon_poitou
+
+			chateau_thierry broyes vertus nogent_sur_seine bar_sur_aube
+			chaumont vaucouleurs vitry_en_pertois troyes epernay menehould
+			rosnay villemaur choiseul
+
+			guise hirson
+
+
+			coucy marle #S. Coucy
+			saint_gaudens #Vic. des Quatre Valles
+			brienne #C. Brienne
+			joinville #S. Joinville
+			grandpre #C. Grandpre
+		}
+
+		our_cores_conquered_by_others = {
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_monarchy"
+
+		government = {
+			heir_selection = salic_law
+
+			ruler = fra_philip_vi_valois
+
+			ruler_term = { character = fra_pepin_the_short start_date = 751.10.9 end_date = 768.9.24 regnal_number = 1 }
+			ruler_term = { character = fra_charlemagne start_date = 768.9.24 end_date = 814.1.28 regnal_number = 1 }
+			ruler_term = { character = fra_louis_i start_date = 814.1.28 end_date = 840.6.20 regnal_number = 1 }
+			ruler_term = { character = fra_charles_ii start_date = 840.6.20 end_date = 877.10.6 regnal_number = 2 }
+			ruler_term = { character = fra_louis_ii start_date = 877.10.6 end_date = 879.4.10 regnal_number = 2 }
+			ruler_term = { character = fra_louis_iii start_date = 879.4.11 end_date = 882.8.5 regnal_number = 3 }
+			ruler_term = { character = fra_carloman_ii start_date = 882.8.5 end_date = 884.12.12 regnal_number = 1 }
+			ruler_term = { character = fra_charles_iii start_date = 884.12.12 end_date = 888.1.13 regnal_number = 3 }
+
+			ruler_term = { character = fra_odo start_date = 888.2.29 end_date = 898.1.3 regnal_number = 1 }
+
+			ruler_term = { character = fra_charles_iii start_date = 898.1.3 end_date = 922.6.29 regnal_number = 3 } # Second reign
+
+			ruler_term = { character = fra_robert start_date = 922.6.29 end_date = 923.6.15 regnal_number = 1 }
+
+			ruler_term = { character = fra_rudolph start_date = 923.7.1 end_date = 936.1.15 regnal_number = 1 }
+
+			ruler_term = { character = fra_louis_iv start_date = 936.6.19 end_date = 954.9.10 regnal_number = 4 }
+			ruler_term = { character = fra_lothair start_date = 954.10.12 end_date = 986.3.2 regnal_number = 2 }
+			ruler_term = { character = fra_louis_v start_date = 986.3.8 end_date = 987.5.22 regnal_number = 5 }
+
+			ruler_term = { character = fra_hugues_capet start_date = 987.7.3 end_date = 996.10.24 regnal_number = 1 }
+			ruler_term = { character = fra_robert_ii_capet start_date = 996.10.24 end_date = 1031.7.20 regnal_number = 2 }
+			ruler_term = { character = fra_henri_i_capet start_date = 1031.7.20 end_date = 1060.8.4 regnal_number = 1 }
+			ruler_term = { character = fra_philippe_i_capet start_date = 1060.8.4 end_date = 1108.7.29 regnal_number = 1 }
+			ruler_term = { character = fra_louis_vi_capet start_date = 1108.9.18 end_date = 1137.8.1 regnal_number = 6 }
+			ruler_term = { character = fra_louis_vii_capet start_date = 1137.8.1 end_date = 1180.9.18 regnal_number = 7 }
+			ruler_term = { character = fra_philippe_ii_auguste_capet start_date = 1180.9.18 end_date = 1223.7.14 regnal_number = 2 }
+			ruler_term = { character = fra_louis_viii_capet start_date = 1223.7.14 end_date = 1226.11.8 regnal_number = 8 }
+			ruler_term = { character = fra_louis_ix_capet start_date = 1226.11.8 end_date = 1270.8.25 regnal_number = 9 }
+			ruler_term = { character = fra_philippe_iii_capet start_date = 1270.8.25 end_date = 1285.10.5 regnal_number = 3 }
+			ruler_term = { character = fra_philippe_iv_capet start_date = 1285.10.5 end_date = 1314.11.29 regnal_number = 4 }
+			ruler_term = { character = fra_louis_x_capet start_date = 1314.11.29 end_date = 1316.6.5 regnal_number = 10 }
+			ruler_term = { character = fra_jean_i_capet start_date = 1316.11.15 end_date = 1316.11.20 regnal_number = 1 }
+			ruler_term = { character = fra_philippe_v_capet start_date = 1316.11.20 end_date = 1322.1.3 regnal_number = 5 }
+			ruler_term = { character = fra_charles_iv_capet start_date = 1322.1.3 end_date = 1328.3.21 regnal_number = 4 }
+
+			ruler_term = { character = fra_philip_vi_valois start_date = 1328.4.1 regnal_number = 6 }
+
+			regnal_numbers = {
+				#Clovis = 4
+				#Clodomir = 1
+				name_theodoric = 4
+				#Thibert = 2
+				name_thobald = 1
+				#Childebert = 4
+				#Clotaire = 5
+				#Caribert = 1
+				#Sigebert = 1
+				#Childéric = 3
+				#Gontran = 1
+				#Dagobert = 3
+				name_pepin = 1
+				name_carloman = 2
+				name_otto = 1
+				name_charles = 4
+				name_henry = 1
+				name_hugh = 1
+				name_john = 1
+				name_louis = 10
+				name_philip = 6
+				name_robert = 2
+				name_lothar = 2
+			}
+
+			centralization_vs_decentralization = 85
+			aristocracy_vs_plutocracy = -75
+			serfdom_vs_free_subjects = -80
+			traditionalist_vs_innovative = -30
+			spiritualist_vs_humanist = -50
+			mercantilism_vs_free_trade = -25
+			offensive_vs_defensive = -20
+			land_vs_naval = -30
+			quality_vs_quantity = -30
+			belligerent_vs_conciliatory = -20
+			capital_economy_vs_traditional_economy = 70
+			individualism_vs_communalism = -30
+			outward_vs_inward = -50
+
+			reforms = {
+				french_feudal_nobility
+				ancient_french_taxation
+			}
+
+			laws = {
+				medieval_levy_law = noble_levies	#Dependence on nobles
+				cultural_traditions_law = civil_society	#Taxing the peasants
+				mining_law = nobles_mining_law	#Noble Controlled
+				precious_metal_distribution_law = unlimited_gold_export
+			}
+
+			privilege = {
+				formal_guilds
+				clergy_literacy_rights
+				auxilium_et_consilium
+				nobles_land_rights
+				noble_leaders_only
+				primacy_of_nobility
+				noble_armies
+				chancellor_nobles
+				villes_franches
+				great_offices_of_the_crown_of_france
+			}
+		}
+
+		tolerated_cultures = {
+			arpitan
+			languedocien
+			picard
+			gascon
+			burgundian
+			auvergnat
+			champenais
+			limousin
+			poitevin
+			saintongeais
+			berrichon
+		}
+
+		country_rank = rank_kingdom
+		capital = paris
+	}
+
+
 		CAS = {
 			own_control_core = {
-				avila
-				adrada
-				arevalo
-				las_navas
-				oropesa
-				villatoro
-				burgos
-				aranda_de_duero
-				briviesca
-				castrojeriz
-				lerma
-				logrono
-				miranda_de_ebro
-				najera
-				sto_domingo_silos
-				villadiego
-				villarcayo
-				palencia
-				aguilar_de_campoo
-				carrion_de_los_condes
-				monzon_campos
-				palenzuela
-				saldana
-				reinosa
-				segovia
-				cuellar
-				fuentiduena
-				pedraza
-				sepulveda
-				soria
-				agreda
-				almazan
-				berlanga
-				burgo_de_osma
-				calahorra
-				calatanazor
-				medinaceli
-				arnedo
-				santander
-				laredo
-				potes
-				san_vicente_barquera
-				valladolid
-				medina_de_rioseco
-				medina_del_campo
-				penafiel
-				tordesillas
-				cuenca
-				alarcon
-				belmonte
-				beteta
-				canete
-				huete
-				iniesta
-				jorquera
-				molina_de_aragon
-				moya
-				pareja
-				san_clemente
-				requena
-				torralba
-				madrid
-				alcala_de_henares
-				brihuega
-				buitrago_de_lozoya
-				cobeta
-				colmenar
-				el_escorial
-				guadalajara
-				maqueda
-				siguenza
-				zorita
-				ciudad_real
-				alcaraz
-				almaden
-				almodovar_del_campo
-				calatrava
-				lezuza
-				malagon
-				manzanares
-				puertollano
-				alhambra_location
-				montiel
-				villapalacios
-				villarobledo
-				toledo
-				alcazar_de_san_juan
-				chinchon
-				consuegra
-				guadalupe
-				illescas
-				los_yebenes
-				navalucillos
-				ocana
-				puebla_de_montalban
-				puente_arzobispo
-				talavera_de_la_reina
-				tomelloso
-				ucles
-				badajoz
-				albuquerque
-				azuaga
-				barcarrota
-				jerez_de_los_caballeros
-				llerena
-				merida
-				monesterio
-				villanueva_del_fresno
-				zafra
-				caceres
-				alcantara
-				arroyo
-				brozas
-				galisteo
-				granadilla
-				montanchez
-				valencia_de_alcantara
-				plasencia
-				belalcazar
-				escurial
-				herrera
-				jaraicejo
-				medellin
-				puebla_de_alcocer
-				trujillo
-				valverde
-				villanueva_de_la_serena
-				zalamea
-				coruna
-				betanzos
-				ferrol
-				mondonedo
-				vivero
-				lugo
-				monforte_de_lemos
-				navia_de_suarna
-				sarria
-				villalba
-				ourense
-				barco_de_valdeorras
-				ginzo_de_limia
-				monterrey
-				ribadavia
-				viana_bolo
-				santiago_compostela
-				finisterre
-				lalin
-				mellid
-				noya
-				pontevedra
-				tuy
-				oviedo
-				aviles
-				cangas
-				castropol
-				llanes
-				mieres
-				tineo
-				villaviciosa
-				leon
-				astorga
-				castrocalbon
-				mansilla
-				ponferrada
-				riano
-				sahagun
-				villablino
-				villafranca_bierzo
-				salamanca
-				alba_de_tormes
-				bejar
-				ciudad_rodrigo
-				coria
-				ledesma
-				matilla_de_canos
-				piedrahita
-				san_felices
-				yecla_de_yeltes
-				zamora
-				alba_de_aliste
-				alcanices
-				benavente
-				fermoselle
-				puebla_de_sanabria
-				toro
-				villalpando
-				cordoba
-				baena
-				carpio
-				espiel
-				fuenteovejuna
-				lucena
-				palma_del_rio
-				pedroche
-				santa_eufemia
-				jaen
-				andujar
-				baeza
-				cazorla
-				jodar
-				martos
-				ubeda
-				murcia
-				albacete
-				caravaca
-				cartagena
-				chinchilla
-				cieza
-				hellin
-				lorca
-				mula
-				segura_de_la_sierra
-				villena
-				sevilla
+				avila adrada arevalo las_navas oropesa villatoro
+				burgos aranda_de_duero briviesca castrojeriz lerma logrono miranda_de_ebro najera sto_domingo_silos villadiego villarcayo
+				palencia aguilar_de_campoo carrion_de_los_condes monzon_campos palenzuela saldana reinosa
+				segovia cuellar fuentiduena pedraza sepulveda
+				soria agreda almazan berlanga burgo_de_osma calahorra calatanazor medinaceli arnedo
+				santander laredo potes san_vicente_barquera
+				valladolid medina_de_rioseco medina_del_campo penafiel tordesillas
+				madrid alcala_de_henares brihuega buitrago_de_lozoya cobeta colmenar el_escorial guadalajara maqueda siguenza zorita
+				coruna betanzos ferrol mondonedo vivero
+				lugo monforte_de_lemos navia_de_suarna sarria villalba
+				ourense barco_de_valdeorras ginzo_de_limia monterrey ribadavia viana_bolo
+				santiago_compostela finisterre lalin mellid noya pontevedra tuy
+				oviedo aviles cangas castropol llanes mieres tineo villaviciosa
+				leon astorga castrocalbon mansilla ponferrada riano sahagun villablino villafranca_bierzo
+				salamanca alba_de_tormes bejar ciudad_rodrigo coria ledesma matilla_de_canos piedrahita san_felices yecla_de_yeltes
+				zamora alba_de_aliste alcanices benavente fermoselle puebla_de_sanabria toro villalpando
+				murcia caravaca cartagena cieza hellin lorca mula segura_de_la_sierra
 				arcos_de_la_frontera
-				cadiz
-				carmona
-				constantina
-				ecija
-				jerez_de_la_frontera
-				medina_sidonia
-				moron
-				olvera
-				osuna
-				sanlucar
-				tarifa
-				huelva
-				almonaster_la_real
-				aracena
-				aroche
-				ayamonte
-				coria_del_rio
-				niebla
-				puebla_de_guzman
-				sanlucar_la_mayor
-				bilbao
-				anana
-				durango
-				onate
-				salvatierra
-				san_sebastian
-				tolosa
-				valmaseda
-				vitoria
+				bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
+			}
+			own_control_conquered = {
+				alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena
+				alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
+				toledo alcazar_de_san_juan chinchon consuegra guadalupe illescas los_yebenes navalucillos ocana puebla_de_montalban puente_arzobispo talavera_de_la_reina
+				ciudad_real tomelloso ucles cuenca  torralba albacete chinchilla villena
+				badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
+				caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
+				plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea santa_eufemia
 			}
 			our_cores_conquered_by_others = {
 				jumilla
@@ -770,12 +917,6 @@ countries = {
 				turenne
 				gourdon				#Vic.Turenne
 				mende				#C. de Gevaudan
-				macon				#C. de Macon
-				beaujeu
-				perreux
-				trevoux				#S.de Beaujeu
-				lyon
-				riverie				#C. de Lyon
 				le_puy				#C. du Velay
 				viviers				# C. de Viviers
 				nimes
@@ -3410,6 +3551,88 @@ countries = {
 			country_rank = rank_county
 			capital = ansbach
 			dynasty = hohenzollern_dynasty
+		}
+		P07 = {
+
+			capital = satsuma
+			starting_technology_level = 3
+
+			own_control_core = {
+				satsuma kagoshima ibusuki izumi_satsuma koshikishima
+				soo oosumi kimotsuki kuwabara hishikari gomu kumage_oosumi
+			}
+			own_control_integrated = {
+				amami_ooshima satsunan_islands tokunoshima
+				urasoe nakijin oozato kumejima
+				miyakojima ishigaki iriomote yonaguni tarama
+				amis paiwan takbanuao truku basai kavalan ketagalan kulun pakuali squliq
+			}
+			own_control_conquered = {
+				agno agoo binalatongan bolinao kandong tagudin bigan malukkit 
+				aborlan babuyan lahad_datu sepinang bara_buru kayeli obi sanana taliabu tifu yamdena sangliat_dol
+				tiwi woolna maung konbudj kundjeymi gunbalang dangbon nakara
+				burara yolngu 
+			}
+			discovered_areas = {
+				northern_australia_high_sea_zones_area
+				australian_northern_territory_area
+			}
+			discovered_regions = {
+				indonesia_region
+				japan_region
+				korea_region
+				manchuria_region
+				north_china_region
+ 				south_china_region
+				east_china_region
+				west_china_region
+				mongolia_region
+				tibet_region
+				xinjiang_region
+				indochina_region
+				bengal_region
+				deccan_region
+				western_india_region
+				hindustan_region
+			}
+
+			government = {
+				ruler_term = { character = jap_shimazu_tadahisa start_date = 1186.1.1 end_date = 1227.8.1 regnal_number = 1 }
+				ruler_term = { character = jap_shimazu_tadatoki start_date = 1227.8.1 end_date = 1272.5.8 regnal_number = 1 }
+				ruler_term = { character = jap_shimazu_hisatsune start_date = 1272.5.8 end_date = 1284.5.7 regnal_number = 1 }
+				ruler_term = { character = jap_shimazu_tadamune start_date = 1284.5.7 end_date = 1325.12.17 regnal_number = 1 }
+				ruler_term = { character = jap_shimazu_sadahisa start_date = 1325.12.17 regnal_number = 1 }
+
+				ruler = jap_shimazu_sadahisa
+
+				reforms = {
+					japanese_clan_PV
+				}
+				privilege = {
+				#nobles
+				auxilium_et_consilium
+				nobles_land_rights
+				noble_marriage_rights
+				noble_fortification_licenses
+				manorial_courts
+				primacy_of_nobility
+
+				#burghers
+				formal_guilds
+				market_fairs
+				shipwright_contracts
+
+				#clergy
+				clergy_literacy_rights
+				clergy_enforced_unity
+
+				#peasants
+				access_to_royal_and_ecclesiastical_courts
+				peasants_allowed_weapons_privilege
+			}
+			}
+
+			country_rank = rank_county
 		}
 	}
 }

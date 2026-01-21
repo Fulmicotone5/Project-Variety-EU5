@@ -10,6 +10,16 @@
 			}
 		}
 	}
+		text = {
+		localization_key = rank_domion_satsuma
+		trigger = {
+			tag = P07
+			or = {
+				country_rank_is_duchy = yes
+				country_rank_is_county = yes
+			}
+		}
+	}
 	text = {#PV
 		localization_key = rank_morkdom
 		trigger = {
@@ -34,6 +44,14 @@
 		trigger = {
 			government_type = government_type:monarchy
 			tag = F17
+		}
+	}
+	text = {#PV
+		localization_key = rank_empire_F18
+		trigger = {
+			tag = F18
+			government_type = government_type:monarchy
+			country_rank_is_kingdom = yes
 		}
 	}
 	text = {#PV

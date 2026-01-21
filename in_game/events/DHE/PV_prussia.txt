@@ -1,0 +1,79 @@
+namespace = pruflavor
+
+pruflavor.1 = { 
+	type = country_event
+	title = pruflavor.1.title
+	desc = pruflavor.1.desc
+	historical_info = pruflavor.1.historical_info
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = ANS
+		tag = PRU
+		from = 1500.1.1
+		to = 1835.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		ruler ?= {
+			save_scope_as = target_character
+		}
+		create_character = {
+			first_name = name_frederick_2
+			culture = root.culture
+			religion = root.religion
+			estate = nobles_estate
+			adm = 65 dip = 65 mil = 65
+			dynasty = hohenzollern_dynasty
+			age = 1
+			save_scope_as = new_heir
+		}
+		scope:new_heir = {
+			move_country = root
+			change_father = root.ruler
+			change_dynasty = root.ruler.dynasty
+			add_trait = trait:industrious
+			add_trait = trait:scholar
+			add_trait = trait:military_theorist
+			add_trait = trait:tactical_genius
+			add_trait = trait:inspiring_leader
+			add_trait = trait:child_gifted
+		}
+	}
+
+	trigger = {
+		or = {
+			dynasty:hohenzollern_dynasty = {
+				any_character_in_dynasty = {
+					is_ruler_of = root
+				}
+			}
+			dynasty:hohenzollern_nurnberg_dynasty = {
+				any_character_in_dynasty = {
+					is_ruler_of = root
+				}
+			}
+		}
+		has_or_had_tag = PRU
+		has_heir = no
+		ruler ?= {
+			is_married = yes
+		}
+	}
+
+	option = {
+		name = pruflavor.1.a
+		add_stability = stability_mild_bonus
+		scope:new_heir = {
+			add_trait = trait:child_gifted
+		}
+	}
+
+}

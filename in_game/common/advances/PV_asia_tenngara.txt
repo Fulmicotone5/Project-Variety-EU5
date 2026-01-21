@@ -1,0 +1,239 @@
+
+cha_go_tram_huong = {	#gỗ trầm hương
+	age = age_1_traditions
+	potential = { or = {
+			has_or_had_tag = CHA
+			has_or_had_tag = F19	
+		} }
+	requires = metallurgy
+
+	icon = rudimentary_coastal_ship_repair
+
+	global_lumber_output_modifier = 0.2
+}
+
+nghia_quan = {	#Nghĩa Quân
+	age = age_2_renaissance
+	potential = { or = {
+			has_or_had_tag = DAI
+			has_or_had_tag = F19	
+		} }
+
+	icon = offensive_army
+
+	requires = global_nobles_max_literacy_advance
+
+	global_levy_size_modifier = 0.1
+}
+
+maj_bubu_and_jala = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+	requires = apothecary_advance
+	
+	unlock_building = bubu_building
+}
+
+maj_home_of_the_sea_nomads = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+	requires = feudalism_advance
+	
+	unlock_unit = n_kabang
+}
+
+maj_jong_advance = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+	requires = feudalism_advance
+	
+	unlock_unit = n_jong
+}
+
+
+maj_bajang_ratu = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+	requires = crown_power_advance_renaissance
+	
+	unlock_building = bajang_ratu
+}
+
+maj_late_karambit_warriors = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+	requires = armory_advance
+	
+	unlock_unit = a_late_karambit_warrior
+}
+
+maj_the_magic_arrow = {
+	age = age_3_discovery
+	potential = { 
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		 
+	}
+
+	requires = unlock_falconet_advance
+	
+	unlock_unit = a_cetbang_cannon
+	naval_damage_done = 0.05
+}
+
+maj_maritime_silk_road = {
+	age = age_3_discovery
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+
+	requires = repair_at_sea_aod
+
+	trade_efficiency = small_trade_efficiency_bonus
+}
+
+maj_the_ghali = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = MAJ
+			has_or_had_tag = F19	
+          }		
+	}
+
+	allow = { has_advance = maj_the_magic_arrow }
+
+	requires = pharmacology_advance
+
+	unlock_unit = n_madurese_gali
+
+}
+khm_royal_procession = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	tax_income_efficiency = medium_tax_income_efficiency_bonus
+	monthly_legitimacy = 0.1
+
+	requires = khm_religious_flexibility
+}
+khm_ballista_elephants = {
+	icon = elephant_cavalry
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	unlock_unit = a_khmer_ballista_elephant_infantry
+
+	requires = khm_religious_flexibility
+}
+khm_recruitment_of_peasants = {
+	age = age_2_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	global_manpower_modifier = 0.1
+
+	requires = drill_army_advance
+}
+khm_champa_mercenaries = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	army_tradition_decay = -0.001
+
+	requires = regiment_reinforcement_speed_reformation
+}
+khm_restore_angkor = {
+	age = age_4_reformation
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	monthly_prestige = 0.1
+	cultural_tradition_modifier = 0.1
+
+	requires = reformation_subject_opinions_advance
+}
+khm_modern_navy = {
+	age = age_5_absolutism
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	naval_damage_taken = -0.1
+
+	requires = anti_piracy_warfare
+}
+khm_protection_from_raids = {
+	age = age_6_revolutions
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	global_garrison_growth = 0.01
+
+	requires = corps_organisation
+}
+khm_old_grudges = {
+	age = age_6_revolutions
+	potential = {
+		or = {
+			has_or_had_tag = KHM
+			has_or_had_tag = F19	
+        }
+	}
+	land_morale_modifier = 0.1
+
+	requires = recruitment_improvements_revolutions
+}
+

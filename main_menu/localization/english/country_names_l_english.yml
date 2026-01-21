@@ -115,6 +115,17 @@
  rank_empire_nordheim_ADJ: "Nordheim"
  rank_empire_nordheim_ruler_male: "High King"
  rank_empire_nordheim_ruler_female: "High Queen"
+ P07: "Satsuma"
+ P07_ADJ: "Satsuma"
+ rank_domion_satsuma: "Domain"
+ F18_f: "Great Tai Kingdom"
+ rank_empire_F18: "Kingdom"
+ F18: "Tai"
+ F18_ADJ: "Tai"
+ rank_empire_F18_prefix: "Great"
+ F19_f: "Asia Tenggara"
+ F19: "Asia Tenggara"
+ F19_ADJ: "Tenggara"
 
  DUMMY: "(placeholder)"
  DUMMY_ADJ: "(placeholder)"
@@ -3303,6 +3314,8 @@
  HZH_ADJ: "Hóngzhōu"
  XSY: "Xīshānyáng" #西山阳
  XSY_ADJ: "Xīshānyáng"
+ LNG: "Liáng" #梁
+ LNG_ADJ: "Liáng"
  CDL: "Dali"
  CDL_ADJ: "Dali"
  CHH: "Chiang Hung"

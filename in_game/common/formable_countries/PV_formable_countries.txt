@@ -40,7 +40,7 @@ F01_f = {
 }
 F02_f = {
 	level = 2
-	required_locations_fraction = 0.8
+	required_locations_fraction = 0.7
 	rule = historical
 
 	potential = {
@@ -78,7 +78,7 @@ F02_f = {
 }
 F03_f = {
 	level = 3
-	required_locations_fraction = 0.8
+	required_locations_fraction = 0.7
 	rule = historical
 
 	potential = {
@@ -762,6 +762,91 @@ F17_f = {
         illinois_area
         wisconsin_area
         indiana_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 4 }
+			set_country_rank_effect = { rank = country_rank:rank_empire }
+		}
+	}
+}
+F18_f = {
+	level = 3
+	required_locations_fraction = 0.6
+	rule = historical
+
+	potential = {
+		culture ?= { has_culture_group = culture_group:thai_group }
+	}
+
+	
+	name = F18
+	flag = F18
+	adjective = F18_ADJ
+	tag = F18
+	color = map_PVf18
+
+	areas = {
+		irrawady_delta_area
+		chao_phraya_area
+		northern_tai_highland_area
+		shan_highland_area
+		yunnan_area
+		red_river_delta_area
+		liangjiang_area
+		guizhou_area
+		guangxi_area
+		haibei_hainan_area
+	}
+	provinces = {
+		east_kra_province
+		west_kra_province
+		thammarat_province
+		menglian_province
+		mengding_province
+		muang_phuan_province
+		vientiane_province
+	}
+	locations = {
+		pak_huei_lang
+		nong_khay
+		chiang_khan
+		zhenkang
+		kongwei
+		shidian
+		shunning
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F19_f = {
+	level = 4
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		capital ?= {
+			or = {
+				region = region:indochina_region
+				region = region:indonesia_region
+			}
+		}
+	}
+
+	
+	name = F19
+	flag = F19
+	adjective = F19_ADJ
+	tag = F19
+	color = map_PVf19
+
+	regions = {
+		indochina_region
+		indonesia_region
 	}
 	form_effect = {
 		if = {

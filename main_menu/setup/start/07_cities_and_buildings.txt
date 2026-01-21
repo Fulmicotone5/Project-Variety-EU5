@@ -596,6 +596,12 @@ locations={
 	kagoshima = { rank = town 	town_setup = japan_town }
 	miyagi = { rank = town 		town_setup = japan_town }
 	akita = { rank = town 		town_setup = japan_town }
+	satsuma = { rank = city 		town_setup = italian_coastal_city }
+	urasoe = { rank = town 		town_setup = german_coastal_town }
+	amis = { rank = town 		town_setup = german_coastal_town }
+	bigan = { rank = town 		town_setup = german_coastal_town }
+	lahad_datu = { rank = town 		town_setup = german_coastal_town }
+	maung = { rank = town 		town_setup = german_coastal_town }
 
 	kaesong = { rank = city 	town_setup = korea_city }
 	namgyeong = { rank = city 	town_setup = korea_city }
@@ -2290,6 +2296,9 @@ building_manager = {
 	castle = { tag = SER level = 1 location =  trgoviste_SER }
 	sergeantry	= { tag = KOJ level = 1 location = jerusalem } #PV
 	armory	= { tag = KOJ level = 1 location = jerusalem } #PV
+	sergeantry	= { tag = ANS level = 1 location = ansbach } #PV
+	sergeantry	= { tag = P07 level = 1 location = satsuma } #PV
+	armory	= { tag = P07 level = 2 location = satsuma } #PV
 
 
 	order_headquarters = { tag = KNI level = 1 location =  rodos }
@@ -2508,8 +2517,6 @@ building_manager = {
 	kokufu = { tag = OTM level = 1 location = saga } #Hizen Shugo
 	kokufu = { tag = SHN level = 1 location = akita_kumamoto } #Higo Shugo
 	kokufu = { tag = OTM level = 1 location = koyu } #Hyuuga Shugo
-	kokufu = { tag = SMZ level = 1 location = soo } #Oosumi Shugo
-	kokufu = { tag = SMZ level = 1 location = satsuma } #Satsuma Shugo
 	# Iki Shugo (higashimatsuura) directly under ashikaga
 	kokufu = { tag = SHN level = 1 location = shimoagata } #Tsushima Shugo
 	#Washizu
@@ -3279,18 +3286,14 @@ building_manager = {
 	yamashiro = { tag = KMT level = 1 location = minamimorokata } #https://ja.wikipedia.org/wiki/%E5%BF%97%E5%B8%83%E5%BF%97%E5%9F%8E
 	shoen = { tag = KMT level = 1 location = minamimorokata }
 	#Shimazu
-	yamashiro = { tag = SMZ level = 1 location = soo } #Oosumi Shugo
-	shoen = { tag = SMZ level = 1 location = soo } #Oosumi Shugo
-	yakata = { tag = SMZ level = 1 location = satsuma } #Satsuma Shugo
-	shoen = { tag = SMZ level = 1 location = satsuma }
-	clan_shipyards = { tag = SMZ level = 1 location = satsuma }
-	tatara = { tag = SMZ level = 1 location = satsuma }
-	clan_family_shrine = { tag = SMZ level = 1 location = satsuma }
-	yamashiro = { tag = SMZ level = 1 location = ibusuki } #https://ja.wikipedia.org/wiki/%E7%9F%A5%E8%A6%A7%E5%9F%8E
-	shoen = { tag = SMZ level = 1 location = ibusuki }
-	yamashiro = { tag = SMZ level = 1 location = kagoshima } #https://ja.wikipedia.org/wiki/%E6%9D%B1%E7%A6%8F%E5%AF%BA%E5%9F%8E (not really there yet, but the clans there at that time there's not much info about them and the castle fell to Shimazu in 1341, so put it already as theirs for simplification)
-	shoen = { tag = SMZ level = 1 location = kagoshima }
-	clan_shipyards = { tag = SMZ level = 1 location = kagoshima }
+	shoen = { tag = P07 level = 1 location = soo } #Oosumi Shugo
+	shoen = { tag = P07 level = 1 location = satsuma }
+	clan_shipyards = { tag = P07 level = 1 location = satsuma }
+	tatara = { tag = P07 level = 1 location = satsuma }
+	clan_family_shrine = { tag = P07 level = 1 location = satsuma }
+	shoen = { tag = P07 level = 1 location = ibusuki }
+	shoen = { tag = P07 level = 1 location = kagoshima }
+	clan_shipyards = { tag = P07 level = 1 location = kagoshima }
 	#Kajiki
 	yamashiro = { tag = KJK level = 1 location = kuwabara } #https://ja.wikipedia.org/wiki/%E5%8A%A0%E6%B2%BB%E6%9C%A8%E5%9F%8E
 	yakata = { tag = KJK level = 1 location = kuwabara }
