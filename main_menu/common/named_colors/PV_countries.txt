@@ -55,3 +55,9 @@ colors = {
 colors = {
 	map_PVf19 = rgb { 90 136 191 }
 }
+colors = {
+	map_PVf20 = rgb { 1 21 158 }
+}
+colors = {
+	map_PVf21 = rgb { 13 99 9 }
+}

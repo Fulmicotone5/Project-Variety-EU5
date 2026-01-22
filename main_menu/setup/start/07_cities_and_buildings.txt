@@ -624,6 +624,7 @@ locations={
 	fuliang = { rank = city town_setup = chinese_city } #Jingdezhen
 	minxian = { rank = city town_setup = chinese_coastal_city }
 	ganzhou = { rank = city town_setup = chinese_city }
+	liyuan = { rank = town town_setup = chinese_town }
 	guangzhou = { rank = city town_setup = chinese_city }
 	handan = { rank = city town_setup = chinese_city }
 	hangzhou = { rank = city town_setup = chinese_coastal_city }

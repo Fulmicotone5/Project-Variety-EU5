@@ -293,6 +293,12 @@ P07 = {
 	culture_definition = kyushu_culture
 	religion_definition = shinto
 }
+P08 = {
+	color = rgb { 150 22 11 }
+
+	culture_definition = daqinren
+	religion_definition = hellenism_religion
+}
 WLS = {
 	color = map_WLS
 	color2 = rgb { 16 41 202 }

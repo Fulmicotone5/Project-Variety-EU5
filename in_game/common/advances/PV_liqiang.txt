@@ -1,0 +1,58 @@
+legacy_of_rome = {
+	age = age_1_traditions
+	icon = heirs_of_rome
+	potential = {
+		has_or_had_tag = P08
+	}
+	cultural_influence = 0.15
+
+	requires = cultural_acceptance_advance
+}
+roma_invicta = {
+	age = age_1_traditions
+	icon = dai_thuan_thien
+	potential = {
+		has_or_had_tag = P08
+	}
+	antagonism_received_modifier = -0.15
+	
+	requires = scriptorium_advance
+}
+
+last_bastion_of_hellenism = {
+	age = age_2_renaissance
+	icon = patron_of_art
+	potential = {
+		has_or_had_tag = P08
+	}
+	cultural_tradition = 0.1
+	global_pop_conversion_speed = 0.5
+
+	requires = renaissance_advance
+}
+
+rise_of_rome = {
+	age = age_2_renaissance
+	icon = divine_supremacy
+	potential = {
+		has_or_had_tag = P08
+	}
+	global_war_score_cost = -0.1
+	casus_belli_creation_speed_modifier = 0.25
+
+	requires = renaissance_development
+}
+
+
+
+extendeded_citizenship = {
+	age = age_3_discovery 
+	icon = mhr_encourage_brahmin_ties
+	potential = {
+		has_or_had_tag = P08
+	}
+	cultures_capacity = 1
+	add_accepted_culture_cost_modifier = -0.25
+
+	requires = formalized_relations
+}

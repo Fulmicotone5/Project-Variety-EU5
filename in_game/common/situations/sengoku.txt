@@ -3,31 +3,7 @@
 	hint_tag = hint_sengoku
 
 	can_start = {
-		current_year >= 1342 #To give a bit of margin of 'free wars' during the nanbokucho PV
-		international_organization:japanese_shogunate = {
-			OR = {
-				international_organization_has_leader = no
-				leader_country ?= {
-					OR = {
-						government_power <= 50
-						stability <= 20
-						in_civil_war = yes
-						any_rebel = {
-							rebel_progress > 0.9
-						}
-					}
-				}
-				any_international_organization_member = {
-					any_current_war = {
-						OR = {
-							any_attacker = { is_member_of_international_organization = international_organization:japanese_shogunate }
-							any_defender = { is_member_of_international_organization = international_organization:japanese_shogunate }
-						}
-					}
-					count >= 6
-				}
-			}
-		}
+		current_year >= 1343 #To give a bit of margin of 'free wars' during the nanbokucho PV
 	}
 	
 	can_end = {

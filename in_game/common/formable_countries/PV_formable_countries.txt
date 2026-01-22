@@ -855,3 +855,133 @@ F19_f = {
 		}
 	}
 }
+F20_f = { #wei
+	level = 3
+	required_locations_fraction = 0.7
+	rule = historical
+
+	potential = {
+		culture ?= { has_culture_group = culture_group:chinese_group }
+	}
+
+	
+	name = F20
+	flag = F20
+	adjective = F20_ADJ
+	tag = F20
+	color = map_PVf20
+
+	areas = {
+		gansu_area
+		longyou_area
+		shaanxi_area
+		hubei_area
+		huaixi_area
+		huaidong_area
+		haiyou_area
+		shandong_area
+		hebei_area
+		shanxi_area
+		henan_area
+		yannan_area
+		beiping_area
+		liaodong_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F21_f = { #shu
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture ?= { has_culture_group = culture_group:chinese_group }
+	}
+
+	
+	name = F21
+	flag = F21
+	adjective = F21_ADJ
+	tag = F21
+	color = map_PVf21
+
+	areas = {
+		chuanxi_area
+		chuandong_area
+		chuannan_area
+		guizhou_area
+		yunnan_area
+		liangjiang_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+WUU_f = { #wu
+	level = 3
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture ?= { has_culture_group = culture_group:chinese_group }
+	}
+
+	
+	name = WUU
+	flag = WUU
+	adjective = WUU_ADJ
+	tag = WUU
+	color = map_WUU
+
+	areas = {
+		jiangnan_area
+		zhejiang_area
+		fujian_area
+		jiangxi_area
+		hunan_area
+		guangdong_area
+		haibei_hainan_area
+		wuling_area
+		guangxi_area
+	}
+	form_effect = {
+		if = {
+			limit = { country_rank_level < 3 }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		}
+	}
+}
+F22_f = {
+	level = 4
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		culture = culture:daqinren
+	}
+
+	allow = {
+	}
+
+	name = F22
+	flag = F22
+	adjective = F22_ADJ
+	tag = F22
+	color = map_ROM
+
+	regions = {
+		west_china_region east_china_region north_china_region south_china_region
+	}
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+
+}

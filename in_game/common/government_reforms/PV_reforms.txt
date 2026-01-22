@@ -184,3 +184,25 @@ japanese_clan_PV = {
 
 	years = 2
 }
+
+PV_liqian = {
+	major = yes
+
+	country_modifier = {
+		blocked_from_conversion = yes 
+		global_integration_speed_modifier = 0.2
+		government_reform_slots = 1
+		government_size = 1
+	}
+
+	potential = {
+		has_or_had_tag = P08
+	}	
+	
+	
+	locked = {
+		always = yes
+	}
+
+	years = 2
+}

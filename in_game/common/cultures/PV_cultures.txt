@@ -21,6 +21,39 @@ PV_vinlander = {
 	dynasty_name_type = patronym
 }
 
+daqinren = {
+	language = northern_mandarin_dialect
+
+	color = map_umbrian
+
+	tags = { east_asian_gfx }
+
+	opinions = {
+		liang_culture = kindred
+		greek_culture = positive
+	}
+	culture_groups = {
+		chinese_group
+		greek_group
+	}
+}
+TRY_REPLACE:liang_culture = { 
+	language = northern_mandarin_dialect
+
+	color = map_liang
+
+	tags = { east_asian_gfx }
+
+	opinions = {
+		daqinren = kindred
+		greek_culture = positive
+	}
+	culture_groups = {
+		chinese_group
+		confucian_group
+	}
+}
+
 TRY_REPLACE:czech = {
 	language = czech_dialect
 	

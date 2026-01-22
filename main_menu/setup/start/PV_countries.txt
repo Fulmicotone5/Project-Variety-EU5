@@ -3566,6 +3566,7 @@ countries = {
 				urasoe nakijin oozato kumejima
 				miyakojima ishigaki iriomote yonaguni tarama
 				amis paiwan takbanuao truku basai kavalan ketagalan kulun pakuali squliq
+				minxian lianjiang luoyuan houguan minqing changle_fujian gutian yongfu_fuzhou fuqing putian xianyou huian
 			}
 			own_control_conquered = {
 				agno agoo binalatongan bolinao kandong tagudin bigan malukkit 
@@ -3631,8 +3632,168 @@ countries = {
 				peasants_allowed_weapons_privilege
 			}
 			}
+			tolerated_cultures = { fuzhou_culture }
 
 			country_rank = rank_county
+		}
+		CTW = {
+			own_control_core = {
+				rongmei wufeng huarong anlu xiaogan yingcheng yunmeng huanggang qichun luotian huangan huangpi huangmei macheng qishui guangji 
+				luan huoqiu huoshan mabu shucheng yuexi yingshan_luan dingcheng changtan guangshan gucheng_xi gushi shangcheng xizhou zhugao
+				luoshan minggang xinyang lishan_xinyang zhongxiang fengle shipai fushui jingshan
+				changlin dangyang shayang  jiangling gongan songzi qianjiang jianli shishou zhijiang yusha jingling xindi hong_lake
+				yiling changyang yuanan jinzhuping yidu liyang_lizhou anfu_li anxiang cili shimen tianping shixi dayong 
+				xiangyang gucheng jinxiangping guanghua lutoudian nanzhang fancheng yicheng zaoyang fangling banqiao baokang baihekou bomoping zhushan zhuxi fengxi
+				zigui xingshan xinhua_guizhou badong jingshan_mountains hanchuan hanyang  suixian gaocheng_suizhou yingshan tangcheng meiqiu
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c01ru
+			}
+
+			capital = hanchuan
+			country_rank = rank_duchy
+		}
+		CHE = {
+			own_control_core = {
+				dehua_jiujiang  yongan_youzhou liuyang liling changsha xiangyin jiangxia wuchang jinkou tongcheng_wuchang puqi chongyang xianning jiayu liangzi_lake
+				yongxing_xingguo daye tongshan  fenning fengxin jingan wuning tonggu jiulingshan  xingzi duchang anyi jianchang poyang_lake nanchang fengcheng_fengcheng jinxian xinjian
+				linchuan lean_fuzhou chongren yihuang dongxiang jinxi qingjiang xingan_linjiang xinyu gaoan shanggao xinchang_yifeng 
+				yichun fenyi wanzai pingxiang baling changshou_pingjiang huarong linxiang pingjiang poyang anren_raozhou dexing fuliang leping shimen_poyang wannian yugan 
+				shangrao yushan_guangxin yanshan_guangxin guixi_guangxin yiyang_guangxin yongfeng nancheng nanfeng xincheng_jianchang guangchang
+				shexian yixian xiuning jixi_huizhou tunxi qimen wuyuan_huizhou guichi shidai qingyang tongling dongliu
+				huaining qianshan susong taihu tongcheng_anqing wangjiang zongyang longgan_lake xian_quzhou jiangshan kaihua longyou changshan
+				jiande chunan suian tonglu ruichang dean hukou pengze 
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c02ru
+			}
+
+			capital = dehua_jiujiang
+			country_rank = rank_duchy
+		}
+		WUU = {
+			own_control_core = {
+				jiangyin gaoyou wuxi tianchang xuyi haining hangzhou xiaoshan fuyang_hangzhou shanyang_huaian andong_huaian qinghe_huaian yancheng funing_huaian taoyuan_huaian hongze_lake
+				jiaxing chongde haiyan huating nanhui shanghai dianshan_lake wuxian changshu chongming jiading kunshan wujiang yangcheng_lake  
+				jinghai_tongzhou juegang haimen hailing xixi rugao jiangdu taixing yangzi xinghuabaoying xinghua baoying qushan banpu gaoqiao ganyu shuyang 
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c03ru
+			}
+
+			capital = gaoyou
+		}
+		CFN = {
+			own_control_core = {
+				yongjia linhai xianzhu huangyan ninghai wenling tiantai xianju  dinghai cixi xiangshan fenghua yinxian changguo  ningde fuan changshi
+				ouning jianan pucheng_jianning songxi jianyang chongan zhenghe wuyishan2  lishui daxue qingtian minghe longquan suichang qingyuan_chuzhou jinyun songyang yunhe wuyishan1
+				jinhua dongyang wuyi_jinhua lanxi pujiang yiwu yongkang   shaoxing shangyu shengxian xiaoshan xinchang yuyao zhuji
+				shuangxi yueqing luoyang_wenzhou pingyang ruian
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c04ru
+			}
+
+			capital = yongjia
+			country_rank = rank_duchy
+		}
+		CMO = {
+			own_control_core = {
+				zichuan yexian_laizhou changyi gaomi luxiang jiaoshui beihai jiaoxi fushan_jiaozhou jimo lingshanwei  zhucheng anqiu changle wulian
+				juxian yiyuan gegou mengyin rizhao shizilu yishui licheng jiyang zhangqiu xincheng_jinan gaoyuan_jinan qidong zouping
+				fengfu yanshen changqing laiwu feicheng xintai  yidu_qingzhou boxing lean linqu shouguang zichuan 
+				changshan_islands_wastelands penglai dasong jiangshan_laiyang laiyang huangxian qixia zhaoyuan muping chengshan fushan_muping rushan weihai wendeng
+				linyi licheng_yizhou feixian lanling tancheng
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c05ru
+			}
+
+			capital = zichuan
+			country_rank = rank_duchy
+		}
+		CXI = {
+			own_control_core = {
+				baxian fuzhou_sichuan changshou_changshou wulong linjiang dianjiang fengdu shizhu  liujiang huaying linshui qujiang_guangan yuechi dazhu
+				 nanchong yingshan_shunqing xichong yilong xiangru miangu jiachuan zhaohua langzhong cangxi nanbu
+				puan zhangming mianzhou zitong qixian_tongchuan shehong yanting zhongjiang  xiaoxi pengxi lezhi anyue suining  deyang shizhao tongliang dingyuan
+				luzhou naxi hejiang jiangan dazu rongchang yongchuan yibin fushun nanxi qingfu xuanhua  longyou_jiading emei jiajiang rongzhou weiyuan_jiading qianwei 
+				jianzhou zixian neijiang renshou jingyan ziyang_zizhong chengdu pixian shuangliu xindu jintang 
+				meizhou qingshen danleng pengshan  qiongzhou pujiang_qiongzhou dayi  pengzhou jinyuan guanzhou deyang anzhou shifang mianzhu
+				changning_changning mingshan yandao rongjing shiquan_maozhou qingchuan 
+				bishan jiangjin banan nanchuan pengshui qianjiang_shaoqing
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c06ru
+			}
+
+			capital = baxian
+			country_rank = rank_duchy
+		}
+		CNP = {
+			own_control_core = {
+				nanping jinjiang tongan anxi dehua yongchun nanan_quanzhou
+				longxi zhaoan huafeng longyan pinghe nansheng zhangpu changtai zhangping changting ninghua_tingzhou liancheng shanghang qingliu wuping mingxi yongding_shanghang
+				haiyang sanhe_chaozhou pantian chengxiang huilai chaoyang pingyuan_mei puning sanrao jieyang 
+				nanping datian shaxian jiangle shunchang yongan_sha youxi shaowu guangze taining jianning
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c08ru
+			}
+
+			capital = nanping
+			country_rank = rank_duchy
+		}
+		CDN = {
+			own_control_core = {
+				dongguan conghua xinfeng_panyu zhengcheng longmen guangzhou shunde nanhai huiqi qingyuan panyu guishan khuzhupai haifeng lufeng_haifeng boluo pingshan_huiyang qinjiang zuokeng
+				xinhui guanghai xiangshan_xinhui gaoyao gaoming guangning_zhaoqing sanshui sihui yangjiang yangchun enping guliang duling xinxing_nanen
+				duanxi shuangshui ducheng jinkang  maoming xinyi_gaozhou dianbai baoning 
+				shilong shicheng wuchuan_huazhou haikang qingdao zhanchuan suixi xuwen baoan_dongguan guanfu
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				ruler = c09ru
+			}
+
+			capital = dongguan
+			country_rank = rank_duchy
+		}
+		P08 = {
+			own_control_core = {
+				ganzhou hongshui liyuan qidaban qilian shandan suzhou_gansu gaotai jinta chijin
+				shazhou anding_suzhou dangcheng kuyu_shazhou guazhou niuquanzi yangguan hala_nur
+			}
+
+			include = "east_asia_monarchy"
+			government = {
+				type = republic
+				heir_selection = republic_4_year_terms
+				reforms = {
+					PV_liqian
+				}
+			}
+			accepted_cultures = {
+				liang_culture
+			}
+
+			capital = ganzhou
+			country_rank = rank_kingdom
 		}
 	}
 }

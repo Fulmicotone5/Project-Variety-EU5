@@ -323,3 +323,24 @@ F19 = {
 		priority = 1		
 	}	
 }
+F20 = { #Wei
+	flag_definition = {
+		coa = F20
+		subject_canton = F20
+		priority = 1		
+	}	
+}
+F21 = { #Shu
+	flag_definition = {
+		coa = F21
+		subject_canton = F21
+		priority = 1		
+	}	
+}
+F22 = { #Shu
+	flag_definition = {
+		coa = F22
+		subject_canton = F22
+		priority = 1		
+	}	
+}

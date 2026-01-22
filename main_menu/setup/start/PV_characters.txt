@@ -1,7 +1,9 @@
-character_db={
-
+character_db = {
 	jap_shimazu_tadahisa = {
-		first_name = { name = name_tadahisa } #忠久
+		first_name = {
+			name = name_tadahisa
+		}
+		#忠久
 		culture = saigoku_culture
 		religion = shinto
 		birth_date = 1179.12.30
@@ -10,45 +12,53 @@ character_db={
 		dynasty = shimazu_dynasty
 		tag = P07
 	}
-
 	jap_shimazu_tadatoki = {
-		first_name = { name = name_tadatoki } #忠時
+		first_name = {
+			name = name_tadatoki
+		}
+		#忠時
 		culture = tougoku_culture
 		religion = shinto
-		birth_date = 1202.1.1 #Exact date unknown
+		birth_date = 1202.1.1		#Exact date unknown
 		birth = kamakura
 		death_date = 1272.5.8
 		dynasty = shimazu_dynasty
 		father = jap_shimazu_tadahisa
 		tag = P07
 	}
-
 	jap_shimazu_hisatsune = {
-		first_name = { name = name_hisatsune } #久経
+		first_name = {
+			name = name_hisatsune
+		}
+		#久経
 		culture = tougoku_culture
 		religion = shinto
-		birth_date = 1225.1.1 #Exact date unknown
+		birth_date = 1225.1.1		#Exact date unknown
 		birth = kamakura
 		death_date = 1284.5.7
 		dynasty = shimazu_dynasty
 		father = jap_shimazu_tadatoki
 		tag = P07
 	}
-
 	jap_shimazu_tadamune = {
-		first_name = { name = name_tadamune_alternative } #忠宗
+		first_name = {
+			name = name_tadamune_alternative
+		}
+		#忠宗
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1251.1.1 #Exact date unknown
+		birth_date = 1251.1.1		#Exact date unknown
 		birth = satsuma
 		death_date = 1325.12.17
 		dynasty = shimazu_dynasty
 		father = jap_shimazu_hisatsune
 		tag = P07
 	}
-
 	jap_shimazu_sadahisa = {
-		first_name = { name = name_sadahisa } #貞久
+		first_name = {
+			name = name_sadahisa
+		}
+		#貞久
 		culture = kyushu_culture
 		religion = shinto
 		birth_date = 1269.5.10
@@ -58,50 +68,57 @@ character_db={
 		spouse = jap_ootomo_chikatoki_no_musume
 		tag = P07
 	}
-
-
 	jap_niiro_tokihisa = {
-		first_name = { name = name_tokihisa } #時久
+		first_name = {
+			name = name_tokihisa
+		}
+		#時久
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1290.1.1 #Unknown
+		birth_date = 1290.1.1		#Unknown
 		birth = satsuma
 		dynasty = niiro_dynasty
 		father = jap_shimazu_tadamune
 		spouse = "random"
 		tag = P07
 	}
-
 	jap_niiro_sanehisa = {
-		first_name = { name = name_sanehisa } #実久
+		first_name = {
+			name = name_sanehisa
+		}
+		#実久
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1310.1.1 #Unknown
+		birth_date = 1310.1.1		#Unknown
 		birth = satsuma
 		dynasty = niiro_dynasty
 		father = jap_niiro_tokihisa
 		spouse = "random"
 		tag = P07
 	}
-
 	jap_hongou_suketada = {
-		first_name = { name = name_suketada } #資忠
+		first_name = {
+			name = name_suketada
+		}
+		#資忠
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1320.1.1 #Unknown
+		birth_date = 1320.1.1		#Unknown
 		birth = satsuma
-		dynasty = shimazu_dynasty #Founder of Hongou clan, but not until 1352
+		dynasty = shimazu_dynasty		#Founder of Hongou clan, but not until 1352
 		father = jap_shimazu_tadamune
 		tag = P07
 	}
-
 	jap_kawakami_yorihisa = {
-		first_name = { name = name_yorihisa_alternative } #頼久
+		first_name = {
+			name = name_yorihisa_alternative
+		}
+		#頼久
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1300.1.1 #Unknown
+		birth_date = 1300.1.1		#Unknown
 		birth = satsuma
-		dynasty = shimazu_dynasty #Founder of Kawakami clan, but not until 1352
+		dynasty = shimazu_dynasty		#Founder of Kawakami clan, but not until 1352
 		father = jap_shimazu_sadahisa
 		timed_modifier = {
 			modifier = "bastard"
@@ -112,21 +129,25 @@ character_db={
 		spouse = "random"
 		tag = P07
 	}
-
 	jap_shimazu_munehisa = {
-		first_name = { name = name_munehisa } #宗久
+		first_name = {
+			name = name_munehisa
+		}
+		#宗久
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1322.1.1 #Exact date unknown
+		birth_date = 1322.1.1		#Exact date unknown
 		birth = satsuma
 		dynasty = shimazu_dynasty
 		father = jap_shimazu_sadahisa
 		mother = jap_ootomo_chikatoki_no_musume
 		tag = P07
 	}
-
 	jap_shimazu_morohisa = {
-		first_name = { name = name_morohisa } #師久
+		first_name = {
+			name = name_morohisa
+		}
+		#師久
 		culture = kyushu_culture
 		religion = shinto
 		birth_date = 1325.9.23
@@ -136,9 +157,11 @@ character_db={
 		mother = jap_ootomo_chikatoki_no_musume
 		tag = P07
 	}
-
 	jap_shimazu_ujihisa = {
-		first_name = { name = name_ujihisa } #氏久
+		first_name = {
+			name = name_ujihisa
+		}
+		#氏久
 		culture = kyushu_culture
 		religion = shinto
 		birth_date = 1328.5.21
@@ -148,16 +171,122 @@ character_db={
 		mother = jap_ootomo_chikatoki_no_musume
 		tag = P07
 	}
-
 	jap_shimazu_tadatsune = {
-		first_name = { name = name_tadatsune_alternative2 } #忠経
+		first_name = {
+			name = name_tadatsune_alternative2
+		}
+		#忠経
 		culture = kyushu_culture
 		religion = shinto
-		birth_date = 1220.1.1 #Unknown
+		birth_date = 1220.1.1		#Unknown
 		birth = satsuma
-		death_date = 1300.1.1 #Unknown
+		death_date = 1300.1.1		#Unknown
 		father = jap_shimazu_tadatoki
 		dynasty = shimazu_dynasty
 		tag = P07
+	}
+	c01ru = {
+		first_name = name_shou.name_hui1
+		dynasty = rtr_tianwan_xu_dynasty
+		birth_date = 1310		#Exact date unknown
+		culture = culture:jianghuai_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 60
+		dip = 60
+		mil = 60
+		script = ctw_shouhui_xu
+		tag = CTW
+	}
+	c02ru = {
+		first_name = name_you.name_liang4
+		dynasty = rtr_chen_dynasty
+		birth_date = 1310		#Exact date unknown
+		culture = culture:chu_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 60
+		dip = 60
+		mil = 60
+		script = che_youliang_chen
+		tag = CHE
+	}
+	c03ru = {
+		first_name = name_shi4.name_cheng22
+		dynasty = rtr_wu_zhang_dynasty
+		birth_date = 1311		#Exact date unknown
+		culture = culture:wu_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 60
+		dip = 60
+		mil = 60
+		script = wuu_shicheng_zhang
+		tag = WUU
+	}
+	c04ru = {
+		first_name = name_guo2.name_zhen12
+		dynasty = rtr_fang_dynasty
+		birth_date = 1315		#Exact date unknown
+		culture = culture:taizhou_wu_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 60
+		dip = 60
+		mil = 60
+		script = cfn_guozhen_fang
+		tag = CFN
+	}
+	c05ru = {
+		first_name = name_gui
+		dynasty = rtr_mao_dynasty
+		birth_date = 1316		#Unknown but active 1357
+		culture = culture:jilu_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 45
+		dip = 45
+		mil = 45
+		script = cmo_gui_mao
+		tag = CMO
+	}
+	c06ru = {
+		first_name = name_yu4.name_zhen12
+		dynasty = rtr_xia_ming_dynasty
+		birth_date = 1318.10.2
+		culture = culture:shu_culture
+		religion = religion:sanjiao
+		estate = estate_type:nobles_estate
+		adm = 60
+		dip = 60
+		mil = 60
+		script = cxi_yuzhen_ming
+		tag = CXI
+	}
+	c08ru = {
+		first_name = name_you.name_ding4
+				dynasty = rtr_nanping_chen_dynasty
+				birth_date = 1310 #Exact date unknown
+				culture = culture:fuzhou_culture
+				religion = religion:sanjiao
+				estate = estate_type:nobles_estate
+				adm = 60
+				dip = 60
+				mil = 60
+				script = cnp_youding_chen
+		tag = CNP
+	}
+	c09ru = {
+		first_name = name_zhen
+				dynasty = rtr_dongguan_he_dynasty
+				birth_date = 1311 #Exact date unknown
+				culture = culture:yuehai_culture
+				religion = religion:sanjiao
+				estate = estate_type:nobles_estate
+				adm = 60
+				dip = 60
+				mil = 60
+				script = cdn_zhen_he
+		tag = CDN
 	}
 }

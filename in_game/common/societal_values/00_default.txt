@@ -12,7 +12,7 @@
 		subject_pays_maha_samanta_cost_modifier = -0.25
 		subject_pays_pradhana_maha_samanta_cost_modifier = -0.25
 
-		counter_espionage = 0.3
+		diplomatic_annexation_cost = -0.33
 		
 		control_importance_modifier = 0.2
 

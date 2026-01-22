@@ -51745,97 +51745,98 @@ samye = {
 	define_pop = {	type = peasants	size = 1.349	culture = utsang_culture	religion = bon }
 }
 ganzhou = {
-	define_pop = {	type = nobles	size = 0.024	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = clergy	size = 0.191	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = burghers	size = 6.012	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 55.742	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = nobles	size = 0.024	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = clergy	size = 0.191	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = burghers	size = 6.012	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 30.742	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 25.742	culture = daqinren	religion = hellenism_religion }
 	define_pop = {	type = peasants	size = 6.186	culture = mi_niah_culture	religion = mahayana }
 }
 hongshui = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 27.368	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 3.039	culture = mi_niah_culture	religion = mahayana }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 27.368	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 3.039	culture = daqinren	religion = hellenism_religion }
 }
 liyuan = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 1.812	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 2.416	culture = yugur_culture	religion = mahayana }
-	define_pop = {	type = peasants	size = 1.207	culture = amdowa_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 0.602	culture = mi_niah_culture	religion = mahayana }
+	define_pop = {	type = nobles	size = 0.024	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = clergy	size = 0.191	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = burghers	size = 1.012	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 4.812	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 6.416	culture = daqinren	religion = hellenism_religion }
 }
 qidaban = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 2.114	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 2.719	culture = yugur_culture	religion = mahayana }
-	define_pop = {	type = peasants	size = 1.207	culture = amdowa_culture	religion = tibetan_buddhism }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 2.114	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 2.719	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 1.207	culture = liang_culture	religion = tibetan_buddhism }
 }
 qilian = {
-	define_pop = {	type = clergy	size = 0.004	culture = amdowa_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 2.813	culture = amdowa_culture	religion = tibetan_buddhism }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 2.813	culture = daqinren	religion = hellenism_religion }
 	define_pop = {	type = peasants	size = 0.701	culture = amdowa_culture	religion = bon }
 }
 shandan = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 34.155	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 3.793	culture = mi_niah_culture	religion = mahayana }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = tibetan_buddhism }
+	define_pop = {	type = peasants	size = 34.155	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 3.793	culture = daqinren	religion = hellenism_religion }
 }
 qilianshan1 = {
 }
 shazhou = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 5.178	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 5.178	culture = liang_culture	religion = hellenism_religion }
 }
 anding_suzhou = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 1.085	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 1.085	culture = liang_culture	religion = hellenism_religion }
 }
 dangcheng = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 2.228	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 0.609	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = tribesmen	size = 0.874	culture = mongolian_culture	religion = tengri }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 2.228	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 0.609	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = tribesmen	size = 0.874	culture = mongolian_culture	religion = hellenism_religion }
 }
 kuyu_shazhou = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 4.748	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 0.576	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = tribesmen	size = 0.608	culture = mongolian_culture	religion = tengri }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 4.748	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 0.576	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = tribesmen	size = 0.608	culture = mongolian_culture	religion = hellenism_religion }
 }
 guazhou = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 1.947	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 1.947	culture = liang_culture	religion = hellenism_religion }
 }
 niuquanzi = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tengri }
-	define_pop = {	type = peasants	size = 0.992	culture = mongolian_culture	religion = tengri }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 0.992	culture = daqinren	religion = hellenism_religion }
 	define_pop = {	type = tribesmen	size = 1.098	culture = mongolian_culture	religion = tengri }
 }
 yangguan = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 1.351	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 1.351	culture = liang_culture	religion = hellenism_religion }
 }
 mazongshan = {
 }
 hala_nur = {
 }
 suzhou_gansu = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 19.075	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 19.075	culture = liang_culture	religion = hellenism_religion }
 }
 gaotai = {
-	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }
-	define_pop = {	type = peasants	size = 26.346	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 6.585	culture = yugur_culture	religion = mahayana }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 26.346	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 6.585	culture = daqinren	religion = hellenism_religion }
 }
 jinta = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 18.570	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 1.772	culture = mongolian_culture	religion = tengri }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 18.570	culture = liang_culture	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 1.772	culture = daqinren	religion = hellenism_religion }
 	define_pop = {	type = tribesmen	size = 2.867	culture = mongolian_culture	religion = tengri }
 }
 chijin = {
-	define_pop = {	type = clergy	size = 0.004	culture = liang_culture	religion = sanjiao }
-	define_pop = {	type = peasants	size = 5.828	culture = liang_culture	religion = sanjiao }
+	define_pop = {	type = clergy	size = 0.004	culture = daqinren	religion = hellenism_religion }
+	define_pop = {	type = peasants	size = 5.828	culture = liang_culture	religion = hellenism_religion }
 }
 xining = {
 	define_pop = {	type = clergy	size = 0.004	culture = mongolian_culture	religion = tibetan_buddhism }

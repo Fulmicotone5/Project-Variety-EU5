@@ -1,15 +1,34 @@
 diplomacy_manager = {
-	opinion = { first = KOJ second = MAM type = opinion_angry }
-	opinion = { first = MAM second = KOJ type = opinion_angry }
-	opinion = { first = TOU second = FRA type = opinion_angry }
-	opinion = { first = FRA second = TOU type = opinion_angry }
-	opinion = { first = MIE second = FRA type = opinion_angry }
-	opinion = { first = BRI second = FRA type = opinion_angry }
-	opinion = { first = ARS second = FRA type = opinion_angry }
-	opinion = { first = GCL second = CAS type = opinion_angry }
-	opinion = { first = TRA second = HUN type = opinion_angry }
+	opinion = { first = KOJ second = MAM type = opinion_declared_war }
+	opinion = { first = MAM second = KOJ type = opinion_declared_war }
+	opinion = { first = TOU second = FRA type = opinion_declared_war }
+	opinion = { first = FRA second = TOU type = opinion_declared_war }
+	opinion = { first = MIE second = FRA type = opinion_declared_war }
+	opinion = { first = BRI second = FRA type = opinion_declared_war }
+	opinion = { first = ARS second = FRA type = opinion_declared_war }
+	opinion = { first = GCL second = CAS type = opinion_declared_war }
+	opinion = { first = ARA second = CAS type = opinion_declared_war }
+	opinion = { first = POR second = CAS type = opinion_declared_war }
+	opinion = { first = CAS second = ARA type = border_aggression }
+	opinion = { first = CAS second = POR type = border_aggression }
+	opinion = { first = TRA second = HUN type = opinion_declared_war }
 	opinion = { first = NOL second = P01 type = opinion_good_relations }
 	opinion = { first = P01 second = NOL type = opinion_good_relations }
-	opinion = { first = NOL second = ENG type = opinion_angry }
-	opinion = { first = P01 second = ENG type = opinion_angry }
+	opinion = { first = HUN second = TRA type = opinion_good_relations }
+	opinion = { first = NOL second = ENG type = opinion_declared_war }
+	opinion = { first = P01 second = ENG type = opinion_declared_war }
+	opinion = { first = BOH second = MVA type = opinion_declared_war }
+	opinion = { first = MVA second = BOH type = opinion_declared_war }
+	opinion = { first = CAS second = POR type = opinion_angry }
+	opinion = { first = CAS second = POR type = opinion_irritated }
+
+	opinion = { first = FRA second = TOU type = opinion_declared_war }
+	opinion = { first = CMO second = CHI type = opinion_declared_war }
+	opinion = { first = WUU second = CHI type = opinion_declared_war }
+	opinion = { first = CTW second = CHI type = opinion_declared_war }
+	opinion = { first = CXI second = CHI type = opinion_declared_war }
+	opinion = { first = CHE second = CHI type = opinion_declared_war }
+	opinion = { first = CFN second = CHI type = opinion_declared_war }
+	opinion = { first = CNP second = CHI type = opinion_declared_war }
+	opinion = { first = CDN second = CHI type = opinion_declared_war }
 }

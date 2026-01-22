@@ -22,4 +22,7 @@ road_network = {
 	inutsualak = natsitok
 	onekama = wequetong
 	wequetong = cheboygan
+	liyuan = ganzhou
+	liyuan = gaotai
+	liyuan = qilian
 }

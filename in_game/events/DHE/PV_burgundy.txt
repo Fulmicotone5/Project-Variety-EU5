@@ -33,6 +33,7 @@ burflavor.1 = {
 		c:FRA = {
 			cancel_subject = c:BUR
 		}
+		add_truce_with = { target = c:FRA mutual = yes months = 120  }
 	}
 	option = {
 		name = burflavor.1.b
