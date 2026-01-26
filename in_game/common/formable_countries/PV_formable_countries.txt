@@ -367,10 +367,12 @@ F09_f = {
 	provinces = {
 		trentino_province
 		istria_province
+		savoy_province
 	}
 	locations = {
 		bolzano
 		cavalese pieve trieste ilirska_bistrica fiume gorizia cittacastello perugia
+		nice
 	}
 
 	form_effect = {

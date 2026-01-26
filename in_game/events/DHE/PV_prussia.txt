@@ -10,7 +10,7 @@ pruflavor.1 = {
 	dynamic_historical_event = {
 		tag = ANS
 		tag = PRU
-		from = 1500.1.1
+		from = 1400.1.1
 		to = 1835.1.1
 		monthly_chance = 1
 	}

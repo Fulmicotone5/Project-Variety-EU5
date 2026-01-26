@@ -206,3 +206,28 @@ PV_liqian = {
 
 	years = 2
 }
+
+house_of_hohen = {
+	major = yes
+	government = monarchy
+
+	country_modifier = {
+		government_reform_slots = 1
+		government_size = 1
+		global_integration_speed_modifier = 0.2
+		antagonism_received_modifier = -0.5
+		monthly_towards_individualism = societal_value_large_monthly_move
+		diplomatic_capacity = 1
+	}
+
+	potential = {
+		has_or_had_tag = ANS 
+	}	
+	
+	
+	locked = {
+		always = yes
+	}
+
+	years = 2
+}

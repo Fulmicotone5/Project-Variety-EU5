@@ -1,36 +1,43 @@
 TRY_INJECT:age_1_traditions = {
 	modifier = {
 		global_pop_food_consumption = -0.4
+		fort_maintenance_cost = 0.3
+		army_maintenance_cost = 0.25
 	}
 }
 
 TRY_INJECT:age_2_renaissance = {
 	modifier = {
-		force_army_maintenance = yes
+		army_maintenance_cost = 0.3
+		fort_maintenance_cost = 0.6
 		global_pop_food_consumption = -0.25
 	}
 }
 
 TRY_INJECT:age_3_discovery = {
 	modifier = {
-		force_army_maintenance = yes
+		army_maintenance_cost = 0.35
+		fort_maintenance_cost = 1
 	}
 }
 
 TRY_INJECT:age_4_reformation = {
 	modifier = {
-		force_army_maintenance = yes
+		army_maintenance_cost = 0.4
+		fort_maintenance_cost = 1.5
 	}
 }
 
 TRY_INJECT:age_5_absolutism = {
 	modifier = {
-		force_army_maintenance = yes
+		army_maintenance_cost = 0.45
+		fort_maintenance_cost = 2.1
 	}
 }
 
 TRY_INJECT:age_6_revolutions = {
 	modifier = {
 		army_maintenance_cost = 0.5
+		fort_maintenance_cost = 3
 	}
 }

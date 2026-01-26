@@ -29,3 +29,42 @@ NSE_f = {
 		}
 	}
 }
+
+ITA_f = {
+	level = 3
+	required_locations_fraction = 0.5
+	rule = historical
+
+	potential = {
+		culture = { has_culture_group = culture_group:italian_group }
+	}
+
+	allow = {
+		owns = location:milano
+		owns = location:florence
+		owns = location:naples
+	}
+	
+	name = ITA
+	flag = ITA
+	adjective = ITA_ADJ
+	tag = ITA
+	color = map_PVita
+
+	regions = {
+		italy_region
+	}
+	provinces = {
+		trentino_province
+		istria_province
+		savoy_province
+		
+	}
+	locations = {
+		bolzano
+		cavalese pieve trieste ilirska_bistrica fiume gorizia cittacastello perugia
+		nice
+	}
+	form_effect = {
+	}
+}

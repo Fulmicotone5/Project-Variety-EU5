@@ -1431,6 +1431,7 @@ building_manager = {
 	castle 		= { tag = ENG level = 1 location = windsor } 
 	castle 		= { tag = ENG level = 1 location = leeds } 
 	castle 		= { tag = ENG level = 1 location = pontefract } # conisbrough castle
+	royal_garden = { tag = TOU level = 1 location = toulouse }
 
 	stockade 		= { tag = ENG level = 1 location = launceston } # tintagel
 	stockade 		= { tag = ENG level = 1 location = rochester } # Rochester Castle
@@ -1533,7 +1534,7 @@ building_manager = {
 
 	# Palace of Westminster
 	royal_court 	= { tag = ENG level = 1 location = london }
-	sergeantry		= { tag = ENG level = 1 location = london } # sergeants at arms
+	sergeantry		= { tag = P01 level = 1 location = lincoln } # sergeants at arms
 
 	castle 		= { tag = PLE level = 1 location = dublin }
 	castle 		= { tag = ULS level = 1 location = carrickfergus }
@@ -1628,7 +1629,7 @@ building_manager = {
 	university	= { tag = CAS level = 1	location = salamanca }
 	university	= { tag = PAD level = 1	location = padova }
 	university	= { tag = NAP level = 1	location = naples }
-	university	= { tag = FRA level = 1	location = toulouse }
+	university	= { tag = TOU level = 1	location = toulouse }
 	university	= { tag = FRA level = 1	location = orleans }
 	university	= { tag = SIE level = 1	location = siena }
 	university	= { tag = CAS level = 1	location = valladolid }
@@ -3632,7 +3633,7 @@ building_manager = {
 	cathedral = { tag = PAP level = 1 location = palestrina } #Giovanni Colonna (S. Angelo)
 	cathedral = { tag = PAP level = 1 location = velletri } #Betrand du Pouget (Ostia e Velletri)
 	#French Cardinals
-	cathedral = { tag = FRA level = 1 location = toulouse } #Jean-Raymond de Comminges (Porto-Santa Rufina)
+	cathedral = { tag = TOU level = 1 location = toulouse } #Jean-Raymond de Comminges (Porto-Santa Rufina)
 	cathedral = { tag = FRA level = 1 location = bazas } #Raymond Guilhem de Fargues (S. Maria Nova)
 	cathedral = { tag = FRA level = 1 location = lyon } #Bertrand de Montfavez (S. Maria in Aquiro)
 	cathedral = { tag = FRA level = 1 location = langres } #Imbert Dupuis (XII Apostoli)

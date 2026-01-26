@@ -34,6 +34,7 @@ smokehouse = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = guild_max_level
+	forbidden_for_estates = yes
 	
 	category = basic_industry_category
 	
@@ -146,4 +147,1647 @@ smokehouse = {
 	}
 
 	construction_demand = basic_construction_needs
+}
+TRY_INJECT:sofa_stockade = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:korean_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:provincial_garrison = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_court = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:house_of_parliament = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:order_headquarters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:war_college = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tax_assessor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:supreme_court = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:chancery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:republican_assembly = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_garden = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pirate_stronghold = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:coastal_fort = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_battery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:irrigation_systems = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bridge_infrastructure = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pound_lock_canal_infrastructure = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:mason = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:mercury_patio = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tar_kiln = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:horse_breeders = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:stone_quarry = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lumber_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fiber_crops_farm = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sand_pit = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bog_iron_smelter = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:clay_pit = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:salt_collector = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fruit_orchard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:university = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:library = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:confucian_school = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:confucian_academy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:opera_house = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:theater = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:jesuit_college = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:art_school = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:arts_academy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cantonments = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:grand_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:great_madrasa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tibetan_great_monastery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tower_of_belem = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fortezza_di_sant_andrea = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:great_temple_of_tenochtitlan = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:corporation_of_london = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:grand_apartment = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sanssouci = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:berlin_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:versailles = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:enderun_academy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:imperial_halic_shipyards = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:rock_of_monaco = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:llotja_seda = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:camara_comptos = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:zwinger = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:globe_theatre = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:schwaz_mine = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:urban_parliament_seat = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ribeira_das_naus = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:papal_archives = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:adm_vatican_library = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dip_vatican_library = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:mil_vatican_library = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:wisselbank = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bolshoi_theater = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:archive_of_the_indies = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hsa_burgtor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bodrum_castle = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:forbidden_city = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:chi_macau_port = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:chi_missionary_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:college_of_poets = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bibliotheca_corviniana = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hexamilion_wall = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ablaq_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:oma_falaj = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:oma_nizwa_fort = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dutch_trade_outpost = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:friesland_admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:west_friesland_admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:rotterdam_admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:zeeland_admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:amsterdam_admiralty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:schonbrunn_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:teatro_san_cassiano = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:doges_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:library_of_vijayanagar = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:city_of_victory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ranganathaswamy_temple_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:venkateswara_temple = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:piazza_san_marco = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:walls_of_ston = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:swi_collegium_helveticum = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kastellet = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kronborg = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:husuni_kubwa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:magistrato_alla_sanita = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:imperial_city_of_hue = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:wat_chaiwatthanaram_temple_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:constantinople_observatory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:castel_sant_angelo = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:quirinal_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:debere_meshwae = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lighthouse_of_alexandria = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:al_azhar_madrasa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:delhi_tomb = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:rahdar = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:red_fort = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ori_portuguese_quarters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:mahmud_gawan_madrasa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ambras_castle = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:belvedere_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sco_palace_of_holyroodhouse = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fra_louvre_museum = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:guich_garrison = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bavarian_academy_of_sciences = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:herrenchiemsee_abbey = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:munich_residenz_founding = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:munich_residenz_renaissance_expansion = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:munich_residenz_baroque_expansion = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:general_archive_of_simancas = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:el_escorial_palace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:school_of_salamanca = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:segovia_artillery_academy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:usa_academy_of_arts_and_sciences = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:usa_philosophical_society = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:usa_national_bank = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:usa_national_mint = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:the_cipher_secretary = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:phanariot_district = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:maniot_toll_guards = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bulgarian_administration_center = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:jewish_district = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:darussifa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:woodhenge_of_cahokia = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sevilla_bullfighting_school = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_audience_and_chancery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:charite_of_berlin = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_office = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:embassy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:missionary_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:slave_center = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:overseas_trading_post = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:stockade = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:castle = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bastion = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:star_fort = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fortress = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sergeantry = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:warrior_temple = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:armory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:training_fields = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:regimental_camp = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:conscription_center = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:jurchen_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:thema_headquarters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:city_guard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:entrepot = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trading_hub = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:customs_house = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:stock_exchange = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:clearing_house = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:market_warehouse = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:funduq = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:black_market = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:smuggler_cove = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:brothel = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pirate_tavern = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sugar_plantation = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cotton_plantation = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tobacco_plantation = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dock = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dry_dock = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:shipyard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:grand_shipyard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_base = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:protected_harbor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:brewery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:beer_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:brewery_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:brewery_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:scriptorium = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:printing_press_shop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:printing_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:printing_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cannon_maker = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cannon_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cannon_foundry = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cannons_factory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cloth_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cloth_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cloth_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:textile_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dyes_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dyes_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dyesworks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dyes_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fine_cloth_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fine_cloth_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fine_cloth_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fine_cloth_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hand_cannon_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:gun_smith = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:guns_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:firearms_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:firearms_factory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:furniture_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:furniture_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:furniture_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:furniture_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:glass_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:glass_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:glassworks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:glass_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lacquerware_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lacquerware_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tannery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tanning_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tannery_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tannery_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:distillers_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:distillers_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:distiller_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:distiller_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_supplies_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_supplies_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_supplies_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:naval_supplies_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:paper_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:paper_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:paper_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:paper_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:porcelain_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:porcelain_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pottery_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pottery_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pottery_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pottery_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:saltpeter_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:saltpeter_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:putrefaction_works = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:putrefaction_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tools_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tools_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:iron_foundry = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:iron_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:weapon_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:weapon_workshop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:weapon_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:weapon_factory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:winery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:winery_manufactory = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:apothecary = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:jewelry_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:steel_mill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:perfumery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:monastery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fortress_church = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:madrasa = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sufi_lodge = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:orthodox_monastery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:miaphysite_monastery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bailiff = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fishing_village = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:farming_village = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:forest_village = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:market_village = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:rural_clothmaker = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:charcoal_maker = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:improved_charcoal_maker = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:elephant_hunting_grounds = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:windmill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:local_smelters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sawmill = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sheep_farms = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:settlement_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kilwan_shipwrights = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lutheran_preachers = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:calvinist_preachers = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:temple = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cathedral = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:construction_center = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:counting_house = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:minting_office = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:granary = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fortress_granary = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:wharf = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:medical_school = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lazaretto = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pest_house = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hospital = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:slave_market = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:marketplace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:merchants_quarters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:grand_marketplace = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:commerce_center = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:port_authority = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_headquarters = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_garrison = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_harbor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_local_venture = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_foreign_influence = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trade_company_governance = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pounamou_carver = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bardic_school = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hanseatic_kontor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hanseatic_shipwright_guild = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:hanseatic_town_hall = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fondaco = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:venetian_arsenal = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kurultai = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:gallowglass_sept = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:order_stronghold = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:order_commandery = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:banking_office = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tribes_of_galway = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:copenhagen_dockyard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:caravanserai = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:caravan_stop = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cinque_port = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:eng_royal_forest = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:seat_of_cardinal = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:north_sea_shipyards = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:galley_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:janissary_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:safaviyya_order_hall = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ghilman_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:stannary_court = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:lieutenancy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:viceroyalty = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:barcelona_royal_shipyard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:uffizi = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ostrog = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pomor_outpost = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:brethren_marsh = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sofa_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:cawa_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kings_manor = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:polders = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:telpochcalli = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:calmecac = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:panaqa_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:pukara_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:terraces = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tambo = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:incamisana = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_society = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_academy_of_arts = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:peel_towers = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:dun_fort = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kokufu = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:gosho = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:yamashiro = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:yakata = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:shoen = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tatara = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:clan_shipyards = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:clan_family_shrine = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:korean_gunnery_land_defense = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:korean_gunnery_coastal_defense = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kremlin = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:stroganov_school_of_iconic_art = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:venetian_palaces = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:venetian_quarter = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:galata = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:novodevichy_convent = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:moscow_artillery_yard = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bund = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kalari = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ibadat_khana = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:academy_of_sciences = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:greek_latin_academy = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sukharev_tower = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:the_bock_fortifications = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ruined_great_wall_of_china = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:repaired_great_wall_of_china = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:free_economic_society = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:imperial_academy_of_arts = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:moscow_orphanage = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:institute_of_noble_maidens = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:royal_atarazanas_seville = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:alhambra = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:theodosian_walls = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bey_fortress = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:mamluk_barracks = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:coastal_settlements = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:kurmina_headquarter = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:great_enclosure = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:great_hill_complex = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:great_valley_complex = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:trans_saharan_trade_outposts = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:khmer_baray = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bajang_ratu = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:bubu_building = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:fulani_cattle_rearing_pen = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:walls_of_benin = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:zazzau_walls = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:eghabho_nore_mansion = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:ribat = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:por_feitoria = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:gurgaddi = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:sufi_mosque = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:wali_songo_shrine = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:zhixian = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:seljuk_mint = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:tur_kodjabashi_office = {
+    forbidden_for_estates = yes
+}
+
+TRY_INJECT:qalat_al_mashwar = {
+    forbidden_for_estates = yes
 }

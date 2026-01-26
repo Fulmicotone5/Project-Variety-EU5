@@ -61,3 +61,6 @@ colors = {
 colors = {
 	map_PVf21 = rgb { 13 99 9 }
 }
+colors = {
+	map_PVita = rgb { 125  171  84 }
+}
