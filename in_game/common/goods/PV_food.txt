@@ -2,7 +2,7 @@
 	method = farming
 	category = raw_material
 	color = goods_wool
-	default_market_price = 2.5
+	default_market_price = 1.25
 
 	food = 2.5
 	ai_rgo_size_importance = 1.5 # ai preference to avoid building a city on this rgo
@@ -24,6 +24,7 @@ TRY_REPLACE:wild_game = {
 		nobles = 20
 		clergy = 5
 		burghers = 5
+		tribesmen = 0
 	}
 
 }
@@ -39,6 +40,16 @@ TRY_REPLACE:fur = {
 	demand_add = {
 		nobles = 0.1
 		burghers = 0.005
+		upper = 0.05
+	}
+	
+	demand_multiply = {
+		nobles = 10
+	}
+	
+	
+	wealth_impact_threshold = {
+		all = 1.1
 	}
 
 }
@@ -100,6 +111,7 @@ TRY_REPLACE:maize = {
 	}
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 	custom_tags = { new_world_goods }
 }
@@ -118,6 +130,7 @@ TRY_REPLACE:rice = {
 	
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 	
 
@@ -138,6 +151,7 @@ TRY_REPLACE:millet = {
 	
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 
 
@@ -151,14 +165,15 @@ TRY_REPLACE:legumes = {
 	
 	food = 3.5
 	default_market_price = 1
-	transport_cost = 0.5
+	transport_cost = 2
 	demand_add = {
 		all = 0.001
 	}
 	
 	demand_multiply = {
 		upper = 2
-	}
+		tribesmen = 0
+	}	
 	
 }
 
@@ -225,6 +240,7 @@ TRY_REPLACE:olives = {
 	
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 
 
@@ -239,6 +255,8 @@ TRY_REPLACE:fruit = {
 	
 	food = 2.5
 	default_market_price = 1
+
+	transport_cost = 2
 	
 	demand_add = {	
 		all = 0.001
@@ -246,6 +264,7 @@ TRY_REPLACE:fruit = {
 	
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 
 }
@@ -264,6 +283,8 @@ TRY_REPLACE:beeswax = {
 	}
 	demand_multiply = {
 		upper = 2
+		slaves = 0
+		tribesmen = 0
 	}
 	
 	wealth_impact_threshold = {

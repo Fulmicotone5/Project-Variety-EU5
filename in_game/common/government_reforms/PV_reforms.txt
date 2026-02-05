@@ -231,3 +231,17 @@ house_of_hohen = {
 
 	years = 2
 }
+
+colonial_administration = {
+	age = age_3_discovery
+
+	societal_values = {
+		outward_focus
+	}
+	country_modifier = {
+		monthly_towards_outward = societal_value_monthly_move
+		num_naval_governors = 1
+	}
+
+	years = 2
+}

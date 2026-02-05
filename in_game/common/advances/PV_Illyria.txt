@@ -161,20 +161,6 @@ cro_antemurale_christianitatis = {
 	allow_children = no
 }
 
-cro_pandurs_recruitment = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = CRO
-			has_or_had_tag = F14
-		}
-	}
-	icon = expansionism
-	army_infantry_power = 0.05
-
-	requires = napoleonic_warfare
-}
-
 
 
 rallying_the_troops = {

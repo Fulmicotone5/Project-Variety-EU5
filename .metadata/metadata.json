@@ -2,7 +2,7 @@
 	"name":	"Project Variety",
 	"id":	"",
 	"version":	"1.0",
-	"supported_game_version":	"1.0.*",
+	"supported_game_version":	"1.1.*",
 	"short_description":	"Are you tired of seeing France, the Mamluks and other overly-strong nations always dominate in your games? this is the mod for you!",
 	"tags":	["Alternative history", "Balance", "Events", "Map", "Missions", "Overhaul"],
 	"relationships":	[],

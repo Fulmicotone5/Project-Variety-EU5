@@ -83,6 +83,18 @@ occitanknights = {
 
 	requires = unlock_cavalry_advance
 }
+country_bet = {
+	age = age_2_renaissance
+	icon = mountain_roads
+	potential = {
+		has_or_had_tag = F03 
+	}
+	mountains_proximity_impact = -0.4
+	hills_proximity_impact = -0.5
+	
+
+	requires = renaissance_urbanisation
+}
 culturaldiversity = {
 	age = age_3_discovery
 	icon = army_country_diplo_range_advance

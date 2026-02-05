@@ -22,6 +22,118 @@ TRY_INJECT:fortress = {
 	}
 
 }
+
+TRY_REPLACE:bailiff = {
+	is_foreign = no
+	max_levels = 1
+	pop_type = soldiers
+	
+	employment_size = bailiff_employment
+	category = government_category
+	
+	rural_settlement = yes
+	expensive = yes
+	build_time = rural_build_time
+	
+	forbidden_for_estates = yes
+	
+	location_potential = {
+		is_overseas_for_owner = no
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = local_bailiff_tt
+			scope:actor = {	total_building_levels_including_construction:bailiff < modifier:num_bailiffs }
+		}
+		owner = scope:actor #not in subjects
+	}
+	
+	
+	unique_production_methods = {
+		bailiff_input = {
+			paper = 0.1
+			tools = 0.15
+			weaponry = 0.25
+			stone = 0.1
+			category = building_maintenance
+		}
+	}
+
+	modifier = {
+		local_max_control = 0.1
+		local_nobles_estate_power = 1.0
+		local_peasant_enfranchisment = -0.1
+	}
+	
+	
+}
+
+TRY_REPLACE:naval_governor = {
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	employment_size = large_noble_employment
+	
+	category = government_category
+	
+	rural_settlement = no
+	town = yes
+	city = yes
+		 
+	allow = {
+		custom_tooltip = {
+			text = naval_governor_tt
+			scope:actor = {	total_building_levels_including_construction:naval_governor < modifier:num_naval_governors }
+		}
+		owner = scope:actor #not in subjects
+	}
+
+	location_potential = {
+		NOT = { is_connected_to = owner.capital }
+		is_overseas_for_owner = yes
+		is_port = yes
+	}
+
+	remove_if = {
+		location = { is_connected_to = owner.capital }
+	}
+
+	expensive = yes
+	
+	automation_build_allowed = no
+	ai_forbid_shutdown = yes
+	forbidden_for_estates = yes
+
+
+	build_time = government_build_time
+
+
+	unique_production_methods = {
+		naval_governor_maintenance = {
+			tools = 1
+			masonry = 1
+			weaponry = 0.5
+			paper = 3
+			books = 1
+			goods_gold = 1
+			furniture = 2
+			naval_supplies = 0.5
+			fine_cloth = 0.5
+
+			category = building_maintenance
+		}
+	}
+
+
+	construction_demand = local_governor_construction
+
+	modifier = {
+		local_proximity_source = 80
+	}
+}
+
 TRY_INJECT:cathedral = {
 	modifier = {
 		local_monthly_prosperity = 0.001

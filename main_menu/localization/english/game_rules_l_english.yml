@@ -194,3 +194,11 @@
  setting_change_countries_dynastic_naming_desc: "Countries named after dynasties will change their name and flag according to the ruler's dynasty if that changes."
  setting_do_not_change_countries_dynastic_naming: "No"
  setting_do_not_change_countries_dynastic_naming_desc: "Countries named after dynasties will not change their name and flag, regardless of the dynasty they are ruled by."
+
+ rule_ai_aggression: "AI Aggression"
+ setting_ai_low_aggression: "Low Aggression"
+ setting_ai_low_aggression_desc: "This is the calmest way to play the game. The AI will only start a [war|e] if it has any [casus_belli|e]."
+ setting_ai_normal_aggression: "Normal Aggression"
+ setting_ai_normal_aggression_desc: "This is the normal way to play the game. The AI will start a [war|e] when it desires, and sometimes will start one without a [casus_belli|e]."
+ setting_ai_high_aggression: "High Aggression"
+ setting_ai_high_aggression_desc: "This creates a bigger challenge, as the AI countries are far more likely to start a [war|e]."

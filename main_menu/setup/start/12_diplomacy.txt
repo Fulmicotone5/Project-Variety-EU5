@@ -459,43 +459,77 @@ diplomacy_manager = { #Changes for MAM tag (PV)
 
 
     #-------------China------------
-    dependency = { first = CHI second = KOR subject_type = vassal }
-    dependency = { first = CHI second = TMN subject_type = vassal }
-    dependency = { first = CHI second = SSG subject_type = vassal }
     dependency = { first = CHI second = DUR subject_type = vassal }
     dependency = { first = CHI second = EVK subject_type = vassal }
-    dependency = { first = CHI second = NAN subject_type = vassal }
+    dependency = { first = CHI second = HEZ subject_type = vassal }
+    dependency = { first = CHI second = JIZ subject_type = vassal }
+    dependency = { first = CHI second = KOR subject_type = vassal }
+    dependency = { first = CHI second = LNG subject_type = vassal }
+    dependency = { first = CHI second = MMA subject_type = vassal }
+    dependency = { first = CHI second = MNZ subject_type = vassal }
     dependency = { first = CHI second = NVK subject_type = vassal }
     dependency = { first = CHI second = ORC subject_type = vassal }
     dependency = { first = CHI second = ORQ subject_type = vassal }
     dependency = { first = CHI second = SIB subject_type = vassal }
-    dependency = { first = CHI second = SOL subject_type = vassal }
+    dependency = { first = CHI second = SNP subject_type = vassal }
+    dependency = { first = CHI second = SSG subject_type = vassal }
+    dependency = { first = CHI second = LNG subject_type = vassal }
+    dependency = { first = CHI second = TAZ subject_type = vassal }
+    dependency = { first = CHI second = TIB subject_type = vassal }
+    dependency = { first = CHI second = TMN subject_type = vassal }
     dependency = { first = CHI second = UDE subject_type = vassal }
     dependency = { first = CHI second = ULC subject_type = vassal }
-    dependency = { first = CHI second = HDA subject_type = vassal }
-    dependency = { first = CHI second = HOI subject_type = vassal }
-    dependency = { first = CHI second = ULA subject_type = vassal }
-    dependency = { first = CHI second = YEH subject_type = vassal }
-    dependency = { first = CHI second = DNG subject_type = vassal }
-    dependency = { first = CHI second = HJN subject_type = vassal }
-    dependency = { first = CHI second = HNE subject_type = vassal }
-    dependency = { first = CHI second = HUL subject_type = vassal }
-    dependency = { first = CHI second = JEC subject_type = vassal }
-    dependency = { first = CHI second = JUS subject_type = vassal }
-    dependency = { first = CHI second = MAO subject_type = vassal }
-    dependency = { first = CHI second = NEY subject_type = vassal }
-    dependency = { first = CHI second = ODO subject_type = vassal }
-    dependency = { first = CHI second = SSH subject_type = vassal }
-    dependency = { first = CHI second = URY subject_type = vassal }
-    dependency = { first = CHI second = YAL subject_type = vassal }
-    dependency = { first = CHI second = WGG subject_type = vassal }
-    dependency = { first = CHI second = WRK subject_type = vassal }
-    dependency = { first = CHI second = SNP subject_type = vassal }
-    dependency = { first = CHI second = MNZ subject_type = vassal }
-    dependency = { first = CHI second = TAZ subject_type = vassal }
-    dependency = { first = CHI second = HEZ subject_type = vassal }
-    dependency = { first = CHI second = JIZ subject_type = vassal }
     dependency = { first = CHI second = SYG subject_type = vassal }
+
+        #-------------Manchuria----------
+    dependency = { first = CHI second = AAR subject_type = vassal }
+    dependency = { first = CHI second = AID subject_type = vassal }
+    dependency = { first = CHI second = ASU subject_type = vassal }
+    dependency = { first = CHI second = BAY subject_type = vassal }
+    dependency = { first = CHI second = DLA subject_type = vassal }
+    dependency = { first = CHI second = EJI subject_type = vassal }
+    dependency = { first = CHI second = FLN subject_type = vassal }
+    dependency = { first = CHI second = FUT subject_type = vassal }
+    dependency = { first = CHI second = FUY subject_type = vassal }
+    dependency = { first = CHI second = GIL subject_type = vassal }
+    dependency = { first = CHI second = HIJ subject_type = vassal }
+    dependency = { first = CHI second = HIY subject_type = vassal }
+    dependency = { first = CHI second = HLN subject_type = vassal }
+    dependency = { first = CHI second = HNC subject_type = vassal }
+    dependency = { first = CHI second = HOT subject_type = vassal }
+    dependency = { first = CHI second = HRO subject_type = vassal }
+    dependency = { first = CHI second = HUI subject_type = vassal }
+    dependency = { first = CHI second = HUR subject_type = vassal }
+    dependency = { first = CHI second = ILU subject_type = vassal }
+    dependency = { first = CHI second = IMN subject_type = vassal }
+    dependency = { first = CHI second = ITU subject_type = vassal }
+    dependency = { first = CHI second = JHT subject_type = vassal }
+    dependency = { first = CHI second = JUS subject_type = vassal }
+    dependency = { first = CHI second = LAL subject_type = vassal }
+    dependency = { first = CHI second = LLU subject_type = vassal }
+    dependency = { first = CHI second = MAH subject_type = vassal }
+    dependency = { first = CHI second = MIC subject_type = vassal }
+    dependency = { first = CHI second = MRE subject_type = vassal }
+    dependency = { first = CHI second = MUH subject_type = vassal }
+    dependency = { first = CHI second = NAL subject_type = vassal }
+    dependency = { first = CHI second = NEM subject_type = vassal }
+    dependency = { first = CHI second = NEY subject_type = vassal }
+    dependency = { first = CHI second = NRO subject_type = vassal }
+    dependency = { first = CHI second = SHI subject_type = vassal }
+    dependency = { first = CHI second = SIR subject_type = vassal }
+    dependency = { first = CHI second = SMN subject_type = vassal }
+    dependency = { first = CHI second = SNC subject_type = vassal }
+    dependency = { first = CHI second = SUI subject_type = vassal }
+    dependency = { first = CHI second = TAS subject_type = vassal }
+    dependency = { first = CHI second = TOD subject_type = vassal }
+    dependency = { first = CHI second = TOX subject_type = vassal }
+    dependency = { first = CHI second = USS subject_type = vassal }
+    dependency = { first = CHI second = WEJ subject_type = vassal }
+    dependency = { first = CHI second = WEK subject_type = vassal }
+    dependency = { first = CHI second = WUY subject_type = vassal }
+    dependency = { first = CHI second = YRN subject_type = vassal }
+    dependency = { first = CHI second = YIM subject_type = vassal }
+    dependency = { first = CHI second = YOO subject_type = vassal }
 
     #-------------Xinjiang----------
     dependency = { first = CHG second = MNL subject_type = vassal }

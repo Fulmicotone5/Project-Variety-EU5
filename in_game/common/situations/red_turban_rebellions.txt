@@ -17,7 +17,7 @@
 					is_neighbor_of = c:CHI
 					is_subject_of = c:CHI
 					is_enemy_of = c:CHI
-					is_rival_of = c:
+					is_rival_of = c:CHI
 				}
 			}
 			capital ?= {
