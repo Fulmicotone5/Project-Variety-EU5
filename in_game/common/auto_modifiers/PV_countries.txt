@@ -61,10 +61,3 @@ TRY_REPLACE:capital_occupied = {
 	
 	monthly_war_exhaustion = 0.3 # Vanilla: 0.1 (Original Harsher Wars mod sets this to 0.5)
 }
-
-tax_efficiency_malus = {
-	potential_trigger = {
-		exists = yes
-	}
-	tax_income_efficiency = -0.25 
-}

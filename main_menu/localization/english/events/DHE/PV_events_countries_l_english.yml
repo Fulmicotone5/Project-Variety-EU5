@@ -130,3 +130,11 @@
  burflavor.1.a: "Demand Independence!"
  burflavor.1.b: "Demand for greater autonomy from [GetCountry('FRA').GetName]"
  burflavortooltip.a.tt: "#N Some events will not trigger if [ROOT.GetCountry.GetName] is not independent"
+
+ liqflavor.1.title: "Heirs of Rome"
+ liqflavor.1.desc: "The Republic of [ROOT.GetCountry.GetName] was established by the descendants of Roman legionaries who were taken prisoner during the Battle of Carrhae. The inhabitants of Liqian are the descendants of these Roman prisoners, who were resettled by the victorious Parthians along their eastern frontier. Over the centuries, the Republic served under various overlords, a circumstance that contributed to the endurance of both their community and the institution of the Republic into our times."
+ liqflavor.1.a: "For the Glory of Rome!"
+ liqflavor.2.title: "Carpe Diem"
+ liqflavor.2.desc: "In light of the [ShowSituationName('red_turban_rebellions')] and the subsequent imminent collapse of [GetCountry('CHI').GetName], numerous members of the Senate are urging the consul to take decisive action and initiate military engagement against [GetCountry('CHI').GetName] without delay, in order to prevent its recovery."
+ liqflavor.2.a: "Audentes Fortuna Iuvat!"
+ liqflavor.2.b: "We shall not meddle in [GetCountry('CHI').GetName]'s affairs"

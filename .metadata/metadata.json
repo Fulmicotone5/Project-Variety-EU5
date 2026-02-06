@@ -1,10 +1,64 @@
 ﻿{
-	"name":	"Project Variety",
+	"name":	"[Alpha] Project Variety",
 	"id":	"",
-	"version":	"1.0",
+	"version":	"0.5",
 	"supported_game_version":	"1.1.*",
-	"short_description":	"Are you tired of seeing France, the Mamluks and other overly-strong nations always dominate in your games? this is the mod for you!",
-	"tags":	["Alternative history", "Balance", "Events", "Map", "Missions", "Overhaul"],
+	"short_description":	"[i] If you are interested in joining a multiplayer campaign, have any suggestions, or simply want to leave some feedback, be sure to join the mod's [/i][url=https://discord.gg/95rpdVV8QX] discord server [/url]
+
+
+
+[url=https://imgbb.com/][img]https://i.ibb.co/9kjDD1mg/PVEU5about.png[/img][/url]
+[quote]
+[b] What is Project Variety? [/b]
+
+Project Variety is a total conversion mod designed to shake up the gameplay by balancing starting conditions, ensuring no single country dominates each campaign, and opening up exciting opportunities for most nations to rise to the top and claim their moment of glory.
+
+[b] Really important:[/b] the focus of the mod is not historical plausibility, but to create a balanced
+environment for both singleplayer and multiplayer.
+
+The mod is currently in the [b] Alpha Stage,[/b] this means that there is currently no added content outside of Europe, but worry not, as I already have plans for the future.
+
+A big shout out to parzivaltheknight for allowing me add the unconditional_surrender diplomatic action to the mod.
+
+[/quote]
+
+
+[url=https://imgbb.com/][img]https://i.ibb.co/N60FPmfq/PVEU5content.png[/img][/url]
+[quote]
+[b] Improved AI: [/b]
+AI countries are more aggressive, and generally better at managing their countries early on.
+
+[b] New Added Content for: [/b]
+* Duchy of Toulouse
+* Duchy of Moravia
+* Kingdom of Jerusalem
+
+[b] 15 New Formable Countries: [/b]
+* Kingdom of Occitania
+* Kingdom of Great Moravia
+* Illyria
+* Imperial Church of Italia
+* Lusitanian Empire
+* Anointed Kingdom of East Frankia
+* Flemish Empire
+* Kingdom of Aragon-Italy
+* Danubian Empire
+* Italian Confederation
+* North German Federation
+* South German Federation
+* Empire of Carpathia-Pannonia
+* Kingdom of Aragon-Occitania
+* Bohemian-Bavarian Empire
+
+[/quote]
+
+***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***
+
+The mod is free to use, I do not claim the ownership of it.
+
+If you find any bug, problem or grammar error, please report it in a comment or the Discord server, it would be massive for me.
+Have fun :)",
+	"tags":	["Alternative history", "Balance", "Events", "Overhaul"],
 	"relationships":	[],
 	"game_custom_data":	{
 }

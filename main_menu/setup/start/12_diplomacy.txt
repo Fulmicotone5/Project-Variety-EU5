@@ -464,7 +464,6 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = CHI second = HEZ subject_type = vassal }
     dependency = { first = CHI second = JIZ subject_type = vassal }
     dependency = { first = CHI second = KOR subject_type = vassal }
-    dependency = { first = CHI second = LNG subject_type = vassal }
     dependency = { first = CHI second = MMA subject_type = vassal }
     dependency = { first = CHI second = MNZ subject_type = vassal }
     dependency = { first = CHI second = NVK subject_type = vassal }
@@ -473,9 +472,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = CHI second = SIB subject_type = vassal }
     dependency = { first = CHI second = SNP subject_type = vassal }
     dependency = { first = CHI second = SSG subject_type = vassal }
-    dependency = { first = CHI second = LNG subject_type = vassal }
     dependency = { first = CHI second = TAZ subject_type = vassal }
-    dependency = { first = CHI second = TIB subject_type = vassal }
     dependency = { first = CHI second = TMN subject_type = vassal }
     dependency = { first = CHI second = UDE subject_type = vassal }
     dependency = { first = CHI second = ULC subject_type = vassal }

@@ -1,0 +1,72 @@
+namespace = liqflavor
+
+liqflavor.1 = {
+	type = country_event
+	title = liqflavor.1.title
+	desc = liqflavor.1.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P08
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:peasants_estate }
+	}
+	option = {
+		name = liqflavor.1.a
+	}
+}
+liqflavor.2 = { 
+	type = country_event
+	title = liqflavor.2.title
+	desc = liqflavor.2.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P08
+		from = 1337.1.1
+		to = 1835.1.1
+		monthly_chance = 10
+	}
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:CHI = {
+			save_scope_as = target_country
+		}
+	}
+
+	trigger = {
+		is_situation_active = situation:red_turban_rebellions
+	}
+
+	option = {
+		name = liqflavor.2.a
+		historical_option = yes
+		c:P08 = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:zhenfan.province
+			}
+		}
+		c:CHI = { add_opinion = { target = root  modifier = opinion_displeased } }
+	}
+	option = {
+		name = liqflavor.2.b
+		add_stability = stability_mild_bonus
+		add_truce_with = { target = c:CHI mutual = yes months = 120  }
+		c:CHI = { add_opinion = { target = root  modifier = opinion_good_relations } }
+	}
+
+}
