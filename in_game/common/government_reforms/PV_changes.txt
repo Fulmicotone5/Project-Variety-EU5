@@ -88,3 +88,78 @@ TRY_REPLACE:naval_infrastructure_act = {
 
 	years = 2
 }
+
+TRY_REPLACE:papacy_reform = {
+	major = yes
+	unique = yes
+	potential = {
+		tag = PAP
+	}
+	allow = {
+	}
+	country_modifier = {
+		monthly_religious_influence = 0.25
+		monthly_devotion = 0.1
+		monthly_towards_traditionalist = societal_value_monthly_move
+		can_reassign_cleric = yes
+		is_pope = yes
+		disallow_diplomatic_subjugation = yes
+		blocked_from_conversion = yes
+		ruler_name_in_court_language = yes
+		
+		government_reform_slots = 1
+	}
+
+	location_modifier = {
+		potential_trigger = {
+			is_capital = yes
+		}
+		gives_cardinal = yes
+	}
+
+	on_activate = {
+		add_to_global_variable_list = { name = pope_countries target = this }
+		#In case we need multiple papacies with antipopes and such
+	}
+
+	on_deactivate = {
+		add_to_global_variable_list = { name = pope_countries target = this }
+		#In case we need multiple papacies with antipopes and such
+	}
+
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = papacy_reform
+		}
+	}
+
+	block_for_rebel = yes
+
+	male_regnal_names = {
+		# popes from 1337 - 1836
+		name_adrian
+		name_alexander
+		name_benedict
+		name_boniface
+		name_callisto
+		name_clement
+		name_eugene
+		name_felix
+		name_gregory
+		name_innocent
+		name_john
+		name_julius
+		name_leon
+		name_marcellus
+		name_martin
+		name_nicholas
+		name_paul
+		name_pius
+		name_sixtus
+		name_urban
+	}
+
+	years = 2
+}
+

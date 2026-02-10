@@ -69,6 +69,8 @@ TRY_REPLACE:bailiff = {
 	
 }
 
+
+
 TRY_REPLACE:naval_governor = {
 	is_foreign = no
 	pop_type = nobles

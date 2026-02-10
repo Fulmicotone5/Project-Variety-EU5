@@ -7,6 +7,7 @@ monthly_country_pulse = {
 				NOT = {
 					has_reform = government_reform:daimyo
 				}
+				total_population > 400
 			}
 			add_legitimacy = 2
 			add_stability = 2
@@ -20,17 +21,7 @@ monthly_country_pulse = {
 					has_reform = government_reform:daimyo
 				}
 				current_age = age_2_renaissance
-			}
-			add_gold = 50
-		}
-		if = {
-			limit = {
-				is_ai = yes
-				is_subject = no 
-				NOT = {
-					has_reform = government_reform:daimyo
-				}
-				current_age = age_3_discovery
+				total_population > 250
 			}
 			add_gold = 200
 		}
@@ -41,9 +32,20 @@ monthly_country_pulse = {
 				NOT = {
 					has_reform = government_reform:daimyo
 				}
+				current_age = age_3_discovery
+			}
+			add_gold = 500
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
 				current_age = age_4_reformation
 			}
-			add_gold = 1000
+			add_gold = 2000
 		}
 		if = {
 			limit = {

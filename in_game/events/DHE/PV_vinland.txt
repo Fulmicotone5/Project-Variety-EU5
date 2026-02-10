@@ -65,6 +65,9 @@ vinflavor.2 = {
 			type = estate_type:burghers_estate
 			value = 0.1
 		}
+		location:bacalhieu = {
+				change_development = 10
+			}
 	}
 	option = {
 		name = vinflavor.2.b
@@ -80,10 +83,11 @@ vinflavor.2 = {
 				}
 			}
 			location:akilasiewakik = {
+				change_development = 15
 				change_location_rank = location_rank:city
 			}
 		}
-		add_gold = -800
+		add_gold = -600
 		set_capital = location:akilasiewakik
 	}
 	option = {
@@ -96,6 +100,9 @@ vinflavor.2 = {
 			type = estate_type:peasants_estate
 			value = 0.15
 		}
+		location:belle_isle = {
+				change_development = 10
+		}
 	}
 	option = {
 		name = vinflavor.2.d
@@ -103,6 +110,9 @@ vinflavor.2 = {
 			owns = location:uashat
 		}
 		set_capital = location:uashat
+		location:uashat = {
+				change_development = 10
+			}
 		change_societal_value = {
 			type = land_vs_naval
 			value = 25
@@ -277,9 +287,91 @@ vinflavor.6 = {
 						location_rank = location_rank:city
 					}
 				}
-				change_development = development_extreme_bonus
+				change_development = 10
 			}
 		}
+	}
+}
+vinflavor.7 = {
+	type = country_event
+	title = vinflavor.7.title
+	desc = vinflavor.7.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P02
+		tag = F17
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = P02
+		has_or_had_tag = F17
+	}
+	option = {
+		name = vinflavor.7.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 25
+		add_prestige = 25
+	}
+}
+vinflavor.8 = {
+	type = country_event
+	title = vinflavor.8.title
+	desc = vinflavor.8.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		tag = F16
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	illustration_tags = {
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_background_effect = {
+				background = estate_type:peasants_estate
+			}
+	}
+	trigger = {
+		has_or_had_tag = P02
+		owns = location:kuujjuarapik
+	}
+	option = {
+		name = vinflavor.8.a
+		add_gold = -300
+		every_province = {
+			limit = {
+				owner ?= root
+			}
+			every_location_in_province = {
+				limit = {
+					location_rank = location_rank:rural_settlement 
+				}
+				change_development = development_ultimate_bonus
+			}
+		}
+	}
+	option = {
+		name = vinflavor.8.a
+		add_stability = stability_mild_bonus
 	}
 }
 vinflavor.9 = {
@@ -326,5 +418,60 @@ vinflavor.9 = {
 		}
 		add_legitimacy = legitimacy_severe_bonus
 		add_prestige = prestige_mild_bonus
+	}
+}
+vinflavor.10 = {
+	type = country_event
+	title = vinflavor.10.title
+	desc = vinflavor.10.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P02
+		tag = F16
+		from = 1340.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	illustration_tags = {
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_background_effect = {
+				background = estate_type:peasants_estate
+			}
+	}
+	trigger = {
+		has_or_had_tag = P02
+		owns = location:onekama
+	}
+	option = {
+		name = vinflavor.10.a
+		add_gold = -500
+		every_province = {
+			limit = {
+				owner ?= root
+			}
+			every_location_in_province = {
+				limit = {
+					or = {
+						area = area:ohio_area
+						area = area:indiana_area
+						area = area:michigan_area
+						area = area:illinois_area
+						area = area:wisconsin_area
+						area = area:eastern_ontario_area
+						area = area:western_ontario_area
+						area = area:northwestern_ontario_area
+						area = area:northern_ontario_area
+						area = area:lake_superior_province
+					}
+				}
+				change_development = development_extreme_bonus
+			}
+		}
+	}
+	option = {
+		name = vinflavor.10.a
+		add_stability = stability_mild_bonus
 	}
 }

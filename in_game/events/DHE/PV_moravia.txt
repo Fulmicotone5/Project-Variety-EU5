@@ -1,0 +1,436 @@
+namespace = moraflavor
+
+moraflavor.1 = {
+	type = country_event
+	title = moraflavor.1.title
+	desc = moraflavor.1.desc
+
+	fire_only_once = yes
+
+	image = "gfx/interface/illustrations/disaster/placeholder.dds"
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+
+
+	trigger = {
+		has_or_had_tag = MVA
+	}
+
+
+	option = {
+		name = moraflavor.1.a
+
+	}
+}
+
+
+moraflavor.2 = {
+	type = country_event
+	title = moraflavor.2.title
+	desc = moraflavor.2.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		"estate_power(estate_type:burghers_estate)" > 0.2
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_new_coiniage
+		}
+	}
+
+	option = {
+		name = moraflavor.2.a
+		historical_option = yes
+		if = {
+			limit = {
+				has_estate_privilege = estate_privilege:PV_groschen
+			}
+			revoke_estate_privilege = estate_privilege:PV_groschen
+			add_stability = -30
+		}
+		grant_estate_privilege = estate_privilege:PV_new_coiniage
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.1
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_legitimacy = -10
+	}
+	option = {
+		name = moraflavor.2.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		add_legitimacy = 5
+		add_stability = 7
+	}
+}
+
+moraflavor.3 = {
+	type = country_event
+	title = moraflavor.3.title
+	desc = moraflavor.3.desc
+
+	fire_only_once = yes
+	illustration_tags = {
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:clergy_estate }
+		c:SIL = {
+			save_scope_as = target_country
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 5
+	}
+	trigger = {
+		location:olomouc = {
+			is_capital = yes
+		}
+		owns = location:olomouc
+		NOT = {
+			owns = location:krnov
+		}
+		NOT = {
+			owns = location:fryvaldov
+		}
+		NOT = {
+			owns = location:ziebice
+		}
+	}
+	
+
+	option = {
+		name = moraflavor.3.a
+		historical_option = yes
+		c:MVA = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:krnov.province
+			}
+		}
+		c:SIL = { add_opinion = { target = root  modifier = opinion_displeased } }
+		add_gold = -50
+	}
+	option = {
+		name = moraflavor.3.b
+		add_stability = stability_mild_bonus
+		c:SIL = { add_opinion = { target = root  modifier = opinion_good_relations } }
+	}
+}
+
+moraflavor.4 = {
+	type = country_event
+	title = moraflavor.4.title
+	desc = moraflavor.4.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		location:olomouc = {
+			is_capital = yes
+		}
+		owns = location:krupina
+		location:krupina = {
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+	}
+
+	option = {
+		name = moraflavor.4.a
+		add_gold = -300
+		location:krupina = {
+			change_location_rank = location_rank:city
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.1
+		}
+	}
+	option = {
+		name = moraflavor.4.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.05
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+	}
+	option = {
+		name = moraflavor.4.c
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_gold = 350
+	}
+}
+moraflavor.5 = {
+	type = country_event
+	title = moraflavor.5.title
+	desc = moraflavor.5.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 5
+	}
+
+	illustration_tags = {
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = {foreground = estate_type:burghers_estate  background = estate_type:burghers_estate }
+		location:prostejov = {
+			save_scope_as = target_location
+		}
+		location:hradiste = {
+			save_scope_as = target_location2
+		}
+		location:hlohovec = {
+			save_scope_as = target_location3
+		}
+		location:kremnica = {
+			save_scope_as = target_location4
+		}
+		location:krupina = {
+			save_scope_as = target_location5
+		}
+	}
+
+	trigger = {
+		location:olomouc = {
+			is_capital = yes
+		}
+		location:hradiste = {
+			has_road_to_capital = no
+		}
+		location:hlohovec = {
+			has_road_to_capital = no
+		}
+		location:kremnica = {
+			has_road_to_capital = no
+		}
+		location:krupina = {
+			has_road_to_capital = no
+		}
+		owns = location:olomouc
+		owns = location:prostejov
+		owns = location:hradiste
+		owns = location:hlohovec
+		owns = location:kremnica
+		owns = location:krupina
+		location:krupina = {
+			location_rank = location_rank:city
+		}
+	}
+
+	option = {
+		name = moraflavor.5.a
+		add_gold = -250
+		scope:target_location = {
+			add_road_to = {
+				target = scope:target_location2
+				type = gravel_road
+			}
+		}
+		scope:target_location2 = {
+			add_road_to = {
+				target = scope:target_location3
+				type = gravel_road
+			}
+		}
+		scope:target_location3 = {
+			add_road_to = {
+				target = scope:target_location4
+				type = gravel_road
+			}
+		}
+		scope:target_location4 = {
+			add_road_to = {
+				target = scope:target_location5
+				type = gravel_road
+			}
+		}
+	}
+	option = {
+		name = moraflavor.5.b
+		add_stability = stability_mild_bonus
+			add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = moraflavor.4.c
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_gold = 450
+	}
+}
+
+moraflavor.6 = {
+	type = country_event
+	title = moraflavor.6.title
+	desc = moraflavor.6.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F10
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = MVA
+		has_or_had_tag = F10
+	}
+	option = {
+		name = moraflavor.6.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 10
+		add_prestige = 10
+	}
+}
+moraflavor.7 = {
+	type = country_event
+	title = moraflavor.7.title
+	desc = moraflavor.7.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F08
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = MVA
+		has_or_had_tag = F08
+	}
+	option = {
+		name = moraflavor.7.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 20
+		add_prestige = 20
+	}
+}
+moraflavor.8 = {
+	type = country_event
+	title = moraflavor.8.title
+	desc = moraflavor.8.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F13
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+
+	}
+	trigger = {
+		has_or_had_tag = MVA
+		has_or_had_tag = F13
+	}
+	option = {
+		name = moraflavor.8.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 20
+		add_prestige = 20
+	}
+}

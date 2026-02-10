@@ -1,6 +1,6 @@
 TRY_REPLACE:city_upgrade = {
 	scaled_gold = 20
-	min_scale = 2000
+	min_scale = 1000
 	max_scale = 8000
 }
 

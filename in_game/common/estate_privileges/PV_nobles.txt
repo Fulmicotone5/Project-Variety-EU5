@@ -102,7 +102,7 @@ PV_ruling_elites = {
 	country_modifier = {
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 1
-		nobles_estate_max_tax = 0.1
+		nobles_estate_max_tax = -0.1
 	}
 }
 PV_groschen = {
@@ -112,7 +112,11 @@ PV_groschen = {
 	potential = {
 		has_or_had_tag = MVA 
 	}
-	
+	allow = {
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_new_coiniage
+		}
+	}
 	can_revoke = {
 	}
 	

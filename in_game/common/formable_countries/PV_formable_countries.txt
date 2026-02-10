@@ -286,7 +286,7 @@ F07_f = {
 }
 F08_f = {
 	level = 4
-	required_locations_fraction = 0.85
+	required_locations_fraction = 0.75
 	rule = historical
 
 	potential = {
@@ -384,7 +384,7 @@ F09_f = {
 }
 F10_f = {
 	level = 3
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -504,7 +504,7 @@ F12_f = {
 }
 F13_f = {
 	level = 4
-	required_locations_fraction = 0.85
+	required_locations_fraction = 0.75
 	rule = historical
 
 	potential = {
@@ -583,13 +583,13 @@ F14_f = {
 	}
 }
 F15_f = {
-	level = 4
-	required_locations_fraction = 0.75
+	level = 3
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
-		capital ?= {
-			region = region:italy_region
+		potential = {
+			culture = { has_culture_group = culture_group:italian_group }
 		}
 		government_type = government_type:theocracy
 	}

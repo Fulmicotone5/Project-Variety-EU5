@@ -501,7 +501,7 @@ touflavor.11 = {
 		tag = TOU
 		from = 1338.1.1
 		to = 1800.1.1
-		monthly_chance = 10
+		monthly_chance = 1
 	}
 	image = "gfx/interface/illustrations/disaster/placeholder.dds"
 	trigger = {

@@ -113,7 +113,7 @@ daneflavor.4 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 1
 	}
 
 	illustration_tags = {
@@ -171,7 +171,7 @@ daneflavor.5 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 1
 	}
 
 	illustration_tags = {
@@ -230,7 +230,7 @@ daneflavor.6 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 1
 	}
 
 	illustration_tags = {
@@ -288,7 +288,7 @@ daneflavor.7 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 1
 	}
 
 	illustration_tags = {
@@ -481,12 +481,23 @@ daneflavor.10 = {
 	option = {
 		name = daneflavor.10.a
 		location:london = {
-			change_prosperity = prosperity_severe_penalty
+			change_prosperity = -1
+			change_development = development_extreme_penalty
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = -0.15
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
 		}
 	}
 	option = {
 		name = daneflavor.10.b
-		add_gold = -50
+		location:london = {
+			change_prosperity = -0.2
+			change_development = development_severe_penalty
+		}
+		add_gold = -150
 		add_estate_satisfaction = { type = estate_type:peasants_estate 
 			value = 0.05
 		}
@@ -599,5 +610,83 @@ daneflavor.12 = {
 		}
 		
 		c:ENG = { add_opinion = { target = root  modifier = opinion_mildly_displeased } }
+	}
+}
+
+daneflavor.13 = {
+	type = country_event
+	title = daneflavor.13.title
+	desc = daneflavor.13.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		tag = NSE
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = P01
+		has_or_had_tag = NSE
+	}
+	option = {
+		name = daneflavor.13.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 10
+		add_prestige = 10
+	}
+}
+
+daneflavor.14 = {
+	type = country_event
+	title = daneflavor.14.title
+	desc = daneflavor.14.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		tag = F17
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = P01
+		has_or_had_tag = F17
+	}
+	option = {
+		name = daneflavor.14.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 25
+		add_prestige = 25
 	}
 }
