@@ -28,6 +28,23 @@
 		}
 	}
 	text = {
+		localization_key = rgreatersanmarinese
+		trigger = {
+			tag = F23
+			government_type = government_type:republic
+		}
+	}
+	text = {
+		localization_key = rgreatersanmarinese2
+		trigger = {
+			tag = F23
+			or = {
+				government_type = government_type:monarchy
+				government_type = government_type:theocracy
+			}
+		}
+	}
+	text = {
 		localization_key = roman_liqianf22
 		trigger = {
 			tag = F22

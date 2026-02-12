@@ -13671,10 +13671,16 @@ gubbio = {
 	define_pop = {	type = peasants	size = 0.305	culture = italki	religion = judaism }
 }
 montefeltro = {
-	define_pop = {	type = nobles	size = 0.009	culture = emilian	religion = catholic }
-	define_pop = {	type = clergy	size = 0.009	culture = emilian	religion = catholic }
-	define_pop = {	type = peasants	size = 9.402	culture = emilian	religion = catholic }
-	define_pop = {	type = peasants	size = 1.042	culture = tuscan	religion = catholic }
+	define_pop = {	type = nobles	size = 0.037	culture = emilian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.113	culture = emilian	religion = catholic }
+	define_pop = {	type = burghers	size = 3.275	culture = emilian	religion = catholic }
+	define_pop = {	type = burghers	size = 0.593	culture = italki	religion = judaism }
+	define_pop = {	type = burghers	size = 0.419	culture = emilian	religion = catholic }
+	define_pop = {	type = burghers	size = 0.329	culture = tuscan	religion = catholic }
+	define_pop = {	type = peasants	size = 54.718	culture = emilian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.489	culture = italki	religion = judaism }
+	define_pop = {	type = peasants	size = 0.257	culture = emilian	religion = catholic }
+	define_pop = {	type = peasants	size = 0.229	culture = tuscan	religion = catholic }
 }
 pesaro = {
 	define_pop = {	type = nobles	size = 0.028	culture = emilian	religion = catholic }

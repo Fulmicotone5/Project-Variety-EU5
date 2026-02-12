@@ -2,6 +2,28 @@ monthly_country_pulse = {
 	effect = {
 		if = {
 			limit = {
+				current_date < 1337.5.20
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				total_population > 250
+			}
+			trigger_event_silently = PV_policies.2
+		}
+		if = {
+            limit = {
+				current_date < 1357.7.20
+				current_date > 1357.6.20
+                is_ai = yes
+                country_has_estate = estate_type:nobles_estate
+                has_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles_PV
+            }
+            revoke_estate_privilege = estate_privilege:consolidated_corruption_of_the_nobles_PV
+        }
+		if = {
+			limit = {
 				is_ai = yes
 				is_subject = no 
 				NOT = {
@@ -23,7 +45,7 @@ monthly_country_pulse = {
 				current_age = age_2_renaissance
 				total_population > 250
 			}
-			add_gold = 200
+			add_gold = 100
 		}
 		if = {
 			limit = {

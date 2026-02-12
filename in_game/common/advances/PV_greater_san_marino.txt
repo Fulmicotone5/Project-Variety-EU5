@@ -1,0 +1,30 @@
+sanmarinese_space_marines = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = F23
+	}
+	icon = bng_artillery_corps
+	army_infantry_power = 1
+	land_morale_modifier = 1
+
+	requires = unlock_armored_horsemen_advance
+}
+teleportation_snm = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = F23
+	}
+	icon = bng_bengali_industrialization
+	road_cost_on_distance_from_capital = -100
+
+	requires = mining_advance
+}
+incredible_cities = {
+	age = age_1_traditions
+	requires = city_building_advance
+	icon = alberghi_28_advance
+	potential = {
+		has_or_had_tag = F23
+	}
+	global_monthly_development = 0.05
+}

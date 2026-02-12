@@ -7,8 +7,8 @@ KOJ = {
 
 	is_historic = yes
 }
-SIL = {
-	color = map_SIL
+OEL = {
+	color = map_OEL
 	color2 = rgb { 84 166 93 }
 
 	culture_definition = silesian
@@ -298,6 +298,12 @@ P08 = {
 
 	culture_definition = daqinren
 	religion_definition = hellenism_religion
+}
+P09 = {
+	color = rgb { 46 130 108 }
+
+	culture_definition = emilian
+	religion_definition = catholic
 }
 WLS = {
 	color = map_WLS

@@ -743,6 +743,25 @@ P08 = {
 		instance = { position = { 0.5 0.5 } scale = { 0.8 0.8 } }				
 	}		
 }
+P09 = { # San Marino
+	pattern = "pattern_horizontal_split_01.dds"
+	color1 = "white"
+	color2 = "blue_light"
+
+	textured_emblem = {
+		texture = "te_coa_san_marino.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}		
+}
+F23 = { # San Marino
+	pattern = "pattern_border_two_stripes.dds"
+		color1 = "blue_light"
+		color2 = "white"
+	textured_emblem = {
+		texture = "te_coa_san_marino.dds"
+		instance = { scale = { 0.6 0.6 } position = { 0.5 0.5 } }
+	}		
+}
 F16_rep = {
 	pattern = "pattern_solid.dds"
 	color1 = "green"

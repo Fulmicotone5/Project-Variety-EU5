@@ -21,7 +21,6 @@ international_organization_manager = {
 		SCI ZIE BRZ NMS STZ NMD WRC GLO NYS OPV SIZ PDK VUD BMS BLB HSP BSK MSO WGO BHL GLN AOS RBG FLK NSI RDL NID MDS LDA TGG GRY VEL PSZ SFC CFC MUR HAG MUL LIC WDE NSH NSS 
 		BLM DIS EVS FUR GRK HAC JEV SAW SAB THD WIE ELL HEH HLF HOH KIR NEL TUB KTZ NSW LEU PST ARS FLA RET BAR }
 		leader = UBV
-		regions = { south_german_region }
 		areas = { 
 			#North Germany
 			brabant_area friesland_area holland_area wallonia_area holstein_area brandenburg_area rhineland_area
@@ -30,6 +29,9 @@ international_organization_manager = {
 			alsace_area franche_comte_area savoy_area
 			#Italy
 			liguria_area lombardy_area piemonte_area  
+
+			austria_area upper_austria_area salzburg_area styria_area carinthia_area tirol_area central_switzerland_area eastern_switzerland_area western_switzerland_area upper_rhine_area swabia_area
+			franconia_area bavaria_area alsace_area
 		}
 		provinces = { 
 			#Burgundy

@@ -20,3 +20,32 @@ sokeman = {
 		global_peasants_migration_allowed = yes
 	}
 }
+
+TRY_REPLACE:peasants_free_peasantry = {
+	estate = peasants_estate
+
+	potential = {
+	}
+	allow = {
+		trigger_if = {
+			limit = { has_estate_privilege = estate_privilege:statutes_of_piotrkow }
+			NOT = { has_estate_privilege = estate_privilege:statutes_of_piotrkow }
+		}
+		NOT = {	has_estate_privilege = estate_privilege:ordinance_of_laborers }
+	}
+	
+	can_revoke = {
+		NOT = { has_estate_privilege = estate_privilege:land_owning_farmers }
+	}
+
+	country_modifier = {
+		peasants_estate_target_satisfaction = medium_privilege_target_satisfaction
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		global_peasants_migration_allowed = yes
+		global_laborers_migration_allowed = yes
+		global_peasants_estate_power = 0.5
+		global_peasant_enfranchisment = 0.1
+		monthly_towards_free_subjects = societal_value_monthly_move
+		monthly_towards_individualism = societal_value_monthly_move
+	}
+}

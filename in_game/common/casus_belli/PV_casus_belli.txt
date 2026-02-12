@@ -1,0 +1,23 @@
+TRY_REPLACE:cb_following_through_on_threat = {
+    ai_selection_desire = 1000
+    visible = {
+        always = no
+    }
+    province = {
+        always = yes #the province is assigned via the demand_unlawful_territory interaction anyways
+    }
+    allow_declaration = {
+        OR = {
+			AND = {
+				relative_strength = {
+					target = scope:target
+					value >= 0.6
+				}
+				stability >= 20
+			}
+			is_human = yes
+        }
+    }
+    war_goal_type = conquer_province
+
+}

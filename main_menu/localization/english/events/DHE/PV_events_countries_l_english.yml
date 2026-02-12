@@ -168,7 +168,7 @@
  moraflavor.2.b: "Privileges have to be earned!"
 
  moraflavor.3.title: "Lost Lands"
- moraflavor.3.desc: "[ShowLocationName('krnov')], [ShowLocationName('fryvaldov')] and [ShowLocationName('ziebice')] historically served as the economic core of Great Moravia, providing the kingdom with a consistent supply of [ShowGoodsName('silver')] and [ShowGoodsName('goods_gold')]. However, these territories have long been incorporated into [GetCountry('SIL').GetName]. Although our legal claim to these lands may be somewhat tenuous, we may be able to persuade neighboring nations of the validity of our claim through "diplomatic" means."
+ moraflavor.3.desc: "[ShowLocationName('krnov')], [ShowLocationName('fryvaldov')] and [ShowLocationName('ziebice')] historically served as the economic core of Great Moravia, providing the kingdom with a consistent supply of [ShowGoodsName('silver')] and [ShowGoodsName('goods_gold')]. However, these territories have long been incorporated into [GetCountry('OEL').GetName]. Although our legal claim to these lands may be somewhat tenuous, we may be able to persuade neighboring nations of the validity of our claim through "diplomatic" means."
  moraflavor.3.a: "The time has come to retake our lost lands"
  moraflavor.3.b: "Engaging in bribery is not an acceptable conduct for a monarch."
  moraflavor.4.title: "A Southern Capital?"

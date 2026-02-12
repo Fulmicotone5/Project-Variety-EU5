@@ -38,13 +38,6 @@ war_manager = {
 	}
 	truce = {
 		attacker = BOH
-		defender = SIL
-		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
-		start_date = 1330.3.2
-		months = 240
-	}
-	truce = {
-		attacker = BOH
 		defender = MEI
 		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
 		start_date = 1336.9.9
@@ -92,6 +85,13 @@ war_manager = {
 		defender = POI
 		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
 		start_date = 1336.8.29
+		months = 120
+	}
+	truce = { 
+		attacker = FRA
+		defender = FCB
+		#either use end_date or start_date = <date> with months = <int>. Can skip months to use NDefines::NDiplomacy::TRUCE_YEARS instead
+		start_date = 1336.5.22
 		months = 120
 	}
 	truce = { 

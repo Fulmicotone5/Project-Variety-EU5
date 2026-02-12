@@ -52,7 +52,7 @@ moraflavor.2 = {
 	}
 
 	trigger = {
-		"estate_power(estate_type:burghers_estate)" > 0.2
+		"estate_power(estate_type:burghers_estate)" >= 0.1
 		NOT = {
 			has_estate_privilege = estate_privilege:PV_new_coiniage
 		}
@@ -101,7 +101,7 @@ moraflavor.3 = {
 	}
 	immediate = {
 		event_illustration_estate_effect = { background = estate_type:clergy_estate }
-		c:SIL = {
+		c:OEL = {
 			save_scope_as = target_country
 		}
 	}
@@ -110,7 +110,7 @@ moraflavor.3 = {
 		tag = MVA
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 10
 	}
 	trigger = {
 		location:olomouc = {
@@ -139,13 +139,13 @@ moraflavor.3 = {
 				province = location:krnov.province
 			}
 		}
-		c:SIL = { add_opinion = { target = root  modifier = opinion_displeased } }
+		c:OEL = { add_opinion = { target = root  modifier = opinion_displeased } }
 		add_gold = -50
 	}
 	option = {
 		name = moraflavor.3.b
 		add_stability = stability_mild_bonus
-		c:SIL = { add_opinion = { target = root  modifier = opinion_good_relations } }
+		c:OEL = { add_opinion = { target = root  modifier = opinion_good_relations } }
 	}
 }
 

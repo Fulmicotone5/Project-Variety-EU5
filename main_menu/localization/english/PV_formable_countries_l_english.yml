@@ -1,0 +1,5 @@
+﻿l_english:
+ BYZ_f: "Roman Empire" #PV
+ BYZ_f_desc: "The glorious Roman Empire is long gone, but as long as Romans live in [ShowLocationName('constantinople')], there is hope of its resurrection. Like a phoenix swirling back to life from a pile of ashes, so too must the remnants of Eastern Rome. But before we can reunite into a vital empire, we must quell internal dissent and ensure we are all working towards the same goal. After all, we can take the place of the Roman Empire in spirit, but we cannot take its name until we prove worthy of it..."
+ NSE_f: "High Kingdom of the North Sea" #PV
+ NSE_f_desc: "The lands once owned by [GetCharacter('eng_cnut_the_great').GetName] extended over both sides of the [ShowAreaName('north_sea_area')], from [ShowRegionName('scandinavian_region')] to [ShowRegionName('great_britain_region')]. Although this territory has fragmented and reformed into different holdings over time, it has always been lying in wait, eagerly anticipating our rise and reclamation. It is time to establish this incredible empire once again, with all those lands coming together under our banner."

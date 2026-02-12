@@ -142,6 +142,7 @@ locations={
 	siena = { rank = city 			town_setup = italian_city }
 	venice = { rank = city 			town_setup = italian_trading_capital }
 	verona = { rank = city 			town_setup = italian_city }
+	montefeltro = { rank = city 			town_setup = italian_city }
 	
 	alessandria = { rank = town 	town_setup = italian_town }
 	arezzo = { rank = town 			town_setup = italian_town }

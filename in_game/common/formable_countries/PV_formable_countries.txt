@@ -987,3 +987,29 @@ F22_f = {
 	}
 
 }
+F23_f = {
+	level = 4
+	required_locations_fraction = 0.1
+	rule = historical
+
+	potential = {
+		has_or_had_tag = P09
+	}
+
+	allow = {
+	}
+
+	name = F23
+	flag = F23
+	adjective = F23_ADJ
+	tag = F23
+	color = map_PVf23
+
+	continents = {
+		europe
+	}
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+
+}

@@ -332,6 +332,7 @@ countries = {
 			}
 
 			privilege = {
+				consolidated_corruption_of_the_nobles_PV
 				formal_guilds
 				clergy_literacy_rights
 				auxilium_et_consilium
@@ -3406,7 +3407,7 @@ countries = {
 			}
 			capital = lincoln
 		}
-		SIL = {
+		OEL = {
 			own_control_core = {
 				glogow
 				gora
@@ -3807,6 +3808,40 @@ countries = {
 
 			capital = ganzhou
 			country_rank = rank_kingdom
+		}
+		P09 = {
+			own_control_core = {
+				montefeltro
+			}
+
+
+			starting_technology_level = 3
+			include = "expl_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "catholic_monarchy_no_coast"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+
+				regnal_numbers = {
+					name_bonconte = 1
+					name_montefeltrano = 2
+					name_wido = 2
+					name_frederick = 2
+					name_galahad = 1
+					name_siginulf = 1
+					name_anthony = 1
+				}
+			}
+
+			tolerated_cultures = {
+				median
+			}
+
+			capital = montefeltro
 		}
 	}
 }
