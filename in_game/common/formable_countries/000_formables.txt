@@ -68,3 +68,30 @@ ITA_f = {
 	form_effect = {
 	}
 }
+
+SIL_f = { 
+
+	level = 2
+	required_locations_fraction = 1
+	rule = historical
+	potential = {
+		OR = {
+			culture = culture:silesian
+			culture = culture:german_silesian
+		}
+	}
+	allow = {
+	}
+	
+	name = SIL
+	flag = SIL
+	adjective = SIL_ADJ
+	tag = SIL
+	color = map_SIL
+	
+	areas = {
+		silesia_area
+	}
+	form_effect = {
+	}
+}

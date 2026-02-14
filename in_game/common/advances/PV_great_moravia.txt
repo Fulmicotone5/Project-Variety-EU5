@@ -140,6 +140,7 @@ urbanization_decrees = {
 			has_or_had_tag = F10
 			has_or_had_tag = F12
 			has_or_had_tag = F13
+			has_or_had_tag = F24
 		}
 	}
 
@@ -154,7 +155,7 @@ bohemian_crystal = {
 	potential = {
 		OR = {
 			has_or_had_tag = BOH
-			has_or_had_tag = F10
+			has_or_had_tag = F24
 			has_or_had_tag = F12
 			has_or_had_tag = F13
 		}

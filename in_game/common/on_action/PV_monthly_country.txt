@@ -2,13 +2,14 @@ monthly_country_pulse = {
 	effect = {
 		if = {
 			limit = {
-				current_date < 1337.5.20
+				current_date < 1337.6.20
+				current_date > 1337.5.20
 				is_ai = yes
 				is_subject = no 
 				NOT = {
 					has_reform = government_reform:daimyo
 				}
-				total_population > 250
+				total_population > 240
 			}
 			trigger_event_silently = PV_policies.2
 		}

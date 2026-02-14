@@ -1,0 +1,674 @@
+namespace = sileflavor
+
+sileflavor.1 = {
+	type = country_event
+	title = sileflavor.1.title
+	desc = sileflavor.1.desc
+
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:nobles_estate }
+		ruler = {
+ 			save_scope_as = target_character		 # First character portrait
+ 		}
+	}
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1338.1.1
+		monthly_chance = 100
+	}
+
+
+	trigger = {
+		has_or_had_tag = WRC
+	}
+
+
+	option = {
+		name = sileflavor.1.a
+
+	}
+}
+
+
+sileflavor.2 = {
+	type = country_event
+	title = sileflavor.2.title
+	desc = sileflavor.2.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		"estate_power(estate_type:nobles_estate)" >= 0.25
+		inflation > 0.1
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_silesia_grant
+		}
+	}
+
+	option = {
+		name = sileflavor.2.a
+		historical_option = yes
+		grant_estate_privilege = estate_privilege:PV_silesia_grant
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		add_inflation = inflation_severe_bonus
+	}
+	option = {
+		name = sileflavor.2.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+	}
+}
+
+sileflavor.3 = {
+	type = country_event
+	title = sileflavor.3.title
+	desc = sileflavor.3.desc
+
+	fire_only_once = yes
+	illustration_tags = {
+		10 = exterior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:clergy_estate foreground = estate_type:clergy_estate }
+		random_country = {
+						limit = { owns = location:glogow owns = location:zagan owns = location:sulechow }
+						save_scope_as = target_country
+					}
+	}
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 20
+	}
+	trigger = {
+		location:wroclaw = {
+			is_capital = yes
+		}
+		owns = location:wroclaw
+		NOT = {
+			owns = location:glogow
+		}
+		NOT = {
+			owns = location:zagan
+		}
+		NOT = {
+			owns = location:sulechow
+		}
+	}
+	
+
+	option = {
+		name = sileflavor.3.a
+		historical_option = yes
+		add_gold = -75
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = -0.05
+		}
+		root = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:glogow.province
+			}
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:zagan.province
+			}
+		}
+		scope:target_country = { add_opinion = { target = root  modifier = opinion_displeased } }
+	}
+	option = {
+		name = sileflavor.3.b
+		add_stability = stability_mild_bonus
+		scope:target_country = { add_opinion = { target = root  modifier = opinion_good_relations } }
+	}
+}
+
+sileflavor.4 = {
+	type = country_event
+	title = sileflavor.4.title
+	desc = sileflavor.4.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		location:wroclaw = {
+			is_capital = yes
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+		owns = location:wroclaw
+		owns = location:nysa
+		location:nysa = {
+			NOT = {
+				location_rank = location_rank:town
+			}
+		}
+	}
+
+	option = {
+		name = sileflavor.4.a
+		historical_option = yes
+		add_gold = -200
+		location:nysa = {
+			change_location_rank = location_rank:town
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		custom_tooltip = sileflavortooltip.a.tt
+	}
+	option = {
+		name = sileflavor.4.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.1
+		}
+	}
+}
+sileflavor.5 = {
+	type = country_event
+	title = sileflavor.5.title
+	desc = sileflavor.5.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = angry
+	}
+	immediate = {
+		event_illustration_estate_effect = { background = estate_type:clergy_estate foreground = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		location:wroclaw = {
+			is_capital = yes
+		}
+		location:nysa = {
+			has_road_to_capital = yes
+		}
+		owns = location:wroclaw
+		owns = location:opole
+		owns = location:nysa
+		location:wroclaw = {
+			NOT = {
+				location_rank = location_rank:city
+			}
+		}
+		location:nysa = {
+			NOT = {
+				location_rank = location_rank:city
+			}
+			population > 15
+		}
+		location:nysa = {
+			location_rank = location_rank:town
+		}
+	}
+
+	option = {
+		name = sileflavor.5.a
+		add_gold = -250
+		location:wroclaw = {
+			change_location_rank = location_rank:city
+		}
+		add_legitimacy = 10
+		set_variable = {
+				name = silesiavarone
+				months = 6
+			}
+	}
+	option = {
+		name = sileflavor.5.b
+		set_capital = location:opole
+		location:opole = {
+			change_development = 5
+		}
+		set_variable = {
+				name = silesiavarone
+				months = 6
+			}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = sileflavor.5.c
+		add_gold = -100
+		location:nysa = {
+			change_location_rank = location_rank:city
+		}
+		set_capital = location:nysa
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = sileflavor.5.d
+		add_stability = 7
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		set_variable = {
+				name = silesiavarone
+				months = 6
+			}
+	}
+}
+
+sileflavor.6 = { #SIL
+	type = country_event
+	title = sileflavor.6.title
+	desc = sileflavor.6.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = WRC
+		has_or_had_tag = SIL
+	}
+	option = {
+		name = sileflavor.6.a
+		add_stability = 7
+		add_prestige = 10
+		if = {
+			limit = {
+				location:glogow = {
+				integration_level = conquered
+				}	
+			}
+			province_definition:glogow_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner = root
+					}
+					change_integration_progress = 75
+				}
+			}
+		}
+		if = {
+			limit = {
+				location:zagan = {
+				integration_level = conquered
+				}	
+			}
+			province_definition:zagan_province = {
+				every_location_in_province_definition = {
+					limit = {
+						owner = root
+					}
+					change_integration_progress = 75
+				}
+			}
+		}
+	}
+}
+sileflavor.7 = { #zap
+	type = country_event
+	title = sileflavor.7.title
+	desc = sileflavor.7.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		tag = F24
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = WRC
+		has_or_had_tag = F24
+	}
+	option = {
+		name = sileflavor.7.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 20
+		add_prestige = 20
+	}
+}
+sileflavor.8 = { #danubia
+	type = country_event
+	title = sileflavor.8.title
+	desc = sileflavor.8.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		tag = F13
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+
+	}
+	trigger = {
+		has_or_had_tag = WRC
+		has_or_had_tag = SIL
+		has_or_had_tag = F13
+	}
+	option = {
+		name = sileflavor.8.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 20
+		add_prestige = 20
+	}
+}
+
+sileflavor.9 = {
+	type = country_event
+	title = sileflavor.9.title
+	desc = sileflavor.9.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		has_variable = silesiavarone
+	}
+
+	option = {
+		name = sileflavor.9.a
+		add_gold = -200
+		location:nysa = {
+			change_location_rank = location_rank:city
+			construct_building = {
+					building_type = building_type:local_governor
+					cost_multiplier = 0.5
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.05
+		}
+	}
+	option = {
+		name = sileflavor.9.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.2
+		}
+		add_legitimacy = 10
+	}
+}
+sileflavor.10 = {
+	type = country_event
+	title = sileflavor.10.title
+	desc = sileflavor.10.desc
+
+	fire_only_once = yes
+	illustration_tags = {
+		10 = exterior
+		10 = armed
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+		c:BOH = {
+			save_scope_as = target_country
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+	trigger = {
+		NOT = {
+			has_truce_with = c:BOH
+		}
+		NOT = {
+			owns = location:kutna_hora
+		}
+		c:BOH = {
+			owns = location:kutna_hora
+		}
+	}
+	
+
+	option = {
+		name = sileflavor.10.a
+		historical_option = yes
+		root = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:kutna_hora.province
+			}
+		}
+		scope:target_country = { add_opinion = { target = root  modifier = opinion_displeased } }
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+	}
+	option = {
+		name = sileflavor.10.b
+		add_stability = stability_mild_bonus
+		scope:target_country = { add_opinion = { target = root  modifier = opinion_good_relations } }
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.1
+		}
+	}
+}
+sileflavor.12 = {
+	type = country_event
+	title = sileflavor.12.title
+	desc = sileflavor.12.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = WRC
+		tag = SIL
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		owns = location:kozle
+		owns = location:raciborz
+		location:kozle = {
+			NOT = {
+				has_building = building_type:irrigation_systems
+			}
+			NOT = {
+				has_building = building_type:windmill
+			}
+		}
+		location:raciborz = {
+			NOT = {
+				has_building = building_type:irrigation_systems
+			}
+			NOT = {
+				has_building = building_type:windmill
+			}
+		}
+	}
+
+	option = {
+		name = sileflavor.12.a
+		location:raciborz = {
+			construct_building = {
+					building_type = building_type:irrigation_systems
+					cost_multiplier = 0.25
+			}
+			construct_building = {
+					building_type = building_type:windmill
+					cost_multiplier = 0.25
+			}
+			add_location_modifier = {
+				modifier = PV_granary
+				years = -1
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.1
+		}
+
+	}
+		option = {
+		name = sileflavor.12.b
+		historical_option = yes
+		location:kozle = {
+			construct_building = {
+					building_type = building_type:irrigation_systems
+					cost_multiplier = 0.25
+			}
+			construct_building = {
+					building_type = building_type:windmill
+					cost_multiplier = 0.25
+			}
+			add_location_modifier = {
+				modifier = PV_granary
+				years = -1
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+
+	}
+	option = {
+		name = sileflavor.12.c
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = sileflavor.12.d
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_gold = 100
+	}
+}

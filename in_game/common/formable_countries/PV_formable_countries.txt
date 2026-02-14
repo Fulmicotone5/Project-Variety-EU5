@@ -286,7 +286,7 @@ F07_f = {
 }
 F08_f = {
 	level = 4
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.7
 	rule = historical
 
 	potential = {
@@ -504,7 +504,7 @@ F12_f = {
 }
 F13_f = {
 	level = 4
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.7
 	rule = historical
 
 	potential = {
@@ -1008,6 +1008,62 @@ F23_f = {
 	continents = {
 		europe
 	}
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+
+}
+F24_f = {
+	level = 4
+	required_locations_fraction = 0.75
+	rule = historical
+
+	potential = {
+		culture ?= { 
+			or = { 
+				has_culture_group = culture_group:polish_group 
+				has_culture_group = culture_group:bohemian_group
+			}
+		}
+	}
+
+	allow = {
+		owns = location:krakow
+		owns = location:brno
+		owns = location:prague
+		owns = location:wroclaw
+		owns = location:poznan
+	}
+
+	name = F24
+	flag = F24
+	adjective = F24_ADJ
+	tag = F24
+	color = map_PVF24
+
+	areas = {
+		silesia_area
+		central_poland_area
+		greater_poland_area
+		lesser_poland_area
+		mazovia_area
+		bohemia_area
+		moravia_area
+	}
+	provinces = {
+		upper_prussia_province
+		danzig_province
+		tuchola_province
+		stolp_province
+		koslin_province
+		hont_province
+		nograd_province
+		pozsony_province
+		szepes_province
+		trencsen_province
+		pyritz_province
+		chelmno_province
+	}	
 	form_effect = {
 		set_country_rank_effect = { rank = country_rank:rank_empire }
 	}

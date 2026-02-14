@@ -344,3 +344,17 @@ F22 = { #Shu
 		priority = 1		
 	}	
 }
+F24 = { # Zapadoslavia
+	flag_definition = {	
+		coa = F24
+		subject_canton = F24
+		priority = 10
+	}
+	flag_definition = {
+		coa = F24_monarchy
+		priority = 15
+		trigger = { 
+			coa_def_monarchy_trigger = yes
+		}
+	}
+}

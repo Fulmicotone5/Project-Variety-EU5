@@ -24,7 +24,7 @@ moraflavor.1 = {
 
 	option = {
 		name = moraflavor.1.a
-
+		add_stability = 10
 	}
 }
 
@@ -101,7 +101,7 @@ moraflavor.3 = {
 	}
 	immediate = {
 		event_illustration_estate_effect = { background = estate_type:clergy_estate }
-		c:OEL = {
+		c:WRC = {
 			save_scope_as = target_country
 		}
 	}
@@ -139,13 +139,13 @@ moraflavor.3 = {
 				province = location:krnov.province
 			}
 		}
-		c:OEL = { add_opinion = { target = root  modifier = opinion_displeased } }
+		c:WRC = { add_opinion = { target = root  modifier = opinion_displeased } }
 		add_gold = -50
 	}
 	option = {
 		name = moraflavor.3.b
 		add_stability = stability_mild_bonus
-		c:OEL = { add_opinion = { target = root  modifier = opinion_good_relations } }
+		c:WRC = { add_opinion = { target = root  modifier = opinion_good_relations } }
 	}
 }
 
@@ -309,7 +309,7 @@ moraflavor.5 = {
 		}
 	}
 	option = {
-		name = moraflavor.4.c
+		name = moraflavor.5.c
 		add_estate_satisfaction = { type = estate_type:burghers_estate 
 			value = -0.15
 		}
@@ -432,5 +432,237 @@ moraflavor.8 = {
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
 		add_stability = 20
 		add_prestige = 20
+	}
+}
+
+moraflavor.9 = {
+	type = country_event
+	title = moraflavor.9.title
+	desc = moraflavor.9.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F10
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = angry
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		"estate_power(estate_type:nobles_estate)" >= 0.25
+		inflation > 0.1
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_silesia_grant
+		}
+	}
+
+	option = {
+		name = moraflavor.9.a
+		historical_option = yes
+		grant_estate_privilege = estate_privilege:PV_silesia_grant
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		add_inflation = inflation_severe_bonus
+	}
+	option = {
+		name = moraflavor.9.b
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+	}
+}
+
+moraflavor.10 = {
+	type = country_event
+	title = moraflavor.10.title
+	desc = moraflavor.10.desc
+
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F10
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+
+	trigger = {
+		own_entire_province = province_definition:opavsko_province
+		is_integrating = province_definition:opavsko_province
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
+	}
+
+	option = {
+		name = moraflavor.10.a
+
+		add_prestige = prestige_mild_bonus
+		province_definition:opavsko_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 75
+			}
+		}
+	}
+}
+
+moraflavor.11 = { #zap
+	type = country_event
+	title = moraflavor.11.title
+	desc = moraflavor.11.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		tag = F10
+		tag = F24
+		from = 1300.1.1
+		to = 1830.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = MVA
+		has_or_had_tag = F24
+	}
+	option = {
+		name = moraflavor.11.a
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 20
+		add_prestige = 20
+	}
+}
+moraflavor.12 = {
+	type = country_event
+	title = moraflavor.12.title
+	desc = moraflavor.12.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = MVA
+		from = 1300.1.1
+		to = 1800.1.1
+		monthly_chance = 5
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		owns = location:kozle
+		owns = location:raciborz
+		location:kozle = {
+			NOT = {
+				has_building = building_type:irrigation_systems
+			}
+			NOT = {
+				has_building = building_type:windmill
+			}
+		}
+		location:raciborz = {
+			NOT = {
+				has_building = building_type:irrigation_systems
+			}
+			NOT = {
+				has_building = building_type:windmill
+			}
+		}
+	}
+
+	option = {
+		name = moraflavor.12.a
+		location:raciborz = {
+			construct_building = {
+					building_type = building_type:irrigation_systems
+					cost_multiplier = 0.25
+			}
+			construct_building = {
+					building_type = building_type:windmill
+					cost_multiplier = 0.25
+			}
+			add_location_modifier = {
+				modifier = PV_granary
+				years = -1
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.1
+		}
+
+	}
+		option = {
+		name = moraflavor.12.b
+		historical_option = yes
+		location:kozle = {
+			construct_building = {
+					building_type = building_type:irrigation_systems
+					cost_multiplier = 0.25
+			}
+			construct_building = {
+					building_type = building_type:windmill
+					cost_multiplier = 0.25
+			}
+			add_location_modifier = {
+				modifier = PV_granary
+				years = -1
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+
+	}
+	option = {
+		name = moraflavor.12.c
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+	}
+	option = {
+		name = moraflavor.12.d
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_gold = 100
 	}
 }

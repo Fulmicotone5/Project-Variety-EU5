@@ -1,0 +1,77 @@
+many_universities_of_zap = {
+	icon = imperatorskiy_moskovskiy_universitet
+	age = age_2_renaissance
+	potential = {
+		has_or_had_tag = F24
+	}
+	
+	global_monthly_literacy = 0.02
+	global_max_literacy = 5
+
+	requires = renaissance_advance
+}
+
+
+statute_of_kalisz = {
+	age = age_1_traditions
+	potential = { OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = F24 
+		}  }
+
+	tolerance_heathen = 1
+
+	requires = legalism_advance
+}
+
+#Age of Renaissance#
+
+corona_regni_poloniae = {
+	age = age_2_renaissance
+	potential = { OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = F24 
+		}  }
+
+	diplomatic_annexation_cost = -0.1
+	parliament_base_support = 0.05
+
+	requires = government_size_renaissance
+}
+
+krakow_grosz = {
+	age = age_2_renaissance
+	potential = { OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = F24 
+		}  }
+
+	tax_income_efficiency = large_tax_income_efficiency_bonus
+
+	requires = merchants_and_trade
+}
+
+polish_renaissance = {
+	age = age_3_discovery
+	potential = { OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = F24 
+		}  }
+	invite_artist_cost_modifier = -0.25
+	num_possible_artists = 1
+	requires = print_culture
+}
+
+
+#Age of Absolutism#
+
+wojsko_komputoe = {
+	age = age_5_absolutism
+	potential = {
+		OR = {
+			has_or_had_tag = POL
+			has_or_had_tag = F24 
+		} 
+	}
+	army_maintenance_cost = -0.1
+}

@@ -7,9 +7,8 @@ KOJ = {
 
 	is_historic = yes
 }
-OEL = {
-	color = map_OEL
-	color2 = rgb { 84 166 93 }
+WRC = {
+	color = rgb { 56 54 153 }
 
 	culture_definition = silesian
 	religion_definition = catholic

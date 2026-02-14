@@ -92,7 +92,10 @@ long_distance_trades = {
 	age = age_3_discovery 
 	icon = exploit_the_alpine_trade
 	potential = {
-		has_or_had_tag = MVA
+		or = {
+			has_or_had_tag = MVA
+			has_or_had_tag = F24
+		}
 	}
 	trade_range_modifier = 0.3
 
@@ -102,7 +105,10 @@ hearth_of_europe = {
 	age = age_4_reformation 
 	icon = efficient_mining
 	potential = {
-		has_or_had_tag = MVA
+		or = {
+			has_or_had_tag = MVA
+			has_or_had_tag = F24
+		}
 	}
 	trade_efficiency = 0.1
 	global_migration_speed_modifier = 0.1
@@ -114,7 +120,10 @@ panslavism = {
 	age = age_5_absolutism
 	icon = cultural_acceptance_advance
 	potential = {
-		has_or_had_tag = MVA
+		or = {
+			has_or_had_tag = MVA
+			has_or_had_tag = F24
+		}
 	}
 	cultures_capacity = 2
 	add_accepted_culture_cost_modifier = -0.25

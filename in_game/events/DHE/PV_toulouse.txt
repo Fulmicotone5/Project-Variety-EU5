@@ -28,7 +28,7 @@ touflavor.2 = {
 		tag = TOU
 		from = 1338.1.1
 		to = 1800.1.1
-		monthly_chance = 20
+		monthly_chance = 1
 	}
 	illustration_tags = {
 		10 = happy
@@ -123,7 +123,7 @@ touflavor.4 = {
 		name = touflavor.4.a
 		grant_estate_privilege = estate_privilege:cathar_reforms
 		add_estate_satisfaction = { type = estate_type:peasants_estate value = 0.05 }
-		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.25 }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.2 }
 	}
 	option = {
 		name = touflavor.4.b
@@ -309,7 +309,7 @@ touflavor.8 = {
 		tag = F03
 		from = 1340.1.1
 		to = 1800.1.1
-		monthly_chance = 20
+		monthly_chance = 100
 	}
 	illustration_tags = {
 		10 = happy

@@ -1,0 +1,19 @@
+TRY_REPLACE:deus_vult = {
+	age = age_2_renaissance
+	icon = teu_crusader_discipline
+	for = dip
+	
+	requires = medieval_military
+	ai_weight = { add = 20 }
+
+	unlock_casus_belli = cb_deus_vult
+}
+TRY_REPLACE:shrewd_commerce_practice = {
+	age = age_2_renaissance
+	icon = zmw_merchant_taxes
+	for = adm
+	
+	requires = renaissance_urbanisation
+	
+	global_trade_center_power = 0.05
+}

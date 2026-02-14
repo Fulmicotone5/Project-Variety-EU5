@@ -1,0 +1,78 @@
+
+fortified_villages = {
+	age = age_1_traditions
+	icon = geo_restoration_of_fortresses_and_churches
+	potential = {
+		OR = {
+			has_or_had_tag = F24
+			has_or_had_tag = WRC
+		}
+	}
+	
+	global_defensive = 0.05
+	requires = castle_advance
+}
+silesian_mines = {
+	age = age_2_renaissance
+	icon = standardized_coins
+	potential = {
+		has_or_had_tag = WRC
+	}
+	global_goods_gold_output_modifier = 0.05
+
+	requires = rgo_construction_ren
+}
+
+slavic_renaissance = {
+	age = age_2_renaissance
+	icon = ven_venetian_school_of_music
+	potential = {
+		has_or_had_tag = WRC
+	}
+	
+	cultural_influence = 0.1
+	global_max_literacy = 5
+
+	requires = renaissance_advance
+}
+slavic_hub = {
+	age = age_2_renaissance
+	icon = sia_experienced_ambassadors
+	potential = {
+		has_or_had_tag = WRC
+	}
+	cultures_capacity = 2
+
+	requires = slavic_renaissance
+}
+great_city_works = {
+	age = age_3_discovery
+	icon = construction_speed_revolutions
+
+	potential = {
+		has_or_had_tag = WRC
+	}
+
+	global_monthly_development = 0.001
+
+	requires = paved_road_advance
+}
+
+slavic_golden_age = {
+	age = age_3_discovery
+	icon = mos_skilled_tax_collectors
+
+	potential = {
+		OR = {
+			has_or_had_tag = F24
+			has_or_had_tag = WRC
+			
+		}
+	}
+
+	global_monthly_prosperity = 0.001
+
+	requires = study_institutions_advance
+}
+
+

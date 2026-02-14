@@ -93,7 +93,10 @@ PV_ruling_elites = {
 	
 	
 	potential = {
-		has_or_had_tag = MVA 
+		or = {
+			has_or_had_tag = WRC 
+			has_or_had_tag = MVA 
+		}
 	}
 	
 	can_revoke = {
@@ -102,7 +105,7 @@ PV_ruling_elites = {
 	country_modifier = {
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		global_nobles_estate_power = 1
-		nobles_estate_max_tax = -0.1
+		global_crown_estate_power = -0.25
 	}
 }
 PV_groschen = {
@@ -121,7 +124,7 @@ PV_groschen = {
 	}
 	
 	country_modifier = {
-		global_nobles_estate_power = 1
+		global_nobles_estate_power = 0.25
 		monthly_inflation = -0.0005
 	}
 }
@@ -157,6 +160,26 @@ TRY_REPLACE:nobles_land_rights = {
 
 		
 		monthly_towards_land = societal_value_minor_monthly_move
+
+		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+}
+
+PV_silesia_grant = {
+	estate = nobles_estate
+	potential = {
+		or = {
+			has_or_had_tag = MVA 
+			has_or_had_tag = WRC 
+		}
+	}
+	
+	country_modifier = {
+		global_nobles_estate_power = 1
+		global_crown_estate_power = -0.33
+		
+		monthly_inflation = -0.001
+		
 
 		monthly_towards_aristocracy = societal_value_monthly_move
 	}

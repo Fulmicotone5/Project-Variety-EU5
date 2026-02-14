@@ -67,3 +67,6 @@ colors = {
 colors = {
 	map_PVf23 = rgb { 46 130 108 }
 }
+colors = {
+	map_PVF24 = rgb { 11 13 82 }
+}

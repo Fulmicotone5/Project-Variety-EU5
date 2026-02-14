@@ -16,3 +16,4 @@
  MODIFIER_TYPE_DESC_local_preserved_meat_output_modifier: "This modifies the [output|e] of [ShowGoodsName('preserved_meat')] in this [location|e]."
  MODIFIER_TYPE_NAME_global_preserved_meat_output_modifier: "$preserved_meat$ Output"
  MODIFIER_TYPE_DESC_global_preserved_meat_output_modifier: "This modifies the [output|e] of [ShowGoodsName('preserved_meat')] in the entire [country|e]."
+ STATIC_MODIFIER_NAME_PV_granary: "Concessions to the Nobility"

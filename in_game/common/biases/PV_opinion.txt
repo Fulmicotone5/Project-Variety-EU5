@@ -1,0 +1,5 @@
+TRY_REPLACE:opinion_annexed_other_subject = {
+	value = -30
+	min = -100
+	yearly_decay = 10
+}	
