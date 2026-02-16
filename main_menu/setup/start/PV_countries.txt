@@ -1001,10 +1001,12 @@ countries = {
 				}
 			}
 			tolerated_cultures = {
+				provencal
+			}
+			accepted_cultures = {
 				gascon
 				auvergnat
 				limousin
-				saintongeais
 			}
 			country_rank = rank_duchy
 			capital = toulouse
@@ -1205,6 +1207,11 @@ countries = {
 				trevoux				#S.de Beaujeu
 				lyon
 				riverie				#C. de Lyon
+			}
+			our_cores_conquered_by_others = {
+				nevers donzy
+			st_pierre_de_moutier montreuillon cercy
+			chateau_chinon
 			}
 			starting_technology_level = 3
 			include = "expl_western_europe"

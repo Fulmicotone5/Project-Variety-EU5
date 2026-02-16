@@ -23,50 +23,32 @@ TRY_INJECT:fortress = {
 
 }
 
-TRY_REPLACE:bailiff = {
+TRY_REPLACE:lazaretto = {
 	is_foreign = no
+	pop_type = clergy
 	max_levels = 1
-	pop_type = soldiers
-	
-	employment_size = bailiff_employment
-	category = government_category
-	
-	rural_settlement = yes
-	expensive = yes
-	build_time = rural_build_time
-	
-	forbidden_for_estates = yes
-	
+	employment_size = clergy_medical_employment
+	category = infrastructure_category
+	town = yes
+	city = yes
 	location_potential = {
-		is_overseas_for_owner = no
+		is_coastal = yes
 	}
-	
-	allow = {
-		custom_tooltip = {
-			text = local_bailiff_tt
-			scope:actor = {	total_building_levels_including_construction:bailiff < modifier:num_bailiffs }
-		}
-		owner = scope:actor #not in subjects
-	}
-	
-	
+	expensive = yes
+	build_time = generic_town_build_time
+
 	unique_production_methods = {
-		bailiff_input = {
-			paper = 0.1
-			tools = 0.15
-			weaponry = 0.25
-			stone = 0.1
+		lazaretto_maintenance = {
+			fiber_crops = 0.15
+			books = 0.05
+			medicaments = 0.03
 			category = building_maintenance
 		}
 	}
-
+	construction_demand = town_building_construction
 	modifier = {
-		local_max_control = 0.1
-		local_nobles_estate_power = 1.0
-		local_peasant_enfranchisment = -0.1
+		local_disease_resistance = 0.15
 	}
-	
-	
 }
 
 

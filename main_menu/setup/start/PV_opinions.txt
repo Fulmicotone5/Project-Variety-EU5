@@ -31,4 +31,12 @@ diplomacy_manager = {
 	opinion = { first = CFN second = CHI type = opinion_declared_war }
 	opinion = { first = CNP second = CHI type = opinion_declared_war }
 	opinion = { first = CDN second = CHI type = opinion_declared_war }
+
+	opinion = { first = BRI second = NEV type = opinion_declared_war }
+	opinion = { first = FCB second = NEV type = opinion_declared_war }
+	opinion = { first = SAV second = NEV type = opinion_declared_war }
+	opinion = { first = POI second = NEV type = opinion_declared_war }
+	opinion = { first = DAU second = NEV type = opinion_declared_war }
+	opinion = { first = ANJ second = NEV type = opinion_declared_war }
+	opinion = { first = FLA second = NEV type = opinion_declared_war }
 }

@@ -1,0 +1,140 @@
+latrines = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	forbidden_for_estates = yes
+	employment_size = granary_employment
+	category = infrastructure_category
+	town = yes
+	city = yes
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+		latrines_maintenance = {
+			masonry = 0.1
+			tools = 0.05
+			lumber = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+	modifier = {
+		local_disease_resistance = 0.05
+		local_migration_attraction = 0.05
+		local_population_capacity = 5
+	}
+}
+
+bathouse = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	forbidden_for_estates = yes
+	employment_size = granary_employment
+	category = infrastructure_category
+	town = yes
+	city = yes
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+		bathouse_maintenance = {
+			masonry = 0.05
+			tools = 0.05
+			lumber = 0.15
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+	modifier = {
+		local_disease_resistance = 0.05
+		local_migration_attraction = 0.1
+		local_population_capacity = 15
+	}
+}
+
+washhouse = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	forbidden_for_estates = yes
+	employment_size = generic_peasant_building_employment
+	category = infrastructure_category
+	city = yes
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+		washhouse_maintenance = {
+			masonry = 0.1
+			tools = 0.1
+			lumber = 0.2
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+	modifier = {
+		local_disease_resistance = 0.1
+		local_migration_attraction = 0.1
+		local_population_capacity = 25
+	}
+
+	obsolete = bathouse
+}
+
+sewers = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	forbidden_for_estates = yes
+	employment_size = generic_peasant_building_employment
+	category = infrastructure_category
+	city = yes
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+		sewers_maintenance = {
+			masonry = 0.15
+			tools = 0.1
+			stone = 0.05
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+	modifier = {
+		local_disease_resistance = 0.1
+		local_migration_attraction = 0.1
+		local_population_capacity = 20
+		local_life_expectancy = 2
+	}
+
+	obsolete = latrines
+}
+
+
+waste_disposal_system = {
+	is_foreign = no
+	pop_type = laborers
+	max_levels = 1
+	forbidden_for_estates = yes
+	employment_size = construction_employment
+	category = infrastructure_category
+	city = yes
+	build_time = generic_town_build_time
+
+	unique_production_methods = {
+		waste_disposal_system_maintenance = {
+			masonry = 0.25
+			tools = 0.2
+			stone = 0.1
+			category = building_maintenance
+		}
+	}
+	construction_demand = town_building_construction
+	modifier = {
+		local_disease_resistance = 0.15
+		local_migration_attraction = 0.15
+		local_population_capacity = 30
+		local_life_expectancy = 5
+	}
+
+	obsolete = sewers
+}

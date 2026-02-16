@@ -2306,6 +2306,13 @@ building_manager = {
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
 	dock = { tag = BYZ level = 1 location = constantinople }
 	sergeantry = { tag = TUR level = 1 location =  bursa }
+
+
+	sewers = { tag = BYZ level = 1 location =  constantinople }
+	sewers = { tag = PAP level = 1 location =  rome }
+	sewers = { tag = PAP level = 1 location =  naples }
+	sewers = { tag = ENG level = 1 location =  london }
+	bathouse = { tag = ENG level = 1 location =  london }
 	
 	castle = { tag = KNI level = 1 location =  rodos }
 	castle = { tag = SER level = 1 location =  kozelj }
@@ -3675,6 +3682,7 @@ building_manager = {
 	#Egypt
 
 	##$mamluk$ Barracks
+	sewers = { tag = MAM level = 1 location =  cairo } #PV
 	mamluk_barracks = { tag = MAM level = 3 location = cairo }
 	mamluk_barracks = { tag = MAM level = 2 location = alexandria }
 	mamluk_barracks = { tag = MAM level = 1 location = damietta }

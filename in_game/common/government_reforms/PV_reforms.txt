@@ -215,7 +215,7 @@ house_of_hohen = {
 		government_reform_slots = 1
 		government_size = 1
 		global_integration_speed_modifier = 0.2
-		antagonism_received_modifier = -0.5
+		antagonism_received_modifier = -0.33
 		monthly_towards_individualism = societal_value_large_monthly_move
 		diplomatic_capacity = 1
 	}

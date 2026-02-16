@@ -17,6 +17,8 @@ NGame = {
 NCountry = {
 	MERCHANT_MAINTENANCE_COST = 0.25
 	MAXIMUM_GOLD = 999999999
+	ANNEX_MIN_COST = 40
+	ANNEX_COST_PER_LOCATION = 8.0
 }
 
 NUnit = {
@@ -49,4 +51,8 @@ NAI = {
 	MONTHLY_MANPOWER_PER_BASE_TAX_REFERENCE = 0.08 # This is how big manpower pool AI wants based on each 100 taxbase
 	AI_USE_CONQUER_CB_FACTOR = 100 # AI score multiplier for attacking someone where we have an available CB with better than no cb conquer cost
 	AI_CONQUER_DESIRE_DISTANCE_PER_AGE = 150
+}
+
+NEconomy = {
+	BUILDING_UPKEEP_FACTOR = 0.1
 }

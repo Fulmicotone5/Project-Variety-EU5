@@ -1,0 +1,26 @@
+sewers_advance = {
+	age = age_2_renaissance
+	icon = cas_repoblaciones
+	unlock_building = sewers
+
+	requires = renaissance_city_rights
+
+}
+
+waste_disposal_system_advance = {
+	age = age_5_absolutism
+	icon = swiss_recovery_and_prosperity
+	unlock_building = waste_disposal_system
+
+	requires = sanitation_advance
+
+}
+
+washhouses_advance = {
+	age = age_3_discovery
+	icon = swiss_recovery_and_prosperity
+	unlock_building = washhouse
+
+	requires = lazaretto_advance
+
+}

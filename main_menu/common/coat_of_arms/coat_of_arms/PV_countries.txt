@@ -1019,3 +1019,12 @@ F22 = {
 		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
 	}		
 }
+
+BUR_newk = {
+	pattern = "pattern_solid.dds"
+	color1 = "white"
+	colored_emblem = {
+		texture = "ce_saltire_cross_burgundy.dds"
+		color1 = "red"
+	}
+}

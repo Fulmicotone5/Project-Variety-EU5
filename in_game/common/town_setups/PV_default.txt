@@ -9,6 +9,8 @@ TRY_INJECT:baltic_town = {
 }
 TRY_INJECT:russian_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:russian_town = {
 	smokehouse = 1
@@ -30,9 +32,13 @@ TRY_INJECT:iberian_town = {
 }
 TRY_INJECT:iberian_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:iberian_city_port = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:lowlands_town = {
 	smokehouse = 1
@@ -42,30 +48,44 @@ TRY_INJECT:lowlands_costal_town = {
 }
 TRY_INJECT:lowlands_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:lowlands_coastal_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:french_town = {
 	smokehouse = 1
 }
 TRY_INJECT:french_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:jurchen_town = {
 	smokehouse = 1
 }
 TRY_INJECT:chinese_town = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:chinese_coastal_town = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:chinese_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:chinese_coastal_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:south_east_asia_town = {
 	smokehouse = 1
@@ -75,6 +95,8 @@ TRY_INJECT:south_east_asia_port_town = {
 }
 TRY_INJECT:south_east_asia_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:german_town = {
 	smokehouse = 1
@@ -84,15 +106,21 @@ TRY_INJECT:german_coastal_town = {
 }
 TRY_INJECT:german_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:german_coastal_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:greek_town = {
 	smokehouse = 1
 }
 TRY_INJECT:greek_city_port = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:greek_town_port = {
 	smokehouse = 1
@@ -111,30 +139,46 @@ TRY_INJECT:maghreb_coastal_town = {
 }
 TRY_INJECT:maghreb_coastal_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:egyptian_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:lowlands_coastal_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:anatolian_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:anatolian_town = {
 	smokehouse = 1
 }
 TRY_INJECT:indian_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:indian_coastal_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:indian_sultanate_coastal_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:indian_sultanate_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:indian_town = {
 	smokehouse = 2
@@ -144,15 +188,21 @@ TRY_INJECT:levant_town = {
 }
 TRY_INJECT:levant_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:central_asian_town = {
 	smokehouse = 1
 }
 TRY_INJECT:central_asian_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:mexican_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:mexican_town = {
 	smokehouse = 1
@@ -168,39 +218,53 @@ TRY_INJECT:italian_coastal_town = {
 }
 TRY_INJECT:italian_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:italian_trading_capital = {
 	smokehouse = 2
 }
 TRY_INJECT:italian_coastal_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:japan_town = {
 	smokehouse = 1
 }
 TRY_INJECT:japan_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:korea_town = {
 	smokehouse = 1
 }
 TRY_INJECT:korea_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:korean_city_port = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:sahel_town = {
 	smokehouse = 1
 }
 TRY_INJECT:sahel_city = {
 	smokehouse = 2
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:yucatan_town = {
 	smokehouse = 2
 }
 TRY_INJECT:andes_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }
 TRY_INJECT:east_african_coastal_town = {
 	smokehouse = 1
@@ -219,4 +283,6 @@ TRY_INJECT:majapahit_coastal_town = {
 }
 TRY_INJECT:majapahit_city = {
 	smokehouse = 1
+	latrines = 1
+	bathouse = 1
 }

@@ -358,3 +358,38 @@ F24 = { # Zapadoslavia
 		}
 	}
 }
+
+BUR = { # Burgundy
+	# BUR - Ancient : Barry OB & border G
+	# BUR_Valois - Younger (15th c.) Qtly Bourgogne & Touraine
+
+	flag_definition = {
+		coa = BUR
+		priority = 1
+	}
+	flag_definition = {
+		coa = BUR_newk
+		priority = 40
+		trigger = {
+			coa_def_monarchy_trigger = yes
+			or = {
+				country_rank_is_kingdom = yes
+				country_rank_is_empire = yes
+			}
+		}
+	}
+	flag_definition = {
+		coa = BUR_habsburg
+		priority = 40
+		trigger = {
+			coa_def_habsburg_dynasty_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BUR_Valois
+		priority = 50
+		trigger = {
+			coa_def_valois_dynasty_trigger = yes
+		}
+	}
+}

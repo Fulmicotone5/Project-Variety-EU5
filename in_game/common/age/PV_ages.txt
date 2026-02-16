@@ -1,8 +1,9 @@
 TRY_INJECT:age_1_traditions = {
 	modifier = {
 		global_pop_food_consumption = -0.4
-		fort_maintenance_cost = 0.3
+		fort_maintenance_cost = -0.5
 		army_maintenance_cost = 0.25
+		court_spending_cost = -0.05
 	}
 }
 
@@ -10,7 +11,7 @@ TRY_INJECT:age_2_renaissance = {
 	modifier = {
 		army_maintenance_cost = 0.35
 		fort_maintenance_cost = 0.6
-		global_pop_food_consumption = -0.25
+		global_pop_food_consumption = -0.1
 	}
 }
 
