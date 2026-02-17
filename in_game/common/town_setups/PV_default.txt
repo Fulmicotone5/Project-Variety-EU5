@@ -69,22 +69,22 @@ TRY_INJECT:jurchen_town = {
 }
 TRY_INJECT:chinese_town = {
 	smokehouse = 1
-	latrines = 1
+	sewers = 1
 	bathouse = 1
 }
 TRY_INJECT:chinese_coastal_town = {
 	smokehouse = 1
-	latrines = 1
+	sewers = 1
 	bathouse = 1
 }
 TRY_INJECT:chinese_city = {
 	smokehouse = 2
-	latrines = 1
+	sewers = 1
 	bathouse = 1
 }
 TRY_INJECT:chinese_coastal_city = {
 	smokehouse = 2
-	latrines = 1
+	sewers = 1
 	bathouse = 1
 }
 TRY_INJECT:south_east_asia_town = {

@@ -25,4 +25,9 @@ road_network = {
 	liyuan = ganzhou
 	liyuan = gaotai
 	liyuan = qilian
+	dijon = arnay
+	arnay = chateau_chinon
+	dijon = beaune
+	beaune = autun
+	autun = cercy
 }

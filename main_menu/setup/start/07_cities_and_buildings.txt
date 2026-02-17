@@ -2263,7 +2263,6 @@ building_manager = {
 	#France
 	#castle = { tag = ALS level = 1 location = strasbourg }
 	royal_court = { tag = FRA level = 1 location = paris }
-	sergeantry	= { tag = FRA level = 1 location = paris } #Sergeants at arms
 	
 	tar_kiln = { tag = FRA level = 1 location = mende } 
 	tar_kiln = { tag = VNT level = 1 location = ventadour } 
@@ -2323,6 +2322,8 @@ building_manager = {
 	sergeantry	= { tag = ANS level = 1 location = ansbach } #PV
 	sergeantry	= { tag = P07 level = 1 location = satsuma } #PV
 	armory	= { tag = P07 level = 2 location = satsuma } #PV
+	sergeantry	= { tag = BUR level = 1 location = dijon } #PV
+	royal_court = { tag = BUR level = 1 location = dijon }
 
 
 	order_headquarters = { tag = KNI level = 1 location =  rodos }

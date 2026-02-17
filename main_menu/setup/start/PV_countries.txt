@@ -1207,6 +1207,9 @@ countries = {
 				trevoux				#S.de Beaujeu
 				lyon
 				riverie				#C. de Lyon
+				langres
+				grancey
+				auxerre
 			}
 			our_cores_conquered_by_others = {
 				nevers donzy
@@ -1338,6 +1341,16 @@ countries = {
 				capital_economy_vs_traditional_economy = 70
 				individualism_vs_communalism = -20
 				outward_vs_inward = -20
+				privilege = {
+				#nobles
+				primacy_of_nobility
+
+				embellish_great_works_of_faith
+
+				#peasants
+				peasants_free_peasantry
+				peasants_allowed_weapons_privilege
+			}
 				reforms = {
 					house_de_bourgogne
 				}

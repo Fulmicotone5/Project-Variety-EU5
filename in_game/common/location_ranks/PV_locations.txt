@@ -104,7 +104,7 @@ TRY_REPLACE:rural_settlement = {
 		local_population_growth = 0.001
 		
 		local_peasant_enfranchisment = -0.2
-		local_disease_resistance = 0.2
+		local_disease_resistance = 0.1
 	}
 	
 	country_modifier = {
