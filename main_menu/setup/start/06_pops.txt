@@ -6628,65 +6628,65 @@ wycombe = {
 }
 leicester = {
 	define_pop = {	type = peasants	size = 20.084	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 loughborough = {
 	define_pop = {	type = peasants	size = 7.803	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 7.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 7.137	culture = PV_norseanglo religion = norse }
 }
 bosworth = {
 	define_pop = {	type = peasants	size = 15.483	culture = english	religion = catholic }
-	define_pop = { type = peasants	size = 7.137	culture = norse_gael religion = norse }
+	define_pop = { type = peasants	size = 7.137	culture = PV_norseanglo religion = norse }
 }
 rutland = {
 	define_pop = {	type = peasants	size = 18.168	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 17.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 17.137	culture = PV_norseanglo religion = norse }
 }
 derby = {
 	define_pop = {	type = peasants	size = 21.780	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 20.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 20.137	culture = PV_norseanglo religion = norse }
 }
 glossop = {
 	define_pop = {	type = peasants	size = 10.126	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 7.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 7.137	culture = PV_norseanglo religion = norse }
 }
 chesterfield = {
 	define_pop = {	type = peasants	size = 8.551	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 nottingham = {
 	define_pop = {	type = peasants	size = 18.943	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 17.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 17.137	culture = PV_norseanglo religion = norse }
 }
 newark = {
 	define_pop = {	type = peasants	size = 6.370	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 5.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 5.137	culture = PV_norseanglo religion = norse }
 }
 retford = {
 	define_pop = {	type = peasants	size = 6.796	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 6.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 6.137	culture = PV_norseanglo religion = norse }
 }
 lincoln = {
-	define_pop = {	type = nobles	size = 0.920	culture = norse_gael	religion = norse }
-	define_pop = {	type = burghers	size = 4.187	culture = norse_gael	religion = norse }
-	define_pop = {	type = peasants	size = 140.784	culture = norse_gael religion = norse }
+	define_pop = {	type = nobles	size = 0.920	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = burghers	size = 4.187	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = peasants	size = 140.784	culture = PV_norseanglo religion = norse }
 }
 boston = {
-	define_pop = {	type = nobles	size = 0.092	culture = norse_gael	religion = norse }
-	define_pop = {	type = burghers	size = 1.087	culture = norse_gael	religion = norse }
-	define_pop = {	type = peasants	size = 35.177	culture = norse_gael	religion = norse }
+	define_pop = {	type = nobles	size = 0.092	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = burghers	size = 1.087	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = peasants	size = 35.177	culture = PV_norseanglo	religion = norse }
 }
 grimsby = {
-	define_pop = {	type = peasants	size = 34.870	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 34.870	culture = PV_norseanglo	religion = norse }
 }
 grantham = {
-	define_pop = {	type = peasants	size = 24.470	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 24.470	culture = PV_norseanglo	religion = norse }
 }
 louth = {
-	define_pop = {	type = peasants	size = 32.319	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 32.319	culture = PV_norseanglo	religion = norse }
 }
 spalding = {
-	define_pop = {	type = peasants	size = 23.298	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 23.298	culture = PV_norseanglo	religion = norse }
 }
 northampton = {
 	define_pop = {	type = peasants	size = 22.842	culture = english	religion = catholic }
@@ -6696,7 +6696,7 @@ daventry = {
 }
 kettering = {
 	define_pop = {	type = peasants	size = 14.812	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 coventry = {
 	define_pop = {	type = peasants	size = 9.776	culture = english	religion = catholic }
@@ -6788,43 +6788,43 @@ north_york_moors = {
 }
 hull = {
 	define_pop = {	type = peasants	size = 13.424	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.712	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 6.712	culture = PV_norseanglo religion = norse }
 }
 bridlington = {
 	define_pop = {	type = peasants	size = 10.811	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.712	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 6.712	culture = PV_norseanglo religion = norse }
 }
 selby = {
 	define_pop = {	type = peasants	size = 12.121	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.060	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 6.060	culture = PV_norseanglo religion = norse }
 }
 norton = {
 	define_pop = {	type = peasants	size = 12.725	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 6.363	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 6.363	culture = PV_norseanglo religion = norse }
 }
 leeds = {
-	define_pop = {	type = peasants	size = 8.292	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 8.292	culture = PV_norseanglo religion = norse }
 	define_pop = {	type = peasants	size = 4.145	culture = northumbrian	religion = catholic }
 }
 pontefract = {
-	define_pop = {	type = peasants	size = 9.427	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 9.427	culture = PV_norseanglo religion = norse }
 	define_pop = {	type = peasants	size = 4.713	culture = northumbrian	religion = catholic }
 }
 skipton = {
 	define_pop = {	type = peasants	size = 8.053	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.026	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 4.026	culture = PV_norseanglo religion = norse }
 }
 wakefield = {
-	define_pop = {	type = peasants	size = 8.506	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 8.506	culture = PV_norseanglo religion = norse }
 	define_pop = {	type = peasants	size = 4.253	culture = northumbrian	religion = catholic }
 }
 doncaster = {
-	define_pop = {	type = peasants	size = 10.560	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.560	culture = PV_norseanglo religion = norse }
 	define_pop = {	type = peasants	size = 5.280	culture = northumbrian	religion = catholic }
 }
 ripon = {
 	define_pop = {	type = peasants	size = 9.548	culture = northumbrian	religion = catholic }
-	define_pop = {	type = peasants	size = 4.773	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 4.773	culture = PV_norseanglo religion = norse }
 }
 pennines_04 = {
 }
@@ -6888,75 +6888,75 @@ nantwich = {
 	define_pop = {	type = peasants	size = 12.176	culture = english	religion = catholic }
 }
 norwich = {
-	define_pop = {	type = nobles	size = 0.115	culture = norse_gael	religion = norse }
-	define_pop = {	type = burghers	size = 0.990	culture = norse_gael	religion = norse }
-	define_pop = {	type = peasants	size = 61.137	culture = norse_gael religion = norse }
+	define_pop = {	type = nobles	size = 0.115	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = burghers	size = 0.990	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = peasants	size = 61.137	culture = PV_norseanglo religion = norse }
 }
 lynn = {
-	define_pop = {	type = nobles	size = 0.092	culture = norse_gael	religion = norse }
-	define_pop = {	type = burghers	size = 0.890	culture = norse_gael	religion = norse }
-	define_pop = {	type = peasants	size = 61.147	culture = norse_gael	religion = norse }
+	define_pop = {	type = nobles	size = 0.092	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = burghers	size = 0.890	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = peasants	size = 61.147	culture = PV_norseanglo	religion = norse }
 }
 yarmouth = {
-	define_pop = {	type = peasants	size = 53.357	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 53.357	culture = PV_norseanglo	religion = norse }
 }
 thetford = {
-	define_pop = {	type = peasants	size = 51.848	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 51.848	culture = PV_norseanglo	religion = norse }
 }
 fakenham = {
-	define_pop = {	type = peasants	size = 54.403	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 54.403	culture = PV_norseanglo	religion = norse }
 }
 colchester = {
 	define_pop = {	type = peasants	size = 17.204	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 11.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 11.137	culture = PV_norseanglo religion = norse }
 }
 chelmsford = {
 	define_pop = {	type = peasants	size = 27.566	culture = english	religion = catholic }
 }
 prittlewell = {
 	define_pop = {	type = peasants	size = 22.987	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 5.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 5.137	culture = PV_norseanglo religion = norse }
 }
 hedingham = {
 	define_pop = {	type = peasants	size = 12.906	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 walden = {
 	define_pop = {	type = peasants	size = 14.543	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 barking = {
 	define_pop = {	type = peasants	size = 13.174	culture = english	religion = catholic }
 }
 ipswich = {
-	define_pop = {	type = peasants	size = 43.668	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 43.668	culture = PV_norseanglo	religion = norse }
 }
 bury = {
-	define_pop = {	type = peasants	size = 36.037	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 36.037	culture = PV_norseanglo	religion = norse }
 }
 lowestoft = {
-	define_pop = {	type = peasants	size = 41.298	culture = norse_gael	religion = norse }
+	define_pop = {	type = peasants	size = 41.298	culture = PV_norseanglo	religion = norse }
 }
 lavenham = {
-	define_pop = {	type = nobles	size = 0.115	culture = norse_gael	religion = norse }
-	define_pop = {	type = burghers	size = 0.990	culture = norse_gael	religion = norse }
-	define_pop = {	type = peasants	size = 48.384	culture = norse_gael	religion = norse }
+	define_pop = {	type = nobles	size = 0.115	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = burghers	size = 0.990	culture = PV_norseanglo	religion = norse }
+	define_pop = {	type = peasants	size = 48.384	culture = PV_norseanglo	religion = norse }
 }
 cambridge = {
 	define_pop = {	type = peasants	size = 13.839	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 ely = {
 	define_pop = {	type = peasants	size = 3.669	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 huntingdon = {
 	define_pop = {	type = peasants	size = 12.146	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 royston = {
 	define_pop = {	type = peasants	size = 11.445	culture = english	religion = catholic }
-	define_pop = {	type = peasants	size = 10.137	culture = norse_gael religion = norse }
+	define_pop = {	type = peasants	size = 10.137	culture = PV_norseanglo religion = norse }
 }
 hertford = {
 	define_pop = {	type = peasants	size = 26.702	culture = english	religion = catholic }

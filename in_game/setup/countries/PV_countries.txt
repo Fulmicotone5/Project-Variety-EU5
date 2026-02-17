@@ -252,7 +252,7 @@ CYP = {
 P01 = {
 	color = rgb { 168 45 45 }
 
-	culture_definition = norse_gael
+	culture_definition = PV_norseanglo
 	religion_definition = norse
 }
 

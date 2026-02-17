@@ -21,6 +21,35 @@ PV_vinlander = {
 	dynasty_name_type = patronym
 }
 
+PV_norseanglo = {
+	language = danish_dialect
+	
+	color = rgb { 163 62 15 }
+	
+	tags = { icelandic_gfx norwegian_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		scandinavian_group british_group
+	}
+
+	opinions = {
+		english = enemy
+		welsh = negative
+		cornish = negative
+		norman = negative
+		norn_culture = kindred
+		danish = kindred
+		icelandic = kindred
+		norwegian = kindred
+		norse_gael = positive
+	}
+	
+
+	use_patronym = yes
+
+	dynasty_name_type = patronym
+}
+
 daqinren = {
 	language = northern_mandarin_dialect
 
