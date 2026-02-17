@@ -395,7 +395,7 @@ daneflavor.8 = {
 				change_location_rank = location_rank:city
 			}
 		}
-		add_gold = -800
+		add_gold = -400
 		set_capital = location:boston
 		change_societal_value = { type = land_vs_naval	value = 25	}
 		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }

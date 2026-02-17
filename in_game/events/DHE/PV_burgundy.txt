@@ -282,7 +282,6 @@ burflavor.5 = {
 	}
 	option = {
 		name = burflavor.5.a
-		historical_option = yes
 		c:BUR = {
 			trigger_event_non_silently = {
 				id = burflavor.6
@@ -294,6 +293,15 @@ burflavor.5 = {
 		c:BUR = {
 			trigger_event_non_silently = {
 				id = burflavor.7
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				c:BUR = {
+					is_ai = no
+				}
 			}
 		}
 	}
@@ -363,6 +371,19 @@ burflavor.7 = {
 			}
 			set_country_rank_effect = {
 				rank = country_rank:rank_kingdom
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_ai = yes
+					c:FCB = {
+						is_ai = yes
+					}
+				}
+				annex_country = {
+					country = c:FCB
+				}
 			}
 		}
 		area:provence_area = {
@@ -543,5 +564,82 @@ burflavor.9 = {
 				add_core = root
 			}
 		}
+	}
+}
+
+burflavor.10 = {
+	type = country_event
+	title = burflavor.10.title
+	desc = burflavor.10.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		tag = BGP
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:burghers_estate
+			background = estate_type:clergy_estate
+		}
+		ruler = {
+			save_scope_as = target_character			# First character portrait
+		}
+	}
+	trigger = {
+		own_entire_area = area:provence_area
+		own_entire_area = area:savoy_area
+		own_entire_area = area:lyonnais_area
+		own_entire_area = area:franche_comte_area
+		own_entire_area = area:western_switzerland_area
+		own_entire_area = area:central_switzerland_area
+		own_entire_area = area:burgundy_area
+	}
+	option = {
+		name = burflavor.10.a
+		add_stability = 7
+	}
+	option = {
+		name = burflavor.10.b
+		historical_option = yes
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		change_country_name = F25
+		add_legitimacy = 10
+	}
+	option = {
+		name = burflavor.10.c
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		change_country_name = F26
+		change_country_adjective = F26_ADJ
+		if = {
+			limit = {
+				owns = location:arles
+				location:arles = {
+						is_capital = no
+				}
+			}
+			set_capital = location:arles
+		}
+		if = {
+			limit = {
+				location:arles = {
+					NOT = {
+						location_rank = location_rank:city
+					}
+				}
+			}
+			location:arles = {
+				change_development = 5
+				change_location_rank = location_rank:city
+			}
+		}
+		add_legitimacy = 10
 	}
 }

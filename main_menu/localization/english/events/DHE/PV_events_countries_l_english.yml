@@ -183,6 +183,11 @@
  burflavor.9.title: "The New King of [ROOT.GetCountry.GetName]"
  burflavor.9.desc: "In accordance with established tradition, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has been crowned as the King of [ROOT.GetCountry.GetName] at the Cathedral of [ShowLocationName('arles')]. Although the legality of this act remains subject to debate, no objections have been raised to contest it, thereby resulting in the official restoration of the Kingdom of [ROOT.GetCountry.GetName]."
  burflavor.9.a: "Long Live [ROOT.GetCountry.GetName]!"
+ burflavor.10.title: "King of all Burgundies"
+ burflavor.10.desc: "With the reclamation of all de jure Burgundian territories, the [ROOT.GetCountry.GetGovernment.GetRulerTitle] has ultimately assumed sovereignty over the entire Burgundian region. By exercising his authority over Bourgogne Franque, Bourgogne Transjurane, Bourgogne Cisjurane, and Bourgogne Arlésienne, [ROOT.GetCountry.GetGovernment.GetRuler.GetName] has achieved the status of King of all Burgundies. This significant occasion presents an opportunity to formally update the official nomenclature of the nation to reflect this sovereign status."
+ burflavor.10.a: "Keep the nomenclature as is"
+ burflavor.10.b: "[ROOT.GetCountry.GetGovernment.GetRuler.GetName] is [ROOT.GetCountry.GetGovernment.GetRulerTitle] of all Burgundies!"
+ burflavor.10.c: "[ROOT.GetCountry.GetName] should be officially renamed to reflect its original capital, [ShowLocationName('arles')]!"
 
  liqflavor.1.title: "Heirs of Rome"
  liqflavor.1.desc: "The Republic of [ROOT.GetCountry.GetName] was established by the descendants of Roman legionaries who were taken prisoner during the Battle of Carrhae. The inhabitants of Liqian are the descendants of these Roman prisoners, who were resettled by the victorious Parthians along their eastern frontier. Over the centuries, the Republic served under various overlords, a circumstance that contributed to the endurance of both their community and the institution of the Republic into our times."

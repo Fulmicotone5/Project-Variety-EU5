@@ -1339,7 +1339,7 @@ countries = {
 				individualism_vs_communalism = -20
 				outward_vs_inward = -20
 				reforms = {
-					french_appanage_reform
+					house_de_bourgogne
 				}
 			}
 			tolerated_cultures = {

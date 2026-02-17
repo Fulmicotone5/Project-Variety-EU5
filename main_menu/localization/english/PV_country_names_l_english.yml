@@ -163,3 +163,7 @@
  F24_f: "Zapadoslavia"
  F24: "Zapadoslavia" 
  F24_ADJ: "Zapadoslavian"
+ F25: "Four Burgundies" 
+ F25_THE: "$common_string_prefix_article$" 
+ F26: "Arles"
+ F26_ADJ: "Arlésienne"
