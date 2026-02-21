@@ -70,3 +70,10 @@ colors = {
 colors = {
 	map_PVF24 = rgb { 11 13 82 }
 }
+colors = {
+	map_PVF27 = rgb { 44 6 77 }
+	
+}
+colors = {
+	map_PVF28 = rgb { 138 28 48 }
+}

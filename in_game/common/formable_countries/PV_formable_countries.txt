@@ -1069,3 +1069,85 @@ F24_f = {
 	}
 
 }
+F27_f = {
+	level = 4
+	required_locations_fraction = 0.8
+	rule = historical
+
+	potential = {
+		or = {
+			has_or_had_tag = ENG
+			has_or_had_tag = FRA
+		}
+	}
+
+	allow = {
+		owns = location:london
+		owns = location:paris
+	}
+
+	name = F27
+	flag = F27
+	adjective = F27_ADJ
+	tag = F27
+	color = map_PVF27
+
+	areas = {
+		home_counties_area
+		east_anglia_area
+		west_country_area
+		midlands_area
+		wales_area
+		northumbria_area
+	}
+	regions = {
+		france_region
+	}	
+	form_effect = {
+		set_country_rank_effect = { rank = country_rank:rank_empire }
+	}
+
+}
+
+#F28_f = {
+#	level = 4
+#	required_locations_fraction = 0.06
+#	rule = historical
+#
+#	potential = {
+#		has_or_had_tag = BGP
+#	}
+#
+#	allow = {
+#	}
+#
+#	name = F28
+#	flag = F28
+#	adjective = F28_ADJ
+#	tag = F28
+#	color = map_PVF28
+#
+#	areas = {
+#		provence_area
+#		savoy_area
+#		lyonnais_area
+#		franche_comte_area
+#		western_switzerland_area
+#		central_switzerland_area
+#		liguria_area
+#		languedoc_area
+#		catalonia_area
+#		valencia_area
+#		balearics_area
+#		burgundy_area
+#		auvergne_area
+#		piemonte_area
+#	}
+#	provinces = {
+#		rouergue_province
+#	}
+#	form_effect = {
+#		set_country_rank_effect = { rank = country_rank:rank_empire }
+#	}
+#
+#}

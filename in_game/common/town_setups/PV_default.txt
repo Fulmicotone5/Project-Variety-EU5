@@ -1,11 +1,14 @@
 TRY_INJECT:scandinavian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:important_scandinavian_town = {
 	smokehouse = 3
+	bathouse = 1
 }
 TRY_INJECT:baltic_town = {
 	smokehouse = 2
+	bathouse = 1
 }
 TRY_INJECT:russian_city = {
 	smokehouse = 2
@@ -14,21 +17,26 @@ TRY_INJECT:russian_city = {
 }
 TRY_INJECT:russian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:polish_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:ruthenian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:british_town = {
 	smokehouse = 1
 }
 TRY_INJECT:british_town_port = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:iberian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:iberian_city = {
 	smokehouse = 1
@@ -45,6 +53,7 @@ TRY_INJECT:lowlands_town = {
 }
 TRY_INJECT:lowlands_costal_town = {
 	smokehouse = 2
+	bathouse = 1
 }
 TRY_INJECT:lowlands_city = {
 	smokehouse = 2
@@ -58,6 +67,7 @@ TRY_INJECT:lowlands_coastal_city = {
 }
 TRY_INJECT:french_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:french_city = {
 	smokehouse = 1
@@ -66,6 +76,7 @@ TRY_INJECT:french_city = {
 }
 TRY_INJECT:jurchen_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:chinese_town = {
 	smokehouse = 1
@@ -116,6 +127,7 @@ TRY_INJECT:german_coastal_city = {
 }
 TRY_INJECT:greek_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:greek_city_port = {
 	smokehouse = 1
@@ -124,18 +136,22 @@ TRY_INJECT:greek_city_port = {
 }
 TRY_INJECT:greek_town_port = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:balkan_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:carpathian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:maghreb_town = {
 	smokehouse = 1
 }
 TRY_INJECT:maghreb_coastal_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:maghreb_coastal_city = {
 	smokehouse = 1
@@ -159,6 +175,7 @@ TRY_INJECT:anatolian_city = {
 }
 TRY_INJECT:anatolian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:indian_city = {
 	smokehouse = 1
@@ -182,9 +199,11 @@ TRY_INJECT:indian_sultanate_city = {
 }
 TRY_INJECT:indian_town = {
 	smokehouse = 2
+	bathouse = 1
 }
 TRY_INJECT:levant_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:levant_city = {
 	smokehouse = 2
@@ -212,9 +231,11 @@ TRY_INJECT:south_east_woodlands_town = {
 }
 TRY_INJECT:italian_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:italian_coastal_town = {
 	smokehouse = 1
+	bathouse = 1
 }
 TRY_INJECT:italian_city = {
 	smokehouse = 1
@@ -223,6 +244,7 @@ TRY_INJECT:italian_city = {
 }
 TRY_INJECT:italian_trading_capital = {
 	smokehouse = 2
+	bathouse = 1
 }
 TRY_INJECT:italian_coastal_city = {
 	smokehouse = 2

@@ -23,7 +23,7 @@ noanta = {
 		}
 
 	}
-	antagonism_received_modifier = -0.25
+	antagonism_received_modifier = -0.2
 
 	requires = unlock_armored_horsemen_advance
 }
@@ -56,7 +56,7 @@ legacy_of_great_warriors = {
 			has_or_had_tag = F17 
 		}
 	}
-	land_morale_modifier = 0.1
+	land_morale_modifier = 0.05
 	monthly_army_tradition = 0.05
 
 	requires = organized_religion

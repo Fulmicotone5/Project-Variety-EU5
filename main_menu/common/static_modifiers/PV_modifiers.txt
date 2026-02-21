@@ -7,7 +7,6 @@ TRY_REPLACE:inverse_control = {
 		category = location
 	}
 
-	local_build_buildings_cost = 0.5 #PV
 	
 	local_crown_estate_power = -1.0
 	local_pop_promotion_speed_modifier = -1.0

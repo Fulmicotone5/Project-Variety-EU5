@@ -1,0 +1,15 @@
+bos_hill = {
+	age = age_1_traditions
+	potential = {
+		or = {
+			has_or_had_tag = BOS
+			has_or_had_tag = CRO
+		}
+	}
+	hills_proximity_impact = -0.75
+	mountains_proximity_impact = -0.9
+	plateau_proximity_impact = -0.75
+
+	requires = city_building_advance
+	icon = mountain_roads
+}

@@ -260,11 +260,9 @@ house_de_bourgogne = {
 colonial_administration = {
 	age = age_3_discovery
 
-	societal_values = {
-		outward_focus
-	}
+	
 	country_modifier = {
-		monthly_towards_outward = societal_value_monthly_move
+		monthly_towards_outward = societal_value_significant_monthly_move
 		num_naval_governors = 1
 	}
 

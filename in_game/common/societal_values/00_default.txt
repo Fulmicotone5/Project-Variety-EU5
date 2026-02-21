@@ -339,6 +339,7 @@ outward_vs_inward = {
 	
 		colonial_migration_size_modifier = 1.0
 		cultural_tradition_modifier = -0.5
+		global_max_control = -0.1
 		
 		
 		aggressiveness_modifier = 0.05

@@ -116,6 +116,7 @@ locations={
 	knin = { rank = town 			town_setup = balkan_town }	
 	rijeka = { rank = town 			town_setup = balkan_town }	
 	zagreb = { rank = town 			town_setup = balkan_town }	
+	doboj = { rank = town 			town_setup = balkan_town }	
 	
 	#Italy	
 	aquila = { rank = city			town_setup = italian_city }
@@ -2305,6 +2306,10 @@ building_manager = {
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
 	dock = { tag = BYZ level = 1 location = constantinople }
 	sergeantry = { tag = TUR level = 1 location =  bursa }
+	sergeantry = { tag = BOS level = 1 location =  doboj }
+	bailiff = { tag = BOS level = 1 location =  srebrenica }
+	bailiff = { tag = CRO level = 1 location =  bihac }
+	sergeantry = { tag = CRO level = 1 location =  knin }
 
 
 	sewers = { tag = BYZ level = 1 location =  constantinople }
@@ -2312,6 +2317,7 @@ building_manager = {
 	sewers = { tag = PAP level = 1 location =  naples }
 	sewers = { tag = ENG level = 1 location =  london }
 	bathouse = { tag = ENG level = 1 location =  london }
+	bathouse = { tag = BUR level = 1 location =  dijon }
 	
 	castle = { tag = KNI level = 1 location =  rodos }
 	castle = { tag = SER level = 1 location =  kozelj }

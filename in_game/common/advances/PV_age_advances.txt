@@ -24,3 +24,13 @@ washhouses_advance = {
 	requires = lazaretto_advance
 
 }
+
+colonial_governors = {
+	age = age_3_discovery
+	icon = a_trading_hub
+	
+	unlock_government_reform = colonial_administration
+
+	requires = port_cost_distance_from_capital_advance
+
+}

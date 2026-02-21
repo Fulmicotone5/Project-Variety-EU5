@@ -1,5 +1,8 @@
 TRY_REPLACE:cb_following_through_on_threat = {
     ai_selection_desire = 1000
+    cut_down_in_size_cb = yes
+	ai_subjugation_desire = -100
+	ai_cede_location_desire = -100
     visible = {
         always = no
     }

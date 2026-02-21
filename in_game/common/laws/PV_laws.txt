@@ -6,7 +6,7 @@ TRY_REPLACE:nobles_rights_laws = {
 			global_nobles_estate_power = 1
 			nobles_estate_levy_size = 0.2
 			crown_estate_blocked_from_cabinet = yes
-			nobles_estate_max_tax = 0.1
+			nobles_estate_max_tax = 0.05
 		}
 		estate_preferences = {
 			nobles_estate
@@ -17,7 +17,7 @@ TRY_REPLACE:nobles_rights_laws = {
 		country_modifier = {
 			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			global_nobles_estate_power = -1
-			nobles_estate_max_tax = 0.15
+			nobles_estate_max_tax = 0.1
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			nobles_estate_blocked_from_cabinet = yes
 		}
@@ -135,7 +135,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	}
 	dop_favor_the_nobles = {
 		country_modifier = {
-			global_nobles_estate_power = 1.0
+			global_nobles_estate_power = 2.5
 			nobles_estate_max_tax = 0.1
 			nobles_estate_agenda_impact = 0.1
 			global_nobles_food_consumption = 0.1

@@ -10,6 +10,19 @@
 			}
 		}
 	}
+	text = {#PV
+		localization_key = rank_engfra
+		trigger = {
+			government_type = government_type:monarchy
+			tag = F27
+		}
+	}
+	text = {#PV
+		localization_key = rank_bur
+		trigger = {
+			tag = F28
+		}
+	}
 	text = {
 		localization_key = rank_domion_satsuma
 		trigger = {

@@ -39,3 +39,5 @@
  washhouses_advance: "Wash Houses"
  washhouses_advance_desc: "$washhouse_desc$"
  STATIC_MODIFIER_NAME_ducal_palace_pv: "Ducal Palace of Lyon"
+ colonial_governors: "Colonial Governorship"
+ colonial_governors_desc: "$naval_governor_desc$"

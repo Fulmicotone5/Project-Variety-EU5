@@ -145,7 +145,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
 	
     #Appanages
     dependency = { first = FRA second = BUR subject_type = appanage }
-    dependency = { first = FRA second = ALE subject_type = appanage }
+    dependency = { first = BUR second = ALE subject_type = vassal } #PV
     dependency = { first = FRA second = BOU subject_type = appanage }
     dependency = { first = FRA second = AUX subject_type = appanage }
     dependency = { first = FRA second = SAN subject_type = appanage }
@@ -164,7 +164,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = TOU second = AUV subject_type = appanage }
     dependency = { first = FRA second = BLS subject_type = vassal }
     dependency = { first = FRA second = MRT subject_type = vassal }
-    dependency = { first = FRA second = TON subject_type = vassal }
+    dependency = { first = BUR second = TON subject_type = fiefdom } #PV
     dependency = { first = FRA second = MON subject_type = vassal }
     dependency = { first = FRA second = AUM subject_type = vassal }
     dependency = { first = FRA second = ROU subject_type = vassal }
@@ -175,7 +175,6 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     dependency = { first = ARS second = STP subject_type = vassal }
     dependency = { first = FOI second = BRR subject_type = fiefdom }
     dependency = { first = FOI second = MDM subject_type = fiefdom }
-    dependency = { first = ALE second = PRC subject_type = fiefdom }
 
     #-------Italy-------
     dependency = { first = NAP second = ACH subject_type = vassal }

@@ -47,27 +47,27 @@ TRY_REPLACE:p_building_age_1_traditions = {
 }
 TRY_REPLACE:p_building_age_2_renaissance = {
 	scaled_gold = 1
-	min_scale = 100
+	min_scale = 60
 	max_scale = 600
 }
 TRY_REPLACE:p_building_age_3_discovery = {
 	scaled_gold = 1
-	min_scale = 200
+	min_scale = 80
 	max_scale = 800
 }
 TRY_REPLACE:p_building_age_4_reformation = {
 	scaled_gold = 2
-	min_scale = 300
+	min_scale = 120
 	max_scale = 1200
 }
 TRY_REPLACE:p_building_age_5_absolutism = {
 	scaled_gold = 2
-	min_scale = 400
+	min_scale = 160
 	max_scale = 1600
 }
 TRY_REPLACE:p_building_age_6_revolutions = {
 	scaled_gold = 3
-	min_scale = 600
+	min_scale = 240
 	max_scale = 2400
 }
 

@@ -51,9 +51,14 @@ TRY_REPLACE:harbor_administration = {
 
 TRY_REPLACE:colonial_expansion = {
 	age = age_3_discovery
+
+	societal_values = {
+		outward_focus
+	}
+	
 	country_modifier = {
 		num_naval_governors = 1
-		monthly_towards_outward = societal_value_large_monthly_move
+		monthly_towards_outward = societal_value_monthly_move
 		colonial_range_modifier = 0.1
 	}
 

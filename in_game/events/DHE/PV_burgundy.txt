@@ -282,8 +282,13 @@ burflavor.5 = {
 		event_illustration_estate_effect = {
 			event_illustration_government_estate_effect = yes
 		}
-		ruler = {
+		c:BUR = {
+			ruler = {
 			save_scope_as = target_character			# First character portrait
+			}
+		}
+		ruler = {
+			save_scope_as = target_character2			# First character portrait
 		}
 	}
 	option = {
@@ -660,7 +665,7 @@ burflavor.11 = {
 		tag = BGP
 		from = 1336.1.1
 		to = 1835.1.1
-		monthly_chance = 1
+		monthly_chance = 20
 	}
 	illustration_tags = {
 		10 = regular
@@ -689,7 +694,12 @@ burflavor.11 = {
 	}
 	option = {
 		name = burflavor.11.b
-		add_gold = -200
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_gold = -200
+		}
 		historical_option = yes
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.05 }
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = -0.15 }
@@ -707,5 +717,422 @@ burflavor.11 = {
 			value = -0.15
 		}
 		add_gold = 200
+	}
+}
+
+burflavor.12 = {
+	type = country_event
+	title = burflavor.12.title
+	desc = burflavor.12.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		tag = BGP
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 50
+	}
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:burghers_estate
+		}
+	}
+	trigger = {
+		own_entire_province = province_definition:champagne_province
+		is_integrating = province_definition:champagne_province
+	}
+	option = {
+		name = burflavor.12.a
+		add_estate_satisfaction = { type = estate_type:peasants_estate  value = 0.05 }
+		add_stability = 7
+		add_prestige = prestige_mild_bonus
+		add_accepted_culture = culture:champenais
+		province_definition:champagne_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 100
+			}
+		}
+	}
+}
+
+burflavor.13 = {
+	type = country_event
+	title = burflavor.13.title
+	desc = burflavor.13.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		tag = BGP
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 20
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:burghers_estate
+			background = estate_type:nobles_estate
+		}
+	}
+	trigger = {
+		owns = location:avignon
+		total_building_levels_including_construction:local_governor < modifier:num_local_governors
+	}
+	option = {
+		name = burflavor.13.a
+		add_legitimacy = 10
+		c:PAP = {
+			add_opinion = {
+				target = root
+				modifier = opinion_good_relations
+			}
+		}
+	}
+	option = {
+		name = burflavor.13.b
+		add_gold = -50
+		location:avignon = {
+			if = {
+				limit = {
+					has_building = building_type:seat_of_cardinal
+				}
+				change_building_level_in_location = {
+					building = building_type:seat_of_cardinal
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					has_building = building_type:papal_archives
+				}
+				change_building_level_in_location = {
+					building = building_type:papal_archives
+					value = -1
+				}
+			}
+			construct_building = {
+					building_type = building_type:local_governor
+					cost_multiplier = 0.5
+			}
+		}
+	}
+	option = {
+		name = burflavor.13.c
+		historical_option = yes
+		trigger = {
+			location:avignon = {
+			NOT = {
+					location_rank = location_rank:city
+				}
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_gold = -250
+		}
+		location:avignon = {
+			change_location_rank = location_rank:city
+			if = {
+				limit = {
+					has_building = building_type:seat_of_cardinal
+				}
+				change_building_level_in_location = {
+					building = building_type:seat_of_cardinal
+					value = -1
+				}
+			}
+			if = {
+				limit = {
+					has_building = building_type:papal_archives
+				}
+				change_building_level_in_location = {
+					building = building_type:papal_archives
+					value = -1
+				}
+			}
+			construct_building = {
+					building_type = building_type:local_governor
+					cost_multiplier = 0.5
+			}
+		}
+	}
+}
+
+burflavor.14 = {
+	type = country_event
+	title = burflavor.14.title
+	desc = burflavor.14.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		tag = BGP
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+		ruler = {
+			save_scope_as = target_character			# First character portrait
+		}
+	}
+	trigger = {
+		has_or_had_tag = BGP
+		country_rank = country_rank:rank_kingdom
+		in_union_with = c:FCB
+		c:FCB = {
+			is_ai = yes
+		}
+	}
+	option = {
+		name = burflavor.14.a
+		add_stability = 7
+		add_legitimacy = 5
+		c:FCB = {
+			add_opinion = {
+				target = root
+				modifier = opinion_good_relations
+			}
+		}
+	}
+	option = {
+		name = burflavor.14.b
+		add_legitimacy = -5
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+		c:FCB = {
+				make_subject_of = {
+					target = c:BGP
+					type = subject_type:fiefdom
+				}
+				add_opinion = {
+				target = root
+				modifier = opinion_displeased
+			}
+		}
+	}
+	option = {
+		name = burflavor.14.c
+		historical_option = yes
+		add_legitimacy = -20
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		annex_country = {
+					country = c:FCB
+		}
+	}
+}
+
+burflavor.15 = {
+	type = country_event
+	title = burflavor.15.title
+	desc = burflavor.15.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = BUR
+		tag = BGP
+		from = 1336.1.1
+		to = 1835.1.1
+		monthly_chance = 20
+	}
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:clergy_estate
+		}
+	}
+	trigger = {
+		has_or_had_tag = BGP
+		country_rank = country_rank:rank_kingdom
+		not = {
+			owns = location:avignon
+		}
+	}
+	option = {
+		historical_option = yes
+		name = burflavor.15.a
+		c:PAP = {
+			trigger_event_non_silently = {
+				id = burflavor.16
+			}
+		}
+	}
+	option = {
+		name = burflavor.15.b
+		add_stability = 7
+	}
+}
+
+burflavor.16 = {
+	type = country_event
+	title = burflavor.16.title
+	desc = burflavor.16.desc
+	fire_only_once = yes
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:peasants_estate
+			background = estate_type:clergy_estate
+		}
+		c:BGP = {
+			ruler = {
+			save_scope_as = target_character			# First character portrait
+			}
+		}
+		ruler = {
+			save_scope_as = target_character2			# First character portrait
+		}
+	}
+	option = {
+		name = burflavor.16.a
+		add_legitimacy = 5
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = 0.05
+		}
+		c:BGP = {
+			trigger_event_non_silently = {
+				id = burflavor.17
+			}
+		}
+	}
+	option = {
+		name = burflavor.16.b
+		trigger = {
+			owns = location:rome
+		}
+		historical_option = yes
+		add_gold = 100
+		revoke_estate_privilege = estate_privilege:french_cardinals
+		c:BGP = {
+			trigger_event_non_silently = {
+				id = burflavor.18
+			}
+		}
+		add_legitimacy = -10
+		add_stability = -7
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = -0.15
+		}
+		set_capital = location:rome
+	}
+}
+
+burflavor.17 = {
+	type = country_event
+	title = burflavor.17.title
+	desc = burflavor.17.desc
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = angry
+		10 = exterior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:clergy_estate
+			background = estate_type:nobles_estate
+		}
+		random_country = {
+						limit = { owns = location:avignon }
+						save_scope_as = target_country
+					}
+	}
+	option = {
+		name = burflavor.17.a
+		add_legitimacy = -10
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = -0.10
+		}
+		root = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:avignon.province
+			}
+		}
+		c:PAP = {
+			add_opinion = {
+				target = root
+				modifier = opinion_displeased
+			}
+		}
+	}
+	option = {
+		name = burflavor.17.b
+		add_legitimacy = 5
+		c:PAP = {
+			add_opinion = {
+				target = root
+				modifier = opinion_good_relations
+			}
+		}
+	}
+}
+
+burflavor.18 = {
+	type = country_event
+	title = burflavor.18.title
+	desc = burflavor.18.desc
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:nobles_estate
+		}
+		c:PAP = {
+			ruler = {
+			save_scope_as = target_character			# First character portrait
+			}
+		}
+	}
+	option = {
+		name = burflavor.18.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_gold = -100
+		}
+		location:avignon = {
+			change_location_owner = c:BGP
+		}
+		add_opinion = {
+				target = c:PAP
+				modifier = opinion_good_relations
+		}
 	}
 }

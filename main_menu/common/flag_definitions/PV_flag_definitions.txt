@@ -358,6 +358,28 @@ F24 = { # Zapadoslavia
 		}
 	}
 }
+F27 = { # DM
+	flag_definition = {	
+		coa = F27
+		subject_canton = F27
+		priority = 10
+	}
+	flag_definition = {
+		coa = F27_monarchy
+		priority = 15
+		trigger = { 
+			coa_def_monarchy_trigger = yes
+		}
+	}
+}
+
+F28 = {
+	flag_definition = {	
+		coa = F28
+		subject_canton = F28
+		priority = 10
+	}
+}
 
 BUR = { # Burgundy
 	# BUR - Ancient : Barry OB & border G

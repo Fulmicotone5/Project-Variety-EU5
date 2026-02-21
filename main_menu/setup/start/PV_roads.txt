@@ -30,4 +30,23 @@ road_network = {
 	dijon = beaune
 	beaune = autun
 	autun = cercy
+	doboj = zenica
+	doboj = srebrenik
+	doboj = glaz
+	doboj = kljuc
+	doboj = soli
+	doboj = vukovar
+	doboj = pozega
+	soli = srebrenica
+
+	zagreb = sisak
+	sisak = petrinja
+	petrinja = bihac
+	bihac = srb
+	srb = knin
+	knin = novigrad
+	knin = sibenik
+	knin = split
+	knin = sinj
+	sinj = makarska
 }
