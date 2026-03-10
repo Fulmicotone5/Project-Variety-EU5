@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ NSE_f: "北海至高王国"
+ NSE_f_desc: "[GetCharacter('eng_cnut_the_great').GetName]昔日统治的疆域横跨[ShowAreaName('north_sea_area')]两岸，从[ShowRegionName('scandinavian_region')]半岛一直延伸至[ShowRegionName('great_britain_region')]群岛。如今，是时候重建如此伟大的帝国，让所有这些领土都归于我们的旗帜之下。"
+ BYZ_f: "罗马帝国"
+ BYZ_f_desc: "荣耀的罗马帝国已经消失了，但是只要罗马人还在[ShowLocationName('constantinople')]，希望的火种就不会熄灭。如同凤凰从灰烬中盘旋重生，东罗马的遗存亦当如此。但在我们重新凝聚成生机勃勃的帝国之前，必须平息内部分歧，确保众人同心戮力。毕竟，我们能在精神上承袭罗马帝国的地位，但唯有证明自身配得上这份荣光，方能重获其名……"

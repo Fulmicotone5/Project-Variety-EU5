@@ -635,6 +635,7 @@ countries = {
 				qasr_farafra
 			}
 			own_control_integrated = {
+				aqaba
 				el_arish
 				nekhel
 				qatya
@@ -775,7 +776,6 @@ countries = {
 				jerusalem
 				acre
 				amman
-				aqaba
 				beersheba
 				gaza
 				hebron
@@ -995,6 +995,7 @@ countries = {
 					formal_guilds
 					clergy_literacy_rights
 					auxilium_et_consilium
+					pv_code_of_chivalry
 					nobles_land_rights
 					primacy_of_nobility
 					noble_armies

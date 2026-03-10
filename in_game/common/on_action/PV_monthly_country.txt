@@ -46,7 +46,7 @@ monthly_country_pulse = {
 				current_age = age_2_renaissance
 				total_population > 250
 			}
-			add_gold = 10
+			add_gold = 15
 		}
 		if = {
 			limit = {
@@ -58,7 +58,7 @@ monthly_country_pulse = {
 				current_date > 1367.5.20
 				total_population > 250
 			}
-			add_gold = 20
+			add_gold = 25
 		}
 		if = {
 			limit = {
@@ -70,7 +70,7 @@ monthly_country_pulse = {
 				current_date > 1397.5.20
 				total_population > 250
 			}
-			add_gold = 20
+			add_gold = 50
 		}
 		if = {
 			limit = {

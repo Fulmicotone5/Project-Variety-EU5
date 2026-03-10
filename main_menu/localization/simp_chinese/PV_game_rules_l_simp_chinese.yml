@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ rule_byz_name: "罗马帝国国名"
+ setting_byz_name_default: "默认"
+ setting_byz_name_default_desc: "以[ShowProvinceDefinitionName('constantinople_province')]为中心的[country|e]将被称为$BYZ_ADJ$帝国，因为西罗马帝国早在数个世纪前就已覆灭。"
+ setting_byz_name_ere: "$BYZ_eastern_rome_ADJ$帝国"
+ setting_byz_name_ere_desc: "以[ShowProvinceDefinitionName('constantinople_province')]为中心的[country|e]将被称为$BYZ_eastern_rome_ADJ$帝国，尽管西罗马帝国早已不复存在。"

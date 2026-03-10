@@ -13,7 +13,7 @@ pruflavor.1 = {
 		tag = F05
 		from = 1400.1.1
 		to = 1835.1.1
-		monthly_chance = 1
+		monthly_chance = 100
 	}
 
 	illustration_tags = {
@@ -63,10 +63,15 @@ pruflavor.1 = {
 			}
 		}
 		has_or_had_tag = PRU
-		has_heir = no
+		NOT = {
+			any_character = {
+			is_child_of = root.ruler
+			}
+		}
 		ruler ?= {
 			is_married = yes
 		}
+		is_in_union = no
 	}
 
 	option = {

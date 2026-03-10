@@ -37,3 +37,18 @@ PV_new_coiniage = {
 		monthly_inflation = -0.0007
 	}
 }
+
+PV_legalised_feud = {
+	estate = burghers_estate
+	
+
+	
+	can_revoke = {
+	}
+	
+	country_modifier = {
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_population_growth = -0.0001
+	}
+}

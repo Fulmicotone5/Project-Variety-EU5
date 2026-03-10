@@ -1,5 +1,5 @@
 TRY_INJECT:total_merchant_capacity_impact = {
-	great_power_score = 0.5
+	great_power_score = 0.05
  
 }
 TRY_INJECT:monthly_income_impact = {
@@ -61,3 +61,10 @@ TRY_REPLACE:capital_occupied = {
 	
 	monthly_war_exhaustion = 0.3 # Vanilla: 0.1 (Original Harsher Wars mod sets this to 0.5)
 }
+
+#PVdhimmi_tax_base = {
+#	potential_trigger = {
+#		exists = yes
+#	}
+#	dhimmi_estate_max_tax = -0.25
+#}

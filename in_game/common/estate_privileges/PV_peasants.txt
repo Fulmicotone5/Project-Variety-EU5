@@ -49,3 +49,92 @@ TRY_REPLACE:peasants_free_peasantry = {
 		monthly_towards_individualism = societal_value_monthly_move
 	}
 }
+
+pv_cuture_blending = {
+	estate = peasants_estate
+	
+
+	potential = {
+		OR = {
+			rank = country_rank:rank_kingdom
+			rank = country_rank:rank_empire
+		}
+	}
+	
+	country_modifier = {
+		global_pop_assimilation_speed_modifier = -0.5
+		cultures_capacity = 2
+		monthly_towards_free_subjects = societal_value_monthly_move
+	}
+}
+
+PV_hill_dwellers = {
+	estate = peasants_estate
+
+	allow = {
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_mountainshomes
+		}
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_wetlands
+		}
+	}
+	
+	country_modifier = {
+		hills_proximity_impact = -0.5
+		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_land = societal_value_monthly_move
+	}
+}
+PV_mountainshomes = {
+	estate = peasants_estate
+	
+
+	allow = {
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_hill_dwellers
+		}
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_wetlands
+		}
+	}
+	
+	country_modifier = {
+		mountains_proximity_impact = -0.5
+		plateau_proximity_impact = -0.5
+		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_land = societal_value_monthly_move
+	}
+}
+
+PV_wetlands = {
+	estate = peasants_estate
+	
+
+	allow = {
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_mountainshomes
+		}
+		NOT = {
+			has_estate_privilege = estate_privilege:PV_hill_dwellers
+		}
+	}
+	
+	country_modifier = {
+		wetlands_proximity_impact = -0.75
+		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_land = societal_value_monthly_move
+	}
+}
+
+PV_allowed_herbalism = {
+	estate = peasants_estate
+
+	country_modifier = {
+		peasants_estate_target_satisfaction = -0.025
+		global_peasants_estate_power = 0.5
+		global_disease_resistance = 0.02
+		monthly_towards_decentralization = societal_value_monthly_move
+		monthly_towards_traditionalist = societal_value_minor_monthly_move
+	}
+}

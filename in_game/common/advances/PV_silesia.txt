@@ -30,7 +30,7 @@ slavic_renaissance = {
 		has_or_had_tag = WRC
 	}
 	
-	cultural_influence = 0.1
+	cultural_influence_modifier = 0.1
 	global_max_literacy = 5
 
 	requires = renaissance_advance

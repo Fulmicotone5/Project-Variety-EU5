@@ -4,7 +4,7 @@ legacy_of_rome = {
 	potential = {
 		has_or_had_tag = P08
 	}
-	cultural_influence = 0.15
+	cultural_influence_modifier = 0.15
 
 	requires = cultural_acceptance_advance
 }

@@ -98,7 +98,7 @@ linguistic_dominance = {
 			has_or_had_tag = F17 
 		}
 	}
-	cultural_influence = 0.15
+	cultural_influence_modifier = 0.15
 	global_integration_speed_modifier = 0.2
 
 	requires = paper_workshop_advance

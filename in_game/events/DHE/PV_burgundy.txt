@@ -771,7 +771,7 @@ burflavor.13 = {
 	dynamic_historical_event = {
 		tag = BUR
 		tag = BGP
-		from = 1336.1.1
+		from = 1340.1.1
 		to = 1835.1.1
 		monthly_chance = 20
 	}

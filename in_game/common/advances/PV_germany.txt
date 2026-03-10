@@ -1,0 +1,220 @@
+PV_gergov = {
+
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+
+	age = age_1_traditions
+	icon = government_size_renaissance
+	requires = legalism_advance
+	
+	government_size = 1
+}
+PV_gerreform = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_1_traditions
+	icon = government_reforms
+	requires = legalism_advance
+	
+	government_reform_slots = 1
+}
+improve_relation_impact_ger = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_2_renaissance
+	icon = cultural_acceptance_advance
+
+	requires = subject_integration
+	
+	subject_loyalty = 5
+	subject_opinions = 10
+}
+relations_ger = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_3_discovery
+	icon = army_country_diplo_range_advance
+	
+	diplomatic_capacity = 1
+	improve_relation_impact = 0.10
+	
+	requires = formalized_relations
+}
+PV_gerprox = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_3_discovery
+	icon = global_trade_advance
+	requires = paved_road_advance
+	
+	global_distance_from_capital_speed_propagation = 0.1
+}
+PV_intgern = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_3_discovery
+	icon = scholasticism
+	requires = diplomatic_range_age_2
+	
+	global_integration_speed_modifier = 0.20
+	diplomatic_annexation_cost = -0.1
+}
+PV_useless = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_2_renaissance
+	icon = diplomatic_influence
+	requires = renaissance_advance
+	power_projection = 10
+	cultural_influence_modifier = 0.25
+}
+PV_GER5 = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F07
+		}
+	}
+	age = age_2_renaissance
+	icon = rudimentary_coastal_ship_repair
+	
+	requires = dock_advance
+
+	ship_build_speed = 0.2
+	global_maritime_presence_modifier = 0.05
+}
+PV_GER6 = {
+	age = age_3_discovery
+	icon = food_advance_renaissance
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+
+	requires = rural_rgo_disc_advance
+	
+	global_monthly_food_modifier = 0.15
+}
+PV_GER7 = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_5_absolutism
+	requires = lead_ore_dressing
+	icon = cas_royal_factories
+	global_coal_output_modifier = 0.25
+	global_iron_output_modifier = 0.25
+}
+PV_GER4 = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_4_reformation
+	icon = pop_promotion_speed_age_2
+	requires = supreme_court_advance
+	
+	global_pop_promotion_speed_modifier = 0.5
+}
+PV_GER3 = {
+	age = age_4_reformation
+	icon = encouraged_city_living
+		potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	non_rural_migration_attraction = 0.5
+	global_construction_speed = 0.25
+	requires = bole_smelting
+}
+PV_GER2 = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_5_absolutism
+	icon = banking_advance
+	monthly_inflation = -0.0005
+	global_road_building_time = -0.25
+	requires = absolutist_court
+}
+PV_GER1 = {
+	potential = {
+		or = {
+			has_or_had_tag = F05
+			has_or_had_tag = F06
+			has_or_had_tag = F07
+		}
+	}
+	age = age_6_revolutions
+	icon = austrian_military_flexibility
+	
+	requires = levee_en_masse_advance
+	
+	movement_speed_when_attached_to_another_unit = -0.25
+	combat_speed_modifier = 0.05
+	regiment_recruit_speed = 0.2
+}
+PV_GER = {
+	potential = {
+		has_or_had_tag = F07
+	}
+	age = age_1_traditions
+	icon = alpha_and_omega
+	
+	requires = organized_religion
+	
+	global_pop_conversion_speed_modifier = 0.5
+	tolerance_own = 1
+}

@@ -178,9 +178,80 @@ PV_silesia_grant = {
 		global_nobles_estate_power = 1
 		global_crown_estate_power = -0.33
 		
-		monthly_inflation = -0.001
+		monthly_inflation = -0.0005
 		
 
 		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+}
+
+pv_code_of_chivalry = {
+	estate = nobles_estate
+
+	
+	country_modifier = {
+		global_nobles_estate_power = 1
+		army_cavalry_power = 0.05
+		character_mil_child_education = 0.1
+		court_spending_cost = 0.02
+		
+
+		monthly_towards_aristocracy = societal_value_minor_monthly_move
+		monthly_towards_quality = societal_value_monthly_move
+		monthly_towards_individualism = societal_value_monthly_move
+	}
+}
+
+PV_staunch_traditionalism = {
+	estate = nobles_estate
+
+	
+	
+	can_revoke = {
+		government_power > 95
+	}
+	
+	country_modifier = {
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		global_nobles_estate_power = 1
+		government_reform_slots = 1
+		cultural_tradition_modifier = 0.5
+		cultural_influence_modifier = -0.5
+		global_defensive = 0.05
+		monthly_towards_traditionalist = societal_value_significant_monthly_move
+		monthly_towards_traditional_economy = societal_value_monthly_move
+	}
+}
+
+tabletop_warriors = {
+	estate = nobles_estate
+
+	
+	
+	can_revoke = {
+		government_power > 95
+	}
+	
+	country_modifier = {
+		global_nobles_estate_power = 1
+		character_dip_child_education = -0.1
+		character_mil_child_education = 0.25
+		character_adm_child_education = -0.1
+		monthly_towards_traditionalist = societal_value_monthly_move
+		monthly_towards_aristocracy = societal_value_monthly_move
+	}
+}
+
+frequent_court_events = {
+	estate = nobles_estate
+
+	
+	
+	country_modifier = {
+		monthly_prestige = 0.1
+		cultural_influence_modifier = 0.5
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
+		court_spending_cost = 0.03
+		monthly_towards_aristocracy = societal_value_large_monthly_move
 	}
 }

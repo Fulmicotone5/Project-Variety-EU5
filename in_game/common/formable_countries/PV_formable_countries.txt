@@ -157,7 +157,7 @@ F04_f = {
 }
 F05_f = {
 	level = 3
-	required_locations_fraction = 0.55
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -204,7 +204,7 @@ F05_f = {
 }
 F06_f = {
 	level = 3
-	required_locations_fraction = 0.55
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -235,7 +235,7 @@ F06_f = {
 }
 F07_f = {
 	level = 3
-	required_locations_fraction = 0.5
+	required_locations_fraction = 0.4
 	rule = historical
 
 	potential = {
@@ -286,7 +286,7 @@ F07_f = {
 }
 F08_f = {
 	level = 4
-	required_locations_fraction = 0.7
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -331,7 +331,7 @@ F08_f = {
 }
 F09_f = {
 	level = 2
-	required_locations_fraction = 0.65
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -384,7 +384,7 @@ F09_f = {
 }
 F10_f = {
 	level = 3
-	required_locations_fraction = 0.5
+	required_locations_fraction = 0.35
 	rule = historical
 
 	potential = {
@@ -498,13 +498,13 @@ F12_f = {
 	form_effect = {
 		if = {
 			limit = { country_rank_level < 3 }
-			set_country_rank_effect = { rank = country_rank:rank_empire }
+			set_country_rank_effect = { rank = country_rank:rank_kingdom }
 		}
 	}
 }
 F13_f = {
 	level = 4
-	required_locations_fraction = 0.7
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -1015,7 +1015,7 @@ F23_f = {
 }
 F24_f = {
 	level = 4
-	required_locations_fraction = 0.75
+	required_locations_fraction = 0.55
 	rule = historical
 
 	potential = {
