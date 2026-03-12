@@ -131,7 +131,7 @@ PV_allowed_herbalism = {
 	estate = peasants_estate
 
 	country_modifier = {
-		peasants_estate_target_satisfaction = -0.025
+		peasants_estate_target_satisfaction = 0.025
 		global_peasants_estate_power = 0.5
 		global_disease_resistance = 0.02
 		monthly_towards_decentralization = societal_value_monthly_move

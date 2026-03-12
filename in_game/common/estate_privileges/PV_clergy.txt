@@ -6,6 +6,10 @@ cathar_reforms = {
 		has_or_had_tag = TOU 
 		religion = religion:catharism
 	}
+
+	allow = {
+		religion = religion:catharism
+	}
 	
 	can_revoke = {
 		government_power > 95
@@ -60,7 +64,7 @@ PV_water_rituals = {
 	estate = clergy_estate
 
 	country_modifier = {
-		peasants_estate_target_satisfaction = 0.025
+		peasants_estate_target_satisfaction = -0.05
 		global_clergy_estate_power = 1
 		global_disease_resistance = 0.03
 		monthly_towards_communalism = societal_value_minor_monthly_move
