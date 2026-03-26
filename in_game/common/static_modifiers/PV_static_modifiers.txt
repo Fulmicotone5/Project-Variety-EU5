@@ -1,0 +1,13 @@
+TRY_REPLACE:growing_families = {
+	game_data = {
+		category = country
+	}
+	global_population_growth = 0.0004
+}
+
+TRY_REPLACE:community_schools = {
+	game_data = {
+		category = country
+	}
+	global_monthly_literacy = 0.03
+}

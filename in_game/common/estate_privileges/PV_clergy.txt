@@ -55,6 +55,7 @@ PV_legalism = {
 	
 	country_modifier = {
 		global_clergy_estate_power = 0.5
+		cultures_capacity = 3
 		diplomatic_capacity = 5
 		subject_loyalty = 10
 		war_no_cb_cost_modifier = 1
@@ -103,6 +104,8 @@ PV_loyalty_to_the_popw = {
 			country_rank_is_kingdom = yes
 			country_rank_is_duchy = yes
 		}
+		religion = religion:catholic
+		country_exists = c:PAP
 
 	}
 	can_revoke = {

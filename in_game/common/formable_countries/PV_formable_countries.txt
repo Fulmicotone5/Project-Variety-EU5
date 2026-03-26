@@ -40,7 +40,7 @@ F01_f = {
 }
 F02_f = {
 	level = 2
-	required_locations_fraction = 0.7
+	required_locations_fraction = 0.6
 	rule = historical
 
 	potential = {
@@ -78,7 +78,7 @@ F02_f = {
 }
 F03_f = {
 	level = 3
-	required_locations_fraction = 0.7
+	required_locations_fraction = 0.6
 	rule = historical
 
 	potential = {
@@ -520,6 +520,9 @@ F13_f = {
 	}
 
 	allow = {
+		NOT = {
+			has_or_had_tag = HUN
+		}
 	}
 	
 	name = F13

@@ -1,3 +1,40 @@
+TRY_REPLACE:destroy_market = {
+	government_power = 25
+	prestige = 5
+}
+TRY_REPLACE:change_parliament_type = {
+	government_power = 25
+}
+TRY_REPLACE:change_organization_parliament_type = {
+	government_power = 25
+}
+TRY_REPLACE:change_government_type_price = {
+	stability = 15
+	government_power = 25
+}
+TRY_REPLACE:change_court_language = {
+	government_power = 25
+}
+TRY_REPLACE:change_liturgical_language = {
+	stability = 20
+	government_power = 25
+}
+TRY_REPLACE:change_heir_selection = {
+	government_power = 30
+}
+TRY_REPLACE:change_employment_system = {
+	government_power = 5
+}
+TRY_REPLACE:remove_government_reform = {
+	stability = 15
+	righteousness = 10
+}
+TRY_REPLACE:create_market = {
+	gold = 100
+	scaled_gold = 5
+}
+
+
 TRY_REPLACE:city_upgrade = {
 	scaled_gold = 10
 	min_scale = 800

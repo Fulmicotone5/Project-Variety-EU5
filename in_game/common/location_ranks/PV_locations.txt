@@ -82,7 +82,7 @@ TRY_REPLACE:town = {
 	}
 	
 	allow = {
-		population >= 5
+		population >= 1
 		modifier:cannot_upgrade_location = no
 	}
 	

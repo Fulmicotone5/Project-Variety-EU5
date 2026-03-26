@@ -46,6 +46,7 @@ TRY_INJECT:direct_imperial_free_city = {
 }
 TRY_INJECT:colonial_nation = {
 	great_power_score_transfer = -0.75
+	can_be_annexed = yes
 }
 TRY_INJECT:conquistador = {
 	great_power_score_transfer = -0.5

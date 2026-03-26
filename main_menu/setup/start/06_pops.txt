@@ -16156,10 +16156,12 @@ baia_de_aries = {
 	define_pop = {	type = peasants	size = 2.068	culture = german_transylvanian	religion = catholic }
 	define_pop = {	type = peasants	size = 3.450	culture = hungarian	religion = catholic }
 }
-cluj = {
-	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }
+cluj = { #PV
+	define_pop = {	type = nobles	size = 0.022	culture = wallachian	religion = catholic }
+	define_pop = {	type = clergy	size = 0.096	culture = wallachian	religion = catholic }
+	define_pop = {	type = burghers	size = 1.638	culture = wallachian	religion = catholic }
 	define_pop = {	type = peasants	size = 4.273	culture = transylvanian	religion = orthodox }
-	define_pop = {	type = peasants	size = 17.113	culture = hungarian	religion = catholic }
+	define_pop = {	type = peasants	size = 57.113	culture = hungarian	religion = catholic }
 }
 huedin = {
 	define_pop = {	type = clergy	size = 0.009	culture = hungarian	religion = catholic }

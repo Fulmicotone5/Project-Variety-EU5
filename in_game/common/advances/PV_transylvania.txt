@@ -4,6 +4,18 @@ trans_diversity = {
 	potential = {
 		has_or_had_tag = TRA
 	}
-	cultures_capacity = 2
+	cultures_capacity = 3
 	requires = cultural_acceptance_advance
+}
+PV_carpathians = {
+	age = age_1_traditions
+	potential = {
+		has_or_had_tag = TRA
+	}
+	hills_proximity_impact = -0.5
+	mountains_proximity_impact = -0.5
+	plateau_proximity_impact = -0.5
+
+	requires = city_building_advance
+	icon = mountain_roads
 }

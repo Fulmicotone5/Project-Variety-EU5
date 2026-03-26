@@ -1218,6 +1218,82 @@ countries = {
 		capital = knin
 		country_rank = rank_kingdom
 	}
+
+	
+	SER = {
+		own_control_core = {
+			peja prizren bitola prilep kicevo tetovo kotor shkoder debar onogost gradina
+			budimlja brskovo gjakova mitrovica pristina novo_brdo skopje kumanovo veles prosek shtip
+			kratovo vranje podgorica bar_cg prijepolje visegrad ustikolina soko_grad
+			glubocica nis prokuplje stalac ravno jagodina gacko trebinje ohrid kocani strumica
+			krusevac kucevo branicevo rudnik smederevo krupanj valjevo uzice pljevlja
+			gradac zica trgoviste_SER sjenica velbuzd
+			arilje brvenik medveda
+		}
+		own_control_integrated = {
+			koman has dukagjini lezha florina
+		}
+		own_control_conquered = {
+			kovin carasova modos pancevo semlacu_mare veliky_beckerek
+			timisoara caransebes lugoj mihalt recas
+		}
+		our_cores_conquered_by_others = {
+			slano mostar konjic belgrad debrc sabac
+		}
+		starting_technology_level = 3
+		include = "expl_mediterranean"
+		include = "eastern_european_monarchy"
+		country_rank = rank_kingdom
+		government = {
+			type = monarchy
+			heir_selection = cognatic_primogeniture
+
+			ruler = ser_stefan_dusan
+			consort = ser_helena
+
+			ruler_term = { character = ser_stefan start_date = 1243.1.1 end_date = 1276.1.1 regnal_number = 1 }
+			ruler_term = { character = ser_stefan_dragutin start_date = 1276.1.1 end_date = 1282.1.1 regnal_number = 1 }
+			ruler_term = { character = ser_stefan_milutin start_date = 1282.1.1 end_date = 1321.10.29 regnal_number = 2 }
+			ruler_term = { character = ser_stefan_decanski start_date = 1322.1.6 end_date = 1331.9.8 regnal_number = 3 }
+			ruler_term = { character = ser_stefan_dusan start_date = 1331.9.8 regnal_number = 4 }
+
+			regnal_numbers = {
+				name_stephen = 1
+				name_stephen.name_uros = 4
+			}
+
+			privilege = {
+				#Nobles
+				bashtinas_and_pronijas_grants
+				zupa_districts
+				vlastele_krayishnik
+				feudal_mercenary_contracts
+
+				#Peasants
+				gradozadanje_and_gradobljudenlje_rights
+			}
+			laws = {
+				feudal_de_jure_law = by_tradition
+				medieval_levy_law = noble_levies
+				royal_court_customs_law = aristocratic_court_policy
+				administrative_system = feudal_administration
+				distribution_of_power_law = dop_traditional_distribution_of_power
+			}
+
+			quality_vs_quantity = 15
+			belligerent_vs_conciliatory = -10
+
+		}
+		tolerated_cultures = {
+			bulgarian bosnian wallachian
+		}
+
+		liturgical_language = church_slavonic_language
+
+		capital = prizren
+		dynasty = nemanjic_dynasty
+	}
+
 	
 
 	BOS = {
@@ -1589,6 +1665,14 @@ countries = {
 				odorhei
 				sfantu_gheorghe
 				miercurea_cluc				#szekelyfold_province
+				zarand arad baia_crisului ineu lipova
+				bihar beius cheresig debrecen oradea
+				crasna hodod zalau
+				szatmar baia_mare carei nagyecsed syvlyush
+				khust mezhorje sighet cuhea rakhiv
+			}
+			our_cores_conquered_by_others = {
+				timisoara caransebes lugoj mihalt recas
 			}
 			starting_technology_level = 3
 			include = "expl_eastern_europe"
@@ -1597,13 +1681,21 @@ countries = {
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = random
+				reforms = {
+					PV_state_ransom
+				}
+				privilege = {
+					peasants_allowed_weapons_privilege
+					auxilium_et_consilium
+				}
 			}
 			country_rank = rank_duchy
-			capital = huedin
-			tolerated_cultures = {
+			capital = cluj
+			accepted_cultures = {
 				hungarian
+			}
+			tolerated_cultures = {
 				german_transylvanian
-				szekely_culture
 			}
 		}
 		GLC = {

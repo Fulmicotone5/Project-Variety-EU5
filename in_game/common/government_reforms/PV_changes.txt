@@ -43,7 +43,7 @@ TRY_REPLACE:harbor_administration = {
 			}
 		}
 		local_monthly_development_modifier = 0.1
-		local_port_cost_distance_from_capital_speed_propagation = 0.2
+		local_port_cost_distance_impact = -0.2
 	}
 
 	years = 2
@@ -168,3 +168,27 @@ TRY_REPLACE:papacy_reform = {
 	years = 2
 }
 
+TRY_REPLACE:legacy_of_osman = { #change this
+	unique = yes
+	potential = {
+		has_or_had_tag = TUR
+
+		has_variable = tur_rise_of_ottoman_flag
+	}
+
+	locked = {
+		is_locked_mechanic = {
+			mechanic = government_reform
+			type = legacy_of_osman
+		}
+	}
+
+	country_modifier = {
+
+		global_integration_speed_modifier = 0.25
+		antagonism_received_modifier = 0.33
+		auto_slave_raid_different_religion = yes
+		government_reform_slots = 1
+	}
+	years = 2
+}

@@ -1,6 +1,7 @@
 market_manager = {
 	#PV
 	add_market = belle_isle
+	add_market = cluj
 
 	#europe
 	add_market = lubeck

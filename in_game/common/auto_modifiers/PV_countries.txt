@@ -7,8 +7,13 @@ TRY_INJECT:monthly_income_impact = {
  
 }
 TRY_INJECT:power_projection = {
-	great_power_score = 10
+	great_power_score = 5
  
+}
+TRY_REPLACE:num_embraced_institutions = {
+	scales_with = num_embraced_institutions
+
+	great_power_score_exempt_from_forfeit = 2
 }
 TRY_REPLACE:prestige = {
 	scales_with = {

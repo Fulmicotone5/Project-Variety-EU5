@@ -2,7 +2,7 @@ TRY_REPLACE:goods_gold = {
 	method = mining
 	category = raw_material
 	color = goods_gold
-	default_market_price = 6.5
+	default_market_price = 6
 
 	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
 	inflation = yes
@@ -23,7 +23,7 @@ TRY_REPLACE:silver = {
 	method = mining
 	category = raw_material
 	color = goods_silver
-	default_market_price = 5.5
+	default_market_price = 5
 	ai_rgo_size_importance = 10 # ai preference to avoid building a city on this rgo
 	inflation = yes
 	

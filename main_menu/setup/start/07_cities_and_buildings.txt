@@ -465,7 +465,7 @@ locations={
 	bucharest = { rank = town 			town_setup = carpathian_town }
 	buda = { rank = city 				town_setup = carpathian_town }
 	campulung_muscel = { rank = town	town_setup = carpathian_town  }
-	cluj = { rank = town	town_setup = carpathian_town  }
+	cluj = { rank = city	town_setup = italian_trading_capital  }
 	constanta = { rank = town	town_setup = carpathian_town  }
 	pecs = { rank = town 				town_setup = carpathian_town }
 	brasov = { rank = town 				town_setup = carpathian_town }
@@ -1551,6 +1551,7 @@ building_manager = {
 	# Palace of Westminster
 	royal_court 	= { tag = ENG level = 1 location = london }
 	sergeantry		= { tag = P01 level = 1 location = lincoln } # sergeants at arms
+	sergeantry		= { tag = TRA level = 1 location = cluj }
 
 	castle 		= { tag = PLE level = 1 location = dublin }
 	castle 		= { tag = ULS level = 1 location = carrickfergus }
@@ -2309,6 +2310,7 @@ building_manager = {
 	sergeantry = { tag = BOS level = 1 location =  doboj }
 	bailiff = { tag = BOS level = 1 location =  srebrenica }
 	bailiff = { tag = CRO level = 1 location =  bihac }
+	bailiff = { tag = TRA level = 1 location =  baia_crisului }
 	sergeantry = { tag = CRO level = 1 location =  knin }
 
 

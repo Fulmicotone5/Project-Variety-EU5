@@ -49,4 +49,13 @@ road_network = {
 	knin = split
 	knin = sinj
 	sinj = makarska
+
+	cluj = huedin
+	cluj = dabaca
+	dabaca = hodod
+	cluj = turda
+	turda = baia_de_aries
+	baia_de_aries = baia_crisului
+	huedin = oradea
+	oradea = beius
 }

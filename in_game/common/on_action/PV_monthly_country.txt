@@ -45,6 +45,7 @@ monthly_country_pulse = {
 				}
 				current_age = age_2_renaissance
 				total_population > 250
+				country_rank_is_county = no
 			}
 			add_gold = 15
 		}
@@ -56,7 +57,8 @@ monthly_country_pulse = {
 					has_reform = government_reform:daimyo
 				}
 				current_date > 1367.5.20
-				total_population > 250
+				total_population > 400
+				country_rank_is_county = no
 			}
 			add_gold = 25
 		}
@@ -68,7 +70,8 @@ monthly_country_pulse = {
 					has_reform = government_reform:daimyo
 				}
 				current_date > 1397.5.20
-				total_population > 250
+				total_population > 800
+				country_rank_is_county = no
 			}
 			add_gold = 50
 		}
@@ -80,8 +83,10 @@ monthly_country_pulse = {
 					has_reform = government_reform:daimyo
 				}
 				current_age = age_3_discovery
+				total_population > 800
+				country_rank_is_county = no
 			}
-			add_gold = 200
+			add_gold = 100
 		}
 		if = {
 			limit = {
@@ -91,6 +96,21 @@ monthly_country_pulse = {
 					has_reform = government_reform:daimyo
 				}
 				current_age = age_4_reformation
+				total_population > 800
+				country_rank_is_county = no
+			}
+			add_gold = 500
+		}
+		if = {
+			limit = {
+				is_ai = yes
+				is_subject = no 
+				NOT = {
+					has_reform = government_reform:daimyo
+				}
+				current_age = age_5_absolutism
+				total_population > 800
+				country_rank_is_county = no
 			}
 			add_gold = 1000
 		}
@@ -101,20 +121,11 @@ monthly_country_pulse = {
 				NOT = {
 					has_reform = government_reform:daimyo
 				}
-				current_age = age_5_absolutism
+				current_age = age_6_revolutions
+				total_population > 800
+				country_rank_is_county = no
 			}
 			add_gold = 2000
-		}
-		if = {
-			limit = {
-				is_ai = yes
-				is_subject = no 
-				NOT = {
-					has_reform = government_reform:daimyo
-				}
-				current_age = age_6_revolutions
-			}
-			add_gold = 4000
 		}
 	}
 }

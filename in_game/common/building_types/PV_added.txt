@@ -2,7 +2,7 @@ latrines = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
-	forbidden_for_estates = yes
+
 	employment_size = granary_employment
 	category = infrastructure_category
 	city = yes
@@ -28,7 +28,7 @@ bathouse = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
-	forbidden_for_estates = yes
+
 	employment_size = granary_employment
 	category = infrastructure_category
 	town = yes
@@ -55,7 +55,7 @@ washhouse = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
-	forbidden_for_estates = yes
+
 	employment_size = generic_peasant_building_employment
 	category = infrastructure_category
 	town = yes
@@ -84,7 +84,7 @@ sewers = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
-	forbidden_for_estates = yes
+
 	employment_size = generic_peasant_building_employment
 	category = infrastructure_category
 	city = yes
@@ -114,7 +114,7 @@ waste_disposal_system = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1
-	forbidden_for_estates = yes
+
 	employment_size = construction_employment
 	category = infrastructure_category
 	city = yes
