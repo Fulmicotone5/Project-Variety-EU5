@@ -10,6 +10,22 @@ TRY_INJECT:power_projection = {
 	great_power_score = 5
  
 }
+TRY_REPLACE:regular_army_size = {
+
+	scales_with = {
+		value = regular_army_size
+	}
+	
+	great_power_score = 5
+}
+TRY_REPLACE:regular_navy_size = {
+
+	scales_with = {
+		value = regular_navy_size
+	}
+	
+	great_power_score = 0.2
+}
 TRY_REPLACE:num_embraced_institutions = {
 	scales_with = num_embraced_institutions
 

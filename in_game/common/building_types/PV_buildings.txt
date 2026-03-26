@@ -22,6 +22,12 @@ TRY_INJECT:fortress = {
 	}
 
 }
+TRY_INJECT:armory = {
+	modifier = {
+		local_manpower = 0.01
+	}
+
+}
 
 TRY_REPLACE:lazaretto = {
 	is_foreign = no

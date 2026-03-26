@@ -33,6 +33,12 @@ TRY_REPLACE:create_market = {
 	gold = 100
 	scaled_gold = 5
 }
+TRY_REPLACE:imperial_army_contribution_price = {
+	manpower = 0.05
+}
+TRY_REPLACE:tithe_price = {
+	gold = 0.2
+}
 
 
 TRY_REPLACE:city_upgrade = {
