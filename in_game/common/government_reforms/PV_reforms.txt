@@ -109,7 +109,7 @@ centralized_authority = {
 		global_crown_estate_power = 0.25
 		court_spending_cost = 0.01
 		country_cabinet_efficiency = 0.1
-		monthly_towards_centralization = 0.25
+		monthly_towards_centralization = 0.1
 		government_reform_slots = 1
 	}
 

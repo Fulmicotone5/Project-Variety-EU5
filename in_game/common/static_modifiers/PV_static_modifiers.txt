@@ -11,3 +11,23 @@ TRY_REPLACE:community_schools = {
 	}
 	global_monthly_literacy = 0.03
 }
+
+TRY_REPLACE:integration_colonized = {
+	game_data = {
+		category = location
+	}
+	local_monthly_control = 0.001
+	local_max_control = 0.1
+}
+
+TRY_REPLACE:prosperity = {
+	game_data = {
+		category = location
+	}
+	local_monthly_development = 0.004
+	local_migration_attraction = 0.1
+	local_life_expectancy = 10
+	local_population_growth = 0.0005
+	
+	local_mercenaries_modifier = -0.5
+}

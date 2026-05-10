@@ -7,6 +7,7 @@ TRY_REPLACE:city = {
 		local_nobles_desired_pop = 0.05
 		local_clergy_desired_pop = 0.1
 		local_migration_attraction = 0.4
+		local_population_growth = -0.003
 	
 		local_max_control = 0.15
 		local_population_capacity = 60
@@ -60,6 +61,7 @@ TRY_REPLACE:town = {
 		local_laborers_desired_pop = 0.2
 		local_soldiers_desired_pop = 0.1
 		local_migration_attraction = 0.2
+		local_population_growth = -0.0025
 
 		local_nobles_desired_pop = 0.025
 		local_clergy_desired_pop = 0.05
@@ -101,7 +103,7 @@ TRY_REPLACE:rural_settlement = {
 		local_max_rgo_size_modifier = 1.0
 		local_monthly_food_modifier = 0.1
 		
-		local_population_growth = 0.001
+		local_population_growth = 0.0025
 		
 		local_peasant_enfranchisment = -0.2
 		local_disease_resistance = 0.1

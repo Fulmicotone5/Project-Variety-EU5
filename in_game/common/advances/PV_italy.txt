@@ -131,20 +131,6 @@ consolidate_italian_holdings = {
 	diplomatic_capacity_modifier = 0.1
 }
 
-the_adige = {
-	age = age_2_renaissance
-	
-	potential = { or = {
-			has_or_had_tag = VER
-			has_or_had_tag = F09
-		}  }
-
-	icon = river_trade
-
-	requires = supply_depot_advance_age_2_renaissance
-	
-	global_monthly_prosperity = 0.001
-}
 ven_venetian_thalassocracy = {
 	age = age_1_traditions
 	potential = {
@@ -157,18 +143,6 @@ ven_venetian_thalassocracy = {
 	requires = trade_advance_age_of_trad
 }
 
-
-ven_gothic_architecture = {
-	age = age_2_renaissance
-	potential = {
-		or = {
-			has_or_had_tag = VEN
-			has_or_had_tag = F09
-		} 
-	}
-	requires = ven_venetian_palaces
-	global_urban_build_buildings_cost = -0.1
-}
 
 ven_ship_mounted_gunpowder_weapons = {
 	age = age_2_renaissance
@@ -184,18 +158,6 @@ ven_ship_mounted_gunpowder_weapons = {
 
 ##############################
 
-ven_printing_industry = {
-	age = age_3_discovery
-	potential = {
-		or = {
-			has_or_had_tag = VEN
-			has_or_had_tag = F09
-		} 
-	}
-	diplomatic_reputation = diplomatic_reputation_mild_bonus
-	requires = diplomatic_training
-}
-
 ven_state_inquisition = {
 	age = age_3_discovery
 	potential = {
@@ -206,18 +168,6 @@ ven_state_inquisition = {
 	}
 	counter_espionage = 0.33
 	requires = crown_power_advance_discovery
-}
-
-ven_magistrato_alla_sanita = {
-	age = age_3_discovery
-	potential = {
-		or = {
-			has_or_had_tag = VEN
-			has_or_had_tag = F09
-		} 
-	}
-	global_disease_resistance = 0.1
-	requires = print_culture
 }
 
 ven_venetian_painting = {
@@ -273,34 +223,6 @@ ven_mixed_naval_tactics = {
 
 ##############################
 
-ven_provveditori_ai_beni_inculti = {
-	age = age_5_absolutism
-	potential = {
-		or = {
-			has_or_had_tag = VEN
-			has_or_had_tag = F09
-		} 
-	}
-	global_monthly_food_modifier = 0.1
-	requires = cork_stoppers
-}
-
-
-porto_franco = {
-	age = age_4_reformation 
-	icon = maritime_advance_age_4
-	potential = {
-		OR = {
-			has_or_had_tag = TUS
-			has_or_had_tag = FLO
-			has_or_had_tag = F09
-		}
-	}
-
-	trade_efficiency = small_trade_efficiency_bonus
-	
-	requires = pop_promotion_speed_age_4
-}
 
 accademia_cimento = {
 	age = age_5_absolutism
@@ -330,38 +252,6 @@ medici_porcelain = {
 	monthly_prestige = 0.1
 	
 	requires = porcelain_manufactor_advance
-}
-
-tuscan_municipal_reforms = {
-	age = age_5_absolutism
-	icon = city_building_advance 
-	potential = {
-		OR = {
-			has_or_had_tag = TUS
-			has_or_had_tag = FLO
-			has_or_had_tag = F09
-		}
-	}
-	
-	government_reform_slots = 1	
-	
-	requires = scientific_revolution_advance
-}
-
-tuscan_physiocratic_reforms = {
-	age = age_6_revolutions
-	potential = {
-		OR = {
-			has_or_had_tag = TUS
-			has_or_had_tag = FLO
-			has_or_had_tag = F09
-		}
-	}
-	
-	global_max_rgo_size_modifier = 0.10
-	global_life_expectancy = 2
-	
-	requires = industrialization_advance
 }
 
 tuscan_new_trade_system = {

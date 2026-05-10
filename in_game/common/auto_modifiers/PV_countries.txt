@@ -83,9 +83,9 @@ TRY_REPLACE:capital_occupied = {
 	monthly_war_exhaustion = 0.3 # Vanilla: 0.1 (Original Harsher Wars mod sets this to 0.5)
 }
 
-#PVdhimmi_tax_base = {
-#	potential_trigger = {
-#		exists = yes
-#	}
-#	dhimmi_estate_max_tax = -0.25
-#}
+PVdhimmi_tax_base = {
+	potential_trigger = {
+		exists = yes
+	}
+	dhimmi_estate_max_tax = -0.25
+}

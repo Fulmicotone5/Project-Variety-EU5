@@ -218,8 +218,8 @@ PV_staunch_traditionalism = {
 		cultural_tradition_modifier = 0.5
 		cultural_influence_modifier = -0.5
 		global_defensive = 0.05
-		monthly_towards_traditionalist = societal_value_significant_monthly_move
-		monthly_towards_traditional_economy = societal_value_monthly_move
+		monthly_towards_traditionalist = 0.5
+		monthly_towards_traditional_economy = 0.25
 	}
 }
 

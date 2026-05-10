@@ -17,3 +17,4 @@ local_port_cost_distance_from_capital_modifier={
 		category=location
 	}
 }
+

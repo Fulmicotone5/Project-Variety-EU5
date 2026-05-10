@@ -168,7 +168,7 @@ TRY_REPLACE:papacy_reform = {
 	years = 2
 }
 
-TRY_REPLACE:legacy_of_osman = { #change this
+TRY_REPLACE:legacy_of_osman = { 
 	unique = yes
 	potential = {
 		has_or_had_tag = TUR
@@ -184,7 +184,6 @@ TRY_REPLACE:legacy_of_osman = { #change this
 	}
 
 	country_modifier = {
-
 		global_integration_speed_modifier = 0.25
 		antagonism_received_modifier = 0.33
 		auto_slave_raid_different_religion = yes

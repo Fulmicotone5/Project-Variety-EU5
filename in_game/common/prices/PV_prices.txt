@@ -34,7 +34,7 @@ TRY_REPLACE:create_market = {
 	scaled_gold = 5
 }
 TRY_REPLACE:imperial_army_contribution_price = {
-	manpower = 0.05
+	manpower = 0.01
 }
 TRY_REPLACE:tithe_price = {
 	gold = 0.2
