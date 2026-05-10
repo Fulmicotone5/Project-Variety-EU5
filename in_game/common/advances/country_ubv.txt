@@ -34,7 +34,7 @@ bavarian_imperial_knights = {
 		}
 	}
 	requires = bavarian_legitimacy
-	army_cavalry_power = 0.1
+	army_heavy_cavalry_power = 0.1
 }
 exploit_the_alpine_trade = {
 	age = age_2_renaissance
@@ -110,7 +110,7 @@ bavarian_culture_buildings = {
 			has_or_had_tag = BAV
 		}
 	}
-	global_war_score_cost = -0.05
+	global_war_score_efficiency = 0.1
 
 	requires = land_morale_attrition_cost_advance
 }
@@ -189,7 +189,7 @@ foundation_of_bavarian_army = {
 			has_or_had_tag = BAV
 		}
 	}
-	army_maintenance_cost = -0.1
+	army_maintenance_efficiency = 0.1
 
 	requires = gustavian_infantry
 }
@@ -238,9 +238,9 @@ PVbavarian_hills = {
 	potential = {
 		has_or_had_tag = F12
 	}
-	hills_proximity_impact = -0.5
+	hills_proximity_impact = -0.25
 	mountains_proximity_impact = -0.5
-	plateau_proximity_impact = -0.5
+	plateau_proximity_impact = -0.25
 
 	requires = city_building_advance
 	icon = mountain_roads

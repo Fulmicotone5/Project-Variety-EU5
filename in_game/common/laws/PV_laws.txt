@@ -15,7 +15,7 @@ TRY_REPLACE:nobles_rights_laws = {
 	}
 	curtail_nobles_policy = {
 		country_modifier = {
-			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			nobles_estate_target_satisfaction = large_permanent_target_satisfaction_penalty
 			global_nobles_estate_power = -1
 			nobles_estate_max_tax = 0.05
 			monthly_towards_centralization = societal_value_minor_monthly_move
@@ -30,7 +30,7 @@ TRY_REPLACE:nobles_rights_laws = {
 		country_modifier = {
 			nobles_estate_target_satisfaction = small_permanent_target_satisfaction
 			monthly_towards_serfdom = societal_value_monthly_move
-			global_nobles_estate_power = 0.05
+			global_nobles_estate_power = 0.25
 			fort_maintenance_cost = -0.2
 		}
 		estate_preferences = {
@@ -70,7 +70,7 @@ TRY_REPLACE:nobles_rights_laws = {
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			nobles_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
 			global_nobles_estate_power = -0.25
-			global_monthly_control = 0.005
+			global_monthly_control = 0.0025
 		}
 		
 		estate_preferences = {
@@ -140,6 +140,7 @@ TRY_REPLACE:distribution_of_power_law = {
 			nobles_estate_agenda_impact = 0.1
 			global_nobles_food_consumption = 0.1
 			monthly_towards_aristocracy = societal_value_monthly_move
+			monthly_towards_serfdom = societal_value_large_monthly_move
 		}
 		estate_preferences = {
 			nobles_estate

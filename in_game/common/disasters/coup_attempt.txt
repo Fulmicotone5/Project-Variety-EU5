@@ -34,7 +34,7 @@
 	modifier = {
 		global_crown_estate_power = -0.5
 		country_cabinet_efficiency = -0.5
-		court_spending_cost = 0.05
+		court_spending_cost_modifier = 0.05
 	}
 	
 	on_start = {

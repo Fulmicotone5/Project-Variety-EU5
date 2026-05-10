@@ -100,7 +100,7 @@ weisuo_system = {
 	}
 
 	global_manpower_modifier = 0.1
-	army_maintenance_cost = -0.05
+	army_maintenance_efficiency = 0.05
 
 	requires = yulin_tuce
 }

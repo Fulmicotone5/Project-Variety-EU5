@@ -29,7 +29,7 @@ mercantile_spirit = {
 			has_or_had_tag = TWS
 		}
 	}
-	trade_efficiency = small_trade_efficiency_bonus
+	selling_efficiency = small_trade_efficiency_bonus
 	
 	requires = trade_advance_age_of_trad
 }

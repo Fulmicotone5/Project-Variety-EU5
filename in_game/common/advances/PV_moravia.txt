@@ -47,7 +47,7 @@ tales_of_greatn = {
 	potential = {
 		has_or_had_tag = MVA
 	}
-	global_war_score_cost = -0.1
+	global_war_score_efficiency = 0.15
 	antagonism_received_modifier = -0.1
 
 	requires = war_no_cb_cost_modifier_renaissance_advance
@@ -110,7 +110,7 @@ hearth_of_europe = {
 			has_or_had_tag = F24
 		}
 	}
-	trade_efficiency = 0.1
+	selling_efficiency = 0.1
 	global_migration_speed_modifier = 0.1
 	global_iron_output_modifier = 0.05
 

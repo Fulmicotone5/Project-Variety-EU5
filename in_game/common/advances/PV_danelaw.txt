@@ -8,7 +8,7 @@ warrir_aristocracy = {
 			has_or_had_tag = F17 
 		}
 	}
-	army_infantry_power = 0.05
+	army_light_infantry_power = 0.1
 
 	requires = unlock_armored_horsemen_advance
 }

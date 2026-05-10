@@ -7,7 +7,7 @@ smz_satsuma_shugo = {
 
 	requires = written_alphabet
 
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 }
 
 smz_tsurinobuse = {
@@ -50,7 +50,7 @@ smz_tanegashima = {
 
 	requires = imperial_ambitions
 
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 }
 
 smz_early_westernization = {

@@ -1,22 +1,137 @@
-TRY_INJECT:castle = {
+TRY_REPLACE:stockade = {
+	
+	max_levels = 1
+	pop_type = soldiers
+	
+	category = defense_category
+	
+	employment_size = stockade_employment
+	
+	rural_settlement = yes
+	town = yes
+	city = yes
+	
+	
+	build_time = small_fort_building
+
+	expensive = yes
+	
+	location_potential = {
+		NOT = {
+				any_neighbor_location = {
+					OR = {
+						has_building = building_type:stockade
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+					}
+					owner ?= scope:actor
+				}
+			}
+	}
+
+	
+	unique_production_methods = {
+	
+		stockade_maintenance = {
+			lumber = 0.1
+			weaponry = 0.02
+			tar = 0.02
+			category = building_maintenance
+		}
+	}
+	construction_demand = stockade_construction
+	
+
 	modifier = {
-		local_max_control = 0.1
+		local_garrison_size = 0.1
+		local_unrest = -0.025
+		local_nobles_estate_power = 0.5
+	}
+	
+	raw_modifier = {
+		fort_level = 1
+		local_nobles_desired_pop = 0.005
+		propagating_zone_of_control = no
+	}
+}
+
+TRY_INJECT:castle = {
+	location_potential = {
+		NOT = {
+				any_neighbor_location = {
+					OR = {
+						has_building = building_type:stockade
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+					}
+					owner ?= scope:actor
+				}
+			}
+	}
+	modifier = {
+		local_max_control = 0.05
 	}
 
 }
 TRY_INJECT:bastion = {
+	location_potential = {
+		NOT = {
+				any_neighbor_location = {
+					OR = {
+						has_building = building_type:stockade
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+					}
+					owner ?= scope:actor
+				}
+			}
+	}
 	modifier = {
 		local_max_control = 0.1
 	}
 
 }
 TRY_INJECT:star_fort = {
+	location_potential = {
+		NOT = {
+				any_neighbor_location = {
+					OR = {
+						has_building = building_type:stockade
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+					}
+					owner ?= scope:actor
+				}
+			}
+	}
 	modifier = {
 		local_max_control = 0.1
 	}
 
 }
 TRY_INJECT:fortress = {
+	location_potential = {
+		NOT = {
+				any_neighbor_location = {
+					OR = {
+						has_building = building_type:stockade
+						has_building = building_type:castle
+						has_building = building_type:bastion
+						has_building = building_type:star_fort
+						has_building = building_type:fortress
+					}
+					owner ?= scope:actor
+				}
+			}
+	}
 	modifier = {
 		local_max_control = 0.1
 	}
@@ -103,6 +218,7 @@ TRY_REPLACE:lazaretto = {
 	category = infrastructure_category
 	town = yes
 	city = yes
+	megalopolis = yes
 	location_potential = {
 		is_coastal = yes
 	}
@@ -136,6 +252,7 @@ TRY_REPLACE:local_governor = {
 	rural_settlement = no
 	town = no
 	city = yes
+	megalopolis = yes
 		 
 	allow = {
 		custom_tooltip = {
@@ -209,6 +326,7 @@ TRY_REPLACE:naval_governor = {
 	rural_settlement = no
 	town = yes
 	city = yes
+	megalopolis = yes
 		 
 	allow = {
 		custom_tooltip = {
@@ -265,6 +383,7 @@ TRY_REPLACE:naval_governor = {
 TRY_INJECT:cathedral = {
 	town = yes
 	city = yes
+	megalopolis = yes
 	rural_settlement = no
 	modifier = {
 		local_monthly_prosperity = 0.001
@@ -285,6 +404,7 @@ smokehouse = {
 	
 	town = yes
 	city = yes
+	megalopolis = yes
 	rural_settlement = yes
 
 	

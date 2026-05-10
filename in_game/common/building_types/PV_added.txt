@@ -6,6 +6,7 @@ latrines = {
 	employment_size = granary_employment
 	category = infrastructure_category
 	city = yes
+	megalopolis = yes
 	build_time = generic_town_build_time
 
 	unique_production_methods = {
@@ -33,6 +34,7 @@ bathouse = {
 	category = infrastructure_category
 	town = yes
 	city = yes
+	megalopolis = yes
 	build_time = generic_town_build_time
 
 	unique_production_methods = {
@@ -60,6 +62,7 @@ washhouse = {
 	category = infrastructure_category
 	town = yes
 	city = yes
+	megalopolis = yes
 	build_time = generic_town_build_time
 
 	unique_production_methods = {
@@ -88,6 +91,7 @@ sewers = {
 	employment_size = generic_peasant_building_employment
 	category = infrastructure_category
 	city = yes
+	megalopolis = yes
 	build_time = generic_town_build_time
 
 	unique_production_methods = {
@@ -118,6 +122,7 @@ waste_disposal_system = {
 	employment_size = construction_employment
 	category = infrastructure_category
 	city = yes
+	megalopolis = yes
 	build_time = generic_town_build_time
 
 	unique_production_methods = {

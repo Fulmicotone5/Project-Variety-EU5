@@ -49,3 +49,10 @@ ducal_palace_pv = {
 	local_peasant_enfranchisment = -0.25
 	local_burghers_estate_power = -1.0
 }
+
+TRY_REPLACE:total_occupied = {
+	game_data = {
+		category = country
+	}
+	monthly_war_exhaustion = 3
+}

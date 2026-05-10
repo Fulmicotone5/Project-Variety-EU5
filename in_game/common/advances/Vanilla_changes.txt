@@ -1,0 +1,21 @@
+TRY_REPLACE:town_rights_enable = {
+	age = age_2_renaissance
+	icon = town_rights_advance
+	requires = renaissance_city_rights
+	
+	unlock_town_rights = royal_tooling_rights
+	unlock_town_rights = royal_jewelry_rights
+	unlock_town_rights = royal_naval_rights
+	unlock_town_rights = royal_textile_rights
+	unlock_town_rights = royal_weaponry_rights
+	unlock_town_rights = royal_book_rights
+	unlock_town_rights = royal_artisan_rights
+	unlock_town_rights = royal_brewing_rights
+	unlock_town_rights = royal_masonry_rights
+	
+	ai_weight = { 
+		add = 100
+		multiply = num_of_non_rural
+		divide = num_locations 
+	}
+}

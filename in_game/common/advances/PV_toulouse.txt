@@ -79,7 +79,7 @@ occitanknights = {
 			has_or_had_tag = F03 
 		}
 	}
-	army_cavalry_power = 0.1
+	army_light_cavalry_power = 0.1
 
 	requires = unlock_cavalry_advance
 }
@@ -90,7 +90,7 @@ country_bet = {
 		has_or_had_tag = F03 
 	}
 	mountains_proximity_impact = -0.4
-	hills_proximity_impact = -0.5
+	hills_proximity_impact = -0.25
 	
 
 	requires = renaissance_urbanisation

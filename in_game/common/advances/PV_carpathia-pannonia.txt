@@ -9,7 +9,7 @@ hun_composite_light_cavalry = {
 	}
 
 	age = age_1_traditions
-	army_cavalry_power = 0.2
+	army_heavy_cavalry_power = 0.1
 
 	requires = feudalism_advance
 }

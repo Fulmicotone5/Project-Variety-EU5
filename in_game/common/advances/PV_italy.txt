@@ -6,7 +6,7 @@ milanese_heritage = {
 			has_or_had_tag = F09
 		} 
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.05
 	requires = milanese_tradition
 }
 
@@ -49,7 +49,7 @@ age_of_condottieri = {
 			has_or_had_tag = F09
 		} 
 	}
-	mercenary_maintenance_cost = -0.1
+	mercenary_maintenance_efficiency = 0.1
 }
 encouragement_of_philosophers = {
 	age = age_4_reformation
@@ -127,7 +127,7 @@ consolidate_italian_holdings = {
 
 	requires = spy_construction_renaissance
 
-	mercenary_maintenance_cost = -0.1
+	mercenary_maintenance_efficiency = 0.1
 	diplomatic_capacity_modifier = 0.1
 }
 
@@ -192,7 +192,7 @@ ven_naval_conscription = {
 			has_or_had_tag = F09
 		} 
 	}
-	navy_maintenance_cost = -0.2
+	navy_maintenance_efficiency = 0.2
 	requires = assault_ability_reformation
 }
 
@@ -314,7 +314,7 @@ genoese_flexibility = {
 		} 
 
 	age = age_3_discovery
-	navy_maintenance_cost = -0.05
+	navy_maintenance_efficiency = 0.05
 	can_convert_galleys_to_light = yes
 }
 

@@ -648,7 +648,7 @@ burflavor.10 = {
 			}
 			location:arles = {
 				change_development = 5
-				change_location_rank = location_rank:city
+				change_location_rank = location_rank:megalopolis
 			}
 		}
 		add_legitimacy = 10

@@ -18,7 +18,7 @@ NGame = {
 }
 
 NCountry = {
-	MERCHANT_MAINTENANCE_COST = 0.2
+	merchant_maintenance_efficiency = 0.1
 	MAXIMUM_GOLD = 999999999
 	ANNEX_MIN_COST = 40
 	ANNEX_COST_PER_LOCATION = 5.0

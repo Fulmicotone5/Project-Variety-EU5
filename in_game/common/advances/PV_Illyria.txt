@@ -78,7 +78,7 @@ bos_kingly_ambitions = {
 		}
 	}
 	icon = crown_power_advance_renaissance
-	army_infantry_power = 0.05
+	army_heavy_infantry_power = 0.05
 	monthly_legitimacy = 0.05
 
 	requires = regulate_court_procedures
@@ -236,7 +236,7 @@ military_modernization = {
 			has_or_had_tag = F14
 		}
 	}
-	army_infantry_power = 0.1
+	army_heavy_infantry_power = 0.1
 	
 	requires = recruitment_improvements_revolutions
 }

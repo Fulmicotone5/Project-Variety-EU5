@@ -37,7 +37,7 @@ rise_of_rome = {
 	potential = {
 		has_or_had_tag = P08
 	}
-	global_war_score_cost = -0.1
+	global_war_score_efficiency = 0.15
 	casus_belli_creation_speed_modifier = 0.25
 
 	requires = renaissance_development

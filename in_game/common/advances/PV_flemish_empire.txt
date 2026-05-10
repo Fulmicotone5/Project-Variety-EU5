@@ -39,8 +39,8 @@ fra_gendarmes = {
 			has_or_had_tag = F01
 		}
 	}
-	army_cavalry_power = 0.1
-	army_maintenance_cost = -0.05
+	army_heavy_cavalry_power = 0.1
+	army_maintenance_efficiency = 0.05
 }
 
 fra_integration_of_new_territories = {

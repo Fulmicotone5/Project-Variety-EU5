@@ -1,5 +1,6 @@
 ﻿l_english:
  AUTO_MODIFIER_NAME_PVdhimmi_tax_base: "Base Tax Reduction"
+ AUTO_MODIFIER_NAME_nobles_tax_base: "Base Tax Reduction"
  slovak_integration: "Slovaks' Integration"
  trans_diversity: "A Culturally Diverse Country"
  languedoc: "Lenga d'òc"
@@ -74,3 +75,7 @@
  PV_GER7: "Early Industrial Revolution"
  PVbavarian_hills: "Bohemian Massif"
  PV_carpathians: "The Carphatian Valley"
+
+ byzantine_law: "Late Roman Law"
+ byzantine_law_desc: "Late Roman law, evolving from Roman law with Christian and Hellenistic influence, largely derives from Justinian's #italic Corpus Juris Civilis#!, which emphasizes ceremonial emperor roles, and reflects philosophical and religious ideals."
+

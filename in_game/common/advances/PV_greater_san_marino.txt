@@ -4,7 +4,7 @@ sanmarinese_space_marines = {
 		has_or_had_tag = F23
 	}
 	icon = bng_artillery_corps
-	army_infantry_power = 1
+	army_heavy_infantry_power = 1
 	land_morale_modifier = 1
 
 	requires = unlock_armored_horsemen_advance

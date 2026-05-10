@@ -9,9 +9,9 @@ hab_expert_mountaineers = {
 			has_or_had_tag = F13
 		}
 	}
-	mountains_proximity_impact = -0.5
+	mountains_proximity_impact = -0.25
 	hills_proximity_impact = -0.5
-	plateau_proximity_impact = -0.5
+	plateau_proximity_impact = -0.25
 
 	requires = renaissance_urbanisation
 }
