@@ -35,8 +35,7 @@ TRY_REPLACE:megalopolis = {
 		movement_cost = 0.4		
 		local_frontage_allowed = -3
 
-		local_disease_resistance = -0.35
-		local_monthly_food_modifier = -0.33
+		local_disease_resistance = -0.4
 
 	}
 	
@@ -103,6 +102,8 @@ TRY_REPLACE:city = {
 		local_peasant_enfranchisment = 0.25
 		
 		max_constructions_at_same_time = 1
+		movement_cost = 0.2
+		local_frontage_allowed = -2
 		local_disease_resistance = -0.35
 		local_monthly_food_modifier = -0.33
 	}
@@ -151,6 +152,8 @@ TRY_REPLACE:town = {
 		free_building_levels = 25
 		
 		local_peasant_enfranchisment = 0.1
+		movement_cost = 0.1
+		local_frontage_allowed = -1
 		local_disease_resistance = -0.3
 		local_monthly_food_modifier = -0.33
 	}

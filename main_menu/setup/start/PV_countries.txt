@@ -579,6 +579,63 @@ countries = {
 			capital = barca
 			dynasty = heib_dynasty
 		}
+		MDA = { #Medina
+			own_control_core = {
+				medina al_furaish
+				yanbu al_ahmar al_jar ash_shibahah badr_hunayn yanbu_an_nakhil
+				al_thamad buwat shajwa
+				al_ais
+				umluj
+				al_hawra
+				al_manjur
+				al_maramiyah
+				al_ula
+				al_bleiteh
+				al_farah_ula
+				al_marwa
+				az_zubayir
+				mughayra
+				duba
+				ad_disah
+				al_azlam
+				al_wajh
+				bada_yaqub
+				bir_al_qurr
+				tabuk_arabia
+				al_khanbarah
+				al_muazzam
+				al_ukhaydir
+				bajdah
+				bir_ibn_hermas
+				dhat_al_hajj
+				aynuna
+				al_bad
+				al_muwaylih
+				haql
+				makna
+			}
+
+		include = "expl_middle_east"
+
+			starting_technology_level = 3
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			government = {
+				type = monarchy
+				heir_selection = cognatic_primogeniture
+				ruler = mda_wudayy_bin_jammaz
+
+				ruler_term = {	 character = mda_wudayy_bin_jammaz start_date = 1336.5.1 regnal_number = 1	}
+
+				laws = {
+					sharia_law = zaidi_policy
+				}
+			}
+
+			religious_school = zaidi_school
+
+			capital = medina
+
+		}
 		MAM = {
 			own_control_core = {
 				alexandria
@@ -651,34 +708,7 @@ countries = {
 				saint_katrine
 				ayntab
 				dluk
-				umluj
-				al_hawra
-				al_manjur
-				al_maramiyah
-				al_ula
-				al_bleiteh
-				al_farah_ula
-				al_marwa
-				az_zubayir
-				mughayra
-				duba
-				ad_disah
-				al_azlam
-				al_wajh
-				bada_yaqub
-				bir_al_qurr
-				tabuk_arabia
-				al_khanbarah
-				al_muazzam
-				al_ukhaydir
-				bajdah
-				bir_ibn_hermas
-				dhat_al_hajj
-				aynuna
-				al_bad
-				al_muwaylih
-				haql
-				makna
+				
 			}
 			own_control_conquered = {
 				iskenderun
@@ -827,6 +857,7 @@ countries = {
 				nekhel
 				qatya
 				warrada
+				aqaba
 			}
 			country_rank = rank_kingdom
 			include = "catholic_military_order"

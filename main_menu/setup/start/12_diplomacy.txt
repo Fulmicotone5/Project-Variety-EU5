@@ -587,7 +587,6 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     #------------Levant-------------
 
     #------------Arabia-------------
-    dependency = { first = MAM second = MDA subject_type = vassal }
     dependency = { first = ORM second = JRW subject_type = tributary }
     
     scripted_mutual = { first = QHT second = DWS type = alliance }

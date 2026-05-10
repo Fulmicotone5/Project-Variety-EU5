@@ -61,6 +61,7 @@ TRY_REPLACE:nobles_rights_laws = {
 		}
 	}
 	por_lei_mental = {
+		unique = yes
 		potential = {
 			has_unlocked_policy_trigger = {
 				type = por_lei_mental
@@ -79,6 +80,7 @@ TRY_REPLACE:nobles_rights_laws = {
 		years = 2
 	}
 	leyes_de_toro_policy = {
+		unique = yes
 		potential = {
 			has_unlocked_policy_trigger = {
 				type = leyes_de_toro_policy
@@ -178,6 +180,26 @@ TRY_REPLACE:distribution_of_power_law = {
 		years = 2
 	}
 
+	# Catholic variant: replaces the useless clergy_estate_max_tax (Catholics cannot tax clergy) with tax_income_efficiency (b) and a Curia benefit via monthly_religious_influence (c)
+	dop_favor_the_clergy_catholic = {
+		unique = yes
+		potential = {
+			religion = religion:catholic
+		}
+		country_modifier = {
+			tax_income_efficiency = small_tax_income_efficiency_bonus
+			clergy_estate_agenda_impact = 0.1
+			global_clergy_food_consumption = 0.1
+			court_language_is_liturgical_language_importance_modifier = 0.5
+			monthly_religious_influence = 0.1
+			monthly_towards_spiritualist = societal_value_monthly_move
+		}
+		estate_preferences = {
+			clergy_estate
+		}
+		years = 2
+	}
+
 	dop_favor_the_commoners = {
 		country_modifier = {
 			global_peasants_estate_power = 1.0
@@ -197,6 +219,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#Mali
 	dop_law_gbara = {
+		unique = yes
 		potential = {
 			has_advance = kouroukan_fouga_advance
 		}
@@ -215,6 +238,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#England
 	dop_law_english_parliament = {
+		unique = yes
 		potential = {
 			OR = {
 				has_advance = magna_carta_advance
@@ -255,6 +279,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#Navarra
 	dop_law_navarrese_courts = {
+		unique = yes
 		potential = {
 			has_reform = government_reform:pyrenean_fueros_reform
 			OR = {
@@ -282,6 +307,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#Russia
 	dop_law_governing_senate = {
+		unique = yes
 		potential = {
 			culture = { has_culture_group = culture_group:russian_group}
 			country_rank_level >= 4
@@ -301,6 +327,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 
 	dop_law_state_council = {
+		unique = yes
 		potential = {
 			culture = { has_culture_group = culture_group:russian_group }
 			has_reform = government_reform:speransky_liberalization_reform
@@ -320,6 +347,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#France, non-Revolutionary
 	dop_law_estates_general = {
+		unique = yes
 		potential = {
 			has_advance = estates_general
 			#linked to french_group in the advance
@@ -340,6 +368,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	#France, Revolutionary
 	dop_law_assemblee_nationale = {
+		unique = yes
 		potential = {
 			current_age = age_6_revolutions
 			culture = { has_culture_group = culture_group:french_group}
@@ -363,6 +392,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	#Castile
 	
 	dop_law_castilian_courts = {
+		unique = yes
 		potential = {
 			has_reform = government_reform:crown_castile_reform
 			OR = {
@@ -390,6 +420,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	}
 
 	dop_law_comuneros_parliament = {
+		unique = yes
 		potential = {
 			has_unlocked_policy_trigger = { type = dop_law_comuneros_parliament }
 			OR = {
@@ -414,6 +445,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	}
 
 	dop_law_castilian_courts_reinforced = {
+		unique = yes
 		potential = {
 			has_unlocked_policy_trigger = { type = dop_law_castilian_courts_reinforced }
 			OR = {
@@ -442,6 +474,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	}
 
 	dop_favor_the_kontors = {
+		unique = yes
 		potential = {
 			modifier:allows_hanseatic_federation_buildings = yes
 		}
@@ -462,6 +495,7 @@ TRY_REPLACE:distribution_of_power_law = {
 
 	dop_office_of_the_eristavi = {
 		unique = yes
+		unique = yes
 		potential = {
 			has_or_had_tag = GEO
 		}
@@ -479,6 +513,7 @@ TRY_REPLACE:distribution_of_power_law = {
 	}
 	
 	dop_rudolfine_house_rules = {
+		unique = yes
 		potential = {
 			has_unlocked_policy_trigger = { type = dop_rudolfine_house_rules }
 		}
@@ -502,6 +537,7 @@ TRY_REPLACE:bureaucracy_law = {
 		country_modifier = {
 			global_road_building_time = -0.2
 			monthly_towards_centralization = societal_value_monthly_move
+			global_bureaucracy_implementation_cost_modifier = -0.15
 		}
 		estate_preferences = {
 			crown_estate
@@ -512,6 +548,8 @@ TRY_REPLACE:bureaucracy_law = {
 		country_modifier = {
 			global_estate_target_satisfaction = small_permanent_target_satisfaction
 			monthly_towards_decentralization = societal_value_monthly_move
+			global_bureaucracy_implementation_cost_modifier = 0.1
+			global_monthly_prosperity = 0.0005
 		}
 		estate_preferences = {
 			nobles_estate
@@ -520,6 +558,7 @@ TRY_REPLACE:bureaucracy_law = {
 		years = 2
 	}
 	namestnik_policy = {
+		unique = yes
 		potential = {
 			culture = { has_culture_group = culture_group:russian_group }
 		}
@@ -535,6 +574,7 @@ TRY_REPLACE:bureaucracy_law = {
 		years = 2
 	}
 	rentekammer_policy = {
+		unique = yes
 		potential = {
 			culture = culture:danish
 		}
@@ -551,6 +591,7 @@ TRY_REPLACE:bureaucracy_law = {
 		years = 2
 	}
 	autonomous_offices = {
+		unique = yes
 		potential = {
 			country_type = building
 			is_merchant_republic = yes
@@ -567,6 +608,7 @@ TRY_REPLACE:bureaucracy_law = {
 		years = 2
 	}
 	port_logs = {
+		unique = yes
 		potential = { has_reform = government_reform:pirate_brethren_reform }
 		country_modifier = {
 			tax_income_efficiency = large_tax_income_efficiency_bonus

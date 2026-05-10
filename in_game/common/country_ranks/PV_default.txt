@@ -13,7 +13,7 @@ TRY_INJECT:rank_kingdom = {
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
 		antagonism_tolerance = 600 #PV
-		num_local_governors = 0
+		num_local_governors = -1
 	}
 }
 

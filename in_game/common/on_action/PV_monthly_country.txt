@@ -86,7 +86,7 @@ monthly_country_pulse = {
 				total_population > 800
 				country_rank_is_county = no
 			}
-			add_gold = 100
+			add_gold = 150
 		}
 		if = {
 			limit = {
