@@ -1,0 +1,120 @@
+#Bergordnung Policy
+TRY_REPLACE:upper_bergregal = {
+	kept_at_conquest = no
+
+	location_modifier = {
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.1
+		local_population_growth = -0.001
+
+		local_rgo_build_time = 0.5
+		local_peasant_enfranchisment = -0.2
+	}
+	country_modifier = {
+		expand_rgo_mining_cost_modifier = 0.1
+	}
+
+	potential = {
+		has_policy = german_mining_law
+	}
+
+	allow = {
+		scope:target = {
+			OR = {
+				raw_material = goods:silver
+				raw_material = goods:goods_gold
+				raw_material = goods:gems
+				AND = {
+					is_port = no
+					raw_material = goods:salt
+				}
+			}
+			NOT = {
+				has_town_rights = town_rights_type:pvminingtown #PV
+			}
+		}
+	}
+
+	color = goods_silver
+}
+
+#Bergordnung Policy
+TRY_REPLACE:lower_bergregal = {
+	kept_at_conquest = no
+
+	location_modifier = {
+		local_max_rgo_size_modifier = 0.5
+		local_migration_attraction = 0.1
+		local_population_growth = -0.001
+
+		local_peasant_enfranchisment = -0.2
+		local_nobles_estate_power =  0.5
+	}
+	country_modifier = {
+		expand_rgo_mining_cost_modifier = 0.05
+	}
+
+	potential = {
+		has_policy = german_mining_law
+	}
+
+
+	allow = {
+		scope:target = {
+			OR = {
+				raw_material = goods:iron
+				raw_material = goods:copper
+				raw_material = goods:lead
+				raw_material = goods:tin
+				raw_material = goods:alum
+				raw_material = goods:marble
+				raw_material = goods:mercury
+				raw_material = goods:coal
+				raw_material = goods:stone
+				raw_material = goods:saltpeter
+			}
+			NOT = {
+				has_town_rights = town_rights_type:pvminingtown #PV
+			}
+		}
+	}
+
+	color = goods_iron
+}
+
+TRY_REPLACE:imperial_breadbasket_rights = {
+	kept_at_conquest = no
+	potential = {
+		OR = {
+			has_or_had_tag = BYZ
+			has_or_had_tag = ROM
+		}
+	}
+	
+	allow = {
+		scope:target = {
+			NOT = { has_town_rights = town_rights_type:granary_town }
+			OR = {
+				location_rank = location_rank:city
+				location_rank = location_rank:megalopolis
+			}
+			custom_tooltip = {
+				text = imperial_breadbasket_rights_granary_tt
+				any_buildings_in_location = {
+					building_type = building_type:granary
+					building_level >= 5
+				}
+			}
+		}
+	}
+	
+	location_modifier = {
+		local_food_capacity = 1000
+		local_monthly_prosperity = 0.001
+		local_population_growth = 0.0005 #PV
+
+		local_pop_food_consumption = 0.2
+	}
+
+	color = goods_coffee
+}

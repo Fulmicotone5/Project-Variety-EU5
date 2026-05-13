@@ -60,3 +60,8 @@ TRY_INJECT:maha_samanta = {
 TRY_INJECT:pradhana_maha_samanta = {
 	great_power_score_transfer = -0.75
 }
+TRY_INJECT:pronoia = {
+	great_power_score_transfer = -0.25
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+}

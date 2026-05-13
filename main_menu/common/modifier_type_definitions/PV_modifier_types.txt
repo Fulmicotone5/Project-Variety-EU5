@@ -18,3 +18,26 @@ local_port_cost_distance_from_capital_modifier={
 	}
 }
 
+monthly_towards_tall={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+monthly_towards_wide={
+	color=neutral
+	game_data={
+		category=country
+		min=0
+		is_societal_value_change = yes
+	}
+}
+
+tallbonus={
+	boolean=yes
+	game_data={
+		category=country
+	}
+}

@@ -167,3 +167,212 @@ PLC_f = {
 		}
 	}
 }
+
+
+ROM_f = {
+	level = 5
+	required_locations_fraction = 0.75
+	rule = fantasy
+	
+	potential = {
+		NOR = {
+			has_or_had_tag = BYZ
+			has_or_had_tag = TRE
+		}
+		OR = {
+			country_rank = country_rank:rank_empire
+			owns = location:constantinople
+			AND = {
+				owns = location:rome
+				NOT = { tag = PAP }
+			}
+		}
+	}
+
+	allow = {
+		owns = location:rome
+		owns = location:constantinople
+		country_rank = country_rank:rank_empire
+		is_hegemon = yes
+		NOT = { country_exists = c:BYZ }
+		OR = {
+			religion.group = religion_group:christian
+			religion = religion:hellenism_religion
+		}
+	}
+
+	name = ROM
+	flag = ROM
+	adjective = ROM_ADJ
+	tag = ROM
+	color = map_ROM
+
+	regions = {
+		italy_region
+		iberia_region
+		france_region
+		balkan_region
+		great_britain_region
+		anatolia_region
+		south_german_region
+		crescent_region
+		egypt_region
+		maghreb_region
+		carpathia_region
+		caucasus_region
+	}
+	form_effect = {
+		if = { 
+			limit = { 
+				NOT = { court_language = language:greek_language }
+			}
+			set_court_language = dialect:greek_language
+		}
+		if = {
+			limit = { NOT = { capital = location:constantinople } }
+			set_capital = location:constantinople
+		}
+	}
+}
+
+
+
+ROM_BYZ_f = {
+	level = 5
+	required_locations_fraction = 0.25
+	rule = historical
+
+	capital_required = no
+	potential_requires_own = no
+	
+	potential = {
+		has_or_had_tag = TRE
+	}
+
+	allow = {
+		owns = location:rome
+		owns = location:constantinople
+		country_rank = country_rank:rank_empire
+
+		NOT = { country_exists = c:BYZ }
+	}
+
+	name = ROM
+	flag = ROM
+	adjective = ROM_ADJ
+	tag = ROM
+	color = map_ROM
+
+	regions = {
+		italy_region
+		balkan_region
+		anatolia_region
+	}
+
+	form_effect = {
+		if = {
+			limit = { NOT = { capital = location:constantinople } }
+			set_capital = location:constantinople
+		}
+		province_definition:marittima_province = {
+			every_ownable_location_in_province_definition = {
+				limit = { owner = root }
+				change_integration_level = integrated
+			}
+		}
+		if = {
+			limit = { has_societal_value = societal_value_type:latinization_vs_hellenization }
+			change_societal_value = { type = latinization_vs_hellenization value = societal_value_huge_move_to_left }
+		}
+	}
+}
+
+GBR_f = {
+	content_priority = 800
+	level = 3
+	required_locations_fraction = 0.75
+
+	rule = historical
+	
+	potential = {
+		culture ?= { has_culture_group = culture_group:british_group }
+		NOT = {
+			has_or_had_tag = P01
+		}
+	}
+
+	allow = {
+		culture = { has_culture_group = culture_group:british_group }
+		situation:hundred_years_war = {
+			situation_has_ended = yes
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:ENG
+				this != c:ENG
+			}
+			custom_tooltip = {
+				text = GBR_f_trigger_eng
+				OR = {
+					tag = ENG
+					NOT = { country_exists = c:ENG }
+					c:ENG = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:SCO
+				this != c:SCO
+			}
+			custom_tooltip = {
+				text = GBR_f_trigger_sco
+				OR = {
+					tag = SCO
+					NOT = { country_exists = c:SCO }
+					c:SCO = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:WLS
+				this != c:WLS
+			}
+			custom_tooltip = {
+				text = GBR_f_trigger_wls
+				OR = {
+					tag = WLS
+					NOT = { country_exists = c:WLS }
+					c:WLS = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+		trigger_if = {
+			limit = { 
+				country_exists = c:SBL
+				this != c:SBL
+			}
+			custom_tooltip = {
+				text = GBR_f_trigger_sbl
+				OR = {
+					tag = SBL
+					NOT = { country_exists = c:SBL }
+					c:SBL = { is_subject_or_below_of = root }
+				}			
+			}
+		}
+	}
+	
+	name = GBR
+	flag = GBR
+	adjective = GBR_ADJ
+	tag = GBR
+	color = map_GBR
+
+	regions = {
+		great_britain_region
+	}
+	form_effect = {
+	}
+}

@@ -58,4 +58,20 @@ road_network = {
 	baia_de_aries = baia_crisului
 	huedin = oradea
 	oradea = beius
+
+	granada = orgiva
+	orgiva = almeria
+	gergal = almeria
+	gergal = guadix
+	orgiva = gergal
+	almeria = mojacar
+	granada = pinar
+	pinar = guadix
+	guadix = baza
+	sevilla = sanlucar
+	sanlucar = jerez_de_la_frontera
+	carmona = ecija
+	azuaga = zafra
+	azuaga = constantina
+	badajoz = merida
 }

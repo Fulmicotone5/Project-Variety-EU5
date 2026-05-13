@@ -208,10 +208,24 @@ balkan_hajduks = {
 		OR = {
 			has_or_had_tag = SER
 			has_or_had_tag = F14
+			AND = {
+				num_locations > 0
+				OR = {
+					capital = { region = region:balkan_region }
+					capital = { region = region:carpathia_region }
+				}
+				OR = {
+					culture = { has_culture_group = culture_group:hungarian_group }
+					culture = { has_culture_group = culture_group:romanian_group }
+					culture = { has_culture_group = culture_group:south_slavic_group }
+					culture = culture:dalmatian
+					culture = { merged_culture_group_contains_culture = culture:dalmatian }
+				}
+			}
 		}
 	}
-	land_morale_modifier = 0.1
-	
+	unlock_unit = a_hajduk
+
 	requires = supply_depot_advance_age_5_absolutism
 }
 

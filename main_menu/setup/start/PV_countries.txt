@@ -387,18 +387,6 @@ countries = {
 				arcos_de_la_frontera
 				bilbao anana durango onate salvatierra san_sebastian tolosa valmaseda vitoria
 			}
-			own_control_conquered = {
-				alarcon belmonte beteta canete huete iniesta jorquera molina_de_aragon moya pareja san_clemente requena
-				alcaraz almaden almodovar_del_campo calatrava lezuza malagon manzanares puertollano alhambra_location montiel villapalacios villarobledo
-				toledo alcazar_de_san_juan chinchon consuegra guadalupe illescas los_yebenes navalucillos ocana puebla_de_montalban puente_arzobispo talavera_de_la_reina
-				ciudad_real tomelloso ucles cuenca  torralba albacete chinchilla villena
-				badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
-				caceres alcantara arroyo brozas galisteo granadilla montanchez valencia_de_alcantara
-				plasencia belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo valverde villanueva_de_la_serena zalamea santa_eufemia
-			}
-			our_cores_conquered_by_others = {
-				jumilla
-			}
 			starting_technology_level = 3
 			include = "expl_mediterranean"
 			include = "expl_silk_road_west"
@@ -535,13 +523,173 @@ countries = {
 			}
 			accepted_cultures = {
 				leonese
-				galician
 				basque
 			}
 			tolerated_cultures = {
 				sephardi
 			}
 		}
+			GRA = {
+			own_control_core = {
+				almeria
+				almanzora
+				baza
+				gergal
+				mojacar
+				velez_rubio
+				granada
+				adra
+				almunecar
+				guadix
+				huescar
+				illora
+				loja
+				pinar
+				orgiva
+				malaga
+				antequera
+				velez_malaga
+				cadiz
+				algeciras
+				arcos_de_la_frontera
+				gibraltar
+				jerez_de_la_frontera
+				medina_sidonia
+				sanlucar
+				tarifa
+				cordoba
+				baena
+				carpio
+				espiel
+				fuenteovejuna
+				lucena
+				palma_del_rio
+				pedroche
+				huelva
+				almonaster_la_real
+				aracena
+				aroche
+				ayamonte
+				niebla
+				puebla_de_guzman
+				jaen
+				andujar
+				baeza
+				cazorla
+				jodar
+				martos
+				ubeda
+				sevilla
+				carmona
+				constantina
+				coria_del_rio
+				ecija
+				moron
+				olvera
+				osuna
+				sanlucar_la_mayor
+			}
+			own_control_integrated = {
+				murcia
+				cartagena
+				lorca
+				mula
+				hellin
+				caravaca
+				cieza
+				segura_de_la_sierra
+				segura_range
+				badajoz albuquerque azuaga barcarrota jerez_de_los_caballeros llerena merida monesterio villanueva_del_fresno zafra
+				caceres arroyo brozas montanchez valencia_de_alcantara
+				belalcazar escurial herrera jaraicejo medellin puebla_de_alcocer trujillo villanueva_de_la_serena zalamea santa_eufemia
+			}
+			own_control_conquered = {
+			}
+			starting_technology_level = 3
+			include = "expl_muslim_mediterranean"
+			include = "expl_silk_road_west"
+			include = "expl_silk_road_center"
+			include = "expl_silk_road_east"
+			include = "expl_indian_trade_route"
+			include = "muslim_monarchy_no_abrahamic_dhimmi"
+			government = {
+				ruler = gra_yusuf_i_nasrid
+				ruler_term = {
+					character = gra_muhammad_i_nasrid
+					start_date = 1238.5.1
+					end_date = 1273.1.20
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = gra_muhammad_ii_nasrid
+					start_date = 1273.1.20
+					end_date = 1302.1.20
+					regnal_number = 2
+				}
+				ruler_term = {
+					character = gra_muhammad_ii_nasrid
+					start_date = 1302.1.20
+					end_date = 1302.4.7
+					regnal_number = 2
+					character = gra_muhammad_iii_nasrid
+					start_date = 1302.1.20
+					end_date = 1302.4.7
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = gra_muhammad_iii_nasrid
+					start_date = 1302.4.7
+					end_date = 1309.3.14
+					regnal_number = 3
+				}
+				ruler_term = {
+					character = gra_nasr_i_nasrid
+					start_date = 1309.3.14
+					end_date = 1314.2.8
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = gra_ismail_i_nasrid
+					start_date = 1314.2.8
+					end_date = 1325.7.8
+					regnal_number = 1
+				}
+				ruler_term = {
+					character = gra_muhammad_iv_nasrid
+					start_date = 1325.7.8
+					end_date = 1333.8.25
+					regnal_number = 4
+				}
+				ruler_term = {
+					character = gra_yusuf_i_nasrid
+					start_date = 1333.8.25
+					regnal_number = 1
+				}
+				regnal_numbers = {
+					name_muhammad = 4
+					name_nasr = 1
+					name_ishmael = 1
+					name_joseph = 1
+				}
+				reforms = {
+					the_jewel_of_alandalus_reform
+				}
+				laws = {
+					sharia_law = maliki_policy
+				}
+			}
+			court_language = maghrebi_dialect
+			religious_school = maliki_school
+			government = {
+				mysticism_vs_jurisprudence = -5
+			}
+			country_rank = rank_duchy
+			tolerated_cultures = {
+				sephardi
+			}
+			capital = granada
+		}
+
 		BQA = {
 			own_control_core = {
 				benghazi
@@ -891,16 +1039,12 @@ countries = {
 				land_vs_naval = -40
 			}
 			accepted_cultures = {
-				levantine_culture
 			}
 			tolerated_cultures = {
+				castilian
 				venetian
-				catalan
 				neapolitan
-				french
-				hungarian
-				czech
-				syriac_culture
+				catalan
 			}
 			capital = jerusalem
 		}
@@ -1811,164 +1955,7 @@ countries = {
 			country_rank = rank_kingdom
 			capital = santiago_compostela
 		}
-		GRA = {
-			own_control_core = {
-				almeria
-				almanzora
-				baza
-				gergal
-				mojacar
-				velez_rubio
-				granada
-				adra
-				almunecar
-				guadix
-				huescar
-				illora
-				loja
-				pinar
-				orgiva
-				malaga
-				antequera
-				velez_malaga
-				cadiz
-				algeciras
-				arcos_de_la_frontera
-				gibraltar
-				jerez_de_la_frontera
-				medina_sidonia
-				sanlucar
-				tarifa
-				cordoba
-				baena
-				carpio
-				espiel
-				fuenteovejuna
-				lucena
-				palma_del_rio
-				pedroche
-				huelva
-				almonaster_la_real
-				aracena
-				aroche
-				ayamonte
-				niebla
-				puebla_de_guzman
-				jaen
-				andujar
-				baeza
-				cazorla
-				jodar
-				martos
-				ubeda
-				sevilla
-				carmona
-				constantina
-				coria_del_rio
-				ecija
-				moron
-				olvera
-				osuna
-				sanlucar_la_mayor
-			}
-			own_control_integrated = {
-				murcia
-				cartagena
-				lorca
-				mula
-				hellin
-				caravaca
-				cieza
-				segura_de_la_sierra
-				segura_range
-			}
-			our_cores_conquered_by_others = {
-				olvera
-			}
-			starting_technology_level = 3
-			include = "expl_muslim_mediterranean"
-			include = "expl_silk_road_west"
-			include = "expl_silk_road_center"
-			include = "expl_silk_road_east"
-			include = "expl_indian_trade_route"
-			include = "muslim_monarchy_no_abrahamic_dhimmi"
-			government = {
-				ruler = gra_yusuf_i_nasrid
-				ruler_term = {
-					character = gra_muhammad_i_nasrid
-					start_date = 1238.5.1
-					end_date = 1273.1.20
-					regnal_number = 1
-				}
-				ruler_term = {
-					character = gra_muhammad_ii_nasrid
-					start_date = 1273.1.20
-					end_date = 1302.1.20
-					regnal_number = 2
-				}
-				ruler_term = {
-					character = gra_muhammad_ii_nasrid
-					start_date = 1302.1.20
-					end_date = 1302.4.7
-					regnal_number = 2
-					character = gra_muhammad_iii_nasrid
-					start_date = 1302.1.20
-					end_date = 1302.4.7
-					regnal_number = 3
-				}
-				ruler_term = {
-					character = gra_muhammad_iii_nasrid
-					start_date = 1302.4.7
-					end_date = 1309.3.14
-					regnal_number = 3
-				}
-				ruler_term = {
-					character = gra_nasr_i_nasrid
-					start_date = 1309.3.14
-					end_date = 1314.2.8
-					regnal_number = 1
-				}
-				ruler_term = {
-					character = gra_ismail_i_nasrid
-					start_date = 1314.2.8
-					end_date = 1325.7.8
-					regnal_number = 1
-				}
-				ruler_term = {
-					character = gra_muhammad_iv_nasrid
-					start_date = 1325.7.8
-					end_date = 1333.8.25
-					regnal_number = 4
-				}
-				ruler_term = {
-					character = gra_yusuf_i_nasrid
-					start_date = 1333.8.25
-					regnal_number = 1
-				}
-				regnal_numbers = {
-					name_muhammad = 4
-					name_nasr = 1
-					name_ishmael = 1
-					name_joseph = 1
-				}
-				reforms = {
-					the_jewel_of_alandalus_reform
-				}
-				laws = {
-					sharia_law = maliki_policy
-				}
-			}
-			court_language = maghrebi_dialect
-			religious_school = maliki_school
-			government = {
-				mysticism_vs_jurisprudence = -5
-			}
-			country_rank = rank_duchy
-			tolerated_cultures = {
-				sephardi
-			}
-			capital = granada
-		}
+
 		MVA = {
 			#Moravia
 			own_control_core = {

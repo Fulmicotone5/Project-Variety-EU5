@@ -88,7 +88,7 @@ TRY_REPLACE:expand_rgo_forestry = {
 }
 
 TRY_REPLACE:build_gravel_road = {
-	gold = 20
+	gold = 10
 }
 
 TRY_REPLACE:build_paved_road = {

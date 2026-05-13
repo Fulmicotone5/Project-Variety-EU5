@@ -2,15 +2,11 @@ PV_morkdom = {
 	subject_pays = subject_pays_march
 	color = subject_march
 	level = 1
-	visible_through_diplomacy = {
+	visible = {
 		country_rank_level >= scope:target.country_rank_level
 		religion = religion:norse
 	}
 
-	visible_through_treaty = {
-		country_rank_level >= scope:target.country_rank_level
-		religion = religion:norse
-	}
 	
 	join_offensive_wars_always = {
 		NOT = { scope:actor ?= { is_subject_of = scope:recipient } }
@@ -22,6 +18,7 @@ PV_morkdom = {
 		always = yes
 	}
 	has_overlords_ruler = no
+	will_join_independence_wars = yes
 	annexation_speed = 1
 	annexation_min_years_before = 50
 	annexation_min_opinion = 150
@@ -40,6 +37,7 @@ PV_morkdom = {
 	
 	can_overlord_recruit_regiments = yes
     can_overlord_build_ships = yes
+	fleet_basing_rights = yes
 
 	only_overlord_court_language = yes
 	only_overlord_or_kindred_culture = yes

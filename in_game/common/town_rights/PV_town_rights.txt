@@ -1,0 +1,189 @@
+royal_pvtanning_rights = {
+	location_modifier = {
+		local_preserved_meat_output_modifier = 0.2
+		local_cloth_output_modifier = 0.1
+		local_livestock_output_modifier = 0.1
+		local_fur_output_modifier = 0.1
+		local_leather_output_modifier = 0.2
+		local_cloth_guild_building_levels = 10
+		local_production_efficiency = -0.05
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_leather
+}
+
+pvminingtown = {
+	location_modifier = {
+		local_max_rgo_size_modifier = 0.5
+		local_population_growth = -0.001
+		local_production_efficiency = -0.1
+	}
+	allow = {
+		scope:target = {
+			NOR = {
+				has_town_rights = town_rights_type:upper_bergregal
+				has_town_rights = town_rights_type:lower_bergregal
+			}
+			or = {
+				raw_material = goods:silver
+				raw_material = goods:goods_gold
+				raw_material = goods:gems
+				raw_material = goods:iron
+				raw_material = goods:copper
+				raw_material = goods:lead
+				raw_material = goods:tin
+				raw_material = goods:alum
+				raw_material = goods:marble
+				raw_material = goods:mercury
+				raw_material = goods:coal
+				raw_material = goods:stone
+				raw_material = goods:saltpeter
+			}
+		}
+	}
+
+	color = goods_gold
+}
+
+pvfarmingtown = {
+	location_modifier = {
+		local_max_rgo_size_modifier = 0.5
+		local_monthly_food_modifier = 0.5
+		local_production_efficiency = -0.1
+	}
+	allow = {
+		scope:target = {
+			or = {
+				raw_material = goods:wool
+				raw_material = goods:wheat
+				raw_material = goods:maize
+				raw_material = goods:rice
+				raw_material = goods:millet
+				raw_material = goods:legumes
+				raw_material = goods:potato
+				raw_material = goods:livestock
+				raw_material = goods:olives
+				raw_material = goods:fruit
+				raw_material = goods:beeswax
+			}
+		}
+	}
+
+	color = beeswax
+}
+pvfishingcommunity = {
+	location_modifier = {
+		local_max_rgo_size_modifier = 0.5
+		local_preserved_meat_output_modifier = 0.25
+		local_fish_output_modifier = 0.25
+		local_production_efficiency = -0.1
+	}
+	allow = {
+		scope:target = {
+			raw_material = goods:fish
+		}
+	}
+
+	color = fish
+}
+
+pvnoble_jurisdiction = {
+	location_modifier = {
+		local_peasant_enfranchisment = -0.25
+		local_nobles_estate_power =  1
+		local_nobles_estate_unrest = -0.5
+		local_pop_promotion_speed_modifier = -0.3
+		local_manpower_modifier = 0.25
+		local_levy_size_modifier = 0.25
+		local_crown_estate_power = -0.25
+		local_burghers_estate_unrest = 0.1
+
+		local_peasants_estate_unrest = 0.2
+		local_max_control = 0.1
+	}
+	country_modifier = {
+		burghers_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+		peasants_estate_target_satisfaction = -0.01
+	}
+	allow = {
+		scope:target = {
+			NOR = {
+					has_town_rights = town_rights_type:pvfree_county
+					has_town_rights = town_rights_type:pvburgher_oversight
+				}
+		}
+	}
+
+	color = goods_lead
+}
+pvburgher_oversight = {
+	location_modifier = {
+		local_burghers_estate_power =  1
+		local_burghers_estate_power_unrest = -0.5
+		local_pop_promotion_speed_modifier = 0.25
+		local_crown_estate_power = -0.25
+		local_nobles_estate_unrest = 0.25
+		local_trades_per_burgher = 0.25
+		local_marketplace_building_levels = 10
+
+		local_max_control = 0.05
+	}
+	country_modifier = {
+		nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
+		peasants_estate_target_satisfaction = -0.01
+	}
+	allow = {
+		scope:target = {
+			NOR = {
+					has_town_rights = town_rights_type:pvfree_county
+					has_town_rights = town_rights_type:pvnoble_jurisdiction
+				}
+		}
+	}
+
+	color = map_BOH
+}
+pvfree_county = {
+	location_modifier = {
+		local_peasant_enfranchisment = 0.5
+		local_peasants_estate_power =  1
+		local_peasants_estate_power_unrest = -0.5
+		local_pop_promotion_speed_modifier = 0.5
+		local_crown_estate_power = -0.25
+		local_nobles_estate_unrest = 0.25
+		local_burghers_estate_power_unrest = 0.1
+		local_levy_size_modifier = -0.25
+		local_monthly_prosperity = 0.0025
+		local_population_growth = 0.001
+
+		local_max_control = -0.05
+	}
+	country_modifier = {
+		nobles_estate_target_satisfaction = -0.01
+	}
+	allow = {
+		scope:target = {
+			is_capital = no
+			NOR = {
+				has_town_rights = town_rights_type:pvburgher_oversight
+				has_town_rights = town_rights_type:pvnoble_jurisdiction
+			}
+		}
+	}
+
+	color = map_PVitac
+}
+
+tall_bonus = {
+	kept_at_conquest = no
+	location_modifier = {
+		free_building_levels = 200
+		local_population_growth = 0.0015
+	}
+	allow = {
+		societal_value:tall_vs_wide <= -95
+	}
+	color = goods_rice
+}

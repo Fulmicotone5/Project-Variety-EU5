@@ -2,12 +2,8 @@
 protectorate = { 
 	color = subject_tributary
 	level = 0
-	visible_through_diplomacy = {
-		scope:target = { subject_type_is_not_locked = yes }
-		is_ai = no
-	}
 
-	visible_through_treaty = {
+	visible = {
 		scope:target = { subject_type_is_not_locked = yes }
 		is_ai = no
 	}

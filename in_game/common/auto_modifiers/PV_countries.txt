@@ -65,6 +65,92 @@ TRY_REPLACE:war_exhaustion_impact = {
 
 }
 
+tall_push = {
+	potential_trigger = {
+		current_age = age_1_traditions
+		num_locations_owned_or_owned_by_subjects_or_below <= 50
+	}
+	monthly_towards_tall = 0.2
+}
+wide_push = {
+	potential_trigger = {
+		current_age = age_1_traditions
+		num_locations_owned_or_owned_by_subjects_or_below > 50
+	}
+	monthly_towards_wide = 0.2
+}
+tall_push2 = {
+	potential_trigger = {
+		current_age = age_2_renaissance
+		num_locations_owned_or_owned_by_subjects_or_below <= 100
+	}
+	monthly_towards_tall = 1
+}
+wide_push2 = {
+	potential_trigger = {
+		current_age = age_2_renaissance
+		num_locations_owned_or_owned_by_subjects_or_below > 100
+	}
+	monthly_towards_wide = 1
+}
+tall_push3 = {
+	potential_trigger = {
+		current_age = age_3_discovery
+		num_locations <= 125
+	}
+	monthly_towards_tall = 1
+}
+wide_push3 = {
+	potential_trigger = {
+		current_age = age_3_discovery
+		num_locations > 125
+	}
+	monthly_towards_wide = 1
+}
+tall_push4 = {
+	potential_trigger = {
+		current_age = age_4_reformation
+		num_locations <= 150
+	}
+	monthly_towards_tall = 1
+}
+wide_push4 = {
+	potential_trigger = {
+		current_age = age_4_reformation
+		num_locations > 150
+	}
+	monthly_towards_wide = 1
+}
+tall_push5 = {
+	potential_trigger = {
+		current_age = age_5_absolutism
+		num_locations <= 150
+	}
+	monthly_towards_tall = 1
+}
+wide_push5 = {
+	potential_trigger = {
+		current_age = age_5_absolutism
+		num_locations > 150
+	}
+	monthly_towards_wide = 1
+}
+tall_push6 = {
+	potential_trigger = {
+		current_age = age_6_revolutions
+		num_locations <= 150
+	}
+	monthly_towards_tall = 1
+}
+wide_push6 = {
+	potential_trigger = {
+		current_age = age_6_revolutions
+		num_locations > 150
+	}
+	monthly_towards_wide = 1
+}
+
+
 PVdhimmi_tax_base = {
 	potential_trigger = {
 		exists = yes
@@ -129,7 +215,7 @@ TRY_REPLACE:country_base_values = {
 
 	global_monthly_art_start_chance = 0.1
 	
-	global_peasant_enfranchisment = 0.25
+	global_peasant_enfranchisment = 0.1
 	
 	num_local_governors = 1
 

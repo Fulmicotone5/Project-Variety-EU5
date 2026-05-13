@@ -58,7 +58,7 @@ TRY_REPLACE:colonial_expansion = {
 	
 	country_modifier = {
 		num_naval_governors = 1
-		monthly_towards_outward = societal_value_significant_monthly_move
+		monthly_towards_outward = 0.3
 		colonial_range_modifier = 0.1
 	}
 

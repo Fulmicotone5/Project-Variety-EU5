@@ -93,19 +93,13 @@ PV_loyalty_to_the_popw = {
 		religion = religion:catholic
 		NOT = { tag = PAP }
 		country_exists = c:PAP
-		or = {
-			country_rank_is_kingdom = yes
-			country_rank_is_duchy = yes
-		}
+		country_rank_is_empire = no
 		current_age = age_4_reformation
 	}
 	allow = {
-		or = {
-			country_rank_is_kingdom = yes
-			country_rank_is_duchy = yes
-		}
+		country_rank_is_empire = no
 		religion = religion:catholic
-		country_exists = c:PAP
+		country_exists ?= c:PAP
 
 	}
 	can_revoke = {

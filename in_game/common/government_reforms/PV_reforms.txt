@@ -4,7 +4,7 @@ crusader_state = {
 	government = monarchy
 
 	country_modifier = {
-		cultures_capacity = 5
+		cultures_capacity = 1
 		clergy_estate_allowed_leading_military = yes
 		clergy_estate_blocked_from_leading_military = no
 		target_of_military_sponsorships = yes
@@ -266,7 +266,7 @@ colonial_administration = {
 
 	
 	country_modifier = {
-		monthly_towards_outward = societal_value_huge_monthly_move
+		monthly_towards_outward = 0.3
 		num_naval_governors = 1
 	}
 
@@ -281,133 +281,13 @@ TRY_REPLACE:agricultural_cultivation = {
 	}
 
 	country_modifier = {
-		global_monthly_food_modifier = 0.1
-		global_monthly_prosperity = 0.001
+		global_monthly_food_modifier = 0.05
 		monthly_towards_land = societal_value_monthly_move
 	}
 
 	years = 2
 }
 
-PV_agrarian_society = {
-	age = age_1_traditions
-	locked = {
-		has_reform = government_reform:agricultural_cultivation
-	}
-
-	allow = {
-		NOT = {
-			has_reform = government_reform:PV_metallurgy
-		}
-		NOT = {
-			has_reform = government_reform:PV_artisans
-		}
-		NOT = {
-			has_reform = government_reform:PV_miners
-		}
-	}
-
-
-	country_modifier = {
-		global_monthly_food_modifier = 0.1
-		monthly_towards_traditional_economy = societal_value_large_monthly_move
-		expand_rgo_farming_cost_modifier = -0.25
-		global_build_buildings_cost = 0.1
-	}
-
-	years = 2
-}
-PV_metallurgy = {
-	age = age_1_traditions
-
-	allow = {
-		NOT = {
-			has_reform = government_reform:PV_agrarian_society
-		}
-		NOT = {
-			has_reform = government_reform:PV_artisans
-		}
-		NOT = {
-			has_reform = government_reform:PV_miners
-		}
-	}
-
-
-	country_modifier = {
-		global_monthly_food_modifier = -0.1
-		global_iron_output_modifier = 0.05
-		global_steel_output_modifier = 0.1
-		global_tools_output_modifier = 0.1
-		global_weaponry_output_modifier = 0.1
-		global_jewelry_output_modifier = 0.1
-		global_cannons_output_modifier = 0.1
-		expand_rgo_farming_cost_modifier = 0.25
-		expand_rgo_hunting_cost_modifier = 0.25
-		expand_rgo_gathering_cost_modifier = 0.25
-		expand_rgo_forestry_cost_modifier = 0.25
-	}
-
-	years = 2
-}
-PV_artisans = {
-	age = age_1_traditions
-
-	allow = {
-		NOT = {
-			has_reform = government_reform:PV_metallurgy
-		}
-		NOT = {
-			has_reform = government_reform:PV_agrarian_society
-		}
-		NOT = {
-			has_reform = government_reform:PV_miners
-		}
-	}
-
-
-	country_modifier = {
-		global_monthly_food_modifier = -0.1
-		monthly_towards_capital_economy = societal_value_large_monthly_move
-		expand_rgo_farming_cost_modifier = 0.25
-		expand_rgo_mining_cost_modifier = 0.25
-		global_paper_output_modifier = 0.1
-		global_books_output_modifier = 0.1
-		global_fine_cloth_output_modifier = 0.1
-		global_lacquerware_output_modifier = 0.1
-		global_glass_output_modifier = 0.1
-	}
-
-	years = 2
-}
-PV_miners = {
-	age = age_1_traditions
-
-	allow = {
-		NOT = {
-			has_reform = government_reform:PV_agrarian_society
-		}
-		NOT = {
-			has_reform = government_reform:PV_metallurgy
-		}
-		NOT = {
-			has_reform = government_reform:PV_artisans
-		}
-	}
-
-
-	country_modifier = {
-		global_coal_output_modifier = 0.1
-		global_iron_output_modifier = 0.1
-		global_gems_output_modifier = 0.1
-		global_goods_gold_output_modifier = 0.05
-		global_silver_output_modifier = 0.1
-		global_production_efficiency = -0.05
-		global_build_buildings_cost = 0.1
-		expand_rgo_mining_cost_modifier = -0.2
-	}
-
-	years = 2
-}
 PV_diplofocus = {
 	age = age_1_traditions
 	

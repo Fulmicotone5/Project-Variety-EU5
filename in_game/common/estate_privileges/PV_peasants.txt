@@ -138,3 +138,59 @@ PV_allowed_herbalism = {
 		monthly_towards_traditionalist = societal_value_minor_monthly_move
 	}
 }
+
+PV_agrarian_society = {
+	estate = peasants_estate
+
+	allow = {
+		"estate_power(estate_type:peasants_estate)" >= 0.15
+	}
+
+
+	country_modifier = {
+		global_crown_estate_power = -0.1
+		global_peasants_estate_power = 0.5
+		global_monthly_food_modifier = 0.1
+		peasants_estate_target_satisfaction = 0.05
+		monthly_towards_traditional_economy = societal_value_monthly_move
+		global_max_rural_control = 0.025
+	}
+
+}
+
+PV_artisans_comm = {
+	estate = peasants_estate
+
+	allow = {
+		"estate_power(estate_type:peasants_estate)" >= 0.05
+	}
+
+
+	country_modifier = {
+		peasants_estate_target_satisfaction = 0.025
+		monthly_towards_communalism = societal_value_large_monthly_move
+		global_crown_estate_power = -0.1
+		global_peasants_estate_power = 0.5
+		global_nobles_estate_power = -0.1
+		nobles_estate_target_satisfaction = -0.025
+	}
+
+}
+
+
+PV_legalised_feud = {
+	estate = peasants_estate
+
+	potential = {
+		current_year > 1342
+	}
+	allow = {
+		societal_value:spiritualist_vs_humanist >= 15
+	}
+	
+	country_modifier = {
+		cultures_capacity = 0.5
+		monthly_towards_humanist = 0.15
+		clergy_estate_target_satisfaction = -0.1
+	}
+}

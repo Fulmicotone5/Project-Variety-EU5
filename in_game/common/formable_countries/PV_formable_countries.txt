@@ -341,7 +341,6 @@ F09_f = {
 			culture = culture:venetian
 			culture = culture:ligurian
 			culture = culture:emilian
-			culture = culture:friulan
 			culture = culture:ladin
 			culture = culture:tuscan
 		}

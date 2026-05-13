@@ -2,7 +2,7 @@ KOJ = {
 	color = map_KOJ
 	color2 = rgb { 211 230 211 }
 
-	culture_definition = castilian
+	culture_definition = PV_outremer
 	religion_definition = catholic
 
 	is_historic = yes

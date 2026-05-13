@@ -100,3 +100,34 @@ TRY_REPLACE:czech = {
 		slavic_group
 	}
 }
+
+PV_outremer = {
+	language = francique_dialect
+	
+	color = map_PIC
+	
+	tags = { french_gfx western_european_gfx european_gfx }
+
+	culture_groups = {
+		french_group
+		arabic_group
+	}
+
+	opinions = {
+		french = kindred
+		catalan = kindred
+		castilian = kindred
+		languedocien = kindred
+		provencal = kindred
+		venetian = kindred
+		neapolitan = kindred
+		hungarian = positive
+		czech = positive
+		syriac_culture = positive
+		gascon = positive
+		levantine_culture = negative
+		sephardi = enemy
+		mizrahi = enemy
+	}
+
+}

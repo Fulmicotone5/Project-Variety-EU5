@@ -133,6 +133,7 @@ reform_society_end_trigger = {
 		disaster_type = scope:disaster
 		years >= 10
 	}
+	num_locations > var:total_locations_required_variable
 }
 
 religious_turmoil_end_trigger = {
@@ -225,28 +226,11 @@ savonarola_disaster_end_trigger = {
 
 sinicization_disaster_end_trigger = {
 	OR = {
-		is_subject = yes
-		trigger_if = {
-			limit = {
-				country_exists = c:CHI
-				OR = {
-					NOT = { exists = international_organization:middle_kingdom }
-					c:CHI = { is_leader_of_international_organization = international_organization:middle_kingdom }
-				}
-			}
-			OR = {
-				NOT = { country_exists = c:CHI }
-				expected_army_size > c:CHI.expected_army_size
-				country_total_army_levy_size >= c:CHI.country_total_army_levy_size
-			}
-		}
-		trigger_else = {
-			OR = {
-				NOT = { exists = international_organization:middle_kingdom }
-				NOT = { exists = international_organization:middle_kingdom.leader_country }
-				expected_army_size > international_organization:middle_kingdom.leader_country.expected_army_size
-				country_total_army_levy_size >= international_organization:middle_kingdom.leader_country.country_total_army_levy_size
-			}
+		NOT = { country_exists = c:CHI }
+		is_subject_or_below_of = c:CHI
+		great_power_score > {
+			value = c:CHI.great_power_score
+			multiply = 0.75
 		}
 		societal_value:sinicized_vs_unsinicized > 0
 		custom_tooltip = {
@@ -284,7 +268,7 @@ byzantine_succession_crisis_end_trigger = {
 			}
 		}
 		AND = {
-			stability > 0
+			stability > 0 #PV
 			legitimacy > 50
 		}
 		custom_tooltip = {
@@ -310,7 +294,7 @@ byzantine_succession_crisis_end_trigger = {
 	}
 }
 
-succession_crisis_end_trigger = {
+succession_crisis_end_trigger = { #PV
 	OR = {
 		NOT = { government_type = government_type:monarchy }
 		in_civil_war = yes
@@ -344,6 +328,50 @@ succession_crisis_end_trigger = {
 			}
 			in_civil_war = no
 		}
+	}
+}
+
+coup_attempt_end_trigger = {
+	OR = {
+		AND = {
+			legitimacy >= {
+				value = 65
+				add = {
+					value = stability
+					multiply = -0.15
+					ceiling = yes
+				}
+				max = 99	#High stability makes the disaster slightly easier and Low stability makes the disaster slightly harder
+			}
+			custom_tooltip = {
+					text = pvnoblessuccneg
+					estate_satisfaction = { estate_type = estate_type:nobles_estate value >= 0.5 }
+				}
+				custom_tooltip = {
+					text = pvburghssuccneg
+					estate_satisfaction = { estate_type = estate_type:burghers_estate value >= 0.5 }
+				}
+				custom_tooltip = {
+					text = pvclerssuccneg
+					estate_satisfaction = { estate_type = estate_type:clergy_estate value >= 0.5 }
+				}
+		}
+
+		custom_tooltip = {
+			text = is_a_conspirator
+			any_character = {
+				count <= 0
+				has_variable = potential_conspirator_variable
+			}
+		}
+		custom_tooltip = {
+			text = conspirators_murdered_ruler_tt
+			has_variable = murdered_ruler_variable
+		}
+		had_disaster_for_years = {
+			disaster_type = scope:disaster
+			years >= 5
+		}			#PV
 	}
 }
 
@@ -383,14 +411,12 @@ war_of_the_aragonese_union_disaster_end_trigger = {
 war_of_the_roses_end_trigger = {
 	OR = {
 		AND = {
-			NOT = { exists = scope:lancaster_rebel }
-			NOT = { exists = scope:york_rebel }
-			in_civil_war = no
-		}
-		AND = {
 			NOT = {
 				any_rebel = {
-					rebel_category = pretender
+					OR = {
+						rebel_name_key = york_rebel_name
+						rebel_name_key = lancaster_rebel_name
+					}
 				}
 			}
 			at_war = no
@@ -423,7 +449,10 @@ decline_of_majapahit_trigger = {
 				limit = {
 					has_variable = demak_progress
 				}
-				var:demak_progress <= 0.5
+				custom_tooltip = {
+					text = demak_progress_less_than_50
+					var:demak_progress <= 0.5
+				}
 			}
 		}
 	}
@@ -627,54 +656,45 @@ decline_of_empire_end_trigger = {
 	}
 }
 
-coup_attempt_end_trigger = {
+fate_of_the_phoenix_end_trigger = {
 	OR = {
 		AND = {
-			legitimacy >= {
-				value = 65
-				add = {
-					value = stability
-					multiply = -0.15
-					ceiling = yes
-				}
-				max = 99	#High stability makes the disaster slightly easier and Low stability makes the disaster slightly harder
-			}
-			custom_tooltip = {
-					text = pvnoblessuccneg
-					estate_satisfaction = { estate_type = estate_type:nobles_estate value >= 0.5 }
-				}
-				custom_tooltip = {
-					text = pvburghssuccneg
-					estate_satisfaction = { estate_type = estate_type:burghers_estate value >= 0.5 }
-				}
-				custom_tooltip = {
-					text = pvclerssuccneg
-					estate_satisfaction = { estate_type = estate_type:clergy_estate value >= 0.5 }
-				}
+			NOT = { is_situation_active = situation:rise_of_the_ottomans }
+			num_locations_owned_or_owned_by_subjects_or_below > 150
 		}
-
-		custom_tooltip = {
-			text = is_a_conspirator
-			any_character = {
-				count <= 0
-				has_variable = potential_conspirator_variable
+		AND = {
+			current_year > 1401
+			num_locations_owned_or_owned_by_subjects_or_below < 150
+		}
+	}
+	custom_tooltip = {
+		text = remember_no_turk_tt
+		region:anatolia_region = {
+			NOT = {
+				any_country_with_capital_in_geography = {
+					this != root
+					OR = {
+						has_reform = government_reform:anatolian_beylik
+						culture = culture:turkish_culture
+						culture = culture:turkoman_culture
+					}
+					num_locations_owned_or_owned_by_subjects_or_below > 100
+				}
 			}
 		}
-		custom_tooltip = {
-			text = conspirators_murdered_ruler_tt
-			has_variable = murdered_ruler_variable
-		}
-		had_disaster_for_years = {
-			disaster_type = scope:disaster
-			years >= 5
-		}			
 	}
 }
 
 turmoil_in_brandenburg_end_trigger = {
 	OR = {
-		var:bra_wittelsbacher_investment_var >= 100
-		var:bra_wittelsbacher_neglect_var <= -100
+		AND = {
+			has_variable = bra_wittelsbacher_investment_var
+			var:bra_wittelsbacher_investment_var >= 100
+		}
+		AND = {
+			has_variable = bra_wittelsbacher_neglect_var
+			var:bra_wittelsbacher_neglect_var <= -100
+		}
 		custom_tooltip = {
 			text = turmoil_in_brandenburg_dynastic_struggle_resolved_tt
 			NOT = {

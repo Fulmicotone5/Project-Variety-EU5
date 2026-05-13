@@ -17,11 +17,11 @@ waste_disposal_system_advance = {
 }
 
 washhouses_advance = {
-	age = age_3_discovery
+	age = age_4_reformation
 	icon = swiss_recovery_and_prosperity
 	unlock_building = washhouse
 
-	requires = lazaretto_advance
+	requires = pharmacology_advance
 
 }
 

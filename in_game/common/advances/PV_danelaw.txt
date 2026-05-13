@@ -83,7 +83,7 @@ norse_renaissance = {
 			has_or_had_tag = F17 
 		}
 	}
-	global_monthly_prosperity = 0.001
+	global_monthly_prosperity = 0.0005
 
 	requires = university_advance
 }

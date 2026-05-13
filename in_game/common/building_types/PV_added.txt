@@ -49,7 +49,8 @@ bathouse = {
 	modifier = {
 		local_disease_resistance = 0.05
 		local_migration_attraction = 0.1
-		local_population_capacity = 15
+		local_population_capacity = 5
+		local_population_growth = 0.00025
 	}
 }
 
@@ -77,7 +78,8 @@ washhouse = {
 	modifier = {
 		local_disease_resistance = 0.1
 		local_migration_attraction = 0.15
-		local_population_capacity = 15
+		local_population_capacity = 10
+		local_population_growth = 0.0005
 	}
 
 	obsolete = bathouse
@@ -108,6 +110,7 @@ sewers = {
 		local_migration_attraction = 0.1
 		local_population_capacity = 25
 		local_life_expectancy = 2
+		local_population_growth = 0.00025
 	}
 
 	obsolete = latrines
@@ -139,6 +142,7 @@ waste_disposal_system = {
 		local_migration_attraction = 0.15
 		local_population_capacity = 30
 		local_life_expectancy = 5
+		local_population_growth = 0.001
 	}
 
 	obsolete = sewers

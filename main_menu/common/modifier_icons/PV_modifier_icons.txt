@@ -4,3 +4,12 @@ local_preserved_meat_output_modifier = {
 global_preserved_meat_output_modifier = {
 	positive = "gfx/interface/icons/modifier_types/city_upgrade_cost_modifier.dds" 
 }
+monthly_towards_tall= {
+	positive = "gfx/interface/icons/societal_values/tall_vs_wide_left.dds" 
+}
+monthly_towards_wide= {
+	positive = "gfx/interface/icons/societal_values/tall_vs_wide_right.dds" 
+}
+tallbonus ={
+	positive =  "gfx/interface/icons/societal_values/tall_vs_wide_left.dds" 
+}

@@ -19,11 +19,11 @@
 			or = {
 				custom_tooltip = {
 					text = pvnoblessucc
-					estate_satisfaction = { estate_type = estate_type:nobles_estate value <= 0.35 }
+					estate_satisfaction = { estate_type = estate_type:nobles_estate value <= 0.4 }
 				}
 				custom_tooltip = {
 					text = pvburghssucc
-					estate_satisfaction = { estate_type = estate_type:burghers_estate value <= 0.35 }
+					estate_satisfaction = { estate_type = estate_type:burghers_estate value <= 0.4 }
 				}
 			government_power < 50
 			}
@@ -35,11 +35,11 @@
 			or = {
 				custom_tooltip = {
 					text = pvnoblessucc
-					estate_satisfaction = { estate_type = estate_type:nobles_estate value <= 0.35 }
+					estate_satisfaction = { estate_type = estate_type:nobles_estate value <= 0.4 }
 				}
 				custom_tooltip = {
 					text = pvburghssucc
-					estate_satisfaction = { estate_type = estate_type:burghers_estate value <= 0.35 }
+					estate_satisfaction = { estate_type = estate_type:burghers_estate value <= 0.4 }
 				}
 			government_power < 40
 			}

@@ -6,7 +6,7 @@ TRY_REPLACE:megalopolis = {
 		local_soldiers_desired_pop = 1.00
 		local_nobles_desired_pop = 0.200
 		local_clergy_desired_pop = 0.400
-		local_migration_attraction = 0.5
+		local_migration_attraction = 1
 		local_population_growth = -0.003
 	
 		local_max_control = 0.2
@@ -17,7 +17,7 @@ TRY_REPLACE:megalopolis = {
 		
 		local_construction_speed = 0.5
 		
-		local_possible_town_rights = 2
+		local_possible_town_rights = 3
 		
 		local_integration_speed_modifier = -0.5
 		
@@ -41,7 +41,7 @@ TRY_REPLACE:megalopolis = {
 	
 	country_modifier = {
 		monthly_doom = 0.06
-		fort_limit = 2
+		fort_limit = 0.5
 	}
 	
 	capital_country_modifier = {
@@ -90,7 +90,7 @@ TRY_REPLACE:city = {
 		
 		local_construction_speed = 0.25
 
-		local_possible_town_rights = 1
+		local_possible_town_rights = 2
 		
 		local_integration_speed_modifier = -0.5
 		
@@ -110,7 +110,7 @@ TRY_REPLACE:city = {
 	
 	country_modifier = {
 		monthly_doom = 0.03
-		fort_limit = 1
+		fort_limit = 0.25
 	}
 	
 	allow = {
@@ -148,6 +148,8 @@ TRY_REPLACE:town = {
 		local_population_capacity_modifier = 0.10
 		local_food_capacity = 250
 		local_integration_speed_modifier = -0.2
+
+		local_possible_town_rights = 1
 		
 		free_building_levels = 25
 		

@@ -3,7 +3,10 @@
 
 	allow = {
 		war_exhaustion > 0
-		at_war = no
+		or = {
+			at_war = no
+			num_locations_owned_or_owned_by_subjects_or_below <= 150
+		}
 	}	
 	
 	is_finished = {
@@ -11,6 +14,32 @@
 	}
 
 	country_modifier = {
-		monthly_war_exhaustion = -0.05
+		monthly_war_exhaustion = -0.25
+	}
+}
+
+TRY_REPLACE:strengthen_government = {
+	ability = mil
+	
+	allow = {
+		government_power < 100
+	}	
+
+	is_finished = {
+		government_power > 99
+	}
+
+	country_modifier = {
+		monthly_legitimacy = 0.10
+		monthly_republican_tradition = 0.10
+		monthly_devotion = 0.10
+		monthly_horde_unity = 0.10
+		monthly_tribal_cohesion = 0.10
+	}
+
+	progress = {
+		scope:actor = {
+			value = government_power
+		}
 	}
 }

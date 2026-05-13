@@ -7,15 +7,49 @@
 	}
 }
 
-TRY_INJECT:rank_kingdom = {
+TRY_REPLACE:rank_kingdom = {
+	color = color_rank_kingdom
 	rank_modifier = {
-		great_power_score_exempt_from_forfeit = -15 #PV
+		max_diplomats = 1
+		diplomatic_range = 500
+		great_power_score_exempt_from_forfeit = 10
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
 		antagonism_tolerance = 600 #PV
-		num_local_governors = -1
+		
+		num_possible_rivals = 3
+
+		monthly_prestige = 0.1
+		
+		fort_limit = 1
+		
+		num_possible_artists = 1 
+		cultures_capacity = 1
+
+		diplomatic_capacity = 2
+		
+		allowed_alliance = yes
+		allowed_guarantee = yes
+		allowed_support_rebels = yes
+		
+		
+		
+		mercenary_range_modifier = 0.5
+	}
+	
+	level = 3
+
+	victory_card = yes
+	ai_level = 3
+	
+	language_power_scale = 1
+	
+	allow = {
+		can_upgrade_country_rank = { rank = rank_kingdom }
+		modifier:block_from_change_to_kingdom_rank = no
 	}
 }
+
 
 TRY_INJECT:rank_duchy = {
 	rank_modifier = {

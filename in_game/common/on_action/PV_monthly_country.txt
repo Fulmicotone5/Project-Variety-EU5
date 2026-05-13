@@ -1,5 +1,40 @@
 monthly_country_pulse = {
 	effect = {
+		ordered_country = {
+			limit = {
+				is_ai = no
+			}
+			order_by = monthly_balance
+			max = 1
+			add_country_modifier = {
+				modifier = small_nerf
+				months = 1
+			}
+		}
+		if = {
+			limit = {
+				has_estate_privilege = estate_privilege:PV_loyalty_to_the_popw
+				or = {
+					country_rank_is_empire = yes
+					NOT = {
+						religion = religion:catholic
+					}
+					NOT = {
+						country_exists ?= c:PAP
+					}
+				}
+			}
+			revoke_estate_privilege = estate_privilege:PV_loyalty_to_the_popw
+		}
+		if = {
+			limit = {
+				societal_value:tall_vs_wide > -80
+			}
+			every_owned_non_rural_location = {
+					limit = { has_town_rights = town_rights_type:tall_bonus }
+					revoke_town_rights_of_type = town_rights_type:tall_bonus
+			}
+		}
 		if = {
 			limit = {
 				current_date < 1337.6.20
@@ -126,6 +161,17 @@ monthly_country_pulse = {
 				country_rank_is_county = no
 			}
 			add_gold = 2000
+		}
+		######### INFLATION
+
+		if = {
+			limit = {
+				country_tax_base > 100
+			}
+			add_country_modifier = {
+				modifier = pvinflation
+				months = 1
+			}
 		}
 	}
 }
