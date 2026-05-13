@@ -2,6 +2,7 @@
  economic_tradition_law: "Economic Tradition"
  economic_tradition_law_desc: "The Economic Policy of the Country."
  A_noeco_policy: "No Economic Tradition"
+ A_noeco_policy_desc: "No economic tradition."
  PV_agrarian_society_policy: "Agrarian Society"
  PV_agrarian_society_policy_desc: "This culture is distinctly agrarian, their lands producing ample crops for hungry armies."
  PV_miners_policy: "Mining Tradition"

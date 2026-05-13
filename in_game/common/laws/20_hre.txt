@@ -1,4 +1,4 @@
-﻿#Intro:
+#Intro:
 #The majority of HRE laws have 5 policies with a very few which have less like the Golden Bull.
 #With the enactment of the Golden Bull, most HRE laws are set to the 3rd policy which has limited or no modifiers active at all
 #The HRE Emperor can try to change the policy to the next adjacent one (so from 3rd level to 4th or 2nd level)

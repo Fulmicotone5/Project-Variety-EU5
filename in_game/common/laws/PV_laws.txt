@@ -14,8 +14,12 @@ TRY_REPLACE:nobles_rights_laws = {
 		years = 2
 	}
 	curtail_nobles_policy = {
+		allow = {
+			"estate_power(estate_type:crown_estate)" >= 0.3
+			"estate_power(estate_type:nobles_estate)" <= 0.35
+		}
 		country_modifier = {
-			nobles_estate_target_satisfaction = large_permanent_target_satisfaction_penalty
+			nobles_estate_target_satisfaction = -0.05
 			global_nobles_estate_power = -1
 			nobles_estate_max_tax = 0.05
 			monthly_towards_centralization = societal_value_minor_monthly_move
@@ -95,6 +99,95 @@ TRY_REPLACE:nobles_rights_laws = {
 		}
 		estate_preferences = {
 			nobles_estate
+		}
+		years = 2
+	}
+}
+
+TRY_REPLACE:burghers_rights_laws = {
+	law_category = estates
+	strengthen_burghers_rights_policy = {
+		country_modifier = {
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+			monthly_towards_plutocracy = societal_value_minor_monthly_move
+			global_burghers_estate_power = 1
+			selling_efficiency = small_trade_efficiency_bonus
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	curtail_burghers_policy = {
+		allow = {
+			"estate_power(estate_type:crown_estate)" >= 0.3
+			"estate_power(estate_type:burghers_estate)" <= 0.25
+		}
+		country_modifier = {
+			burghers_estate_target_satisfaction = -0.1
+			global_burghers_estate_power = -0.5
+			burghers_estate_max_tax = 0.1
+			monthly_towards_centralization = societal_value_minor_monthly_move
+			burghers_estate_blocked_from_cabinet = yes
+		}
+		estate_preferences = {
+			nobles_estate
+			clergy_estate
+		}
+		years = 2
+	}
+	strong_guilds_policy = {
+		country_modifier = {
+			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
+			monthly_towards_plutocracy = societal_value_minor_monthly_move
+			global_burghers_estate_power = 0.05
+			global_production_efficiency = medium_production_efficiency_bonus
+			peasants_estate_allowed_in_cabinet = yes
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
+		}
+		years = 2
+	}
+	colonial_burghers_authority_policy = {
+		country_modifier = {
+			global_burghers_estate_power = 0.05
+			colonial_migration_size_modifier = 0.25
+			monthly_towards_outward = societal_value_minor_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
+		}
+		years = 2
+	}
+	increased_trade_regulations = {
+		potential = {
+			current_age_or_later = { age = age_4_reformation }
+		}
+		country_modifier = {
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+			global_burghers_estate_power = 0.25
+			monthly_towards_mercantilism = societal_value_monthly_move
+			export_impact_on_demand = 0.05
+		}
+		estate_preferences = {
+			crown_estate
+			burghers_estate
+		}
+		years = 2
+	}
+	reduced_trade_regulations = {
+		potential = {
+			current_age_or_later = { age = age_4_reformation }
+		}
+		country_modifier = {
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+			global_burghers_estate_power = 0.25
+			monthly_towards_free_trade = societal_value_monthly_move
+		}
+		estate_preferences = {
+			burghers_estate
 		}
 		years = 2
 	}

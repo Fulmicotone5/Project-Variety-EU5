@@ -74,12 +74,6 @@ AST = {
 	culture_definition = gascon
 	religion_definition = catharism
 }
-COM = {
-	#color = map_FRA
-	color = rgb { 231 66 66 }
-	culture_definition = gascon
-	religion_definition = catharism
-}
 IJO = {
 	#color = map_FRA
 	color = rgb { 235 210 49 }
@@ -117,13 +111,6 @@ VDM = {
 	#color = map_FRA
 	color = rgb { 216 38 38 }
 	culture_definition = french
-	religion_definition = catharism
-}
-AMG = {
-	#color = map_FRA
-	color = rgb { 187 206 247 }
-
-	culture_definition = gascon
 	religion_definition = catharism
 }
 CLT = {

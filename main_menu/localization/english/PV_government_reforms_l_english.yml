@@ -34,8 +34,6 @@
  CANCEL_PV_morkdomTITLE: "Cancel Mǫrk Status"
  CANCEL_PV_morkdom_FLAVOR: "Choose a [country|e] to cancel their [ShowSubjectTypeName('PV_morkdom')] status"
  BREAK_PV_morkdomTITLE: "Cancel Mǫrk Status"
- OFFER_PV_morkdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
- REQUEST_PV_morkdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  CANCEL_PV_morkdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  BREAK_PV_morkdom_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
  OFFER_PV_morkdom_NEWDESC: "Do we wish to demand that [COUNTRY.GetName] becomes our PV_morkdom?"

@@ -1021,7 +1021,11 @@ countries = {
 				nubia_proper_area
 			}
 			government = {
+				parliament = {
+				parliament_type = estate_parliament
+				}
 				type = monarchy
+				heir_selection = semi_salic_law
 				ruler = random
 				reforms = {
 					crusader_state
@@ -2010,6 +2014,9 @@ countries = {
 				nowy_targ
 			}
 			government = {
+				parliament = {
+					parliament_type = estate_parliament
+				}
 				type = monarchy
 				heir_selection = cognatic_primogeniture
 				ruler = lgc_boleslaw_iii_the_generous_piast
@@ -3575,6 +3582,7 @@ countries = {
 			starting_technology_level = 3
 			country_rank = rank_duchy
 			include = "expl_scandinavia"
+			include = "catholic_monarchy"
 			discovered_areas = {
 			}
 			government = {
@@ -3942,7 +3950,6 @@ countries = {
 			dynasty = hohenzollern_dynasty
 		}
 		P07 = {
-
 			capital = satsuma
 			starting_technology_level = 3
 
@@ -3985,6 +3992,7 @@ countries = {
 				western_india_region
 				hindustan_region
 			}
+			include = "far_east_asia_monarchy"
 
 			government = {
 				ruler_term = { character = jap_shimazu_tadahisa start_date = 1186.1.1 end_date = 1227.8.1 regnal_number = 1 }

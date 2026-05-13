@@ -3,7 +3,6 @@
 		great_power_score_exempt_from_forfeit = -40 #PV
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
-		antagonism_tolerance = 600 #PV
 	}
 }
 
@@ -15,7 +14,6 @@ TRY_REPLACE:rank_kingdom = {
 		great_power_score_exempt_from_forfeit = 10
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
-		antagonism_tolerance = 600 #PV
 		
 		num_possible_rivals = 3
 
@@ -56,7 +54,6 @@ TRY_INJECT:rank_duchy = {
 		great_power_score_exempt_from_forfeit = 0 #PV
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
-		antagonism_tolerance = 600 #PV
 		mercenary_units_preference_modifier = -0.5
 	}
 }

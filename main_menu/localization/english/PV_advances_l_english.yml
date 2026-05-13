@@ -1,6 +1,4 @@
 ﻿l_english:
- AUTO_MODIFIER_NAME_PVdhimmi_tax_base: "Base Tax Reduction"
- AUTO_MODIFIER_NAME_nobles_tax_base: "Base Tax Reduction"
  AUTO_MODIFIER_NAME_tall_push: "Less than 50 Locations Owned, Subjects Included"
  AUTO_MODIFIER_NAME_wide_push: "More than 50 Locations Owned, Subjects Included"
  AUTO_MODIFIER_NAME_tall_push2: "Less than 100 Locations Owned, Subjects Included"
@@ -13,6 +11,8 @@
  AUTO_MODIFIER_NAME_wide_push5: "More than 150 Locations Owned, Subjects Not Included"
  AUTO_MODIFIER_NAME_tall_push6: "Less than 150 Locations Owned, Subjects Not Included"
  AUTO_MODIFIER_NAME_wide_push6: "More than 150 Locations Owned, Subjects Not Included"
+ AUTO_MODIFIER_NAME_pvrealinflation: "Real Inflation"
+ AUTO_MODIFIER_DESC_pvrealinflation: "Real inflation is determined by the size of a country's economy and reflects the increase in prices that occurs naturally in conjunction with economic growth."
  MODIFIER_TYPE_NAME_tallbonus: "Unlocks a Special Town Right"
  MODIFIER_TYPE_DESC_tallbonus: "Exactly what the name says."
  MODIFIER_TYPE_NAME_monthly_towards_wide: "Monthly Progress to Wide"

@@ -14,7 +14,7 @@
  PV_new_coiniage: "New Coinage Rights"
  PV_new_coiniage_desc: "Granting the burghers the authority to coin currency will enable the state to maintain comprehensive control over the minting of its own monetary units."
  PV_silesia_grant: "Monopoly of the Coinage"
- PV_new_coiniage_desc: "Removing the authority of the crown over the coinage can serve to limit inflation; however, this comes at the expense of reducing the state's control over the nation's monetary policy."
+ PV_silesia_grant_desc: "Removing the authority of the crown over the coinage can serve to limit inflation; however, this comes at the expense of reducing the state's control over the nation's monetary policy."
  vapnatak: "Vápnatak"
  vapnatak_desc: "The Vápnatak originated as a Scandinavian ritual wherein vassals saluted their newly appointed lord by raising their blades, symbolizing loyalty.\nOver time, it has developed into a complex system of privileges and duties that significantly empower the nobility."
  sokeman: "Sokemen"

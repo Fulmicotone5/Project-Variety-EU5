@@ -44,10 +44,6 @@ TRY_INJECT:imperial_free_city = {
 TRY_INJECT:direct_imperial_free_city = {
 	great_power_score_transfer = -0.25
 }
-TRY_INJECT:colonial_nation = {
-	great_power_score_transfer = -0.75
-	can_be_annexed = yes
-}
 TRY_INJECT:conquistador = {
 	great_power_score_transfer = -0.5
 }
@@ -64,4 +60,10 @@ TRY_INJECT:pronoia = {
 	great_power_score_transfer = -0.25
 	can_overlord_build_buildings = no
 	can_overlord_build_rgos = no
+}
+TRY_INJECT:colonial_nation = { 
+	can_overlord_build_buildings = no
+	can_overlord_build_rgos = no
+	great_power_score_transfer = -0.75
+	can_be_annexed = yes
 }

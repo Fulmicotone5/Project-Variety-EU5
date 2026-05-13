@@ -162,17 +162,6 @@ monthly_country_pulse = {
 			}
 			add_gold = 2000
 		}
-		######### INFLATION
-
-		if = {
-			limit = {
-				country_tax_base > 100
-			}
-			add_country_modifier = {
-				modifier = pvinflation
-				months = 1
-			}
-		}
 	}
 }
 

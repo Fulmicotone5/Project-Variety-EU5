@@ -34,7 +34,7 @@ window = {
 	}
 
 	background = {
-		
+
 		texture = "gfx/frontend/interface/illustrations/frontend/pause_bg.dds" #PV
 
 		modify_texture = {
