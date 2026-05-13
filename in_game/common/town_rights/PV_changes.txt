@@ -1,4 +1,4 @@
-#Bergordnung Policy
+﻿#Bergordnung Policy
 TRY_REPLACE:upper_bergregal = {
 	kept_at_conquest = no
 

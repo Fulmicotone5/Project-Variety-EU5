@@ -1,4 +1,4 @@
-#PV_danelawsit = {
+﻿#PV_danelawsit = {
 
 #	image = "gfx/interface/illustrations/situation/little_ice_age.dds"
 

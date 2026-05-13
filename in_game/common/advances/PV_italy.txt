@@ -1,4 +1,4 @@
-milanese_heritage = {
+﻿milanese_heritage = {
 	age = age_1_traditions
 	potential = {
 		or = {
@@ -272,46 +272,54 @@ tuscan_new_trade_system = {
 }
 
 genoese_banking_traditions = {
-	or = {
+	potential = {
+		OR = {
 			has_or_had_tag = GEN
 			has_or_had_tag = F09
-		} 
+		}
+	}
 
 	age = age_1_traditions
-	
+
 	bank_interest = -0.01
-		
+
 	requires = medieval_administration
-	
+
 }
 
 genoese_maritime_diplomacy = {
-	or = {
+	potential = {
+		OR = {
 			has_or_had_tag = GEN
 			has_or_had_tag = F09
-		} 
+		}
+	}
 
 	age = age_1_traditions
-	
+
 	max_diplomats = 2
 }
 
 slave_manned_galleys = {
-	or = {
+	potential = {
+		OR = {
 			has_or_had_tag = GEN
 			has_or_had_tag = F09
-		} 
+		}
+	}
 
 	age = age_1_traditions
-	
+
 	unlock_building = galley_barracks
 }
 
 genoese_flexibility = {
-	or = {
+	potential = {
+		OR = {
 			has_or_had_tag = GEN
 			has_or_had_tag = F09
-		} 
+		}
+	}
 
 	age = age_3_discovery
 	navy_maintenance_efficiency = 0.05

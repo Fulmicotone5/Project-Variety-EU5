@@ -1,4 +1,4 @@
-warrir_aristocracy = {
+﻿warrir_aristocracy = {
 	age = age_1_traditions
 	icon = mandinka_warrior_spirit
 	potential = {

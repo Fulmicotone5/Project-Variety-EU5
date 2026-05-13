@@ -1,4 +1,4 @@
-namespace = daneflavor
+﻿namespace = daneflavor
 
 daneflavor.1 = {
 	type = country_event

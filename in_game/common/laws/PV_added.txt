@@ -1,4 +1,4 @@
-economic_tradition_law = {
+﻿economic_tradition_law = {
 	law_category = socioeconomic
 	A_noeco_policy = {
 		country_modifier = {

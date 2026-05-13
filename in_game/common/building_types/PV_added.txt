@@ -1,4 +1,4 @@
-latrines = {
+﻿latrines = {
 	is_foreign = no
 	pop_type = laborers
 	max_levels = 1

@@ -1,4 +1,4 @@
-villes_franches = {
+﻿villes_franches = {
 	estate = burghers_estate
 
 	potential = {

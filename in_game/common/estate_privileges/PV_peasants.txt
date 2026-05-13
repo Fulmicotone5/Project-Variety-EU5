@@ -1,4 +1,4 @@
-sokeman = {
+﻿sokeman = {
 	estate = peasants_estate
 	
 	
@@ -56,8 +56,8 @@ pv_cuture_blending = {
 
 	potential = {
 		OR = {
-			rank = country_rank:rank_kingdom
-			rank = country_rank:rank_empire
+			country_rank = country_rank:rank_kingdom
+			country_rank = country_rank:rank_empire
 		}
 	}
 	

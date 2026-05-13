@@ -1,4 +1,4 @@
-colonial_tradition = {
+﻿colonial_tradition = {
 	age = age_1_traditions
 	potential = { is_subject_type = colonial_nation }
 	

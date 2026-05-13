@@ -1,4 +1,4 @@
-TRY_REPLACE:dhimmi_promote_dhimmi_hierarchy = {
+﻿TRY_REPLACE:dhimmi_promote_dhimmi_hierarchy = {
 	estate = dhimmi_estate
 	
 	country_modifier = {

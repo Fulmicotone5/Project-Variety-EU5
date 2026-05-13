@@ -1,4 +1,4 @@
-consolidated_corruption_of_the_nobles_PV = {
+﻿consolidated_corruption_of_the_nobles_PV = {
 	estate = nobles_estate
 	
 	

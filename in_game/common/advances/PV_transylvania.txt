@@ -1,4 +1,4 @@
-trans_diversity = {
+﻿trans_diversity = {
 	age = age_1_traditions
 	icon = free_trade
 	potential = {

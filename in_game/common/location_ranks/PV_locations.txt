@@ -1,4 +1,4 @@
-TRY_REPLACE:megalopolis = {
+﻿TRY_REPLACE:megalopolis = {
 	
 	rank_modifier = {
 		local_burghers_desired_pop = 4.0

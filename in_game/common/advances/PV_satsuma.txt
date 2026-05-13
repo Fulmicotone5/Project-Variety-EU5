@@ -1,4 +1,4 @@
-smz_satsuma_shugo = {
+﻿smz_satsuma_shugo = {
 	icon = kkc_disinguished_family_in_kyushu
 	age = age_1_traditions
 	potential = {

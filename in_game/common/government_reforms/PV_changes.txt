@@ -1,4 +1,4 @@
-TRY_REPLACE:colonial_subject = {
+﻿TRY_REPLACE:colonial_subject = {
 
 	locked = {
 		is_locked_mechanic = {
@@ -197,11 +197,12 @@ TRY_REPLACE:merchant_republic = {
 	government = republic
 
 	country_modifier = {
+		global_merchant_capacity_modifier = 0.25
 		trade_income = 0.1
 		global_foreign_build_buildings_cost = -0.5
 		antagonism_received_modifier = 0.5
 
-		merchant_maintenance_efficiency = 0.25
+		merchant_maintenance_efficiency = 0.2
 		global_integration_speed_modifier = -0.25
 		court_language_is_market_language_importance_modifier = 5
 

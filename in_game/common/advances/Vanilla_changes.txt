@@ -1,4 +1,4 @@
-TRY_REPLACE:town_rights_enable = {
+﻿TRY_REPLACE:town_rights_enable = {
 	age = age_2_renaissance
 	icon = town_rights_advance
 	requires = renaissance_city_rights
@@ -13,9 +13,12 @@ TRY_REPLACE:town_rights_enable = {
 	unlock_town_rights = royal_brewing_rights
 	unlock_town_rights = royal_masonry_rights
 	
-	ai_weight = { 
+	ai_weight = {
 		add = 100
 		multiply = num_of_non_rural
-		divide = num_locations 
+		if = {
+			limit = { num_locations > 0 }
+			divide = num_locations
+		}
 	}
 }

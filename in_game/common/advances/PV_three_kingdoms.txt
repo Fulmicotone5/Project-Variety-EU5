@@ -1,4 +1,4 @@
-#Age 1 Traditions#
+﻿#Age 1 Traditions#
 
 confucian_influences = {
 	age = age_1_traditions

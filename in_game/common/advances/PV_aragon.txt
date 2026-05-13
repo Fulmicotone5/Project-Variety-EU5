@@ -1,4 +1,4 @@
-ara_a_maritime_realm = {
+﻿ara_a_maritime_realm = {
 	age = age_1_traditions
 	potential = {
 		OR = {

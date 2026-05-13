@@ -1,4 +1,4 @@
-namespace = vinflavor
+﻿namespace = vinflavor
 vinflavor.1 = {
 	type = country_event
 	title = vinflavor.1.title

@@ -1,4 +1,4 @@
-cathar_reforms = {
+﻿cathar_reforms = {
 	estate = clergy_estate
 	
 	

@@ -1,4 +1,4 @@
-bos_land_of_many_churches = {
+﻿bos_land_of_many_churches = {
 	age = age_1_traditions
 	potential = {
 		OR = {

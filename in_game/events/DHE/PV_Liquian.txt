@@ -1,4 +1,4 @@
-namespace = liqflavor
+﻿namespace = liqflavor
 
 liqflavor.1 = {
 	type = country_event

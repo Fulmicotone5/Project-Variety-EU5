@@ -1,4 +1,4 @@
-unlock_early_longbowmen_advance = {
+﻿unlock_early_longbowmen_advance = {
 	age = age_1_traditions
 	requires = city_building_advance
 	icon = scottish_longbowmen

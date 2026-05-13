@@ -1,4 +1,4 @@
-namespace = pruflavor
+﻿namespace = pruflavor
 
 pruflavor.1 = { 
 	type = country_event
@@ -30,9 +30,9 @@ pruflavor.1 = {
 			first_name = name_frederick_2
 			culture = root.culture
 			religion = root.religion
-			estate = nobles_estate
+			estate = estate_type:nobles_estate
 			adm = 65 dip = 65 mil = 65
-			dynasty = hohenzollern_dynasty
+			dynasty = dynasty:hohenzollern_dynasty
 			age = 1
 			save_scope_as = new_heir
 		}

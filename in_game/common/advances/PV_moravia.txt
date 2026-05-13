@@ -1,4 +1,4 @@
-slovak_integration = {
+﻿slovak_integration = {
 	age = age_1_traditions
 	icon = free_trade
 	potential = {

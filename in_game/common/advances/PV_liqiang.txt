@@ -1,4 +1,4 @@
-legacy_of_rome = {
+﻿legacy_of_rome = {
 	age = age_1_traditions
 	icon = heirs_of_rome
 	potential = {

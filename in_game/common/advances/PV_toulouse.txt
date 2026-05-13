@@ -1,4 +1,4 @@
-languedoc = {
+﻿languedoc = {
 	age = age_1_traditions
 	icon = french_language_in_all_courts
 	potential = {

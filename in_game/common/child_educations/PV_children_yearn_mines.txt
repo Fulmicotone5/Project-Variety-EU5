@@ -1,4 +1,4 @@
-TRY_REPLACE:expensive_in_depth_education = {
+﻿TRY_REPLACE:expensive_in_depth_education = {
 	allow = {
 	}
 

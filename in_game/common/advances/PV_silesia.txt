@@ -1,4 +1,4 @@
-
+﻿
 fortified_villages = {
 	age = age_1_traditions
 	icon = geo_restoration_of_fortresses_and_churches

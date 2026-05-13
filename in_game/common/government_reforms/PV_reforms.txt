@@ -1,4 +1,4 @@
-crusader_state = {
+﻿crusader_state = {
 	major = yes
 	unique = yes
 	government = monarchy
@@ -138,6 +138,7 @@ centralized_authority = {
 
 PV_vinland = {
 	major = yes
+	government = tribe
 
 	country_modifier = {
 		colonial_maintenance_cost = -0.10
@@ -165,6 +166,7 @@ PV_vinland = {
 
 japanese_clan_PV = {
 	major = yes
+	government = monarchy
 
 	country_modifier = {
 		exploration_mission_speed = 0.15
@@ -187,6 +189,7 @@ japanese_clan_PV = {
 
 PV_liqian = {
 	major = yes
+	government = monarchy
 
 	country_modifier = {
 		blocked_from_conversion = yes 
@@ -276,10 +279,6 @@ colonial_administration = {
 TRY_REPLACE:agricultural_cultivation = {
 	age = age_1_traditions
 
-	allow = {
-		has_reform = government_reform:PV_agrarian_society
-	}
-
 	country_modifier = {
 		global_monthly_food_modifier = 0.05
 		monthly_towards_land = societal_value_monthly_move
@@ -298,8 +297,6 @@ PV_diplofocus = {
 		diplomatic_spending_cost = -0.25
 		diplomatic_reputation = 2
 		diplomatic_capacity = 3
-		character_dip_child_education = 0.25
-		character_mil_child_education = -0.5
 		monthly_diplomats = 0.5
 		diplomatic_range = 0.25
 		monthly_towards_conciliatory = societal_value_large_monthly_move
@@ -323,11 +320,11 @@ PV_isolationist = {
 		global_population_growth = 0.001
 		antagonism_received_modifier = 1
 		diplomatic_spending_cost = 1
-		cultural_influence_modifier = -1
+		cultural_influence_modifier = -0.5
 		cultural_tradition_modifier = 1
-		global_merchant_capacity_modifier = -1
-		global_trades_per_burgher = -0.75
-		diplomatic_range = -1
+		global_merchant_capacity_modifier = -0.5
+		global_trades_per_burgher = -1.0
+		diplomatic_range = -0.5
 		monthly_towards_inward = societal_value_significant_monthly_move
 		monthly_towards_centralization = societal_value_large_monthly_move
 	}
@@ -533,7 +530,7 @@ PV_mercenary_contract_law = {
 	
 	country_modifier = {
 		levy_combat_efficiency_modifier = -0.5
-		global_levy_size_modifier = -0.5
+		global_levy_size_modifier = -0.25
 		army_maintenance_efficiency = -0.75
 		mercenary_maintenance_efficiency = 0.5
 		mercenary_range_modifier = 0.5
@@ -543,7 +540,6 @@ PV_mercenary_contract_law = {
 
 	years = 2
 }
-
 PV_maritime_power = {
 	age = age_1_traditions
 	

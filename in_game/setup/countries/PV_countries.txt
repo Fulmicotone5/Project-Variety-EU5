@@ -1,4 +1,4 @@
-KOJ = {
+﻿KOJ = {
 	color = map_KOJ
 	color2 = rgb { 211 230 211 }
 
@@ -74,6 +74,12 @@ AST = {
 	culture_definition = gascon
 	religion_definition = catharism
 }
+COM = {
+	#color = map_FRA
+	color = rgb { 231 66 66 }
+	culture_definition = gascon
+	religion_definition = catharism
+}
 IJO = {
 	#color = map_FRA
 	color = rgb { 235 210 49 }
@@ -92,12 +98,6 @@ FOI = {
 	color = rgb { 105 106 182 }
 
 	culture_definition = languedocien
-	religion_definition = catharism
-}
-COM = {
-	#color = map_FRA
-	color = rgb { 231 66 66 }
-	culture_definition = gascon
 	religion_definition = catharism
 }
 NRB = {

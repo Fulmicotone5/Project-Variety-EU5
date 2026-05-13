@@ -1,4 +1,4 @@
-TRY_REPLACE:destroy_market = {
+﻿TRY_REPLACE:destroy_market = {
 	government_power = 25
 	prestige = 5
 }
@@ -53,7 +53,7 @@ TRY_REPLACE:town_upgrade = {
 	max_scale = 4000
 }
 
-try_replace:rural_settlement_downgrade = {
+TRY_REPLACE:rural_settlement_downgrade = {
 	gold = 10
 }
 

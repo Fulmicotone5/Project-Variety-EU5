@@ -1,4 +1,4 @@
-
+﻿
 lords_of_the_rhone_corridor = {
 	age = age_1_traditions
 	potential = {

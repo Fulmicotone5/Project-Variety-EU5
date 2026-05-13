@@ -1,4 +1,4 @@
-legacy_of_exp = {
+﻿legacy_of_exp = {
 	age = age_1_traditions
 	icon = maritime_advance_age_2
 	potential = {

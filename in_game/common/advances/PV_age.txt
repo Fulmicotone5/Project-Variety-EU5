@@ -1,4 +1,4 @@
-TRY_REPLACE:deus_vult = {
+﻿TRY_REPLACE:deus_vult = {
 	age = age_2_renaissance
 	icon = teu_crusader_discipline
 	for = dip

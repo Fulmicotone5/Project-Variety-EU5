@@ -1,4 +1,4 @@
-french_heritage = {
+﻿french_heritage = {
 	age = age_1_traditions
 	potential = {
 		or = {

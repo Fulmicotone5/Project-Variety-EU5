@@ -1,4 +1,4 @@
-hun_composite_light_cavalry = {
+﻿hun_composite_light_cavalry = {
 	potential = {
 		or = {
 			has_or_had_tag = HUN

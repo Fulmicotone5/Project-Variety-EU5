@@ -1,4 +1,4 @@
-TRY_INJECT:age_1_traditions = {
+﻿TRY_INJECT:age_1_traditions = {
 	modifier = {
 		fort_maintenance_cost = -0.5
 		court_spending_cost_modifier = -0.25

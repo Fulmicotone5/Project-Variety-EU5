@@ -1,4 +1,4 @@
-namespace = burflavor
+﻿namespace = burflavor
 burflavor.1 = {
 	type = country_event
 	title = burflavor.1.title
@@ -211,7 +211,7 @@ burflavor.4 = {
 		if = {
 			limit = {
 				NOT = {
-					rank = country_rank:rank_kingdom
+					country_rank = country_rank:rank_kingdom
 				}
 			}
 			set_country_rank_effect = {
@@ -377,7 +377,7 @@ burflavor.7 = {
 		if = {
 			limit = {
 				NOT = {
-					rank = country_rank:rank_kingdom
+					country_rank = country_rank:rank_kingdom
 				}
 			}
 			set_country_rank_effect = {
@@ -450,9 +450,6 @@ burflavor.8 = {
 			foreground = estate_type:clergy_estate
 			background = estate_type:clergy_estate
 		}
-		not = {
-			owns = location:arles
-		}
 		random_country = {
 						limit = { owns = location:arles }
 						save_scope_as = target_country
@@ -465,6 +462,9 @@ burflavor.8 = {
 		is_independent_or_autonomous_subject = yes
 		any_international_organizations_member_of = {
 			international_organization_type = international_organization_type:hre
+		}
+		NOT = {
+			owns = location:arles
 		}
 	}
 	option = {
@@ -538,7 +538,7 @@ burflavor.9 = {
 		if = {
 			limit = {
 				NOT = {
-					rank = country_rank:rank_kingdom
+					country_rank = country_rank:rank_kingdom
 				}
 			}
 			set_country_rank_effect = {

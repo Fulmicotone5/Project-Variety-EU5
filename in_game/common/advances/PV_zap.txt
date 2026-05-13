@@ -1,4 +1,4 @@
-many_universities_of_zap = {
+﻿many_universities_of_zap = {
 	icon = imperatorskiy_moskovskiy_universitet
 	age = age_2_renaissance
 	potential = {

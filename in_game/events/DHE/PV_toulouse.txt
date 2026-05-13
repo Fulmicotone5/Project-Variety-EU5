@@ -1,4 +1,4 @@
-namespace = touflavor
+﻿namespace = touflavor
 touflavor.1 = {
 	type = country_event
 	title = touflavor.1.title

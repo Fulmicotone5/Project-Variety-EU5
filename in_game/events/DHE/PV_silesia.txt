@@ -1,4 +1,4 @@
-namespace = sileflavor
+﻿namespace = sileflavor
 
 sileflavor.1 = {
 	type = country_event

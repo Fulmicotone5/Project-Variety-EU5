@@ -1,4 +1,4 @@
-namespace = moraflavor
+﻿namespace = moraflavor
 
 moraflavor.1 = {
 	type = country_event

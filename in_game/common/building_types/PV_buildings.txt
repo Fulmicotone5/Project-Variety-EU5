@@ -1,4 +1,4 @@
-TRY_REPLACE:stockade = {
+﻿TRY_REPLACE:stockade = {
 	
 	max_levels = 1
 	pop_type = soldiers
@@ -26,8 +26,7 @@ TRY_REPLACE:stockade = {
 						has_building = building_type:star_fort
 						has_building = building_type:fortress
 					}
-					owner ?= scope:actor
-				}
+}
 			}
 	}
 
@@ -68,8 +67,7 @@ TRY_INJECT:castle = {
 						has_building = building_type:star_fort
 						has_building = building_type:fortress
 					}
-					owner ?= scope:actor
-				}
+}
 			}
 	}
 	modifier = {
@@ -88,8 +86,7 @@ TRY_INJECT:bastion = {
 						has_building = building_type:star_fort
 						has_building = building_type:fortress
 					}
-					owner ?= scope:actor
-				}
+}
 			}
 	}
 	modifier = {
@@ -108,8 +105,7 @@ TRY_INJECT:star_fort = {
 						has_building = building_type:star_fort
 						has_building = building_type:fortress
 					}
-					owner ?= scope:actor
-				}
+}
 			}
 	}
 	modifier = {
@@ -128,8 +124,7 @@ TRY_INJECT:fortress = {
 						has_building = building_type:star_fort
 						has_building = building_type:fortress
 					}
-					owner ?= scope:actor
-				}
+}
 			}
 	}
 	modifier = {

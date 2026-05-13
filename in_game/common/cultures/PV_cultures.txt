@@ -1,4 +1,4 @@
-PV_vinlander = {
+﻿PV_vinlander = {
 	language = icelandic_dialect
 	
 	color = rgb { 84 17 11 }
