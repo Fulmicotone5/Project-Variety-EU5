@@ -191,6 +191,8 @@ TRY_INJECT:country_base_values = {
 	global_estate_max_tax = -0.35	#check always the new estate for taxes
 	tribes_estate_max_tax = 0.35
 	cossacks_estate_max_tax = 0.35
+
+	fort_limit = 7
 }
 
 TRY_REPLACE:num_locations_impact = {
