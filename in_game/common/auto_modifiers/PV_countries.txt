@@ -50,6 +50,8 @@ TRY_REPLACE:prestige = {
 TRY_REPLACE:war_exhaustion_impact = {
 	scales_with = war_exhaustion
 
+	loyalty_to_overlord = -5
+
 	land_morale_modifier = -0.025
 	naval_morale_modifier = -0.025
 	global_levy_size_modifier = -0.05
