@@ -58,3 +58,6 @@
  pvfree_county_desc: "By granting a minor degree of independence to this [location|e], we can limit Peasant unrest."
  tall_bonus: "Tall Value Rights"
  tall_bonus_desc: "Awarded for going for a Tall Build."
+ P01bureaugh: "Founding Borough"
+ P01bureaugh_desc: "One of the five founding boroughs of the Danelaw, these administrative centers serve as the cultural and political centers of the country."
+ pvsuca: "Obtained through events"

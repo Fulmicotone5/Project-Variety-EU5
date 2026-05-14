@@ -35,7 +35,7 @@ defenderofoccitania = {
 			has_or_had_tag = F03 
 		}
 	}
-	fort_maintenance_cost = -0.2
+	fort_maintenance_cost = -0.1
 	fort_limit_modifier = 0.1
 
 	requires = castle_advance

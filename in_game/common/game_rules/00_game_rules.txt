@@ -63,7 +63,7 @@ ai_difficulty = {
 
 
 ai_aggression = {
-	default = ai_normal_aggression
+	default = ai_high_aggression
 
 	ai_low_aggression = {
 		apply_modifier = ai:low_aggression

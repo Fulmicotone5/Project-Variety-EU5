@@ -43,13 +43,13 @@ TRY_REPLACE:tithe_price = {
 
 TRY_REPLACE:city_upgrade = {
 	scaled_gold = 10
-	min_scale = 800
+	min_scale = 500
 	max_scale = 8000
 }
 
 TRY_REPLACE:town_upgrade = {
 	scaled_gold = 5
-	min_scale = 500
+	min_scale = 250
 	max_scale = 4000
 }
 

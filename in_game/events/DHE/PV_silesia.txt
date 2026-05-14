@@ -202,6 +202,7 @@ sileflavor.4 = {
 		add_gold = -200
 		location:nysa = {
 			change_location_rank = location_rank:town
+			grant_town_rights = town_rights_type:pvminingtown
 		}
 		add_estate_satisfaction = { type = estate_type:nobles_estate 
 			value = 0.05

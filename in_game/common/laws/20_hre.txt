@@ -2991,7 +2991,7 @@ perpetual_diet_law = {
 				}
 			}
 			local_monthly_development_modifier = 0.1
-			local_monthly_prosperity = 0.01
+			local_monthly_prosperity = 0.001
 		}
 		on_deactivate = {
 			international_organization_lock_parliament_issue_effect = { type = hre_establish_perpetual_diet }

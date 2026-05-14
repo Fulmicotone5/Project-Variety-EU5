@@ -141,6 +141,7 @@ daneflavor.4 = {
 		add_gold = -100
 		location:leicester = {
 			change_location_rank = location_rank:town
+			grant_town_rights = town_rights_type:P01bureaugh
 			construct_building = {
 					building_type = building_type:temple
 			}
@@ -199,6 +200,7 @@ daneflavor.5 = {
 		add_gold = -150
 		location:nottingham = {
 			change_location_rank = location_rank:town
+			grant_town_rights = town_rights_type:P01bureaugh
 			construct_building = {
 					building_type = building_type:temple
 			}
@@ -258,6 +260,7 @@ daneflavor.6 = {
 		add_gold = -150
 		location:derby = {
 			change_location_rank = location_rank:town
+			grant_town_rights = town_rights_type:P01bureaugh
 			construct_building = {
 					building_type = building_type:temple
 			}
@@ -316,6 +319,7 @@ daneflavor.7 = {
 		add_gold = -100
 		location:rutland = {
 			change_location_rank = location_rank:town
+			grant_town_rights = town_rights_type:P01bureaugh
 			construct_building = {
 					building_type = building_type:temple
 			}

@@ -82,7 +82,7 @@ PV_hill_dwellers = {
 	
 	country_modifier = {
 		hills_proximity_impact = -0.25
-		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
 		monthly_towards_land = societal_value_monthly_move
 	}
 }
@@ -102,7 +102,7 @@ PV_mountainshomes = {
 	country_modifier = {
 		mountains_proximity_impact = -0.25
 		plateau_proximity_impact = -0.25
-		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
 		monthly_towards_land = societal_value_monthly_move
 	}
 }
@@ -122,7 +122,7 @@ PV_wetlands = {
 	
 	country_modifier = {
 		wetlands_proximity_impact = -0.75
-		monthly_towards_decentralization = societal_value_large_monthly_move
+		monthly_towards_decentralization = societal_value_monthly_move
 		monthly_towards_land = societal_value_monthly_move
 	}
 }

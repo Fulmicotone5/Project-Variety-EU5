@@ -28,7 +28,7 @@ monthly_country_pulse = {
 		}
 		if = {
 			limit = {
-				societal_value:tall_vs_wide > -80
+				societal_value:tall_vs_wide > -95
 			}
 			every_owned_non_rural_location = {
 					limit = { has_town_rights = town_rights_type:tall_bonus }

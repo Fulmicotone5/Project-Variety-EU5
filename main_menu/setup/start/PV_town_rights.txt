@@ -1,0 +1,13 @@
+townrights_manager = {
+	hof = pvfarmingtown
+	barcelona = staple_port
+	valencia = staple_port
+	lisbon = staple_port
+	majdal = pvfarmingtown
+	majdal = granary_town
+	acre = pvburgher_oversight
+	damascus = pvburgher_oversight
+	antioch = pvfree_county
+	aleppo = pvfree_county
+	lincoln = P01bureaugh
+}

@@ -61,7 +61,7 @@ traditionalist_vs_innovative = {
 		bias_for_scholar_policies = -100
 	}
 	right_modifier = {
-		global_max_literacy = 10
+		global_max_literacy = 5
 		cultural_influence_modifier = 1.0
 
 		stability_cost = 0.25
@@ -254,7 +254,7 @@ offensive_vs_defensive = {
 		siege_ability = 0.1
 		assault_ability = 0.1
 		
-		fort_maintenance_cost = 0.4
+		fort_maintenance_cost = 0.3
 		army_movement_speed = 0.1
 		defence_importance_modifier = -0.2
 		bias_for_militarist_policies = 50

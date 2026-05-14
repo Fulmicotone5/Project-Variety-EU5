@@ -193,7 +193,7 @@ pv_code_of_chivalry = {
 		global_nobles_estate_power = 1
 		army_heavy_cavalry_power = 0.05
 		character_mil_child_education = 0.1
-		court_spending_cost_modifier = 0.02
+		court_spending_cost_modifier = 0.05
 		
 
 		monthly_towards_aristocracy = societal_value_minor_monthly_move
@@ -249,7 +249,7 @@ frequent_court_events = {
 	
 	country_modifier = {
 		monthly_prestige = 0.1
-		cultural_influence_modifier = 0.5
+		cultural_influence_modifier = 0.25
 		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction
 		court_spending_cost_modifier = 0.03
 		monthly_towards_aristocracy = societal_value_large_monthly_move

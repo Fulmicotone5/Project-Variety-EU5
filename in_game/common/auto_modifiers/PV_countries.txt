@@ -82,28 +82,28 @@ wide_push = {
 tall_push2 = {
 	potential_trigger = {
 		current_age = age_2_renaissance
-		num_locations_owned_or_owned_by_subjects_or_below <= 100
+		num_locations_owned_or_owned_by_subjects_or_below <= 80
 	}
 	monthly_towards_tall = 1
 }
 wide_push2 = {
 	potential_trigger = {
 		current_age = age_2_renaissance
-		num_locations_owned_or_owned_by_subjects_or_below > 100
+		num_locations_owned_or_owned_by_subjects_or_below > 80
 	}
 	monthly_towards_wide = 1
 }
 tall_push3 = {
 	potential_trigger = {
 		current_age = age_3_discovery
-		num_locations <= 125
+		num_locations <= 120
 	}
 	monthly_towards_tall = 1
 }
 wide_push3 = {
 	potential_trigger = {
 		current_age = age_3_discovery
-		num_locations > 125
+		num_locations > 120
 	}
 	monthly_towards_wide = 1
 }
@@ -155,7 +155,7 @@ TRY_REPLACE:at_peace = {
 	potential_trigger = { at_war = no }
 	
 	monthly_war_exhaustion = -0.5
-	levy_recovery_modifier = 0.25
+	levy_recovery_modifier = 0.75
 	monthly_towards_conciliatory = societal_value_monthly_move
 }
 
@@ -177,13 +177,14 @@ TRY_REPLACE:capital_occupied = {
 	monthly_war_exhaustion = 0.5
 }
 TRY_INJECT:country_base_values = {
+	max_diplomats = 1
 
 	country_child_education = -0.25
 	dhimmi_estate_max_tax = 0.15
 
-	nobles_estate_max_tax = 0.2
+	nobles_estate_max_tax = 0.25
 	clergy_estate_max_tax = 0.35
-	burghers_estate_max_tax = 0.25
+	burghers_estate_max_tax = 0.3
 	peasants_estate_max_tax = 0.35
 	global_peasant_enfranchisment = -0.15
 	global_mercenaries_modifier = -0.5
