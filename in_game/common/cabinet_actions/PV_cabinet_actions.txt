@@ -5,7 +5,14 @@
 		war_exhaustion > 0
 		or = {
 			at_war = no
-			num_locations_owned_or_owned_by_subjects_or_below <= 150
+			AND = {
+				num_locations_owned_or_owned_by_subjects_or_below <= 80
+				current_year >= 1337
+			}
+			AND = {
+				num_locations_owned_or_owned_by_subjects_or_below <= 150
+				current_year >= 1437
+			}
 		}
 	}	
 	
