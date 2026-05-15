@@ -92,6 +92,7 @@
 			expand_rgo_mining_cost_modifier = 0.25
 			global_cloth_output_modifier = 0.1
 			global_fine_cloth_output_modifier = 0.1
+			global_silk_output_modifier = 0.1
 			global_dyes_output_modifier = 0.15
 
 		}

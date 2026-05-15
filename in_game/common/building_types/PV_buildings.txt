@@ -278,7 +278,9 @@ TRY_REPLACE:local_governor = {
 	}
 
 	remove_if = {
-		location = { has_road_to_capital = no }
+		location = {
+            is_overseas_for_owner = yes
+        }
 		NOT = { owner = { at_war = yes } }
 		NOT = { owner = { in_civil_war = yes } }
 	}
