@@ -11,6 +11,18 @@
 			add_policy = policy:pvrural_administration
 			add_policy = policy:pv_tenantfarmers
 		}
+		every_country = { #solo questo
+			limit = {
+				NOT = {
+					has_or_had_tag = BYZ
+				}
+				NOR = {
+					government_type = government_type:tribe
+					government_type = government_type:steppe_horde
+				}
+			}
+			add_bureaucracy = bureaucracy_type:pv_cabinet_bur
+		}
 		#catholics
 		if = {
 			limit = { NOT = { has_global_variable_list = pope_countries } }

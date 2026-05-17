@@ -104,7 +104,7 @@ pvnoble_jurisdiction = {
 	}
 	country_modifier = {
 		burghers_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
-		peasants_estate_target_satisfaction = -0.01
+		peasants_estate_target_satisfaction = tiny_privilege_target_satisfaction_penalty
 	}
 	allow = {
 		scope:target = {
@@ -131,8 +131,8 @@ pvburgher_oversight = {
 		local_max_control = 0.05
 	}
 	country_modifier = {
-		nobles_estate_target_satisfaction = small_privilege_target_satisfaction_penalty
-		peasants_estate_target_satisfaction = -0.01
+		nobles_estate_target_satisfaction = tiny_privilege_target_satisfaction_penalty
+		peasants_estate_target_satisfaction = tiny_privilege_target_satisfaction_penalty
 	}
 	allow = {
 		scope:target = {
@@ -163,7 +163,7 @@ pvfree_county = {
 		local_max_control = -0.05
 	}
 	country_modifier = {
-		nobles_estate_target_satisfaction = -0.01
+		nobles_estate_target_satisfaction = tiny_privilege_target_satisfaction_penalty
 	}
 	allow = {
 		scope:target = {
@@ -183,7 +183,11 @@ tall_bonus = {
 	kept_at_conquest = no
 	location_modifier = {
 		free_building_levels = 200
-		local_population_growth = 0.0015
+		local_population_growth = 0.0025
+		local_marketplace_building_levels = 25
+		local_jewelry_guild_building_levels = 25
+		local_cloth_guild_building_levels = 25
+		local_fine_cloth_guild_building_levels = 25
 	}
 	allow = {
 		societal_value:tall_vs_wide <= -95

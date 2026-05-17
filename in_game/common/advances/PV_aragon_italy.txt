@@ -47,19 +47,35 @@ consolidate_the_royal_domain = {
 	
 	requires = renaissance_thought
 }
-encouraged_city_living = {
-	age = age_3_discovery
+F11adv1 = {
+	age = age_2_renaissance
+	icon = ara_chartered_merchant_companies
 	potential = {
-		OR = {
-			has_or_had_tag = NAP
-			has_or_had_tag = F11
-			has_or_had_tag = TWS
-		}
+		has_or_had_tag = F11
 	}
-	non_rural_migration_attraction = 0.2
-	global_burghers_city_desired_pop = 0.5
+	merchant_maintenance_efficiency = 0.15
 	
-	requires = printing_press_advance
+	requires = merchant_power_from_maritime_renaissance_advance
+}
+F11adv2 = {
+	age = age_3_discovery
+	icon = merchant_power_from_maritime_rev_dip_choice
+	potential = {
+		has_or_had_tag = F11
+	}
+	trade_income = 0.25
+	
+	requires = trade_through_owned_disc_advance
+}
+F11adv3 = {	
+	age = age_3_discovery
+	icon = library_advance
+	requires = new_world_advance
+	global_max_bureaucracy_slots = 1
+	
+	potential = { 
+		has_or_had_tag = F11
+	}
 }
 expanded_arsenale = {
 	age = age_4_reformation

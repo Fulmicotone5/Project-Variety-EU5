@@ -282,6 +282,7 @@ TRY_REPLACE:agricultural_cultivation = {
 	country_modifier = {
 		global_monthly_food_modifier = 0.05
 		monthly_towards_land = societal_value_monthly_move
+		monthly_towards_inward = societal_value_large_monthly_move
 	}
 
 	years = 2

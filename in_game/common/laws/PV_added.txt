@@ -15,6 +15,7 @@
 			expand_rgo_farming_cost_modifier = -0.25
 			global_build_buildings_cost = 0.1
 			global_monthly_prosperity = 0.001
+			monthly_towards_inward = societal_value_monthly_move
 
 		}
 		estate_preferences = {
@@ -109,7 +110,7 @@
 			global_paper_output_modifier = 0.15
 			global_books_output_modifier = 0.15
 			global_production_efficiency = -0.05
-
+			monthly_towards_inward = societal_value_monthly_move
 		}
 		estate_preferences = {
 			clergy_estate
@@ -293,6 +294,7 @@ PVprisoners_policy = {
 		country_modifier = {
 			tax_income_efficiency = 0.01
 			monthly_towards_traditionalist = 0.2
+			monthly_towards_inward = societal_value_monthly_move
 		}
 		estate_preferences = {
 			nobles_estate
@@ -383,7 +385,7 @@ pv_serfstatus = {
 	law_category = socioeconomic
 	pvpeasant_proprietorship = {
 		allow = {
-			"estate_power(estate_type:peasants_estate)" >= 0.15
+			"estate_power(estate_type:peasants_estate)" >= 0.1
 			"estate_power(estate_type:crown_estate)" >= 0.25
 			societal_value:serfdom_vs_free_subjects >= 50
 
@@ -399,7 +401,7 @@ pv_serfstatus = {
 		estate_preferences = {
 			peasants_estate
 		}
-		years = 2
+		years = 1
 	}
 	pvhomesteading = {
 		allow = {
@@ -416,7 +418,7 @@ pv_serfstatus = {
 		estate_preferences = {
 			peasants_estate
 		}
-		years = 2
+		years = 1
 	}
 	pv_tenantfarmers = {
 		country_modifier = {
@@ -438,7 +440,7 @@ pv_serfstatus = {
 		estate_preferences = {
 			nobles_estate
 		}
-		years = 2
+		years = 1
 	}
 	pvserfdom = {
 		allow = {
@@ -455,6 +457,6 @@ pv_serfstatus = {
 		estate_preferences = {
 			nobles_estate
 		}
-		years = 2
+		years = 1
 	}
 }

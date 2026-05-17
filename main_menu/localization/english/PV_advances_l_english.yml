@@ -19,6 +19,8 @@
  MODIFIER_TYPE_DESC_monthly_towards_wide: "This impacts the change towards the Wide [societal_values|e]."
  MODIFIER_TYPE_NAME_monthly_towards_tall: "Monthly Progress to Tall"
  MODIFIER_TYPE_DESC_monthly_towards_tall: "This impacts the change towards the Tall [societal_values|e]."
+ AUTO_MODIFIER_NAME_centralized_statepv: "Organized State"
+ AUTO_MODIFIER_DESC_centralized_statepv: "An organised state is a state that has a structured system of laws and institutions that regulate social, economic, and political life contrasts with a tribal state, which is typically based on kinship and clan relationships with less formal governance, and a steppe horde, which often refers to a loosely organized, mobile group of nomadic warriors lacking centralized authority and stable territorial boundaries."
  slovak_integration: "Slovaks' Integration"
  trans_diversity: "A Culturally Diverse Country"
  languedoc: "Lenga d'òc"
@@ -93,5 +95,10 @@
  PV_GER7: "Early Industrial Revolution"
  PVbavarian_hills: "Bohemian Massif"
  PV_carpathians: "The Carphatian Valley"
-
+ F11adv1: "Mediterranean Dominance"
+ F11adv1_desc: ""
+ F11adv2: "Mediterranean Trade"
+ F11adv2_desc: ""
+ F11adv3: "Unified Bureaucracy"
+ F11adv3_desc: ""
 

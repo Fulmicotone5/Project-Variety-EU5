@@ -36,7 +36,9 @@ NUnit = {
 NCombat = {
 
 	GARRISON_AFTER_OCCUPATION = 0.1
-	MINIMUM_COMBAT_DURATION = 12			#12 days. was 24 hours. 
+	MINIMUM_COMBAT_DURATION = 72			#3 days. was 24 hours. 
+	MINIMUM_NAVAL_COMBAT_DURATION = 144
+	NAVAL_LOW_MORALE_THRESHOLD = 0.5
 
 	BOMBARD_HOURS = 3						#was 5 | N/B: Damage/tick has been increased by about a factor of 5
 	HOURS_PER_PHASE = 3						#was 5

@@ -66,6 +66,19 @@ TRY_REPLACE:war_exhaustion_impact = {
 	monthly_legitimacy = -0.025
 
 }
+centralized_statepv = {
+	potential_trigger = {
+		NOT = {
+			has_or_had_tag = BYZ
+		}
+		NOR = {
+			government_type = government_type:tribe
+			government_type = government_type:steppe_horde
+		}
+	}
+	allow_bureaucracy = yes
+	global_max_bureaucracy_slots = 1
+}
 
 tall_push = {
 	potential_trigger = {
@@ -190,7 +203,7 @@ TRY_INJECT:country_base_values = {
 	peasants_estate_max_tax = 0.35
 	global_peasant_enfranchisment = -0.15
 	global_mercenaries_modifier = -0.5
-	global_migration_speed = 0.00054
+	global_migration_speed = 0.0009
 	global_estate_max_tax = -0.35	#check always the new estate for taxes
 	tribes_estate_max_tax = 0.35
 	cossacks_estate_max_tax = 0.35

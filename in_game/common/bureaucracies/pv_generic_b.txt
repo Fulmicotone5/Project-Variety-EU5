@@ -1,0 +1,251 @@
+
+pv_cabinet_bur = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+
+	estates_that_like = {
+		nobles_estate
+		crown_estate
+		burghers_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		government_size = 1
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		stability_decay = -0.001  
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		monthly_prestige = -0.05
+	}
+}
+
+pv_bicameral_parliament = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+	potential = {
+		NOT = {
+			has_or_had_tag = BYZ
+		}
+	}
+
+
+	estates_that_like = {
+		nobles_estate
+		crown_estate
+		peasants_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		government_reform_slots = 1
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		parliament_base_support = 0.075
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		monthly_legitimacy = -0.2
+	}
+}
+
+pv_clob = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+	allow = {
+		societal_value:outward_vs_inward <= -75
+	}
+
+
+	estates_that_like = {
+		burghers_estate
+		nobility_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		naval_range = 500
+		num_naval_governors = 1
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		colonial_range_modifier = 0.5
+		colonial_migration_size_modifier = 0.5
+		subject_loyalty = 10
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		colonial_maintenance_cost = 0.2
+	}
+}
+
+pv_noblepatrb = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+
+
+	estates_that_like = {
+		nobles_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		num_possible_artists = 1
+		global_monthly_art_start_chance = 0.3
+		global_integration_speed_modifier = 0.25
+		cultures_capacity = 2
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		global_pop_assimilation_speed_modifier = 0.5 
+		monthly_towards_humanist = societal_value_large_monthly_move
+		research_speed_modifier = 0.01
+		global_monthly_prosperity = 0.001
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		monthly_prestige = -0.05
+		global_crown_estate_power = -0.1
+	}
+}
+
+institutionalized_corporations = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+	allow = {
+		societal_value:aristocracy_vs_plutocracy >= 15
+	}
+
+
+
+	estates_that_like = {
+		burghers_estate
+		crown_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		monthly_towards_capital_economy = societal_value_large_monthly_move
+		capital_possible_town_rights = 1
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		merchant_maintenance_efficiency = 0.15
+		global_production_efficiency = large_production_efficiency_bonus
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		global_crown_estate_power = -0.25
+	}
+}
+
+studium_generale = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+	allow = {
+		societal_value:outward_vs_inward >= 50
+	}
+
+
+
+	estates_that_like = {
+		burghers_estate
+		nobility_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		monthly_towards_innovative = societal_value_large_monthly_move
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		research_speed_modifier = 0.075
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		nobles_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction_penalty
+	}
+}
