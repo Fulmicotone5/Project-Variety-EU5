@@ -111,7 +111,7 @@ TRY_REPLACE:burghers_rights_laws = {
 			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
 			monthly_towards_plutocracy = societal_value_minor_monthly_move
 			global_burghers_estate_power = 1
-			selling_efficiency = small_trade_efficiency_bonus
+			selling_efficiency = medium_trade_efficiency_bonus
 		}
 		estate_preferences = {
 			burghers_estate
@@ -125,7 +125,7 @@ TRY_REPLACE:burghers_rights_laws = {
 		}
 		country_modifier = {
 			burghers_estate_target_satisfaction = -0.1
-			global_burghers_estate_power = -0.5
+			global_burghers_estate_power = -1.0
 			burghers_estate_max_tax = 0.1
 			monthly_towards_centralization = societal_value_minor_monthly_move
 			burghers_estate_blocked_from_cabinet = yes
@@ -139,9 +139,9 @@ TRY_REPLACE:burghers_rights_laws = {
 	strong_guilds_policy = {
 		country_modifier = {
 			burghers_estate_target_satisfaction = small_permanent_target_satisfaction
-			monthly_towards_plutocracy = societal_value_minor_monthly_move
-			global_burghers_estate_power = 0.05
-			global_production_efficiency = medium_production_efficiency_bonus
+			monthly_towards_plutocracy = societal_value_monthly_move
+			global_burghers_estate_power = 0.5
+			global_production_efficiency = small_production_efficiency_bonus
 			peasants_estate_allowed_in_cabinet = yes
 		}
 		estate_preferences = {
@@ -152,7 +152,7 @@ TRY_REPLACE:burghers_rights_laws = {
 	}
 	colonial_burghers_authority_policy = {
 		country_modifier = {
-			global_burghers_estate_power = 0.05
+			global_burghers_estate_power = 0.25
 			colonial_migration_size_modifier = 0.25
 			monthly_towards_outward = societal_value_minor_monthly_move
 		}
@@ -709,6 +709,42 @@ TRY_REPLACE:bureaucracy_law = {
 		}
 		estate_preferences = {
 			burghers_estate
+		}
+		years = 2
+	}
+}
+
+TRY_REPLACE:fra_taille = {
+	unique = yes
+	law_category = estates
+	potential = {
+		has_variable = enable_taille_tax
+	}
+
+	permanent_tax = {
+		country_modifier = {
+			monthly_towards_centralization = societal_value_tiny_monthly_move
+			burghers_estate_max_tax	= 0.025
+			peasants_estate_max_tax	= 0.025
+			burghers_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+			peasants_estate_target_satisfaction = medium_permanent_target_satisfaction_penalty
+		}
+		estate_preferences = {
+			nobles_estate
+			clergy_estate
+		}
+		years = 2
+	}
+	exceptional_only = {
+		country_modifier = {
+			global_crown_estate_power = -0.05
+			monthly_towards_decentralization = societal_value_tiny_monthly_move
+			estate_enrichment = 0.1
+			global_estate_target_satisfaction = medium_permanent_target_satisfaction					
+		}
+		estate_preferences = {
+			burghers_estate
+			peasants_estate
 		}
 		years = 2
 	}

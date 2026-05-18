@@ -122,7 +122,7 @@ feuds_laws = {
 	law_category = estates
 	outlawed_feuds = {
 		allow = {
-			"estate_power(estate_type:crown_estate)" >= 0.4
+			"estate_power(estate_type:crown_estate)" >= 0.3
 		}
 		country_modifier = {
 			monthly_towards_centralization = 0.15
@@ -385,8 +385,8 @@ pv_serfstatus = {
 	law_category = socioeconomic
 	pvpeasant_proprietorship = {
 		allow = {
-			"estate_power(estate_type:peasants_estate)" >= 0.1
-			"estate_power(estate_type:crown_estate)" >= 0.25
+			"estate_power(estate_type:peasants_estate)" >= 0.05
+			"estate_power(estate_type:crown_estate)" >= 0.3
 			societal_value:serfdom_vs_free_subjects >= 50
 
 		}

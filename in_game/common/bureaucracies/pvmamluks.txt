@@ -1,0 +1,44 @@
+pvmamluksystem = {
+	implementation_price = price:implement_bureaucracy_price
+	maintenance_price = price:maintain_bureaucracy_price
+	removal_price = price:remove_bureaucracy_price
+	maintenance_price_modifier = {
+		value = country_economical_base
+		multiply = 0.003
+	}
+
+	potential = {
+		has_or_had_tag = MAM
+	}
+
+
+
+	estates_that_like = {
+		nobility_estate
+		crown_estate
+	}
+	estates_that_dislike = {
+		burghers_estate
+		peasants_estate
+	}
+
+	#neutral
+	neutral_modifier = {
+		global_pop_promotion_speed_modifier = 0.1
+	}
+
+	#positive
+	positive_modifier = {
+		scale = { value = scope:maintenance }
+		army_heavy_infantry_power = 0.05
+	}
+
+	#negative
+	negative_modifier = {
+		scale = {
+			value = 1
+			subtract = scope:maintenance
+		}
+		global_crown_estate_power = -0.25
+	}
+}

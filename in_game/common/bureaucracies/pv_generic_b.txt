@@ -175,7 +175,7 @@ institutionalized_corporations = {
 	}
 
 	allow = {
-		societal_value:aristocracy_vs_plutocracy >= 15
+		has_policy = strong_guilds_policy
 	}
 
 
@@ -189,6 +189,7 @@ institutionalized_corporations = {
 	neutral_modifier = {
 		monthly_towards_capital_economy = societal_value_large_monthly_move
 		capital_possible_town_rights = 1
+		global_burghers_estate_power = 1
 	}
 
 	#positive

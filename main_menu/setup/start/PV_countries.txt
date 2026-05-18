@@ -975,11 +975,14 @@ countries = {
 				reforms = {
 					mamluk_government
 				}
+				bureaucracies = {
+				{ type = pvmamluksystem                     date = 1250.6.1 entrenchment = 75 	}   # PV
+			}
 				privilege = {
 					#Nobles
 					elaborate_court_ceremonies
 					banal_lordship
-					consolidated_corruption_of_the_nobles_PV
+					consolidated_corruption_of_the_nobles_PV #PV
 					#Ulama
 					waqf_payments
 					#Burghers
