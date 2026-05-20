@@ -114,3 +114,24 @@ TRY_REPLACE:fra_marcel_compromise_ordinance = {
 		"estate_power(estate_type:crown_estate)" >= 0.33
 	}
 }
+
+PV_norfolk_tex = {
+	estate = burghers_estate
+	
+	potential = {
+		has_or_had_tag = P01
+	}
+	allow = {
+		always = no
+	}
+	
+
+	can_revoke = {
+		always = no
+	}
+	
+	country_modifier = {
+		global_burghers_estate_power = 1
+		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
+	}
+}

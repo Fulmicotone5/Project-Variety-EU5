@@ -56,3 +56,6 @@
  pvclerssuccneg: "Our [ROOT.GetCountry.GetGovernment.GetEstateName('clergy_estate')] has greater or equal to 50% Satisfaction"
  PV_legalised_feud: "Tolerated Diversity"
  PV_legalised_feud_desc: "People of different culture that live in our country, will officially stop being seen as sub-humans by the State."
+
+ PV_norfolk_tex: "Norfolk Textile Monopoly"
+ PV_norfolk_tex_desc: "Allows the locatons of Lynn and Norwich to be granted special Town Righs."

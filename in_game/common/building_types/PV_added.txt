@@ -147,3 +147,91 @@ waste_disposal_system = {
 
 	obsolete = sewers
 }
+pvhof = {
+	is_special = yes
+	is_foreign = no
+	pop_type = clergy
+	max_levels = 1
+
+	employment_size = religious_building_employment
+	category = government_category
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+	build_time = generic_town_build_time
+
+	possible_production_methods = {
+		temple_maintenance
+	}
+
+	country_potential = {
+		has_variable = pvdepef
+	}
+
+	remove_if = {
+		location.owner ?= { religion != religion:norse }
+	}
+
+	construction_demand = town_building_construction
+	modifier = {
+		local_pop_conversion_speed = 0.01
+		local_pop_assimilation_speed = 0.01
+	}
+
+}
+pvhofgrand = {
+	is_special = yes
+	is_foreign = no
+	pop_type = nobles
+	max_levels = 1
+	
+	category = government_category
+	
+	employment_size = large_noble_employment
+	
+	town = yes
+	city = yes
+	megalopolis = yes
+	
+	expensive = yes
+	build_time = large_capital_build_time
+	
+	country_potential = {
+		always = no
+	}
+	allow = {
+		always = no
+	}
+	
+	
+	
+	remove_if = {
+		location.owner ?= { religion != religion:norse }
+	}
+	
+	modifier = {
+		local_proximity_source = 75
+		local_pop_conversion_speed = 0.025
+		local_nobles_estate_power = 0.5
+		local_clergy_estate_power = 1
+	}
+	
+	unique_production_methods = {
+		royal_court_maintenance = {
+			furniture = 0.15
+			tools = 0.05
+			glass = 0.1
+			fine_cloth = 0.2
+			books = 0.1
+			goods_gold = 0.1
+			marble = 0.1
+				
+			category = building_maintenance
+		}
+	}
+
+	graphical_tags = { palace }
+
+	construction_demand = early_capital_building_construction
+}

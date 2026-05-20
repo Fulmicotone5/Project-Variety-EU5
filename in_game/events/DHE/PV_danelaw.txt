@@ -7,7 +7,7 @@ daneflavor.1 = {
 
 	fire_only_once = yes
 
-	image = "gfx/interface/illustrations/situation/little_ice_age.dds"
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_neutral.dds"
 
 	dynamic_historical_event = {
 		tag = P01
@@ -33,6 +33,7 @@ daneflavor.2 = {
 	type = country_event
 	title = daneflavor.2.title
 	desc = daneflavor.2.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
 
 	fire_only_once = yes
 
@@ -43,13 +44,6 @@ daneflavor.2 = {
 		monthly_chance = 100
 	}
 
-	illustration_tags = {
-		10 = exterior
-		10 = happy
-	}
-	immediate = {
-		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
-	}
 
 	trigger = {
 		owns = location:lincoln
@@ -113,7 +107,7 @@ daneflavor.4 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 1
+		monthly_chance = 100
 	}
 
 	illustration_tags = {
@@ -133,6 +127,7 @@ daneflavor.4 = {
 			NOT = {
 				location_rank = location_rank:city
 			}
+			is_core_of = root
 		}
 	}
 
@@ -172,7 +167,7 @@ daneflavor.5 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 1
+		monthly_chance = 100
 	}
 
 	illustration_tags = {
@@ -192,6 +187,7 @@ daneflavor.5 = {
 			NOT = {
 				location_rank = location_rank:city
 			}
+			is_core_of = root
 		}
 	}
 
@@ -232,7 +228,7 @@ daneflavor.6 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 1
+		monthly_chance = 100
 	}
 
 	illustration_tags = {
@@ -252,6 +248,7 @@ daneflavor.6 = {
 			NOT = {
 				location_rank = location_rank:city
 			}
+			is_core_of = root
 		}
 	}
 
@@ -291,7 +288,7 @@ daneflavor.7 = {
 		tag = P01
 		from = 1300.1.1
 		to = 1800.1.1
-		monthly_chance = 1
+		monthly_chance = 100
 	}
 
 	illustration_tags = {
@@ -311,6 +308,7 @@ daneflavor.7 = {
 			NOT = {
 				location_rank = location_rank:city
 			}
+			is_core_of = root
 		}
 	}
 
@@ -348,7 +346,7 @@ daneflavor.8 = {
 
 	dynamic_historical_event = {
 		tag = P01
-		from = 1300.1.1
+		from = 1350.1.1
 		to = 1800.1.1
 		monthly_chance = 10
 	}
@@ -399,7 +397,7 @@ daneflavor.8 = {
 				change_location_rank = location_rank:city
 			}
 		}
-		add_gold = -400
+		add_gold = -100
 		set_capital = location:boston
 		change_societal_value = { type = land_vs_naval	value = 25	}
 		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }
@@ -407,8 +405,20 @@ daneflavor.8 = {
 	option = {
 		name = daneflavor.8.c
 		set_capital = location:london
-		change_societal_value = { type = land_vs_naval	value = 25	}
-		change_societal_value = { type = belligerent_vs_conciliatory value = -25 }
+		location:london = {
+			change_integration_level = integrated
+			every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.4 0.6 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		change_societal_value = { type = land_vs_naval	value = 10	}
+		change_societal_value = { type = belligerent_vs_conciliatory value = -10 }
 	}
 }
 daneflavor.9 = {
@@ -420,7 +430,7 @@ daneflavor.9 = {
 
 	dynamic_historical_event = {
 		tag = P01
-		from = 1340.1.1
+		from = 1343.1.1
 		to = 1800.1.1
 		monthly_chance = 1
 	}
@@ -463,15 +473,16 @@ daneflavor.10 = {
 	type = country_event
 	title = daneflavor.10.title
 	desc = daneflavor.10.desc
-	image = "gfx/interface/illustrations/situation/black_death.dds"
+	image = "gfx/interface/illustrations/pv_events/pvfires.dds"
 
 	fire_only_once = yes
 
 	dynamic_historical_event = {
 		tag = P01
-		from = 1361.1.1
+		tag = ENG
+		from = 1437.1.1
 		to = 1800.1.1
-		monthly_chance = 5
+		monthly_chance = 1
 	}
 
 
@@ -486,7 +497,7 @@ daneflavor.10 = {
 		name = daneflavor.10.a
 		location:london = {
 			change_prosperity = -1
-			change_development = development_extreme_penalty
+			change_development = -5
 		}
 		add_estate_satisfaction = { type = estate_type:peasants_estate 
 			value = -0.15
@@ -494,20 +505,16 @@ daneflavor.10 = {
 		add_estate_satisfaction = { type = estate_type:burghers_estate 
 			value = -0.15
 		}
+		add_stability = -7
+		add_legitimacy = -10
 	}
 	option = {
 		name = daneflavor.10.b
 		location:london = {
-			change_prosperity = -0.2
+			change_prosperity = -0.5
 			change_development = development_severe_penalty
 		}
-		add_gold = -150
-		add_estate_satisfaction = { type = estate_type:peasants_estate 
-			value = 0.05
-		}
-		add_estate_satisfaction = { type = estate_type:burghers_estate 
-			value = 0.05
-		}
+		add_gold = -1500
 	}
 }
 daneflavor.11 = {
@@ -627,7 +634,7 @@ daneflavor.13 = {
 	dynamic_historical_event = {
 		tag = P01
 		tag = NSE
-		from = 1300.1.1
+		from = 1350.1.1
 		to = 1800.1.1
 		monthly_chance = 100
 	}
@@ -666,7 +673,7 @@ daneflavor.14 = {
 	dynamic_historical_event = {
 		tag = P01
 		tag = F17
-		from = 1300.1.1
+		from = 1350.1.1
 		to = 1800.1.1
 		monthly_chance = 100
 	}
@@ -775,4 +782,684 @@ daneflavor.16 = {
 			}
 		}
 	}
+}
+
+daneflavor.17 = {
+	type = country_event
+	title = daneflavor.17.title
+	desc = daneflavor.17.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1348.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
+	}
+
+	trigger = {
+		owns = location:lynn
+		owns = location:norwich
+		location:lynn = {
+			NOT = {
+				location_rank = location_rank:rural_settlement
+			}
+			any_buildings_in_location = {
+							building_type = building_type:cloth_guild
+							count > 5
+						}
+		}
+		location:norwich = {
+			NOT = {
+				location_rank = location_rank:rural_settlement
+			}
+			any_buildings_in_location = {
+							building_type = building_type:cloth_guild
+							count > 5
+						}
+		}
+	}
+
+	option = {
+		name = daneflavor.17.a
+		grant_estate_privilege = estate_privilege:PV_norfolk_tex
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.05
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.15
+		}
+		add_legitimacy = -10
+	}
+	option = {
+		name = daneflavor.17.b
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = -0.15
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		add_legitimacy = 5
+		add_stability = 2
+	}
+}
+
+daneflavor.18 = {
+	type = country_event
+	title = daneflavor.18.title
+	desc = daneflavor.18.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1348.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = exterior
+		10 = happy
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:clergy_estate background = estate_type:clergy_estate }
+	}
+
+	trigger = {
+		has_advance = norse_renaissance
+		religion = religion:norse
+	}
+
+	option = {
+		name = daneflavor.18.a
+		custom_tooltip = {
+			text = canbuildhof
+			set_variable = {
+				name = pvdepef
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = 0.05
+		}
+		add_estate_satisfaction = { type = estate_type:peasants_estate 
+			value = 0.05
+		}
+		add_estate_satisfaction = { type = estate_type:burghers_estate 
+			value = 0.05
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.05
+		}
+		add_stability = 7
+	}
+}
+
+daneflavor.19 = {
+	type = country_event
+	title = daneflavor.19.title
+	desc = daneflavor.19.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:vendsyssel_thy_province
+		is_integrating = province_definition:vendsyssel_thy_province
+	}
+
+	option = {
+		name = daneflavor.19.a
+		province_definition:vendsyssel_thy_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+
+daneflavor.20 = {
+	type = country_event
+	title = daneflavor.20.title
+	desc = daneflavor.20.desc
+	image = "gfx/interface/illustrations/pv_events/moving.dds"
+
+	fire_only_once = yes
+	immediate = {
+		c:DAN = {
+			save_scope_as = target_country
+		}
+	}
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1369.1.1
+		to = 1800.1.1
+		monthly_chance = 1
+	}
+	trigger = {
+		religion = religion:norse
+		c:DAN = {
+			or = {
+				own_entire_province = province_definition:zealand_province
+				owns = location:roskilde
+			}
+		}
+	}
+	
+
+	option = {
+		name = daneflavor.20.a
+		historical_option = yes
+		c:P01 = {
+			add_casus_belli = {
+				target = scope:target_country
+				type = casus_belli:cb_conquer_province
+				province = location:roskilde.province
+			}
+		}
+		c:DAN = { add_opinion = { target = root  modifier = opinion_displeased } }
+	}
+	option = {
+		name = daneflavor.20.b
+		add_stability = stability_mild_bonus
+		c:DAN = { add_opinion = { target = root  modifier = opinion_good_relations } }
+	}
+}
+
+daneflavor.192 = {
+	type = country_event
+	title = daneflavor.192.title
+	desc = daneflavor.192.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:slesvig_province
+		is_integrating = province_definition:slesvig_province
+	}
+
+	option = {
+		name = daneflavor.192.a
+
+		province_definition:slesvig_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.193 = {
+	type = country_event
+	title = daneflavor.193.title
+	desc = daneflavor.193.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:funen_province
+		is_integrating = province_definition:funen_province
+	}
+
+	option = {
+		name = daneflavor.193.a
+		province_definition:funen_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.194 = {
+	type = country_event
+	title = daneflavor.194.title
+	desc = daneflavor.194.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:eastern_jutland_province
+		is_integrating = province_definition:eastern_jutland_province
+	}
+
+	option = {
+		name = daneflavor.194.a
+
+		province_definition:eastern_jutland_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.195 = {
+	type = country_event
+	title = daneflavor.195.title
+	desc = daneflavor.195.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:western_jutland_province
+		is_integrating = province_definition:western_jutland_province
+	}
+
+	option = {
+		name = daneflavor.195.a
+
+		province_definition:western_jutland_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.196 = {
+	type = country_event
+	title = daneflavor.196.title
+	desc = daneflavor.196.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:norrejylland_province
+		is_integrating = province_definition:norrejylland_province
+	}
+
+	option = {
+		name = daneflavor.196.a
+
+		province_definition:norrejylland_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.197= {
+	type = country_event
+	title = daneflavor.197.title
+	desc = daneflavor.197.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:sonderjylland_province
+		is_integrating = province_definition:sonderjylland_province
+	}
+
+	option = {
+		name = daneflavor.197.a
+
+		province_definition:sonderjylland_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.198 = {
+	type = country_event
+	title = daneflavor.198.title
+	desc = daneflavor.198.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:malmohus_province
+		is_integrating = province_definition:malmohus_province
+	}
+
+	option = {
+		name = daneflavor.198.a
+
+		province_definition:malmohus_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 50
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.2 0.5 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+daneflavor.199 = {
+	type = country_event
+	title = daneflavor.199.title
+	desc = daneflavor.199.desc
+	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1370.1.1
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+		
+
+	trigger = {
+		religion = religion:norse
+		own_entire_province = province_definition:zealand_province
+		is_integrating = province_definition:zealand_province
+	}
+
+	option = {
+		name = daneflavor.199.a
+
+		add_prestige = prestige_mild_bonus
+		province_definition:zealand_province = {
+			every_location_in_province_definition = {
+				limit = {
+					owner = root
+				}
+				change_integration_progress = 75
+				every_pop = {
+				limit = { religion = religion:catholic }
+					split_pop = {
+					fraction = { 0.4 0.6 }
+					religion = root.religion
+					culture = root.culture
+					}
+				}
+
+			}
+		}
+	}
+}
+
+daneflavor.21 = {
+	type = country_event
+	title = daneflavor.21.title
+	desc = daneflavor.21.desc
+
+	fire_only_once = yes
+
+	dynamic_historical_event = {
+		tag = P01
+		from = 1437.3.3
+		to = 1800.1.1
+		monthly_chance = 100
+	}
+
+	illustration_tags = {
+		10 = interior
+		10 = regular
+	}
+	immediate = {
+		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
+	}
+
+	trigger = {
+		religion = religion:norse
+		owns = location:kobenhavn
+		location:kobenhavn = {
+			NOT = {
+				location_rank = location_rank:rural_settlement
+			}
+			is_core_of = root
+		}
+	}
+
+	option = {
+		name = daneflavor.21.a
+		location:kobenhavn = {
+			construct_building = {
+					building_type = building_type:pvhofgrand
+					cost_multiplier = 10
+			}
+		}
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = 0.1
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = 0.1
+		}
+		add_legitimacy = 10
+	}
+	option = {
+		name = daneflavor.21.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate 
+			value = -0.05
+		}
+		add_estate_satisfaction = { type = estate_type:nobles_estate 
+			value = -0.05
+		}
+		add_stability = -7
+		add_legitimacy = -15
+	}
+}
+
+daneflavor.22 = {
+	type = country_event
+	title = daneflavor.22.title
+	desc = daneflavor.22.desc
+	fire_only_once = yes
+	dynamic_historical_event = {
+		tag = P01
+		from = 1349.1.1
+		to = 1835.1.1
+		monthly_chance = 100
+	}
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:burghers_estate
+			background = estate_type:nobles_estate
+		}
+		ruler = {
+			save_scope_as = target_character			# First character portrait
+		}
+	}
+	trigger = {
+		religion = religion:norse
+		own_entire_area = area:denmark_area
+		own_entire_area = area:northumbria_area
+		own_entire_area = area:midlands_area
+		own_entire_area = area:east_anglia_area
+		own_entire_area = area:west_country_area
+		own_entire_area = area:home_counties_area
+	}
+	option = {
+		name = daneflavor.22.a
+		change_country_name = FP1
+		change_country_adjective = FP1_ADJ
+		if = {
+				limit = { has_reform = government_reform:PV_danelaw }
+				remove_reform = government_reform:PV_danelaw
+				add_reform = government_reform:PV_daneland
+			}
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:peasants_estate value = estate_satisfaction_severe_bonus }
+		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_severe_bonus }
+		add_stability = 25
+		add_prestige = 25
+	}
+
 }

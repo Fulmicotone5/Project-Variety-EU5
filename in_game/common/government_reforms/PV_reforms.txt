@@ -31,11 +31,37 @@ PV_danelaw = {
 	government = monarchy
 
 	country_modifier = {
-		cultures_capacity = 2
+		cultures_capacity = 1
 		blocked_from_conversion = yes
-		tolerance_own = 3
+		tolerance_own = 0.5
 		global_pop_conversion_speed_modifier = 0.5
 		global_integration_speed_modifier = 0.25
+		government_reform_slots = 1
+	}
+
+	potential = {
+		has_or_had_tag = P01 
+	}	
+	
+	
+	locked = {
+		always = yes
+	}
+
+	years = 2
+}
+PV_daneland = {
+	major = yes
+	government = monarchy
+
+	country_modifier = {
+		cultures_capacity = 1
+		blocked_from_conversion = yes
+		tolerance_own = 1
+		global_pop_conversion_speed_modifier = 1
+		global_pop_assimilation_speed_modifier = 0.5
+		global_integration_speed_modifier = 0.5
+		government_size = 1
 		government_reform_slots = 1
 	}
 

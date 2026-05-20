@@ -331,7 +331,7 @@ F08_f = {
 }
 F09_f = {
 	level = 2
-	required_locations_fraction = 0.7
+	required_locations_fraction = 0.8
 	rule = historical
 
 	potential = {

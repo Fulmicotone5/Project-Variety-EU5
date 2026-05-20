@@ -216,3 +216,26 @@ P01bureaugh = {
 	}
 	color = goods_rice
 }
+
+PV_norfolk_tex_tr = {
+	kept_at_conquest = no
+	potential = {
+		has_or_had_tag = P01
+	}
+	location_modifier = {
+		local_cloth_guild_building_levels = 25
+		local_fine_cloth_guild_building_levels = 10
+		local_cloth_output_modifier = 0.2
+		local_fine_cloth_output_modifier = 0.1
+	}
+	allow = {
+		has_estate_privilege = estate_privilege:PV_norfolk_tex
+		scope:target = {
+			or = {
+				this = location:norwich
+				this = location:lynn
+			}
+		} 
+	}
+	color = goods_cloth
+}

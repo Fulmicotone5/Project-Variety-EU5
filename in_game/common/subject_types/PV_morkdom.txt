@@ -20,9 +20,9 @@
 	has_overlords_ruler = no
 	will_join_independence_wars = yes
 	annexation_speed = 1
-	annexation_min_years_before = 50
-	annexation_min_opinion = 150
-	annexation_stall_opinion = 125
+	annexation_min_years_before = 10
+	annexation_min_opinion = 100
+	annexation_stall_opinion = 50
 	subject_can_cancel = no
 	overlord_can_cancel = yes
 	has_limited_diplomacy = no
