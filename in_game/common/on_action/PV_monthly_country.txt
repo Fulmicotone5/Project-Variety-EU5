@@ -121,7 +121,7 @@ monthly_country_pulse = {
 				total_population > 800
 				country_rank_is_county = no
 			}
-			add_gold = 150
+			add_gold = 250
 		}
 		if = {
 			limit = {
@@ -134,7 +134,7 @@ monthly_country_pulse = {
 				total_population > 800
 				country_rank_is_county = no
 			}
-			add_gold = 500
+			add_gold = 759
 		}
 		if = {
 			limit = {
@@ -147,7 +147,7 @@ monthly_country_pulse = {
 				total_population > 800
 				country_rank_is_county = no
 			}
-			add_gold = 1000
+			add_gold = 2000
 		}
 		if = {
 			limit = {
@@ -160,7 +160,7 @@ monthly_country_pulse = {
 				total_population > 800
 				country_rank_is_county = no
 			}
-			add_gold = 2000
+			add_gold = 4000
 		}
 	}
 }

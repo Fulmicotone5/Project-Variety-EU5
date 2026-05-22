@@ -57,16 +57,19 @@ NAI = {
 	AI_MAX_ALLOWED_URBANIZE_FOOD_LOCATION_RATIO = 0.2
 	AI_PROVINCE_DEFINITION_MAX_URBANIZATION = 0.1 # max location ratio allowed to be urbanized per province def. Rounded up.
 	AI_ALLOWED_FORT_BUDGET = 0.25 # % of income allowed fort maintenance, normalized to full slider value
-	AI_ALLOWED_BUILDING_MAINTENANCE = 0.35 # % of income allowed for building maintenance excluding forts, only used to close or reopen buildings during crisis
+	AI_ALLOWED_BUILDING_MAINTENANCE = 0.5 # % of income allowed for building maintenance excluding forts, only used to close or reopen buildings during crisis
 	AI_ALLOWED_ARMY_CONSTRUCTIONS_TAX_BASE_DIVIDER = 30
 	AI_MAINTENANCE_BUDGET_RATIO = 0.5
 	DEFAULT_REGULAR_ARMY_PREFERENCE = 2
-	DEFAULT_AGGRESSIVENESS = 6
+	DEFAULT_AGGRESSIVENESS = 8
 	POWER_BALANCE_AGGRESSIVENESS_FACTOR = 15
 	EXPANSION_SCORE_OPINION_FACTOR = 0.25
 	RIVAL_CONQUEST_FACTOR = 2
-	MONTHLY_MANPOWER_PER_BASE_TAX_REFERENCE = 0.08 # This is how big manpower pool AI wants based on each 100 taxbase
+	MONTHLY_MANPOWER_PER_BASE_TAX_REFERENCE = 0.06 # This is how big manpower pool AI wants based on each 100 taxbase
 	AI_USE_CONQUER_CB_FACTOR = 100 # AI score multiplier for attacking someone where we have an available CB with better than no cb conquer cost
+	AI_ALLOWED_PARALLEL_SAME_TYPE_CONSTRUCTION_RATIO = 0.99 # allowed to build the same type of building in 2% of our locations in parallel
+	AI_ALLOWED_PARALLEL_SAME_TYPE_CONSTRUCTION_MINIMUM = 1 # minimum allowed of parallel construction of the same type of building
+	AI_ALLOWED_PARALLEL_TOTAL_CONSTRUCTION_RATIO = 0.99 # Allowed to start new constructions in 5% of our locations each monthly tick
 }
 
 NEconomy = {

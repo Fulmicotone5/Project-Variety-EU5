@@ -319,13 +319,13 @@ PVtown_administration = {
 	law_category = administrative
 	pvlocal_self_government = {
 		allow = {
-			"estate_power(estate_type:peasants_estate)" >= 0.15
+			"estate_power(estate_type:peasants_estate)" >= 0.05
 		}
 		country_modifier = {
 			global_peasant_enfranchisment = 0.1
-			global_monthly_prosperity = 0.0005
-			global_peasants_estate_power = 0.5
-			global_pop_promotion_speed_modifier = 0.1
+			global_monthly_prosperity = 0.0015
+			global_peasants_estate_power = 1
+			global_pop_promotion_speed_modifier = 0.5
 			monthly_towards_free_subjects = 0.15
 			monthly_towards_decentralization = 0.05
 			nobles_estate_target_satisfaction = -0.025

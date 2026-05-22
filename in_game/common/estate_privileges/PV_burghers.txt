@@ -122,7 +122,10 @@ PV_norfolk_tex = {
 		has_or_had_tag = P01
 	}
 	allow = {
-		always = no
+		custom_tooltip = {
+			text = pvsuca
+			has_variable = pvnorfeve
+		}
 	}
 	
 

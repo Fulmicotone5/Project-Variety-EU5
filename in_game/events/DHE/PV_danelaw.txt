@@ -815,7 +815,7 @@ daneflavor.17 = {
 			}
 			any_buildings_in_location = {
 							building_type = building_type:cloth_guild
-							count > 5
+							building_level > 8
 						}
 		}
 		location:norwich = {
@@ -824,13 +824,16 @@ daneflavor.17 = {
 			}
 			any_buildings_in_location = {
 							building_type = building_type:cloth_guild
-							count > 5
+							building_level > 8
 						}
 		}
 	}
 
 	option = {
 		name = daneflavor.17.a
+		set_variable = {
+				name = pvnorfeve
+			}
 		grant_estate_privilege = estate_privilege:PV_norfolk_tex
 		add_estate_satisfaction = { type = estate_type:burghers_estate 
 			value = 0.05
