@@ -146,19 +146,19 @@ TRY_INJECT:training_fields = {
 }
 TRY_INJECT:barracks = {
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.015
 	}
 
 }
 TRY_INJECT:regimental_camp = {
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.02
 	}
 
 }
 TRY_INJECT:conscription_center = {
 	modifier = {
-		local_manpower = 0.01
+		local_manpower = 0.025
 	}
 
 }

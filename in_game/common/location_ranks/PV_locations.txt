@@ -79,8 +79,8 @@ TRY_REPLACE:city = {
 		local_soldiers_desired_pop = 0.25
 		local_nobles_desired_pop = 0.05
 		local_clergy_desired_pop = 0.1
-		local_migration_attraction = 0.4
-		local_population_growth = -0.003
+		local_migration_attraction = 0.75
+		local_population_growth = -0.0025
 	
 		local_max_control = 0.15
 		local_population_capacity = 60
@@ -137,7 +137,7 @@ TRY_REPLACE:town = {
 		local_burghers_desired_pop = 0.2
 		local_laborers_desired_pop = 0.2
 		local_soldiers_desired_pop = 0.1
-		local_migration_attraction = 0.2
+		local_migration_attraction = 0.5
 		local_population_growth = -0.0025
 
 		local_nobles_desired_pop = 0.025

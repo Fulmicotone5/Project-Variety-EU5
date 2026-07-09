@@ -1092,7 +1092,7 @@ countries = {
 				parliament_type = estate_parliament
 				}
 				type = monarchy
-				heir_selection = semi_salic_law
+				heir_selection = dynastic_elective_succession
 				ruler = random
 				reforms = {
 					crusader_state
@@ -1104,6 +1104,22 @@ countries = {
 					#Burghers
 					trade_monopolies
 				}
+				laws = {
+				cultural_traditions_law  = pv_devout
+				PVtown_administration = pv_clerical_adm
+				royal_court_customs_law = holy_city_court
+				administrative_system = pvcrusader_council
+				legal_code_law = pvassizes
+				feudal_de_jure_law = by_tradition
+				marriage_law = monogamous_marriage
+				heir_religion_law = heir_same_religion
+				censorship = strict_censorship
+				education_masses_law = basic_religious_education
+				PVprisoners_policy = forced_enlistement
+				maritime_law = mandatory_impressment
+				slave_conversion = force_slave_conversion
+				immigration_law = closed_borders_law
+			}
 				spiritualist_vs_humanist = -90
 				belligerent_vs_conciliatory = -70
 				quality_vs_quantity = 80
@@ -2569,7 +2585,6 @@ countries = {
 				kimmirut
 				amadjuak
 				kinngait
-				baffin_island
 				caniapiscau
 				kasakaupuyau
 				wayustikw
@@ -2589,7 +2604,6 @@ countries = {
 				mistinatwayasu
 				kamiskayachuuch
 				qurlutuq
-				labrador_hills
 				kangiqsualujjuaq
 				imaapik
 				siimitalik
@@ -2599,7 +2613,6 @@ countries = {
 				kausseskait
 				tupirvialuit
 				koroc
-				quebec_torngats
 			}
 			starting_technology_level = 3
 			country_rank = rank_county
@@ -2732,7 +2745,6 @@ countries = {
 				ushkau_nipi
 				attikamagen
 				petitsikapau
-				hamilton_highlands
 				attikamagen_lake
 				lake_petitsikapau
 				catucto
@@ -3057,7 +3069,6 @@ countries = {
 				manitowik
 				pekatek
 				aguasabon
-				penokean_hills
 				nipigon
 				namewaminikan
 				ombabika

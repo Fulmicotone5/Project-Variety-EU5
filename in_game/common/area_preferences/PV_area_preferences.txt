@@ -53,6 +53,12 @@ PVtou3 = {
 	region = france_region
 }
 
+PVned = {
+	preference_type = conquest
+	modifier = 30
+	region = france_region
+}
+
 PV011 = {
 	preference_type = conquest
 	modifier = 20

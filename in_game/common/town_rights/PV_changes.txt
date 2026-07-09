@@ -118,3 +118,17 @@ TRY_REPLACE:imperial_breadbasket_rights = {
 
 	color = goods_coffee
 }
+
+TRY_REPLACE:royal_jewelry_rights = {
+	allow = {
+		has_policy = PV_metallurgy_policy
+	}
+	location_modifier = {
+		local_jewelry_output_modifier = 0.2
+		local_jewelry_guild_building_levels = 25
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_jewelry
+}

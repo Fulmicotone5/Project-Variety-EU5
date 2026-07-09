@@ -104,7 +104,7 @@ monthly_country_pulse = {
 				NOT = {
 					has_reform = government_reform:daimyo
 				}
-				current_date > 1397.5.20
+				current_date > 1387.5.20
 				total_population > 800
 				country_rank_is_county = no
 			}

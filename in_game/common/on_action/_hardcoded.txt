@@ -11,6 +11,21 @@
 			add_policy = policy:pvrural_administration
 			add_policy = policy:pv_tenantfarmers
 		}
+		every_country = {
+			limit = {
+				or = {
+					c:KOJ = this
+					government_type = government_type:theocracy
+				}
+			}
+			add_policy = policy:pv_clerical_adm
+		}
+		every_country = {
+			limit = {
+				c:WRC = this
+			}
+			add_policy = policy:PV_miners_policy
+		}
 		every_country = { #solo questo
 			limit = {
 				NOT = {

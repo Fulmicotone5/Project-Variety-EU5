@@ -55,3 +55,30 @@ TRY_REPLACE:hre_unlawful_territory = {
 	local_unrest = 0.25
 	local_monthly_control = -0.001
 }
+
+TRY_REPLACE:total_population = {
+	game_data = {
+		category = location
+	}
+	supply_limit = 0.02
+	blockade_force_required = 0.02
+	
+	local_max_rgo_size = 0.025
+	
+	free_building_levels = 0.25
+}
+TRY_REPLACE:capital = {
+	game_data = {
+		category = location
+	}
+	local_proximity_source = 100
+	local_max_control = 0.20
+	local_population_capacity_modifier = 0.10
+	local_migration_attraction = 0.25
+	
+	local_nobles_desired_pop_scaled = 0.002
+	local_clergy_desired_pop_scaled = 0.002
+	local_fort_maintenance_cost = -0.50
+	
+	free_building_levels = 10
+}

@@ -10,7 +10,7 @@
 	}
 	PV_agrarian_society_policy = {
 		country_modifier = {
-			global_monthly_food_modifier = 0.2
+			global_monthly_food_modifier = 0.25
 			monthly_towards_traditional_economy = 0.33
 			expand_rgo_farming_cost_modifier = -0.25
 			global_build_buildings_cost = 0.1
@@ -317,6 +317,20 @@ PVprisoners_policy = {
 }
 PVtown_administration = {
 	law_category = administrative
+	pv_clerical_adm = {
+		allow = {
+			"estate_power(estate_type:clergy_estate)" >= 0.1
+		}
+		country_modifier = {
+			global_clergy_estate_power = 1
+			global_pop_conversion_speed_modifier = 0.25
+			monthly_towards_spiritualist = societal_value_monthly_move
+			clergy_estate_target_satisfaction = 0.1
+		}
+		estate_preferences = {
+			peasants_estate
+		}
+	}
 	pvlocal_self_government = {
 		allow = {
 			"estate_power(estate_type:peasants_estate)" >= 0.05

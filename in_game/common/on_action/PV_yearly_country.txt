@@ -1,0 +1,604 @@
+biyearly_country_pulse = {
+	effect = {
+		if = {
+			limit = {
+				current_year > 1336
+				current_year < 1500
+				region:balkan_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:anatolia_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:BYZ
+					country_exists ?= c:TUR
+					c:BYZ = {
+						num_locations >= 100
+					}
+				}
+				c:BYZ = {
+					annex_country = {
+						country = C:TUR
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists ?= c:BYZ
+					c:BYZ = {
+						num_locations < 100
+					}
+					country_exists ?= c:TUR
+					c:TUR = {
+						num_locations >= 100
+					}
+				}
+				c:TUR = {
+					annex_country = {
+						country = C:BYZ
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_year > 1340
+				current_year < 1390
+				region:france_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:south_german_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:north_german_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:great_britain_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1366
+					country_exists ?= c:BGP
+					country_exists ?= c:FRA
+					c:BGP = {
+						num_locations >= 50
+					}
+				}
+				c:BGP = {
+					annex_country = {
+						country = C:FRA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists ?= c:FLA
+					country_exists ?= c:ARS
+					country_exists ?= c:HAI
+					country_exists ?= c:BRB
+					country_exists ?= c:HOL
+					country_exists ?= c:GEL
+					country_exists ?= c:FRI
+					country_exists ?= c:UTR
+				}
+				c:FLA = {
+					annex_country = {
+						country = C:ARS
+					}
+					annex_country = {
+						country = C:HAI
+					}
+					annex_country = {
+						country = C:BRB
+					}
+					annex_country = {
+						country = C:HOL
+					}
+					annex_country = {
+						country = C:GEL
+					}
+					annex_country = {
+						country = C:FRI
+					}
+					annex_country = {
+						country = C:UTR
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists ?= c:NED
+					country_exists ?= c:FRA
+					c:NED = {
+						num_locations >= 50
+					}
+					current_year > 1374
+				}
+				c:NED = {
+					annex_country = {
+						country = C:FRA
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_year > 1336
+				current_year < 1450
+				region:france_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:balkan_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:iberia_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:italy_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:maghreb_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1336
+					country_exists ?= c:CAS
+					country_exists ?= c:POR
+					c:CAS = {
+						num_locations <= 140
+					}
+					c:POR = {
+						num_locations >= 100
+					}
+				}
+				c:POR = {
+					annex_country = {
+						country = C:CAS
+					}
+				}
+			}
+			else_if  = {
+				limit = {
+					current_year > 1356
+					country_exists ?= c:CAS
+					country_exists ?= c:POR
+					c:CAS = {
+						num_locations >= 140
+					}
+					c:POR = {
+						num_locations <= 50
+					}
+				}
+				c:CAS = {
+					annex_country = {
+						country = C:POR
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1336
+					current_year < 1350
+					country_exists ?= c:ARA
+					country_exists ?= c:ARB
+				}
+				c:ARA = {
+					annex_country = {
+						country = C:ARB
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year <= 1376
+					country_exists ?= c:F02
+					country_exists ?= c:ARA
+					c:F02 = {
+						num_locations >= 95
+					}
+				}
+				c:F02 = {
+					annex_country = {
+						country = C:ARA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					current_year > 1376
+					country_exists ?= c:TOU
+					country_exists ?= c:ARA
+					c:ARA = {
+						num_locations >= 80
+					}
+					c:TOU  = {
+						num_locations <= 65
+					}
+				}
+				c:ARA = {
+					annex_country = {
+						country = C:TOU
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					current_year > 1380
+					country_exists ?= c:NAP
+					country_exists ?= c:ARA
+					c:ARA = {
+						num_locations >= 80
+					}
+				}
+				c:ARA = {
+					annex_country = {
+						country = C:NAP
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_year > 1336
+				current_year < 1600
+				region:balkan_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:south_german_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:north_german_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:carpathia_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:ruthenia_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:baltic_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:POL
+					country_exists ?= c:WRC
+					c:WRC = {
+						num_locations >= 100
+					}
+					c:POL = {
+						num_locations <= 100
+					}
+				}
+				c:WRC = {
+					annex_country = {
+						country = C:POL
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1376
+					country_exists ?= c:MVA
+					country_exists ?= c:HUN
+					country_exists ?= c:BOH
+					c:MVA = {
+						num_locations >= 75
+					}
+					c:BOH = {
+						num_locations <= 40
+					}
+					c:HUN = {
+						num_locations <= 75
+					}
+				}
+				c:MVA = {
+					annex_country = {
+						country = C:BOH
+					}
+				}
+				c:MVA = {
+					annex_country = {
+						country = C:HUN
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1396
+					country_exists ?= c:MVA
+					country_exists ?= c:WRC
+					country_exists ?= c:BOH
+					c:BOH = {
+						num_locations >= 75
+					}
+					c:MVA = {
+						num_locations <= 30
+					}
+					c:WRC = {
+						num_locations <= 50
+					}
+				}
+				c:BOH = {
+					annex_country = {
+						country = C:MVA
+					}
+				}
+				c:BOH = {
+					annex_country = {
+						country = C:WRC
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				current_year > 1336
+				current_year < 1350
+				sub_continent:north_america = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:great_britain_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P02
+					country_exists ?= c:P06
+				}
+				c:P02 = {
+					annex_country = {
+						country = C:P06
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P02
+					country_exists ?= c:P05
+				}
+				c:P02 = {
+					annex_country = {
+						country = C:P05
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P02
+					country_exists ?= c:P03
+				}
+				c:P02 = {
+					annex_country = {
+						country = C:P03
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P02
+					country_exists ?= c:P04
+				}
+				c:P02 = {
+					annex_country = {
+						country = C:P04
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P02
+					P02 = {
+						NOT = {
+							government_type = government_type:monarchy
+						}
+					}
+				}
+				c:P02 = {
+					change_government_type = government_type:monarchy
+				}
+			}
+		}
+
+
+		if = {
+			limit = {
+				current_year > 1336
+				current_year < 1500
+				sub_continent:north_america = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:great_britain_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:france_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:north_german_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:baltic_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+				region:scandinavian_region = {
+					any_country_with_capital_in_geography = {
+						is_ai = yes
+						count = all
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1356
+					country_exists ?= c:P01
+					country_exists ?= c:ENG
+					c:P01 = {
+						num_locations >= 50
+					}
+					c:ENG = {
+						num_locations <= 100
+					}
+				}
+				c:P01 = {
+					annex_country = {
+						country = C:ENG
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists ?= c:P01
+					country_exists ?= c:SCO
+					c:P01 = {
+						num_locations >= 100
+					}
+					c:SCO = {
+						num_locations <= 75
+					}
+				}
+				c:P01 = {
+					annex_country = {
+						country = C:SCO
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1376
+					country_exists ?= c:P01
+					country_exists ?= c:DAN
+					c:P01 = {
+						num_locations >= 100
+					}
+					c:DAN = {
+						num_locations <= 75
+					}
+				}
+				c:P01 = {
+					annex_country = {
+						country = C:DAN
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1386
+					country_exists ?= c:P01
+					country_exists ?= c:NOR
+					c:P01 = {
+						num_locations >= 150
+					}
+					c:NOR = {
+						num_locations <= 150
+					}
+				}
+				c:P01 = {
+					annex_country = {
+						country = C:NOR
+					}
+				}
+			}
+			if = {
+				limit = {
+					current_year > 1436
+					country_exists ?= c:P01
+					country_exists ?= c:F16
+					c:P01 = {
+						num_locations >= 400
+					}
+				}
+				c:P01 = {
+					annex_country = {
+						country = C:F16
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -129,5 +129,10 @@ countries = {
 				PVvestr PVvestr2 
 			}
 		}
+		NED = {
+			area_preferences = {
+				PVned
+			}
+		}
 	}
 }

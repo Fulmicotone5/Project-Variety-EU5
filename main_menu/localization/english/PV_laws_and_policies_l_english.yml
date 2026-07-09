@@ -45,7 +45,7 @@
  rural_subs: "Rural Migration"
  rural_subs_desc: "The State will encourage its population to move migrate rural locations."
 
- PVprisoners_policy: "Prisoners Management"
+ PVprisoners_policy: "Prisoner Management"
  PVprisoners_policy_desc: "With war and criminality, the prisons of the country have a constant influx of prisoners. We must decide how to manage them."
  forced_enlistement: "Forced Enlistment"
  forced_enlistement_desc: "Prisoners are forced to serve in the army."
@@ -83,3 +83,14 @@
  pvmanorialism_desc: "Agricultural land is owned by hereditary elites. Tenants are granted freedom of movement, but are obliged to perform unpaid labor for their landlords."
  pvserfdom: "Enforced Serfdom"
  pvserfdom_desc: "Peasants are tied to their land and must perform labor for their feudal masters."
+
+ pv_devout: "Devout Society"
+ pv_devout_desc: "Religious values are the social glue the keep our society united and strong."
+ pv_clerical_adm: "Clerical Administration"
+ pv_clerical_adm_desc: "Members of the Clergy are appointed in most of the offices of the State."
+ holy_city_court: "Holy City Court"
+ holy_city_court_desc: "Composed of the realm's leading nobles and clergy, the court elects the monarch, and operates under a unique set of laws compiled in the Assizes of Jerusalem."
+ pvcrusader_council: "Haute Cour"
+ pvcrusader_council_desc: "The Haute Cour acts as the supreme legislative, judicial, and executive body of the country, and it consists of the King's direct vassals, barons, and high-ranking church officials."
+ pvassizes: "Assizes of Jerusalem"
+ pvassizes_desc: "The Assizes of Jerusalem are a collection of numerous medieval legal treatises written in French containing the law of the crusader Kingdom of Jerusalem."
