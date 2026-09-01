@@ -33,7 +33,7 @@ corona_regni_poloniae = {
 			has_or_had_tag = F24 
 		}  }
 
-	diplomatic_annexation_cost = -0.1
+	diplomatic_annexation_efficiency = 0.1
 	parliament_base_support = 0.05
 
 	requires = government_size_renaissance

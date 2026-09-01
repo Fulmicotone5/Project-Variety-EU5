@@ -125,10 +125,22 @@ TRY_REPLACE:royal_jewelry_rights = {
 	}
 	location_modifier = {
 		local_jewelry_output_modifier = 0.2
-		local_jewelry_guild_building_levels = 25
+		local_jewelry_guild_building_levels = 20
 
 		local_production_efficiency = town_right_efficiency_penalty
 	}
 	
 	color = goods_jewelry
+}
+TRY_REPLACE:royal_artisan_rights = {
+	location_modifier = {
+		local_furniture_output_modifier = 0.2
+		local_pottery_output_modifier = 0.2
+		local_leather_output_modifier = 0.2
+		local_fine_cloth_guild_building_levels = 15
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_pottery
 }

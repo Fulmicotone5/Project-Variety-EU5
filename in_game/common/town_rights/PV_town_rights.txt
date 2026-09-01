@@ -5,7 +5,7 @@ royal_pvtanning_rights = {
 		local_livestock_output_modifier = 0.1
 		local_fur_output_modifier = 0.1
 		local_leather_output_modifier = 0.2
-		local_cloth_guild_building_levels = 10
+		local_cloth_guild_building_levels = 15
 		local_production_efficiency = -0.05
 
 	}
@@ -21,7 +21,6 @@ pvminingtown = {
 	}
 	allow = {
 		scope:target = {
-			has_policy = PV_miners_policy
 			NOR = {
 				has_town_rights = town_rights_type:upper_bergregal
 				has_town_rights = town_rights_type:lower_bergregal
@@ -42,6 +41,7 @@ pvminingtown = {
 				raw_material = goods:saltpeter
 			}
 		}
+		has_policy = PV_miners_policy
 	}
 
 	color = goods_gold

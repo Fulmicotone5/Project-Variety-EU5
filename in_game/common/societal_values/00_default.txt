@@ -54,7 +54,7 @@ traditionalist_vs_innovative = {
 		cultural_tradition_modifier = 1.0
 
 		
-		stability_cost = -0.25
+		stability_cost_efficiency = 0.25
 		
 		language_change_threshold_modifier = 1
 		societal_value_importance_modifier = 0.2
@@ -64,7 +64,7 @@ traditionalist_vs_innovative = {
 		global_max_literacy = 5
 		cultural_influence_modifier = 1.0
 
-		stability_cost = 0.25
+		stability_cost_efficiency = -0.25
 		embrace_institution_cost_modifier = -0.5
 		
 		language_change_threshold_modifier = -1
@@ -113,7 +113,7 @@ aristocracy_vs_plutocracy = { #
 		global_nobles_city_desired_pop_scaled = 0.01
 		global_nobles_pop_growth = 0.25
 		
-		court_spending_cost_modifier  = 0.25
+		court_spending_efficiency  = -0.25
 		court_language_is_market_language_importance_modifier = -0.5
 		bias_for_patron_of_arts_policies = 50
 		bias_for_militarist_policies = 25
@@ -164,7 +164,7 @@ mercantilism_vs_free_trade = {
 
 	left_modifier = {
 		merchant_maintenance_efficiency = 0.2
-		foreign_export_from_market_cost_modifier = 0.1
+		foreign_export_from_market_efficiency = -0.1
 		export_impact_on_demand = 0.1
 
 		global_trade_protection_factor = 0.5
@@ -254,7 +254,7 @@ offensive_vs_defensive = {
 		siege_ability = 0.1
 		assault_ability = 0.1
 		
-		fort_maintenance_cost = 0.3
+		fort_maintenance_efficiency = -0.3
 		army_movement_speed = 0.1
 		defence_importance_modifier = -0.2
 		bias_for_militarist_policies = 50
@@ -306,7 +306,7 @@ capital_economy_vs_traditional_economy = {
 		bank_interest = -0.03
 	
 		global_monthly_food_modifier = -0.2
-		global_build_buildings_cost = -0.1
+		global_build_buildings_efficiency = 0.1
 		
 		court_language_is_market_language_importance_modifier = 0.5
 		bias_for_capitalist_policies = 100
@@ -316,7 +316,7 @@ capital_economy_vs_traditional_economy = {
 		global_population_capacity_modifier = 0.25
 		
 		global_monthly_food_modifier = 0.2
-		global_build_buildings_cost = 0.1
+		global_build_buildings_efficiency = -0.1
 		court_language_is_market_language_importance_modifier = -0.5
 		bias_for_capitalist_policies = -100
 	}
@@ -414,7 +414,7 @@ sinicized_vs_unsinicized = {
 	}
 	right_modifier = { #Unsinicized
 		prestige_decay = -0.002
-		stability_cost = -0.33
+		stability_cost_efficiency = 0.33
 
 		cultural_tradition_modifier = 0.5
 		global_merchant_capacity_modifier = -0.2
@@ -487,7 +487,7 @@ latinization_vs_hellenization = {
 	}
 
 	right_modifier = { #Rhomanismos
-		stability_cost = -0.20
+		stability_cost_efficiency = 0.20
 		monthly_legitimacy = 0.1
 		tolerance_own = 0.5
 		monthly_towards_spiritualist = societal_value_monthly_move

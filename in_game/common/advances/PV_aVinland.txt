@@ -7,7 +7,7 @@
 			has_or_had_tag = F17 
 		}
 	}
-	exploration_maintenance_cost = -0.15
+	exploration_maintenance_efficiency = 0.15
 	exploration_mission_speed = 0.2
 
 	requires = unlock_armored_horsemen_advance

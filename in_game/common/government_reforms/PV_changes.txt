@@ -199,7 +199,7 @@ TRY_REPLACE:merchant_republic = {
 	country_modifier = {
 		global_merchant_capacity_modifier = 0.25
 		trade_income = 0.1
-		global_foreign_build_buildings_cost = -0.5
+		global_foreign_build_buildings_efficiency = 0.5
 		antagonism_received_modifier = 0.5
 
 		merchant_maintenance_efficiency = 0.2

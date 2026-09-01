@@ -118,7 +118,7 @@ pv_clob = {
 			value = 1
 			subtract = scope:maintenance
 		}
-		colonial_maintenance_cost = 0.2
+		colonial_maintenance_efficiency = -0.25
 	}
 }
 

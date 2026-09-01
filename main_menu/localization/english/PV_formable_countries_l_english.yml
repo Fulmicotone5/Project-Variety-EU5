@@ -1,6 +1,6 @@
 ﻿l_english:
  BYZ_f: "Roman Empire" #PV
- BYZ_f_desc: "2090 years have passed since Romulus founded the city of Rome. Since then, Rome has defeated countless rivals, nearly succumbed to Carthage, emerged victorious, experienced civil wars, split first into four and then into two, seen the western parts of the empire fall to barbarians, reconquered some of them, and watched barbarians claim the emperorship of Rome. It has faced invasions, crusades, other civil wars, and yet, Rome still stands. The legacy of Rome has become such, that even if Constantinople was to fall today, Rome will live forever.\nRoma Invicta!"
+ BYZ_f_desc: "2090 years have passed since Romulus founded the city of Rome. Since then, Rome has defeated countless rivals, nearly succumbed to Carthage, emerged victorious, experienced civil wars, split first into four and then into two, seen the western parts of the empire fall to barbarians, reconquered some of them, and watched said barbarians even claim the emperorship of Rome. It has faced invasions, crusades, other civil wars, and yet, Rome still stands. The legacy of Rome has become such, that even if Constantinople was to fall today, Rome will live forever.\nRoma Invicta!"
  NSE_f: "High Kingdom of the North Sea" #PV
  NSE_f_desc: "The lands once owned by [GetCharacter('eng_cnut_the_great').GetName] extended over both sides of the [ShowAreaName('north_sea_area')], from [ShowRegionName('scandinavian_region')] to [ShowRegionName('great_britain_region')]. Although this territory has fragmented and reformed into different holdings over time, it has always been lying in wait, eagerly anticipating our rise and reclamation. It is time to establish this incredible empire once again, with all those lands coming together under our banner."
 
@@ -127,7 +127,7 @@
  ACHIEVEMENT_belisars_legacy: "Belisar's Legacy"
  ACHIEVEMENT_DESC_belisars_legacy: "As Rome, restore Justinian's Borders and Mend the Schism."
  fate_of_the_phoenix_key: "#italic Fate of Rome#!"
- fate_of_the_phoenix_dlc_desc: "2090 years have passed since Romulus founded the city of Rome. Since then, Rome has defeated countless rivals, nearly succumbed to Carthage, emerged victorious, experienced civil wars, split first into four and then into two, seen the western parts of the empire fall to barbarians, reconquered some of them, and watched barbarians claim the emperorship of Rome. It has faced invasions, crusades, other civil wars, and yet, Rome still stands.\nThe legacy of Rome has become such, that even if Constantinople was to fall today, Rome will live forever.\nRoma Invicta!"
+ fate_of_the_phoenix_dlc_desc: "2090 years have passed since Romulus founded the city of Rome. Since then, Rome has defeated countless rivals, nearly succumbed to Carthage, emerged victorious, experienced civil wars, split first into four and then into two, seen the western parts of the empire fall to barbarians, reconquered some of them, and watched said barbarians even claim the emperorship of Rome. It has faced invasions, crusades, other civil wars, and yet, Rome still stands.\nThe legacy of Rome has become such, that even if Constantinople was to fall today, Rome will live forever.\nRoma Invicta!"
  ACHIEVEMENT_DESC_reborn_from_the_ashes: "Win the Fate of the Rome disaster."
  TITLE_FATE_OF_THE_PHOENIX: "#credits_title Fate of Rome#!"
  fate_of_the_phoenix: "Fate of Rome"
@@ -158,3 +158,5 @@
  #
 
  greek_culture: "Roman"
+ emilian: "Emilian-Romagnan"
+ median: "Latiale"

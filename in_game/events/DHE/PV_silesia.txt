@@ -136,6 +136,10 @@ sileflavor.3 = {
 		add_estate_satisfaction = { type = estate_type:clergy_estate 
 			value = -0.05
 		}
+		add_antagonism = {
+					target = root
+					modifier = PV_forged_claims
+				}
 		root = {
 			add_casus_belli = {
 				target = scope:target_country

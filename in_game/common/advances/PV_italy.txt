@@ -81,7 +81,7 @@ rulership_of_enlightened_principals = {
 		} 
 	}
 	
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.1
 }
 perpetual_general_captain_of_the_people = {
 	age = age_1_traditions

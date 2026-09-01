@@ -7,7 +7,7 @@
 		character_child_education = 0.75
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.05
+		court_spending_efficiency = -0.1
 	}
 }
 
@@ -19,7 +19,7 @@ TRY_REPLACE:administrative_education = {
 		character_adm_child_education = 0.25
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.02
+		court_spending_efficiency = -0.05
 	}
 }
 
@@ -31,7 +31,7 @@ TRY_REPLACE:diplomatic_education = {
 		character_dip_child_education = 0.25
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.02
+		court_spending_efficiency = -0.05
 	}
 }
 
@@ -44,7 +44,7 @@ TRY_REPLACE:military_education = {
 		character_mil_child_education = 0.25
 	}
 	country_modifier = {
-		court_spending_cost_modifier = 0.02
+		court_spending_efficiency = -0.05
 	}
 }
 

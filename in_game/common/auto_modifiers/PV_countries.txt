@@ -1,51 +1,4 @@
-TRY_INJECT:total_merchant_capacity_impact = {
-	great_power_score = 0.05
- 
-}
-TRY_INJECT:monthly_income_impact = {
-	great_power_score = 0.2
- 
-}
-TRY_INJECT:power_projection = {
-	great_power_score = 5
- 
-}
-TRY_REPLACE:regular_army_size = {
 
-	scales_with = {
-		value = regular_army_size
-	}
-	
-	great_power_score = 5
-}
-TRY_REPLACE:regular_navy_size = {
-
-	scales_with = {
-		value = regular_navy_size
-	}
-	
-	great_power_score = 0.2
-}
-TRY_REPLACE:num_embraced_institutions = {
-	scales_with = num_embraced_institutions
-
-	great_power_score_exempt_from_forfeit = 2
-}
-TRY_REPLACE:prestige = {
-	scales_with = {
-		value = prestige
-		multiply = 0.01
-	}
-
-	global_trade_center_power = 0.05
-	diplomatic_reputation = diplomatic_reputation_severe_bonus
-	skill_of_new_artists = 0.1
-
-	great_power_score_exempt_from_forfeit = 15
-
-	antagonism_monthly_change_modifier = 0.5
- 
-}
 
 TRY_REPLACE:war_exhaustion_impact = {
 	scales_with = war_exhaustion
@@ -228,7 +181,7 @@ pvrealinflation= {
         value = country_tax_base
     }
 
-  	global_build_buildings_cost = 0.0005
+  	global_build_buildings_efficiency = -0.001
 	expand_rgo_farming_cost_modifier = 0.0005
 	expand_rgo_mining_cost_modifier = 0.0005
 	expand_rgo_hunting_cost_modifier = 0.0005

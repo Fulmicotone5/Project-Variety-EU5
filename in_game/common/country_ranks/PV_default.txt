@@ -1,6 +1,5 @@
 ﻿TRY_INJECT:rank_empire = {
 	rank_modifier = {
-		great_power_score_exempt_from_forfeit = -40 #PV
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
 	}
@@ -11,7 +10,6 @@ TRY_REPLACE:rank_kingdom = {
 	rank_modifier = {
 		max_diplomats = 1
 		diplomatic_range = 500
-		great_power_score_exempt_from_forfeit = 10
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
 		
@@ -51,7 +49,6 @@ TRY_REPLACE:rank_kingdom = {
 
 TRY_INJECT:rank_duchy = {
 	rank_modifier = {
-		great_power_score_exempt_from_forfeit = 0 #PV
 		peace_offer_fairness = -1 #PV
 		expected_warscore_modifier = 5
 		mercenary_units_preference_modifier = -0.5

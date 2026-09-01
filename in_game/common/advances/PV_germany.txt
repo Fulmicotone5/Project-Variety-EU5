@@ -87,7 +87,7 @@ PV_intgern = {
 	requires = diplomatic_range_age_2
 	
 	global_integration_speed_modifier = 0.20
-	diplomatic_annexation_cost = -0.1
+	diplomatic_annexation_efficiency = 0.1
 }
 PV_useless = {
 	potential = {

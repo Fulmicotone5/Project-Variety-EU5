@@ -78,7 +78,7 @@ TRY_REPLACE:capital = {
 	
 	local_nobles_desired_pop_scaled = 0.002
 	local_clergy_desired_pop_scaled = 0.002
-	local_fort_maintenance_cost = -0.50
+	local_fort_maintenance_efficiency = 0.50
 	
 	free_building_levels = 10
 }

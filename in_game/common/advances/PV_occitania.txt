@@ -11,7 +11,7 @@ lords_of_the_rhone_corridor = {
 
 	icon = lux_fortress_europe
 
-	global_fort_build_buildings_cost = -0.05
+	global_fort_build_buildings_efficiency = 0.05
 	global_defensive = 0.1
 }
 
@@ -59,7 +59,7 @@ rade_of_toulon = {
 
 	requires = recruitment_improvements_renaissance
 
-	global_port_build_buildings_cost = -0.1
+	global_port_build_buildings_efficiency = 0.1
 	global_naval_supplies_output_modifier = 0.1
 }
 

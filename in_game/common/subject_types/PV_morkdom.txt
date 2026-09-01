@@ -58,7 +58,7 @@
 
 	subject_modifier = {
 		legislative_efficiency = 0.05
-		fort_maintenance_cost = -0.10
+		fort_maintenance_efficiency = 0.10
 		fort_limit = 1
 	}
 

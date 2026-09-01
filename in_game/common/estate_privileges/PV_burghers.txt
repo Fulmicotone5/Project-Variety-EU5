@@ -51,7 +51,7 @@ TRY_REPLACE:fund_karimi = {
 	}
 
 	country_modifier = {
-		court_spending_cost_modifier = 0.25
+		court_spending_efficiency = -0.25
 		burghers_estate_max_tax = 0.025
 		burghers_estate_target_satisfaction = small_privilege_target_satisfaction
 		global_burghers_estate_power = 1
@@ -67,7 +67,7 @@ PV_metallurgy = {
 		global_burghers_max_literacy = 5
 		global_burghers_estate_power = 0.5
 		burghers_estate_target_satisfaction = medium_privilege_target_satisfaction
-		court_spending_cost_modifier = 0.025
+		court_spending_efficiency = -0.05
 		
 
 		monthly_towards_individualism = societal_value_large_monthly_move

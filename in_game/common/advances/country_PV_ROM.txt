@@ -21,7 +21,7 @@ rom_pax_romana = {
 	}
 	requires = subjects_advance
 	icon = gel_healthy_economy
-	stability_cost = -0.1
+	stability_cost_efficiency = 0.1
 	global_monthly_prosperity = 0.002
 }
 
@@ -154,5 +154,5 @@ rom_roman_architecture = {
 	}
 	requires = industrialization_advance
 	icon = efficient_construction_plans
-	building_upkeep_costs = -0.15
+	building_upkeep_efficiency = 0.15
 }

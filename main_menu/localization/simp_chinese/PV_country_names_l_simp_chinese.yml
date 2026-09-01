@@ -96,7 +96,7 @@
  rank_yarldom_ruler_male: "雅尔"
  rank_yarldom_ruler_female: "雅尔"
  PV_morkdom: "边疆领"
- PV_morkdom_desc: "$PV_morkdom$是一种专注于保卫其[overlord|e]领地的[subject|e]国家，扮演着宗主国与外部威胁之间的屏障。相较于普通的[ShowSubjectTypeName('vassal')]，边疆领享有更大的自主权、更低的[ShowModifierTypeName('fort_maintenance_cost')]，并且对宗主的贡赋义务也更为减轻。"
+ PV_morkdom_desc: "$PV_morkdom$是一种专注于保卫其[overlord|e]领地的[subject|e]国家，扮演着宗主国与外部威胁之间的屏障。相较于普通的[ShowSubjectTypeName('vassal')]，边疆领享有更大的自主权、更低的[ShowModifierTypeName('fort_maintenance_efficiency')]，并且对宗主的贡赋义务也更为减轻。"
  rank_morkdom: "边疆领"
  rank_morkdom_ruler_male: "边疆领主"
  rank_morkdom_ruler_female: "边疆领主"

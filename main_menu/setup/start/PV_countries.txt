@@ -3980,6 +3980,14 @@ countries = {
 				kulmbach
 				hof plauen
 				cheb
+				kronach
+			forchheim lichtenfels pegnitz gera schleiz
+			meiningen schleusingen schmalkalden
+			aschach
+			coburg hildburghausen
+			arnstadt saalfeld
+			wurzburg hassfurt karlstadt mellrichstadt konigshofen schweinfurt bruckenau schesslitz
+			weissenburg dinkelsbuhl rothenburg
 			}
 
 			starting_technology_level = 3
@@ -4020,6 +4028,7 @@ countries = {
 
 			tolerated_cultures = {
 				upper_palatine
+				saxon
 			}
 
 			country_rank = rank_county

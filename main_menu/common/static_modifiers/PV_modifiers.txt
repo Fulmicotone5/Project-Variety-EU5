@@ -24,7 +24,7 @@ TRY_REPLACE:harbor = {
     friendly_disembark_time_modifier = -0.2
     hostile_disembark_time_modifier = -0.2
     local_port_cost_distance_impact = -0.75
-    local_trade_embark_disembark_cost_modifier = -0.50
+    local_trade_embark_disembark_efficiency = 0.50
     local_maritime_presence = 0.3
 	local_repair_speed = 0.05
 }
@@ -37,6 +37,46 @@ PV_granary = {
 	local_nobles_estate_power = 1.0
 	local_peasant_enfranchisment = -0.25
 	local_wheat_output_modifier = 0.25
+}
+PV_prumines = {
+	game_data = {
+		category = location
+	}
+	
+	local_nobles_estate_power = 1.0
+	local_nobles_estate_unrest = -0.25
+	local_peasant_enfranchisment = -0.25
+	local_max_rgo_size_modifier = 0.5
+	local_rgo_build_time = -0.2
+}
+PV_prumines3 = {
+	game_data = {
+		category = location
+	}
+	
+	local_nobles_estate_power = 1.0
+	local_peasant_enfranchisment = -0.5
+	local_max_rgo_size_modifier = 0.5
+	local_max_control = -0.05
+}
+PV_prumines2 = {
+	game_data = {
+		category = location
+	}
+	
+	local_burghers_estate_power = 1.0
+	local_peasant_enfranchisment = -0.5
+	local_max_rgo_size_modifier = 0.25
+	local_rgo_build_time = -0.25
+}
+PV_prumines4 = {
+	game_data = {
+		category = location
+	}
+	local_levy_size_modifier = -0.25
+	local_burghers_estate_power = 1.0
+	local_peasant_enfranchisment = -0.25
+	local_nobles_estate_unrest = 0.25
 }
 
 ducal_palace_pv = {

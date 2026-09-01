@@ -98,7 +98,7 @@
  rank_yarldom_ruler_male: "Jarl"
  rank_yarldom_ruler_female: "Jarl"
  PV_morkdom: "Mǫrkdom"
- PV_morkdom_desc: "A $PV_morkdom$ is a [subject|e] country focused on defending their [overlord|e]'s domain, acting as a barrier between their them and external threats. Mǫrkdoms enjoy greater liberty, and reduced [ShowModifierTypeName('fort_maintenance_cost')] as well as reduced payment obligations to their overlord compared to a normal [ShowSubjectTypeName('vassal')]."
+ PV_morkdom_desc: "A $PV_morkdom$ is a [subject|e] country focused on defending their [overlord|e]'s domain, acting as a barrier between their them and external threats. Mǫrkdoms enjoy greater liberty, and reduced [ShowModifierTypeName('fort_maintenance_efficiency')] as well as reduced payment obligations to their overlord compared to a normal [ShowSubjectTypeName('vassal')]."
  rank_morkdom: "Mǫrkdom"
  rank_morkdom_ruler_male: "Mǫrk"
  rank_morkdom_ruler_female: "Mǫrk"

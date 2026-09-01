@@ -38,7 +38,7 @@ viking_heritage = {
 			has_or_had_tag = F17 
 		}
 	}
-	army_reinforce_cost = -0.1
+	army_reinforce_efficiency = 0.1
 	global_manpower_modifier = 0.1
 	
 	requires = mapmaking
