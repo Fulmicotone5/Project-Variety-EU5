@@ -1,0 +1,842 @@
+﻿holland_mission_pack = {
+	icon = pv_holland
+	chance = 3600
+	repeatable = no
+	player_playstyle = diplomatic
+
+	#ai_will_do = { value = 100 }
+
+	visible = {
+		game_has_missions_enabled = yes
+		OR = {
+				has_or_had_tag = HOL
+				has_or_had_tag = NED
+		}
+		NOT = {
+			has_global_variable = pv_m_holl
+		}
+	}
+
+	on_start = {
+		set_global_variable = pv_m_holl
+	}
+
+	on_completion = {
+		add_prestige = 100
+		add_navy_tradition = 30
+	}
+
+	on_abort = {
+	}
+
+	# ==================== PHASE 1: HOLLAND CONSOLIDATION (1337-1450) ====================
+	
+	mission_hol_develop_amsterdam = {
+		icon = cultural_acceptance_advance
+		requires = { }
+		
+		enabled = {
+			owns = location:amsterdam
+			location:amsterdam = {
+				development >= 25
+				has_building_with_at_least_one_level = marketplace
+				has_building_with_at_least_one_level = tools_guild
+				has_building_with_at_least_one_level = glass_guild
+				has_building_with_at_least_one_level = scriptorium
+				has_building_with_at_least_one_level = library
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:amsterdam = {
+				add_location_modifier = {
+					modifier = amsterdam_trading_hub
+					years = 25
+					mode = add
+				}
+				change_development = 3
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	#@@@ this mission causes crash
+	mission_hol_secure_food_supply = {
+		icon = cultivate_the_land
+		requires = { mission_hol_develop_amsterdam }
+		
+		enabled = {
+			any_owned_location = {
+			 	raw_material = goods:wheat
+				location_building_level = {
+						building_type = building_type:irrigation_systems
+						value >= 5
+					}
+				count >= 2
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_food_supply_secured
+				years = 50
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_consolidate_holland = {
+		icon = defensive_army
+		requires = { }
+		
+		enabled = {
+			area:holland_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.75
+				}
+			}
+			stability >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_holland_consolidated
+				years = 20
+				mode = add
+			}
+			add_gold = 150
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_strengthen_burghers = {
+		icon = government_reforms
+		requires = { mission_hol_develop_amsterdam }
+		
+		enabled = {
+			"estate_power(estate_type:nobles_estate)" <= 0.3
+			"estate_power(estate_type:burghers_estate)" >= 0.35
+			estate_satisfaction:burghers_estate >= 0.60
+		}
+		
+		duration = 0
+
+		on_completion = {
+			change_government_type = government_type:republic
+			add_country_modifier = {
+				modifier = hol_burgher_power
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 2: LOW COUNTRIES EXPANSION (1450-1550) ====================
+	
+	mission_hol_secure_utrecht = {
+		icon = offensive_army
+		requires = { mission_hol_consolidate_holland }
+		
+		enabled = {
+			owns = location:utrecht
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_utrecht_secured
+				years = 20
+				mode = add
+			}
+			area:holland_area = {
+				ordered_location_in_area = {
+					limit = { 
+						owner ?= root 
+						NOT = { is_core_of = root } 
+					}
+					order_by = development
+					max = 6
+					change_control = 0.075
+					add_core = root
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_expand_into_friesland = {
+		icon = diplomatic_influence
+		requires = { mission_hol_secure_utrecht }
+		
+		enabled = {
+			area:friesland_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.35
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_frisian_lands
+				years = 25
+				mode = add
+			}
+			if = {
+				limit = { 
+					NOT = { owns = location:groningen } 
+				}
+				add_casus_belli = {
+					target = location:groningen.owner
+					type = casus_belli:cb_conquer_province
+					months = 180
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_control_zeeland = {
+		icon = maritime_advance_age_2
+		requires = { mission_hol_secure_utrecht }
+		
+		enabled = {
+			any_owned_location = {
+				OR = {
+					has_building_with_at_least_one_level = dock
+					has_building_with_at_least_one_level = dry_dock
+				}
+				count >= 2
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_zeeland_control
+				years = 25
+				mode = add
+			}
+			add_navy_tradition = 10
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_expand_into_brabant = {
+		icon = glorious_arms
+		requires = { mission_hol_secure_utrecht }
+			
+		enabled = {
+			area:brabant_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.35
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_brabant_influence
+				years = 30
+				mode = add
+			}
+			if = {
+				limit = { 
+						NOT = { owns = location:brussels } 
+				}
+				add_casus_belli = {
+					target = location:brussels.owner
+					type = casus_belli:cb_conquer_province
+					months = 180
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 3: DUTCH INDEPENDENCE (1550-1600) ====================
+	
+
+	mission_hol_embrace_protestantism = {
+		icon = protestant_cuius_regio_eius_religio
+		requires = { mission_hol_form_netherlands }
+		
+		enabled = {
+			religion ?= religion:lutheran
+			religious_unity >= 0.35
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_protestant_reformation
+				years = 40
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_develop_dutch_navy = {
+		icon = ship_building_advance
+		requires = { mission_hol_control_zeeland }
+		
+		enabled = {
+			navy_size >= 20
+			total_effective_building_levels:wharf >= 4
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_naval_tradition
+				years = 30
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 4: DUTCH REPUBLIC (1581-1650) ====================
+	
+	mission_hol_promote_tolerance = {
+		icon = a_tolerant_society
+		requires = { mission_hol_embrace_protestantism }
+		
+		enabled = {
+			religious_unity >= 0.7
+			stability >= 50
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_religious_tolerance
+				years = 35
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_develop_baltic_trade = {
+		icon = baltic_shipyard
+		requires = { 
+			mission_hol_counter_british_navy
+		}
+		
+		enabled = {
+			region:baltic_region = {
+				any_location_in_region = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					count >= 6
+				}
+			}
+			monthly_income_trade_and_tax >= 75
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_baltic_trade
+				years = -1
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 5: COLONIAL EXPANSION (1600-1700) ====================
+	
+	mission_hol_establish_east_india_company = {
+		icon = cas_castilian_navy
+		requires = { 
+			mission_hol_develop_dutch_navy
+			mission_hol_strengthen_burghers
+		}
+		
+		enabled = {
+			navy_size >= 50
+			navy_tradition >= 15
+			has_embraced_institution = institution:new_world
+		}
+		
+		duration = 0
+
+		on_completion = {
+			trigger_event_non_silently = PV_alert.3
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_colonize_cape = {
+		icon = ship_building_advance
+		requires = { mission_hol_establish_east_india_company }
+		
+		enabled = {
+			area:goringhaikona_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					count >= 6
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_cape_colony
+				years = 40
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+
+
+
+
+
+
+
+	mission_hol_establish_indonesian_trade = {
+		icon = markets_for_salt
+		requires = { mission_hol_establish_east_india_company }
+		
+		enabled = {
+			region:indonesia_region = {
+				any_location_in_region = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					count >= 25
+				}
+			}
+			any_owned_location = {
+				raw_material = goods:chili
+				count >= 3
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_spice_trade
+				years = 50
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_establish_caribbean_trade = {
+		icon = merchants_and_trade
+		requires = { mission_hol_establish_east_india_company }
+		
+		enabled = {
+			region:caribbean_region = {
+				any_location_in_region = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					count >= 12
+				}
+			}
+			any_owned_location = {
+				raw_material = goods:tobacco
+				count >= 4
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_caribbean_trade
+				years = 45
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 6: ECONOMIC DEVELOPMENT (1650-1750) ====================
+	
+	mission_hol_develop_banking = {
+		icon = court_accounting
+		requires = { mission_hol_secure_food_supply }
+		
+		enabled = {
+			has_advance = banking_advance
+			monthly_income_trade_and_tax >= 250
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_amsterdam_banking
+				years = -1
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_develop_manufacturing = {
+		icon = netherlandish_protoindustry
+		requires = { mission_hol_secure_food_supply }
+		
+		enabled = {
+			#@@@ both these checks cause a crash on save
+			# any_owned_location = {
+			# 	has_building_with_at_least_one_level = cloth_guild
+			# 	count >= 8
+			# }
+			# any_owned_location = {
+			# 	has_building_with_at_least_one_level = tools_guild
+			# 	count >= 6
+			# }
+
+
+			produced_in_country:cloth >= 50
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_dutch_manufacturing
+				years = 40
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+
+
+
+	# ==================== PHASE 7: FORM NETHERLANDS AND LOW COUNTRIES UNIFICATION ====================
+	
+	mission_hol_unite_low_countries = {
+		icon = expansionism
+		requires = { 
+			mission_hol_expand_into_friesland
+			mission_hol_expand_into_brabant
+			mission_hol_control_zeeland
+		}
+		
+		enabled = {
+			area:friesland_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.75
+				}
+			}
+			area:brabant_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.75
+				}
+			}
+			legitimacy >= 60
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_low_countries_united
+				years = -1
+				mode = add
+			}
+			add_stability = 15
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_form_netherlands = {
+		icon = offensive_army
+		requires = { 
+			mission_hol_unite_low_countries
+		}
+		
+		enabled = {
+			has_or_had_tag = NED
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_kingdom_of_netherlands
+				years = -1
+				mode = add
+			}
+			add_prestige = 25
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 8: GLOBAL TRADE EMPIRE (1750-1800) ====================
+	
+	mission_hol_establish_global_trade = {
+		icon = merchants_and_trade
+		requires = { 
+			mission_hol_develop_manufacturing
+			mission_hol_develop_banking
+		}
+		
+		enabled = {
+			monthly_income_trade_and_tax >= 500
+			any_owned_location = {
+				is_market_center = yes
+			}
+			any_owned_location = {
+				has_building_with_at_least_one_level = paper_workshop
+				count >= 5
+			}
+			any_owned_location = {
+				has_building_with_at_least_one_level = printing_press_shop
+				count >= 5
+			}
+			any_owned_location = {
+				has_building_with_at_least_one_level = naval_supplies_workshop
+				count >= 2
+			}
+			any_owned_location = {
+				has_building_with_at_least_one_level = weapon_workshop
+				count >= 3
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_global_trade_network
+				years = 60
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_counter_british_navy = {
+		icon = maritime_advance_age_2
+		requires = { 
+			mission_hol_develop_dutch_navy
+			mission_hol_form_netherlands
+		}
+		
+		enabled = {
+			navy_size >= 100
+			navy_tradition >= 20
+			total_sub_unit_count:navy_heavy_ship >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_naval_challenge
+				years = 50
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_hol_develop_science = {
+		icon = alberghi_28_advance
+		requires = { mission_hol_establish_university }
+		
+		enabled = {
+			average_country_literacy >= 50
+			total_effective_building_levels:university >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = hol_scientific_tradition
+				years = 45
+				mode = add
+			}
+			add_research_progress = research_progress_severe_bonus
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 9: DUTCH CULTURAL ACHIEVEMENTS ====================
+	
+	mission_hol_establish_university = {
+		icon = imperatorskiy_moskovskiy_universitet
+		requires = { mission_hol_form_netherlands }
+		
+		enabled = {
+			any_owned_location = {
+				has_building_with_at_least_one_level = university
+				count >= 15
+			}
+			average_country_literacy >= 40
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:amsterdam = {
+				add_location_modifier = {
+					modifier = hol_university_of_amsterdam
+					years = -1
+					mode = add
+				}
+			}
+			add_research_progress = research_progress_severe_bonus
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 10: FINAL MISSIONS ====================
+
+	mission_hol_dutch_golden_age = {
+		icon = bill_of_rights
+		requires = { 
+			mission_hol_establish_global_trade
+			mission_hol_counter_british_navy
+		}
+
+		final = yes
+		
+		enabled = {
+			is_great_power = yes
+			prestige >= 50
+			stability >= 50
+			monthly_income_trade_and_tax >= 100
+			navy_tradition >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			if = {
+			limit = { NOT = { rank = country_rank:rank_empire }}
+				set_country_rank_effect = { rank = country_rank:rank_empire }
+			}
+			add_country_modifier = {
+				modifier = hol_golden_age
+				years = -1
+				mode = add
+			}
+			add_gold = {
+				value = monthly_income_trade_and_tax
+				multiply = 6
+			}
+		}
+		ai_will_do = { value = -100 }
+	}
+
+}

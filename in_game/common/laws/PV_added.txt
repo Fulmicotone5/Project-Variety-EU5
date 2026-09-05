@@ -125,7 +125,8 @@ feuds_laws = {
 			"estate_power(estate_type:crown_estate)" >= 0.3
 		}
 		country_modifier = {
-			monthly_towards_centralization = 0.15
+			global_crown_estate_power = 0.15
+			monthly_towards_centralization = 0.1
 			burghers_estate_target_satisfaction = -0.05
 			nobles_estate_target_satisfaction = -0.05
 		}
@@ -462,11 +463,11 @@ pv_serfstatus = {
 			societal_value:serfdom_vs_free_subjects <= -75
 		}
 		country_modifier = {
+			nobles_estate_max_tax = 0.05
 			global_peasant_enfranchisment = -0.15
 			global_max_rgo_size_modifier = 0.05
 			global_peasants_estate_power = -1
 			monthly_towards_serfdom = 0.3
-			nobles_estate_target_satisfaction = 0.05
 			peasants_estate_target_satisfaction = -0.1
 		}
 		estate_preferences = {

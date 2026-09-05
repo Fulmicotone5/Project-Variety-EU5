@@ -14,19 +14,19 @@
 
 TRY_REPLACE:byzantium_conquer_anatolia = {
 	preference_type = conquest
-	modifier = 15
+	modifier = 25
 	region = anatolia_region
 }
 
 TRY_REPLACE:byzantium_conquer_balkans = {
 	preference_type = conquest
-	modifier = 10
+	modifier = 20
 	region = balkan_region
 }
 
 TRY_REPLACE:byzantium_conquer_italy = {
 	preference_type = conquest
-	modifier = 5
+	modifier = 10
 	region = italy_region
 }
 
@@ -105,4 +105,28 @@ PVvestr2 = {
 	modifier = 20
 	region = canada_region
 	region = east_coast_region
+}
+
+PVans = {
+	preference_type = conquest
+	modifier = 20
+	area = franconia_area
+	area = upper_saxony_area
+	area = brandenburg_area
+	area = prussia_area
+}
+
+PVans2 = {
+	preference_type = conquest
+	modifier = 15
+	area = silesia_area
+	area = pomerania_area
+}
+
+PVans3 = {
+	preference_type = conquest
+	modifier = 10
+	area = mecklenburg_area
+	area = lower_saxony_area
+	area = greater_poland_area
 }

@@ -500,3 +500,15 @@
  sileflavor.12.b: "[ShowLocationName('kozle')] is a far better suited location for such investment"
  sileflavor.12.c: "No concessions will be granted today!"
  sileflavor.12.d: "Seize the money and run away"
+
+ PV_alert.1.title: "Welcome to Project Variety!"
+ PV_alert.1.desc: "Project Variety has tons of content that is locked behind #P Mission Trees#!, so make sure to have #P Missions Enabled#! and #P Every Task Rewards#! enabled in the #italic Game Rules#!."
+ PV_alert.1.a: "Have fun!"
+
+ PV_alert.2.title: "Loyalty to the Papacy"
+ PV_alert.2.desc: "As the [GetSituationByKey('council_of_trent').GetName] commenced, [SCOPE.sCharacter('target_character').GetName] delivered a solemn address emphasizing the importance of religious unity within [ShowReligionAdjective('catholic')] realm and the necessity of unwavering submission to Papal authority.\nHe called upon every ruler of the Christian realm to reaffirm their loyalty to the Holy See, thereby underscoring the centrality of allegiance to the Pope in maintaining ecclesiastical and political stability."
+ PV_alert.2.a: "Submit to [SCOPE.sCharacter('target_character').GetName]"
+ PV_alert.2.b: "I only serve God, and [ROOT.GetCountry.GetName]!"
+ PV_alert.3.title: "The Fundation of the #italic Vereenigde Oostindische Compagnie#!"
+ PV_alert.3.desc: "The Dutch East India Company (VOC) has been established with the primary objectives of safeguarding [ROOT.GetCountry.GetAdjective] trade in Africa and the Indian Ocean, eliminating internal competition, and countering the influence of other European maritime powers.\n[ROOT.GetCountry.GetGovernment.GetRuler.GetName] has granted the VOC a twenty-one-year monopoly, along with quasi-governmental authorities to construct fortifications, wage war, negotiate treaties, and mint coins.\nIt is anticipated that the company will generate substantial wealth and enhance the power and prestige of [ROOT.GetCountry.GetName]."
+ PV_alert.3.a: "May [ROOT.GetCountry.GetName] prosper thanks to the VOC!"

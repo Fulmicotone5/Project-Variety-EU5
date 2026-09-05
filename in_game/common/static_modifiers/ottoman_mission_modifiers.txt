@@ -1,0 +1,422 @@
+﻿# ==================== OTTOMAN MODIFIERS ====================
+# For ottoman_missions and ottoman_mission_events
+# Updated to include ALL modifiers referenced in missions and events
+# =============================================================
+
+# ==================== PHASE 1: FOUNDATIONS ====================
+
+tur_anatolian_consolidation = {
+    icon = crown_icon
+    global_monthly_control = 0.001
+    global_manpower_modifier = 0.10
+}
+
+tur_bursa_silk_center = {
+    icon = trade_icon
+    local_silk_output_modifier = 0.075
+    local_trades_per_burgher = 0.1
+}
+
+
+tur_timariot_system = {
+    icon = cavalry_icon
+    army_light_cavalry_power = 0.10
+    global_manpower_modifier = 0.05
+}
+
+tur_turkish_cultural_promotion = {
+    icon = culture_icon
+    cultural_influence_modifier = 0.15
+    global_pop_assimilation_speed_modifier = 0.10
+}
+
+# ==================== PHASE 2: BALKAN EXPANSION ====================
+
+tur_professional_army = {
+    icon = military_icon
+    land_morale_modifier = 0.10
+    army_maintenance_efficiency = 0.10
+}
+
+tur_constantinople_conquered = {
+    icon = crown_icon
+    local_trade_center_power = 0.10
+    local_max_control = 0.05
+}
+
+tur_imperial_capital = {
+    icon = crown_icon
+    global_max_literacy = 1.0
+}
+
+tur_bulgaria_subjugated = {
+    icon = crown_icon
+    global_manpower_modifier = 0.05
+    tax_income_efficiency = 0.025
+    subject_loyalty = 10
+}
+
+tur_aegean_dominance = {
+    icon = maritime_icon
+    global_maritime_presence_modifier = 0.10
+    own_coast_naval_combat_bonus = 0.10
+}
+
+tur_wallachia_vassalized = {
+    icon = diplomacy_icon
+    subject_loyalty = 15
+    subject_income_modifier = 0.10
+}
+
+tur_moldavia_vassalized = {
+    icon = diplomacy_icon
+    global_road_building_time = -0.15
+    cultural_influence_modifier = 0.05
+}
+
+# ==================== PHASE 3: ANATOLIAN CONSOLIDATION ====================
+
+tur_eastern_anatolia_secured = {
+    icon = military_icon
+    global_monthly_control = 0.001
+}
+
+tur_levant_conquered = {
+    icon = crown_icon
+    convert_religion_cost_modifier = -0.10
+}
+
+tur_levantine_administration = {
+    icon = government_icon
+    tax_income_efficiency = 0.10
+    global_max_control = 0.05
+}
+
+tur_custodian_of_the_holy_cities = {
+    icon = religion_icon
+    monthly_religious_influence = 0.10
+    clergy_estate_target_satisfaction = medium_permanent_target_satisfaction
+}
+
+tur_custodian_of_islam = {
+    icon = religion_icon
+    damage_done_versus_heretics_modifier = 0.10
+}
+
+tur_holy_city_protectorate = {
+    icon = religion_icon
+    local_pop_conversion_speed_modifier = 0.15
+    local_migration_attraction = 0.10
+}
+
+tur_ottoman_caliphate = {
+    icon = religion_icon
+    damage_done_versus_heretics_modifier = 0.15
+    tolerance_heathen = -1
+    prestige_decay = -0.05
+}
+
+tur_caliphate_proclaimed = {
+    icon = religion_icon
+    monthly_religious_influence = 0.35
+    prestige_decay = -0.06
+    tolerance_heathen = -1
+    diplomatic_reputation = 2
+    #great_power_score_modifier = 0.10
+}
+
+# ==================== PHASE 4: MAMLUK AND EGYPT ====================
+
+tur_syria_secured = {
+    icon = military_icon
+    global_manpower_modifier = 0.05
+    tax_income_efficiency = 0.01
+}
+
+tur_egypt_conquered = {
+    icon = crown_icon
+    global_merchant_power = 0.10
+    global_production_efficiency = 0.10
+}
+
+tur_egyptian_granary = {
+    icon = agriculture_icon
+    global_wheat_output_modifier = 0.20
+    global_sugar_output_modifier = 0.10
+    global_monthly_food_modifier = 0.10
+}
+
+tur_cairo_administrative_center = {
+    icon = government_icon
+    local_trade_center_power = 0.125
+    local_production_efficiency = 0.05
+    local_max_control = 0.05
+}
+
+# ==================== PHASE 5: RED SEA AND ARABIA ====================
+
+tur_red_sea_presence = {
+    icon = maritime_icon
+    global_maritime_presence_modifier = 0.10
+    naval_range_modifier = 0.10
+    # trade_income = 0.10
+    global_sailors_modifier = 0.05
+}
+
+tur_arabian_trade_control = {
+    icon = trade_icon
+    global_merchant_power = 0.10
+    trade_land_efficiency = 0.015
+    burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+}
+
+# ==================== PHASE 6: CRIMEA AND CAUCASUS ====================
+
+tur_crimea_secured = {
+    icon = cavalry_icon
+    global_supply_limit_modifier = 0.10
+}
+
+tur_caucasus_conquered = {
+    icon = military_icon
+    global_manpower_modifier = 0.10
+    global_monthly_control = 0.001
+}
+
+# ==================== PHASE 7: MILITARY REFORMS ====================
+
+tur_reformed_janissaries = {
+    icon = military_icon
+    land_morale_modifier = 0.05
+}
+
+tur_modern_artillery = {
+    icon = artillery_icon
+    army_artillery_power = 0.15
+    artillery_bonus_vs_fort = 5
+    siege_ability = 0.10
+}
+
+tur_mediterranean_naval_power = {
+    icon = maritime_icon
+    navy_heavy_ship_power = 0.075
+    navy_galley_power = 0.125
+    # global_sailors_modifier = 0.15
+    # own_coast_naval_combat_bonus = 0.10
+    # naval_morale_modifier = 0.10
+}
+
+tur_sipahi_elite = {
+    icon = cavalry_icon
+    army_light_cavalry_power = 0.15
+    army_heavy_cavalry_power = 0.10
+    # land_morale_modifier = 0.05
+}
+
+tur_ottoman_military_supremacy = {
+    icon = military_icon
+    discipline = 0.05
+    army_tradition_from_battle = 0.10
+}
+
+
+# ==================== PHASE 8: ECONOMIC DEVELOPMENT ====================
+
+tur_agricultural_expansion = {
+    icon = agriculture_icon
+    global_wheat_output_modifier = 0.15
+    global_millet_output_modifier = 0.10
+    global_monthly_food_modifier = 0.10
+    global_population_growth = 0.0003
+}
+
+tur_expanded_trade_network = {
+    icon = trade_icon
+    global_merchant_power = 0.15
+    trade_land_efficiency = 0.02
+}
+
+tur_istanbul_metropolis = {
+    icon = crown_icon
+    local_trade_center_power = 0.05
+    local_max_control = 0.05
+    local_population_growth = 0.001
+}
+
+tur_spice_trade_monopoly = {
+    icon = trade_icon
+    global_merchant_power = 0.05
+    monthly_inflation = -0.001
+}
+
+# ==================== PHASE 9: CULTURAL AND RELIGIOUS ====================
+
+tur_ottoman_cultural_hegemony = {
+    icon = culture_icon
+    global_pop_assimilation_speed_modifier = 0.15
+}
+
+tur_ottoman_learning = {
+    icon = technology_icon
+    research_speed_modifier = 0.05
+    global_institution_growth_modifier = 0.075
+    global_max_literacy = 0.05
+}
+
+tur_ottoman_baroque_era = {
+    icon = culture_icon
+    cultural_tradition_modifier = 0.1
+    cultural_influence_modifier = 0.1
+}
+
+tur_religious_tolerance_policy = {
+    icon = religion_icon
+    tolerance_heretic = 1
+    tolerance_heathen = 1
+    global_population_growth = 0.0002
+}
+
+# ==================== PHASE 10: ADMINISTRATIVE REFORMS ====================
+
+tur_reformed_timariots = {
+    icon = government_icon
+    global_manpower_modifier = 0.05
+    monthly_legitimacy = 0.01
+}
+
+tur_administrative_centralization = {
+    icon = government_icon
+    government_size = 1
+}
+
+tur_legal_reforms = {
+    icon = government_icon
+    legislative_efficiency = 0.10
+    global_build_buildings_efficiency = 0.10
+    monthly_legitimacy = 0.01
+}
+
+tur_ottoman_legal_code = {
+    icon = government_icon
+    build_paved_road_cost_modifier = -0.15
+    build_modern_road_cost_modifier = -0.15
+    local_road_building_time = -0.20
+}
+
+tur_habsburg_challenger = {
+    icon = diplomacy_icon
+    antagonism_received_modifier = -0.2
+}
+
+tur_hungary_conquered = {
+    icon = crown_icon
+    change_policy_cost_modifier = -0.15
+    convert_religion_cost_modifier = -0.10
+
+}
+
+tur_russian_rivalry = {
+    icon = diplomacy_icon
+    antagonism_received_modifier = -0.10
+    prestige_from_land_battle = 0.15
+    army_tradition_from_battle = 0.10
+}
+
+tur_black_sea_dominance = {
+    icon = maritime_icon
+    own_coast_naval_combat_bonus = 0.10
+    global_maritime_presence_modifier = 0.10
+}
+
+# ==================== PHASE 12: ITALIAN AND NORTH AFRICAN ====================
+
+tur_southern_italy_secured = {
+    icon = maritime_icon
+    naval_range_modifier = 0.125
+    trade_income = 0.05
+}
+
+tur_northern_italy_dominance = {
+    icon = crown_icon
+    global_jewelry_output_modifier = 0.10
+    global_garrison_size_modifier = 0.10
+}
+
+tur_north_africa_dominance = {
+    icon = maritime_icon
+    global_maritime_presence_modifier = 0.10
+}
+
+tur_morocco_secured = {
+    icon = crown_icon
+    global_merchant_power = 0.10
+}
+
+# ==================== PHASE 13: PERSIAN AND GULF ====================
+
+tur_persian_gulf_trade = {
+    icon = trade_icon
+    global_merchant_power = 0.10
+    trade_land_efficiency = 0.02
+}
+
+tur_indian_ocean_trade_dominance = {
+    icon = trade_icon
+    global_trade_center_power = 0.10
+    trade_sea_efficiency = 0.02
+}
+
+tur_persian_rivalry = {
+    icon = diplomacy_icon
+    antagonism_received_modifier = -0.10
+    army_light_infantry_power = 0.10
+    army_heavy_infantry_power = 0.10
+}
+
+tur_mesopotamia_conquered = {
+    icon = crown_icon
+    global_manpower_modifier = 0.10
+    global_monthly_control = 0.001
+}
+
+# ==================== PHASE 14: CAPSTONE ====================
+
+tur_ottoman_golden_age = {
+    icon = golden_age_icon
+    global_manpower_modifier = 0.15
+    research_speed_modifier = 0.05
+    cultural_tradition_modifier = 0.15
+    cultural_influence_modifier = 0.15
+}
+
+# ==================== PHASE 15: LEGACY MISSIONS ====================
+
+tur_mehmeds_dream_fulfilled = {
+    icon = crown_icon
+    monthly_legitimacy = 0.02
+    global_monthly_control = 0.001
+
+}
+
+tur_selims_legacy = {
+    icon = crown_icon
+    damage_done_versus_heathens_modifier = 0.10
+}
+
+tur_anatolian_trade_network = {
+    icon = trade_icon
+    global_merchant_power = 0.05
+    burghers_estate_target_satisfaction = medium_permanent_target_satisfaction
+}
+
+tur_imperial_library = {
+    icon = technology_icon
+    local_cultural_influence = 0.15
+    research_speed_modifier = 0.05
+}
+
+tur_ottoman_architectural_heritage = {
+    icon = culture_icon
+    cultural_tradition_modifier = 0.125
+    cultural_influence_modifier = 0.125
+}

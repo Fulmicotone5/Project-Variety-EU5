@@ -152,8 +152,8 @@ rename_locations = {
 	}
 }
 
-mission_packs_enabled_rule = {
-	default = mission_packs_disabled
+mission_packs_enabled_rule = {#pv
+	default = mission_packs_enabled
 	mission_packs_enabled = {
 		flag = blocks_achievements
 		flag = general_rule
@@ -167,8 +167,8 @@ mission_packs_enabled_rule = {
 	}
 }
 
-mission_rewards = {
-	default = only_end_mission_rewards
+mission_rewards = { #pv
+	default = every_task_reward
 	every_task_reward = {
 		flag = general_rule
 	}

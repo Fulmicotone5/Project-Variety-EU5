@@ -134,5 +134,10 @@ countries = {
 				PVned
 			}
 		}
+		ANS = {
+			area_preferences = {
+				PVans PVans2 PVans3
+			}
+		}
 	}
 }

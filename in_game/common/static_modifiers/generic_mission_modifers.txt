@@ -1,0 +1,45 @@
+﻿local_trade_expansion = {
+	icon = trade_icon
+	local_trade_center_power = 10
+	local_trade_protection_factor = 0.10
+}
+
+investment_plans = {
+	icon = economy_icon
+	local_build_buildings_efficiency = 0.25
+}
+
+location_raw_material_development = {
+	icon = production_icon
+	local_raw_material_output = 0.20
+}
+
+rural_investment = {
+	icon = economy_icon
+	tax_income_efficiency = 0.15
+	global_rural_build_buildings_efficiency = 0.20
+}
+
+location_control_focus = {
+	icon = production_icon
+	local_max_control = 0.20
+	local_monthly_control = 0.15
+}
+
+naval_base = {
+	icon = navy_icon
+	max_ships_built_at_same_time = 1
+	local_ship_build_speed = 0.25
+}
+
+standing_army_established = {
+	icon = medieval_military
+	army_light_infantry_maintenance_cost_modifier = -0.10
+	regiment_recruit_speed = 0.15
+}
+
+focus_military = {
+	icon = army_morale_icon
+	land_morale_modifier = 0.10
+	army_light_infantry_power = 0.15
+}

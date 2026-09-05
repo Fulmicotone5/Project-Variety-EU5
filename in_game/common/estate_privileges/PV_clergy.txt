@@ -94,7 +94,7 @@ PV_loyalty_to_the_popw = {
 		NOT = { tag = PAP }
 		country_exists = c:PAP
 		country_rank_is_empire = no
-		current_age = age_4_reformation
+		has_variable = pvloy
 	}
 	allow = {
 		country_rank_is_empire = no

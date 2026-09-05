@@ -314,7 +314,9 @@ TRY_REPLACE:agricultural_cultivation = {
 PV_diplofocus = {
 	age = age_1_traditions
 	
-	
+	potential = {
+		is_ai = no
+	}
 	
 	country_modifier = {
 		antagonism_received_modifier = 0.5
@@ -541,7 +543,7 @@ PV_spartan = {
 		court_spending_efficiency = 0.25
 		global_fort_build_buildings_efficiency = 0.15
 		fort_maintenance_efficiency = 0.10
-		fort_limit_modifier = 0.1
+		fort_limit_modifier = 0.25
 		monthly_towards_traditionalist = societal_value_minor_monthly_move
 		monthly_towards_defensive = societal_value_monthly_move
 	}

@@ -1,0 +1,204 @@
+﻿# ============================================================================
+# HOLLAND/NETHERLANDS MISSION PACK MODIFIERS (EU5 COMPATIBLE)
+# ============================================================================
+
+# ============================================================================
+# PHASE 1: HOLLAND CONSOLIDATION (1337-1450)
+# ============================================================================
+
+hol_holland_consolidated = {
+	icon = crown_icon
+	global_max_control = 0.05
+}
+
+amsterdam_trading_hub = {
+	icon = merchants_and_trade
+	local_trade_center_power = 0.15
+	local_merchant_power = 10
+}
+
+hol_food_supply_secured = {
+	icon = production_icon
+	global_monthly_food_modifier = 0.10
+	control_the_food_market_cost_modifier = -0.10
+	global_food_capacity_modifier = 0.125
+}
+
+hol_burgher_power = {
+	icon = burghers_icon
+	global_burghers_estate_power = 0.5
+	trade_income = 0.125
+	global_burghers_city_desired_pop = 0.1
+}
+
+# ============================================================================
+# PHASE 2: LOW COUNTRIES EXPANSION (1450-1550)
+# ============================================================================
+
+hol_utrecht_secured = {
+	icon = bishopric_icon
+	global_monthly_control = 0.0005
+	global_monthly_food_modifier = 0.10
+}
+
+hol_frisian_lands = {
+	icon = culture_icon
+	navy_galley_power = 0.05
+	own_coast_naval_combat_bonus = 0.10
+}
+
+hol_zeeland_control = {
+	icon = maritime_icon
+	global_sailors_modifier = 0.15
+	ship_build_speed = 0.20
+}
+
+hol_brabant_influence = {
+	icon = production_icon
+	global_cloth_output_modifier = 0.25
+	global_production_efficiency = 0.05
+}
+
+# ============================================================================
+# PHASE 3: DUTCH INDEPENDENCE (1550-1600)
+# ============================================================================
+
+hol_independence_secured = {
+	icon = crown_icon
+	diplomatic_capacity_modifier = 0.10
+	cultural_influence_modifier = 0.125
+}
+
+hol_protestant_reformation = {
+	icon = religious_icon
+	global_pop_conversion_speed_modifier = 0.5
+	monthly_religious_influence = 0.1
+	tolerance_heretic = 1
+}
+
+hol_naval_tradition = {
+	icon = ship_building_advance
+	navy_tradition_decay = -0.15
+	ship_build_speed = 0.15
+}
+
+# ============================================================================
+# PHASE 4: DUTCH REPUBLIC (1581-1650)
+# ============================================================================
+
+hol_republic_established = {
+	icon = government_reforms
+	government_reform_slots = 1
+}
+
+hol_religious_tolerance = {
+	icon = tolerance_icon
+	tolerance_heathen = 1
+	stability_cost_efficiency = 0.10
+}
+
+hol_baltic_trade = {
+	icon = merchants_and_trade
+	trade_land_efficiency = 0.015
+	global_merchant_power = 0.10
+}
+
+# ============================================================================
+# PHASE 5: COLONIAL EXPANSION (1600-1700)
+# ============================================================================
+
+hol_east_india_company = {
+	icon = merchants_and_trade
+	colonial_range_modifier = 0.15
+	allow_open_sea_exploration = yes
+}
+
+hol_cape_colony = {
+	icon = ship_building_advance
+	global_food_capacity_modifier = 0.15
+	subject_pays_colonial_cost_modifier = 0.125
+	colonial_migration_size_modifier = 0.10
+}
+
+hol_spice_trade = {
+	icon = merchants_and_trade
+	global_chili_output_modifier = 0.20
+	trade_income = 0.15
+}
+
+hol_caribbean_trade = {
+	icon = merchants_and_trade
+	global_tobacco_output_modifier = 0.25
+	global_trade_protection_factor = 0.10
+}
+
+# ============================================================================
+# PHASE 6: ECONOMIC DEVELOPMENT (1650-1750)
+# ============================================================================
+
+hol_amsterdam_banking = {
+	icon = court_accounting
+	minting_inflation_threshold = 0.02
+	bank_interest = -0.05
+	global_construction_speed = 0.10
+}
+
+hol_dutch_manufacturing = {
+	icon = production_efficiency_advance
+	global_production_efficiency = 0.05
+	global_fine_cloth_output_modifier = 0.20
+}
+
+# ============================================================================
+# PHASE 7: FORM NETHERLANDS (1700+)
+# ============================================================================
+
+hol_low_countries_united = {
+	icon = empire_icon
+	global_manpower_modifier = 0.10
+	cultures_capacity = 1
+}
+
+hol_kingdom_of_netherlands = {
+	icon = empire_icon
+	diplomatic_reputation = 1
+	government_size = 1
+}
+
+# ============================================================================
+# PHASE 8: GLOBAL TRADE EMPIRE (1750-1800)
+# ============================================================================
+
+hol_global_trade_network = {
+	icon = merchants_and_trade
+	trade_land_efficiency = 0.02
+	global_merchant_capacity_modifier = 0.20
+	global_merchant_power = 0.10
+}
+
+hol_naval_challenge = {
+	icon = maritime_advance_age_2
+	navy_tradition_from_battle = 0.15
+	naval_damage_done = 0.10
+}
+
+hol_scientific_tradition = {
+	icon = research_icon
+	research_speed = 0.15
+}
+
+# ============================================================================
+# PHASE 9: FINAL MISSIONS
+# ============================================================================
+
+hol_golden_age = {
+	icon = bill_of_rights
+	prestige_decay = -0.15
+	#great_power_score_modifier = 0.05
+	antagonism_received_modifier = -0.1
+}
+
+hol_university_of_amsterdam = {
+	local_max_literacy = 10
+	local_institution_growth_modifier = 0.33
+}

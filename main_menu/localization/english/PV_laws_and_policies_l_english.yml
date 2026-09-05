@@ -94,3 +94,7 @@
  pvcrusader_council_desc: "The Haute Cour acts as the supreme legislative, judicial, and executive body of the country, and it consists of the King's direct vassals, barons, and high-ranking church officials."
  pvassizes: "Assizes of Jerusalem"
  pvassizes_desc: "The Assizes of Jerusalem are a collection of numerous medieval legal treatises written in French containing the law of the crusader Kingdom of Jerusalem."
+ pvroman_law: "Corpus Iuris Civilis"
+ pvroman_law_desc: "The Corpus Juris Civilis is a comprehensive collection of Roman law compiled and enacted under the direction of Roman Emperor Justinian I in the 6th century. It consists of four parts, the Codex, the Digest, the Institutes, and the Novellae. This monumental legal code served as the foundation of the Late Roman law and significantly influenced the development of legal systems in Europe and beyond."
+ by_servitude: "By Servitude"
+ by_servitude_desc: "The Feudal society is structured into a hierarchical system primarily divided into three main groups, those who protect, those who work, and those who serve the Lord."

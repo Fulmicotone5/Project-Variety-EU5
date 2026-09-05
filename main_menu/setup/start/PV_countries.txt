@@ -2088,8 +2088,6 @@ countries = {
 				oravsky_podzamok
 				turciansky_svaty_martin
 				liptovsky_mikulas
-				western_carpathians1
-				western_carpathians2
 				levoca
 				presov
 				lubica

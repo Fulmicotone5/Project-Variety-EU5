@@ -1,4 +1,7 @@
 monthly_country_pulse = {
+	events = { #both pv
+		PV_alert.1
+	}
 	effect = {
 		ordered_country = {
 			limit = {

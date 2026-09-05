@@ -1,0 +1,1399 @@
+﻿venice_mission_pack = {
+	icon = generic_capital_economy
+	chance = 3600
+	repeatable = no
+	player_playstyle = diplomatic
+
+	#ai_will_do = { value = 100 }
+
+	visible = {
+		game_has_missions_enabled = yes
+		tag = "VEN"
+	}
+
+	on_start = {
+		set_variable = {
+			name = mission_target_merchant_power
+			value = 85
+		}
+	}
+
+	on_completion = {
+		add_prestige = 75
+		add_legitimacy = 10
+		remove_variable = mission_target_merchant_power
+	}
+
+	on_abort = {
+		remove_variable = mission_target_merchant_power
+	}
+
+	# ==================== PHASE 1: VENETIAN LAGOON CONSOLIDATION ====================
+	
+	mission_secure_venetian_lagoon = {
+		icon = defensive_army
+		requires = { }
+		
+		enabled = {
+			stability >= 30
+			legitimacy >= 60
+			owns = location:venice
+			owns = location:mestre
+			owns = location:chioggia
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_legitimacy = 10
+			trigger_event_silently = venice_mission_events.1
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_develop_arsenal = {
+		icon = ship_building_advance
+		requires = { mission_secure_venetian_lagoon }
+		
+		enabled = {
+			capital = {
+				development >= 40
+				has_building_with_at_least_one_level = dock
+			}
+			total_effective_building_levels:dock >= 3
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = venetian_arsenal_expanded
+					years = 15
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_strengthen_republic = {
+		icon = government_reforms
+		requires = { }
+		
+		enabled = {
+			"estate_power(estate_type:burghers_estate)" >= 0.4
+			"estate_power(estate_type:nobles_estate)" <= 0.27
+			legitimacy >= 70
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_constitution
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_develop_murano_glass = {
+		icon = production_efficiency_advance
+		requires = { mission_strengthen_republic }
+		
+		enabled = {
+			location:mestre = {
+				owner ?= root
+				development >= 25
+				has_building_with_at_least_one_level = glass_guild
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:mestre = {
+				add_location_modifier = {
+					modifier = murano_glass_monopoly
+					years = 20
+					mode = add
+				}
+				change_development = 2
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 2: ADRIATIC DOMINATION ====================
+	
+	mission_control_adriatic = {
+		icon = maritime_advance_age_2
+		requires = {  }
+		
+		enabled = {
+			navy_size >= 20
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = adriatic_guardian
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_secure_istria_dalmatia = {
+		icon = offensive_army
+		requires = { mission_control_adriatic }
+		
+		enabled = {
+			owns = location:pazin
+			owns = location:sibenik
+
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = dalmatian_coast_secure
+				years = 25
+				mode = add
+			}
+			location:pazin = {
+				add_core = root
+			}
+			location:sibenik = {
+				add_core = root
+			}
+			# we could trigger a event like this elsewhere, later on and fix the event first
+			# trigger_event_non_silently = venice_mission_events.2
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_subjugate_ragusa = {
+		icon = diplomatic_influence
+		requires = { mission_secure_venetian_lagoon }
+		
+		enabled = {
+			OR = {
+				NOT = { country_exists = c:RAG }
+				c:RAG = {
+					is_subject_of = root
+				}
+			}
+			c:RAG ?= {
+				opinion = {
+					target = root
+					value >= 90
+				}
+			}
+		}
+		
+		duration = 0
+
+		bypass = {
+			NOT = { country_exists = c:RAG }
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = ragusan_tributary
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_secure_albania = {
+		icon = offensive_army
+		requires = { mission_control_adriatic }
+		
+		enabled = {
+			area:albania_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.7
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_manpower = {
+				value = max_manpower
+				multiply = 0.2
+			}
+			area:albania_area = {
+				ordered_location_in_area = {
+					limit = { owner ?= root }
+					order_by = development
+					max = 3
+					add_core = root
+					change_development = 1
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_corfu = {
+		icon = maritime_advance_age_2
+		requires = { mission_secure_albania }
+		
+		enabled = {
+			# owns = location:corfu
+			location:corfu = {
+				owner ?= root
+				has_building_with_at_least_one_level = castle
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:corfu = {
+				add_location_modifier = {
+					modifier = adriatic_sentinel
+					years = 35
+					mode = add
+				}
+				add_core = root
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 3: MEDITERRANEAN TRADE EMPIRE ====================
+	
+	mission_dominate_levantine_trade = {
+		icon = merchants_and_trade
+		requires = { mission_strengthen_republic }
+		
+		enabled = {
+			monthly_income_trade_and_tax >= 60
+			capital.market = {
+				"merchant_power_in_market(root)" >= 55
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = levant_trade_primacy
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_cyprus = {
+		icon = glorious_arms
+		requires = { mission_subjugate_ragusa }
+		
+		enabled = {
+			 province_definition:cyprus_province = {
+				any_location_in_province_definition = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.9
+				}
+			}
+
+		}
+		
+		duration = 0
+
+		on_completion = {
+			trigger_event_non_silently = venice_mission_events.4
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_secure_crete = {
+		icon = defensive_army
+		requires = { mission_control_adriatic }
+		
+		enabled = {
+			province_definition:crete_province = {
+				any_location_in_province_definition = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+					}
+					percent >= 0.9
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			province_definition:crete_province = {
+				ordered_location_in_province_definition = {
+					limit = { owner ?= root }
+					order_by = development
+					max = 3
+					add_core = root
+				}
+			}
+			trigger_event_non_silently = venice_mission_events.5
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_develop_candia = {
+		icon = production_efficiency_advance
+		requires = { mission_secure_crete }
+		
+		enabled = {
+			location:candia = {
+				owner ?= root
+				development >= 22
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:candia = {
+				change_prosperity = 0.15
+				change_development = 2
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_establish_euboea_trade = {
+		icon = merchants_and_trade
+		requires = { mission_secure_crete }
+		
+		enabled = {
+			province_definition:euboea_province = {
+				any_location_in_province_definition = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.4
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			province_definition:euboea_province = {
+				ordered_location_in_province_definition = {
+					limit = { owner ?= root }
+					order_by = development
+					max = 3
+					add_location_modifier = {
+						modifier = euboea_emporium
+						years = 20
+						mode = add
+					}
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_ionian_islands = {
+		icon = maritime_advance_age_2
+		requires = { mission_secure_crete }
+		
+		enabled = {
+			province_definition:ionian_islands_province = {
+				any_location_in_province_definition = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.75
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = ionian_outposts
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 4: ITALIAN MAINLAND EXPANSION ====================
+	
+	mission_acquire_terraferma = {
+		icon = offensive_army
+		requires = { mission_secure_friuli }
+		
+		enabled = {
+			area:veneto_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.6
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_manpower = {
+				value = max_manpower
+				multiply = 0.35
+			}
+			trigger_event_non_silently = venice_mission_events.6
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_secure_friuli = {
+		icon = defensive_army
+		requires = { mission_secure_venetian_lagoon }
+		
+		enabled = {
+			province_definition:friuli_province = {
+				any_location_in_province_definition = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.6
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = alpine_border_secure
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_dominate_padua = {
+		icon = cultural_acceptance_advance
+		requires = { mission_acquire_terraferma }
+		
+		enabled = {
+			location:padova = {
+				owner ?= root
+				development >= 37
+				has_building_with_at_least_one_level = university
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:padova = {
+				add_location_modifier = {
+					modifier = paduan_intellectuals
+					years = 30
+					mode = add
+				}
+			}
+			add_research_progress = research_progress_mild_bonus
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_verona = {
+		icon = offensive_army
+		requires = { mission_acquire_terraferma }
+		
+		enabled = {
+			location:verona = {
+				owner ?= root
+				has_building_with_at_least_one_level = castle
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:verona = {
+				add_location_modifier = {
+					modifier = veronese_stronghold
+					years = 25
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_secure_brescia = {
+		icon = offensive_army
+		requires = { mission_acquire_terraferma }
+		
+		enabled = {
+			location:brescia = {
+				owner ?= root
+				development >= 37
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			area:lombardy_area = {
+				random_location_in_area = {
+					limit = { owner ?= root }
+					add_location_modifier = {
+						modifier = lombard_integration
+						years = 20
+						mode = add
+					}
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 5: NAVAL SUPREMACY ====================
+	
+	mission_expand_arsenal = {
+		icon = ship_building_advance
+		requires = { mission_develop_arsenal }
+		
+		enabled = {
+			capital = {
+				total_building_levels >= 52
+
+			}
+			navy_size >= 40
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = great_arsenal
+					years = -1
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_perfect_galley_design = {
+		icon = ship_building_advance
+		requires = { mission_expand_arsenal }
+		
+		enabled = {
+			has_advance = unlock_galleass_advance
+			navy_tradition >= 35
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_galley_tradition
+				years = -1
+				mode = add
+			}
+			add_navy_tradition = 10
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_battle_of_lepanto_veterans = {
+		icon = glorious_arms
+		requires = { mission_perfect_galley_design }
+		
+		enabled = {
+			navy_tradition >= 70
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = lepanto_veterans
+				years = 40
+				mode = add
+			}
+			trigger_event_silently = venice_mission_events.7
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_develop_merchant_marine = {
+		icon = merchants_and_trade
+		requires = { mission_expand_arsenal }
+		
+		enabled = {
+			total_effective_building_levels:wharf >= 8
+			monthly_income_trade_and_tax >= 120
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_merchant_fleet
+				years = 30
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 6: TRADE MONOPOLIES ====================
+	
+	mission_monopolize_salt_trade = {
+		icon = merchants_and_trade
+		requires = { mission_develop_murano_glass }
+		
+		enabled = {
+			any_owned_location = {
+				raw_material = goods:salt
+				count >= 6
+			}
+			produced_in_country:salt >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = salt_trade_monopoly
+				years = -1
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_spice_route = {
+		icon = merchants_and_trade
+		requires = { mission_dominate_levantine_trade }
+		
+		enabled = {
+			any_owned_location = {
+				raw_material = goods:chili
+				count >= 2
+			}
+			any_owned_location = {
+				raw_material = goods:pepper
+				count >= 2
+			}
+			capital.market = {
+				"merchant_power_in_market(root)" >= 75
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = spice_route_dominance
+				years = 35
+				mode = add
+			}
+			trigger_event_silently = venice_mission_events.8
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_establish_fondaco_dei_tedeschi = {
+		icon = merchants_and_trade
+		requires = { mission_monopolize_salt_trade }
+		
+		enabled = {
+			capital = {
+				has_building_with_at_least_one_level = merchants_quarters
+				has_building_with_at_least_one_level = marketplace
+			}
+			any_country = {
+				culture = { has_culture_group = culture_group:german_group }
+				opinion = {
+					target = root
+					value >= 50
+				}
+				count >= 3
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = fondaco_dei_tedeschi
+					years = -1
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_establish_fondaco_dei_persiani = {
+		icon = merchants_and_trade
+		requires = { mission_control_spice_route }
+		
+		enabled = {
+			capital = {
+				has_building_with_at_least_one_level = merchants_quarters
+			}
+			any_country = {
+				religion.group = religion_group:muslim
+
+				opinion = {
+					target = root
+					value >= 35
+				}
+				count >= 2
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = fondaco_dei_persiani
+					years = -1
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 7: RIVALRY WITH GENOA ====================
+	
+	mission_challenge_genoese_power = {
+		icon = maritime_advance_age_2
+		requires = { mission_dominate_levantine_trade }
+		
+		enabled = {
+			scope:actor = {
+				relative_strength = {
+					target = c:GEN
+					value > 0.5
+				}
+			}
+			monthly_income_trade_and_tax >= 150
+		}
+		
+		duration = 0
+
+		bypass = {
+			NOT = { country_exists = c:GEN }
+		}
+
+		on_completion = {
+			add_casus_belli = {
+				target = c:GEN
+				type = casus_belli:cb_trade_conflict
+				years = 20
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_win_war_of_chiaoggia = {
+		icon = glorious_arms
+		requires = { mission_challenge_genoese_power }
+		
+		enabled = {
+			OR = {
+				c:GEN = {
+					is_subject_of = root
+				}
+				owns = location:genoa
+			}
+		}
+		
+		duration = 0
+
+		bypass = {
+			NOT = { country_exists = c:GEN }
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = genoese_rivalry_victory
+				years = 35
+				mode = add
+			}
+			trigger_event_non_silently = venice_mission_events.9
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_corsica_sardinia = {
+		icon = maritime_advance_age_2
+		requires = { mission_win_war_of_chiaoggia }
+		
+		enabled = {
+			area:sardinia_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.6
+				}
+			}
+			area:liguria_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					percent >= 0.6
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = western_mediterranean_presence
+				years = -1
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 8: OTTOMAN CONFLICT BRANCH ====================
+	
+	mission_prepare_for_ottoman_threat = {
+		icon = defensive_army
+		requires = { mission_secure_crete }
+		
+		enabled = {
+			region:balkan_region = {
+				any_location_in_region = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
+					count >= 35
+				}
+			}
+		}
+		
+		duration = 0
+
+		bypass = {
+			NOT = { country_exists = c:TUR }
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = ottoman_preparations
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_fortify_nafpaktos = {
+		icon = defensive_army
+		requires = { mission_prepare_for_ottoman_threat }
+		
+		enabled = {
+			location:nafpaktos = {
+				owner ?= root
+				has_building_with_at_least_one_level = castle
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:nafpaktos = {
+				add_location_modifier = {
+					modifier = naupactus_fortress
+					years = 15
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_defend_crete = {
+		icon = defensive_army
+		requires = { mission_develop_candia mission_prepare_for_ottoman_threat }
+		
+		enabled = {
+			area:aegean_archipelago_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+					}
+					has_building_with_at_least_one_level = castle
+					count >= 1
+				}
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_manpower = {
+				value = max_manpower
+				multiply = 0.15
+			}
+			add_sailors = {
+				value = max_sailors
+				multiply = 0.15
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 9: CULTURAL RENAISSANCE ====================
+	
+	mission_patronize_venetian_art = {
+		icon = cultural_acceptance_advance
+		requires = { mission_strengthen_republic }
+		
+		enabled = {
+			capital = {
+				OR = {
+					has_building_with_at_least_one_level = art_school
+					has_building_with_at_least_one_level = arts_academy
+				}
+			}
+			gold >= 1000
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = venetian_school_of_art
+					years = -1
+					mode = add
+				}
+			}
+			trigger_event_silently = venice_mission_events.11
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_commission_bellini_titian = {
+		icon = cultural_acceptance_advance
+		requires = { mission_patronize_venetian_art }
+		
+		enabled = {
+			culture:venetian = {
+				cultural_tradition >= 300
+			}
+			has_embraced_institution = institution:renaissance
+		}
+		
+		duration = 0
+
+		on_completion = {
+			culture:venetian = {
+				add_cultural_tradition = 25
+			}
+			trigger_event_silently = venice_mission_events.12
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_establish_venetian_printing = {
+		icon = technology_icon
+		requires = { mission_patronize_venetian_art }
+		
+		enabled = {
+			capital = {
+				total_building_levels >= 60
+			}
+			average_country_literacy >= 20
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_publishing
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_st_mark_square = {
+		icon = cultural_acceptance_advance
+		requires = { mission_commission_bellini_titian }
+		
+		enabled = {
+			capital = {
+				has_building_with_at_least_one_level = grand_palace
+				development >= 45
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			capital = {
+				add_location_modifier = {
+					modifier = piazza_san_marco
+					years = -1
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 10: GOVERNMENT REFORMS ====================
+	
+	mission_limit_doge_power = {
+		icon = government_reforms
+		requires = { mission_strengthen_republic }
+		
+		enabled = {
+			"estate_power(estate_type:nobles_estate)" <= 0.20
+			legitimacy >= 85
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = doge_limited
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_create_state_inquisition = {
+		icon = government_reforms
+		requires = { mission_limit_doge_power }
+		
+		enabled = {
+			any_owned_location = {
+				has_building_with_at_least_one_level = council_hall
+				count >= 3
+			}
+			stability >= 70
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_inquisition
+				years = 30
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 11: EXPANSION INTO GREECE ====================
+	
+	mission_secure_methoni_koroni = {
+		icon = maritime_advance_age_2
+		requires = { mission_control_ionian_islands }
+		
+		enabled = {
+			location:modon = {
+				owner ?= root
+			}
+			location:ermioni = {
+				owner ?= root
+			}
+			location:damala = {
+				owner ?= root
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = eyes_of_venice
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_acquire_monemvasia = {
+		icon = glorious_arms
+		requires = { mission_secure_methoni_koroni }
+		
+		enabled = {
+			location:monemvasia = {
+				owner ?= root
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:monemvasia = {
+				add_location_modifier = {
+					modifier = malvasia_fortress
+					years = 25
+					mode = add
+				}
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_control_thessaloniki = {
+		icon = offensive_army
+		requires = { mission_secure_methoni_koroni }
+		
+		enabled = {
+			location:thessaloniki = {
+				owner ?= root
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			location:thessaloniki = {
+				add_core = root
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_venetian_athens = {
+		icon = cultural_acceptance_advance
+		requires = { mission_control_thessaloniki }
+		
+		enabled = {
+			location:athens = {
+				owner ?= root
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_duchy_of_athens
+				years = 25
+				mode = add
+			}
+			trigger_event_silently = venice_mission_events.13
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 12: ECONOMIC REFINEMENT ====================
+	
+	mission_establish_venetian_banking = {
+		icon = court_accounting
+		requires = { mission_establish_fondaco_dei_tedeschi }
+		
+		enabled = {
+			has_advance = banking_advance
+			gold >= 2000
+			capital = {
+				has_building_with_at_least_one_level = banking_office
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_banking_house
+				years = 35
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_standardize_ducat = {
+		icon = merchants_and_trade
+		requires = { mission_establish_venetian_banking }
+		
+		enabled = {
+			capital.market = {
+				"merchant_power_in_market(root)" >= 90
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_ducat_standard
+				years = 30
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	# ==================== PHASE 13: FINAL ULTIMATE MISSIONS ====================
+	
+	mission_venetian_thalassocracy = {
+		icon = empire_icon
+		requires = { 
+			# mission_win_war_of_chiaoggia
+			mission_perfect_galley_design
+			# mission_control_spice_route
+		}
+		
+		enabled = {
+			is_great_power = yes
+			navy_tradition >= 75
+			navy_size >= 90
+			monthly_income_trade_and_tax >= 450
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = venetian_thalassocracy
+				years = -1
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_most_serene_republic = {
+		icon = empire_icon
+		requires = { 
+			mission_venetian_thalassocracy
+			mission_st_mark_square
+
+		}
+		final = yes
+		
+		enabled = {
+			is_great_power = yes
+			legitimacy >= 90
+			stability >= 90
+			prestige >= 90
+			capital = {
+				development >= 60
+			}
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = most_serene_republic
+				years = -1
+				mode = add
+			}
+		}
+		ai_will_do = { value = -100 }
+	}
+}

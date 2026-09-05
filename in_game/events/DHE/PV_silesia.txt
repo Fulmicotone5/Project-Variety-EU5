@@ -136,8 +136,8 @@ sileflavor.3 = {
 		add_estate_satisfaction = { type = estate_type:clergy_estate 
 			value = -0.05
 		}
-		add_antagonism = {
-					target = root
+		drop_antagonism_bomb = {
+					target = capital
 					modifier = PV_forged_claims
 				}
 		root = {

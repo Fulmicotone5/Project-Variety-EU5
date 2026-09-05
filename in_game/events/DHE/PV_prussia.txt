@@ -545,8 +545,8 @@ pruflavor.6 = {
 		}
 		add_legitimacy = -10
 		add_gold = -100
-		add_antagonism = {
-					target = root
+		drop_antagonism_bomb = {
+					target = capital
 					modifier = PV_forged_claims
 				}
 		root = {
@@ -823,8 +823,8 @@ pruflavor.9 = {
 		}
 		add_legitimacy = -5
 		add_gold = -50
-		add_antagonism = {
-					target = root
+		drop_antagonism_bomb = {
+					target = capital
 					modifier = PV_forged_claims
 				}
 		root = {

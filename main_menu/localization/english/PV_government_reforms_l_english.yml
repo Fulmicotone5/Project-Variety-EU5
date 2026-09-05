@@ -165,3 +165,8 @@
 
 pvmamluksystem: "Mamluk System"
 pvmamluksystem_desc: "The Mamluk system is a unique military and political institution in the Islamic world where enslaved, non-Muslim youths are purchased, converted to Islam, and trained as elite warriors. Those warriors are a powerful military knightly class in our society."
+
+ rank_empire_byzantine_ruler_male: "Emperor of the Romans"
+ rank_empire_byzantine_ruler_female: "Empress of the Romans" 
+ rank_empire_byzantine_ruler_male.short: "Emp."
+ rank_empire_byzantine_ruler_female.short: "Emp." 

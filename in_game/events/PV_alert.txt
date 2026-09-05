@@ -1,0 +1,78 @@
+namespace = PV_alert
+PV_alert.1 = {
+	type = country_event
+	title = PV_alert.1.title
+	desc = PV_alert.1.desc
+	fire_only_once = yes
+	image = "gfx/interface/illustrations/pv_events/sbidens.dds"
+
+	trigger = {
+		current_date < 1338.4.20
+				current_date > 1337.4.20
+				is_ai = no
+	}
+	option = {
+			name = PV_alert.1.a
+		}
+}
+
+PV_alert.2 = {
+	type = country_event
+	title = PV_alert.2.title
+	desc = PV_alert.2.desc
+
+
+	image = "gfx/interface/illustrations/pv_events/ep3_hagia_sophia.dds"
+
+
+	immediate = {
+		c:PAP = {
+			ruler = {
+			save_scope_as = target_character			# First character portrait
+			}
+		}
+		set_variable = {
+			name = pvtrigg
+		}	
+	}
+
+	option = {
+		name = PV_alert.2.a
+		historical_option = yes
+		set_variable = {
+			name = pvloy
+		}
+		grant_estate_privilege = estate_privilege:PV_loyalty_to_the_popw
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.05 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = -0.1 }
+		add_legitimacy = -20
+		add_stability = 7
+	}
+	option = {
+		name = PV_alert.2.b
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.1 }
+		add_estate_satisfaction = { type = estate_type:nobles_estate value = 0.2 }
+		add_legitimacy = 15
+	}
+}
+
+PV_alert.3 = {
+	type = country_event
+	title = PV_alert.3.title
+	desc = PV_alert.3.desc
+
+
+	image = "gfx/interface/illustrations/pv_events/docks.dds"
+
+
+
+	option = {
+		name = PV_alert.3.a
+		historical_option = yes
+		add_country_modifier = {
+				modifier = hol_east_india_company
+				years = -1
+				mode = add
+			}
+	}
+}
