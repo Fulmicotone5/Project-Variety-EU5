@@ -7,6 +7,8 @@
 england_mission_pack: "English Ascendancy"
 england_mission_pack_desc: "A comprehensive mission tree focusing on the consolidation, expansion, and global dominance of England and Great Britain, from securing the crown to establishing a world-spanning empire."
 england_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to strengthen the Kingdom of England and build the British Empire."
+england_mission_pack_BUTTON_DETAILS:0 "Complete missions to strengthen the Kingdom of England and build the British Empire."
+england_mission_pack_DESCRIPTION:0 "Complete missions as England or Great Britain to achieve imperial greatness."
 england_mission_pack_CRITERIA_DESCRIPTION:0 "Complete missions as England or Great Britain to achieve imperial greatness."
 
 # ============================================================================
@@ -65,9 +67,9 @@ mission_unite_british_isles: "Unite the British Isles"
 mission_unite_british_isles_desc: "All of Britain must be united under one crown. Bring England, Wales, Scotland, and Ireland together into a single, powerful kingdom."
 mission_unite_british_isles_tooltip: "Unite all of the British Isles under English rule."
 
-mission_form_great_britain: "Form Great Britain"
-mission_form_great_britain_desc: "With the British Isles united, we must forge a new identity. Transform our kingdom into the united Kingdom of Great Britain, stronger than the sum of its parts."
-mission_form_great_britain_tooltip: "Form the united Kingdom of Great Britain."
+mission_form_great_britain: "Adopt a Constitution"
+mission_form_great_britain_desc: "Following the empowerment of the middle class, their demands can no longer be disregarded. A constitution shall be enacted to delineate the rights and duties of our citizens, thereby ensuring their protection against potential abuses by the state."
+mission_form_great_britain_tooltip: "Become a constitutional state."
 
 # ============================================================================
 # PHASE 3: FRENCH WARS BRANCH
@@ -193,7 +195,7 @@ mission_empire_where_sun_never_sets_tooltip: "Establish a global empire spanning
 # PHASE 7: RELIGIOUS REFORMATION BRANCH
 # ============================================================================
 
-mission_break_with_rome: "Break with Rome"
+mission_break_with_rome: "Break with the Papacy"
 mission_break_with_rome_desc: "The Pope's interference in English affairs cannot be tolerated. Establish the Church of England with the monarch as its supreme head."
 mission_break_with_rome_tooltip: "Establish an independent Church of England."
 
@@ -273,7 +275,7 @@ mission_establish_standing_army: "Establish a Standing Army"
 mission_establish_standing_army_desc: "Create a professional standing army, always ready for deployment, rather than relying on feudal levies."
 mission_establish_standing_army_tooltip: "Create a professional permanent army."
 
-mission_develop_professional_army: "Develop professional army"
+mission_develop_professional_army: "Develop a Professional Army"
 mission_develop_professional_army_desc: "Train specialized units, continuing England's dominance."
 mission_develop_professional_army_tooltip: "Develop professional units."
 
@@ -384,9 +386,9 @@ england_mission_events.4.b.tt: "Create a balanced constitution that maintains st
 # EVENT 5: Subjugate Wales
 england_mission_events.5.t: "Wales Subdued"
 england_mission_events.5.d: "The Welsh princes have bent the knee, their castles now fly the English banner, and the laws of England extend to the mountains of Snowdonia. With Wales firmly under our control, we must decide how to integrate this new territory into our kingdom."
-england_mission_events.5.a: "Full Integration"
+england_mission_events.5.a: "Force Integration"
 england_mission_events.5.b: "Gradual Assimilation"
-england_mission_events.5.a.tt: "Fully integrate Wales, adding English cores to all Welsh territories and gaining significant manpower."
+england_mission_events.5.a.tt: "Force the integration of Wales, adding English cores to all Welsh territories and gaining significant manpower."
 england_mission_events.5.b.tt: "Pursue gradual assimilation, increasing integration progress in Welsh territories while maintaining stability."
 
 # EVENT 6: Pacify the North
@@ -430,12 +432,9 @@ england_mission_events.10.a.tt: "The heart of the British Isles lays in London, 
 england_mission_events.10.b.tt: "Embrace our island identity, strengthening our navy and gaining legitimacy as rulers of all Britain."
 
 # EVENT 11: Form Great Britain
-england_mission_events.11.t: "The United Kingdom"
-england_mission_events.11.d: "The Act of Union has been signed, merging the crowns and parliaments of England and Scotland. The Kingdom of Great Britain is born. What should be the character of this new nation?"
-england_mission_events.11.a: "Constitutional Monarchy"
-england_mission_events.11.b: "United Identity"
-england_mission_events.11.a.tt: "Establish a constitutional monarchy, gaining permanent bonuses and potentially changing government type if not already Great Britain."
-england_mission_events.11.b.tt: "Promote a united British identity, accelerating cultural integration and gaining significant legitimacy."
+england_mission_events.11.t: "The Constitution of [ROOT.GetCountry.GetName]"
+england_mission_events.11.d: "Following the empowerment of the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')|l], their demands can no longer be disregarded. A constitution shall be enacted to delineate the rights and duties of our citizens, thereby ensuring their protection against potential abuses by the state."
+england_mission_events.11.a: "Long Live [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
 
 # EVENT 12: Claim French Throne
 england_mission_events.12.t: "The French Crown Claimed"
@@ -448,10 +447,10 @@ england_mission_events.12.b.tt: "Apply diplomatic pressure, strengthening our cl
 # EVENT 13: Conquer Normandy
 england_mission_events.13.t: "Normandy Restored"
 england_mission_events.13.d: "William the Conqueror's homeland is once again in English hands. The towns of Rouen, Caen, and Bayeux fly our banner. How should we govern this reconquered duchy?"
-england_mission_events.13.a: "Embrace Norman Heritage"
-england_mission_events.13.b: "Secure Our Control"
-england_mission_events.13.a.tt: "Embrace our Norman heritage, integrating Normandy more quickly."
-england_mission_events.13.b.tt: "Focus on securing control, increasing integration progress and satisfying the nobility."
+england_mission_events.13.a: "Secure our control"
+england_mission_events.13.b: "Institute martial law over the region"
+england_mission_events.13.a.tt: "Focus on increasing integration progress, integrating Normandy more quickly."
+england_mission_events.13.b.tt: "Focus on securing control over the region."
 
 # EVENT 14: Win Hundred Years' War
 england_mission_events.14.t: "Victory in France"
@@ -542,7 +541,7 @@ england_mission_events.24.a.tt: "Establish a global imperial system, reducing co
 england_mission_events.24.b.tt: "Reach our imperial zenith, gaining legitimacy and establishing cores across our territories."
 
 # EVENT 25: Break with Rome
-england_mission_events.25.t: "The Break with Rome"
+england_mission_events.25.t: "The Break with the Papacy"
 england_mission_events.25.d: "The Pope's authority in England is at an end. We are now Supreme Head of the Church in England. This momentous break will reshape our kingdom. How should we proceed with the Reformation?"
 england_mission_events.25.a: "Royal Supremacy"
 england_mission_events.25.b: "Religious Settlement"
@@ -622,8 +621,8 @@ england_mission_events.34.a.tt: "Focus on scientific advancement, gaining Isaac 
 england_mission_events.34.b.tt: "Promote Enlightenment ideas, increasing cultural tradition and moving toward innovation."
 
 # EVENT 35: Establish Standing Army
-england_mission_events.35.t: "Professinal Longbowmen"
-england_mission_events.35.d: "No longer reliant on feudal levies, we now have a professional army always ready for service. These trained, disciplined troops give us a military advantage. How should we organize this new force?"
+england_mission_events.35.t: "A Professional Army"
+england_mission_events.35.d: "No longer completely reliant on feudal levies, we now have a professional army always ready for service. These trained, disciplined troops give us a military advantage. How should we organize this new force?"
 england_mission_events.35.a: "Professional Forces"
 england_mission_events.35.b: "Military Expansion"
 england_mission_events.35.a.tt: "Develop professional forces, increasing army tradition and developing armory centers."
@@ -719,7 +718,7 @@ STATIC_MODIFIER_DESC_english_wool_industry_desc: "The wool industry has been sys
 STATIC_MODIFIER_NAME_parliamentary_government: "Parliamentary Government"
 STATIC_MODIFIER_DESC_parliamentary_government_desc: "A functioning parliament provides stable government and legitimacy."
 
-STATIC_MODIFIER_NAME_balanced_constitution: "Balanced Constitution"
+STATIC_MODIFIER_NAME_balanced_constitution: "Strenghtened Crown"
 STATIC_MODIFIER_DESC_balanced_constitution_desc: "Power is balanced between crown and parliament, ensuring stability."
 
 # D. Territorial Integration Modifiers
@@ -759,7 +758,7 @@ STATIC_MODIFIER_DESC_merchant_companies_chartered_desc: "Powerful merchant compa
 STATIC_MODIFIER_NAME_east_india_company_charter: "East India Company Charter"
 STATIC_MODIFIER_DESC_east_india_company_charter_desc: "The East India Company has been chartered to trade with Asia."
 
-STATIC_MODIFIER_NAME_sun_never_sets_on_british_empire: "Sun Never Sets on British Empire"
+STATIC_MODIFIER_NAME_sun_never_sets_on_british_empire: "The Empire on which the Sun never sets"
 STATIC_MODIFIER_DESC_sun_never_sets_on_british_empire_desc: "The British Empire spans the globe, with territories in every time zone."
 
 # H. Religious Modifiers
@@ -938,14 +937,17 @@ STATIC_MODIFIER_DESC_cornish_tin_mines_desc: "Cornwall's rich tin mines are now 
 STATIC_MODIFIER_NAME_northern_border_secure: "Northern Border Secure"
 STATIC_MODIFIER_DESC_northern_border_secure_desc: "The northern border has been fortified and secured against rebellion."
 
+STATIC_MODIFIER_NAME_claim_to_french_throne: "Claim to French Throne"
+STATIC_MODIFIER_DESC_claim_to_french_throne_desc: "England's claim to the French throne has been formally asserted."
+
 STATIC_MODIFIER_NAME_claim_to_scottish_throne: "Claim to Scottish Throne"
 STATIC_MODIFIER_DESC_claim_to_scottish_throne_desc: "England's claim to the Scottish throne has been formally asserted."
 
 STATIC_MODIFIER_NAME_british_isles_unified: "British Isles Unified"
 STATIC_MODIFIER_DESC_british_isles_unified_desc: "All of the British Isles are united under a single crown."
 
-STATIC_MODIFIER_NAME_kingdom_of_great_britain: "Kingdom of Great Britain"
-STATIC_MODIFIER_DESC_kingdom_of_great_britain_desc: "The united Kingdom of Great Britain has been formed, creating a stronger national identity."
+STATIC_MODIFIER_NAME_kingdom_of_great_britain: "A Constitutional State"
+STATIC_MODIFIER_DESC_kingdom_of_great_britain_desc: "At long last, the country has adopted a constitution that will protect its citizens from abuse."
 
 # Phase 3: French Wars Modifiers
 STATIC_MODIFIER_NAME_english_bridgehead: "English Bridgehead"
@@ -1020,6 +1022,9 @@ STATIC_MODIFIER_DESC_petition_of_right_desc: "The Petition of Right has establis
 STATIC_MODIFIER_NAME_oxbridge_tradition: "Oxbridge Tradition"
 STATIC_MODIFIER_DESC_oxbridge_tradition_desc: "The Oxbridge tradition of excellence in education has been established."
 
+STATIC_MODIFIER_NAME_lordship_of_ireland: "Lordship of Ireland"
+STATIC_MODIFIER_DESC_lordship_of_ireland_desc: "Ireland has been conquered."
+
 STATIC_MODIFIER_NAME_globe_theatre: "Globe Theatre"
 STATIC_MODIFIER_DESC_globe_theatre_desc: "The Globe Theatre has made London a center of dramatic arts."
 
@@ -1055,6 +1060,9 @@ STATIC_MODIFIER_DESC_loyal_northern_bastion_desc: "Northern England has been tra
 
 STATIC_MODIFIER_NAME_martial_law_north: "Martial Law in the North"
 STATIC_MODIFIER_DESC_martial_law_north_desc: "Martial law ensures security in previously rebellious northern regions."
+
+STATIC_MODIFIER_NAME_martial_law_nor: "Martial Law in Normandy"
+STATIC_MODIFIER_DESC_martial_law_nor_desc: "Martial law ensures security in Normandy."
 
 STATIC_MODIFIER_NAME_reinforced_northern_castle: "Reinforced Northern Castle"
 STATIC_MODIFIER_DESC_reinforced_northern_castle_desc: "Key northern castles have been reinforced and garrisoned."

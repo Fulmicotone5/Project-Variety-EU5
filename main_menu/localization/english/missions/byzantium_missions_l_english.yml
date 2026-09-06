@@ -4,10 +4,10 @@
 # MISSION PACK
 # ============================================================================
 
-byzantium_mission_pack: "Byzantine Restoration"
-byzantium_mission_pack_desc: "A comprehensive mission tree focusing on the survival, consolidation, and restoration of the Eastern Roman Empire to its former glory."
-byzantium_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to strengthen the Byzantine Empire."
-byzantium_mission_pack_CRITERIA_DESCRIPTION:0 "Complete missions as the Byzantine Empire and restore its former glory."
+pvrome_mission_pack: "Roman Restoration"
+pvrome_mission_pack_desc: "A comprehensive mission tree focusing on the survival, consolidation, and restoration of the Eastern Roman Empire to its former glory."
+pvrome_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to strengthen the Roman Empire."
+pvrome_mission_pack_CRITERIA_DESCRIPTION:0 "Complete missions as the Roman Empire and restore its former glory."
 
 # ============================================================================
 # BYZANTINE SURVIVAL & CONSOLIDATION
@@ -37,9 +37,9 @@ mission_repair_golden_horn: "Repair the Golden Horn"
 mission_repair_golden_horn_desc: "The natural harbor of the Golden Horn was once the greatest shipbuilding center in the world. Restore its docks and shipyards to rebuild our naval might."
 mission_repair_golden_horn_tooltip: "Restore the shipbuilding facilities of the Golden Horn."
 
-mission_rebuild_byzantine_navy: "Rebuild the Byzantine Navy"
-mission_rebuild_byzantine_navy_desc: "The sea has always been our domain. Construct a new fleet worthy of the Roman Empire, capable of projecting power across the Mediterranean and defending our trade."
-mission_rebuild_byzantine_navy_tooltip: "Construct a powerful fleet to control the seas."
+mission_rebuild_roman_navy: "Rebuild the Roman Navy"
+mission_rebuild_roman_navy_desc: "The sea has always been our domain. Construct a new fleet worthy of the Roman Empire, capable of projecting power across the Mediterranean and defending our trade."
+mission_rebuild_roman_navy_tooltip: "Construct a powerful fleet to control the seas."
 
 mission_dominate_bosporus: "Dominate the Bosporus"
 mission_dominate_bosporus_desc: "Who controls the Bosporus controls the trade between East and West. Secure both shores of this vital strait to collect tolls and control maritime traffic."
@@ -47,7 +47,7 @@ mission_dominate_bosporus_tooltip: "Secure control of the Bosporus Strait."
 
 mission_secure_aegean: "Secure the Aegean"
 mission_secure_aegean_desc: "The Aegean Sea is the heart of our empire. Clear it of pirates and rivals to restore our dominance over these ancient shipping lanes."
-mission_secure_aegean_tooltip: "Establish Byzantine control over the Aegean Sea."
+mission_secure_aegean_tooltip: "Establish Roman control over the Aegean Sea."
 
 # ============================================================================
 # RECONQUEST OF GREECE
@@ -67,7 +67,7 @@ mission_reconstruct_hexamilion_tooltip: "Rebuild the Hexamilion wall to defend t
 
 mission_unite_morea: "Unite Morea"
 mission_unite_morea_desc: "The Peloponnese, known as Morea, is our breadbasket and fortress. Unite its fractious lords under imperial authority to create a secure southern stronghold."
-mission_unite_morea_tooltip: "Unite the Peloponnese under Byzantine control."
+mission_unite_morea_tooltip: "Unite the Peloponnese under Roman control."
 
 # ============================================================================
 # ANATOLIAN RECONQUEST
@@ -103,11 +103,11 @@ mission_restore_anatolian_themes_tooltip: "Re-establish the theme system in Anat
 
 mission_subjugate_bulgaria: "Subjugate Bulgaria"
 mission_subjugate_bulgaria_desc: "The Bulgarians have been both allies and enemies through the centuries. Bring them firmly under our control, either by conquest or vassalage, to secure our northern border."
-mission_subjugate_bulgaria_tooltip: "Bring Bulgaria under Byzantine control."
+mission_subjugate_bulgaria_tooltip: "Bring Bulgaria under Roman control."
 
 mission_secure_serbia: "Secure Serbia"
 mission_secure_serbia_desc: "The Serbian principalities control vital mountain passes and resources. Secure their loyalty or subjugation to protect our western flank."
-mission_secure_serbia_tooltip: "Establish Byzantine influence over Serbia."
+mission_secure_serbia_tooltip: "Establish Roman influence over Serbia."
 
 mission_secure_bosnia: "Secure Bosnia"
 mission_secure_bosnia_desc: "Bosnia's strategic position makes it crucial for controlling the western Balkans. Extend our influence into this region to complete our dominance of the peninsula."
@@ -118,7 +118,7 @@ mission_secure_bosnia_tooltip: "Secure control over Bosnia."
 # ============================================================================
 
 mission_restore_hagia_sophia: "Restore Hagia Sophia"
-mission_restore_hagia_sophia_desc: "The Great Church, Hagia Sophia, stands as the supreme achievement of Byzantine architecture. Restore it to its former glory as the spiritual center of Orthodoxy."
+mission_restore_hagia_sophia_desc: "The Great Church, Hagia Sophia, stands as the supreme achievement of Roman architecture. Restore it to its former glory as the spiritual center of Orthodoxy."
 mission_restore_hagia_sophia_tooltip: "Restore the Great Church to its former glory."
 
 mission_protect_mount_athos: "Protect Mount Athos"
@@ -131,7 +131,7 @@ mission_revive_constantinople_university_tooltip: "Re-establish the University o
 
 mission_restore_orthodox_patriarchates: "Restore the Orthodox Patriarchates"
 mission_restore_orthodox_patriarchates_desc: "As the successor to Rome, Constantinople must reassert its leadership over the Orthodox world. Restore our influence over the ancient patriarchates."
-mission_restore_orthodox_patriarchates_tooltip: "Re-establish Byzantine leadership of Orthodoxy."
+mission_restore_orthodox_patriarchates_tooltip: "Re-establish Roman leadership of Orthodoxy."
 
 # ============================================================================
 # TRADE & ECONOMIC DEVELOPMENT
@@ -143,7 +143,7 @@ mission_develop_silk_trade_tooltip: "Control and profit from the silk trade."
 
 mission_control_black_sea_trade: "Control Black Sea Trade"
 mission_control_black_sea_trade_desc: "The Black Sea provides access to the riches of the steppes and Russia. Dominate its trade to secure grain, furs, and other valuable commodities."
-mission_control_black_sea_tooltip: "Establish Byzantine dominance over Black Sea trade."
+mission_control_black_sea_tooltip: "Establish Roman dominance over Black Sea trade."
 
 # ============================================================================
 # GRAND RECONQUEST & EMPIRE BUILDING
@@ -166,7 +166,7 @@ mission_restore_pentarchy_desc: "The five ancient patriarchates of Christendom -
 mission_restore_pentarchy_tooltip: "Restore the ancient Pentarchy under Orthodox unity."
 
 mission_restore_roman_empire: "Restore the Roman Empire"
-mission_restore_roman_empire_desc: "The dream of every Byzantine emperor: to restore the Roman Empire in its entirety. Unite Italy, the Balkans, and Anatolia under our rule to make this dream a reality."
+mission_restore_roman_empire_desc: "The dream of every Roman emperor: to restore the Roman Empire in its entirety. Unite Italy, the Balkans, and Anatolia under our rule to make this dream a reality."
 mission_restore_roman_empire_tooltip: "Reunite the core territories of the Roman Empire."
 
 # ============================================================================
@@ -175,7 +175,7 @@ mission_restore_roman_empire_tooltip: "Reunite the core territories of the Roman
 
 mission_establish_orthodox_hegemony: "Establish Orthodox Hegemony"
 mission_establish_orthodox_hegemony_desc: "Make Constantinople the undisputed center of Orthodox Christianity, leading all true believers against the infidel and heretic."
-mission_establish_orthodox_hegemony_tooltip: "Establish Byzantine leadership of the Orthodox world."
+mission_establish_orthodox_hegemony_tooltip: "Establish Roman leadership of the Orthodox world."
 
 mission_counter_islamic_threat: "Counter the Islamic Threat"
 mission_counter_islamic_threat_desc: "The Muslim powers that surround us threaten our very existence. Take the fight to them and push back the tide of Islam."
@@ -269,7 +269,7 @@ byz_mission_events.7.b.tt: "Make Jerusalem an open city for all Christian denomi
 byz_mission_events.7.c.tt: "Fortify Jerusalem as an impregnable Christian fortress, building extensive fortifications and claiming all territories throughout the Levant region."
 
 byz_mission_events.8.t: "The Pentarchy Restored"
-byz_mission_events.8.d: "All five ancient patriarchates of Christendom - Rome, Constantinople, Alexandria, Antioch, and Jerusalem - are now under Orthodox control. The unity of the ancient Church has been restored under Byzantine leadership. This monumental achievement forces us to consider the future structure of Christian authority and our relationship with the Catholic West."
+byz_mission_events.8.d: "All five ancient patriarchates of Christendom - Rome, Constantinople, Alexandria, Antioch, and Jerusalem - are now under Orthodox control. The unity of the ancient Church has been restored under Roman leadership. This monumental achievement forces us to consider the future structure of Christian authority and our relationship with the Catholic West."
 byz_mission_events.8.a: "Supreme Authority"
 byz_mission_events.8.b: "Reconciliation with Rome"
 byz_mission_events.8.c: "Decentralized Authority"
@@ -280,9 +280,9 @@ byz_mission_events.8.c.tt: "Establish a decentralized system of autocephalous ch
 byz_mission_events.9.t: "The Roman Empire Restored"
 byz_mission_events.9.d: "The dream of centuries has been realized. The Roman Empire has been restored in all its glory, with Italy, the Balkans, and Anatolia united under our rule. As we stand at the pinnacle of achievement, we must decide what form our restored empire will take and how we will govern this vast domain."
 byz_mission_events.9.a: "We should rule again as the Roman Empire"
-byz_mission_events.9.b: "We made a name as the Byzantine Empire"
+byz_mission_events.9.b: "We made a name as the Roman Empire"
 byz_mission_events.9.a.tt: "Proclaim the restoration of the Roman Empire, claiming the imperial title and emphasizing our continuity with the ancient Roman state, with outcomes based on our greatest accomplishments - whether restoring the Roman Empire itself, unifying the Pentarchy, or completing other monumental tasks."
-byz_mission_events.9.b.tt: "Continue to rule as the Byzantine Empire, emphasizing our unique identity and legacy while maintaining the imperial title and traditions."
+byz_mission_events.9.b.tt: "Continue to rule as the Roman Empire, emphasizing our unique identity and legacy while maintaining the imperial title and traditions."
 
 byz_mission_events.11.t: "Hellenization of Anatolia"
 byz_mission_events.11.d: "Our efforts to restore Greek culture in Anatolia are bearing fruit. The land that was once thoroughly Hellenic is slowly returning to its cultural roots. We must decide how to approach this cultural transformation - whether through aggressive assimilation, gradual synthesis, or educational expansion."
@@ -316,8 +316,8 @@ byz_mission_events.71.b: "Regulate Pilgrimages"
 byz_mission_events.71.a.tt: "Actively encourage pilgrimages to boost Jerusalem's economy and strengthen Christian unity, improving relations with Orthodox nations."
 byz_mission_events.71.b.tt: "Implement regulations to manage the flow of pilgrims, building hospices and ensuring security in the Holy City."
 
-byz_mission_events.100.t: "The Byzantine Restoration Complete"
-byz_mission_events.100.d: "We have achieved what many thought impossible. The Eastern Roman Empire has not only survived but has been restored to greatness. Our territories stretch from Italy to Syria, our faith is strong, and our people are prosperous. This is truly a new golden age for Byzantium."
+byz_mission_events.100.t: "The Roman Restoration Complete"
+byz_mission_events.100.d: "We have achieved what many thought impossible. The Eastern Roman Empire has not only survived but has been restored to greatness. Our territories stretch from Italy to Syria, our faith is strong, and our people are prosperous. This is truly a new golden age for pvrome."
 byz_mission_events.100.a: "Proclaim the Restoration"
 byz_mission_events.100.a.tt: "Celebrate our achievements and claim our rightful place as the true Roman Empire, with outcomes based on our greatest accomplishments - whether restoring the Roman Empire itself, unifying the Pentarchy, or completing other monumental tasks."
 
@@ -348,17 +348,17 @@ STATIC_MODIFIER_DESC_bithynia_secure_desc: "The wealthy province of Bithynia is 
 STATIC_MODIFIER_NAME_golden_horn_shipyards: "Golden Horn Shipyards"
 STATIC_MODIFIER_DESC_golden_horn_shipyards_desc: "The great shipyards of the Golden Horn produce vessels at an unprecedented rate."
 
-STATIC_MODIFIER_NAME_restored_byzantine_navy: "Restored Byzantine Navy"
-STATIC_MODIFIER_DESC_restored_byzantine_navy_desc: "The Byzantine navy once again dominates the Mediterranean seas."
+STATIC_MODIFIER_NAME_restored_roman_navy: "Restored Roman Navy"
+STATIC_MODIFIER_DESC_restored_roman_navy_desc: "The Roman navy once again dominates the Mediterranean seas."
 
 STATIC_MODIFIER_NAME_bosporus_control: "Bosporus Control"
 STATIC_MODIFIER_DESC_bosporus_control_desc: "Control of the Bosporus generates immense wealth from trade tolls."
 
 STATIC_MODIFIER_NAME_aegean_dominance: "Aegean Dominance"
-STATIC_MODIFIER_DESC_aegean_dominance_desc: "The Aegean Sea is a Byzantine lake, with trade and travel completely controlled."
+STATIC_MODIFIER_DESC_aegean_dominance_desc: "The Aegean Sea is a Roman lake, with trade and travel completely controlled."
 
 STATIC_MODIFIER_NAME_black_sea_dominance: "Black Sea Dominance"
-STATIC_MODIFIER_DESC_black_sea_dominance_desc: "Byzantine control over the Black Sea secures vital trade routes to the north."
+STATIC_MODIFIER_DESC_black_sea_dominance_desc: "Roman control over the Black Sea secures vital trade routes to the north."
 
 STATIC_MODIFIER_NAME_ionian_revival: "Ionian Revival"
 STATIC_MODIFIER_DESC_ionian_revival_desc: "The Ionian coast has been restored to prosperity and loyalty."
@@ -401,8 +401,8 @@ STATIC_MODIFIER_DESC_anatolian_hellenization_desc: "Greek culture is being resto
 STATIC_MODIFIER_NAME_second_city_restored: "Second City Restored"
 STATIC_MODIFIER_DESC_second_city_restored_desc: "Thessaloniki has been restored as the empire's second capital."
 
-STATIC_MODIFIER_NAME_byzantine_silk_trade: "Byzantine Silk Trade"
-STATIC_MODIFIER_DESC_byzantine_silk_trade_desc: "Control of the silk trade brings immense wealth to the empire."
+STATIC_MODIFIER_NAME_roman_silk_trade: "Roman Silk Trade"
+STATIC_MODIFIER_DESC_roman_silk_trade_desc: "Control of the silk trade brings immense wealth to the empire."
 
 STATIC_MODIFIER_NAME_athenian_academy: "Athenian Academy"
 STATIC_MODIFIER_DESC_athenian_academy_desc: "Athens has been restored as a center of philosophy and learning."
@@ -412,7 +412,7 @@ STATIC_MODIFIER_DESC_theme_system_restored_desc: "The ancient theme system provi
 
 # E. Subject & Vassal Modifiers
 STATIC_MODIFIER_NAME_bulgarian_subjugation: "Bulgarian Subjugation"
-STATIC_MODIFIER_DESC_bulgarian_subjugation_desc: "Bulgaria is firmly under Byzantine control."
+STATIC_MODIFIER_DESC_bulgarian_subjugation_desc: "Bulgaria is firmly under Roman control."
 
 STATIC_MODIFIER_NAME_serbian_vassalage: "Serbian Vassalage"
 STATIC_MODIFIER_DESC_serbian_vassalage_desc: "Serbia serves as a loyal vassal of the empire."
@@ -483,7 +483,7 @@ STATIC_MODIFIER_NAME_pilgrimage_economy: "Pilgrimage Economy"
 STATIC_MODIFIER_DESC_pilgrimage_economy_desc: "Pilgrims to Jerusalem bring wealth and prosperity."
 
 STATIC_MODIFIER_NAME_pentarchy_unified: "Pentarchy Unified"
-STATIC_MODIFIER_DESC_pentarchy_unified_desc: "All five patriarchates are united under Byzantine leadership."
+STATIC_MODIFIER_DESC_pentarchy_unified_desc: "All five patriarchates are united under Roman leadership."
 
 STATIC_MODIFIER_NAME_christian_reconciliation: "Christian Reconciliation"
 STATIC_MODIFIER_DESC_christian_reconciliation_desc: "Efforts to reconcile with the Catholic Church are underway."
@@ -557,7 +557,7 @@ byz_mission_events.1.a.custom: "Additional fortifications will be built if we ha
 
 # NEW EVENT 50: The Eagle Rises Again (Forming Rome Decision)
 byz_mission_events.50.t: "The Eagle Rises Again"
-byz_mission_events.50.d: "After centuries of struggle the time has come to decide whether Byzantium will claim the legacy of Rome. This monumental decision will reshape our place in Christendom and the world."
+byz_mission_events.50.d: "After centuries of struggle the time has come to decide whether pvrome will claim the legacy of Rome. This monumental decision will reshape our place in Christendom and the world."
 byz_mission_events.50.a: "Proclaim the Roman Empire"
 byz_mission_events.50.a.tt: "Declare the restoration of the Roman Empire—gain prestige, legitimacy, and military might, but expect rivals to react strongly."
 byz_mission_events.50.b: "Put Forward an Imperial Claimant"

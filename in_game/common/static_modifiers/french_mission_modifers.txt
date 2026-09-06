@@ -30,7 +30,7 @@ fra_ile_de_france_secure = {
 fra_paris_capital_development = {
 	icon = cultural_acceptance_advance
 	local_production_efficiency = 0.1
-	local_population_growth = 0.0002
+	local_monthly_development = 0.005
 	# local_max_literacy = 0.5
 }
 
@@ -48,7 +48,7 @@ fra_french_road_network = {
 
 fra_french_cultural_hegemony = {
 	icon = cultural_acceptance_advance
-	cultural_influence = 0.1
+	cultural_influence_modifier = 0.25
 }
 
 fra_university_of_paris = {
@@ -60,8 +60,8 @@ fra_university_of_paris = {
 # === PHASE 2: HUNDRED YEARS' WAR MODIFIERS ===
 fra_prepared_for_hundred_years_war = {
 	icon = glorious_arms
-	army_light_infantry_maintenance_cost_modifier = -0.10
-	land_morale_modifier = 0.05
+	discipline = 0.05
+	land_morale_modifier = 0.1
 }
 
 fra_french_national_resistance = {
@@ -84,7 +84,7 @@ fra_normandy_liberated = {
 
 fra_aquitaine_reclaimed = {
 	icon = glorious_arms
-	local_production_efficiency = 0.10
+	land_morale_modifier = 0.10
 	local_wine_output_modifier = 0.15
 }
 
@@ -137,7 +137,7 @@ fra_atlantic_ports_developed = {
 
 fra_provence_integrated = {
 	icon = diplomatic_influence
-	global_trade_center_power = 0.15
+	global_trade_center_power = 0.1
 }
 
 fra_marseille_mediterranean_port = {
@@ -152,7 +152,7 @@ fra_fast_vassal_annexation = {
 
 fra_french_vassals_annexed = {
 	icon = diplomatic_range_age_1
-	global_crown_estate_power = 0.10
+	global_crown_estate_power = 0.25
 	stability_cost_efficiency = 0.15
 }
 
@@ -217,6 +217,7 @@ fra_silk_trading_hub = {
 	icon = merchants_and_trade
 	local_trade_center_power = 0.20
 	local_merchant_power = 15
+	local_monthly_development = 0.005
 }
 
 fra_french_banking_system = {
@@ -228,20 +229,25 @@ fra_french_banking_system = {
 # === PHASE 7: ABSOLUTISM MODIFIERS ===
 fra_absolutist_monarchy = {
 	icon = government_reforms
-	court_spending_efficiency = 0.05
-	government_size = 1
+	court_spending_efficiency = -0.05
+	government_reform_slots = 1
+	global_crown_estate_power = 1
+	monthly_towards_absolutism = societal_value_significant_monthly_move
 }
 
 fra_intendant_system = {
 	icon = administrative_efficiency
-	global_monthly_control = 0.05
-	global_max_control = 0.10
-	tax_income_efficiency = 0.10
+	global_monthly_control = 0.0005
+	global_max_rural_control = 0.025
+	tax_income_efficiency = 0.02
 }
 
 fra_centralized_administration = {
 	icon = government_reforms
-	government_reform_slots = 1
+	government_size = 1
+	global_crown_estate_power = 0.1
+	country_cabinet_efficiency = 0.05
+	legislative_efficiency = 0.1
 }
 
 # === PHASE 8: MILITARY REFORMS MODIFIERS ===
@@ -259,8 +265,8 @@ fra_professional_standing_army = {
 
 fra_french_artillery_corps = {
 	icon = artillery_icon
-	army_artillery_power = 0.05
-	artillery_bonus_vs_fort = 5
+	army_artillery_power = 0.1
+	artillery_bonus_vs_fort = 1
 	siege_ability = 0.05
 }
 
@@ -331,7 +337,7 @@ fra_french_enlightenment = {
 
 fra_french_language_hegemony = {
 	icon = cultural_acceptance_advance
-	global_pop_assimilation_speed_modifier = 0.15
+	global_pop_assimilation_speed_modifier = 0.25
 }
 
 fra_french_artistic_hegemony = {
@@ -357,8 +363,13 @@ fra_french_continental_hegemony = {
 fra_european_hegemony = {
 	icon = empire_icon
 	#great_power_score_modifier = 0.10
-	diplomatic_capacity = 1
+	culture_capacity = 2
 	government_size = 1
+	government_reform_slots = 1
+	army_heavy_cavalry_power = 0.10
+	army_light_cavalry_power = 0.10
+	navy_heavy_ship_power = 0.10
+	navy_light_ship_power = 0.10
 }
 
 # === PHASE 12: REVOLUTIONARY PATH MODIFIERS ===
@@ -371,12 +382,12 @@ fra_french_golden_age = {
 	icon = bill_of_rights
 	prestige_decay = -0.30
 	#great_power_score_modifier = 0.20
-	global_production_efficiency = 0.15
+	global_production_efficiency = 0.1
 	trade_land_efficiency = 0.02
-	global_monthly_control = 0.10
+	global_monthly_control = 0.001
 	global_manpower_modifier = 0.10
 	research_speed_modifier = 0.10
-	cultural_tradition = 0.5
+	cultural_influence_modifier = 0.5
 }
 
 # === EVENT-SPECIFIC MODIFIERS ===
@@ -387,15 +398,15 @@ fra_sacre_de_reims = {
 
 fra_parisian_culture = {
 	icon = cultural_acceptance_advance
-	local_cultural_influence = 0.20
-	local_population_growth = 0.0002
+	local_cultural_influence = 0.50
+	local_population_growth = 0.001
 }
 
 fra_hundred_years_war_victory = {
 	icon = empire_icon
-	prestige_decay = -0.20
 	land_morale_modifier = 0.05
 	army_tradition_decay = -0.01
+	monthly_army_tradition = 0.05
 }
 
 fra_italian_ambitions = {

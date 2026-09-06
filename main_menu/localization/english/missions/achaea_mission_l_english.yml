@@ -3,10 +3,12 @@
 ach_local_maritime_presence_tt: "Any [ports|e] in [ROOT.GetCountry.GetName] have a location maritime presence power of 30."
 
 # ==================== ACHAEA MISSION PACK HEADER ====================
-achaea_missions:0 "Achaea: The Latin Legacy"
-achaea_missions_desc:0 "Guide the Principality of Achaea from a crusader outpost to the heart of a renewed Latin Empire, uniting the Greek lands under Frankish rule."
+achaea_missions:0 "The Latin Empire"
+achaea_missions_desc:0 "Guide the Principality of Achaea or Athens from a crusader outpost to the heart of a renewed Latin Empire, uniting the Greek lands under Frankish rule."
 achaea_missions_BUTTON_TOOLTIP:0 "Complete missions to strengthen Achaea, secure independence, and forge a new Latin Empire in the East."
 achaea_missions_CRITERIA_DESCRIPTION:0 "Consolidate the Peloponnese, expand into Greece, and claim the legacy of Rome to unlock the full potential of the Latin Empire."
+achaea_missions_BUTTON_DETAILS:0 "Complete missions to strengthen Achaea, secure independence, and forge a new Latin Empire in the East."
+achaea_missions_CRITERIA_DESC:0 "Consolidate the Peloponnese, expand into Greece, and claim the legacy of Rome to unlock the full potential of the Latin Empire."
 
 # ==================== INDEPENDENCE & INTERNAL POLITICS MISSIONS ====================
 mission_ach_strengthen_the_duchy:0 "Strengthen the Duchy"
@@ -19,19 +21,19 @@ mission_ach_shadow_of_naples:0 "The Shadow of Naples"
 mission_ach_shadow_of_naples_desc:0 "Our nominal Angevin overlords watch us from across the Adriatic. We must navigate their influence carefully, gathering strength until we can break free."
 
 mission_ach_assert_independence:0 "Assert Independence"
-mission_ach_assert_independence_desc:0 "Cast off the Angevin yoke and proclaim Achaea an independent realm, answerable to no foreign prince."
+mission_ach_assert_independence_desc:0 "Cast off the overlord yoke and proclaim ourselves an independent realm, answerable to no foreign prince."
 
 mission_ach_establish_parliament:0 "Establish Parliament"
 mission_ach_establish_parliament_desc:0 "Create a governing council that represents the estates of the realm, giving voice to nobles, burghers, and clergy in the governance of Achaea."
 
-mission_ach_reform_feudal_contracts:0 "Reform Feudal Contracts"
+mission_ach_reform_feudal_contracts:0 "Reform Feudal Contract"
 mission_ach_reform_feudal_contracts_desc:0 "Modernize the ancient feudal obligations that bind our realm, creating a more efficient and just system of governance."
 
 mission_ach_deal_with_the_anjevins:0 "Deal with the Anjevins"
 mission_ach_deal_with_the_anjevins_desc:0 "Secure a lasting peace with our former Angevin overlords, transforming them from enemies into grudging allies."
 
 # ==================== ECONOMIC DEVELOPMENT MISSIONS ====================
-mission_ach_develop_the_morea:0 "Develop the Morea"
+mission_ach_develop_the_morea:0 "Develop Morea"
 mission_ach_develop_the_morea_desc:0 "Invest in the fertile lands of the Peloponnese, transforming the Morea into the breadbasket of our growing realm."
 
 mission_ach_cultivate_greek_wine:0 "Cultivate Greek Wine"
@@ -81,7 +83,7 @@ mission_ach_prepare_for_expansion_desc:0 "Drill our armies and stockpile provisi
 mission_ach_unify_the_morea:0 "Unify the Morea"
 mission_ach_unify_the_morea_desc:0 "Unite all the lands of the Peloponnese under the Achaean banner, bringing every village and fortress under our rule."
 
-mission_ach_conquer_attica:0 "Conquer Attica"
+mission_ach_conquer_attica:0 "Unify Attica"
 mission_ach_conquer_attica_desc:0 "Seize the ancient land of Attica, home to the great city of Athens, and bring it under our dominion."
 
 mission_ach_claim_the_greek_islands:0 "Claim the Greek Islands"
@@ -126,7 +128,7 @@ mission_ach_establish_latin_patriarchate_desc:0 "Establish a Latin Patriarch in 
 
 # ==================== MILITARY MODERNIZATION MISSIONS ====================
 mission_ach_restore_the_theme_system:0 "Restore the Theme System"
-mission_ach_restore_the_theme_system_desc:0 "Revive the Byzantine theme system, creating a military infrastructure that can mobilize the full strength of our Greek lands."
+mission_ach_restore_the_theme_system_desc:0 "Revive the Roman theme system, creating a military infrastructure that can mobilize the full strength of our Greek lands."
 
 mission_ach_fortify_the_hexamilion:0 "Fortify the Hexamilion"
 mission_ach_fortify_the_hexamilion_desc:0 "Restore and strengthen the Hexamilion Wall across the Isthmus of Corinth, the greatest fortification in Greece."
@@ -139,16 +141,16 @@ mission_ach_black_powder_politics_desc:0 "Embrace the new technology of gunpowde
 
 # ==================== FORMATION OF THE LATIN EMPIRE MISSIONS ====================
 mission_ach_claim_the_legacy_of_rome:0 "Claim the Legacy of Rome"
-mission_ach_claim_the_legacy_of_rome_desc:0 "Proclaim ourselves the heirs of Rome, claiming the imperial legacy of the Caesars for our Latin realm."
+mission_ach_claim_the_legacy_of_rome_desc:0 "Break with the Papacy and the Holy Roman Emperor, and claim the legacy of Rome"
 
 mission_ach_reclaim_anatolia:0 "Reclaim Anatolia"
-mission_ach_reclaim_anatolia_desc:0 "Drive the Turks from Anatolia, restoring Christian rule to the heartland of the old Byzantine Empire."
+mission_ach_reclaim_anatolia_desc:0 "Drive the Turks from Anatolia, restoring Christian rule to the heartland of the old Roman Empire."
 
 mission_ach_subdue_the_turkish_beys:0 "Subdue the Turkish Beys"
 mission_ach_subdue_the_turkish_beys_desc:0 "Bring the Turkish beyliks of Anatolia under our authority, securing the Asian provinces of our new empire."
 
 mission_ach_prepare_for_imperial_coronation:0 "Prepare for Imperial Coronation"
-mission_ach_prepare_for_imperial_coronation_desc:0 "Prepare the grand ceremony that will crown us Emperor of the Latins, the rightful successor to the Byzantine throne."
+mission_ach_prepare_for_imperial_coronation_desc:0 "Prepare the grand ceremony that will crown us Emperor of the Latins, the rightful successor to the Roman throne."
 
 # ==================== LATIN EMPIRE POST-FORMATION MISSIONS ====================
 mission_lat_form_the_latin_empire:0 "Form the Latin Empire"
@@ -181,7 +183,7 @@ mission_lat_unite_catholic_greece_desc:0 "Unite all of Greece under the Catholic
 mission_lat_imperial_army_reforms:0 "Imperial Army Reforms"
 mission_lat_imperial_army_reforms_desc:0 "Reform our army on the model of the ancient Roman legions, creating a disciplined and professional force."
 
-mission_lat_imperial_navy_reforms:0 "Imperial Navy Reforms"
+mission_lat_imperial_navy_reforms:0 "Navy Reforms"
 mission_lat_imperial_navy_reforms_desc:0 "Expand and modernize our navy, creating a fleet worthy of a great Mediterranean power."
 
 mission_lat_trade_hegemony:0 "Trade Hegemony"
@@ -199,11 +201,11 @@ mission_lat_reconquer_roman_empire_desc:0 "Fulfill the ultimate ambition: restor
 mission_ach_establish_the_academy:0 "Establish the Ducal Academy"
 mission_ach_establish_the_academy_desc:0 "Create a great center of learning in our capital, attracting scholars and thinkers from across the known world."
 
-mission_ach_prince_of_achaea:0 "Prince of Achaea"
+mission_ach_prince_of_achaea:0 "Prince of Greece"
 mission_ach_prince_of_achaea_desc:0 "Establish our realm as a true principality, a power that commands the respect of kings and empires."
 
 mission_lat_imperial_coronation_ceremony:0 "Imperial Coronation Ceremony"
-mission_lat_imperial_coronation_ceremony_desc:0 "Perform the grand ceremony of imperial coronation in the great church of Hagia Sophia, with the Pope's blessing, establishing our dynasty as the rightful emperors of the East."
+mission_lat_imperial_coronation_ceremony_desc:0 "Perform the grand ceremony of imperial coronation in the great church of Hagia Sophia, establishing our dynasty as the rightful Emperors of the Romans."
 
 # ==================== EVENT LOCALIZATION ====================
 
@@ -220,7 +222,7 @@ ach_mission_events.2.a:0 "A new power rises in Greece"
 ach_mission_events.2.b:0 "The Latin legacy continues"
 
 # === EVENT: CONQUEST OF CONSTANTINOPLE ===
-ach_mission_events.3.t:0 "The Queen of Cities"
+ach_mission_events.3.t:0 "The Queen of all Cities"
 ach_mission_events.3.d:0 "Constantinople has fallen! The great city, pride of the Eastern Empire, now flies the banner of our triumphant armies. The wealth of ages fills our treasury, and the prestige of this victory echoes across Christendom. We have done what the Crusaders of old did, and we have done it for ourselves."
 ach_mission_events.3.a:0 "A new Rome rises"
 ach_mission_events.3.b:0 "The Empire is restored"
@@ -233,7 +235,7 @@ ach_mission_events.4.b:0 "The Emperor's faith"
 
 # === EVENT: THEME SYSTEM RESTORED ===
 ach_mission_events.5.t:0 "The Return of the Themes"
-ach_mission_events.5.d:0 "The ancient Byzantine theme system has been restored in our Greek lands. Our subjects now provide soldiers and taxes as their ancestors did, creating a military infrastructure that can sustain our empire. The legacy of Rome lives on in our new Greek army."
+ach_mission_events.5.d:0 "The ancient Roman theme system has been restored in our Greek lands. Our subjects now provide soldiers and taxes as their ancestors did, creating a military infrastructure that can sustain our empire. The legacy of Rome lives on in our new Greek army."
 ach_mission_events.5.a:0 "The Romans of the East"
 ach_mission_events.5.b:0 "A more Latin system"
 
@@ -314,7 +316,7 @@ STATIC_MODIFIER_DESC_ach_independence_secured:0 "Achaea stands free from Angevin
 STATIC_MODIFIER_NAME_ach_parliament_established:0 "Parliament Established"
 STATIC_MODIFIER_DESC_ach_parliament_established:0 "A representative parliament gives voice to the estates of the realm."
 
-STATIC_MODIFIER_NAME_ach_reformed_feudalism:0 "Reformed Feudalism"
+STATIC_MODIFIER_NAME_ach_reformed_feudalism:0 "Reformed Feudal Contract"
 STATIC_MODIFIER_DESC_ach_reformed_feudalism:0 "Feudal contracts have been modernized, creating a more efficient system of governance."
 
 STATIC_MODIFIER_NAME_ach_anjevins_dealt_with:0 "Anjevins Dealt With"
@@ -405,7 +407,7 @@ STATIC_MODIFIER_NAME_ach_frankish_greek_fusion:0 "Frankish-Greek Fusion"
 STATIC_MODIFIER_DESC_ach_frankish_greek_fusion:0 "A new culture has emerged from the fusion of Frankish and Greek traditions."
 
 STATIC_MODIFIER_NAME_ach_theme_system_restored:0 "Theme System Restored"
-STATIC_MODIFIER_DESC_ach_theme_system_restored:0 "The Byzantine theme system provides military efficiency and local loyalty."
+STATIC_MODIFIER_DESC_ach_theme_system_restored:0 "The Roman theme system provides military efficiency and local loyalty."
 
 STATIC_MODIFIER_NAME_ach_hexamilion_wall:0 "Hexamilion Wall"
 STATIC_MODIFIER_DESC_ach_hexamilion_wall:0 "The great wall across the Isthmus of Corinth protects the Peloponnese."
@@ -416,11 +418,11 @@ STATIC_MODIFIER_DESC_ach_modern_army:0 "Our reformed army is equipped with the l
 STATIC_MODIFIER_NAME_ach_black_powder_politics:0 "Black Powder Politics"
 STATIC_MODIFIER_DESC_ach_black_powder_politics:0 "Gunpowder warfare has transformed our military capabilities."
 
-STATIC_MODIFIER_NAME_ach_roman_legacy_claimed:0 "Roman Legacy Claimed"
+STATIC_MODIFIER_NAME_ach_roman_legacy_claimed:0 "Usurper of Rome"
 STATIC_MODIFIER_DESC_ach_roman_legacy_claimed:0 "We have claimed the legacy of Rome, setting ourselves up as the true heirs of the Caesars."
 
 STATIC_MODIFIER_NAME_ach_anatolia_reclaimed:0 "Anatolia Reclaimed"
-STATIC_MODIFIER_DESC_ach_anatolia_reclaimed:0 "Christian rule has been restored to the heartland of the Byzantine Empire."
+STATIC_MODIFIER_DESC_ach_anatolia_reclaimed:0 "Christian rule has been restored to the heartland of the Roman Empire."
 
 STATIC_MODIFIER_NAME_ach_turkish_beys_subdued:0 "Turkish Beys Subdued"
 STATIC_MODIFIER_DESC_ach_turkish_beys_subdued:0 "The Turkish beyliks of Anatolia have been brought under our authority."
@@ -465,7 +467,7 @@ STATIC_MODIFIER_DESC_lat_catholic_unity:0 "The Catholic faith unites our empire 
 STATIC_MODIFIER_NAME_lat_imperial_legions:0 "Imperial Legions"
 STATIC_MODIFIER_DESC_lat_imperial_legions:0 "Our disciplined army is the envy of Europe, a force worthy of the Roman Empire."
 
-STATIC_MODIFIER_NAME_lat_imperial_navy:0 "Imperial Navy"
+STATIC_MODIFIER_NAME_lat_imperial_navy:0 "Reformed Navy"
 STATIC_MODIFIER_DESC_lat_imperial_navy:0 "Our powerful navy dominates the Mediterranean, protecting our coasts and commerce."
 
 STATIC_MODIFIER_NAME_lat_trade_hegemony:0 "Trade Hegemony"
@@ -480,8 +482,8 @@ STATIC_MODIFIER_DESC_lat_mediterranean_dominance:0 "Our fleets rule the Mediterr
 STATIC_MODIFIER_NAME_lat_imperial_coronation:0 "Imperial Coronation"
 STATIC_MODIFIER_DESC_lat_imperial_coronation:0 "We have been crowned Emperor of the Latins in the great church of Hagia Sophia."
 
-STATIC_MODIFIER_NAME_lat_roman_empire_restored:0 "Roman Empire Restored"
-STATIC_MODIFIER_DESC_lat_roman_empire_restored:0 "The Roman Empire has been restored, united from the Adriatic to the Euphrates."
+STATIC_MODIFIER_NAME_lat_roman_empire_restored:0 "Roman Bureacracy"
+STATIC_MODIFIER_DESC_lat_roman_empire_restored:0 "The Roman Bureaucratic apparatus has been restored, united from the Adriatic to the Euphrates."
 
 # ==================== MISSION TOOLTIPS ====================
 mission_ach_strengthen_the_duchy_tooltip:0 "Requires high stability, legitimacy, and control over our capital region"

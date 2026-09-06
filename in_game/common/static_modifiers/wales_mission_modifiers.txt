@@ -1,8 +1,8 @@
 ﻿# ========== WELSH ECONOMIC MODIFIERS ==========
 
 welsh_cultural_revival = {
-	cultural_influence = 0.15
-	cultural_tradition_modifier = 0.15
+	cultural_influence_modifie = 0.5
+	cultural_tradition_modifier = 0.5
 }
 
 welsh_trade_development = {
@@ -20,7 +20,7 @@ welsh_infrastructure_development = {
 
 welsh_unification = {
 	global_estate_target_satisfaction = 0.10
-	global_monthly_control = 0.02
+	global_max_control = 0.1
 }
 
 centralized_welsh_rule = {
@@ -88,9 +88,11 @@ secure_welsh_borders = {
 
 kingdom_of_wales = {
 	diplomatic_reputation = 1
-	global_crown_estate_power = 0.15
+	global_crown_estate_power = 0.25
 	parliament_base_support = 0.15
 	fort_maintenance_efficiency = 0.15
+	government_reform_slots = 2
+	government_size = 1
 }
 
 welsh_princely_council = {

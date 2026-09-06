@@ -1,0 +1,415 @@
+﻿namespace = georgian_mission_events
+
+# ==================== EVENT 1: UNITE GEORGIA ====================
+georgian_mission_events.1 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.1.t
+	desc = georgian_mission_events.1.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:crown_estate 
+			background = estate_type:nobles_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.1.a
+		custom_tooltip = georgian_mission_events.1.a.tt
+		
+		add_legitimacy = 25
+		add_stability = 25
+	}
+
+	option = {
+		name = georgian_mission_events.1.b
+		custom_tooltip = georgian_mission_events.1.b.tt
+		
+		capital = {
+			add_location_modifier = {
+				modifier = geo_center_of_unification
+				years = 15
+				mode = add
+			}
+		}
+	}
+}
+
+# ==================== EVENT 2: DEVELOP TBILISI ====================
+georgian_mission_events.2 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.2.t
+	desc = georgian_mission_events.2.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:burghers_estate 
+			background = estate_type:burghers_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.2.a
+		custom_tooltip = georgian_mission_events.2.a.tt
+		
+		location:tbilisi = {
+			change_prosperity = 0.15
+		}
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.2.b
+		custom_tooltip = georgian_mission_events.2.b.tt
+		
+		add_gold = 500
+	}
+}
+
+# ==================== EVENT 4: PROMOTE GEORGIAN CULTURE ====================
+georgian_mission_events.4 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.4.t
+	desc = georgian_mission_events.4.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:clergy_estate 
+			background = estate_type:burghers_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.4.a
+		custom_tooltip = georgian_mission_events.4.a.tt
+		
+		add_country_modifier = {
+			modifier = geo_cultural_renaissance
+			years = 20
+			mode = add
+		}
+
+	}
+
+	option = {
+		name = georgian_mission_events.4.b
+		custom_tooltip = georgian_mission_events.4.b.tt
+		
+		add_research_progress = research_progress_mild_bonus
+		add_prestige = 10
+		culture:georgian_culture = {
+			add_cultural_influence = cultural_influence_mild_bonus
+		}
+	}
+}
+
+# ==================== EVENT 6: DEFEND THE MOUNTAINS ====================
+georgian_mission_events.6 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.6.t
+	desc = georgian_mission_events.6.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:peasants 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.6.a
+		custom_tooltip = georgian_mission_events.6.a.tt
+		
+		add_country_modifier = {
+			modifier = geo_mountain_warriors
+			years = 10
+			mode = add
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.6.b
+		custom_tooltip = georgian_mission_events.6.b.tt
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.25
+		}
+	}
+}
+
+# ==================== EVENT 7: SECURE ABKHAZIA ====================
+georgian_mission_events.7 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.7.t
+	desc = georgian_mission_events.7.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:nobles_estate 
+			background = estate_type:nobles_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.7.a
+		custom_tooltip = georgian_mission_events.7.a.tt
+		
+		area:matrega_area = {
+			ordered_location_in_area = {
+				limit = { owner ?= root }
+				order_by = development
+				max = 3
+				add_core = root
+				change_control = control_mild_bonus
+			}
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.7.b
+		custom_tooltip = georgian_mission_events.7.b.tt
+		
+		add_navy_tradition = 10
+		add_country_modifier = {
+			modifier = geo_black_sea_foothold
+			years = 25
+			mode = add
+		}
+		add_gold = 350
+
+	}
+}
+
+# ==================== EVENT 8: RECOVER ARMENIA ====================
+georgian_mission_events.8 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.8.t
+	desc = georgian_mission_events.8.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:clergy_estate 
+			background = estate_type:clergy_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.8.a
+		custom_tooltip = georgian_mission_events.8.a.tt
+		
+		add_country_modifier = {
+			modifier = geo_armenian_integration
+			years = 30
+			mode = add
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.8.b
+		custom_tooltip = georgian_mission_events.8.b.tt
+		
+		area:armenia_area = {
+			ordered_location_in_area = {
+				limit = { owner ?= root }
+				order_by = development
+				max = 3
+				change_prosperity = prosperity_weak_bonus
+			}
+		}
+		add_gold = 300
+	}
+}
+
+# ==================== EVENT 9: BLACK SEA ACCESS ====================
+georgian_mission_events.9 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.9.t
+	desc = georgian_mission_events.9.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:burghers_estate 
+			background = estate_type:burghers_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.9.a
+		custom_tooltip = georgian_mission_events.9.a.tt
+		
+		add_stability = 10
+		add_navy_tradition = 15
+	}
+
+	option = {
+		name = georgian_mission_events.9.b
+		custom_tooltip = georgian_mission_events.9.b.tt
+		
+		ordered_owned_location = {
+			limit = { is_coastal = yes }
+			order_by = development
+			max = 2
+			construct_building = {
+				building_type = building_type:wharf
+				cost_multiplier = 0.5
+				cost_multiplier_reason = geo_black_sea_tt
+				instant = yes
+			}
+		}
+	}
+}
+
+# ==================== EVENT 12: DEVELOP AGRICULTURE ====================
+georgian_mission_events.12 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.12.t
+	desc = georgian_mission_events.12.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:peasants_estate 
+			background = estate_type:peasants_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.12.a
+		custom_tooltip = georgian_mission_events.12.a.tt
+		
+		add_gold = 400
+		add_estate_satisfaction = {
+			type = estate_type:peasants_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.12.b
+		custom_tooltip = georgian_mission_events.12.b.tt
+		
+		ordered_owned_location = {
+			limit = { raw_material = goods:wheat }
+			order_by = development
+			max = 3
+			change_prosperity = prosperity_weak_bonus
+			change_max_raw_material_workers = 1
+		}
+		
+	}
+}
+
+# ==================== EVENT 13: ESTABLISH TRADE NETWORK ====================
+georgian_mission_events.13 = {
+	type = country_event
+	category = mission_event
+	title = georgian_mission_events.13.t
+	desc = georgian_mission_events.13.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:burghers_estate 
+			background = estate_type:burghers_estate 
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.13.a
+		custom_tooltip = georgian_mission_events.13.a.tt
+		
+		add_gold = 500
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_severe_bonus
+		}
+	}
+
+	option = {
+		name = georgian_mission_events.13.b
+		custom_tooltip = georgian_mission_events.13.b.tt
+		
+		capital.market = {
+			add_merchant_power = {
+				country = root
+				key = geo_trade_power
+				years = 30
+				power = 15
+			}
+		}
+	}
+}
+

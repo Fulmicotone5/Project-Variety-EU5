@@ -355,7 +355,11 @@
 		
 		enabled = {
 			any_owned_location = {
-				has_building_with_at_least_one_level = shipyard
+				OR = {
+						has_building_with_at_least_one_level = dock
+						has_building_with_at_least_one_level = dry_dock
+						has_building_with_at_least_one_level = shipyard
+					}
 				count >= 4
 			}
 			navy_size >= 40
@@ -1187,8 +1191,11 @@
 		enabled = {
 			tag = SCA
 			navy_size >= 125
-			total_effective_building_levels:dry_dock >= 6
-			total_effective_building_levels:shipyard >= 4
+			OR = {
+						total_effective_building_levels:dock >= 3
+				total_effective_building_levels:dry_dock >= 6
+				total_effective_building_levels:shipyard >= 12
+					}
 		}
 		
 		duration = 0

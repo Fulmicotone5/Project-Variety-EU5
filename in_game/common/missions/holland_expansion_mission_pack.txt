@@ -406,7 +406,7 @@
 	# ==================== PHASE 5: COLONIAL EXPANSION (1600-1700) ====================
 	
 	mission_hol_establish_east_india_company = {
-		icon = cas_castilian_navy
+		icon = a_trading_hub
 		requires = { 
 			mission_hol_develop_dutch_navy
 			mission_hol_strengthen_burghers

@@ -22,3 +22,11 @@
 		}
 	}
 }
+
+TRY_REPLACE:council_hall_advance = {
+	age = age_3_discovery
+	
+	requires = town_rights_aod_advance
+	ai_weight = { add = 50 }
+	unlock_building = council_hall
+}

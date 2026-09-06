@@ -1,0 +1,246 @@
+﻿namespace = france_mission_events
+
+# ==================== EVENT 1: SECURE THE FRENCH CROWN ====================
+france_mission_events.1 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.1.t
+	desc = france_mission_events.1.d
+	picture = "gfx/interface/illustrations/royal_coronation"
+
+	fire_only_once = yes
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:crown_estate 
+			background = estate_type:nobles_estate 
+		}
+	}
+
+	option = {
+		name = france_mission_events.1.a
+		
+		add_country_modifier = {
+			modifier = fra_sacre_de_reims
+			years = 30
+			mode = add
+		}
+		add_stability = 7
+	}
+
+}
+
+# ==================== EVENT 2: DEVELOP PARIS ====================
+france_mission_events.2 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.2.t
+	desc = france_mission_events.2.d
+	picture = "gfx/interface/illustrations/medieval_city"
+
+	fire_only_once = yes
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:burghers_estate 
+			background = estate_type:crown_estate 
+		}
+	}
+	option = {
+		name = france_mission_events.2.a
+		
+		capital = {
+			change_development = 4
+			change_prosperity = prosperity_severe_bonus
+		}
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 2
+		}
+	}
+
+	option = {
+		name = france_mission_events.2.b
+		location:paris = {
+			add_location_modifier = {
+			modifier = fra_parisian_culture
+			years = 35
+			mode = add
+			}
+		}
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_severe_bonus
+		}
+	}
+}
+
+# ==================== EVENT 3: LIBERATE NORMANDY ====================
+france_mission_events.3 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.3.t
+	desc = france_mission_events.3.d
+	picture = "gfx/interface/illustrations/battle"
+
+	fire_only_once = yes
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:nobles 
+		}
+	}
+
+	option = {
+		name = france_mission_events.3.a
+		
+		add_prestige = 10
+		
+		if = {
+			limit = { country_exists = c:AQN }
+			add_casus_belli = {
+				target = c:AQN
+				type = casus_belli:cb_conquer_province
+				province = location:mimizan.province
+			}
+		}
+	}
+
+	option = {
+		name = france_mission_events.3.b
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.5
+		}
+	}
+}
+
+# ==================== EVENT 4: WIN HUNDRED YEARS' WAR ====================
+france_mission_events.4 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.4.t
+	desc = france_mission_events.4.d
+
+	fire_only_once = yes
+
+	illustration_tags = {
+		10 = interior
+		10 = happy
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:nobles_estate 
+			background = estate_type:nobles_estate 
+		}
+	}
+
+	option = {
+		name = france_mission_events.4.a
+		
+		add_prestige = 25
+		add_legitimacy = 50
+		add_stability = 30
+	}
+
+	option = {
+		name = france_mission_events.4.b
+		
+		add_country_modifier = {
+			modifier = fra_hundred_years_war_victory
+			years = 50
+			mode = add
+		}
+		add_army_tradition = 40
+	}
+}
+
+# ==================== EVENT 6: DOMINATE ITALY ====================
+france_mission_events.6 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.6.t
+	desc = france_mission_events.6.d
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+	fire_only_once = yes
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:nobles 
+		}
+	}
+
+	option = {
+		name = france_mission_events.6.a
+		
+		add_country_modifier = {
+			modifier = fra_italian_ambitions
+			years = 30
+			mode = add
+		}
+		add_gold = 1500
+	}
+}
+
+# ==================== EVENT 9: FRENCH GOLDEN AGE ====================
+france_mission_events.9 = {
+	type = country_event
+	category = mission_event
+	title = france_mission_events.9.t
+	desc = france_mission_events.9.d
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	fire_only_once = yes
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:nobles_estate 
+			background = estate_type:burghers_estate 
+		}
+	}
+
+	option = {
+		name = france_mission_events.9.a
+		
+		add_country_modifier = {
+			modifier = fra_french_golden_age
+			years = 60
+			mode = add
+		}
+		
+		culture:french = {
+			add_cultural_influence = 100
+		}
+		
+		add_prestige = 50
+		add_legitimacy = 50
+	}
+
+	option = {
+		name = france_mission_events.9.b
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 10
+		}
+		add_stability = 50
+		
+		ordered_owned_location = {
+			limit = { development >= 30 }
+			order_by = development
+			max = 10
+			change_development = 10
+			change_prosperity = prosperity_extreme_bonus
+		}
+		
+	}
+}

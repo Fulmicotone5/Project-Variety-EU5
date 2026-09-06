@@ -2,6 +2,8 @@
  irish_mission_pack: "The Gaelic Clans"
  irish_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to unite the Gaelic clans, break English influence, and forge Ireland into a dominant power across the British Isles."
  irish_mission_pack_CRITERIA_DESCRIPTION:0 "Unite Ireland under a single Gaelic ruler, challenge the powers of Britain, and establish Irish dominance from the Atlantic to the North Sea."
+ irish_mission_pack_BUTTON_DETAILS:0 "Complete missions to unite the Gaelic clans, break English influence, and forge Ireland into a dominant power across the British Isles."
+ irish_mission_pack_CRITERIA_DESC:0 "Unite Ireland under a single Gaelic ruler, challenge the powers of Britain, and establish Irish dominance from the Atlantic to the North Sea."
 
  mission_threaten_the_pale: "Threaten the Pale"
  mission_threaten_the_pale_desc: "We must establish a position strong enough to threaten the foreign enclave at Pale."
@@ -59,7 +61,7 @@
 
  rfw_strength_vs_gbr_tt: "If England does not exist, reach 45%% relative strength vs Great Britain"
  rfw_strength_vs_sco_tt: "Reach equal or greater strength vs Scotland"
- rfw_strength_vs_wls_tt: "Reach 150%% relative strength vs Wales"
+ rfw_strength_vs_wls_tt: "Reach 150% relative strength vs Wales"
  rfw_strength_vs_eng_tt: "Reach 60%% relative strength vs England"
 
  mission_conquer_scotland: "Conquer Scotland"
@@ -87,8 +89,8 @@
  mission_the_heart_of_ireland: "The Heart of Ireland"
  mission_the_heart_of_ireland_desc: "With the realm secured, we must now turn inward and cultivate the prosperity of Ireland itself. A stable and flourishing heartland will sustain every future ambition."
 
- mission_expand_dublin: "Expand Dublin"
- mission_expand_dublin_desc: "Dublin must grow into a capital worthy of a rising Irish state. Its markets, workshops, and civic institutions must reflect the ambitions of the realm."
+ mission_expand_dublin: "Develop the Capital"
+ mission_expand_dublin_desc: "The Capital must grow into a capital worthy of a rising Irish state. Its markets, workshops, and civic institutions must reflect the ambitions of the realm."
 
  mission_the_revenue_of_the_realm: "The Revenue of the Realm"
  mission_the_revenue_of_the_realm_desc: "Order and prosperity must be converted into steady and reliable revenue. A wealthy capital and disciplined treasury will allow Ireland to grow rich without depending on conquest."
@@ -99,7 +101,7 @@
  mission_the_black_stuff: "The Black Stuff"
  mission_the_black_stuff_desc: "A thriving brewing tradition will enrich our towns and satisfy our people. What begins in the workshop may become one of the defining products of Ireland."
 
- mission_a_thriving_pub_life: "A Thriving Pub Life"
+ mission_a_thriving_pub_life: "A Thriving Tavern Life"
  mission_a_thriving_pub_life_desc: "The taverns and alehouses of Ireland are more than places of drink. They are the beating heart of urban sociability, good humor, and common contentment."
 
  mission_eire_go_brach: "Éire go Brách"
@@ -281,7 +283,7 @@
  STATIC_MODIFIER_NAME_the_black_stuff: "The Black Stuff"
  STATIC_MODIFIER_DESC_the_black_stuff: "Irish brewing has become more prominent and profitable, increasing the output of beer throughout the realm."
 
- STATIC_MODIFIER_NAME_thriving_pub_life: "Thriving Pub Life"
+ STATIC_MODIFIER_NAME_thriving_pub_life: "Thriving Tavern Life"
  STATIC_MODIFIER_DESC_thriving_pub_life: "A lively and contented urban culture has taken root across Ireland, raising satisfaction and helping prosperity endure."
 
  STATIC_MODIFIER_NAME_eire_go_brach: "Éire Go Brách"
@@ -396,7 +398,8 @@
 
  STATIC_MODIFIER_NAME_irish_explorer_spirit: "Spirit of the Explorer"
  STATIC_MODIFIER_DESC_irish_explorer_spirit: "Inspired by Saint Brendan's example, Irish sailors push further and faster into the unknown, expanding our colonial reach with greater speed and range."
-
+ STATIC_MODIFIER_NAME_new_dublin_trade_city: "New Dublin Trade City"
+ STATIC_MODIFIER_NAME_new_dublin_fortress_city: "New Dublin Fortress City"
  STATIC_MODIFIER_NAME_irish_missionary_spirit: "Spirit of the Missionary"
  STATIC_MODIFIER_DESC_irish_missionary_spirit: "Irish monks and priests follow every settlement into the New World, converting and integrating the peoples they find with patience and conviction."
 
@@ -432,7 +435,7 @@
  irish_mission_events.17.b: "Through the Church. Let faith and legitimacy be one."
  irish_mission_events.17.c: "Through the law. Let the realm be governed by statute."
 
- irish_mission_events.18.t: "What Does Rome Ask?"
+ irish_mission_events.18.t: "What Does the Pope Ask?"
  irish_mission_events.18.d: "Our ambassadors have returned from Rome. The Holy Father is willing to extend his protection over Ireland — but not without condition. He asks something in return. The question is what price Ireland is prepared to pay for the shield of the Church."
  irish_mission_events.18.a: "Pay the Holy See. Ireland shall give 250 gold for the guarantee."
  irish_mission_events.18.b: "Build a cathedral. Let stone and mortar speak of our devotion."

@@ -1,10 +1,12 @@
 ﻿l_english:
 
 # === MISSION PACK HEADER ===
-france_mission_pack: "France: The Most Christian Kingdom"
+france_mission_pack: "Heirs of West Francia"
 france_mission_pack_desc: "Guide France from a fragmented realm through the Hundred Years' War, the Italian Wars, and into a centralized absolutist state dominating European politics and culture."
 france_mission_pack_BUTTON_TOOLTIP: "Complete missions to unify France, win the Hundred Years' War, establish royal absolutism, build a colonial empire, and achieve European hegemony."
 france_mission_pack_CRITERIA_DESCRIPTION: "Secure the French crown, consolidate royal authority, develop Paris, build a powerful military, and establish French cultural and political dominance."
+france_mission_pack_BUTTON_DETAILS: "Complete missions to unify France, win the Hundred Years' War, establish royal absolutism, build a colonial empire, and achieve European hegemony."
+france_mission_pack_CRITERIA_DESC: "Secure the French crown, consolidate royal authority, develop Paris, build a powerful military, and establish French cultural and political dominance."
 
 # ==================== PHASE 1: FRENCH UNIFICATION (1337-1360) ====================
 
@@ -16,8 +18,8 @@ mission_fra_curtail_noble_power: "Curtail Noble Power"
 mission_fra_curtail_noble_power_desc: "The great nobles of France possess too much independent authority. We must reduce their power and bring them firmly under royal control."
 mission_fra_curtail_noble_power_tooltip: "Reduce noble estate power while strengthening crown estate influence."
 
-mission_fra_establish_parlement: "Establish the Parlement"
-mission_fra_establish_parlement_desc: "Create a royal court of justice in Paris to administer law, register royal edicts, and provide a counterbalance to noble authority."
+mission_fra_establish_parlement: "Establish the Parliament"
+mission_fra_establish_parlement_desc: "Create a House of Parliament in Paris to administer law, register royal edicts, and provide a counterbalance to noble authority."
 mission_fra_establish_parlement_tooltip: "Maintain high satisfaction among nobles and burghers with strong stability and legitimacy."
 
 # === Control Ile-de-France ===
@@ -64,15 +66,15 @@ mission_fra_secure_paris_basin: "Secure the Paris Basin"
 mission_fra_secure_paris_basin_desc: "The approaches to Paris must be secured. Control the Champagne region to protect our capital from English invasion."
 mission_fra_secure_paris_basin_tooltip: "Establish control over the Champagne area with substantial manpower reserves."
 
-mission_fra_liberate_normandy: "Liberate Normandy"
-mission_fra_liberate_normandy_desc: "The duchy of Normandy, ancient patrimony of the French crown, suffers under English occupation. We must liberate our Norman brothers."
+mission_fra_liberate_normandy: "Secure Normandy"
+mission_fra_liberate_normandy_desc: "The duchy of Normandy, ancient patrimony of the French crown, is at risk of enemy occupation. We must seize it at all cost."
 mission_fra_liberate_normandy_tooltip: "Establish control over the Normandy area and capture Rouen."
 
 mission_fra_reconquer_guyenne: "Reconquer Guyenne"
 mission_fra_reconquer_guyenne_desc: "The English still hold Guyenne, the remnants of their vast continental empire. We must expel them from this rich southern province."
 mission_fra_reconquer_guyenne_tooltip: "Establish control over the Guyenne area and capture Bordeaux."
 
-mission_fra_secure_gascony: "Secure Gascony"
+mission_fra_secure_gascony: "Liberate Gascony"
 mission_fra_secure_gascony_desc: "With Guyenne reclaimed, we must secure the surrounding Gascon territories to ensure lasting French control of the southwest."
 mission_fra_secure_gascony_tooltip: "Establish control over the Gascony area."
 
@@ -112,7 +114,7 @@ mission_fra_prepare_vassal_annexation: "Prepare Vassal Annexation"
 mission_fra_prepare_vassal_annexation_desc: "Our many vassals must eventually be fully integrated into the kingdom. Prepare the administrative framework for peaceful annexation."
 mission_fra_prepare_vassal_annexation_tooltip: "Maintain loyal vassals with low liberty desire and strong crown estate power."
 
-mission_fra_annex_french_vassals: "Annex French Vassals"
+mission_fra_annex_french_vassals: "France Unified"
 mission_fra_annex_french_vassals_desc: "The time has come to complete the unification of France. Bring our remaining vassals fully under the crown."
 mission_fra_annex_french_vassals_tooltip: "Reduce vassal count while controlling most of the French region."
 
@@ -201,7 +203,7 @@ mission_fra_develop_french_artillery_tooltip: "Embrace the artillery institution
 # === Navy Development Branch ===
 
 mission_fra_develop_atlantic_fleet: "Develop Atlantic Fleet"
-mission_fra_develop_atlantic_fleet_desc: "France must challenge English naval dominance. Build a powerful Atlantic fleet from our Breton and Norman ports."
+mission_fra_develop_atlantic_fleet_desc: "France must challenge the fleets of the other European powers. Build a powerful Atlantic fleet from our Breton and Norman ports."
 mission_fra_develop_atlantic_fleet_tooltip: "Build a substantial navy with extensive dry dock infrastructure."
 
 # ==================== PHASE 9: COLONIAL EXPANSION (1600-1800) ====================
@@ -242,9 +244,9 @@ mission_fra_develop_french_arts_tooltip: "Construct theaters and patronize the a
 
 # ==================== PHASE 11: CONTINENTAL HEGEMONY (1700-1800) ====================
 
-mission_fra_counter_british_naval_power: "Counter British Naval Power"
-mission_fra_counter_british_naval_power_desc: "British naval supremacy threatens our colonies and trade. Build a fleet capable of challenging the Royal Navy."
-mission_fra_counter_british_naval_power_tooltip: "Build a strong navy capable of matching British strength."
+mission_fra_counter_british_naval_power: "Dominate La Manche"
+mission_fra_counter_british_naval_power_desc: "We must assure that the French navy has full control of the Channel."
+mission_fra_counter_british_naval_power_tooltip: "Build a strong navy capable of dominating the Channel."
 
 mission_fra_establish_french_hegemony: "Establish French Hegemony"
 mission_fra_establish_french_hegemony_desc: "France must be the dominant power on the European continent, respected and feared by all."
@@ -264,21 +266,31 @@ mission_fra_spark_french_revolution_tooltip: "Embrace Enlightenment ideas while 
 
 france_mission_events.1.t: "The Coronation at Reims"
 france_mission_events.1.d: "In the cathedral of Reims, before the assembled nobles and clergy of France, we have received the holy unction. The sacred oil of Clovis has anointed us true king of the French. The people cheer, the nobles bow, and God has blessed our reign."
+france_mission_events.1.a: "God save the King!"
 
-france_mission_events.2.t: "The Splendor of Paris"
-france_mission_events.2.d: "Paris has grown beyond our grandest expectations. Great buildings line its streets, merchants fill its markets, and scholars gather in its universities. Truly, this city has become the capital worthy of the French crown."
+france_mission_events.2.t: "The Splendor of [ShowLocationName('paris')]"
+france_mission_events.2.d: "[ShowLocationName('paris')] has grown beyond our grandest expectations. Great buildings line its streets, merchants fill its markets, and scholars gather in its universities. Truly, this city has become the capital worthy of the French crown."
+france_mission_events.2.a: "[ShowLocationName('paris')] is truly the Grandest City of them all!"
+france_mission_events.2.b: "We must thank the [ROOT.GetCountry.GetGovernment.GetEstateName('burghers_estate')|l] for that"
 
-france_mission_events.3.t: "Normandy Liberated"
-france_mission_events.3.d: "The English banner has been lowered over Rouen for the last time. Our armies march through cheering crowds as Normandy returns to the French fold. The ancient duchy, cradle of the Conqueror, is now forever French."
+france_mission_events.3.t: "Guyenne Secured"
+france_mission_events.3.d: "The English banner has been lowered over Bordeaux for the last time. Our armies march through cheering crowds as Normandy returns to the French fold. The ancient duchy is now forever French."
+france_mission_events.3.a: "Take advantage of the moment to seize Gascony"
+france_mission_events.3.b: "Recover our forces"
 
 france_mission_events.4.t: "Victory in the Hundred Years' War"
 france_mission_events.4.d: "After more than a century of conflict, the English have been driven from French soil. Calais has fallen, and not a single English soldier remains in our kingdom. France is free, united, and stronger than ever before. Let all of Europe witness our triumph."
+france_mission_events.4.a: "Long live [ROOT.GetCountry.GetName]!"
+france_mission_events.4.b: "We must use this victory to strenghten [ROOT.GetCountry.GetName] even more!"
 
 france_mission_events.6.t: "French Dominance in Italy"
 france_mission_events.6.d: "From Milan to Naples, French influence spreads across the Italian peninsula. Our generals have proven their mettle, our diplomats weave intricate webs of alliance, and our culture captivates Italian courts. France has achieved what no other power has managed - true dominance in Italy."
+france_mission_events.6.a: "Long live [ROOT.GetCountry.GetName]!"
 
 france_mission_events.9.t: "The French Golden Age"
 france_mission_events.9.d: "This is France's golden age - an era of unparalleled achievement in arts, sciences, and arms. Our philosophers illuminate the world with reason, our armies triumph over all foes, and our court sets the standard for all Europe. The Sun King himself would marvel at what France has become."
+france_mission_events.9.a: "Let [ROOT.GetCountry.GetName] enter this Golden Age!"
+france_mission_events.9.b: "Let the People enjoy the fruits of our Greatness"
 
 # === STATIC MODIFIER LOCALIZATION ===
 
@@ -289,8 +301,8 @@ STATIC_MODIFIER_DESC_fra_secure_french_monarchy: "The legitimacy of the French c
 STATIC_MODIFIER_NAME_fra_royal_authority_established: "Royal Authority Established"
 STATIC_MODIFIER_DESC_fra_royal_authority_established: "The crown's authority over nobles is firmly established, reducing the cost of governing."
 
-STATIC_MODIFIER_NAME_fra_parlement_established: "Parlement Established"
-STATIC_MODIFIER_DESC_fra_parlement_established: "The royal court of justice provides administrative stability and enhances diplomatic reputation."
+STATIC_MODIFIER_NAME_fra_parlement_established: "Parliament Established"
+STATIC_MODIFIER_DESC_fra_parlement_established: "The House of Parliament provides administrative stability and enhances diplomatic reputation."
 
 STATIC_MODIFIER_NAME_fra_ile_de_france_secure: "Île-de-France Secured"
 STATIC_MODIFIER_DESC_fra_ile_de_france_secure: "The heartland of France enjoys peace and effective administration."
@@ -304,7 +316,7 @@ STATIC_MODIFIER_DESC_fra_royal_road_network: "Royal roads improve communication 
 STATIC_MODIFIER_NAME_fra_french_road_network: "French Road Network"
 STATIC_MODIFIER_DESC_fra_french_road_network: "An extensive network of roads connects French cities, accelerating construction and trade."
 
-STATIC_MODIFIER_NAME_fra_french_cultural_hegemony: "French Cultural Hegemony"
+STATIC_MODIFIER_NAME_fra_french_cultural_hegemony: "French Culture Promoted"
 STATIC_MODIFIER_DESC_fra_french_cultural_hegemony: "French culture dominates the kingdom, spreading influence to neighboring lands."
 
 STATIC_MODIFIER_NAME_fra_university_of_paris: "University of Paris"
@@ -317,16 +329,16 @@ STATIC_MODIFIER_DESC_fra_prepared_for_hundred_years_war: "Military preparations 
 STATIC_MODIFIER_NAME_fra_french_national_resistance: "French National Resistance"
 STATIC_MODIFIER_DESC_fra_french_national_resistance: "Patriotic fervor strengthens defenses against foreign invaders."
 
-STATIC_MODIFIER_NAME_fra_secure_heartland: "Secure Heartland"
+STATIC_MODIFIER_NAME_fra_secure_heartland: "Secured Heartland"
 STATIC_MODIFIER_DESC_fra_secure_heartland: "The secure French heartland provides increased manpower and supply capacity."
 
-STATIC_MODIFIER_NAME_fra_normandy_liberated: "Normandy Liberated"
+STATIC_MODIFIER_NAME_fra_normandy_liberated: "Normandy Secured"
 STATIC_MODIFIER_DESC_fra_normandy_liberated: "Liberated Norman lands flourish under French administration."
 
 STATIC_MODIFIER_NAME_fra_aquitaine_reclaimed: "Aquitaine Reclaimed"
 STATIC_MODIFIER_DESC_fra_aquitaine_reclaimed: "The rich lands of Aquitaine produce abundant wine for export."
 
-STATIC_MODIFIER_NAME_fra_gascony_secure: "Gascony Secure"
+STATIC_MODIFIER_NAME_fra_gascony_secure: "Gascony Secured"
 STATIC_MODIFIER_DESC_fra_gascony_secure: "Fortified Gascon positions strengthen our southern defenses."
 
 STATIC_MODIFIER_NAME_fra_bordeaux_wine_trade: "Bordeaux Wine Trade"
@@ -354,7 +366,7 @@ STATIC_MODIFIER_DESC_fra_marseille_mediterranean_port: "Marseille serves as Fran
 STATIC_MODIFIER_NAME_fra_fast_vassal_annexation: "Fast Vassal Annexation"
 STATIC_MODIFIER_DESC_fra_fast_vassal_annexation: "Efficient administration accelerates the integration of vassal territories."
 
-STATIC_MODIFIER_NAME_fra_french_vassals_annexed: "French Vassals Annexed"
+STATIC_MODIFIER_NAME_fra_french_vassals_annexed: "France Unified"
 STATIC_MODIFIER_DESC_fra_french_vassals_annexed: "The unification of French territories strengthens royal authority."
 
 # Phase 4: Italian Wars
@@ -393,8 +405,8 @@ STATIC_MODIFIER_NAME_fra_french_banking_system: "French Banking System"
 STATIC_MODIFIER_DESC_fra_french_banking_system: "French banks offer favorable credit for royal and private ventures."
 
 # Phase 7: Absolutism and Centralization
-STATIC_MODIFIER_NAME_fra_absolutist_monarchy: "Absolutist Monarchy"
-STATIC_MODIFIER_DESC_fra_absolutist_monarchy: "The king's word is law throughout France, reducing court costs."
+STATIC_MODIFIER_NAME_fra_absolutist_monarchy: "Absolute Monarchy"
+STATIC_MODIFIER_DESC_fra_absolutist_monarchy: "I am the State!"
 
 STATIC_MODIFIER_NAME_fra_intendant_system: "Intendant System"
 STATIC_MODIFIER_DESC_fra_intendant_system: "Royal intendants ensure efficient administration and tax collection."
@@ -442,8 +454,8 @@ STATIC_MODIFIER_NAME_fra_french_artistic_hegemony: "French Artistic Hegemony"
 STATIC_MODIFIER_DESC_fra_french_artistic_hegemony: "French art and culture set standards for all Europe."
 
 # Phase 11: Continental Hegemony
-STATIC_MODIFIER_NAME_fra_naval_challenge_to_britain: "Naval Challenge to Britain"
-STATIC_MODIFIER_DESC_fra_naval_challenge_to_britain: "France challenges British naval supremacy with reduced fleet costs."
+STATIC_MODIFIER_NAME_fra_naval_challenge_to_britain: "Channel Dominance"
+STATIC_MODIFIER_DESC_fra_naval_challenge_to_britain: "France dominates the Channel."
 
 STATIC_MODIFIER_NAME_fra_french_continental_hegemony: "French Continental Hegemony"
 STATIC_MODIFIER_DESC_fra_french_continental_hegemony: "France dominates the European continent, commanding respect and influence."

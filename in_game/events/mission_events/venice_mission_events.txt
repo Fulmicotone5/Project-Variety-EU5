@@ -1,0 +1,756 @@
+﻿namespace = venice_mission_events
+
+# ==================== EVENT 1: THE VENETIAN LAGOON ====================
+venice_mission_events.1 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.1.t
+	desc = venice_mission_events.1.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:burghers
+			background = pop_type:laborers
+		}
+		location:venezia = {
+			save_scope_as = venice_location
+		}
+	}
+
+	option = {
+		name = venice_mission_events.1.a
+		custom_tooltip = venice_mission_events.1.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_lagoon_consolidation
+			years = 30
+			mode = add
+		}
+	}
+
+	option = {
+		name = venice_mission_events.1.b
+		custom_tooltip = venice_mission_events.1.b.tt
+		
+		location:venezia = {
+			add_location_modifier = {
+				modifier = ven_lagoon_fortifications
+				years = 35
+				mode = add
+			}
+			change_development = 3
+		}
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.15
+		}
+	}
+
+	option = {
+		name = venice_mission_events.1.c
+		custom_tooltip = venice_mission_events.1.c.tt
+		
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_severe_bonus
+		}
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 6
+		}
+	}
+}
+
+# ==================== EVENT 2: THE DALMATIAN COAST ====================
+venice_mission_events.2 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.2.t
+	desc = venice_mission_events.2.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:mariners
+			background = pop_type:burghers
+		}
+		location:zadar = {
+			save_scope_as = dalmatian_location
+		}
+		location:split = {
+			save_scope_as = dalmatian_location2
+		}
+	}
+
+	option = {
+		name = venice_mission_events.2.a
+		custom_tooltip = venice_mission_events.2.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_dalmatian_coast
+			years = 30
+			mode = add
+		}
+		
+		area:dalmacija_area = {
+			every_location_in_area = {
+				limit = { owner ?= root }
+				change_prosperity = prosperity_mild_bonus
+			}
+		}
+	}
+
+	option = {
+		name = venice_mission_events.2.b
+		custom_tooltip = venice_mission_events.2.b.tt
+		
+		scope:dalmatian_location = {
+			if = {
+				limit = { NOT = { has_building_with_at_least_one_level = dock } }
+				construct_building = {
+					building_type = building_type:dock
+					cost_multiplier = 0.4
+					cost_multiplier_reason = generic_cost_reduction_build_tt
+					instant = yes
+				}
+			}
+			add_location_modifier = {
+				modifier = ven_adriatic_harbor
+				years = 25
+				mode = add
+			}
+		}
+		
+		add_navy_tradition = 10
+		add_sailors = {
+			value = max_sailors
+			multiply = 0.15
+		}
+	}
+
+	option = {
+		name = venice_mission_events.2.c
+		custom_tooltip = venice_mission_events.2.c.tt
+		
+		add_estate_satisfaction = {
+			type = estate_type:nobles_estate
+			value = estate_satisfaction_mild_bonus
+		}
+		
+		every_subject = {
+			limit = { region:balkan_region = { any_location_in_region = { owner ?= prev } } }
+			add_liberty_desire = -15
+		}
+	}
+}
+
+
+# ==================== EVENT 4: THE CROWN OF CYPRUS ====================
+venice_mission_events.4 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.4.t
+	desc = venice_mission_events.4.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:nobles_estate
+			background = estate_type:clergy_estate
+		}
+		location:lemesos = {
+			save_scope_as = limassol_location
+		}
+	}
+
+	option = {
+		name = venice_mission_events.4.a
+		custom_tooltip = venice_mission_events.4.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_cyprus_crown
+			years = 15
+			mode = add
+		}
+		add_prestige = 10
+		add_legitimacy = 10
+	}
+
+	option = {
+		name = venice_mission_events.4.b
+		custom_tooltip = venice_mission_events.4.b.tt
+		
+		location:nicosia_cyp = {
+			if = {
+				limit = { NOT = { has_building_with_at_least_one_level = castle } }
+				construct_building = {
+					building_type = building_type:castle
+					cost_multiplier = 0.3
+					cost_multiplier_reason = generic_cost_reduction_build_tt
+					instant = yes
+				}
+			}
+			add_location_modifier = {
+				modifier = ven_cyprus_fortress
+				years = 15
+				mode = add
+			}
+			change_development = 2
+		}
+	
+	}
+
+	option = {
+		name = venice_mission_events.4.c
+		custom_tooltip = venice_mission_events.4.c.tt
+		
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 5
+		}
+		
+		add_country_modifier = {
+			modifier = ven_cyprus_sugar_plantations
+			years = 35
+			mode = add
+		}
+	}
+}
+
+# ==================== EVENT 5: THE ISLAND OF CRETE ====================
+venice_mission_events.5 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.5.t
+	desc = venice_mission_events.5.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:peasants
+			background = pop_type:aristocrats
+		}
+	}
+
+	option = {
+		name = venice_mission_events.5.a
+		custom_tooltip = venice_mission_events.5.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_crete_administration
+			years = 20
+			mode = add
+		}
+		
+	}
+
+	option = {
+		name = venice_mission_events.5.b
+		custom_tooltip = venice_mission_events.5.b.tt
+		
+		location:candia = {
+			add_location_modifier = {
+				modifier = ven_candia_emporium
+				years = 20
+				mode = add
+			}
+			change_development = 3
+		}
+	
+	}
+
+	option = {
+		name = venice_mission_events.5.c
+		custom_tooltip = venice_mission_events.5.c.tt
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.25
+		}
+		
+		add_sailors = {
+			value = max_sailors
+			multiply = 0.25
+		}
+	}
+}
+
+# ==================== EVENT 6: THE TERRAFERMA EXPANSION ====================
+venice_mission_events.6 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.6.t
+	desc = venice_mission_events.6.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = armed
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:soldiers
+			background = pop_type:aristocrats
+		}
+	}
+
+	option = {
+		name = venice_mission_events.6.a
+		custom_tooltip = venice_mission_events.6.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_terraferma_integration
+			years = 30
+			mode = add
+		}
+		
+	}
+
+	option = {
+		name = venice_mission_events.6.b
+		custom_tooltip = venice_mission_events.6.b.tt
+		
+		area:veneto_area = {
+			ordered_location_in_area = {
+				limit = { owner ?= root }
+				order_by = development
+				max = 5
+				change_development = 2
+				change_prosperity = prosperity_mild_bonus
+			}
+		}
+		
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+
+	option = {
+		name = venice_mission_events.6.c
+		custom_tooltip = venice_mission_events.6.c.tt
+				
+		add_research_progress = research_progress_severe_bonus
+	}
+}
+
+# ==================== EVENT 7: THE BATTLE OF LEPANTO VETERANS ====================
+venice_mission_events.7 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.7.t
+	desc = venice_mission_events.7.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = armed
+		10 = maritime
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:mariners
+			background = pop_type:soldiers
+		}
+	}
+
+	option = {
+		name = venice_mission_events.7.a
+		custom_tooltip = venice_mission_events.7.a.tt
+		
+		add_navy_tradition = 20
+		add_army_tradition = 20
+	}
+
+	option = {
+		name = venice_mission_events.7.b
+		custom_tooltip = venice_mission_events.7.b.tt
+				
+		create_character = {
+			first_name = name_sebastiano
+			last_name = Venier
+			culture = culture:venetian
+			religion = religion:catholic
+			adm = { 60 75 }
+			dip = { 50 65 }
+			mil = { 85 95 }
+			add_trait = trait:naval_showman
+			age = 65
+			save_scope_as = lepanto_admiral
+		}
+		if = {
+			limit = { exists = scope:lepanto_admiral }
+			scope:lepanto_admiral = {
+				move_country = root
+			}
+		}
+	}
+
+	option = {
+		name = venice_mission_events.7.c
+		custom_tooltip = venice_mission_events.7.c.tt
+		
+		add_country_modifier = {
+			modifier = ven_holy_league_heroes
+			years = 30
+			mode = add
+		}
+		
+		add_prestige = 10
+		
+		if = {
+			limit = { country_exists = c:PAP }
+			c:PAP ?= {
+				add_opinion = {
+					target = root
+					modifier = opinion_holy_league_victory
+				}
+			}
+		}
+		
+		if = {
+			limit = { country_exists = c:CAS }
+			c:CAS ?= {
+				add_opinion = {
+					target = root
+					modifier = opinion_holy_league_victory
+				}
+			}
+		}
+	}
+}
+
+# ==================== EVENT 8: THE SPICE ROUTE DOMINANCE ====================
+venice_mission_events.8 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.8.t
+	desc = venice_mission_events.8.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:burghers_estate
+			background = estate_type:crown_estate
+		}
+		capital = {
+			save_scope_as = venice_market
+		}
+	}
+
+	option = {
+		name = venice_mission_events.8.a
+		custom_tooltip = venice_mission_events.8.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_spice_monopoly
+			years = 35
+			mode = add
+		}
+		
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_extreme_bonus
+		}
+	}
+
+	option = {
+		name = venice_mission_events.8.b
+		custom_tooltip = venice_mission_events.8.b.tt
+		
+		capital = {
+			change_building_level_in_location = {
+				building = building_type:stock_exchange
+				value = 1
+				owner ?= root
+			}
+			change_development = 1
+		}
+		
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = -15
+		}
+	}
+
+	option = {
+		name = venice_mission_events.8.c
+		custom_tooltip = venice_mission_events.8.c.tt
+				
+		every_owned_location = {
+			limit = { raw_material = goods:chili }
+			change_prosperity = prosperity_severe_bonus
+			change_max_raw_material_workers = 2
+		}
+	}
+}
+
+# ==================== EVENT 9: VICTORY OVER GENOA ====================
+venice_mission_events.9 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.9.t
+	desc = venice_mission_events.9.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = armed
+		10 = maritime
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:mariners
+			background = pop_type:burghers
+		}
+	}
+
+	option = {
+		name = venice_mission_events.9.a
+		custom_tooltip = venice_mission_events.9.a.tt
+				
+		add_prestige = 15
+		add_navy_tradition = 15
+		add_stability = 10
+	}
+
+	option = {
+		name = venice_mission_events.9.b
+		custom_tooltip = venice_mission_events.9.b.tt
+		
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 6
+		}
+		
+		location:genoa = {
+			owner ?= root
+			add_location_modifier = {
+				modifier = ven_genoese_integration
+				years = 30
+				mode = add
+			}
+		}
+	}
+}
+
+# ==================== EVENT 11: VENETIAN SCHOOL OF ART ====================
+venice_mission_events.11 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.11.t
+	desc = venice_mission_events.11.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = cultural
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = {
+			foreground = estate_type:burghers_estate
+			background = estate_type:nobles_estate
+		}
+	}
+
+	option = {
+		name = venice_mission_events.11.a
+		custom_tooltip = venice_mission_events.11.a.tt
+				
+		add_gold = 200
+
+		culture:venetian = {
+			add_cultural_influence = cultural_influence_severe_bonus
+		}
+	}
+
+	option = {
+		name = venice_mission_events.11.b
+		custom_tooltip = venice_mission_events.11.b.tt
+		
+		create_character = {
+			first_name = name_giovanni
+			last_name = Bellini
+			culture = culture:venetian
+			religion = religion:catholic
+			adm = { 40 55 }
+			dip = { 70 85 }
+			mil = { 30 45 }
+			add_trait = trait:prominent
+			add_trait = trait:workaholic
+			age = 45
+			save_scope_as = venetian_artist
+		}
+		if = {
+			limit = { exists = scope:venetian_artist }
+			scope:venetian_artist = {
+				move_country = root
+			}
+		}
+		
+		add_gold = -500
+	}
+}
+
+# ==================== EVENT 12: BELLINI AND TITIAN ====================
+venice_mission_events.12 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.12.t
+	desc = venice_mission_events.12.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = cultural
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:artists
+			background = pop_type:aristocrats
+		}
+	}
+
+	option = {
+		name = venice_mission_events.12.a
+		custom_tooltip = venice_mission_events.12.a.tt
+		
+		add_country_modifier = {
+			modifier = ven_bellini_titian
+			years = 20
+			mode = add
+		}
+	}
+
+	option = {
+		name = venice_mission_events.12.b
+		custom_tooltip = venice_mission_events.12.b.tt
+		
+		capital = {
+			add_location_modifier = {
+				modifier = ven_venetian_masters
+				years = 20
+				mode = add
+			}
+			change_development = 3
+		}
+		
+		every_owned_location = {
+			limit = { has_building_with_at_least_one_level = art_academy }
+			change_prosperity = prosperity_severe_bonus
+		}
+	}
+
+	option = {
+		name = venice_mission_events.12.c
+		custom_tooltip = venice_mission_events.12.c.tt
+		
+		add_gold = {
+			value = monthly_income_trade_and_tax
+			multiply = 7
+		}
+		
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_severe_bonus
+		}
+	}
+}
+
+# ==================== EVENT 13: VENETIAN DUCHY OF ATHENS ====================
+venice_mission_events.13 = {
+	type = country_event
+	category = mission_event
+	title = venice_mission_events.13.t
+	desc = venice_mission_events.13.d
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = {
+			foreground = pop_type:aristocrats
+			background = pop_type:clergy
+		}
+	}
+
+	option = {
+		name = venice_mission_events.13.a
+		custom_tooltip = venice_mission_events.13.a.tt
+				
+		location:athens  = {
+			add_core = root
+			change_development = 3
+		}
+	}
+
+	option = {
+		name = venice_mission_events.13.b
+		custom_tooltip = venice_mission_events.13.b.tt
+		
+		location:athens = {
+			if = {
+				limit = { NOT = { has_building_with_at_least_one_level = university } }
+				construct_building = {
+					building_type = building_type:university
+					cost_multiplier = 0.75
+					cost_multiplier_reason = generic_cost_reduction_build_tt
+					instant = yes
+				}
+			}
+		}
+		
+		add_research_progress = research_progress_mild_bonus
+	}
+
+	option = {
+		name = venice_mission_events.13.c
+		custom_tooltip = venice_mission_events.13.c.tt
+		
+		location:athens = {
+			add_location_modifier = {
+				modifier = ven_athenian_fortress
+				years = 30
+				mode = add
+			}
+		}
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.2
+		}
+	}
+}

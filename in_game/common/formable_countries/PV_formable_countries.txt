@@ -131,6 +131,7 @@ F04_f = {
 
 	allow = {
 		any_subject = {
+			is_subject_of = root
 			is_subject_type = colonial_nation
 			total_population >= 100
 			count >= 1

@@ -186,7 +186,6 @@ bra_austrian_rivalry_overcome = {
 }
 
 bra_prussian_military_tradition = {
-	allow_bureaucracy = yes
 	global_max_bureaucracy_slots = 1
 	army_tradition_from_battle = 0.10
 	land_morale_modifier = 0.05
@@ -316,13 +315,12 @@ bra_german_lands_unified = {
 }
 
 bra_gesindeordnung = {
-	allow_bureaucracy = yes
 	global_max_bureaucracy_slots = 1
 	monthly_peasants_estate_rebel_growth = -0.1
 }
 
 bra_staedteordnung = {
-	allow_bureaucracy = yes
+
 	global_max_bureaucracy_slots = 1
 	trade_importance_modifier = 0.05
 }

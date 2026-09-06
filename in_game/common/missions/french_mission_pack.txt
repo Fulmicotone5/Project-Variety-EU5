@@ -1,5 +1,5 @@
 ﻿france_mission_pack = {
-	icon = generic_capital_economy
+	icon = mssion_fra
 	chance = 3600
 	repeatable = no
 	player_playstyle = diplomatic
@@ -9,46 +9,32 @@
 	visible = {
 		game_has_missions_enabled = yes
 		tag = "FRA"
+			NOT = {
+				has_global_variable = pv_m_fra
+			}
 	}
 
 	on_start = {
-		set_variable = {
-			name = fra_mission_target_trade_income
-			value = 100
-		}
-		set_variable = {
-			name = fra_mission_target_development
-			value = 1500
-		}
-		set_variable = {
-			name = fra_mission_target_navy_size
-			value = 50
-		}
+		set_global_variable = pv_m_fra
 	}
 
 	on_completion = {
-		add_prestige = 150
-		add_legitimacy = 100
-		remove_variable = fra_mission_target_trade_income
-		remove_variable = fra_mission_target_development
-		remove_variable = fra_mission_target_navy_size
+		add_prestige = 50
+		add_stability = 50
 	}
 
 	on_abort = {
-		remove_variable = fra_mission_target_trade_income
-		remove_variable = fra_mission_target_development
-		remove_variable = fra_mission_target_navy_size
 	}
 
 	# ==================== PHASE 1: FRENCH UNIFICATION (1337-1360) ====================
 	
 	mission_fra_secure_the_french_crown = {
-		icon = crown_icon
+		icon = crown_power_advance_renaissance
 		
 		enabled = {
 			stability >= 30
-			legitimacy >= 60
-			# "estate_power(estate_type:crown_estate)" >= 0.15
+			legitimacy >= 100
+			"estate_power(estate_type:crown_estate)" >= 0.15
 		}
 		
 		duration = 0
@@ -59,7 +45,7 @@
 				years = 20
 				mode = add
 			}
-			trigger_event_silently = france_mission_events.1
+			trigger_event_non_silently = france_mission_events.1
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -70,8 +56,8 @@
 		
 		enabled = {
 			"estate_power(estate_type:nobles_estate)" <= 0.45
-			"estate_power(estate_type:crown_estate)" >= 0.15
-			stability >= 30
+			"estate_power(estate_type:crown_estate)" >= 0.20
+			stability >= 50
 		}
 		
 		duration = 0
@@ -91,20 +77,28 @@
 		requires = { mission_fra_curtail_noble_power }
 		
 		enabled = {
-			estate_satisfaction:nobles_estate >= 0.60
-			estate_satisfaction:burghers_estate >= 0.55
+			"estate_power(estate_type:nobles_estate)" <= 0.40
+			"estate_power(estate_type:crown_estate)" >= 0.25
 			stability >= 50
-			legitimacy >= 70
+			legitimacy >= 100
 		}
 		
 		duration = 0
 
 		on_completion = {
+			capital = {
+				construct_building = {
+					building_type = building_type:house_of_parliament
+					cost_multiplier = 0.5
+					cost_multiplier_reason = "royal_sponsorship"
+				}
+			}
 			add_country_modifier = {
 				modifier = fra_parlement_established
 				years = 30
 				mode = add
 			}
+			add_gold = -1000
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -112,7 +106,7 @@
 	# === Control Ile-de-France ===
 	
 	mission_fra_consolidate_ile_de_france = {
-		icon = defensive_army
+		icon = fortified_towns
 		requires = { }
 		
 		enabled = {
@@ -161,9 +155,8 @@
 		enabled = {
 			capital = {
 				development >= 40
-				total_building_levels >= 35
+				total_building_levels >= 100
 			}
-			monthly_income_trade_and_tax >= 40
 		}
 		
 		duration = 0
@@ -176,6 +169,7 @@
 					mode = add
 				}
 			}
+			trigger_event_non_silently = france_mission_events.2
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -184,12 +178,13 @@
 	
 	mission_fra_construct_royal_roads = {
 		icon = road_advance_1
-		requires = { mission_fra_develop_paris }
+		requires = { mission_fra_consolidate_ile_de_france }
 		
 		enabled = {
-			capital = {
-				num_roads >= 3
-			}
+			any_owned_location = {
+			num_roads >= 3
+			count >= 10
+		}
 			location:orleans = {
 				has_latest_road_to = location:paris
 			}
@@ -211,7 +206,7 @@
 	}
 
 	mission_fra_connect_french_cities = {
-		icon = infrastructure_advance
+		icon = road_advance_1
 		requires = { mission_fra_construct_royal_roads }
 		
 		enabled = {
@@ -240,9 +235,9 @@
 		
 		enabled = {
 			culture:french = {
-				cultural_tradition >= 400
+				cultural_influence >= 200
 			}
-			total_effective_building_levels:library >= 5
+			total_effective_building_levels:library >= 15
 		}
 		
 		duration = 0
@@ -254,7 +249,7 @@
 				mode = add
 			}
 			culture:french = {
-				add_cultural_tradition = 30
+				add_cultural_influence = 30
 			}
 		}
 		#ai_will_do = { value = 100 }
@@ -268,7 +263,7 @@
 			capital = {
 				has_building_with_at_least_one_level = university
 			}
-			average_country_literacy >= 15
+			average_country_literacy >= 20
 		}
 		
 		duration = 0
@@ -292,8 +287,8 @@
 		
 		enabled = {
 			is_situation_active = situation:hundred_years_war
-			gold >= 600
-			army_size_percentage >= 0.8
+			gold >= 200
+			regular_army_size >= 1
 		}
 		
 		duration = 0
@@ -402,7 +397,6 @@
 				}
 			}
 
-			trigger_event_non_silently = france_mission_events.3
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -440,6 +434,7 @@
 					mode = add
 				}
 			}
+			trigger_event_non_silently = france_mission_events.3
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -512,10 +507,11 @@
 	}
 
 	mission_fra_expel_english_from_france = {
-		icon = war_exhaustion
+		icon = french_heritage
 		requires = { mission_fra_liberate_normandy mission_fra_secure_gascony }
 		
 		enabled = {
+			is_situation_active = situation:hundred_years_war
 			region:france_region = {
 				any_location_in_region = {
 					OR = {
@@ -543,6 +539,7 @@
 			}
 			add_prestige = 30
 			add_stability = 25
+			trigger_event_non_silently = france_mission_events.4
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -594,9 +591,9 @@
 
 		on_completion = {
 			add_casus_belli = {
-				target = c:BUR
+				target = location:dijon.owner
 				type = casus_belli:cb_conquer_province
-				months = 120
+				province = location:dijon.province
 			}
 		}
 		#ai_will_do = { value = 100 }
@@ -768,7 +765,6 @@
 				years = 25
 				mode = add
 			}
-			trigger_event_silently = france_mission_events.2
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -780,6 +776,7 @@
 		requires = { mission_fra_integrate_provence }
 		
 		enabled = {
+			is_situation_active = situation:italian_wars
 			gold >= 1000
 			army_size_percentage >= 0.9
 		}
@@ -864,6 +861,16 @@
 		enabled = {
 			area:savoy_area = {
 				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= { is_subject_of = root }
+						}
+					}
 					has_building_with_at_least_one_level = castle
 					count >= 2
 				}
@@ -887,6 +894,7 @@
 						years = 20
 						mode = add_and_extend
 					}
+					change_development = 5
 				}
 			}
 		}
@@ -919,16 +927,16 @@
 				mode = add
 			}
 			add_casus_belli = {
-				target = c:HAB
+				target = location:vienna.owner
 				type = casus_belli:cb_conquer_province
-				months = 180
+				province = location:vienna.province
 			}
 		}
 		#ai_will_do = { value = 100 }
 	}
 
 	mission_fra_dominate_italy = {
-		icon = empire_icon
+		icon = consolidate_the_royal_domain
 		requires = { mission_fra_secure_genoa mission_fra_counter_habsburg_influence }
 		
 		enabled = {
@@ -970,10 +978,16 @@
 		requires = { mission_fra_develop_paris }
 		
 		enabled = {
-			monthly_income_trade_and_tax >= 75
-			any_owned_location = {
+			monthly_income_trade_and_tax >= 400
+			OR = {
+				any_owned_location = {
 				has_building_with_at_least_one_level = marketplace
+				count >= 30
+				}
+			any_owned_location = {
+				has_building_with_at_least_one_level = merchants_quarters
 				count >= 45
+				}
 			}
 		}
 		
@@ -1025,7 +1039,7 @@
 	# === Silk Industry Branch ===
 	
 	mission_fra_develop_silk_industry = {
-		icon = production_efficiency_advance
+		icon = a_dynamic_society
 		requires = { mission_fra_develop_french_economy }
 		
 		enabled = {
@@ -1051,7 +1065,7 @@
 		enabled = {
 			any_owned_location = {
 				raw_material = goods:silk
-				count >= 8
+				count >= 5
 			}
 			capital.market = {
 				total_goods_value_traded >= 1200
@@ -1102,21 +1116,24 @@
 	
 	mission_fra_establish_absolutist_monarchy = {
 		icon = government_reforms
-		requires = { mission_fra_curtail_noble_power }
+		requires = { mission_fra_establish_intendants }
 		
 		enabled = {
-			"estate_power(estate_type:crown_estate)" >= 0.35
+			"estate_power(estate_type:crown_estate)" >= 0.4
 			"estate_power(estate_type:nobles_estate)" <= 0.25
-			legitimacy >= 90
+			current_age = age_5_absolutism
+			societal_value:absolutism_vs_liberalism < -50
+			legitimacy >= 100
 			stability >= 80
 		}
 		
 		duration = 0
 
 		on_completion = {
+			add_stability = -50
 			add_country_modifier = {
 				modifier = fra_absolutist_monarchy
-				years = 40
+				years = 100
 				mode = add
 			}
 		}
@@ -1124,11 +1141,12 @@
 	}
 
 	mission_fra_establish_intendants = {
-		icon = administrative_efficiency
-		requires = { mission_fra_establish_absolutist_monarchy }
+		icon = estates_general
+		requires = { mission_fra_centralize_administration }
 		
 		enabled = {
-			average_country_literacy >= 30
+			average_country_literacy >= 35
+			"estate_power(estate_type:crown_estate)" >= 0.35
 		}
 		
 		duration = 0
@@ -1136,7 +1154,7 @@
 		on_completion = {
 			add_country_modifier = {
 				modifier = fra_intendant_system
-				years = 30
+				years = -1
 				mode = add
 			}
 		}
@@ -1145,11 +1163,11 @@
 
 	mission_fra_centralize_administration = {
 		icon = government_reforms
-		requires = { mission_fra_establish_intendants }
+		requires = { mission_fra_curtail_noble_power }
 		
 		enabled = {
-			"estate_power(estate_type:crown_estate)" >= 0.45
-			"estate_power(estate_type:nobles_estate)" <= 0.2
+			"estate_power(estate_type:crown_estate)" >= 0.3
+			"estate_power(estate_type:nobles_estate)" <= 0.35
 			average_control_in_home_region >= 0.9
 		}
 		
@@ -1172,10 +1190,10 @@
 		requires = { mission_fra_expel_english_from_france }
 		
 		enabled = {
-			army_size_percentage >= 0.8
+			regular_army_size >= 25
 			any_owned_location = {
-				has_building_with_at_least_one_level = barracks
-				count >= 7
+				has_building_with_at_least_one_level = armory
+				count >= 25
 			}
 		}
 		
@@ -1200,7 +1218,7 @@
 		requires = { mission_fra_reform_french_army }
 		
 		enabled = {
-			army_size >= 80
+			regular_army_size >= 100
 		}
 		
 		duration = 0
@@ -1216,14 +1234,14 @@
 	}
 
 	mission_fra_develop_french_artillery = {
-		icon = artillery_icon
+		icon = artillery_institution_advance
 		requires = { mission_fra_reform_french_army }
 		
 		enabled = {
 			has_embraced_institution = institution:artillery_institution
 			any_owned_location = {
-				has_building_with_at_least_one_level = cannon_maker
-				count >= 5
+				has_building_with_at_least_one_level = cannon_workshop
+				count >= 10
 			}
 			# produced_in_country:iron >= 40
 			# produced_in_country:copper >= 25
@@ -1248,7 +1266,8 @@
 		requires = { mission_fra_develop_brittany_ports }
 		
 		enabled = {
-			navy_size >= 30
+			navy_size >= 100
+			total_sub_unit_count:navy_heavy_ship >= 30
 			any_owned_location = {
 				has_building_with_at_least_one_level = dry_dock
 				count >= 6
@@ -1274,7 +1293,8 @@
 		requires = { mission_fra_develop_atlantic_fleet }
 		
 		enabled = {
-			navy_size >= 50
+			has_embraced_institution = institution:new_world
+			navy_size >= 100
 			navy_tradition >= 30
 			gold >= 2000
 			any_character = {
@@ -1393,7 +1413,7 @@
 					count >= 4
 				}
 			}
-			navy_size >= 70
+			navy_size >= 120
 		}
 		
 		duration = 0
@@ -1411,14 +1431,14 @@
 	# ==================== PHASE 10: CULTURAL AND SCIENTIFIC DEVELOPMENT (1650-1800) ====================
 	
 	mission_fra_promote_french_enlightenment = {
-		icon = research_icon
-		requires = { mission_fra_found_university_of_paris }
+		icon = enlightenment_advance
+		requires = { mission_fra_promote_french_language }
 		
 		enabled = {
 			has_embraced_institution = institution:enlightenment
-			average_country_literacy >= 32
-			total_effective_building_levels:university >= 6
-			total_effective_building_levels:library >= 4
+			average_country_literacy >= 50
+			total_effective_building_levels:university >= 25
+			total_effective_building_levels:library >= 50
 		}
 		
 		duration = 0
@@ -1426,23 +1446,23 @@
 		on_completion = {
 			add_country_modifier = {
 				modifier = fra_french_enlightenment
-				years = 30
+				years = 20
 				mode = add
 			}
-			add_research_progress = research_progress_mild_bonus
+			add_research_progress = 100
 		}
 		#ai_will_do = { value = 100 }
 	}
 
 	mission_fra_promote_french_language = {
 		icon = cultural_acceptance_advance
-		requires = { mission_fra_promote_french_enlightenment }
+		requires = { mission_fra_found_university_of_paris }
 		
 		enabled = {
 			culture:french = {
-				cultural_tradition >= 800
+				cultural_influence >= 1000
 			}
-			total_effective_building_levels:printing_press_shop >= 4
+			total_effective_building_levels:printing_press_shop >= 50
 		}
 		
 		duration = 0
@@ -1450,7 +1470,7 @@
 		on_completion = {
 			add_country_modifier = {
 				modifier = fra_french_language_hegemony
-				years = 20
+				years = 50
 				mode = add
 			}
 		}
@@ -1458,7 +1478,7 @@
 	}
 
 	mission_fra_develop_french_arts = {
-		icon = cultural_acceptance_advance
+		icon = embellish_baroque_art
 		requires = { mission_fra_establish_parlement }
 		
 		enabled = {
@@ -1487,13 +1507,8 @@
 		requires = { mission_fra_develop_brittany_ports }
 		
 		enabled = {
-			navy_size >= 40
-			root = {
-				relative_strength = {
-					target ?= c:GBR
-					value > 0.75
-				}
-			}
+			navy_size >= 50
+			total_sub_unit_count:navy_heavy_ship >= 10
 		}
 		
 		duration = 0
@@ -1509,7 +1524,7 @@
 	}
 
 	mission_fra_establish_french_hegemony = {
-		icon = empire_icon
+		icon = french_tradition
 		requires = { 
 			mission_fra_establish_standing_army
 		}
@@ -1546,16 +1561,18 @@
 	}
 
 	mission_fra_dominate_europe = {
-		icon = empire_icon
+		icon = expansionism
 		requires = { 
-			mission_fra_counter_british_naval_power
+			mission_fra_dominate_italy
+			mission_fra_establish_french_hegemony
+			mission_fra_establish_spy_network_on_burgundy
 		}
 		
 		enabled = {
 			is_hegemon = yes
 
 			total_development >= 4500
-			monthly_income_total >= 750
+			monthly_income_total >= 2500
 			
 		}
 		
@@ -1567,32 +1584,13 @@
 				years = -1
 				mode = add
 			}
+			trigger_event_non_silently = france_mission_events.9
 		}
 		#ai_will_do = { value = 100 }
 	}
 
 	# ==================== PHASE 12: REVOLUTIONARY PATH (ALTERNATIVE) ====================
 	
-	mission_fra_spark_french_revolution = {
-		icon = bill_of_rights
-		requires = { mission_fra_establish_absolutist_monarchy }
-		
-		enabled = {
-			stability <= 75
-			legitimacy <= 50
-			has_embraced_institution = institution:enlightenment
-		}
-		
-		duration = 0
 
-		on_completion = {
-			add_country_modifier = {
-				modifier = fra_revolutionary_ferment
-				years = 35
-				mode = add
-			}
-		}
-		ai_will_do = { value = 50 }
-	}
 
 }

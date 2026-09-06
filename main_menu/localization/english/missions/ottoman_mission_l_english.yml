@@ -118,7 +118,7 @@ mission_tur_develop_anatolian_trade_desc:0 "Expand the trade networks of Anatoli
 
 # ==================== PHASE 9: CULTURAL AND RELIGIOUS DEVELOPMENT MISSIONS ====================
 mission_tur_promote_ottoman_culture:0 "Promote Ottoman Culture"
-mission_tur_promote_ottoman_culture_desc:0 "Foster a unique Ottoman cultural identity that blends Turkic, Islamic, and Byzantine traditions."
+mission_tur_promote_ottoman_culture_desc:0 "Foster a unique Ottoman cultural identity that blends Turkic, Islamic, and Roman traditions."
 
 mission_tur_establish_universities:0 "Establish Universities"
 mission_tur_establish_universities_desc:0 "Create centers of learning across the empire to train scholars, administrators, and scientists."
@@ -320,7 +320,7 @@ STATIC_MODIFIER_DESC_tur_anatolian_trade_network:0 "Anatolia serves as the bridg
 
 # === CULTURAL AND RELIGIOUS ===
 STATIC_MODIFIER_NAME_tur_ottoman_cultural_hegemony:0 "Ottoman Cultural Hegemony"
-STATIC_MODIFIER_DESC_tur_ottoman_cultural_hegemony:0 "Ottoman culture flourishes, blending Turkic, Islamic, and Byzantine traditions into a unique imperial identity."
+STATIC_MODIFIER_DESC_tur_ottoman_cultural_hegemony:0 "Ottoman culture flourishes, blending Turkic, Islamic, and Roman traditions into a unique imperial identity."
 
 STATIC_MODIFIER_NAME_tur_ottoman_learning:0 "Ottoman Learning"
 STATIC_MODIFIER_DESC_tur_ottoman_learning:0 "Centers of learning across the empire produce scholars, scientists, and administrators of the highest caliber."

@@ -1,5 +1,5 @@
 ﻿wales_independence_mission_pack = {
-	icon = generic_capital_economy
+	icon = generic_humiliate_rival_mission_pack
 	chance = 3600
 	repeatable = no
 	player_playstyle = diplomatic
@@ -9,6 +9,9 @@
 	visible = {
 		game_has_missions_enabled = yes
 		tag = "WLS"
+		NOT = {
+				has_global_variable = pv_m_wls
+			}
 	}
 
 	on_start = {
@@ -139,7 +142,7 @@
 		on_completion = {
 			add_country_modifier = {
 				modifier = welsh_longbow_traditions
-				years = 10
+				years = -1
 			}
 		}
 		#ai_will_do = {}

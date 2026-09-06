@@ -155,8 +155,7 @@ gaelic_statecraft = {
 		category = country
 	}
 
-	allow_cabinet_assimilate_area = yes
-	allow_cabinet_diplomatic_corps = yes
+	government_reform_slots = 1
 }
 
 mann_buffer_state = {
@@ -248,8 +247,9 @@ master_of_the_british_isles = {
 	game_data = {
 		category = country
 	}
-
-	global_monthly_control = 0.004
+	government_reform_slots = 1
+	government_size = 1
+	global_max_control = 0.05
 	global_manpower_modifier = 0.10
 }
 
@@ -311,8 +311,11 @@ potato_revolution = {
 }
 
 potato_feeds_ireland = {
-	game_data = { category = country }
-	global_population_growth = 0.0002
+	game_data = {
+		category = country
+		decaying = yes
+	}
+	global_population_growth = 0.005
 	tax_income_efficiency = 0.03
 }
 
@@ -346,14 +349,15 @@ irish_atlantic_empire_trade = {
 irish_atlantic_empire_settler = {
 	game_data = { category = country }
 	colonial_migration_size_modifier = 0.15
-	global_raw_material_output = 0.06
+	global_raw_material_output = 0.1
 }
 
 irish_atlantic_empire_faith = {
 	game_data = { category = country }
-	global_pop_assimilation_speed_modifier = 0.15
-	monthly_religious_rebel_growth = -0.06
+	global_pop_assimilation_speed_modifier = 0.25
+	monthly_religious_rebel_growth = -0.25
 	diplomatic_reputation = 1
+	tolerance_own = 1
 }
 
 # ==================== CORE BRANCH NIEUWE MODIFIERS ====================
@@ -361,12 +365,13 @@ irish_atlantic_empire_faith = {
 crown_through_nobility = {
 	game_data = { category = country }
 	global_crown_estate_power = 0.15
-	global_burghers_estate_power = 0.10
+	global_nobles_estate_power = 0.5
 	monthly_legitimacy = 0.02
 }
 
 crown_through_clergy = {
 	game_data = { category = country }
+	global_clergy_estate_power = 0.5
 	monthly_legitimacy = 0.04
 	monthly_religious_rebel_growth = -0.05
 	global_crown_estate_power = 0.10
@@ -395,21 +400,21 @@ irish_crusade_pledge = {
 
 gaelic_language_official = {
 	game_data = { category = country }
-	cultural_influence_modifier = 0.10
-	global_pop_assimilation_speed_modifier = 0.15
+	cultural_influence_modifier = 0.25
+	global_pop_assimilation_speed_modifier = 0.5
 	monthly_religious_rebel_growth = 0.02
 }
 
 brehon_law_codified = {
 	game_data = { category = country }
-	global_monthly_control = 0.004
+	global_max_control = 0.02
 	stability_investment = 0.08
 	monthly_legitimacy = 0.02
 }
 
 gaelic_renaissance = {
 	game_data = { category = country }
-	institution_growth = 0.10
+	institution_growth_modifier = 0.33
 	monthly_prestige = 0.05
 	global_pop_assimilation_speed_modifier = 0.08
 }
@@ -451,8 +456,8 @@ revenue_of_the_realm = {
 
 prosperous_kingdom = {
 	game_data = { category = country }
-	global_monthly_prosperity = 0.002
-	global_build_buildings_efficiency = 0.04
+	global_monthly_prosperity = 0.001
+	global_build_buildings_efficiency = 0.1
 	global_monthly_development = 0.001
 }
 
@@ -495,33 +500,32 @@ dublin_trading_capital = {
 	game_data = { category = country }
 	global_merchant_power = 0.10
 	trade_land_efficiency = 0.08
-	global_monthly_prosperity = 0.002
+	global_monthly_prosperity = 0.001
 }
 
 dublin_cultural_capital = {
 	game_data = { category = country }
-	institution_growth = 0.10
 	monthly_prestige = 0.05
-	cultural_influence_modifier = 0.10
-	global_pop_assimilation_speed_modifier = 0.10
+	cultural_influence_modifier = 0.5
+	global_pop_assimilation_speed_modifier = 0.5
 }
 
 dublin_political_capital = {
 	game_data = { category = country }
 	global_crown_estate_power = 0.15
-	global_monthly_control = 0.004
+	global_monthly_control = 0.001
 	monthly_legitimacy = 0.03
 }
 
 irish_clerical_authority = {
 	game_data = { category = country }
-	global_estate_max_tax = 0.10
+	global_estate_max_tax = 0.05
 	global_crown_estate_power = -0.10
 }
 
 irish_catholic_learning = {
 	game_data = { category = country }
-	global_population_growth = 0.0002
+	global_population_growth = 0.0025
 	tax_income_efficiency = -0.02
 }
 

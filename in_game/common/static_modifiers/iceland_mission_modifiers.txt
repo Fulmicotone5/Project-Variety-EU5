@@ -33,7 +33,8 @@ icelandic_sovereignty_asserted = {
 icelandic_commonwealth_restored = {
 	game_data = { category = country }
 	icon = empire_icon
-	stability_cost_efficiency = -0.12
+	government_reform_slots = 2
+	government_size = 2
 	monthly_legitimacy = 0.03
 	prestige_decay = -0.05
 	diplomatic_reputation = 2
@@ -280,7 +281,7 @@ healing_hot_springs = {
 	game_data = { category = location }
 	icon = fertile_lands
 	local_disease_resistance = 0.20
-	local_population_growth = 0.0003
+	local_population_growth = 0.003
 	local_clergy_max_literacy = 5
 	local_construction_speed = 0.05
 }

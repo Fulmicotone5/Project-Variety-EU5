@@ -1,0 +1,395 @@
+namespace = ottoman_mission_events
+
+# ==================== EVENT 1: CONSOLIDATE ANATOLIA ====================
+ottoman_mission_events.1 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.1.t
+	desc = ottoman_mission_events.1.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:crown_estate 
+			background = estate_type:nobles_estate 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.1.a
+		custom_tooltip = ottoman_mission_events.1.a.tt
+		
+		add_legitimacy = 15
+	}
+
+	option = {
+		name = ottoman_mission_events.1.b
+		custom_tooltip = ottoman_mission_events.1.b.tt
+		
+		add_gold = 200
+	}
+}
+
+# ==================== EVENT 3: CONQUER THRACE ====================
+ottoman_mission_events.3 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.3.t
+	desc = ottoman_mission_events.3.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:burghers 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.3.a
+		custom_tooltip = ottoman_mission_events.3.a.tt
+		
+		location:constantinople = {
+			change_development = 1
+			change_prosperity = prosperity_mild_bonus
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.3.b
+		custom_tooltip = ottoman_mission_events.3.b.tt
+		
+		add_gold = 500
+		add_estate_satisfaction = {
+			type = estate_type:burghers_estate
+			value = estate_satisfaction_mild_bonus
+		}
+	}
+}
+
+# ==================== EVENT 5: CONQUER THE LEVANT ====================
+ottoman_mission_events.5 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.5.t
+	desc = ottoman_mission_events.5.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:clergy_estate 
+			background = estate_type:clergy_estate 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.5.a
+		custom_tooltip = ottoman_mission_events.5.a.tt
+		
+		add_gold = 750
+		area:levant_area = {
+			ordered_location_in_area = {
+				limit = { owner ?= root }
+				order_by = development
+				max = 5
+				change_prosperity = prosperity_weak_bonus
+			}
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.5.b
+		custom_tooltip = ottoman_mission_events.5.b.tt
+		
+		add_religious_influence = 30
+		add_country_modifier = {
+			modifier = tur_levantine_administration
+			years = 25
+			mode = add
+		}
+	}
+}
+
+# ==================== EVENT 6: GUARD THE HOLY CITIES ====================
+ottoman_mission_events.6 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.6.t
+	desc = ottoman_mission_events.6.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:clergy_estate 
+			background = estate_type:clergy_estate 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.6.a
+		custom_tooltip = ottoman_mission_events.6.a.tt
+		
+		add_country_modifier = {
+			modifier = tur_custodian_of_islam
+			years = -1
+			mode = add_and_extend
+		}
+		add_legitimacy = 25
+	}
+
+	option = {
+		name = ottoman_mission_events.6.b
+		custom_tooltip = ottoman_mission_events.6.b.tt
+		
+		location:mecca = {
+			add_location_modifier = {
+				modifier = tur_holy_city_protectorate
+				years = -1
+				mode = add
+			}
+		}
+		location:medina = {
+			add_location_modifier = {
+				modifier = tur_holy_city_protectorate
+				years = -1
+				mode = add
+			}
+		}
+	}
+}
+
+# ==================== EVENT 7: CALIPHATE AMBITIONS ====================
+ottoman_mission_events.7 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.7.t
+	desc = ottoman_mission_events.7.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = happy
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:clergy_estate 
+			background = estate_type:crown_estate 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.7.a
+		custom_tooltip = ottoman_mission_events.7.a.tt
+		
+		add_gold = 1000
+		add_legitimacy = 20
+		add_stability = 20
+	}
+
+	option = {
+		name = ottoman_mission_events.7.b
+		custom_tooltip = ottoman_mission_events.7.b.tt
+		
+		add_religious_influence = 30
+		change_societal_value = {
+			type = spiritualist_vs_humanist
+			value = societal_value_move_to_left
+		}
+	}
+}
+
+# ==================== EVENT 8: CONQUER EGYPT ====================
+ottoman_mission_events.8 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.8.t
+	desc = ottoman_mission_events.8.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:laborers 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.8.a
+		custom_tooltip = ottoman_mission_events.8.a.tt
+		
+		add_gold = 1500
+		region:egypt_region = {
+			ordered_location_in_region = {
+				limit = { owner ?= root }
+				order_by = development
+				max = 5
+				change_prosperity = prosperity_weak_bonus
+				change_control = 0.1
+			}
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.8.b
+		custom_tooltip = ottoman_mission_events.8.b.tt
+		
+		add_country_modifier = {
+			modifier = tur_egyptian_granary
+			years = 25
+			mode = add
+		}
+		add_stability = 10
+	}
+}
+
+# ==================== EVENT 9: REFORM THE JANISSARIES ====================
+ottoman_mission_events.9 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.9.t
+	desc = ottoman_mission_events.9.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:soldiers 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.9.a
+		custom_tooltip = ottoman_mission_events.9.a.tt
+		
+		add_army_tradition = 20
+	}
+
+	option = {
+		name = ottoman_mission_events.9.b
+		custom_tooltip = ottoman_mission_events.9.b.tt
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.2
+		}
+	}
+}
+
+# ==================== EVENT 16: ADMINISTRATIVE REFORM ====================
+ottoman_mission_events.16 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.16.t
+	desc = ottoman_mission_events.16.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = interior
+	}
+
+	immediate = {
+		event_illustration_estate_effect = { 
+			foreground = estate_type:crown_estate 
+			background = estate_type:crown_estate 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.16.a
+		custom_tooltip = ottoman_mission_events.16.a.tt
+		
+		add_legitimacy = 30
+		add_stability = 30
+	}
+
+	option = {
+		name = ottoman_mission_events.16.b
+		custom_tooltip = ottoman_mission_events.16.b.tt
+		
+		add_country_modifier = {
+			modifier = tur_legal_reforms
+			years = 30
+			mode = add
+		}
+		add_research_progress = 10
+	}
+}
+
+# ==================== EVENT 18: CONQUER HUNGARY ====================
+ottoman_mission_events.18 = {
+	type = country_event
+	category = mission_event
+	title = ottoman_mission_events.18.t
+	desc = ottoman_mission_events.18.d
+	outcome = neutral
+	fire_only_once = yes
+	
+	illustration_tags = {
+		10 = regular
+		10 = exterior
+	}
+
+	immediate = {
+		event_illustration_poptype_effect = { 
+			foreground = pop_type:soldiers 
+			background = pop_type:peasants 
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.18.a
+		custom_tooltip = ottoman_mission_events.18.a.tt
+		
+		add_manpower = {
+			value = max_manpower
+			multiply = 0.2
+		}
+	}
+
+	option = {
+		name = ottoman_mission_events.18.b
+		custom_tooltip = ottoman_mission_events.18.b.tt
+		
+		add_gold = 750
+	}
+}

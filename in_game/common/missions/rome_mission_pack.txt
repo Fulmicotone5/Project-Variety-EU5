@@ -1,4 +1,4 @@
-﻿byzantium_mission_pack = {
+﻿pvrome_mission_pack = {
 	icon = generic_capital_economy
 	chance = 3600
 	repeatable = no
@@ -10,7 +10,6 @@
 		game_has_missions_enabled = yes
 		OR = {
 			tag = "BYZ"
-			tag = "ROM"
 		}
 	}
 
@@ -37,7 +36,7 @@
 		remove_variable = mission_target_silk_production
 	}
 
-	# ==================== PHASE 1: BYZANTINE SURVIVAL & CONSOLIDATION ====================
+	# ==================== PHASE 1: roman SURVIVAL & CONSOLIDATION ====================
 	
 	mission_consolidate_thrace = {
 		icon = defensive_army
@@ -152,7 +151,7 @@
 		#ai_will_do = { value = 100 }
 	}
 
-	mission_rebuild_byzantine_navy = {
+	mission_rebuild_roman_navy = {
 		icon = maritime_advance_age_2
 		requires = { mission_repair_golden_horn }
 		
@@ -168,7 +167,7 @@
 
 		on_completion = {
 			add_country_modifier = {
-				modifier = restored_byzantine_navy
+				modifier = restored_roman_navy
 				years = 30
 				mode = add
 			}
@@ -201,7 +200,7 @@
 
 	mission_secure_aegean = {
 		icon = ship_building_advance
-		requires = { mission_rebuild_byzantine_navy }
+		requires = { mission_rebuild_roman_navy }
 		
 		enabled = {
 			area:aegean_archipelago_area = {
@@ -850,7 +849,7 @@
 
 		on_completion = {
 			add_country_modifier = {
-				modifier = byzantine_silk_trade
+				modifier = roman_silk_trade
 				years = 40
 				mode = add
 			}

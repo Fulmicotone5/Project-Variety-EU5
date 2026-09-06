@@ -3,7 +3,7 @@
  
  wales_independence_mission_pack: "Welsh Independence Struggle"
  wales_independence_mission_pack_desc: "Lead the Welsh people to independence and establish a sovereign Welsh kingdom."
- wales_independence_expansion_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to secure the control of the Welsh land and unite it under one strong kingdom."
+ wales_independence_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to secure the control of the Welsh land and unite it under one strong kingdom."
  wales_independence_mission_pack_CRITERIA_DESCRIPTION:0 "Achieve Welsh independence from English rule and establish a strong, united Welsh kingdom."
  
  mission_develop_welsh_heartland: "Develop the Welsh Heartland"

@@ -140,21 +140,6 @@ VLN = {
 }
 
 
-ACH = {
-	color = map_achaian
-	color2 = rgb { 157 87 123 } #new color
-
-	culture_definition = greek_culture
-	religion_definition = catholic
-}
-
-ATH = {
-	color = map_athenian
-	color2 = rgb { 41 188 84 } #new color
-
-	culture_definition = greek_culture
-	religion_definition = catholic
-}
 
 CEP = {
 	color = map_cephalonian
@@ -162,18 +147,6 @@ CEP = {
 
 	culture_definition = greek_culture
 	religion_definition = catholic
-}
-
-
-
-LAT = {
-	color = map_LAT
-	color2 = rgb { 200 15 5 } #new color
-
-	culture_definition = greek_culture
-	religion_definition = catholic
-
-	is_historic = yes
 }
 
 

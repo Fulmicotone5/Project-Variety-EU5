@@ -3,15 +3,20 @@ monthly_country_pulse = {
 		PV_alert.1
 	}
 	effect = {
-		ordered_country = {
+		if = {
 			limit = {
-				is_ai = no
+				is_multiplayer_session = yes
 			}
-			order_by = monthly_balance
-			max = 1
-			add_country_modifier = {
-				modifier = small_nerf
-				months = 1
+			ordered_country = {
+				limit = {
+					is_ai = no
+				}
+				order_by = country_tax_base
+				max = 1
+				add_country_modifier = {
+					modifier = small_nerf
+					months = 1
+				}
 			}
 		}
 		if = {

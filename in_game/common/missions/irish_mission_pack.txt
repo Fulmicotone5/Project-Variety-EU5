@@ -1,5 +1,5 @@
 irish_mission_pack = {
-	icon = generic_capital_economy
+	icon = celtic_mission
 	chance = 3600
 	repeatable = no
 	player_playstyle = diplomatic
@@ -31,6 +31,13 @@ irish_mission_pack = {
 			has_or_had_tag = "UMH"
 			has_or_had_tag = "IRE"
 		}
+		NOT = {
+				has_global_variable = pv_m_iri
+			}
+	}
+
+	on_start = {
+		set_global_variable = pv_m_iri
 	}
 
 	# ==================== BRANCH 1: ANTI-PALE ====================
@@ -97,7 +104,7 @@ irish_mission_pack = {
 	}
 
 	mission_rival_the_pale = {
-		icon = rival_the_pale
+		icon = independence_from_mali
 		requires = { mission_threaten_the_pale }
 
 		enabled = {
@@ -164,7 +171,7 @@ irish_mission_pack = {
 								owner ?= { is_subject_of = root }
 							}
 						}
-						percent >= 0.50
+						percent >= 0.25
 					}
 				}
 				area:leinster_area = {
@@ -209,7 +216,7 @@ irish_mission_pack = {
 								owner ?= { is_subject_of = root }
 							}
 						}
-						percent >= 0.50
+						percent >= 0.25
 					}
 				}
 			}
@@ -473,7 +480,7 @@ irish_mission_pack = {
 	}
 
 	mission_unite_ireland = {
-		icon = unite_ireland
+		icon = ple_irish_viking_towns_advance
 		requires = { mission_break_the_pale }
 
 		enabled = {
@@ -482,7 +489,7 @@ irish_mission_pack = {
 			area:ulster_area = {
 				any_location_in_area = {
 					is_owned_or_owned_by_subjects_or_below_of = root
-					count = all
+					count = 26
 				}
 			}
 			area:leinster_area = {
@@ -500,7 +507,7 @@ irish_mission_pack = {
 			area:connaught_area = {
 				any_location_in_area = {
 					is_owned_or_owned_by_subjects_or_below_of = root
-					count = all
+					count = 19
 				}
 			}
 		}
@@ -759,7 +766,7 @@ irish_mission_pack = {
 	}
 
 	mission_seat_of_the_gaelic_world = {
-		icon = seat_of_the_gaelic_world
+		icon = finest_of_horses
 		requires = {
 			mission_fate_of_mann
 			mission_irish_catholicism
@@ -868,7 +875,7 @@ irish_mission_pack = {
 		enabled = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = anti_english_policy
-			total_effective_building_levels:fortress >= 3
+			total_effective_building_levels:castle >= 3
 		}
 
 		duration = 0
@@ -1214,13 +1221,15 @@ irish_mission_pack = {
 		enabled = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = irish_english_accord
-
-			total_effective_building_levels:shipyard >= 3
-			total_effective_building_levels:dock >= 4
+			or = {
+				total_effective_building_levels:dock >= 3
+				total_effective_building_levels:dry_dock >= 6
+				total_effective_building_levels:shipyard >= 12
+			}
 
 			capital = {
 				location_building_level = {
-					building_type = building_type:dock
+					building_type = building_type:shipyard
 					value >= 1
 				}
 			}
@@ -1246,19 +1255,11 @@ irish_mission_pack = {
 		enabled = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = irish_english_accord
-			monthly_income_trade_and_tax >= 75
+			monthly_income_trade_and_tax >= 500
 
 			capital = {
 				is_market_center = yes
 
-				location_building_level = {
-					building_type = building_type:banking_office
-					value >= 1
-				}
-				location_building_level = {
-					building_type = building_type:dock
-					value >= 1
-				}
 			}
 		}
 
@@ -1282,7 +1283,7 @@ irish_mission_pack = {
 		enabled = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = irish_english_accord
-			monthly_income_trade_and_tax >= 125
+			monthly_income_trade_and_tax >= 750
 			legitimacy >= 65
 			total_debt <= 0
 
@@ -1292,15 +1293,25 @@ irish_mission_pack = {
 
 				location_building_level = {
 					building_type = building_type:banking_office
-					value >= 2
+					value >= 1
 				}
 				location_building_level = {
+					building_type = building_type:university
+					value >= 1
+				}
+				or = {
+					location_building_level = {
 					building_type = building_type:marketplace
-					value >= 2
-				}
-				location_building_level = {
-					building_type = building_type:dock
-					value >= 2
+					value >= 5
+					}
+					location_building_level = {
+					building_type = building_type:merchants_quarters
+					value >= 8
+					}
+					location_building_level = {
+					building_type = building_type:grand_marketplace
+					value >= 10
+					}
 				}
 			}
 		}
@@ -1326,10 +1337,10 @@ irish_mission_pack = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = irish_english_accord
 			stability >= 70
-			legitimacy >= 70
+			legitimacy >= 100
 
-			total_effective_building_levels:university >= 3
-			total_effective_building_levels:arts_academy >= 2
+			total_effective_building_levels:university >= 5
+			total_effective_building_levels:arts_academy >= 1
 
 			capital = {
 				prosperity >= 0.60
@@ -1349,7 +1360,7 @@ irish_mission_pack = {
 	}
 
 	mission_ally_with_england = {
-		icon = ally_with_england
+		icon = english_heritage
 		requires = {
 			mission_cultural_exchange
 		}
@@ -1406,15 +1417,15 @@ irish_mission_pack = {
 	}
 
 	mission_senior_partner = {
-		icon = senior_partner
+		icon = separation_of_powers
 		requires = { mission_ally_with_england }
 
 
 		enabled = {
 			has_or_had_tag = "IRE"
 			has_country_modifier = irish_english_accord
-			monthly_income_trade_and_tax >= 150
-			legitimacy >= 85
+			monthly_income_trade_and_tax >= 1000
+			legitimacy >= 100
 			prestige >= 40
 
 			custom_tooltip = {
@@ -1572,17 +1583,24 @@ irish_mission_pack = {
 
 			location:manhattan = {
 				owner ?= root
-				location_building_level = {
-					building_type = building_type:scriptorium
-					value >= 1
-				}
-				location_building_level = {
-					building_type = building_type:dock
-					value >= 1
-				}
-				location_building_level = {
+				OR = {
+						has_building_with_at_least_one_level = dock
+						has_building_with_at_least_one_level = dry_dock
+						has_building_with_at_least_one_level = shipyard
+					}
+				or = {
+					location_building_level = {
 					building_type = building_type:marketplace
 					value >= 1
+					}
+					location_building_level = {
+					building_type = building_type:merchants_quarters
+					value >= 1
+					}
+					location_building_level = {
+					building_type = building_type:grand_marketplace
+					value >= 1
+					}
 				}
 			}
 		}
@@ -1601,7 +1619,7 @@ irish_mission_pack = {
 	}
 
 	mission_flight_of_the_wild_geese = {
-		icon = flight_of_the_wild_geese
+		icon = minting_trade_range_trad_building
 		requires = { mission_the_potato_comes_home }
 
 		enabled = {
@@ -1789,16 +1807,31 @@ irish_mission_pack = {
 				is_market_center = yes
 				prosperity >= 0.40
 
-				location_building_level = {
-					building_type = building_type:arts_academy
+				OR = {
+						has_building_with_at_least_one_level = dock
+						has_building_with_at_least_one_level = dry_dock
+						has_building_with_at_least_one_level = shipyard
+					}
+				or = {
+					location_building_level = {
+					building_type = building_type:marketplace
 					value >= 1
+					}
+					location_building_level = {
+					building_type = building_type:merchants_quarters
+					value >= 1
+					}
+					location_building_level = {
+					building_type = building_type:grand_marketplace
+					value >= 1
+					}
 				}
 				location_building_level = {
 					building_type = building_type:theater
 					value >= 1
 				}
 				location_building_level = {
-					building_type = building_type:banking_office
+					building_type = building_type:hospital
 					value >= 1
 				}
 				location_building_level = {
@@ -1838,19 +1871,20 @@ irish_mission_pack = {
 
 			total_effective_building_levels:bailiff >= 10
 			total_effective_building_levels:irrigation_systems >= 14
-			total_effective_building_levels:banking_office >= 3
+			total_effective_building_levels:counting_house >= 5
 
 			capital = {
 				prosperity >= 0.50
 
 				location_building_level = {
-					building_type = building_type:banking_office
+					building_type = building_type:counting_house
 					value >= 1
 				}
-				location_building_level = {
-					building_type = building_type:theater
-					value >= 1
-				}
+				OR = {
+						has_building_with_at_least_one_level = early_council_hall
+						has_building_with_at_least_one_level = council_hall
+						has_building_with_at_least_one_level = modern_council_hall
+					}
 			}
 		}
 
@@ -1876,12 +1910,11 @@ irish_mission_pack = {
 	}
 
 	mission_the_black_stuff = {
-		icon = The_Black_Stuff
+		icon = scottish_whisky
 		requires = { mission_the_heart_of_ireland }
 
 		enabled = {
 			has_or_had_tag = "IRE"
-			total_effective_building_levels:beer_workshop >= 4
 			total_effective_building_levels:brewery >= 7
 		}
 
@@ -1899,26 +1932,21 @@ irish_mission_pack = {
 	}
 
 	mission_a_thriving_pub_life = {
-		icon = thriving_pub_life
+		icon = trade_center_building_country_advance
 		requires = { mission_the_black_stuff }
 
 		enabled = {
 			has_or_had_tag = "IRE"
-			stability >= 70
-			total_effective_building_levels:beer_workshop >= 7
-			total_effective_building_levels:brewery >= 10
-			total_effective_building_levels:theater >= 3
+			stability >= 50
+			total_effective_building_levels:beer_workshop >= 15
+			total_effective_building_levels:theater >= 10
 
 			capital = {
 				prosperity >= 0.50
 
 				location_building_level = {
 					building_type = building_type:beer_workshop
-					value >= 1
-				}
-				location_building_level = {
-					building_type = building_type:brewery
-					value >= 3
+					value >= 5
 				}
 			}
 		}
@@ -1950,9 +1978,8 @@ irish_mission_pack = {
 
 			total_effective_building_levels:bailiff >= 14
 			total_effective_building_levels:irrigation_systems >= 18
-			total_effective_building_levels:theater >= 4
-			total_effective_building_levels:banking_office >= 4
-			total_effective_building_levels:shipyard >= 1
+			total_effective_building_levels:theater >= 15
+			total_effective_building_levels:counting_house >= 15
 
 			capital = {
 				is_market_center = yes
@@ -1974,10 +2001,11 @@ irish_mission_pack = {
 					building_type = building_type:banking_office
 					value >= 1
 				}
-				location_building_level = {
-					building_type = building_type:dock
-					value >= 1
-				}
+				OR = {
+						has_building_with_at_least_one_level = dock
+						has_building_with_at_least_one_level = dry_dock
+						has_building_with_at_least_one_level = shipyard
+					}
 			}
 		}
 
@@ -2001,7 +2029,7 @@ irish_mission_pack = {
 		# ==================== FINAL MISSION ====================
 
 	mission_eire_go_brach = {
-		icon = eire_go_brach
+		icon = mandate_of_the_khan
 		requires = {
 			mission_seat_of_the_gaelic_world
 			mission_harvests_of_the_atlantic
@@ -2011,7 +2039,7 @@ irish_mission_pack = {
 
 		enabled = {
 			has_or_had_tag = "IRE"
-			stability >= 100
+			stability >= 75
 			legitimacy >= 100
 
 			OR = {
@@ -2019,9 +2047,6 @@ irish_mission_pack = {
 				has_country_modifier = gaelic_britannic_union
 			}
 
-			capital = {
-				prosperity >= 1
-			}
 		}
 
 		duration = 0

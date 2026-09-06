@@ -3,6 +3,8 @@
  iceland_mission_pack_desc: "Guide Iceland from a forgotten Norwegian subject to a free commonwealth, master of the North Atlantic fishing grounds, and a nation that planted its banner in the New World five centuries before Columbus thought to look west. Break the Danish trade monopoly, endure Móðuharðindin, bring the printing press to Hólar, and build a kingdom that outlasts every hardship the island can throw at it."
  iceland_mission_pack_BUTTON_TOOLTIP: "Complete missions to restore the Althing, expel foreign fishermen from Icelandic waters, reach Vinland, break the trade monopoly, survive Móðuharðindin, and found the Kingdom of Iceland."
  iceland_mission_pack_CRITERIA_DESCRIPTION: "Strengthen the Althing, assert Icelandic law, break free from Scandinavian overlords, dominate the fishing grounds, develop the northern ports, secure Greenland, reach Vinland, defy the Danish trade monopoly, endure Móðuharðindin, bring the press to Hólar, and found the Kingdom of Iceland."
+ iceland_mission_pack_BUTTON_DETAILS: "Complete missions to restore the Althing, expel foreign fishermen from Icelandic waters, reach Vinland, break the trade monopoly, survive Móðuharðindin, and found the Kingdom of Iceland."
+ iceland_mission_pack_CRITERIA_DESC: "Strengthen the Althing, assert Icelandic law, break free from Scandinavian overlords, dominate the fishing grounds, develop the northern ports, secure Greenland, reach Vinland, defy the Danish trade monopoly, endure Móðuharðindin, bring the press to Hólar, and found the Kingdom of Iceland."
 
  # ==================== MISSION NAMES & DESCRIPTIONS ====================
  mission_ice_strengthen_the_althing: "Strengthen the Althing"
@@ -17,7 +19,7 @@
  mission_ice_icelandic_independence_desc: "First Norway. Then Denmark. Centuries of foreign crowns treating Iceland like an afterthought in a budget meeting. No longer. The Althing speaks for Iceland alone now — and with the whole of Greenland finally in Icelandic hands, there's rather more of a Commonwealth to speak for than there used to be."
  mission_ice_icelandic_independence_tooltip: "Requires Greenland bought out in full, no debts, strong crown authority, and no foreign master left to answer to."
 
- mission_ice_plea_for_greenland: "Buying Out Greenland"
+ mission_ice_plea_for_greenland: "The Acquisition of Greenland"
  mission_ice_plea_for_greenland_desc: "Greenland has belonged to the Norwegian crown for generations, and no fleet Iceland can muster is going to change that by force — not against a kingdom this well-connected. But relations between Reykjavík and the Norwegian court have never been warmer, and gold, it turns out, speaks just as clearly as any treaty. A distant, cold territory that costs more to hold than it earns is exactly the kind of thing a crown will sell, for the right price."
  mission_ice_plea_for_greenland_tooltip: "Requires excellent relations with Norway (or its absence), no outstanding loans, and at least 200 gold in the treasury to pay for it."
 

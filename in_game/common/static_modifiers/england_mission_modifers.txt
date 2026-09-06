@@ -53,22 +53,25 @@ irish_expansion = {
 lordship_of_ireland = {
 	icon = crown_icon
 	global_max_control = 0.05
-	global_monthly_control = 0.04
-	subject_loyalty = 0.05
+	global_monthly_control = 0.001
+	subject_loyalty = 5
 }
 
 british_isles_unified = {
 	icon = empire_icon
 	global_manpower_modifier = 0.10
 	cultural_influence_modifier = 0.10
-	global_max_control = 0.15
+	global_monthly_control = 0.001
 }
 
 kingdom_of_great_britain = {
 	icon = empire_icon
 	diplomatic_capacity_modifier = 0.10
-	# #great_power_score_modifier = 0.10
+	monthly_legitimacy = 0.1
 	government_reform_slots = 1
+	global_crown_estate_power = -0.25
+	global_burghers_estate_power = 0.25
+	global_peasants_estate_power = 0.25
 }
 
 # Phase 3: French Wars
@@ -124,9 +127,8 @@ dual_monarchy_established = {
 royal_navy_established = {
 	icon = ship_building_advance
 	navy_tradition_decay = -0.01
-	navy_heavy_ship_power = 0.15
+	navy_heavy_ship_power = 0.05
 	navy_light_ship_power = 0.10
-	ship_build_speed = 0.20
 }
 
 premier_naval_base = {
@@ -190,7 +192,6 @@ baltic_trade_dominance = {
 	global_merchant_power = 0.05
 	global_trade_center_power = 0.05
 	local_raw_material_output = 0.10
-	merchant_power_from_building = 0.05
 }
 
 spice_trade_monopoly_eng = {
@@ -265,7 +266,7 @@ sun_never_sets_on_british_empire = {
 	monthly_prestige = 0.10
 	#great_power_score_modifier = 0.20
 	diplomatic_capacity_modifier = 0.20
-	government_reform_slots = 1
+	government_size = 2
 }
 
 # Phase 7: Religious Reformation
@@ -309,8 +310,9 @@ magna_carta_tradition = {
 
 english_common_law = {
 	icon = government_reforms
+	global_crown_estate_power = 0.25
 	legislative_efficiency = 0.125
-	research_speed_modifier = 0.025
+	global_pop_promotion_speed_modifier = 0.25
 }
 
 glorious_revolution = {
@@ -336,14 +338,14 @@ english_cultural_renaissance = {
 
 oxford_university = {
 	icon = technology_icon
-	research_speed_modifier = 0.001
-	global_monthly_literacy = 0.25
+	research_speed_modifier = 0.025
+	global_monthly_literacy = 0.025
 	skill_of_new_artists = 0.15
 }
 
 oxbridge_tradition = {
 	icon = technology_icon
-	research_speed_modifier = 0.2
+	research_speed_modifier = 0.1
 }
 
 globe_theatre = {
@@ -354,13 +356,13 @@ globe_theatre = {
 
 royal_society_established = {
 	icon = research_icon
-	research_speed_modifier = 0.025
+	research_speed_modifier = 0.05
 	institution_growth = 0.10
 }
 
 english_literary_tradition = {
 	icon = cultural_acceptance_advance
-	global_max_literacy = 0.10
+	global_max_literacy = 2
 }
 
 # Phase 10: Military Reforms
@@ -384,7 +386,7 @@ redcoat_regiments = {
 	icon = offensive_army
 	discipline = 0.05
 	land_morale_modifier = 0.10
-	army_light_infantry_power = 0.10
+	army_heavy_infantry_power = 0.10
 }
 
 # Phase 11: Industrial Revolution
@@ -477,15 +479,15 @@ royal_prerogative = {
 london_commercial_hub = {
 	icon = trade_icon
 	local_production_efficiency = 0.08
-	local_monthly_development = 0.15
+	local_monthly_development_modifier = 0.15
 	local_migration_attraction = 0.20
 }
 
 london_cultural_center = {
 	icon = cultural_acceptance_advance
+	local_cultural_influence = 0.25
 	local_monthly_literacy = 0.075
 	local_max_literacy = 0.08
-	cultural_tradition_modifier = 0.05
 	local_pop_assimilation_speed_modifier = 0.125
 }
 
@@ -498,9 +500,10 @@ wool_trade_expansion = {
 
 cloth_manufacturing = {
 	icon = production_efficiency_advance
-	global_cloth_output_modifier = 0.20
+	global_cloth_output_modifier = 0.05
+	global_fine_cloth_output_modifier = 0.05
 	global_production_efficiency = 0.025
-	local_raw_material_output = 0.10
+	local_raw_material_output = 0.05
 }
 
 parliamentary_government = {
@@ -515,7 +518,7 @@ balanced_constitution = {
 	icon = government_reforms
 	global_estate_target_satisfaction = -0.05
 	nobles_estate_target_satisfaction = -0.05
-	global_crown_estate_power = 0.10
+	global_crown_estate_power = 0.25
 }
 
 # Phase 2: British Isles Expansion Events
@@ -529,10 +532,10 @@ welsh_integration = {
 
 northern_loyalty = {
 	icon = defensive_army
-	local_defensive = 0.25
+	local_defensive = 0.1
 	# fort_level = 1
 	local_supply_limit_modifier = 0.15
-	global_estate_target_satisfaction = 0.10
+	global_estate_target_satisfaction = 0.05
 }
 
 loyal_northern_bastion = {
@@ -545,10 +548,16 @@ loyal_northern_bastion = {
 
 martial_law_north = {
 	icon = defensive_army
-	local_unrest = -0.3
-	local_monthly_control = 0.10
-	local_max_control = 0.05
-	monthly_army_tradition = 0.05
+	local_unrest = 0.25
+	local_monthly_control = 0.0010
+	local_max_control = 0.1
+}
+
+martial_law_nor = {
+	icon = defensive_army
+	local_unrest = 0.25
+	local_monthly_control = 0.0010
+	local_max_control = 0.1
 }
 
 reinforced_northern_castle = {
@@ -580,8 +589,8 @@ gaelic_accommodation = {
 dynastic_legitimacy = {
 	icon = crown_icon
 	improve_relation_impact = 0.15
-	local_raw_material_output = 0.10
-	local_unrest = -0.15
+	monthly_legitimacy = 0.1
+	monthly_prestige = 0.1
 }
 
 island_nation_strength = {
@@ -611,8 +620,8 @@ continental_hegemony = {
 # Phase 4: Naval Supremacy Events
 shipbuilding_program = {
 	icon = production_efficiency_advance
-	max_ships_built_at_same_time = 1
-	global_sailors_modifier = 0.12
+	ship_build_speed = 0.25
+	global_sailors_modifier = 0.2
 }
 
 # Phase 5: Trade and Economy Events
@@ -631,11 +640,12 @@ oriental_trade = {
 financial_capital = {
 	icon = production_efficiency_advance
 	total_loan_capacity_modifier = 0.10
+	bank_interest = -0.01
 }
 
 banking_hub = {
 	icon = court_accounting
-	bank_interest = -0.01
+	minting_inflation_threshold = 0.03
 }
 
 modern_banking = {
@@ -729,7 +739,7 @@ royal_supremacy = {
 religious_settlement = {
 	icon = religious_icon
 	global_estate_target_satisfaction = 0.05
-	global_crown_estate_power = 0.05
+	global_crown_estate_power = 0.1
 	clergy_estate_target_satisfaction = 0.125
 }
 
@@ -780,7 +790,7 @@ bill_of_rights = {
 
 literary_tradition = {
 	icon = cultural_acceptance_advance
-	research_speed_modifier = 0.02
+	research_speed_modifier = 0.01
 	global_monthly_literacy = 0.05
 }
 
@@ -794,7 +804,8 @@ academic_center = {
 
 enlightenment_ideas = {
 	icon = research_icon
-	cultural_tradition_modifier = 0.15
+	tolerance_heretic = 1
+	tolerance_heathen = 1
 	global_monthly_literacy = 0.10
 }
 
@@ -803,11 +814,12 @@ enlightenment_ideas = {
 professional_army = {
 	icon = medieval_military
 	army_tradition_from_battle = 0.20
+	monthly_army_tradition = 0.05
 }
 
 military_reforms = {
 	icon = military_training_advance
-	expected_army_size_modifier = 0.20
+	global_manpower_modifier = 0.05
 }
 
 # Phase 11: Industrial Revolution Events

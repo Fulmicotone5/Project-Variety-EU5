@@ -6,10 +6,14 @@ iceland_mission_pack = {
 	visible = {
 		game_has_missions_enabled = yes
 		tag = "ICE"
+		NOT = {
+				has_global_variable = pv_m_icel
+			}
 	}
 
-	on_start = {
-	}
+
+    on_start = { 
+        set_global_variable = pv_m_icel
 
 	on_completion = {
 		add_prestige = 75
@@ -69,7 +73,7 @@ iceland_mission_pack = {
 				mode = add
 			}
 			add_stability = 5
-			trigger_event_silently = iceland_mission_events.1
+			trigger_event_non_silently = iceland_mission_events.1
 		}
 	}
 
@@ -103,9 +107,7 @@ iceland_mission_pack = {
 		requires = { mission_ice_plea_for_greenland }
 
 		enabled = {
-			NOT = { is_subject_of = c:NOR }
-			NOT = { is_subject_of = c:DAN }
-			NOT = { is_subject_of = c:SCA }
+			is_subject = no
 			num_loans = 0
 			legitimacy >= 70
 			"estate_power(estate_type:crown_estate)" >= 0.25
@@ -127,7 +129,7 @@ iceland_mission_pack = {
 			}
 			add_legitimacy = 10
 			add_stability = 5
-			trigger_event_silently = iceland_mission_events.2
+			trigger_event_non_silently = iceland_mission_events.2
 		}
 	}
 
@@ -229,7 +231,7 @@ iceland_mission_pack = {
 			}
 			add_gold = { value = monthly_income_trade_and_tax multiply = 4 }
 			add_legitimacy = 5
-			trigger_event_silently = iceland_mission_events.3
+			trigger_event_non_silently = iceland_mission_events.3
 		}
 	}
 
@@ -303,7 +305,7 @@ iceland_mission_pack = {
 				}
 			}
 			add_gold = { value = monthly_income_trade_and_tax multiply = 3 }
-			trigger_event_silently = iceland_mission_events.4
+			trigger_event_non_silently = iceland_mission_events.4
 		}
 	}
 
@@ -317,7 +319,7 @@ iceland_mission_pack = {
 			owns = location:akureyri
 			any_owned_location = {
 				raw_material = goods:fish
-				raw_material_output >= 8
+				raw_material_output >= 6
 			}
 			capital.market = {
 				any_export = {
@@ -331,14 +333,14 @@ iceland_mission_pack = {
 
 		on_completion = {
 			location:isafjordur = {
-				change_development = 2
+				change_development = 5
 				change_building_level_in_location = {
 					building = building_type:fishing_village
 					value = 1
 				}
 			}
 			location:husavik = {
-				change_development = 1
+				change_development = 5
 				change_building_level_in_location = {
 					building = building_type:fishing_village
 					value = 1
@@ -346,7 +348,7 @@ iceland_mission_pack = {
 			}
 			add_gold = { value = monthly_income_trade_and_tax multiply = 2 }
 			add_legitimacy = 5
-			trigger_event_silently = iceland_mission_events.5
+			trigger_event_non_silently = iceland_mission_events.5
 		}
 	}
 
@@ -411,7 +413,7 @@ iceland_mission_pack = {
 				mode = add
 			}
 			add_prestige = 20
-			trigger_event_silently = iceland_mission_events.12
+			trigger_event_non_silently = iceland_mission_events.12
 		}
 	}
 
@@ -441,7 +443,7 @@ iceland_mission_pack = {
 				mode = add
 			}
 			add_gold = { value = monthly_income_trade_and_tax multiply = 3 }
-			trigger_event_silently = iceland_mission_events.6
+			trigger_event_non_silently = iceland_mission_events.6
 		}
 	}
 
@@ -485,7 +487,6 @@ iceland_mission_pack = {
 
 		enabled = {
 			total_effective_building_levels:market_warehouse >= 2
-			has_embraced_institution = institution:global_trade
 			capital.market = {
 				total_goods_value_traded >= 100
 			}
@@ -526,11 +527,12 @@ iceland_mission_pack = {
 		requires = { mission_ice_market_of_our_own }
 
 		enabled = {
-			monthly_income_trade_and_tax >= 15
+			monthly_income_trade_and_tax >= 150
 			capital.market = {
 				any_export = {
 					count >= 3
 				}
+				total_goods_value_traded >= 150
 			}
 		}
 
@@ -655,7 +657,7 @@ iceland_mission_pack = {
 				years = 40
 				mode = add
 			}
-			trigger_event_silently = iceland_mission_events.8
+			trigger_event_non_silently = iceland_mission_events.8
 		}
 	}
 
@@ -696,7 +698,7 @@ iceland_mission_pack = {
 			}
 			religious_unity >= 0.85
 			has_embraced_institution = institution:renaissance
-			"estate_power(estate_type:clergy_estate)" >= 0.25
+			"estate_power(estate_type:clergy_estate)" >= 0.1
 		}
 
 		duration = 0
@@ -758,19 +760,20 @@ iceland_mission_pack = {
 		final = yes
 
 		enabled = {
-			monthly_income_trade_and_tax >= 25
-			legitimacy >= 80
-			stability >= 50
-			capital.market = {
-				any_export = {
-					count >= 5
-				}
-			}
+			legitimacy >= 100
 		}
 
 		duration = 0
 
 		on_completion = {
+			if = {
+				limit = {
+					NOT = {
+						country_rank = country_rank:rank_kingdom
+					}
+				}
+				set_country_rank_effect = { rank = country_rank:rank_kingdom }
+			}
 			add_country_modifier = {
 				modifier = kingdom_of_iceland
 				years = -1
