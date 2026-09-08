@@ -87,7 +87,7 @@ ven_events.4 = {
 	}
 	option = {
 		name = ven_events.4.a
-		location:venice = { change_building_level_in_location = { building = building_type:naval_base value = 1 } }
+		location:venice = { change_building_level_in_location = { building = building_type:grand_shipyard value = 1 } }
 		add_prestige = 50
 	}
 }
@@ -110,8 +110,9 @@ ven_events.5 = {
 	}
 	option = {
 		name = ven_events.5.a
-		location:venice = { change_prosperity = prosperity_major_bonus change_development = development_major_bonus }
-		add_prestige = 75
+		location:venice = { change_prosperity = prosperity_major_bonus change_development = 5 }
+		add_country_modifier = { modifier = ven_queen_of_canals years = -1 mode = add }
+		add_prestige = 25
 		add_legitimacy = legitimacy_mild_bonus
 	}
 }
@@ -134,8 +135,13 @@ ven_events.6 = {
 	}
 	option = {
 		name = ven_events.6.a
-		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_weak_malus }
+		add_estate_satisfaction = { type = estate_type:clergy_estate value = -0.05 }
 		add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+		 add_casus_belli = {
+                type = casus_belli:cb_conquer_province
+                province = location:rome.province
+                target = location:rome.owner
+            }
 	}
 }
 
@@ -408,29 +414,34 @@ ven_events.18 = {
 			foreground = estate_type:nobles_estate
 			background = estate_type:nobles_estate
 		}
+		ruler = {
+			save_scope_as = ven_latin_empire_ruler
+		}
+		location:constantinople.province  = {
+			create_location_country_from_province = {
+				ruler = scope:ven_latin_empire_ruler
+				subject_type = subject_type:vassal
+
+
+				save_scope_as = ven_latin_empire_state
+			}
+		}
+		scope:ven_latin_empire_state = {
+			change_tag_cosmetic = { tag = LAT }
+			change_country_name = LAT
+				change_country_adjective = LAT
+				change_country_color = map_LAT
+				change_country_flag = LAT
+				set_country_rank = country_rank:rank_empire
+				change_religion = religion:catholic
+		}
 	}
 	option = {
 		name = ven_events.18.a
 		add_country_modifier = { modifier = ven_latin_empire_unlock years = -1 mode = add }
 		add_prestige = 150
 		add_legitimacy = 25
-		ruler = {
-			save_scope_as = ven_latin_empire_ruler
-		}
-		province:constantinople_province = {
-			create_location_country_from_province = {
-				ruler = scope:ven_latin_empire_ruler
-				subject_type = subject_type:vassal
-
-				capital = {
-					province = {
-						save_scope_as = ven_latin_empire_capital
-					}
-				}
-
-				save_scope_as = ven_latin_empire_state
-			}
-		}
+	
 		every_owned_location = {
 			limit = {
 				OR = {
@@ -443,9 +454,7 @@ ven_events.18 = {
 				NOT = { owner = scope:ven_latin_empire_state }
 			}
 			change_location_owner = scope:ven_latin_empire_state
-		}
-		scope:ven_latin_empire_state = {
-			change_tag_cosmetic = { tag = LAT }
+			add_core = scope:ven_latin_empire_state
 		}
 	}
 }

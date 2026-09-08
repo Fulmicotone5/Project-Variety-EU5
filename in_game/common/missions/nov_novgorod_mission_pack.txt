@@ -441,10 +441,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:baltic_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}
@@ -655,10 +652,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:steppes_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 50
 			}
 		}
@@ -773,10 +767,7 @@
 			NOT = { country_exists = c:TEU }
 			any_owned_location = {
 				area = area:prussia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}

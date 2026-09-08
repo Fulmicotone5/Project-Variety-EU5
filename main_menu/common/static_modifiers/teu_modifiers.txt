@@ -29,7 +29,7 @@ teu_poland_mod = {
 
 teu_crusade_start_mod = {
 	icon = crusader_tradition
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	war_score_vs_other_religion_efficiency = 0.10
 	discipline = 0.05
 }
@@ -149,7 +149,7 @@ teu_order_army_mod = {
 	icon = medieval_military
 	army_heavy_cavalry_power = 0.10
 	discipline = 0.05
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 }
 
 teu_riga_mod = {
@@ -162,7 +162,7 @@ teu_riga_mod = {
 teu_grand_master_mod = {
 	icon = legacy_of_great_empires
 	discipline = 0.10
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	war_score_vs_other_religion_efficiency = 0.20
 	power_projection = 15
 	global_manpower_modifier = 0.15
@@ -234,7 +234,7 @@ teu_elbing_mod = {
 teu_mongol_empire_mod = {
 	icon = legacy_of_great_empires
 	global_manpower_modifier = 0.25
-	land_morale = 0.15
+	land_morale_modifier = 0.15
 	army_light_cavalry_power = 0.20
 	army_heavy_cavalry_power = 0.15
 	road_cost_on_distance_from_capital = -5

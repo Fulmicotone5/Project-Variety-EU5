@@ -220,10 +220,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:guinea_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 5
 			}
 		}
@@ -238,10 +235,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:guinea_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -271,10 +265,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:kongo_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -326,10 +317,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:deccan_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 1
 			}
 		}

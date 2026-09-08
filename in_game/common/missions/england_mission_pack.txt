@@ -688,12 +688,7 @@
 		duration = 0
 
 		on_completion = {
-			hidden_effect = {
-				change_country_name = F27
-				change_country_adjective = F27_ADJ
-				change_country_color = map_PVF27
-				change_country_flag = F27
-			}
+			form_country = formable_country:F27_f
 			location:paris = {
 				add_core = root
 			}

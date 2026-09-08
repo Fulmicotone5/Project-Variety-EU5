@@ -94,10 +94,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:canary_islands_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 5
 			}
 		}
@@ -112,10 +109,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:guinea_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -208,10 +202,7 @@
 			owns_or_non_sovereign_subject_owns = location:habana
 			any_owned_location = {
 				area = area:cuba_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 40
 			}
 		}
@@ -228,10 +219,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:andes_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 60
 			}
 		}
@@ -330,10 +318,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:east_coast_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 100
 			}
 		}
@@ -403,10 +388,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:granada_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 18
 			}
 			OR = {
@@ -489,10 +471,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:sardinia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}

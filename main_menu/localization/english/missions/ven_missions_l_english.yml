@@ -58,7 +58,7 @@
  ven_settling_with_genoa_tooltip: "GEN does not exist, or secure genoa."
 
 
- ven_city_of_water: "The City of Water"
+ ven_city_of_water: "The City on Water"
  ven_city_of_water_desc: "Complete the lagoon city of Venice as a city of unmatched prosperity, woven together by waterways and commerce."
  ven_city_of_water_tooltip: "venice control 100%, total wharf building level 12+."
 
@@ -176,9 +176,9 @@
  ven_events.4.d: "The state shipyard, the Arsenale, has been expanded, now producing galleys and merchant ships on an unprecedented scale. The Republic's naval power reaches new heights."
  ven_events.4.a: "Inspect the expanded Arsenale"
 
- ven_events.5.t: "The Completion of the City of Water"
- ven_events.5.d: "Canals, trading houses, libraries, shipyards — the city built upon the lagoon has achieved a prosperity unmatched in the world. The 'City of Water' has become worthy of its name."
- ven_events.5.a: "Proclaim the completion of the City of Water"
+ ven_events.5.t: "The Completion of the City on Water"
+ ven_events.5.d: "Canals, trading houses, libraries, shipyards — the city built upon the lagoon has achieved a prosperity unmatched in the world. The 'City on Water' has become worthy of its name."
+ ven_events.5.a: "Proclaim the completion of the City on Water"
 
  ven_events.6.t: "The War over Ferrara"
  ven_events.6.d: "Relations with the Papal States grow tense over the status of Ferrara. The clergy condemn the Republic's ambitions, but the citizens welcome the acquisition of new territory."
@@ -354,4 +354,4 @@
 
  ven_italian_unity_unlock_tt: "Venice has completed the foundation of Italian unity. La Serenissima unifies the Italian peninsula from the Adriatic to the Alps — for the first time since ancient Rome, all of Italy governed under a single banner."
 
- ven_latin_empire_unlock_tt: "The Latin Empire (LAT), with Constantinople as its capital, is founded as a subject state under Venetian protection."
+ ven_latin_empire_unlock_tt: "The Latin Empire, with Constantinople as its capital, is founded as a subject state under Venetian protection."

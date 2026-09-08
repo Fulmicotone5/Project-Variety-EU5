@@ -251,7 +251,7 @@ diplomacy_manager = { #Changes for MAM tag (PV)
     scripted_mutual = { first = MEI second = HES type = alliance }
     scripted_oneway = { first = FLA second = HOL type = trade_access }
 
-    #------Byzantium--------
+    #------Rome--------
     dependency = { first = BYZ second = EPI subject_type = vassal }
 
     #-------Low Lands-------

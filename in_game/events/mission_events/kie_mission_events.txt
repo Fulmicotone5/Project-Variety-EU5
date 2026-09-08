@@ -35,6 +35,7 @@ kie_events.20 = {
 	immediate = {}
 	option = {
 		name = kie_events.20.a
+		change_country_name = "Cossack Hetmanate"
 		set_country_rank_effect = { rank = country_rank:rank_kingdom }
 		add_prestige = 25
 	}
@@ -49,7 +50,9 @@ kie_events.60 = {
 	immediate = {}
 	option = {
 		name = kie_events.60.a
-		set_country_rank_effect = { rank = country_rank:rank_kingdom }
+		add_gold = { value = monthly_income_trade_and_tax multiply = 5 }
+		add_stability = 30
+		add_legitimacy = 50
 		add_prestige = 30
 	}
 }

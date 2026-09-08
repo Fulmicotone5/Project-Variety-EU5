@@ -21,7 +21,7 @@ kie_right_bank_mod = {
 
 kie_chernihiv_mod = {
 	icon = crossroads_of_commerce
-	global_tax_modifier = 0.03
+	global_estate_max_tax = 0.03
 }
 
 kie_pereyaslavl_mod = {
@@ -108,7 +108,7 @@ kie_minsk_mod = {
 kie_cossack_mod = {
 	icon = glorious_arms
 	army_light_cavalry_power = 0.10
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 }
 
 kie_zaporizhzhia_mod = {
@@ -119,14 +119,14 @@ kie_zaporizhzhia_mod = {
 
 kie_tatar_wars_mod = {
 	icon = crusader_tradition
-	land_morale = 0.15
+	land_morale_modifier = 0.15
 	discipline = 0.05
 }
 
 kie_steppe_mod = {
 	icon = expansionism
 	global_manpower_modifier = 0.15
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 }
 
 kie_crimea_mod = {
@@ -137,9 +137,8 @@ kie_crimea_mod = {
 
 kie_black_sea_mod = {
 	icon = hsa_mastery_of_the_sea
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	trade_sea_efficiency = 0.10
-	harbor_suitability = 0.10
 }
 
 kie_lavra_mod = {
@@ -270,7 +269,7 @@ kie_krakow_mod = {
 
 kie_navy_mod = {
 	icon = hsa_mastery_of_the_sea
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	trade_sea_efficiency = 0.10
 	global_sailors_modifier = 0.10
 }
@@ -278,7 +277,7 @@ kie_navy_mod = {
 kie_tatar_pacified_mod = {
 	icon = legacy_of_great_empires
 	global_manpower_modifier = 0.15
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 	cultures_capacity = 2
 }
 
@@ -310,7 +309,7 @@ kie_silver_route_mod = {
 
 kie_ruthenian_army_mod = {
 	icon = medieval_military
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	discipline = 0.05
 	global_levy_size_modifier = 0.10
 }
@@ -318,7 +317,7 @@ kie_ruthenian_army_mod = {
 kie_warsaw_mod = {
 	icon = crusader_tradition
 	local_monthly_prosperity = 0.002
-	cultures_capacity = 1
+	local_unrest = -0.25
 }
 
 kie_beeswax_mod = {
@@ -353,7 +352,9 @@ kie_grand_principality_mod = {
 	monthly_prestige = 0.25
 	cultures_capacity = 4
 	global_manpower_modifier = 0.15
-	road_cost_on_distance_from_capital = -3
+	road_cost_on_distance_from_capital = -0.5
+	government_reform_slots = 1
+	
 }
 
 kie_literacy_mod = {

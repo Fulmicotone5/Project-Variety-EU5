@@ -73,10 +73,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:samogitia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 14
 			}
 		}
@@ -94,10 +91,7 @@
 					area = area:central_poland_area
 					area = area:greater_poland_area
 				}
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -193,10 +187,7 @@
 			has_variable = teu_path_crusade
 			any_owned_location = {
 				region = region:russian_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}
@@ -278,10 +269,7 @@
 			has_variable = teu_path_secular
 			any_owned_location = {
 				area = area:pomerania_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 15
 			}
 		}
@@ -333,10 +321,7 @@
 					region = region:north_german_region
 					region = region:south_german_region
 				}
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 100
 			}
 		}
@@ -507,10 +492,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:mazovia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 15
 			}
 		}
@@ -582,10 +564,7 @@
 			has_variable = teu_path_secular
 			any_owned_location = {
 				area = area:silesia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 45
 			}
 		}

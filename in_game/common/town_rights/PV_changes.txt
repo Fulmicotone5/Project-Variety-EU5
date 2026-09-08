@@ -232,3 +232,20 @@ TRY_REPLACE:royal_brewing_rights = {
 	
 	color = goods_liquor
 }
+
+TRY_REPLACE:fortress_town = {
+	location_modifier = {
+		local_crown_estate_power = -0.1
+		local_garrison_size = 0.3
+		local_defensive = 0.25
+		local_manpower_modifier = 0.2
+		local_nobles_estate_power = 0.25
+		local_burghers_estate_power = -0.25
+		local_soldiers_desired_pop = 0.2
+	}
+	country_modifier = {
+		fort_limit = 0.25
+	}
+
+	color = hsv { 0.07 0.45 0.55 }
+}

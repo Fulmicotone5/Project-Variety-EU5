@@ -137,13 +137,13 @@ cas_manila_galleon_mod = {
 cas_naples_mod = {
 	icon = glorious_arms
 	global_manpower_modifier = 0.10
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 }
 
 cas_sicily_mod = {
 	icon = glorious_arms
 	global_grain_output_modifier = 0.15
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 	port_cost_distance_from_capital = -5
 }
 
@@ -161,7 +161,7 @@ cas_mediterranean_mod = {
 
 cas_lepanto_mod = {
 	icon = hsa_mastery_of_the_sea
-	naval_morale = 0.05
+	naval_morale_modifier = 0.05
 	navy_tradition_from_battles = 0.05
 	monthly_prestige = 0.10
 }
@@ -375,7 +375,7 @@ cas_sardinia_mod = {
 cas_italy_dominion_mod = {
 	icon = legacy_of_great_empires
 	diplomatic_reputation = 2
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	num_local_governors = 1
 }
 

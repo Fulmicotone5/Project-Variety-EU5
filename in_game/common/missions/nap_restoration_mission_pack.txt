@@ -1,13 +1,16 @@
 ﻿nap_restoration_mission_pack = {
 	icon = nmt_mediterranean_port
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = NAP
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = nap_restoration_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = nap_restoration_started
+		set_global_variable = nap_restoration_started
 	}
 
-	on_completion = {
-		remove_variable = nap_restoration_started
-	}
-
-	on_abort = {
-		remove_variable = nap_restoration_started
-	}
 
 	# ==================== LEFT TREE: 別たれた王国 ====================
 
@@ -100,7 +96,7 @@
 
 	nap_sicilian_reunification_war = {
 		icon = sic_sicilian_baroque
-		requires = { nap_army_buildup nap_papal_blessing nap_match_aragon_navy }
+		requires = { nap_army_buildup nap_match_aragon_navy }
 
 		enabled = {
 			location:palermo = {
@@ -134,18 +130,7 @@
 		requires = { nap_match_aragon_navy nap_apulian_granary }
 
 		enabled = {
-			area:albania_area = {
-				NOT = {
-					any_location_in_area = {
-						NOT = {
-							OR = {
-								owner ?= root
-								owner = { is_subject_of = root }
-							}
-						}
-					}
-				}
-			}
+			any_owned_location = { area = area:albania_area is_owned_or_owned_by_subjects_of = root count >= 16 }
 		}
 		duration = 120
 		on_completion = {
@@ -175,6 +160,11 @@
 
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:palermo
+			any_owned_location = {
+				area = area:sicily_area
+				is_owned_or_owned_by_subjects_of = root
+				count >= 20
+			}
 		}
 		duration = 120
 		on_completion = {
@@ -219,8 +209,8 @@
 		requires = { nap_the_bells_fall_silent }
 
 		enabled = {
-			any_owned_location = {
-				any_work_of_art_in_location = {
+			capital = {
+					any_work_of_art_in_location = {
 					count >= 100
 				}
 			}
@@ -273,6 +263,9 @@
 				area = area:balearics_area
 				count >= 4
 			}
+			own_entire_province = province_definition:cismonte_province
+			own_entire_province = province_definition:pumonte_province
+			owns = location:malta
 		}
 		duration = 180
 		on_completion = {
@@ -320,7 +313,11 @@
 		requires = { }
 
 		enabled = {
-			location:naples.total_building_levels >= 50
+			location:naples = {
+				total_building_levels >= 50
+				is_capital = yes
+			}
+
 		}
 		duration = 90
 		on_completion = {
@@ -337,6 +334,7 @@
 		enabled = {
 			location:lecce = {
 				rgo_level >= 5
+				has_building = building_type:granary
 			}
 		}
 		duration = 120
@@ -352,16 +350,30 @@
 
 	nap_mediterranean_greatest_city = {
 		icon = divine_supremacy
-		requires = { nap_new_capital_of_sicily }
-
+		requires = { nap_never_die_without_seeing_naples nap_western_mediterranean_hegemony }
+		final = yes
 		enabled = {
 			location:naples = {
-				population >= 200
+				population >= 250
+				development >= 60
+				has_building_with_at_least_one_level = arts_academy
+				has_building_with_at_least_one_level = supreme_court
+				has_building_with_at_least_one_level = chancery
+				has_building_with_at_least_one_level = house_of_parliament
+				has_building_with_at_least_one_level = grand_palace
 			}
 		}
 		duration = 120
 		on_completion = {
 			location:naples = {
+				if = {
+					limit = {
+						NOT = {
+							location_rank = location_rank:megalopolis
+						}
+					}
+					change_location_rank = location_rank:megalopolis
+				}
 				add_location_modifier = { modifier = nap_mediterranean_greatest_city_mod years = -1 mode = add }
 			}
 		}
@@ -389,7 +401,7 @@
 
 	nap_university_of_frederick_ii = {
 		icon = global_trade_advance
-		requires = { nap_mediterranean_greatest_city }
+		requires = { nap_new_capital_of_sicily }
 
 		enabled = {
 			location:naples = {
@@ -404,7 +416,7 @@
 
 	nap_magnificent_royal_palace = {
 		icon = monarchy_royal_court_advance
-		requires = { nap_mediterranean_greatest_city }
+		requires = { nap_new_capital_of_sicily }
 
 		enabled = {
 			location:naples = {
@@ -423,7 +435,10 @@
 
 		enabled = {
 			location:naples = {
-				has_building = building_type:dock
+				or = {
+					has_building = building_type:dry_dock
+					has_building = building_type:shipyard
+				}
 			}
 		}
 		duration = 120
@@ -525,11 +540,12 @@
 	}
 
 	nap_never_die_without_seeing_naples = {
-		icon = divine_supremacy
+		icon = religious_unification
 		requires = { nap_southern_renaissance nap_expansion_of_naples_port }
 
 		enabled = {
-			location:naples.total_building_levels >= 100
+			location:naples = { total_building_levels >= 100
+			development >= 50 }
 		}
 		duration = 180
 		on_completion = {
@@ -539,19 +555,5 @@
 
 	# ==================== FINAL ====================
 
-	nap_latin_empire = {
-		icon = divine_supremacy
-		requires = { nap_western_mediterranean_hegemony nap_charles_dream }
-		final = yes
-
-		enabled = {
-			num_locations >= 300
-		}
-		duration = 180
-		on_completion = {
-			set_country_rank_effect = { rank = country_rank:rank_empire }
-			add_country_modifier = { modifier = nap_latin_empire_mod years = -1 mode = add }
-		}
-	}
 
 }

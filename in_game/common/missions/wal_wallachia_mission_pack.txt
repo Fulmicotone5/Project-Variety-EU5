@@ -279,10 +279,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:moldavia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 46
 			}
 		}
@@ -415,10 +412,7 @@
 			NOT = { country_exists = c:BYZ }
 			any_owned_location = {
 				area = area:thrace_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}

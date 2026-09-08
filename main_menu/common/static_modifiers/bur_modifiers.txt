@@ -273,6 +273,6 @@ bur_lotharingia_reborn_mod = {
 	diplomatic_reputation = 3
 	monthly_prestige = 0.30
 	monthly_legitimacy = 0.15
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	global_manpower_modifier = 0.10
 }

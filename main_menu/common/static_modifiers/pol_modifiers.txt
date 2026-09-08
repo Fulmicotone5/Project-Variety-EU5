@@ -8,7 +8,7 @@
 pol_mazovia_integration_mod = {
 	icon = fra_integration_of_new_territories
 	global_integration_speed_modifier = 0.10
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 	smooth_administration = 0.10
 	annexation_speed_modifier = 0.10
 }
@@ -37,7 +37,7 @@ pol_jagiellonian_learning_mod = {
 
 pol_golden_age_mod = {
 	icon = legacy_of_great_empires
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	global_production_efficiency = 0.05
 	monthly_prestige = 0.15
 	diplomatic_reputation = 2
@@ -65,7 +65,7 @@ pol_eastern_expansion_mod = {
 pol_eastern_empire_mod = {
 	icon = legacy_of_great_empires
 	global_manpower_modifier = 0.15
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	smooth_administration = 0.15
 	military_tactics = 0.10
 }
@@ -73,7 +73,7 @@ pol_eastern_empire_mod = {
 pol_teutonic_victory_mod = {
 	icon = crusader_tradition
 	discipline = 0.05
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 }
 
 pol_gdansk_trade_mod = {
@@ -94,7 +94,7 @@ pol_baltic_trade_mod = {
 pol_baltic_fleet_mod = {
 	icon = development_of_maritime_law
 	ship_build_speed = 0.20
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 }
 
 pol_livonia_mod = {
@@ -142,7 +142,7 @@ pol_silesia_mod = {
 	icon = fra_integration_of_new_territories
 	global_pop_assimilation_speed_modifier = 0.15
 	global_integration_speed_modifier = 0.10
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 }
 
 pol_bohemian_crown_mod = {
@@ -177,7 +177,7 @@ pol_grand_commonwealth_mod = {
 pol_republic_of_nobles_final_mod = {
 	icon = legacy_of_great_empires
 	diplomatic_reputation = 4
-	global_tax_modifier = 0.20
+	peasants_estate_max_tax = 0.20
 	global_manpower_modifier = 0.20
 	monthly_prestige = 0.30
 	smooth_administration = 0.20
@@ -200,7 +200,7 @@ pol_anti_ottoman_crusade_mod = {
 	icon = a_neverending_crusade
 	war_score_vs_other_religion_efficiency = 0.25
 	discipline = 0.05
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 }
 
 pol_black_sea_mod = {
@@ -240,7 +240,7 @@ pol_folwark_mod = {
 
 pol_greater_poland_mod = {
 	icon = consolidate_the_royal_domain
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	global_pop_assimilation_speed_modifier = 0.15
 	smooth_administration = 0.10
 }
@@ -332,7 +332,7 @@ pol_piast_revival_mod = {
 pol_prussia_settled_mod = {
 	icon = arduous_terrain
 	global_pop_assimilation_speed_modifier = 0.15
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 	subject_loyalty = 5
 }
 
@@ -384,7 +384,7 @@ pol_law_codex_mod = {
 	icon = legalism_advance
 	smooth_administration = 0.15
 	legislative_efficiency = 0.10
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 }
 
 pol_krakow_capital_mod = {
@@ -531,7 +531,7 @@ pol_lithuanian_church_mod = {
 
 pol_royal_road_mod = {
 	icon = crossroads_of_commerce
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 }
 pol_silesia_mines_mod = {
 	icon = administrative_icon

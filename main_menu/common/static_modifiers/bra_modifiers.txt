@@ -24,7 +24,7 @@ bra_junker_mod = { icon = administrative_icon nobles_estate_agenda_impact = 0.10
 bra_potsdam_mod = { icon = city_building_advance local_monthly_prosperity = 0.002 }
 bra_soldier_king_mod = { icon = arm_mountain_armies monthly_army_tradition = 0.1 commander_combat_bonus = 1 }
 bra_treasury_mod = { icon = court_accounting global_build_buildings_efficiency = 0.20 }
-bra_silesian_ambition_mod = { icon = imperial_ambitions land_morale = 0.05 }
+bra_silesian_ambition_mod = { icon = imperial_ambitions land_morale_modifier = 0.05 }
 bra_first_silesian_mod = { icon = a_fortified_border antagonism_received_modifier = -0.10 global_war_score_efficiency = 0.10 }
 bra_silesia_mod = { icon = imperial_ambitions global_production_efficiency = 0.05 }
 bra_enlightenment_mod = { icon = library_advance global_monthly_literacy = 0.01 global_max_literacy = 5 }

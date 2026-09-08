@@ -75,10 +75,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:macedonia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 15
 			}
 		}
@@ -93,10 +90,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:northern_greece_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -111,10 +105,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:morea_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 			owns_or_non_sovereign_subject_owns = location:athens
@@ -131,10 +122,7 @@
 			navy_tradition >= 25
 			any_owned_location = {
 				area = area:aegean_archipelago_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 5
 			}
 		}
@@ -166,10 +154,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:piemonte_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -218,10 +203,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:lombardy_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -236,10 +218,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:liguria_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 8
 			}
 			owns_or_non_sovereign_subject_owns = location:genoa
@@ -270,10 +249,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:emilia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 12
 			}
 		}
@@ -310,7 +286,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = mon_city_charter_mod years = -1 mode = add }
+			set_variable = mon_var1
 		}
 	}
 
@@ -414,10 +390,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:tuscany_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 12
 			}
 			owns_or_non_sovereign_subject_owns = location:florence
@@ -434,10 +407,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:veneto_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 12
 			}
 			owns_or_non_sovereign_subject_owns = location:venice
@@ -491,10 +461,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:campania_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 8
 			}
 			owns_or_non_sovereign_subject_owns = location:naples

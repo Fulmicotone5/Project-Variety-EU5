@@ -45,7 +45,7 @@ hab_south_german_mod = {
 hab_north_german_mod = {
 	icon = expansionism
 	global_manpower_modifier = 0.10
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 }
 
 hab_burgundy_mod = {
@@ -68,7 +68,7 @@ hab_north_sea_mod = {
 
 hab_france_mod = {
 	icon = offensive_army
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	discipline = 0.05
 }
 
@@ -98,7 +98,7 @@ hab_colonial_mod = {
 
 hab_italian_mod = {
 	icon = glorious_arms
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 	hire_mercenary_premium_cost_modifier = -0.15
 }
 
@@ -135,7 +135,7 @@ hab_tuscany_mod = {
 
 hab_sicily_mod = {
 	icon = expansionism
-	naval_morale = 0.05
+	naval_morale_modifier = 0.05
 	global_trade_income_modifier = 0.05
 }
 
@@ -154,7 +154,7 @@ hab_poland_mod = {
 hab_croatia_mod = {
 	icon = crusader_tradition
 	global_manpower_modifier = 0.10
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 }
 
 hab_transylvania_mod = {
@@ -165,7 +165,7 @@ hab_transylvania_mod = {
 
 hab_ottoman_mod = {
 	icon = crusader_tradition
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	war_score_vs_other_religion_efficiency = 0.10
 }
 
@@ -177,7 +177,7 @@ hab_balkans_mod = {
 
 hab_crusade_mod = {
 	icon = crusader_tradition
-	land_morale = 0.15
+	land_morale_modifier = 0.15
 	discipline = 0.05
 }
 
@@ -259,7 +259,7 @@ hab_trade_mod = {
 
 hab_army_mod = {
 	icon = medieval_military
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	discipline = 0.05
 }
 
@@ -332,13 +332,13 @@ hab_fra_loyalty_mod = {
 
 hab_hre_unity_mod = {
 	icon = lat_emperor_latins_advance
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 	global_manpower_modifier = 0.10
 }
 
 hab_ger_empire_mod = {
 	icon = legacy_of_great_empires
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 	discipline = 0.05
 }
 

@@ -180,8 +180,8 @@ mission_st_mark_square_desc: "St. Mark's Square is the heart of Venice, the cere
 mission_st_mark_square_tooltip: "Fully develop Venice with grand palaces and public spaces."
 
 #==================== PHASE 10: GOVERNMENT REFORMS ====================
-mission_limit_doge_power: "Limit the Doge's Power"
-mission_limit_doge_power_desc: "The Doge serves the Republic, not the reverse. By further limiting his authority and strengthening the councils, we ensure that Venice remains a true republic, not a veiled monarchy."
+mission_limit_doge_power: "Limit Nobles Power"
+mission_limit_doge_power_desc: "The Noblility serves the Republic, not the reverse. By further limiting their authority and strengthening the councils, we ensure that Venice remains a true republic, not a veiled monarchy."
 mission_limit_doge_power_tooltip: "Reduce noble influence while maintaining high republican tradition."
 
 mission_establish_council_of_ten: "Establish the Council of Ten"
@@ -202,7 +202,7 @@ mission_acquire_monemvasia_desc: "Monemvasia, the Gibraltar of the East, is a fo
 mission_acquire_monemvasia_tooltip: "Secure the fortress of Monemvasia."
 
 mission_control_thessaloniki: "Control Thessaloniki"
-mission_control_thessaloniki_desc: "Thessaloniki, the second city of the Byzantine Empire, commands vital trade routes in the northern Aegean. Its capture would extend our influence into Macedonia."
+mission_control_thessaloniki_desc: "Thessaloniki, the second city of the Roman Empire, commands vital trade routes in the northern Aegean. Its capture would extend our influence into Macedonia."
 mission_control_thessaloniki_tooltip: "Secure Thessaloniki and establish Venetian presence."
 
 mission_venetian_athens: "Venetian Athens"
@@ -245,8 +245,8 @@ STATIC_MODIFIER_DESC_venetian_arsenal_expanded: "The expanded Arsenal accelerate
 STATIC_MODIFIER_NAME_great_arsenal: "Great Arsenal of Venice"
 STATIC_MODIFIER_DESC_great_arsenal: "The Great Arsenal is the largest shipbuilding complex in the Mediterranean, providing unparalleled naval construction capabilities."
 
-STATIC_MODIFIER_NAME_venetian_constitution: "Venetian Constitution"
-STATIC_MODIFIER_DESC_venetian_constitution: "The balanced constitution of Venice ensures stable governance and strong republican institutions."
+STATIC_MODIFIER_NAME_venetian_constitution: "Venetian Statute"
+STATIC_MODIFIER_DESC_venetian_constitution: "The Statute of Venice ensures stable governance and strong republican institutions."
 
 STATIC_MODIFIER_NAME_murano_glass_monopoly: "Murano Glass Monopoly"
 STATIC_MODIFIER_DESC_murano_glass_monopoly: "Murano's glassmakers produce the finest glassware in Europe, commanding premium prices and bringing prestige to Venice."
@@ -422,8 +422,8 @@ STATIC_MODIFIER_NAME_piazza_san_marco: "Piazza San Marco"
 STATIC_MODIFIER_DESC_piazza_san_marco: "St. Mark's Square is the ceremonial heart of Venice, a masterpiece of architecture and public space."
 
 #Phase 10: Government Reforms
-STATIC_MODIFIER_NAME_doge_limited: "Doge's Powers Limited"
-STATIC_MODIFIER_DESC_doge_limited: "Limitations on the Doge's authority strengthen republican institutions."
+STATIC_MODIFIER_NAME_doge_limited: "Nobility's Powers Limited"
+STATIC_MODIFIER_DESC_doge_limited: "Limitations on the Nobility's authority strengthen republican institutions."
 
 STATIC_MODIFIER_NAME_council_of_ten: "Council of Ten"
 STATIC_MODIFIER_DESC_council_of_ten: "The Council of Ten guards the Republic's security with vigilance and efficiency."

@@ -186,7 +186,7 @@ por_brazil_empire_mod = {
 
 por_naval_mod = {
 	icon = hsa_mastery_of_the_sea
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	navy_tradition_from_battles = 0.10
 }
 
@@ -301,7 +301,7 @@ por_brazil_wood_mod = {
 
 por_atlantic_mod = {
 	icon = hsa_mastery_of_the_sea
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	blockade_efficiency = 0.15
 	trade_sea_efficiency = 0.10
 }

@@ -2,7 +2,7 @@
 	icon = administrative_icon
 	monthly_legitimacy = 0.10
 	diplomatic_reputation = 2
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 }
 byz_anatolia_west = {
 	icon = trade_icon
@@ -55,7 +55,7 @@ byz_rome_restored = {
 	monthly_legitimacy = 0.15
 	diplomatic_reputation = 3
 	tolerance_own = 0.5
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	global_pop_conversion_speed_modifier = 0.20
 }
 byz_hispania_province = {

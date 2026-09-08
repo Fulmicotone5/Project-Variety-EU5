@@ -122,6 +122,10 @@ ara_mare_nostrum_mod = {
 	naval_morale_modifier = 0.10
 	naval_range_modifier = 0.30
 	trade_range_modifier = 0.20
+	government_reform_slots = 1
+	government_size = 1
+	sea_cost_on_distance_from_capital_when_maritime = -1
+	global_maritime_presence_modifier = 0.10
 }
 
 ara_taula_de_canvi_mod = {
@@ -154,7 +158,19 @@ ara_aragonese_renaissance_mod = {
 ara_golden_century_mod = {
 	icon = crown_power_advance_renaissance
 	monthly_prestige = 0.10
+	land_morale = 0.1
+	government_reform_slots = 1
+	government_size = 1
+	num_naval_governors = 1
+}
+
+ara_golden_century_mod2 = {
+	icon = crown_power_advance_renaissance
+	monthly_prestige = 0.10
 	trade_income = 0.10
+	government_reform_slots = 1
+	government_size = 1
+	num_local_governors = 1
 }
 
 ara_city_of_the_worlds_desire_mod = {
@@ -227,6 +243,6 @@ ara_empire_of_the_three_oceans_mod = {
 
 ara_seize_sicily_mod = {
 	icon = ara_fleet_ordinances
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	global_maritime_presence_modifier = 0.10
 }

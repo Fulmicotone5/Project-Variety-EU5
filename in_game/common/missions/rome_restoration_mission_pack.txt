@@ -461,11 +461,7 @@
 		}
 		
 		on_completion = {
-			hidden_effect = {
-				change_country_name = ROM
-				change_country_adjective = ROM_ADJ
-				change_country_color = map_ROM
-			}
+			form_country = formable_country:ROM_f
 			trigger_event_non_silently = byz_events.10
 		}
 	}

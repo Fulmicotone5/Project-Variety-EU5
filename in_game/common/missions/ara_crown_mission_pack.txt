@@ -1,13 +1,16 @@
 ﻿ara_crown_mission_pack = {
 	icon = nmt_iberia
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = ARA
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = ara_crown_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = ara_crown_started
+		set_global_variable = ara_crown_started
 	}
 
-	on_completion = {
-		remove_variable = ara_crown_started
-	}
-
-	on_abort = {
-		remove_variable = ara_crown_started
-	}
 
 	# ==================== ROOT: カスペの妥協 ====================
 
@@ -179,6 +175,9 @@
 
 		enabled = {
 			has_fired_unique_event = flavor_ara.1
+			NOT = {
+				has_country_modifier = ara_golden_century_mod2
+			}
 		}
 		duration = 120
 		on_completion = {
@@ -203,12 +202,12 @@
 
 	ara_rule_italy = {
 		icon = divine_supremacy
-		requires = { ara_dominate_genoa }
+		requires = { ara_dominate_genoa ara_integrate_naples }
 
 		enabled = {
-			any_owned_location = {
-				region = region:italy_region
-				count >= 240
+			has_or_had_tag = F11
+			NOT = {
+				has_country_modifier = ara_reconquest_of_granada_mod
 			}
 		}
 		duration = 180
@@ -219,24 +218,42 @@
 
 	ara_invade_occitania = {
 		icon = ara_desperta_ferro
-		requires = { ara_dominate_genoa }
+		requires = { ara_pacify_sardinia }
 
 		enabled = {
-			OR = {
-				owns_or_non_sovereign_subject_owns = location:marseille
-				owns_or_non_sovereign_subject_owns = location:toulon
-				owns_or_non_sovereign_subject_owns = location:nice
-			}
+			always = yes
 		}
 		duration = 180
 		on_completion = {
 			add_country_modifier = { modifier = ara_invade_occitania_mod years = 40 mode = add }
+			add_casus_belli = {
+					target = location:toulouse.owner
+					type = casus_belli:cb_conquer_province
+					province = location:toulouse.province
+				}
+
+		}
+	}
+
+	king_of_occ = {
+		icon = ara_desperta_ferro
+		requires = { ara_invade_occitania }
+
+		enabled = {
+			has_or_had_tag = F03
+			NOT = {
+				has_country_modifier = ara_consulate_of_the_sea_mod
+			}
+		}
+		on_completion = {
+			add_country_modifier = { modifier = ara_golden_century_mod2 years = -1 mode = add }
+			trigger_event_non_silently = touflavor.6
 		}
 	}
 
 	ara_humiliate_provence = {
 		icon = ara_desperta_ferro
-		requires = { ara_invade_occitania }
+		requires = { king_of_occ }
 
 		enabled = {
 			NOT = { country_exists = c:PRO }
@@ -304,7 +321,7 @@
 
 	ara_mediterranean_ambitions = {
 		icon = secure_mediterranean_ports
-		requires = { ara_integrate_naples ara_rule_italy }
+		requires = {  ara_rule_italy }
 
 		enabled = {
 			navy_size >= 100
@@ -356,7 +373,7 @@
 
 	ara_claims_on_athens = {
 		icon = ath_the_catalan_company_advance
-		requires = { ara_mediterranean_ambitions ara_humiliate_provence }
+		requires = { ara_mediterranean_ambitions }
 
 		enabled = {
 			navy_size >= 200
@@ -405,7 +422,7 @@
 	ara_mare_nostrum = {
 		icon = secure_mediterranean_ports
 		requires = { ara_occupy_alexandria ara_claims_on_athens }
-
+		final = yes
 		enabled = {
 			navy_size >= 250
 		}
@@ -498,17 +515,12 @@
 	ara_golden_century = {
 		icon = ara_valencian_golden_age
 		requires = { ara_aragonese_renaissance ara_crowns_of_iberia }
-
+		final = yes
 		enabled = {
-			region:iberia_region = {
-				NOT = {
-					any_location_in_region = {
-						owner ?= {
-							NOT = { any_overlord_or_above = { this = root } }
-							NOT = { this = root }
-						}
-					}
-				}
+			any_owned_location = {
+				region = region:iberia_region
+				is_owned_or_owned_by_subjects_of = root
+				count >= 300
 			}
 		}
 		duration = 180
@@ -518,21 +530,6 @@
 	}
 
 	# ==================== FINAL: 世界の願望の都 ====================
-
-	ara_city_of_the_worlds_desire = {
-		icon = ara_constellation_cities
-		requires = { ara_mare_nostrum ara_golden_century }
-		final = yes
-
-		enabled = {
-			num_locations >= 1500
-		}
-		duration = 365
-		on_completion = {
-			set_country_rank_effect = { rank = country_rank:rank_empire }
-			add_country_modifier = { modifier = ara_city_of_the_worlds_desire_mod years = -1 mode = add }
-		}
-	}
 
 	# ==================== 植民サブツリー: 新世界への道 ====================
 

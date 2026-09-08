@@ -14,6 +14,7 @@ sic_two_sicilies_mod = {
 	icon = crown_power_advance_renaissance
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.10
+	government_size = 1
 }
 
 sic_golden_wheat_fields_mod = {
@@ -36,6 +37,7 @@ sic_mediterranean_crossroads_mod = {
 sic_sicilian_renaissance_mod = {
 	icon = legalism_advance
 	skill_of_new_artists = 0.10
+	government_size = 1
 }
 
 sic_kingdom_resurgent_mod = {
@@ -43,4 +45,6 @@ sic_kingdom_resurgent_mod = {
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.10
 	global_war_score_efficiency = 0.10
+	government_reform_slots = 2
+	num_local_governors = 1
 }

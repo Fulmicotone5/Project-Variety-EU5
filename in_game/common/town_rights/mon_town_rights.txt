@@ -9,7 +9,7 @@ mon_carta_di_franchigia_town_rights = {
 	}
 
 	potential = {
-		modifier:allow_mon_carta_di_franchigia_town_rights = yes
+		has_variable = mon_var1
 	}
 
 	allow = {

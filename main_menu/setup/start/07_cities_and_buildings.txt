@@ -2364,7 +2364,7 @@ building_manager = {
 	hospital = { tag = BYZ level = 1 location =  constantinople }
 	castle = { tag = BYZ level = 1 location =  gallipoli }
 	theodosian_walls = { tag = BYZ level = 1 location = constantinople }
-	city_walls = { tag = BYZ level = 1 location = thessaloniki } #Byzantine Walls of Thessaloniki, substantially rebuilt after the Arab sack of 904
+	city_walls = { tag = BYZ level = 1 location = thessaloniki } #Roman Walls of Thessaloniki, substantially rebuilt after the Arab sack of 904
 	dock = { tag = BYZ level = 1 location = constantinople }
 	cathedral = { tag = BYZ level = 1 location = constantinople } #Hagia Sophia, established in 537
 	cathedral = { tag = BYZ level = 1 location = thessaloniki } #Hagia Sophia of Thessaloniki, 5th century metropolitan see

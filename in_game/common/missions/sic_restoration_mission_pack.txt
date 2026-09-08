@@ -8,6 +8,9 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = SIC
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = sic_restoration_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = sic_restoration_started
+		set_global_variable = sic_restoration_started
 	}
 
-	on_completion = {
-		remove_variable = sic_restoration_started
-	}
-
-	on_abort = {
-		remove_variable = sic_restoration_started
-	}
 
 	# ==================== ROOT: 海峡の向こう ====================
 
@@ -48,17 +44,61 @@
 
 	sic_ambitions_on_naples = {
 		icon = apetian_house_of_anjou
+		requires = { sic_ambitions_on_naples3 }
+
+		enabled = {
+			regular_army_size >= 1
+		}
+		on_completion = {
+			add_casus_belli = {
+				type = casus_belli:cb_conquer_enemy
+				target = c:NAP
+			}
+		}
+	}
+
+	sic_ambitions_on_naples2 = {
+		icon = raj_fortress_architecture
 		requires = { sic_divided_kingdom }
 
 		enabled = {
-			regular_army_size >= 2
+			estate_satisfaction:burghers_estate >= 0.6
 		}
-		duration = 90
+		duration = 120
 		on_completion = {
-			add_casus_belli = {
-				type = casus_belli:cb_claim_throne
-				target = c:NAP
+			location:palermo = {
+				construct_building = { building_type = building_type:barracks
+				cost_multiplier = 0
+					cost_multiplier_reason = "royal_sponsorship" instant = yes }
 			}
+			location:syracuse = {
+				construct_building = { building_type = building_type:barracks
+				cost_multiplier = 0
+					cost_multiplier_reason = "royal_sponsorship" instant = yes }
+			}
+			location:catania = {
+				construct_building = { building_type = building_type:barracks
+				cost_multiplier = 0
+					cost_multiplier_reason = "royal_sponsorship" instant = yes }
+			}
+		}
+	}
+
+	sic_ambitions_on_naples3 = {
+		icon = mge_improved_yam_system
+		requires = { sic_ambitions_on_naples2 }
+
+		enabled = {
+			estate_satisfaction:nobles_estate >= 0.6
+		}
+		duration = 120
+		on_completion = {
+			add_gold = 500
+			capital = {
+                create_sub_unit = unit_type:a_heavy_cavalrymen
+                create_sub_unit = unit_type:a_heavy_cavalrymen
+                create_sub_unit = unit_type:a_heavy_cavalrymen
+            }
 		}
 	}
 
@@ -89,12 +129,18 @@
 	}
 
 	sic_two_sicilies = {
-		icon = divine_supremacy
+		icon = salic_law_advance
 		requires = { sic_conquest_of_naples }
 
 		enabled = {
 			owns = location:naples
 			owns = location:palermo
+			or = {
+				NOT = {
+					country_exists = c:NAP
+				}
+				c:NAP = { is_subject_of = root }
+			}
 		}
 		duration = 180
 		on_completion = {
@@ -125,7 +171,7 @@
 		requires = { sic_golden_wheat_fields }
 
 		enabled = {
-			location:palermo.total_building_levels >= 30
+			location:palermo.total_building_levels >= 50
 		}
 		duration = 120
 		on_completion = {

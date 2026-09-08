@@ -6,7 +6,8 @@
 
 	visible = {
 		game_has_missions_enabled = yes
-		has_or_had_tag = FEO
+	#	has_or_had_tag = FEO  TODO
+		always = no
 		NOR = { country_type = pop country_type = building }
 	}
 
@@ -79,10 +80,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:crimea_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 3
 			}
 		}
@@ -97,10 +95,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:crimea_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 12
 			}
 		}
@@ -179,10 +174,7 @@
 			owns_or_non_sovereign_subject_owns = location:trebizond
 			any_owned_location = {
 				area = area:pontus_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -299,10 +291,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:steppes_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 100
 			}
 		}
@@ -317,10 +306,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:caucasus_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}
@@ -335,10 +321,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:persia_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -371,10 +354,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:russian_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 60
 			}
 		}

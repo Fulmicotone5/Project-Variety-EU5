@@ -44,6 +44,8 @@
 					mode = add
 				}
 			}
+			add_legitimacy = 10
+			trigger_event_non_silently = venice_mission_events.1
 		}
 	}
 
@@ -121,10 +123,12 @@
 		requires = { ven_mainland_consolidation }
 
 		enabled = {
-			location:venice = { prosperity >= 0.80 }
+			location:venice = { prosperity >= 0.80
+				development >= 45 }
 		}
 		
 		on_completion = {
+			add_gold = -1500
 			location:venice = {
 				add_location_modifier = {
 					modifier = ven_san_marco_square
@@ -171,10 +175,11 @@
 		requires = { ven_fondaco }
 
 		enabled = {
-			monthly_income_trade_and_tax >= 800
+			monthly_income_trade_and_tax >= 1000
 		}
 		
 		on_completion = {
+			add_gold = -1000
 			add_country_modifier = { modifier = ven_bridge_of_wealth_bonus years = -1 mode = add }
 		}
 	}
@@ -249,22 +254,6 @@
 		}
 	}
 
-	# ---- ジェノヴァとの決着（ロンバルディアの覇権から） ----
-	ven_settling_with_genoa = {
-		icon = ven_mixed_naval_tactics
-		requires = { ven_lombardy_hegemony }
-
-		enabled = {
-			OR = {
-				NOT = { country_exists = c:GEN }
-				owns_or_non_sovereign_subject_owns = location:genoa
-			}
-		}
-		
-		on_completion = {
-			add_country_modifier = { modifier = ven_genoese_settlement years = -1 mode = add }
-		}
-	}
 
 	# ---- 水の都（富の橋の繁栄＋ドゥカーレ宮殿の改修＋アルセナーレ・ディ・ヴェネツィアから） ----
 	ven_city_of_water = {
@@ -272,13 +261,12 @@
 		requires = { ven_bridge_of_wealth ven_doges_palace ven_arsenal }
 
 		enabled = {
-			location:venice = { local_control >= 1.0 }
-			total_effective_building_levels:wharf >= 12
+			location:venice = { local_control >= 1.0
+			development = 50
+			}
 		}
 		
 		on_completion = {
-			set_variable = ven_city_of_water_done
-			add_country_modifier = { modifier = ven_queen_of_canals years = -1 mode = add }
 			trigger_event_non_silently = ven_events.5
 		}
 	}
@@ -330,7 +318,7 @@
 		}
 		
 		on_completion = {
-			add_country_modifier = { modifier = ven_papal_tension years = -1 mode = add }
+			add_country_modifier = { modifier = ven_papal_tension years = 20 mode = add }
 			trigger_event_non_silently = ven_events.6
 		}
 	}
@@ -375,7 +363,9 @@
 		requires = { ven_papal_conflict ven_alpine_trade }
 
 		enabled = {
-			NOT = { is_situation_active = situation:italian_wars }
+			situation:italian_wars = {
+					situation_has_ended = yes
+				}
 		}
 		
 		on_completion = {
@@ -387,7 +377,7 @@
 	# ---- テラフェルマの完成（ロンバルディアの覇権＋神のものは神に...＋カンブレー同盟の攪乱から） ----
 	ven_terraferma_completed = {
 		icon = ven_stato_da_mar
-		requires = { ven_settling_with_genoa ven_render_unto_caesar ven_league_of_cambrai }
+		requires = { mission_win_war_of_chiaoggia ven_render_unto_caesar ven_league_of_cambrai }
 
 		enabled = {
 			num_locations >= 100
@@ -407,7 +397,7 @@
 		final = yes
 
 		enabled = {
-			num_locations >= 200
+			num_locations >= 300
 			monthly_income_trade_and_tax >= 1500
 		}
 		
@@ -425,10 +415,10 @@
 	# 始点（海上系統）
 	ven_fleet_unification = {
 		icon = ven_ship_mounted_gunpowder_weapons
-		requires = { }
+		requires = { mission_control_adriatic }
 
 		enabled = {
-			navy_size >= 10
+			navy_size >= 50
 		}
 		
 		on_completion = {
@@ -524,19 +514,6 @@
 		}
 	}
 
-	# ---- 東方貿易を支配せよ（黒海からのジェノヴァの排除から） ----
-	ven_dominate_eastern_trade = {
-		icon = ven_venetian_thalassocracy
-		requires = { ven_expel_genoa_black_sea }
-
-		enabled = {
-			monthly_income_trade_and_tax >= 100
-		}
-		
-		on_completion = {
-			add_country_modifier = { modifier = ven_eastern_trade_dominance years = 50 mode = add }
-		}
-	}
 
 	# ---- ギリシャの橋頭堡（エーゲ海での拡大から） ----
 	ven_greek_bridgehead = {
@@ -548,7 +525,6 @@
 		}
 		
 		on_completion = {
-			add_country_modifier = { modifier = ven_greek_bridgehead_secured years = 45 mode = add }
 			trigger_event_non_silently = ven_events.13
 		}
 	}
@@ -587,10 +563,11 @@
 		on_completion = {
 			location:corfu = {
 				add_location_modifier = {
-					modifier = ven_corfu_garrison
-					years = -1
+					modifier = adriatic_sentinel
+					years = 35
 					mode = add
 				}
+				add_core = root
 			}
 		}
 	}
@@ -598,10 +575,11 @@
 	# ---- キプロス占有（東方貿易を支配せよから） ----
 	ven_occupy_cyprus = {
 		icon = ven_venetian_thalassocracy
-		requires = { ven_dominate_eastern_trade }
+		requires = { ven_expel_genoa_black_sea }
 
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:larnaca
+			any_owned_location = { province_definition = province_definition:cyprus_province is_owned_or_owned_by_subjects_of = root count >= 7 }
 		}
 		
 		on_completion = {
@@ -613,7 +591,7 @@
 	# ---- 二度目の帝都の制圧（ギリシャの橋頭堡から） ----
 	ven_second_conquest_of_constantinople = {
 		icon = divine_supremacy
-		requires = { ven_greek_bridgehead }
+		requires = { mission_control_thessaloniki }
 
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:constantinople
@@ -635,7 +613,6 @@
 		}
 		
 		on_completion = {
-			set_variable = ven_queen_of_adriatic_done
 			add_country_modifier = { modifier = ven_adriatic_queen years = -1 mode = add }
 			trigger_event_non_silently = ven_events.16
 		}
@@ -694,30 +671,10 @@
 		}
 	}
 
-		mission_secure_venetian_lagoon = {
-		icon = defensive_army
-		requires = { }
-		
-		enabled = {
-			stability >= 30
-			legitimacy >= 60
-			owns = location:venice
-			owns = location:mestre
-			owns = location:chioggia
-		}
-		
-		
-
-		on_completion = {
-			add_legitimacy = 10
-			trigger_event_non_silently = venice_mission_events.1
-		}
-		#ai_will_do = { value = 100 }
-	}
 
 	mission_develop_arsenal = {
 		icon = ship_building_advance
-		requires = { mission_secure_venetian_lagoon }
+		requires = { mission_control_adriatic }
 		
 		enabled = {
 			capital = {
@@ -743,7 +700,7 @@
 
 	mission_strengthen_republic = {
 		icon = government_reforms
-		requires = { }
+		requires = { ven_mainland_food_crisis }
 		
 		enabled = {
 			"estate_power(estate_type:burghers_estate)" >= 0.4
@@ -797,7 +754,7 @@
 		requires = {  }
 		
 		enabled = {
-			navy_size >= 20
+			navy_size >= 30
 		}
 		
 		
@@ -812,139 +769,11 @@
 		#ai_will_do = { value = 100 }
 	}
 
-	mission_secure_istria_dalmatia = {
-		icon = offensive_army
-		requires = { mission_control_adriatic }
-		
-		enabled = {
-			owns = location:pazin
-			owns = location:sibenik
 
-		}
-		
-		
 
-		on_completion = {
-			add_country_modifier = {
-				modifier = dalmatian_coast_secure
-				years = 25
-				mode = add
-			}
-			location:pazin = {
-				add_core = root
-			}
-			location:sibenik = {
-				add_core = root
-			}
-			# we could trigger a event like this elsewhere, later on and fix the event first
-			# trigger_event_non_silently = venice_mission_events.2
-		}
-		#ai_will_do = { value = 100 }
-	}
 
-	mission_subjugate_ragusa = {
-		icon = diplomatic_influence
-		requires = { mission_secure_venetian_lagoon }
-		
-		enabled = {
-			OR = {
-				NOT = { country_exists = c:RAG }
-				c:RAG = {
-					is_subject_of = root
-				}
-			}
-			c:RAG ?= {
-				opinion = {
-					target = root
-					value >= 90
-				}
-			}
-		}
-		
-		
 
-		bypass = {
-			NOT = { country_exists = c:RAG }
-		}
 
-		on_completion = {
-			add_country_modifier = {
-				modifier = ragusan_tributary
-				years = 20
-				mode = add
-			}
-		}
-		#ai_will_do = { value = 100 }
-	}
-
-	mission_secure_albania = {
-		icon = offensive_army
-		requires = { mission_control_adriatic }
-		
-		enabled = {
-			area:albania_area = {
-				any_location_in_area = {
-					OR = {
-						custom_tooltip = {
-							text = is_owner_generic_check
-							owner ?= root
-						}
-						custom_tooltip = {
-							text = is_owner_generic_subject_check
-							owner ?= { is_subject_of = root }
-						}
-					}
-					percent >= 0.7
-				}
-			}
-		}
-		
-		
-
-		on_completion = {
-			add_manpower = {
-				value = max_manpower
-				multiply = 0.2
-			}
-			area:albania_area = {
-				ordered_location_in_area = {
-					limit = { owner ?= root }
-					order_by = development
-					max = 3
-					add_core = root
-					change_development = 1
-				}
-			}
-		}
-		#ai_will_do = { value = 100 }
-	}
-
-	mission_control_corfu = {
-		icon = maritime_advance_age_2
-		requires = { mission_secure_albania }
-		
-		enabled = {
-			# owns = location:corfu
-			location:corfu = {
-				owner ?= root
-				has_building_with_at_least_one_level = castle
-			}
-		}
-		
-		
-
-		on_completion = {
-			location:corfu = {
-				add_location_modifier = {
-					modifier = adriatic_sentinel
-					years = 35
-					mode = add
-				}
-				add_core = root
-			}
-		}
-		#ai_will_do = { value = 100 }
-	}
 
 	# ==================== PHASE 3: MEDITERRANEAN TRADE EMPIRE ====================
 	
@@ -973,7 +802,7 @@
 
 	mission_control_cyprus = {
 		icon = glorious_arms
-		requires = { mission_subjugate_ragusa }
+		requires = { mission_defend_crete }
 		
 		enabled = {
 			 province_definition:cyprus_province = {
@@ -1004,7 +833,7 @@
 
 	mission_secure_crete = {
 		icon = defensive_army
-		requires = { mission_control_adriatic }
+		requires = { ven_greek_bridgehead }
 		
 		enabled = {
 			province_definition:crete_province = {
@@ -1101,7 +930,7 @@
 
 	mission_control_ionian_islands = {
 		icon = maritime_advance_age_2
-		requires = { mission_secure_crete }
+		requires = { ven_aegean_expansion }
 		
 		enabled = {
 			province_definition:ionian_islands_province = {
@@ -1135,77 +964,11 @@
 
 	# ==================== PHASE 4: ITALIAN MAINLAND EXPANSION ====================
 	
-	mission_acquire_terraferma = {
-		icon = offensive_army
-		requires = { mission_secure_friuli }
 		
-		enabled = {
-			area:veneto_area = {
-				any_location_in_area = {
-					OR = {
-						custom_tooltip = {
-							text = is_owner_generic_check
-							owner ?= root
-						}
-						custom_tooltip = {
-							text = is_owner_generic_subject_check
-							owner ?= { is_subject_of = root }
-						}
-					}
-					percent >= 0.6
-				}
-			}
-		}
-		
-		
-
-		on_completion = {
-			add_manpower = {
-				value = max_manpower
-				multiply = 0.35
-			}
-			trigger_event_non_silently = venice_mission_events.6
-		}
-		#ai_will_do = { value = 100 }
-	}
-
-	mission_secure_friuli = {
-		icon = defensive_army
-		requires = { mission_secure_venetian_lagoon }
-		
-		enabled = {
-			province_definition:friuli_province = {
-				any_location_in_province_definition = {
-					OR = {
-						custom_tooltip = {
-							text = is_owner_generic_check
-							owner ?= root
-						}
-						custom_tooltip = {
-							text = is_owner_generic_subject_check
-							owner ?= { is_subject_of = root }
-						}
-					}
-					percent >= 0.6
-				}
-			}
-		}
-		
-		
-
-		on_completion = {
-			add_country_modifier = {
-				modifier = alpine_border_secure
-				years = 25
-				mode = add
-			}
-		}
-		#ai_will_do = { value = 100 }
-	}
 
 	mission_dominate_padua = {
 		icon = cultural_acceptance_advance
-		requires = { mission_acquire_terraferma }
+		requires = { ven_terraferma_expansion }
 		
 		enabled = {
 			location:padova = {
@@ -1232,7 +995,7 @@
 
 	mission_control_verona = {
 		icon = offensive_army
-		requires = { mission_acquire_terraferma }
+		requires = { ven_terraferma_expansion }
 		
 		enabled = {
 			location:verona = {
@@ -1257,7 +1020,7 @@
 
 	mission_secure_brescia = {
 		icon = offensive_army
-		requires = { mission_acquire_terraferma }
+		requires = { ven_terraferma_expansion }
 		
 		enabled = {
 			location:brescia = {
@@ -1291,15 +1054,16 @@
 		
 		enabled = {
 			capital = {
-				total_building_levels >= 52
+				total_building_levels >= 135
 
 			}
-			navy_size >= 40
+			gold = 500
 		}
 		
 		
 
 		on_completion = {
+			add_gold = -500
 			capital = {
 				add_location_modifier = {
 					modifier = great_arsenal
@@ -1502,7 +1266,7 @@
 	
 	mission_challenge_genoese_power = {
 		icon = maritime_advance_age_2
-		requires = { mission_dominate_levantine_trade }
+		requires = { ven_lombardy_hegemony }
 		
 		enabled = {
 			scope:actor = {
@@ -1679,18 +1443,10 @@
 		requires = { mission_develop_candia mission_prepare_for_ottoman_threat }
 		
 		enabled = {
-			area:aegean_archipelago_area = {
-				any_location_in_area = {
-					OR = {
-						custom_tooltip = {
-							text = is_owner_generic_check
-							owner ?= root
-						}
-					}
+			location:candia = {
+					owner ?= root
 					has_building_with_at_least_one_level = castle
-					count >= 1
 				}
-			}
 		}
 		
 		
@@ -1727,6 +1483,7 @@
 		
 
 		on_completion = {
+			add_gold = -1000
 			capital = {
 				add_location_modifier = {
 					modifier = venetian_school_of_art
@@ -1762,14 +1519,15 @@
 	}
 
 	mission_establish_venetian_printing = {
-		icon = technology_icon
+		icon = printing_press_advance
 		requires = { mission_patronize_venetian_art }
 		
 		enabled = {
 			capital = {
 				total_building_levels >= 60
 			}
-			average_country_literacy >= 20
+			average_country_literacy >= 25
+			has_embraced_institution = institution:printing_press
 		}
 		
 		
@@ -1784,30 +1542,6 @@
 		#ai_will_do = { value = 100 }
 	}
 
-	mission_st_mark_square = {
-		icon = cultural_acceptance_advance
-		requires = { mission_commission_bellini_titian }
-		
-		enabled = {
-			capital = {
-				has_building_with_at_least_one_level = grand_palace
-				development >= 45
-			}
-		}
-		
-		
-
-		on_completion = {
-			capital = {
-				add_location_modifier = {
-					modifier = piazza_san_marco
-					years = -1
-					mode = add
-				}
-			}
-		}
-		#ai_will_do = { value = 100 }
-	}
 
 	# ==================== PHASE 10: GOVERNMENT REFORMS ====================
 	
@@ -1932,7 +1666,7 @@
 
 	mission_venetian_athens = {
 		icon = cultural_acceptance_advance
-		requires = { mission_control_thessaloniki }
+		requires = { ven_greek_bridgehead }
 		
 		enabled = {
 			location:athens = {
@@ -2030,34 +1764,4 @@
 		#ai_will_do = { value = 100 }
 	}
 
-	mission_most_serene_republic = {
-		icon = empire_icon
-		requires = { 
-			mission_venetian_thalassocracy
-			mission_st_mark_square
-
-		}
-		final = yes
-		
-		enabled = {
-			is_great_power = yes
-			legitimacy >= 90
-			stability >= 90
-			prestige >= 90
-			capital = {
-				development >= 60
-			}
-		}
-		
-		
-
-		on_completion = {
-			add_country_modifier = {
-				modifier = most_serene_republic
-				years = -1
-				mode = add
-			}
-		}
-		ai_will_do = { value = -100 }
-	}
 }

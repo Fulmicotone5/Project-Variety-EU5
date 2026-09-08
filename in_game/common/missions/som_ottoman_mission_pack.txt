@@ -8,15 +8,15 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = TUR
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+				has_global_variable = som_mission_started
+			}
 	}
 
-	enabled = {
-		always = yes
+	on_start = {
+		set_global_variable = som_mission_started
 	}
 
-	on_start = { set_variable = som_mission_started }
-	on_completion = { remove_variable = som_mission_started }
-	on_abort = { remove_variable = som_mission_started }
 
 	# ==================== ROOT ====================
 

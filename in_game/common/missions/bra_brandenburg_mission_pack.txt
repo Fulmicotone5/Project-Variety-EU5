@@ -554,20 +554,7 @@
 			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 220 }
 		}
 		on_completion = { 
-			change_country_name = F05
-				change_country_adjective = F05_ADJ
-				hidden_effect = {
-						change_country_color = map_PVngf
-				}
-				change_country_flag = F05
-				if = {
-				limit = {
-					NOT = {
-						country_rank = country_rank:rank_kingdom
-					}
-				}
-				set_country_rank_effect = { rank = country_rank:rank_kingdom }
-			}
+			form_country = formable_country:F05_f
 		}
 	}
 

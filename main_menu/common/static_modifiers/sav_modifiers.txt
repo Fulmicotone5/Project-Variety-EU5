@@ -62,7 +62,7 @@ sav_savoyard_army_mod = {
 
 sav_conquer_genoa_mod = {
 	icon = genoese_maritime_diplomacy
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	global_maritime_presence_modifier = 0.10
 }
 
@@ -196,7 +196,7 @@ sav_university_of_turin_mod = {
 
 sav_corsica_seized_mod = {
 	icon = genoese_flexibility
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	global_maritime_presence_modifier = 0.10
 }
 
@@ -244,7 +244,7 @@ sav_loire_valley_mod = {
 
 sav_normandy_coast_mod = {
 	icon = cas_castilian_navy
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	navy_heavy_ship_power = 0.10
 }
 

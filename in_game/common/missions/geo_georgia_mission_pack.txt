@@ -154,10 +154,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:caucasus_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 100
 			}
 		}

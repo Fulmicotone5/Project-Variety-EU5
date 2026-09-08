@@ -82,7 +82,7 @@ swe_eastern_empire_mod = {
 swe_dominium_baltici_mod = {
 	icon = hsa_mastery_of_the_sea
 	trade_sea_efficiency = 0.20
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	blockade_efficiency = 0.15
 }
 
@@ -151,7 +151,7 @@ swe_great_power_mod = {
 swe_stormakt_economy_mod = {
 	icon = dan_trading_economy
 	global_trade_income_modifier = 0.15
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	global_production_efficiency = 0.05
 }
 
@@ -171,7 +171,7 @@ swe_crusader_glory_mod = {
 swe_lutheran_mod = {
 	icon = dan_danish_legislation
 	global_pop_conversion_speed = 0.01
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 	estate_satisfaction:clergy_estate = 0.05
 }
 
@@ -185,7 +185,7 @@ swe_protestant_reform_mod = {
 swe_norse_conversion_mod = {
 	icon = nor_seaborn_country
 	global_manpower_modifier = 0.15
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	monthly_prestige = 0.10
 }
 
@@ -232,7 +232,7 @@ swe_stormaktstiden_mod = {
 swe_captured_fleet_mod = {
 	icon = dan_old_naval_traditions
 	ship_build_speed = 0.20
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 }
 
 swe_sound_toll_mod = {
@@ -263,7 +263,7 @@ swe_peasant_mod = {
 swe_engelbrekt_mod = {
 	icon = dan_levy_recruitment
 	global_manpower_modifier = 0.10
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 }
 
 swe_colonial_mod = {
@@ -281,7 +281,7 @@ swe_papal_champion_mod = {
 swe_protestant_empire_mod = {
 	icon = dan_danish_legislation
 	tolerance_own = 0.5
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	diplomatic_reputation = 2
 }
 
@@ -301,14 +301,14 @@ swe_uppsala_mod = {
 swe_karoliner_mod = {
 	icon = dan_scanian_regiment
 	discipline = 0.05
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	global_levy_size_modifier = 0.10
 }
 
 swe_scandinavian_empire_final_mod = {
 	icon = dan_rulers_of_the_north
 	diplomatic_reputation = 4
-	global_tax_modifier = 0.20
+	peasants_estate_max_tax = 0.20
 	global_manpower_modifier = 0.20
 	monthly_prestige = 0.30
 	trade_sea_efficiency = 0.20
@@ -328,7 +328,7 @@ swe_reform_winds_mod = {
 
 swe_old_gods_calling_mod = {
 	icon = nor_seaborn_country
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 	global_manpower_modifier = 0.05
 }
 

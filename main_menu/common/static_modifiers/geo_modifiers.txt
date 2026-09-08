@@ -34,7 +34,7 @@ geo_court_mod = {
 
 geo_army_mod = {
 	icon = arm_mountain_armies
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	discipline = 0.05
 }
 
@@ -58,7 +58,7 @@ geo_shirvan_mod = {
 
 geo_seljuk_mod = {
 	icon = imperial_creed
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	discipline = 0.05
 }
 
@@ -210,7 +210,7 @@ geo_constantinople_fall_mod = {
 
 geo_golden_age_declaration_mod = {
 	icon = legacy_of_great_empires
-	road_cost_on_distance_from_capital = -2
+	road_cost_on_distance_from_capital = -0.25
 	global_distance_from_capital_speed_propagation = 0.20
 	num_local_governors = 1
 	monthly_legitimacy = 0.10

@@ -117,10 +117,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:baltic_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 50
 			}
 		}
@@ -135,18 +132,12 @@
 		enabled = {
 			any_owned_location = {
 				area = area:volhynia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 15
 			}
 			any_owned_location = {
 				area = area:podolia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 15
 			}
 		}
@@ -195,10 +186,7 @@
 			owns_or_non_sovereign_subject_owns = location:kyiv
 			any_owned_location = {
 				region = region:ruthenia_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 100
 			}
 		}
@@ -213,10 +201,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:russian_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 120
 			}
 		}
@@ -231,10 +216,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:steppes_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -292,10 +274,7 @@
 			navy_tradition >= 25
 			any_owned_location = {
 				region = region:steppes_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 50
 			}
 		}

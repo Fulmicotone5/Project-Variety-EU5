@@ -6,7 +6,7 @@
 
 den_danish_heartland_mod = {
 	icon = consolidate_the_royal_domain
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	monthly_legitimacy = 0.05
 	smooth_administration = 0.10
 }
@@ -14,7 +14,7 @@ den_danish_heartland_mod = {
 den_holstein_integration_mod = {
 	icon = fra_integration_of_new_territories
 	global_integration_speed_modifier = 0.10
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 	annexation_speed_modifier = 0.10
 }
 
@@ -82,7 +82,7 @@ den_livonia_mod = {
 
 den_baltic_master_mod = {
 	icon = development_of_maritime_law
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	ship_build_speed = 0.20
 	blockade_efficiency = 0.15
 }
@@ -108,26 +108,26 @@ den_sound_toll_extended_mod = {
 
 den_naval_ambition_mod = {
 	icon = development_of_maritime_law
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	ship_build_speed = 0.15
 }
 
 den_north_sea_fleet_mod = {
 	icon = development_of_maritime_law
 	ship_build_speed = 0.20
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	naval_movement_speed = 0.15
 }
 
 den_england_invasion_mod = {
 	icon = glorious_arms
 	discipline = 0.05
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 }
 
 den_north_sea_empire_mod = {
 	icon = legacy_of_great_empires
-	global_tax_modifier = 0.15
+	peasants_estate_max_tax = 0.15
 	sea_cost_on_distance_from_capital_when_maritime = -0.5
 	port_cost_distance_from_capital = -5
 }
@@ -162,7 +162,7 @@ den_lutheran_reform_mod = {
 	icon = legalism_advance
 	global_pop_conversion_speed = 0.01
 	estate_satisfaction:clergy_estate = 0.05
-	global_tax_modifier = 0.05
+	peasants_estate_max_tax = 0.05
 }
 
 den_protestant_church_mod = {
@@ -181,14 +181,14 @@ den_protestant_league_mod = {
 den_protestant_empire_mod = {
 	icon = legacy_of_great_empires
 	tolerance_own = 0.5
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	diplomatic_reputation = 2
 }
 
 den_norse_revival_mod = {
 	icon = balkan_hajduks
 	global_manpower_modifier = 0.15
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 	monthly_prestige = 0.10
 }
 
@@ -277,7 +277,7 @@ den_norway_north_mod = {
 
 den_golden_age_mod = {
 	icon = legacy_of_great_empires
-	global_tax_modifier = 0.10
+	peasants_estate_max_tax = 0.10
 	monthly_prestige = 0.20
 	diplomatic_reputation = 2
 	global_manpower_modifier = 0.10
@@ -294,7 +294,7 @@ den_north_sea_dominion_mod = {
 den_scandinavian_empire_final_mod = {
 	icon = legacy_of_great_empires
 	diplomatic_reputation = 4
-	global_tax_modifier = 0.20
+	peasants_estate_max_tax = 0.20
 	global_manpower_modifier = 0.20
 	monthly_prestige = 0.30
 	ship_build_speed = 0.20
@@ -333,7 +333,7 @@ den_reform_winds_mod = {
 
 den_old_gods_calling_mod = {
 	icon = balkan_hajduks
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 	global_manpower_modifier = 0.05
 }
 

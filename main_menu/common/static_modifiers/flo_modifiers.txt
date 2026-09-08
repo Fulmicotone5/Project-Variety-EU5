@@ -137,7 +137,7 @@ flo_first_modern_engineer_mod = {
 
 flo_humiliate_venice_mod = {
 	icon = pis_maritimes_legacy
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	global_maritime_presence_modifier = 0.10
 }
 

@@ -9,7 +9,7 @@ mon_palaiologos_mod = {
 mon_thessaloniki_claim_mod = {
 	icon = glorious_arms
 	monthly_prestige = 0.05
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 }
 
 mon_greek_culture_mod = {
@@ -61,7 +61,7 @@ mon_casale_mod = {
 
 mon_savoy_mod = {
 	icon = crusader_tradition
-	land_morale = 0.05
+	land_morale_modifier = 0.05
 	diplomatic_reputation = 1
 }
 
@@ -144,7 +144,7 @@ mon_heritage_mod = {
 
 mon_navy_mod = {
 	icon = ship_building_advance
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 	global_maritime_presence_modifier = 0.10
 }
 
@@ -192,7 +192,7 @@ mon_heritage_basic_mod = {
 
 mon_new_byzantium_mod = {
 	icon = legacy_of_great_empires
-	road_cost_on_distance_from_capital = -1
+	road_cost_on_distance_from_capital = -0.25
 	sea_cost_on_distance_from_capital_when_maritime = -0.5
 	num_naval_governors = 1
 }

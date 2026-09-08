@@ -11,7 +11,14 @@
 
  sic_ambitions_on_naples: "Ambitions on Naples"
  sic_ambitions_on_naples_desc: "The Angevin king across the strait stands, by right, as a rival claimant to the very title of King of Sicily. The time has come to build up our standing army and raise the just cause of one day claiming the crown of Naples for ourselves."
- sic_ambitions_on_naples_tooltip: "Regular army size 2,000+."
+ sic_ambitions_on_naples_tooltip: "Regular army size 1,000+."
+
+ sic_ambitions_on_naples2: "The Burghers of Sicily"
+ sic_ambitions_on_naples2_desc: "The Burghers of Sicily have offered to fund the construction of three barracks for the Crown. As the Kingdom is in great need, they have decided to answer."
+ sic_ambitions_on_naples2_tooltip: "Burghers happyness 60%."
+ sic_ambitions_on_naples3: "An Army of a Thousand Knights"
+ sic_ambitions_on_naples3_desc: "Throughout the Middle Ages, a thousand knighs were enought to conquer a kingdom. Every noble of Sicily has offered himself for the Kingdom, so that the King may defeat Naples once and for all."
+ sic_ambitions_on_naples3_tooltip: "Nobles happyness 60%."
 
  sic_army_of_the_island: "Fleet of the Island"
  sic_army_of_the_island_desc: "The island of Sicily is a fortress surrounded on all sides by the sea. To send our armies across the strait to Naples, we must first build a powerful fleet, securing both the island's defense and the safe passage of our troops."
@@ -38,7 +45,7 @@
  sic_mediterranean_crossroads_tooltip: "Own 1+ market center locations."
 
  sic_sicilian_renaissance: "The Sicilian Renaissance"
- sic_sicilian_renaissance_desc: "The Sicilian court, where Norman, Arab, Byzantine, and Latin cultures meet, has long been a center of art and learning. The many works of art gathered in Palermo hint at the dawn of a new cultural flowering."
+ sic_sicilian_renaissance_desc: "The Sicilian court, where Norman, Arab, Roman, and Latin cultures meet, has long been a center of art and learning. The many works of art gathered in Palermo hint at the dawn of a new cultural flowering."
  sic_sicilian_renaissance_tooltip: "palermo contains 20+ works of art."
 
  sic_kingdom_resurgent: "The Kingdom Resurgent"

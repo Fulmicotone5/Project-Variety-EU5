@@ -346,6 +346,9 @@ F09_f = {
 	}
 
 	allow = {
+		NOT = {
+			has_or_had_tag = VEN
+		}
 	}
 	
 	name = F09

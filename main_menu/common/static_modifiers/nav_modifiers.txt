@@ -66,7 +66,7 @@ nav_basque_seafarers_mod = {
 
 nav_fearless_fishermen_mod = {
 	icon = nav_fearless_seamen
-	naval_morale = 0.10
+	naval_morale_modifier = 0.10
 }
 
 nav_transatlantic_whalers_mod = {
@@ -76,7 +76,7 @@ nav_transatlantic_whalers_mod = {
 
 nav_third_faction_mod = {
 	icon = nav_basque_ferocity
-	land_morale = 0.10
+	land_morale_modifier = 0.10
 }
 
 nav_basque_in_glory_mod = {

@@ -156,10 +156,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:levant_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}
@@ -231,10 +228,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:jazira_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -264,10 +258,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:iraq_arabi_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}
@@ -525,10 +516,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:iraq_ajam_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}

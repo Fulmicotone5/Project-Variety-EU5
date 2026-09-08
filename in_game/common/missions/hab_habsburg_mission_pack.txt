@@ -76,10 +76,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:south_german_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 140
 			}
 		}
@@ -274,10 +271,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:italy_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 4
 			}
 		}
@@ -471,10 +465,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:croatia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 10
 			}
 		}
@@ -489,10 +480,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:balkan_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 30
 			}
 		}
@@ -507,10 +495,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:balkan_region
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 280
 			}
 		}
@@ -684,10 +669,7 @@
 		enabled = {
 			any_owned_location = {
 				area = area:central_switzerland_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 8
 			}
 		}
@@ -757,10 +739,7 @@
 			owns_or_non_sovereign_subject_owns = location:florence
 			any_owned_location = {
 				area = area:tuscany_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 8
 			}
 		}
@@ -802,18 +781,12 @@
 		enabled = {
 			any_owned_location = {
 				area = area:wallachia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 			any_owned_location = {
 				area = area:moldavia_area
-				OR = {
-					owner = root
-					owner = { is_subject_of = root }
-				}
+				is_owned_or_owned_by_subjects_of = root
 				count >= 20
 			}
 		}

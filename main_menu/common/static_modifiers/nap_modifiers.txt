@@ -1,7 +1,6 @@
 nap_new_capital_mod = {
 	icon = administrative_icon
-	local_monthly_development = 0.001
-	local_production_efficiency = 0.05
+	local_monthly_prosperity = 0.1
 }
 
 nap_apulian_granary_mod = {
@@ -109,7 +108,7 @@ nap_foothold_in_northern_italy_mod = {
 
 nap_crossroads_of_civilizations_mod = {
 	icon = merchants_and_trade
-	cultural_influence_modifier = 0.10
+	cultural_influence_modifier = 1
 }
 
 nap_anjou_homeland_mod = {
@@ -129,11 +128,17 @@ nap_mediterranean_greatest_city_mod = {
 	icon = administrative_icon
 	local_production_efficiency = 0.10
 	local_monthly_development = 0.001
+	local_population_growth = 0.002
+	local_trade_center_power = 0.20
+	free_building_levels = 200
+	max_constructions_at_same_time = 2
+	local_max_rgo_size_modifier = 1.00
 }
 
 nap_university_of_frederick_ii_mod = {
 	icon = legalism_advance
 	monthly_towards_innovative = 0.05
+	research_speed_modifier = 0.1
 }
 
 nap_magnificent_royal_palace_mod = {
@@ -157,7 +162,8 @@ nap_subjugation_of_epirus_mod = {
 nap_caserta_palace_mod = {
 	icon = crown_power_advance_renaissance
 	local_production_efficiency = 0.10
-	local_monthly_development = 0.001
+	monthly_prestige = 0.05
+	local_monthly_prosperity = 0.2
 }
 
 nap_charles_dream_mod = {
@@ -170,6 +176,8 @@ nap_never_die_without_seeing_naples_mod = {
 	icon = legalism_advance
 	monthly_prestige = 0.10
 	trade_income = 0.10
+	government_reform_slots = 1
+	government_size = 1
 }
 
 nap_latin_empire_mod = {
