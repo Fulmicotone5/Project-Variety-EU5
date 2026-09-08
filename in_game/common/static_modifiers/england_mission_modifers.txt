@@ -293,7 +293,7 @@ protestant_leadership = {
 
 religious_conformity = {
 	icon = defensive_army
-	tolerance_own = 1
+	tolerance_own = 0.5
 	monthly_rebel_growth = -0.10
 	global_pop_conversion_speed_modifier = 0.20
 }
@@ -733,7 +733,7 @@ imperial_zenith = {
 
 royal_supremacy = {
 	icon = crown_icon
-	tolerance_own = 1
+	tolerance_own = 0.5
 }
 
 religious_settlement = {

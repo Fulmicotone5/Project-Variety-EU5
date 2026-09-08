@@ -346,6 +346,8 @@ STATIC_MODIFIER_DESC_tur_administrative_centralization:0 "Centralized administra
 
 STATIC_MODIFIER_NAME_tur_legal_reforms:0 "Legal Reforms"
 STATIC_MODIFIER_DESC_tur_legal_reforms:0 "Legal reforms establish a unified system of justice, ensuring fairness and order across the empire."
+STATIC_MODIFIER_NAME_tur_legal_reforms_2:0 "Centralized Authority"
+STATIC_MODIFIER_DESC_tur_legal_reforms_2:0 "The power of the state has been centralized towards the Sultan."
 
 STATIC_MODIFIER_NAME_tur_ottoman_legal_code:0 "Ottoman Legal Code"
 STATIC_MODIFIER_DESC_tur_ottoman_legal_code:0 "The codification of Ottoman law creates a unified legal system for our diverse empire."
@@ -459,7 +461,7 @@ ottoman_mission_events.18.b:0 "Rule through vassal lords"
 ottoman_mission_events.1.a.tt:0 "Integrate Anatolia fully into the empire, establishing permanent control and legitimacy."
 ottoman_mission_events.1.b.tt:0 "Focus on economic development, enriching the new territories and integrating them gradually."
 
-ottoman_mission_events.3.a.tt:0 "Transform Constantinople into our imperial capital, the center of a new world empire."
+ottoman_mission_events.3.a.tt:0 "Transform Constantinople into our capital, the center of a new world empire."
 ottoman_mission_events.3.b.tt:0 "Take the city's wealth for ourselves, filling the treasury and rewarding our soldiers."
 
 ottoman_mission_events.5.a.tt:0 "Protect the holy sites of Jerusalem, establishing our role as guardian of the Holy Land."

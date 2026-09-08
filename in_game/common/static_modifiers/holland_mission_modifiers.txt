@@ -194,7 +194,7 @@ hol_scientific_tradition = {
 
 hol_golden_age = {
 	icon = bill_of_rights
-	prestige_decay = -0.15
+	prestige_decay = -0.005
 	#great_power_score_modifier = 0.05
 	antagonism_received_modifier = -0.1
 }

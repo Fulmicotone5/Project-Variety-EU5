@@ -187,7 +187,7 @@
 # ==================== ECONOMIC DEVELOPMENT BRANCH ====================
 
     mission_ach_develop_the_morea = {
-        icon = agriculture_advance
+        icon = efficient_mining
         # ai_will_do = { value = 100 }
         duration = 0
 
@@ -343,7 +343,7 @@
     }
 
     mission_ach_patras_emporium = {
-        icon = reduce_inflations_advance
+        icon = economical_policies_law_advance
         requires = { mission_ach_establish_trade_routes }
         # ai_will_do = { value = 100 }
         duration = 0
@@ -661,7 +661,7 @@
 							owner ?= { is_subject_of = root }
 						}
 					}
-					percent >= 0.85
+					percent >= 0.7
 				}
             }
         }
@@ -1783,7 +1783,7 @@
 
 
     mission_ach_establish_the_academy = {
-        icon = university_naples
+        icon = global_trade_advance
         requires = { mission_ach_promote_latin_culture }
         # ai_will_do = { value = 100 }
         duration = 0

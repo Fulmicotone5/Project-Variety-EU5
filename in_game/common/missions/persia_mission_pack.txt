@@ -644,7 +644,7 @@
     # ==================== PHASE 4: ECONOMIC DEVELOPMENT ====================
 
     mission_per_develop_agricultural_heartland = {
-        icon = agriculture_advance
+        icon = efficient_mining
         duration = 0
 
         enabled = {
@@ -1333,7 +1333,7 @@
     # --- Diplomatic & Cultural Missions ---
 
     mission_per_establish_royal_road = {
-        icon = road_advance_1
+        icon = inc_vertical_economy
         visible = {
             has_or_had_tag = IRA
         }
@@ -1827,7 +1827,7 @@
     # --- Infrastructure & Development ---
 
     mission_per_develop_irrigation = {
-        icon = agriculture_advance
+        icon = efficient_mining
         visible = {
             has_or_had_tag = IRA
         }

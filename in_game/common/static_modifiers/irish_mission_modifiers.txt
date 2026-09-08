@@ -357,7 +357,7 @@ irish_atlantic_empire_faith = {
 	global_pop_assimilation_speed_modifier = 0.25
 	monthly_religious_rebel_growth = -0.25
 	diplomatic_reputation = 1
-	tolerance_own = 1
+	tolerance_own = 0.5
 }
 
 # ==================== CORE BRANCH NIEUWE MODIFIERS ====================

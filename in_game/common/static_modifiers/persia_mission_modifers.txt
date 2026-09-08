@@ -49,7 +49,7 @@ per_provinces_subjugated = {
 
 per_persian_contender = {
     icon = diplomacy_icon
-    prestige_decay = -0.01
+    prestige_decay = -0.001
     army_tradition_decay = -0.01
     land_morale_modifier = 0.05
 }
@@ -224,7 +224,7 @@ per_patron_of_arts = {
 
 per_persian_miniatures = {
     icon = culture_icon
-    prestige_decay = -0.02
+    prestige_decay = -0.002
     antagonism_received_modifier = -0.1
 }
 

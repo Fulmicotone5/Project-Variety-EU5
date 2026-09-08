@@ -6,8 +6,15 @@ royal_pvtanning_rights = {
 		local_fur_output_modifier = 0.1
 		local_leather_output_modifier = 0.2
 		local_cloth_guild_building_levels = 15
-		local_production_efficiency = -0.05
+		local_production_efficiency = -0.025
 
+	}
+
+	allow = {
+		or = {
+			has_policy = PV_artisans_policy
+			has_policy = PV_clothmaker_policy
+		}
 	}
 	
 	color = goods_leather
@@ -51,7 +58,6 @@ pvfarmingtown = {
 	location_modifier = {
 		local_max_rgo_size_modifier = 0.5
 		local_monthly_food_modifier = 0.25
-		local_production_efficiency = -0.05
 	}
 	allow = {
 		scope:target = {
@@ -69,6 +75,7 @@ pvfarmingtown = {
 				raw_material = goods:beeswax
 			}
 		}
+		has_policy = PV_agrarian_society_policy
 	}
 
 	color = beeswax
@@ -78,7 +85,6 @@ pvfishingcommunity = {
 		local_max_rgo_size_modifier = 0.5
 		local_preserved_meat_output_modifier = 0.25
 		local_fish_output_modifier = 0.25
-		local_production_efficiency = -0.025
 	}
 	allow = {
 		scope:target = {

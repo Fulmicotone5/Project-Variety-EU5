@@ -4506,7 +4506,7 @@ building_manager = {
 
 	#Aqueducts
 
-	aqueduct_system = { tag = BYZ level = 1 location = constantinople }
+#	aqueduct_system = { tag = BYZ level = 1 location = constantinople } removed for mission tree
 	aqueduct_system = { tag = PAP level = 1 location = rome }
 	aqueduct_system = { tag = PAP level = 1 location = avignon }
 	aqueduct_system = { tag = CAS level = 1 location = segovia }

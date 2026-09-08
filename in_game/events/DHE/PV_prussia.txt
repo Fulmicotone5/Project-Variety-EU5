@@ -44,9 +44,6 @@ pruflavor.1 = {
 			add_trait = trait:industrious
 			add_trait = trait:tactical_genius
 			add_trait = trait:bold_fighter
-			add_trait = trait:administrator
-			add_trait = trait:conqueror
-			add_trait = trait:child_gifted
 		}
 	}
 

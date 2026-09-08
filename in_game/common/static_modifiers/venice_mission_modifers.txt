@@ -152,7 +152,7 @@ ven_candia_emporium = {
 
 cyprus_crown = {
     icon = empire_icon
-    prestige_decay = -0.02
+    prestige_decay = -0.002
     diplomatic_reputation = 1
     trade_income = 0.05
 }
@@ -304,7 +304,7 @@ lepanto_veterans = {
 
 ven_holy_league_heroes = {
     icon = religion_icon
-    prestige_decay = -0.02
+    prestige_decay = -0.002
     diplomatic_reputation = 1
     improve_relation_impact = 0.12
 }
@@ -376,7 +376,7 @@ ven_bellini_titian = {
 ven_art_patronage = {
     icon = cultural_acceptance_advance
     cultural_tradition_modifier = 0.15
-    prestige_decay = -0.02
+    prestige_decay = -0.002
     artist_salary_modifier = -0.10
 }
 

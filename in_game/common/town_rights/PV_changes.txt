@@ -125,7 +125,7 @@ TRY_REPLACE:royal_jewelry_rights = {
 	}
 	location_modifier = {
 		local_jewelry_output_modifier = 0.2
-		local_jewelry_guild_building_levels = 20
+		local_jewelry_guild_building_levels = 25
 
 		local_production_efficiency = town_right_efficiency_penalty
 	}
@@ -133,6 +133,9 @@ TRY_REPLACE:royal_jewelry_rights = {
 	color = goods_jewelry
 }
 TRY_REPLACE:royal_artisan_rights = {
+	allow = {
+		has_policy = PV_artisans_policy
+	}
 	location_modifier = {
 		local_furniture_output_modifier = 0.2
 		local_pottery_output_modifier = 0.2
@@ -143,4 +146,89 @@ TRY_REPLACE:royal_artisan_rights = {
 	}
 	
 	color = goods_pottery
+}
+
+TRY_REPLACE:royal_naval_rights = {
+
+	allow = {
+		custom_tooltip = {
+			text = not_forcefully_revoked_last_10_years_tt
+			scope:target = { 
+				NOT = { has_variable = recently_forced_to_revoke_town_rights_variable }
+			}
+		}
+		or = {
+			has_policy = PV_miners_policy
+			has_policy = PV_metallurgy_policy
+		}
+	}
+	location_modifier = {
+		local_naval_supplies_output_modifier = 0.3
+		local_tar_output_modifier = 0.3
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_naval_supplies
+}
+
+
+TRY_REPLACE:royal_weaponry_rights = {
+	allow = {
+		or = {
+			has_policy = PV_miners_policy
+			has_policy = PV_metallurgy_policy
+		}
+	}
+	location_modifier = {
+		local_weaponry_output_modifier = 0.2
+		local_firearms_output_modifier = 0.2
+		local_cannons_output_modifier = 0.2
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_weaponry
+}
+
+TRY_REPLACE:royal_book_rights = {
+	allow = {
+		has_policy = PV_monastic_policy
+	}
+	location_modifier = {
+		local_paper_output_modifier = 0.2
+		local_books_output_modifier = 0.2
+		local_dyes_output_modifier = 0.2
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_paper
+}
+TRY_REPLACE:royal_tooling_rights = {
+	or = {
+			has_policy = PV_miners_policy
+			has_policy = PV_metallurgy_policy
+		}
+	location_modifier = {
+		local_tools_output_modifier = 0.3
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_tools
+}
+TRY_REPLACE:royal_brewing_rights = {
+	allow = {
+		has_policy = PV_monastic_policy
+	}
+	location_modifier = {
+		local_liquor_output_modifier = 0.2
+		local_beer_output_modifier = 0.2
+		local_wine_output_modifier = 0.2
+
+		local_production_efficiency = town_right_efficiency_penalty
+	}
+	
+	color = goods_liquor
 }

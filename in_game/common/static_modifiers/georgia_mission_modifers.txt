@@ -134,7 +134,7 @@ geo_invasion_resisted = {
     icon = defensive_icon
     global_defensive = 0.15
     land_morale_modifier = 0.10
-    prestige_decay = -0.02
+    prestige_decay = -0.002
     army_tradition_decay = -0.01
 }
 
@@ -254,7 +254,7 @@ geo_caucasus_hegemon = {
 geo_caucasian_unifier = {
     icon = empire_icon
     cultural_influence_modifier = 0.10
-    prestige_decay = -0.05
+    prestige_decay = -0.005
 		improve_relation_impact = 0.10
 
 }

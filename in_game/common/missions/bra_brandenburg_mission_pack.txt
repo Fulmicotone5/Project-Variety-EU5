@@ -1,0 +1,1583 @@
+﻿bra_brandenburg_mission_pack = {
+	icon = nmt_brandenburg
+	repeatable = no
+	player_playstyle = military
+	chance = 10000000
+
+	visible = {
+		game_has_missions_enabled = yes
+		has_or_had_tag = BRA
+		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = bra_mission_started
+		}
+	}
+
+	enabled = { always = yes }
+
+	on_start = { set_global_variable = bra_mission_started }
+	on_completion = {  }
+	on_abort = {  }
+
+	# ===== ROOT =====
+
+	bra_ascanian_legacy = {
+		icon = noble_resilience
+		requires = {  }
+		enabled = { always = yes }
+		on_completion = {
+			add_country_modifier = { modifier = bra_ascanian_mod years = 20 mode = add }
+		}
+	}
+
+	# ===== A: 辺境伯権の確立(11) =====
+
+
+	bra_altmark_secure = {
+		icon = a_fortified_border
+		requires = { bra_ascanian_legacy }
+		enabled = {
+			OR = {
+				AND = {
+					location:stendal = { owner = root }
+					location:gardelegen = { owner = root }
+					location:salzwedel = { owner = root }
+					location:osterburg = { owner = root }
+					location:haldensleben = { owner = root }
+					location:wolmirstedt = { owner = root }
+				}
+				province:altmark_province = { province_average_control >= 0.70 }
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_altmark_mod years = 20 mode = add } }
+	}
+
+	bra_neumark_colonization = {
+		icon = new_frontiers
+		requires = { bra_ascanian_legacy }
+		enabled = {
+			location:chojna = { owner = root is_core_of = root }
+			location:soltyn = { owner = root is_core_of = root }
+			location:gorzow = { owner = root is_core_of = root }
+			location:santok = { owner = root is_core_of = root }
+			location:torzym = { owner = root is_core_of = root }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_neumark_mod years = 20 mode = add } }
+	}
+
+	bra_uckermark_integration = {
+		icon = settle_the_frontier_advance
+		requires = { bra_altmark_secure }
+		enabled = {
+			location:prenzlau = { owner = root is_core_of = root }
+			location:templin = { owner = root is_core_of = root }
+			location:angermunde = { owner = root is_core_of = root }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_uckermark_mod years = 30 mode = add } }
+	}
+
+	bra_pomeranian_rivalry = {
+		icon = chg_border_wars
+		requires = { bra_neumark_colonization }
+		enabled = {
+			any_owned_location = { area = area:pomerania_area owner = root count >= 8 }
+		}
+		on_completion = {
+			add_country_modifier = { modifier = bra_pomerania_mod years = 20 mode = add }
+		}
+	}
+
+	bra_wendish_lands = {
+		icon = religious_unification
+		requires = { bra_ascanian_legacy }
+		enabled = {
+			OR = {
+				has_accepted_culture = culture:kashubian
+				has_tolerated_culture = culture:kashubian
+				culture_population_in_country = {
+					culture = culture:kashubian
+					value < 50
+				}
+			}
+		}
+		on_completion = {
+			culture:kashubian = {
+				change_cultural_view = {
+					target = culture:brandenburgish
+					change = 1
+				}
+			}
+		}
+	}
+
+	bra_berlin_dev = {
+		icon = city_building_advance
+		requires = { bra_ascanian_legacy }
+		enabled = {
+			location:berlin = { owner = root total_building_levels >= 30 }
+		}
+		on_completion = {
+			location:berlin = { add_location_modifier = { modifier = bra_berlin_mod years = -1 mode = add } }
+		}
+	}
+
+	bra_electoral_dignity = {
+		icon = deliberative_council
+		requires = { bra_uckermark_integration bra_pomeranian_rivalry }
+		enabled = { country_rank_level >= 2 }
+		on_completion = { add_country_modifier = { modifier = bra_electoral_mod years = 10 mode = add } }
+	}
+
+
+
+	# ===== B: 帝国内の地位(10) =====
+
+	bra_imperial_diet = {
+		icon = diplomatic_influence
+		requires = { bra_ascanian_legacy }
+		enabled = {
+			custom_description = {
+			text = hre_has_locked_law
+			subject = law:golden_bull
+			hre_has_locked_law = { law = golden_bull }
+		}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_diet_mod years = 20 mode = add } }
+	}
+
+	bra_reformation_choice = {
+		icon = hun_hungarian_reformation
+		requires = { bra_imperial_diet }
+		enabled = {
+			situation:reformation = {
+				situation_is_active = yes
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_reformation_mod years = 20 mode = add } }
+	}
+
+	bra_secularize_prussia = {
+		icon = crown_power_advance_renaissance
+		requires = { bra_imperial_diet }
+		enabled = {
+			OR = {
+				NOT = { country_exists = c:TEU }
+				c:TEU = { is_subject_of = root }
+				any_owned_location = { area = area:prussia_area owner = root count >= 40 }
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_secularize_mod years = 30 mode = add } }
+	}
+
+	bra_cleves_inheritance = {
+		icon = noble_society_cologne
+		requires = { bra_imperial_diet }
+		enabled = {
+			any_owned_location = {
+				area = area:rhineland_area
+				is_owned_or_owned_by_subjects_of = root
+				count >= 3
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_cleves_mod years = 20 mode = add } }
+	}
+
+	bra_thirty_years_war = {
+		icon = defensive_army_attrition
+		requires = { bra_reformation_choice bra_cleves_inheritance }
+		enabled = {
+			OR = {
+				is_situation_active = situation:war_of_religions
+				situation:war_of_religions = { situation_has_ended = yes }
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_thirty_years_mod years = 20 mode = add } }
+	}
+
+	bra_standing_army = {
+		icon = army_professionalism
+		requires = { bra_king_in_prussia }
+		enabled = { regular_army_size >= 100 }
+		on_completion = { add_country_modifier = { modifier = bra_standing_army_mod years = 20 mode = add } }
+	}
+
+	bra_absolutism = {
+		icon = absolute_rulership
+		requires = { mission_bra_establish_the_berlin_university  }
+		enabled = {
+			"estate_power(estate_type:crown_estate)" >= 0.4
+			"estate_power(estate_type:nobles_estate)" <= 0.25
+			current_age = age_5_absolutism
+			societal_value:absolutism_vs_liberalism < -50
+			legitimacy >= 100
+			stability >= 80
+		}
+		on_completion = { add_country_modifier = { modifier = bra_absolutism_mod years = -1 mode = add } }
+	}
+
+	# ===== C: プロイセン王国の成立(12) =====
+
+
+	bra_king_in_prussia = {
+		icon = tnk_legitimate_rule
+		requires = { bra_secularize_prussia }
+		enabled = { has_or_had_tag = PRU }
+		on_completion = { trigger_event_non_silently = bra_events.1 }
+	}
+
+	bra_prussian_administration = {
+		icon = government_size_absolutism
+		requires = { bra_king_in_prussia }
+		enabled = {
+			any_owned_location = {
+				has_building = building_type:counting_house
+				count >= 10
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_administration_mod years = 20 mode = add } }
+	}
+
+	bra_junker_integration = {
+		icon = noble_officers
+		requires = { bra_king_in_prussia }
+		enabled = {
+			OR = {
+				AND = {
+					"estate_power(estate_type:nobles_estate)" >= 0.50
+					estate_satisfaction:nobles_estate >= 0.70
+				}
+				"estate_power(estate_type:crown_estate)" >= 0.20
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_junker_mod years = 20 mode = add } }
+	}
+
+	bra_potsdam_dev = {
+		icon = austrian_court
+		requires = { bra_king_in_prussia }
+		enabled = {
+			location:potsdam = { owner = root total_building_levels >= 50
+		development >= 25 }
+		}
+		on_completion = {
+			location:potsdam = { add_location_modifier = { modifier = bra_potsdam_mod years = -1 mode = add } }
+		}
+	}
+
+
+
+	bra_silesian_ambition = {
+		icon = army_country_casus_belli_advance
+		requires = { bra_prussian_administration bra_standing_army }
+		enabled = {
+			OR = {
+				c:BOH = { is_rival_of = root }
+				c:HAB = { is_rival_of = root }
+				any_owned_location = {
+					area = area:silesia_area
+					is_owned_or_owned_by_subjects_of = root
+					count >= 4
+				}
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_silesian_ambition_mod years = 20 mode = add } }
+	}
+
+
+	bra_silesia_annexed = {
+		icon = saxon_industrialization
+		requires = { bra_silesian_ambition bra_potsdam_dev }
+		enabled = {
+			any_owned_location = { area = area:silesia_area is_owned_or_owned_by_subjects_of = root count >= 40 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_silesia_mod years = -1 mode = add } }
+	}
+
+	bra_prussian_enlightenment = {
+		icon = enlightenment_advance
+		requires = { bra_silesia_annexed bra_the_great }
+		enabled = { total_primary_culture_population >= 1000 }
+		on_completion = { add_country_modifier = { modifier = bra_enlightenment_mod years = -1 mode = add } }
+	}
+
+	# ===== D: 大国への道(12) =====
+
+
+	bra_frederick_the_great = {
+		icon = oda_triple_firing
+		requires = { bra_king_in_prussia }
+		enabled = {
+			has_or_had_tag = PRU
+			custom_tooltip = {
+				text = fredegriss
+				ruler ?= character:pru_pv_frederick
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_frederick_mod years = 20 mode = add } }
+	}
+
+	mission_bra_reform_prussian_bureaucracy = {
+		icon = global_clergy_max_literacy_advance
+		requires = { 
+            bra_frederick_the_great
+            # mission_bra_embrace_enlightenment 
+        }
+		
+		enabled = {
+			any_owned_location = {
+                has_building_with_at_least_one_level = counting_house
+                count >= 25
+            }
+            any_owned_location = {
+                OR = {
+						has_building_with_at_least_one_level = early_council_hall
+						has_building_with_at_least_one_level = council_hall
+						has_building_with_at_least_one_level = modern_council_hall
+					}
+                count >= 25
+            }
+			average_country_literacy >= 30
+			legitimacy >= 100
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_efficient_prussian_bureaucracy
+				years = 50
+				mode = add_and_extend
+			}
+			add_country_modifier = {
+				modifier = bra_gesindeordnung
+				years = -1
+				mode = add_and_extend
+			}
+			add_stability = 25
+			set_variable = pru_unlocked_gesindeordnung_bureaucracy
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+
+	bra_partitions_of_poland = {
+		icon = great_sejm_reforms
+		requires = { bra_frederick_the_great }
+		enabled = {
+			OR = {
+				NOT = { country_exists = c:POL }
+				c:POL = { is_subject_of = root }
+			}
+			any_owned_location = { area = area:greater_poland_area is_owned_or_owned_by_subjects_of = root count >= 10 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_partitions_mod years = -1 mode = add } 
+	ruler = {
+				add_trait = trait:conqueror
+			}
+		}
+	}
+
+	bra_prussian_army_reform = {
+		icon = modernization_of_the_military
+		requires = { bra_frederick_the_great }
+		enabled = {
+			OR = {
+				societal_value:quality_vs_quantity >= 50
+				societal_value:quality_vs_quantity <= -50
+			}
+			regular_army_size = 50
+		}
+		on_completion = {
+			if = {
+				limit = { societal_value:quality_vs_quantity >= 50 }
+				unlock_government_reform_effect = { type = bra_quantity_doctrine_reform }
+				add_reform = government_reform:bra_quantity_doctrine_reform
+			}
+			else_if = {
+				limit = { societal_value:quality_vs_quantity <= -50 }
+				unlock_government_reform_effect = { type = bra_quality_doctrine_reform }
+				add_reform = government_reform:bra_quality_doctrine_reform
+			}
+			ruler = {
+				add_trait = trait:administrator
+			}
+		}
+	}
+
+	bra_prussian_academy = {
+		icon = global_nobles_max_literacy_advance
+		requires = { bra_frederick_the_great }
+		enabled = {
+			any_owned_location = {
+				has_building = building_type:university
+				count >= 25
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_academy_mod years = -1 mode = add }
+	ruler = {
+				add_trait = trait:free_thinker
+			}
+		 }
+	}
+
+	bra_the_great = {
+		icon = ara_mossos_esquadra
+		requires = { bra_prussian_academy bra_prussian_army_reform bra_partitions_of_poland mission_bra_reform_prussian_bureaucracy }
+		enabled = {
+			custom_tooltip = {
+				text = fredegriss
+				ruler ?= character:pru_pv_frederick
+			}
+		}
+		on_completion = { ruler ?= {
+				set_nickname = nick_the_great
+				add_trait = trait:inspiring_leader
+			} 
+			add_country_modifier = { modifier = bra_soldier_king_mod years = -1 mode = add }
+		}
+	}
+
+	# ===== E: ドイツ関税同盟とライバル関係(10) =====
+
+	bra_show_of_strength = {
+		icon = imperial_ambitions
+		requires = { bra_king_in_prussia }
+		enabled = {
+			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 40 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_show_of_strength_mod years = 20 mode = add } }
+	}
+
+	bra_lower_saxony_conquest = {
+		icon = a_fortified_border
+		requires = { bra_show_of_strength }
+		enabled = {
+			any_owned_location = { area = area:lower_saxony_area is_owned_or_owned_by_subjects_of = root count >= 20 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_lower_saxony_mod years = 20 mode = add } }
+	}
+
+	bra_westphalian_conquest = {
+		icon = expansionism
+		requires = { bra_lower_saxony_conquest }
+		enabled = {
+			any_owned_location = { area = area:westphalia_area is_owned_or_owned_by_subjects_of = root count >= 20 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_westphalia_mod years = 20 mode = add } }
+	}
+
+	bra_rhineland_acquisition = {
+		icon = beyond_the_borders
+		requires = { bra_westphalian_conquest }
+		enabled = {
+			any_owned_location = { area = area:rhineland_area is_owned_or_owned_by_subjects_of = root count >= 15 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_rhineland_mod years = -1 mode = add } }
+	}
+
+	bra_zollverein = {
+		icon = port_customs
+		requires = { bra_rhineland_acquisition }
+		enabled = { capital.market = {
+				total_goods_value_traded >= 2000
+			} }
+		on_completion = { add_country_modifier = { modifier = bra_zollverein_mod years = -1 mode = add } }
+	}
+
+	bra_prussian_constitution = {
+		icon = the_constitution
+		requires = { bra_north_german_confederation }
+		enabled = {
+			OR = {
+				"estate_power(estate_type:burghers_estate)" >= 0.35
+				"estate_power(estate_type:crown_estate)" <= 0.35
+			}
+		}
+		on_completion = { unlock_government_reform_effect = { type = bra_german_empire_reform }
+		add_reform = government_reform:bra_german_empire_reform }
+	}
+
+	bra_army_reform_1860s = {
+		icon = military_modernization
+		requires = { bra_prussian_constitution }
+		enabled = {
+			army_tradition >= 60
+			regular_army_size >= 500
+			OR = {
+				has_reform = government_reform:bra_quality_doctrine_reform
+				has_reform = government_reform:bra_quantity_doctrine_reform
+			}
+		}
+		on_completion = {
+			if = {
+				limit = { has_reform = government_reform:bra_quantity_doctrine_reform }
+				remove_reform = government_reform:bra_quantity_doctrine_reform
+				unlock_government_reform_effect = { type = bra_advanced_quantity_doctrine_reform }
+				add_reform = government_reform:bra_advanced_quantity_doctrine_reform
+			}
+			else_if = {
+				limit = { has_reform = government_reform:bra_quality_doctrine_reform }
+				remove_reform = government_reform:bra_quality_doctrine_reform
+				unlock_government_reform_effect = { type = bra_advanced_quality_doctrine_reform }
+				add_reform = government_reform:bra_advanced_quality_doctrine_reform
+			}
+		}
+	}
+
+	bra_danish_war = {
+		icon = dan_royal_danish_navy
+		requires = { bra_zollverein }
+		enabled = {
+			OR = {
+				any_owned_location = {
+					area = area:holstein_area
+					is_owned_or_owned_by_subjects_of = root
+					count >= 10
+				}
+				any_owned_location = {
+					area = area:denmark_area
+					is_owned_or_owned_by_subjects_of = root
+					count >= 6
+				}
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_danish_war_mod years = 20 mode = add } }
+	}
+
+	# ===== F: ドイツ統一戦争(10) =====
+
+
+	bra_north_german_confederation = {
+		icon = salic_law_advance
+		requires = { bra_rhineland_acquisition }
+		enabled = {
+			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 220 }
+		}
+		on_completion = { 
+			change_country_name = F05
+				change_country_adjective = F05_ADJ
+				hidden_effect = {
+						change_country_color = map_PVngf
+				}
+				change_country_flag = F05
+				if = {
+				limit = {
+					NOT = {
+						country_rank = country_rank:rank_kingdom
+					}
+				}
+				set_country_rank_effect = { rank = country_rank:rank_kingdom }
+			}
+		}
+	}
+
+
+
+	bra_alsace_lorraine_annexed = {
+		icon = swedish_steel
+		requires = { bra_north_german_confederation }
+		enabled = {
+			any_owned_location = { area = area:alsace_area owner = root count >= 10 }
+			any_owned_location = { area = area:lorraine_area owner = root count >= 10 }
+		}
+		on_completion = { add_country_modifier = { modifier = bra_alsace_mod years = 20 mode = add } }
+	}
+
+
+	bra_kulturkampf = {
+		icon = reform_the_ecclesiastical_authorities
+		requires = { mission_bra_expand_our_influence }
+		enabled = {
+			total_accepted_culture_population >= 5000
+		}
+		on_completion = { add_country_modifier = { modifier = bra_kulturkampf_mod years = -1 mode = add } }
+	}
+
+
+	# ===== G: 世界強国(14) =====
+
+	bra_colonial_empire = {
+		icon = colonial_ambition
+		requires = { bra_north_german_confederation }
+		enabled = {
+			any_colonial_country = {
+				is_subject_of = root
+				count >= 1
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_colonial_mod years = 20 mode = add } }
+	}
+
+
+
+	bra_berlin_metropolis = {
+		icon = colonies
+		requires = { mission_bra_establish_the_berlin_university }
+		enabled = {
+			location:berlin = { owner = root total_building_levels >= 150 }
+		}
+		on_completion = {
+			location:berlin = { add_location_modifier = { modifier = bra_berlin_metropolis_mod years = -1 mode = add } }
+		}
+	}
+
+
+	bra_german_science = {
+		icon = dutch_education
+		requires = { mission_bra_establish_the_berlin_university }
+		enabled = { average_country_literacy >= 60
+	total_development >= 1500 }
+		on_completion = { add_country_modifier = { modifier = bra_science_mod years = -1 mode = add } }
+	}
+
+	bra_balkan_influence = {
+		icon = balkan_hajduks
+		requires = { bra_north_confederation_mod }
+		enabled = {
+			any_owned_location = {
+				region = region:balkan_region
+				is_owned_or_owned_by_subjects_of = root
+				count >= 10
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_balkan_mod years = 20 mode = add } }
+	}
+
+
+
+
+	bra_hegemon_of_europe = {
+		icon = diplomatic_training
+		requires = { bra_colonial_empire  }
+		enabled = { great_power_ranking <= 5 
+				any_owned_location = {
+				is_owned_or_owned_by_subjects_of = root
+				count >= 300
+			}
+		}
+		on_completion = { add_country_modifier = { modifier = bra_hegemon_mod years = -1 mode = add } }
+	}
+
+	bra_second_reich_eternal = {
+		icon = imperial_school_of_naval_engineering
+		requires = { bra_hegemon_of_europe }
+
+		enabled = {
+			any_owned_location = {
+				is_owned_or_owned_by_subjects_of = root
+				count >= 500
+			}
+		}
+		on_completion = { trigger_event_non_silently = bra_events.99 }
+		final = yes
+	}
+
+# ==================== POLITICAL BRANCH ====================
+
+    mission_bra_deal_with_the_robber_barons = {
+        icon = por_battle_ourique
+		# ai_will_do = { value = 100 }
+		duration = 0
+
+        enabled = {
+			location:pritzwalk.province = {
+				province_average_control >= 0.60
+			}
+			location:stendal.province = {
+				province_average_control >= 0.60
+			}
+			stability >= 30
+			custom_tooltip = {
+				text = bra_has_had_the_turmoil_in_brandenburg_disaster_tt
+				has_variable = had_turmoil_in_brandenburg_disaster_variable	
+			}
+		}
+		
+
+		on_completion = {
+            add_estate_satisfaction = {
+                    type = estate_type:nobles_estate
+                    value = estate_satisfaction_severe_penalty
+            }
+            add_country_modifier = {
+				modifier = bra_crown_strengthened
+				years = 10
+				mode = add_and_extend
+			}
+		}
+    }
+    
+    mission_bra_a_question_of_legitimacy = {
+        icon = bavarian_coinage
+        requires = { mission_bra_deal_with_the_robber_barons }
+        # ai_will_do = { value = 100 }
+        duration = 0
+        
+        enabled = {
+			legitimacy >= 90
+			# had_disaster_trigger = {
+			# 	type = turmoil_in_brandenburg
+			# }
+		}
+		
+
+        on_completion = { 
+			IF = {
+				limit = { ruler.dynasty = dynasty:hohenzollern_dynasty }
+				trigger_event_non_silently = brandenburg_missions_events.5
+			}
+			ELSE = {
+				trigger_event_non_silently = brandenburg_missions_events.1
+			}
+			add_stability = 15            
+		}
+    }
+
+    mission_bra_invest_into_diplomacy = {
+        icon = mapmaking
+        requires = { mission_bra_a_question_of_legitimacy }
+        # ai_will_do = { value = 100 }
+        duration = 0
+
+        enabled = {
+            num_of_diplomats >= 3
+            societal_value:belligerent_vs_conciliatory <= -10
+        }
+
+        on_completion = { 
+            add_country_modifier = {
+				modifier = bra_strategic_alliances
+				years = 5
+				mode = add_and_extend
+			}
+            change_societal_value = { type = belligerent_vs_conciliatory value = societal_value_move_to_right }
+        }
+    }
+
+    mission_bra_support_in_the_HRE = {
+        icon = pal_a_just_ruler
+        duration = 0
+        requires = { mission_bra_invest_into_diplomacy }
+        # ai_will_do = { value = 100 }
+
+        enabled = {  
+			any_country = {
+				is_elector = yes
+				opinion = {
+                    target = root
+                    value >= 150
+                }
+			}
+        }
+
+        on_completion = {
+            add_prestige = 20
+        }
+    }
+
+    # === Prussian Political Path === 
+
+    mission_bra_reconcile_with_the_barons = {
+        icon = diplomatic_training_diplomatic_capacity
+        requires = { mission_bra_a_question_of_legitimacy }
+        # ai_will_do = { value = 100 }
+        duration = 0
+
+        enabled = {
+            has_estate_privilege = estate_privilege:elaborate_court_ceremonies
+            estate_satisfaction:nobles_estate  > 0.65 
+        }
+
+        on_completion = {
+            change_societal_value = { type = aristocracy_vs_plutocracy value = societal_value_move_to_left }
+        }
+    }
+
+    mission_bra_appease_the_elites = {
+        icon = crown_power_advance_renaissance
+        requires = { mission_bra_reconcile_with_the_barons }
+        # ai_will_do = { value = 100 }
+        duration = 0
+
+        enabled = {
+            AND = { 
+                societal_value:aristocracy_vs_plutocracy <= -50
+                "estate_power(estate_type:nobles_estate)" <= 0.4
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_appease_the_elites
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+
+    
+
+
+# ==================== ECONOMICAL TREE ====================
+
+    mission_bra_develop_the_heartland = {
+        icon = efficient_mining
+        # ai_will_do = { value = 100 }
+        duration = 0
+
+        enabled = {
+            AND = {
+                stability >= 20
+                legitimacy >= 60
+                "estate_power(estate_type:crown_estate)" >= 0.2
+            }
+        }
+
+        on_completion = {
+			trigger_event_non_silently = brandenburg_missions_events.2 
+		}
+
+    }
+
+    # === Trade and Development Branch ===
+
+    mission_bra_the_markish_trade = {
+        icon = economical_policies_law_advance
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_develop_the_heartland }
+
+        enabled = {
+			num_of_trades >= 5
+
+        }
+
+        on_completion = {
+            capital = {
+				change_building_level_in_location = {
+					building = building_type:marketplace
+					value = 1
+				}
+			}
+            add_estate_satisfaction = { type = estate_type:burghers_estate value = estate_satisfaction_mild_bonus }
+        }
+        
+    }
+
+    mission_bra_create_a_market_center = {
+        icon = inc_tambo
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_the_markish_trade }
+
+        enabled = {
+            any_owned_location = { is_market_center = yes }
+        }
+
+        on_completion = {
+			every_owned_location = {
+				limit = { is_market_center = yes }
+				change_building_level_in_location = {
+					building = building_type:market_warehouse
+					value = 1
+				}
+			}
+		}
+    }
+
+    mission_bra_expand_the_market = {
+        icon = global_trade_advance
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_create_a_market_center }
+
+        enabled = {
+            capital.market = {
+                total_goods_value_traded >= 2000
+            }
+        }
+
+        on_completion = {
+            capital = {
+                add_location_modifier = {
+                    modifier = bra_trade_hub
+                    years = -1
+                    mode = add_and_extend
+                }
+            }
+        }
+    }
+
+    mission_bra_secure_a_surplus_of_food = {
+        icon = global_supply_limit_modifier_advance_5
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_the_markish_trade }
+
+        enabled = {
+            capital ?= {
+                market ?= { market_monthly_food_balance > 500 }
+            }
+        }
+
+        on_completion = {
+			every_owned_location = {
+				limit = { is_market_center = yes }
+				change_building_level_in_location = {
+					building = building_type:granary
+					value = 5
+				}
+			}
+            
+        }
+    }
+
+    mission_bra_invest_in_infrastructure = {
+        icon = inc_vertical_economy
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_secure_a_surplus_of_food }
+
+        enabled = {
+			AND = {
+				location:berlin = {
+					has_latest_road_to = location:potsdam
+            		num_roads >= 2 
+				}
+				location:brandenburg = {
+					has_latest_road_to = location:potsdam
+            		num_roads >= 2 
+				}
+			}
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_invest_in_infrastructure
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+
+
+
+    mission_bra_construct_a_residency = {
+        icon = a_permanent_capital
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_develop_the_heartland }
+
+        enabled = {
+            AND = {
+                prestige >= 20
+                legitimacy >= 80
+                gold >= 300
+            }
+        }
+
+        on_completion = {
+            trigger_event_non_silently = brandenburg_missions_events.3 
+        }
+    }
+
+    mission_bra_develop_the_capital = {
+        icon = paper_guild_cloth_maintenance_advance
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_construct_a_residency }
+
+        enabled = {
+            capital = {
+                AND = {
+                    development >= 30
+                    has_building = building_type:cathedral
+                    num_buildings >= 40
+                }
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_development_boom
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+    mission_bra_invite_german_settlers = {
+		icon = free_subjects
+		requires = { mission_bra_develop_the_heartland }
+		
+		enabled = {
+			culture_percentage_in_country = {
+                culture = culture:brandenburgish
+                value >0.35
+            }
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_eastward_settlement
+				years = 30
+				mode = add_and_extend
+			}
+			culture:brandenburgish = {
+				add_cultural_tradition = 50
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+    # === Culture Branch
+
+    mission_bra_promote_our_culture = {
+        icon = birch_bark_manuscript
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_invite_german_settlers }
+
+        enabled = {
+            any_owned_location = {
+                count >= 4
+                has_building_with_at_least_one_level = library
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_promote_our_culture
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+    mission_bra_expand_our_influence = {
+        icon = expansive_policies
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_promote_our_culture }
+
+        enabled = {
+            culture:brandenburgish = {
+                AND = {
+                    cultural_influence >= 150
+                    cultural_tradition >= 100
+                }
+            }
+
+            
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_expand_our_influence
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+    # === Protestantism Branch ===
+
+    mission_bra_embrace_protestant_reformation = {
+		icon = renaissance_thought
+		requires = { 
+            mission_bra_expand_our_influence
+        }
+		
+		enabled = {
+			religion ?= religion:lutheran
+			religious_unity >= 0.6
+			"estate_power(estate_type:clergy_estate)" <= 0.25
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_protestant_reformation_embraced
+				years = 30
+				mode = add_and_extend
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+    mission_bra_take_in_protestant_refugees = {
+        icon = protestant_invite_persecuted
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_embrace_protestant_reformation }
+
+        enabled = {
+            religion = religion:lutheran
+            religion_percentage_in_country = {
+                religion = religion:lutheran
+                value >= 0.5
+            }
+        }
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_protestant_refugees
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+    
+    mission_bra_defend_protestant_interests = {
+		icon = protect_the_new_faith
+		requires = { 
+            mission_bra_embrace_protestant_reformation 
+        }
+		# ai_will_do = { value = 100 }
+        duration = 0
+		
+		enabled = {
+			religion ?= religion:lutheran
+			any_country = {
+				religion = religion:catholic
+				is_neighbor_of = root
+				count >= 1
+			}
+
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_protestant_defender
+				years = 30
+				mode = add_and_extend
+			}
+			add_army_tradition = 15
+		}
+	}
+
+	mission_bra_promote_religious_tolerance = {
+		icon = cultural_acceptance_advance
+		requires = { mission_bra_embrace_protestant_reformation }
+		# ai_will_do = { value = 100 }
+        duration = 0
+		
+		enabled = {
+			religious_unity >= 0.75
+			stability >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_religious_tolerance
+				years = 20
+				mode = add_and_extend
+			}
+		}
+	}
+
+    # === Science Branch ===
+
+    mission_bra_establish_the_berlin_university = {
+        icon = scottish_education
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_develop_the_capital }
+
+        enabled = {
+            location:berlin = {
+				has_building = building_type:university
+			}            
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_berlin_university
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+    mission_bra_religious_debates = {
+        icon = schools_of_thought
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { mission_bra_establish_the_berlin_university }
+
+        enabled = {
+			has_embraced_institution = institution:confessionalism
+			average_country_literacy >= 20
+			capital = {
+				has_building_with_at_least_one_level = university
+			}
+        }
+
+        on_completion = {
+            capital = {
+				change_building_level_in_location = {
+					building = building_type:university
+					value = 2
+				}
+			}
+            add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_mild_bonus }
+        }
+
+    }
+
+
+    # === Military Buildup ===
+
+    mission_bra_construct_a_sergeantry = {
+        icon = recruitment_improvements_renaissance
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { 
+			# mission_bra_develop_the_heartland 
+			mission_bra_deal_with_the_robber_barons
+		}
+
+        enabled = {
+            AND = {
+                capital = {
+                    has_building_with_at_least_one_level = sergeantry
+                }
+                regular_army_size > 0                
+            }
+            
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_construct_a_sergeantry
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+    mission_bra_secure_oder_river = {
+		icon = glorious_arms
+		# ai_will_do = { value = 100 }
+		duration = 0
+		requires = { mission_bra_construct_a_sergeantry }
+		
+		enabled = {
+			owns = location:lebus
+			owns = location:guben
+		}
+		
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_oder_river_control
+				years = 20
+				mode = add_and_extend
+			}
+			add_gold = 200
+			trigger_event_non_silently = brandenburg_missions_events.8
+		}
+	}
+
+    mission_bra_secure_the_mark = {
+		icon = northern_march
+		# ai_will_do = { value = 100 }
+		duration = 0
+		requires = { 
+			mission_bra_secure_oder_river 
+			mission_bra_reconcile_with_the_barons
+		}
+		
+		enabled = {
+			area:brandenburg_area = {
+				any_location_in_area = {
+					is_owned_or_owned_by_subjects_of = root
+					percent >= 0.75
+				}
+			}
+			stability >= 20
+			legitimacy >= 70
+		}
+		
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_brandenburg_consolidated
+				years = 20
+				mode = add_and_extend
+			}
+			add_gold = 150
+			trigger_event_non_silently = brandenburg_missions_events.7
+		}
+	}
+	
+	mission_bra_achieve_ducal_rights = {
+        icon = soldiers_fortune
+        requires = { mission_bra_secure_the_mark }
+        # ai_will_do = { value = 100 }
+        
+        enabled = {
+			AND= {
+				country_rank_level >= 2
+				prestige >= 20
+			}
+        }
+        
+        on_completion = {
+            add_country_modifier = {
+                modifier = bra_ducal_rights_granted
+                years = 10
+            }
+        }
+    }
+
+    mission_bra_establish_standing_army = {
+		icon = professional_armies_advance
+		# ai_will_do = { value = 100 }
+		duration = 0
+		requires = { mission_bra_construct_a_sergeantry }
+		
+		enabled = {
+			regular_army_size >= 1
+		}
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_professional_standing_army
+				years = 35
+				mode = add_and_extend
+			}
+		}
+	}
+    
+    mission_bra_develop_artillery_corps = {
+		icon = artillery_institution_advance
+		requires = { mission_bra_establish_standing_army }
+		
+		enabled = {
+			any_unit = {
+				any_sub_unit = {
+                    sub_unit_category = sub_unit_category:army_artillery
+                }
+			}
+			produced_in_country:cannons >= 5
+			produced_in_country:iron >= 10
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_artillery_corps_established
+				years = 30
+				mode = add_and_extend
+			}
+			add_army_tradition = 20
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+    # === Prussian Military Branch ===
+
+    mission_bra_establish_prussian_army_tradition = {
+		icon = glorious_arms
+		requires = { mission_bra_develop_artillery_corps }
+		
+		enabled = {
+			army_tradition >= 60
+			any_owned_location = {
+				has_building_with_at_least_one_level = barracks
+				count >= 5
+			}
+			army_size_percentage >= 0.95
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_prussian_military_tradition
+				years = -1
+				mode = add_and_extend
+			}
+			custom_tooltip = {
+				text = bra_enable_the_prussian_military_administration_bureaucracy_tt
+				set_variable = pru_unlocked_military_administration
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+	mission_bra_develop_prussian_infantry = {
+		icon = military_revolution_advance
+		requires = { mission_bra_establish_prussian_army_tradition }
+		
+		enabled = {
+			any_owned_location = {
+				has_building_with_at_least_one_level = barracks
+				count >= 15
+			}
+			regular_army_size >= 60
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_prussian_infantry_excellence
+				years = 40
+				mode = add_and_extend
+			}
+			add_manpower = {
+				value = max_manpower
+				multiply = 0.5
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+	mission_bra_modernize_prussian_artillery = {
+		icon = russian_artillery_yard
+		requires = { mission_bra_establish_prussian_army_tradition }
+		
+		enabled = {
+			any_owned_location = {
+				has_building_with_at_least_one_level = cannon_workshop
+				count >= 8
+			}
+			produced_in_country:iron >= 40
+			produced_in_country:copper >= 30
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_modern_prussian_artillery
+				years = 45
+				mode = add_and_extend
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+	mission_bra_establish_general_staff = {
+		icon = hofkriegsrat
+		requires = { mission_bra_develop_prussian_infantry mission_bra_modernize_prussian_artillery }
+		
+		enabled = {
+			capital = {
+				has_building_with_at_least_one_level = war_college
+			}
+			army_tradition >= 75
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_prussian_general_staff
+				years = 45
+				mode = add_and_extend
+			}
+		}
+		# ai_will_do = { value = 100 }
+	}
+
+    mission_bra_prussian_military_supremacy = {
+		icon = army_professionalism
+		requires = { 
+			mission_bra_establish_general_staff
+            
+		}
+		# ai_will_do = { value = 100 }
+		duration = 0
+		
+		enabled = {
+			is_great_power = yes
+			army_tradition >= 80
+			army_size >= 150
+			army_size_percentage >= 0.90
+			prestige >= 70
+		}
+		
+		duration = 0
+
+		on_completion = {
+			add_country_modifier = {
+				modifier = bra_prussian_military_supremacy
+				years = -1
+				mode = add_and_extend
+			}
+		}
+	}
+
+
+	mission_bra_invest_into_silesia = {
+        icon = copperworking
+        requires = { 
+			bra_silesia_annexed
+		}
+        # ai_will_do = { value = 100 }
+        duration = 0
+
+        enabled = {
+			area:silesia_area = {
+				any_location_in_area = {
+					is_owned_or_owned_by_subjects_of = root
+					percent >= 0.75
+				}
+			}
+        }
+
+        on_completion = {
+			trigger_event_non_silently = brandenburg_missions_events.9
+		}
+    }
+
+
+# ==================== CAPSTONE MISSIONS ====================
+
+    mission_bra_a_grand_palace = {
+        icon = royal_audience_and_chancery
+        # ai_will_do = { value = 100 }
+        duration = 0
+        requires = { 
+            mission_bra_appease_the_elites
+            mission_bra_achieve_ducal_rights
+            mission_bra_support_in_the_HRE
+        }
+
+        enabled = {
+            AND = {
+                "estate_power(estate_type:crown_estate)" >= 0.2
+                gold >= 1000
+            }
+        }
+
+        on_completion = {
+			add_gold = -1000
+            capital = {
+				construct_building = {
+					building_type = building_type:grand_palace
+					cost_multiplier = 0
+					cost_multiplier_reason = "royal_sponsorship"
+				}
+			}
+            add_country_modifier = {
+                modifier = bra_a_grand_palace
+                years = 10
+                mode = add_and_extend
+            }
+        }
+    }
+
+
+}

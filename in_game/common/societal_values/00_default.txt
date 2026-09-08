@@ -18,14 +18,7 @@ centralization_vs_decentralization = {
 		global_distance_from_capital_speed_propagation = 0.2
 		subject_loyalty = -20
 		
-		subject_pays_vassal_cost_modifier = -0.25
-		subject_pays_colonial_cost_modifier = -0.25
-		subject_pays_tributary_cost_modifier = -0.25
-		subject_pays_march_cost_modifier = -0.25
-		subject_pays_trade_company_cost_modifier = -0.25
-		subject_pays_samanta_cost_modifier = -0.25
-		subject_pays_maha_samanta_cost_modifier = -0.25
-		subject_pays_pradhana_maha_samanta_cost_modifier = -0.25
+		subject_income_modifier = -0.5
 
 		
 		control_importance_modifier = 0.2
@@ -78,7 +71,7 @@ traditionalist_vs_innovative = {
 spiritualist_vs_humanist = {
 	left_modifier = {
 		global_clergy_city_desired_pop_scaled = 0.02
-		tolerance_own = 1
+		tolerance_own = 0.5
 		
 		global_pop_conversion_speed_modifier = 0.50
 		global_pop_assimilation_speed_modifier = -0.5

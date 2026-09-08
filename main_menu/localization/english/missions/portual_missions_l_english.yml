@@ -71,7 +71,7 @@
   mission_por_portuguese_captaincies: "Portuguese Captaincies"
   mission_por_portuguese_captaincies_desc: "The system of 'Donatary Captaincies' allows the crown to rapidly settle and govern vast, untamed overseas territories by delegating authority to loyal, wealthy subjects. These captains are responsible for defending, populating, and developing their lands at their own expense in exchange for hereditary rights and profits.\n\nFirst tested in the Atlantic islands and later implemented on a massive scale in Brazil, this system decentralizes the initial financial risk of colonization. It ensures a rapid Portuguese demographic presence in new lands and provides a robust framework for the spread of Portuguese law, faith, and culture."
 
-  mission_por_rural_development: "Rural Development"
+  mission_por_rural_development: "Country Development"
   mission_por_rural_development_desc: "Even as our gaze is fixed upon the sea, we must never neglect the Iberian land that sustains us. Developing our rural heartland involves improving crop rotations, expanding irrigation, and increasing the amount of land under cultivation to feed our rapidly growing coastal cities.\n\nA prosperous countryside provides the massive quantities of grain, meat, and tax revenue necessary to support our sprawling naval fleets. By investing in rural infrastructure, we ensure that the Portuguese mainland remains a highly productive and incredibly stable base from which to launch our global enterprises."
 
   mission_por_ports_of_our_people: "Ports of Our People"
@@ -355,7 +355,7 @@
   STATIC_MODIFIER_NAME_por_macau_port: "Macau Port"
   STATIC_MODIFIER_DESC_por_macau_port: "Our base at Macau facilitates the highly profitable exchange of Japanese silver for Chinese silk and porcelain."
 
-  STATIC_MODIFIER_NAME_por_portuguese_empire: "The Portuguese Empire"
+  STATIC_MODIFIER_NAME_por_portuguese_empire: "A Global Empire"
   STATIC_MODIFIER_DESC_por_portuguese_empire: "As the first truly global empire, Portugal enjoys unparalleled prestige and wealth from its domain across three oceans."
 
 # ==================== PORTUGAL TOOLTIPS ====================

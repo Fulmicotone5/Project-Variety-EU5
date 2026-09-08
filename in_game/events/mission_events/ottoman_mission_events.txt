@@ -338,8 +338,13 @@ ottoman_mission_events.16 = {
 		name = ottoman_mission_events.16.a
 		custom_tooltip = ottoman_mission_events.16.a.tt
 		
-		add_legitimacy = 30
-		add_stability = 30
+		add_legitimacy = 10
+		add_stability = 7
+		add_country_modifier = {
+			modifier = tur_legal_reforms_2
+			years = 30
+			mode = add
+		}
 	}
 
 	option = {

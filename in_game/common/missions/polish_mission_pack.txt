@@ -78,7 +78,7 @@
 					mode = add
 				}
 			}
-			trigger_event_silently = polish_mission_events.1
+			trigger_event_non_silently = polish_mission_events.1
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -134,7 +134,7 @@
 				type = estate_type:nobles_estate
 				value = estate_satisfaction_mild_bonus
 			}
-			trigger_event_silently = polish_mission_events.3
+			trigger_event_non_silently = polish_mission_events.3
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -188,7 +188,7 @@
 			culture:lesser_polish = {
 				add_cultural_tradition = 25
 			}
-			trigger_event_silently = polish_mission_events.24
+			trigger_event_non_silently = polish_mission_events.24
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -252,7 +252,7 @@
 					max = 10
 				}
 			}
-			trigger_event_silently = polish_mission_events.4
+			trigger_event_non_silently = polish_mission_events.4
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -280,7 +280,7 @@
 				years = 40
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.5
+			trigger_event_non_silently = polish_mission_events.5
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -358,7 +358,7 @@
 
 			if = {
 				limit = { country_exists = c:TEU }
-				trigger_event_silently = polish_mission_events.6
+				trigger_event_non_silently = polish_mission_events.6
 			}
 		}
 		#ai_will_do = { value = 100 }
@@ -376,7 +376,7 @@
 
 		on_completion = {
 			add_prestige = 15
-			trigger_event_silently = polish_mission_events.60
+			trigger_event_non_silently = polish_mission_events.60
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -402,7 +402,7 @@
 				mode = add
 			}
 			add_gold = 500
-			trigger_event_silently = polish_mission_events.68
+			trigger_event_non_silently = polish_mission_events.68
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -471,7 +471,7 @@
 					add_core = root
 				}
 			}
-			trigger_event_silently = polish_mission_events.9
+			trigger_event_non_silently = polish_mission_events.9
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -549,7 +549,7 @@
 				years = -1
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.10
+			trigger_event_non_silently = polish_mission_events.10
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -697,7 +697,7 @@
 					add_liberty_desire = -35
 				}
 			}
-			trigger_event_silently = polish_mission_events.65
+			trigger_event_non_silently = polish_mission_events.65
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -770,7 +770,7 @@
 				years = 25
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.66
+			trigger_event_non_silently = polish_mission_events.66
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -803,7 +803,7 @@
 				years = 20
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.15
+			trigger_event_non_silently = polish_mission_events.15
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -825,7 +825,7 @@
 				mode = add
 			}
 			add_gold = 500
-			trigger_event_silently = polish_mission_events.46
+			trigger_event_non_silently = polish_mission_events.46
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -879,7 +879,7 @@
 				type = estate_type:burghers_estate
 				value = estate_satisfaction_mild_bonus
 			}
-			trigger_event_silently = polish_mission_events.59
+			trigger_event_non_silently = polish_mission_events.59
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -908,7 +908,7 @@
 				value = monthly_income_trade_and_tax
 				multiply = 4
 			}
-			trigger_event_silently = polish_mission_events.67
+			trigger_event_non_silently = polish_mission_events.67
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -957,7 +957,7 @@
 					}
 				}
 			}
-			trigger_event_silently = polish_mission_events.17
+			trigger_event_non_silently = polish_mission_events.17
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1002,7 +1002,7 @@
 				years = 25
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.21
+			trigger_event_non_silently = polish_mission_events.21
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1034,7 +1034,7 @@
 				create_sub_unit = unit_type:a_winged_hussars
 				create_sub_unit = unit_type:a_winged_hussars
 			}
-			trigger_event_silently = polish_mission_events.62
+			trigger_event_non_silently = polish_mission_events.62
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1061,7 +1061,7 @@
 				value = max_manpower
 				multiply = 0.30
 			}
-			trigger_event_silently = polish_mission_events.69
+			trigger_event_non_silently = polish_mission_events.69
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1160,7 +1160,7 @@
 				years = -1
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.25
+			trigger_event_non_silently = polish_mission_events.25
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1214,7 +1214,7 @@
 				years = 60
 				mode = add
 			}
-			trigger_event_silently = { 
+			trigger_event_non_silently = { 
 				id = polish_mission_events.26
 				years = 5
 			}
@@ -1254,7 +1254,7 @@
 				years = 45
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.63
+			trigger_event_non_silently = polish_mission_events.63
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1289,7 +1289,7 @@
 				value = max_manpower
 				multiply = 0.3
 			}
-			trigger_event_silently = polish_mission_events.70
+			trigger_event_non_silently = polish_mission_events.70
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1318,7 +1318,7 @@
 				years = 20
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.35
+			trigger_event_non_silently = polish_mission_events.35
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1340,7 +1340,7 @@
 
 		on_completion = {
 			add_army_tradition = army_tradition_mild_bonus
-			trigger_event_silently = polish_mission_events.55
+			trigger_event_non_silently = polish_mission_events.55
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1381,7 +1381,7 @@
 		on_completion = {
 			add_legitimacy = 20
 			add_stability = 15
-			trigger_event_silently = polish_mission_events.43
+			trigger_event_non_silently = polish_mission_events.43
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1403,7 +1403,7 @@
 				type = centralization_vs_decentralization
 				value = societal_value_move_to_right
 			}
-			trigger_event_silently = polish_mission_events.45
+			trigger_event_non_silently = polish_mission_events.45
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1427,7 +1427,7 @@
 			}
 			add_legitimacy = 30
 			add_stability = 15
-			trigger_event_silently = polish_mission_events.56
+			trigger_event_non_silently = polish_mission_events.56
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1550,7 +1550,7 @@
 				years = 45
 				mode = add
 			}
-			trigger_event_silently = polish_mission_events.75
+			trigger_event_non_silently = polish_mission_events.75
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1581,7 +1581,7 @@
 				mode = add
 			}
 			add_legitimacy = 100
-			trigger_event_silently = polish_mission_events.50
+			trigger_event_non_silently = polish_mission_events.50
 		}
 		ai_will_do = { value = -100 }
 	}
@@ -1613,7 +1613,7 @@
 				type = estate_type:clergy_estate
 				value = estate_satisfaction_mild_bonus
 			}
-			trigger_event_silently = polish_mission_events.77
+			trigger_event_non_silently = polish_mission_events.77
 		}
 		#ai_will_do = { value = 100 }
 	}

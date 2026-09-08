@@ -415,6 +415,7 @@ brandenburg_missions_events.9 = {
 	option = {
 		name = brandenburg_missions_events.9.a
 		custom_tooltip = brandenburg_missions_events.9.a.tt
+		add_gold = -1000
 
 		area:silesia_area = {
 			every_location_in_area = {

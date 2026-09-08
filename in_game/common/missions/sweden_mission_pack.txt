@@ -46,7 +46,7 @@
 				years = 30
 				mode = add
 			}
-			trigger_event_silently = sweden_mission_events.1
+			trigger_event_non_silently = sweden_mission_events.1
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -136,7 +136,7 @@
 			}
 			add_gold = 300
 			add_legitimacy = 20
-			trigger_event_silently = sweden_mission_events.2
+			trigger_event_non_silently = sweden_mission_events.2
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -169,7 +169,7 @@
 				value = monthly_income_trade_and_tax
 				multiply = 10
 			}
-			trigger_event_silently = sweden_mission_events.3
+			trigger_event_non_silently = sweden_mission_events.3
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -217,7 +217,7 @@
 				years = 35
 				mode = add
 			}
-			trigger_event_silently = sweden_mission_events.4
+			trigger_event_non_silently = sweden_mission_events.4
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -289,7 +289,7 @@
 				years = 40
 				mode = add
 			}
-			trigger_event_silently = sweden_mission_events.5
+			trigger_event_non_silently = sweden_mission_events.5
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -319,7 +319,7 @@
 				create_sub_unit = unit_type:a_caroleans
 				create_sub_unit = unit_type:a_caroleans
 			}
-			trigger_event_silently = sweden_mission_events.6
+			trigger_event_non_silently = sweden_mission_events.6
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -433,7 +433,7 @@
 				years = 25
 				mode = add
 			}
-			trigger_event_silently = sweden_mission_events.8
+			trigger_event_non_silently = sweden_mission_events.8
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -579,7 +579,7 @@
 			}
 			add_prestige = 15
 			add_stability = 30
-			trigger_event_silently = sweden_mission_events.11
+			trigger_event_non_silently = sweden_mission_events.11
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -676,7 +676,7 @@
 				mode = add
 			}
 			form_country = formable_country:SCA_f
-			trigger_event_silently = sweden_mission_events.12
+			trigger_event_non_silently = sweden_mission_events.12
 		}
 		#ai_will_do = { value = 100 }
 	}

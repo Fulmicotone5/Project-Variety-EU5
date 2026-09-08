@@ -134,6 +134,7 @@
  daneflavor.22.title: "The Kingdom of the Daneland"
  daneflavor.22.desc: "All the lands of the Danelaw and Denmark have been integrated and formalized into a single title. What used to be a dream, is now a reality. [ROOT.GetCountry.GetGovernment.GetRuler.GetName] will forever be remembered among Erik the Victorious, Harald Fairhair, Harald Bluetooth and all the greatest men of our history!"
  daneflavor.22.a: "Long Live [ROOT.GetCountry.GetGovernment.GetRuler.GetName]!"
+ capame: "Has the Capital in America"
  vinflavor.1.title: "A Land of Hope"
  vinflavor.1.desc: "Vinland, with its breathtaking coasts and wild landscapes, embodies the spirit of adventure and resilience that defined the Viking age, echoing with the legends of explorers seeking new worlds.\nToday, the land is divided among several Norse factions, each battling the harsh realities of life and uncertain about what tomorrow may bring, their fates intertwined with the rugged wilderness and the enduring hope of discovering a brighter future amidst the turbulent currents of history."
  vinflavor.1.a: "What the future holds?"

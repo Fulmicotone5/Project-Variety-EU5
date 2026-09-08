@@ -14,6 +14,7 @@ iceland_mission_pack = {
 
     on_start = { 
         set_global_variable = pv_m_icel
+	}
 
 	on_completion = {
 		add_prestige = 75
@@ -610,7 +611,7 @@ iceland_mission_pack = {
 	}
 
 	mission_ice_rebuilding_after_the_fire = {
-		icon = cultivate_the_land
+		icon = global_supply_limit_modifier_advance_5
 		requires = { mission_ice_the_mist_hardships }
 
 		enabled = {
@@ -717,7 +718,7 @@ iceland_mission_pack = {
 	}
 
 	mission_ice_warming_the_cold_earth = {
-		icon = cultivate_the_land
+		icon = global_supply_limit_modifier_advance_5
 		requires = { mission_ice_the_healing_waters mission_ice_rebuilding_after_the_fire }
 
 		enabled = {

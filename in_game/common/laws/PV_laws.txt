@@ -790,7 +790,7 @@ TRY_REPLACE:cultural_traditions_law = { #PV
 		}
 	
 		country_modifier = {
-			tolerance_own = 1
+			tolerance_own = 0.5
 			global_pop_conversion_speed_modifier = 0.25
 			monthly_towards_spiritualist = societal_value_monthly_move
 		}

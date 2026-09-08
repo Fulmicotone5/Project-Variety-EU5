@@ -64,12 +64,13 @@
 
 	#@@@ this mission causes crash
 	mission_hol_secure_food_supply = {
-		icon = cultivate_the_land
+		icon = global_supply_limit_modifier_advance_5
 		requires = { mission_hol_develop_amsterdam }
 		
 		enabled = {
 			any_owned_location = {
 			 	raw_material = goods:wheat
+				rgo_level >= 5
 				location_building_level = {
 						building_type = building_type:irrigation_systems
 						value >= 5

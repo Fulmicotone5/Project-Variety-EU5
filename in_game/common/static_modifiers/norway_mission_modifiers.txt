@@ -11,7 +11,7 @@ norwegian_crown_restored = {
 	icon = crown_icon
 	stability_cost_efficiency = -0.08
 	monthly_legitimacy = 0.02
-	prestige_decay = -0.02
+	prestige_decay = -0.002
 }
 
 norwegian_noble_concessions = {
@@ -127,7 +127,7 @@ norwegian_fish_monopoly = {
 	global_fish_output_modifier = 0.20
 	trade_income = 0.15
 	global_merchant_power = 0.12
-	prestige_decay = -0.03
+	prestige_decay = -0.003
 }
 
 # ============================================================================
@@ -180,7 +180,7 @@ vinland_colony_established = {
 	icon = exploration_icon
 	colonial_migration_size_modifier = 0.15
 	trade_income = 0.05
-	prestige_decay = -0.03
+	prestige_decay = -0.003
 }
 
 saint_lawrence_colony = {
@@ -196,7 +196,7 @@ new_norway = {
 	colonial_migration_size_modifier = 0.15
 	trade_income = 0.10
 	global_fur_output_modifier = 0.15
-	prestige_decay = -0.03
+	prestige_decay = -0.003
 }
 
 little_norway_in_india = {
@@ -212,7 +212,7 @@ little_norway_in_new_fjordland = {
 	icon = exploration_icon
 	global_fish_output_modifier = 0.10
 	naval_morale_modifier = 0.05
-	prestige_decay = -0.02
+	prestige_decay = -0.002
 }
 
 # ============================================================================
@@ -372,7 +372,7 @@ ancestral_rites = {
 papal_devotion = {
 	game_data = { category = country }
 	icon = religion_icon
-	tolerance_own = 1
+	tolerance_own = 0.5
 	monthly_legitimacy = 0.03
 	improve_relation_impact = 0.05
 }
@@ -390,7 +390,7 @@ norse_renaissance = {
 	icon = empire_icon
 	stability_cost_efficiency = -0.12
 	monthly_legitimacy = 0.03
-	prestige_decay = -0.03
+	prestige_decay = -0.003
 	trade_income = 0.10
 	naval_morale_modifier = 0.08
 	land_morale_modifier = 0.08
@@ -545,7 +545,7 @@ independent_crown = {
 	game_data = { category = country }
 	icon = crown_icon
 	monthly_legitimacy = 0.04
-	prestige_decay = -0.04
+	prestige_decay = -0.004
 	global_manpower_modifier = 0.10
 	army_tradition_decay = -0.02
 	navy_tradition_decay = -0.02
@@ -630,7 +630,7 @@ hall_of_the_slain = {
 	naval_morale_modifier = 0.15
 	global_manpower_modifier = 0.30
 	army_tradition_decay = -0.05
-	prestige_decay = -0.03
+	prestige_decay = -0.005
 	# ...but Odin's price is paid every month, not just once
 	tax_income_efficiency = -0.25
 	trade_income = -0.20

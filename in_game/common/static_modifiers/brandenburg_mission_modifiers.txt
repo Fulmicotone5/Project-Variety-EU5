@@ -19,7 +19,7 @@ bra_invest_in_infrastructure = {
 }
 
 bra_promote_our_culture = {
-	cultural_influence = 0.1
+	cultural_influence_modifier = 0.1
 	global_pop_assimilation_speed_modifier = 0.1
 }
 
@@ -48,8 +48,8 @@ bra_imperial_crown = {
 }
 
 bra_expand_our_influence = {
-	cultural_tradition = 0.5
-	global_nobles_estate_power = 0.05
+	cultural_tradition_modifier = 0.5
+	global_crown_estate_power = 0.05
 }
 
 bra_berlin_university = {
@@ -66,7 +66,7 @@ bra_protect_against_bohemia = {
 }
 
 bra_protestant_refugees = {
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	global_pop_conversion_speed_modifier = 0.15
 }
 
@@ -124,8 +124,7 @@ bra_protestant_reformation_embraced = {
 }
 
 bra_protestant_defender = {
-	damage_done_versus_heretics_modifier = 0.15
-	land_morale_modifier = 0.10
+	damage_done_versus_heretics_modifier = 0.1
 	prestige_from_land_battle = 0.15
 }
 
@@ -137,7 +136,7 @@ bra_religious_tolerance = {
 
 bra_artillery_corps_established = {
 	army_artillery_power = 0.20
-	artillery_bonus_vs_fort = 0.25
+	artillery_bonus_vs_fort = 1
 }
 
 bra_baltic_naval_base = {
@@ -192,15 +191,16 @@ bra_prussian_military_tradition = {
 }
 
 bra_prussian_infantry_excellence = {
-	army_heavy_infantry_power = 0.15
+	army_heavy_infantry_power = 0.05
+	army_light_infantry_power = 0.05
 	regiment_recruit_speed = 0.20
 	army_movement_speed = 0.10
 }
 
 bra_modern_prussian_artillery = {
-	army_artillery_power = 0.15
-	artillery_bonus_vs_fort = 5
-	siege_ability = 0.15
+	army_artillery_power = 0.1
+	artillery_bonus_vs_fort = 1
+	siege_ability = 0.1
 }
 
 bra_prussian_general_staff = {
@@ -235,7 +235,7 @@ bra_prussian_golden_age = {
 }
 
 bra_silesian_iron_mines = {
-	local_iron_output_modifier = 0.15
+	local_iron_output_modifier = 0.1
 }
 
 bra_silesian_copper_mines = {
@@ -255,11 +255,11 @@ bra_silesian_alum_mines = {
 }
 
 bra_silesian_gold_mines = {
-	local_goods_gold_output_modifier = 0.15
+	local_goods_gold_output_modifier = 0.1
 }
 
 bra_silesian_silver_mines = {
-	local_silver_output_modifier = 0.15
+	local_silver_output_modifier = 0.1
 }
 
 bra_silesian_coal_mines = {
@@ -289,7 +289,7 @@ bra_franconian_custodian = {
 
 bra_protestant_cooperation = {
 	monthly_religious_influence = 0.1
-	tolerance_own = 1
+	tolerance_own = 0.5
 }
 
 bra_greatest_threat_of_the_world_eliminated = {

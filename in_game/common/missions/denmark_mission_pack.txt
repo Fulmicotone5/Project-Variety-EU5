@@ -27,7 +27,7 @@ denmark_mission_pack = {
 		on_completion = {
 			add_country_modifier = { modifier = danish_recovery years = 20 mode = add }
 			add_gold = { value = monthly_income_trade_and_tax multiply = 5 }
-			trigger_event_silently = denmark_mission_events.2
+			trigger_event_non_silently = denmark_mission_events.2
 		}
 	}
 
@@ -54,7 +54,7 @@ denmark_mission_pack = {
 			add_country_modifier = { modifier = danish_crown_secure years = 30 mode = add }
 			add_legitimacy = 15
 			set_capital = location:kobenhavn
-			trigger_event_silently = denmark_mission_events.1
+			trigger_event_non_silently = denmark_mission_events.1
 		}
 	}
 
@@ -157,7 +157,7 @@ denmark_mission_pack = {
 			}
 			add_country_modifier = { modifier = norwegian_union_secured years = 30 mode = add }
 			add_legitimacy = 20
-			trigger_event_silently = denmark_mission_events.4
+			trigger_event_non_silently = denmark_mission_events.4
 		}
 	}
 
@@ -179,7 +179,7 @@ denmark_mission_pack = {
 		on_completion = {
 			add_country_modifier = { modifier = swedish_union_courted years = 25 mode = add }
 			add_prestige = 20
-			trigger_event_silently = denmark_mission_events.17
+			trigger_event_non_silently = denmark_mission_events.17
 		}
 	}
 
@@ -197,7 +197,7 @@ denmark_mission_pack = {
 			add_country_modifier = { modifier = kalmar_union_tightened years = 50 mode = add }
 			add_stability = 10
 			add_legitimacy = 15
-			trigger_event_silently = denmark_mission_events.5
+			trigger_event_non_silently = denmark_mission_events.5
 		}
 	}
 
@@ -254,7 +254,7 @@ denmark_mission_pack = {
 			add_country_modifier = { modifier = scandinavian_kingdom_established years = -1 mode = add }
 			form_country = formable_country:SCA_f
 			add_prestige = 30
-			trigger_event_silently = denmark_mission_events.15
+			trigger_event_non_silently = denmark_mission_events.15
 		}
 	}
 
@@ -273,7 +273,7 @@ denmark_mission_pack = {
 		on_completion = {
 			add_country_modifier = { modifier = scandinavian_golden_age years = -1 mode = add }
 			add_prestige = 50
-			trigger_event_silently = denmark_mission_events.16
+			trigger_event_non_silently = denmark_mission_events.16
 		}
 	}
 
@@ -297,7 +297,7 @@ denmark_mission_pack = {
 				add_location_modifier = { modifier = copenhagen_trading_hub years = 25 mode = add }
 			}
 			add_gold = { value = monthly_income_trade_and_tax multiply = 5 }
-			trigger_event_silently = denmark_mission_events.19
+			trigger_event_non_silently = denmark_mission_events.19
 		}
 	}
 
@@ -315,7 +315,7 @@ denmark_mission_pack = {
 		on_completion = {
 			add_country_modifier = { modifier = copenhagen_university years = 50 mode = add }
 			add_research_progress = research_progress_severe_bonus
-			trigger_event_silently = denmark_mission_events.20
+			trigger_event_non_silently = denmark_mission_events.20
 		}
 	}
 
@@ -342,7 +342,7 @@ denmark_mission_pack = {
 				value = estate_satisfaction_severe_bonus
 			}
 			add_prestige = 15
-			trigger_event_silently = denmark_mission_events.45
+			trigger_event_non_silently = denmark_mission_events.45
 		}
 	}
 
@@ -509,7 +509,7 @@ denmark_mission_pack = {
 		duration = 0
 		on_completion = {
 			add_country_modifier = { modifier = oresund_toll_established years = -1 mode = add }
-			trigger_event_silently = denmark_mission_events.8
+			trigger_event_non_silently = denmark_mission_events.8
 		}
 	}
 
@@ -932,7 +932,7 @@ denmark_mission_pack = {
     duration = 0
     on_completion = {
         add_country_modifier = { modifier = danish_military_reforms years = 35 mode = add }
-        trigger_event_silently = denmark_mission_events.13
+        trigger_event_non_silently = denmark_mission_events.13
     }
 }
 
@@ -1051,7 +1051,7 @@ denmark_mission_pack = {
             }
         }
         add_prestige = 25
-        trigger_event_silently = denmark_mission_events.14
+        trigger_event_non_silently = denmark_mission_events.14
     }
 }
 
@@ -1113,7 +1113,7 @@ denmark_mission_pack = {
 			location:york = { add_core = root }
 			location:lincoln = { add_core = root }
 			location:norwich = { add_core = root }
-			trigger_event_silently = denmark_mission_events.40
+			trigger_event_non_silently = denmark_mission_events.40
 		}
 	}
 
@@ -1154,7 +1154,7 @@ denmark_mission_pack = {
         location:winchester = { add_core = root }
         location:canterbury = { add_core = root }
         add_prestige = 75
-        trigger_event_silently = denmark_mission_events.41
+        trigger_event_non_silently = denmark_mission_events.41
     }
 }
 
@@ -1394,14 +1394,14 @@ mission_den_empire_of_the_north = {
 			location:segeberg = { add_core = root }
 			location:steinburg = { add_core = root }
 			location:plon = { add_core = root }
-			trigger_event_silently = denmark_mission_events.21
+			trigger_event_non_silently = denmark_mission_events.21
 		}
 	}
 
 	# ==================== JUTLAND HEARTLAND ====================
  
 	mission_den_develop_jutland = {
-		icon = cultivate_the_land
+		icon = global_supply_limit_modifier_advance_5
 		requires = { mission_den_secure_the_danish_crown }
 		enabled = {
 			location:viborg = { owner ?= root development >= 22.5 }
@@ -1415,7 +1415,7 @@ mission_den_empire_of_the_north = {
 		on_completion = {
 			add_country_modifier = { modifier = jutland_developed years = 30 mode = add }
 			add_gold = { value = monthly_income_trade_and_tax multiply = 4 }
-			trigger_event_silently = denmark_mission_events.22
+			trigger_event_non_silently = denmark_mission_events.22
 		}
 	}
 
@@ -1432,7 +1432,7 @@ mission_den_empire_of_the_north = {
 		on_completion = {
 			add_country_modifier = { modifier = danish_agrarian_economy years = 35 mode = add }
 			add_gold = { value = monthly_income_trade_and_tax multiply = 6 }
-			trigger_event_silently = denmark_mission_events.46
+			trigger_event_non_silently = denmark_mission_events.46
 		}
 	}
 }

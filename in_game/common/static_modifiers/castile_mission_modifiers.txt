@@ -29,7 +29,7 @@ cas_elaborate_court = {
 }
 
 cas_spanish_culture = {
-    cultural_tradition = 0.01
+    cultural_tradition_modifier = 0.2
     cultures_capacity_modifier = 0.2
 }
 
@@ -100,11 +100,11 @@ cas_castilian_development = {
 }
 
 cas_fairs_of_medina_del_campo = {
-    global_merchant_capacity_modifier = 0.2
+    global_merchant_capacity_modifier = 0.05
 }
 
 cas_feeding_the_looms_of_flanders = {
-    global_merchant_power = 0.2
+    global_merchant_power = 0.1
 }
 
 cas_andalusian_silk = {
@@ -254,7 +254,7 @@ cas_spanish_inquisition = {
 }
 
 cas_spanish_netherlands = {
-    tolerance_own = 2
+    tolerance_own = 0.5
 }
 
 cas_spanish_road_secured = {

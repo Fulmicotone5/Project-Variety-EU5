@@ -104,11 +104,12 @@ byz_mission_events.2 = {
 	option = {
 		name = byz_mission_events.2.a
 		custom_tooltip = byz_mission_events.2.a.tt
-
-		add_country_modifier = {
+		location:corinth = {
+			add_location_modifier = {
 			modifier = fortified_isthmus
 			years = 20
 			mode = add
+		}
 		}
 				
 		add_gold = 500
@@ -311,7 +312,7 @@ byz_mission_events.4 = {
 	fire_only_once = yes
 	
 	illustration_tags = {
-		10 = regular
+		10 = happy
 		10 = exterior
 	}
 
@@ -381,7 +382,7 @@ byz_mission_events.4 = {
 		
 		add_gold = {
 			value = monthly_income_trade_and_tax
-			multiply = 15
+			multiply = 5
 		}
 		add_prestige = prestige_mild_bonus
 		every_subject = {
@@ -734,8 +735,8 @@ byz_mission_events.8 = {
 			}
 			order_by = population
 			max = 10
-			change_development = 1
-			change_control = control_extreme_bonus
+			change_development = 3
+			change_prosperity = control_extreme_bonus
 		}
 
 	}

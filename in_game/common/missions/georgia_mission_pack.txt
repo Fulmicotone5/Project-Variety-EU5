@@ -57,7 +57,7 @@
                 years = 20
                 mode = add_and_extend
             }
-            trigger_event_silently = georgian_mission_events.1
+            trigger_event_non_silently = georgian_mission_events.1
         }
     }
 
@@ -86,7 +86,7 @@
                 }
                 change_development = 3
             }
-            trigger_event_silently = georgian_mission_events.2
+            trigger_event_non_silently = georgian_mission_events.2
         }
     }
 
@@ -194,7 +194,7 @@
             culture:georgian_culture = {
                 add_cultural_influence = 25
             }
-            trigger_event_silently = georgian_mission_events.4
+            trigger_event_non_silently = georgian_mission_events.4
         }
     }
 
@@ -274,7 +274,7 @@
 						change_development = 3
 					}
 
-            trigger_event_silently = georgian_mission_events.6
+            trigger_event_non_silently = georgian_mission_events.6
         }
     }
 
@@ -324,7 +324,7 @@
                 years = 25
                 mode = add_and_extend
             }
-            trigger_event_silently = georgian_mission_events.7
+            trigger_event_non_silently = georgian_mission_events.7
         }
     }
 
@@ -377,7 +377,7 @@
                     add_core = root
                 }
             }
-            trigger_event_silently = georgian_mission_events.8
+            trigger_event_non_silently = georgian_mission_events.8
         }
     }
 
@@ -435,7 +435,7 @@
                 value = max_sailors
                 multiply = 0.2
             }
-            trigger_event_silently = georgian_mission_events.9
+            trigger_event_non_silently = georgian_mission_events.9
         }
     }
 
@@ -544,7 +544,7 @@
     # ==================== PHASE 5: ECONOMIC DEVELOPMENT (LATE GAME) ====================
 
     mission_geo_develop_agriculture = {
-        icon = agriculture_advance
+        icon = efficient_mining
         # ai_will_do = { value = 100 }
         duration = 0
         requires = { }
@@ -560,12 +560,12 @@
                 years = 25
                 mode = add_and_extend
             }
-            trigger_event_silently = georgian_mission_events.12
+            trigger_event_non_silently = georgian_mission_events.12
         }
     }
 
 		mission_geo_secure_food = {
-        icon = agriculture_advance
+        icon = efficient_mining
         # ai_will_do = { value = 100 }
         duration = 0
         requires = { mission_geo_develop_agriculture }
@@ -637,7 +637,7 @@
                 type = estate_type:burghers_estate
                 value = estate_satisfaction_mild_bonus
             }
-            trigger_event_silently = georgian_mission_events.13
+            trigger_event_non_silently = georgian_mission_events.13
         }
     }
 

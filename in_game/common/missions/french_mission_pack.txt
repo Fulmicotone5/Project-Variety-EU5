@@ -177,7 +177,7 @@
 	# === Road Network Missions ===
 	
 	mission_fra_construct_royal_roads = {
-		icon = road_advance_1
+		icon = inc_vertical_economy
 		requires = { mission_fra_consolidate_ile_de_france }
 		
 		enabled = {
@@ -206,7 +206,7 @@
 	}
 
 	mission_fra_connect_french_cities = {
-		icon = road_advance_1
+		icon = inc_vertical_economy
 		requires = { mission_fra_construct_royal_roads }
 		
 		enabled = {

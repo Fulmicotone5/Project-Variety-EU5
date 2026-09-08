@@ -216,5 +216,5 @@ PV_GER = {
 	requires = organized_religion
 	
 	global_pop_conversion_speed_modifier = 0.5
-	tolerance_own = 1
+	tolerance_own = 0.5
 }

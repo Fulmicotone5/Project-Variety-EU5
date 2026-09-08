@@ -35,7 +35,7 @@ fra_paris_capital_development = {
 }
 
 fra_royal_road_network = {
-	icon = road_advance_1
+	icon = inc_vertical_economy
 	movement_speed_if_no_road = 0.10
 	global_distance_from_capital_speed_propagation = 0.05
 }
@@ -103,7 +103,7 @@ fra_bordeaux_wine_trade = {
 
 fra_english_expelled_from_france = {
 	icon = war_exhaustion
-	prestige_decay = -0.15
+	prestige_decay = -0.0015
 	global_manpower_modifier = 0.10
 }
 
@@ -115,7 +115,7 @@ fra_calais_fortified = {
 
 fra_victor_of_hundred_years_war = {
 	icon = empire_icon
-	prestige_decay = -0.20
+	prestige_decay = -0.0020
 	land_morale_modifier = 0.10
 	army_tradition_from_battle = 0.10
 }
@@ -380,7 +380,7 @@ fra_revolutionary_ferment = {
 
 fra_french_golden_age = {
 	icon = bill_of_rights
-	prestige_decay = -0.30
+	prestige_decay = -0.005
 	#great_power_score_modifier = 0.20
 	global_production_efficiency = 0.1
 	trade_land_efficiency = 0.02
