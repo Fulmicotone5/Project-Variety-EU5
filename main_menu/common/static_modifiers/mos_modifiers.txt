@@ -367,9 +367,10 @@ mos_ostrog_mod = {
 
 mos_absolutism_mod = {
 	icon = crown_power_advance_renaissance
-	global_crown_estate_power = 0.20
+	global_crown_estate_power = 1
 	stability_cost_efficiency = 0.15
-	monthly_prestige = 0.10
+	court_spending_efficiency = -0.05
+	monthly_towards_absolutism = societal_value_huge_monthly_move
 }
 
 mos_st_petersburg_mod = {

@@ -2,7 +2,7 @@
 	icon = eng_miss
 	chance = 3600
 	repeatable = no
-	player_playstyle = diplomatic
+	player_playstyle = military
 
 	#ai_will_do = { value = 100 }
 
@@ -1454,7 +1454,6 @@
 				total_population >= 100
 				count >= 5
 			}
-			total_development >= 3000
 			region:canada_region = {
 				any_location_in_region = {
 					OR = {
@@ -1897,19 +1896,17 @@
 		requires = { mission_develop_professional_army mission_modernize_artillery }
 		
 		enabled = {
-			has_advance = eng_red_coats
 			regular_army_size >= 200
+			army_tradition >= 50
 		}
 		
 		duration = 0
 
 		on_completion = {
-			add_country_modifier = {
-				modifier = redcoat_regiments
-				years = -1
-				mode = add
-			}
-		}
+             capital = {
+                create_sub_unit = unit_type:a_redcoats
+            }
+        }
 		#ai_will_do = { value = 100 }
 	}
 
@@ -2012,7 +2009,6 @@
 		requires = { mission_build_railroads mission_establish_factories }
 		
 		enabled = {
-			total_development >= 3500
 			average_country_literacy >= 35
 			has_embraced_institution = institution:industrialization
 		}
@@ -2046,9 +2042,8 @@
 		enabled = {
 			is_great_power = yes
 			is_hegemon = yes
-			army_tradition >= 75
-			navy_tradition >= 75
-			total_development >= 5000
+			army_tradition >= 60
+			navy_tradition >= 60
 			monthly_income_trade_and_tax >= 2500
 			regular_army_size >= 250
 			navy_size >= 300

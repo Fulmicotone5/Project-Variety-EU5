@@ -1,5 +1,5 @@
 ﻿byz_constantinople_restored = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_legitimacy = 0.10
 	diplomatic_reputation = 2
 	peasants_estate_max_tax = 0.10
@@ -13,7 +13,7 @@ byz_anatolia_east = {
 	global_pop_assimilation_speed_modifier = 0.15
 }
 byz_greece_restored = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_pop_conversion_speed_modifier = 0.20
 }
 byz_balkan_order = {
@@ -72,7 +72,7 @@ byz_gallia_province = {
 	land_morale_modifier = 0.10
 }
 byz_collapse_averted = {
-	icon = administrative_icon
+	icon = government_reforms
 	revoke_privilege_cost_modifier = -0.30
 }
 byz_bursa_silk = {
@@ -132,7 +132,7 @@ byz_hellenic_triumph = {
 }
 
 byz_recovery_from_decline_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_crown_estate_power = 0.10
 	stability_investment = 0.01
 }

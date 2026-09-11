@@ -1,5 +1,5 @@
 ﻿l_english:
- swe_stormaktstiden_mission_pack: "Stormaktstiden — Sweden's Age of Great Power"
+ swe_stormaktstiden_mission_pack: "Stormaktstiden — Sweden's Age of Greatness"
  swe_stormaktstiden_mission_pack_DESCRIPTION:0 "In 1337, Sweden is an independent kingdom in personal union with Norway under King Magnus Eriksson. To the north lies powerful Denmark, and the coming struggle for Scandinavian supremacy — as foreshadowed by the Kalmar Union (1397) — is inevitable. Through Falun's copper mine, Baltic mastery, and the Varangian eastern routes, realize the Stormaktstiden (Age of Great Power) and build the Swedish Empire."
  swe_stormaktstiden_mission_pack_CRITERIA_DESCRIPTION:0 "As Sweden, achieve Scandinavian supremacy, unification, eastern expansion, and industrial development to found the Scandinavian Empire."
  swe_stormaktstiden_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to build the Swedish Empire."
@@ -290,7 +290,7 @@
  STATIC_MODIFIER_NAME_swe_arctic_mod: "Arctic Empire"
  STATIC_MODIFIER_DESC_swe_arctic_mod: "Sweden extending to the Arctic Circle expands its naval presence across the North Atlantic."
  STATIC_MODIFIER_NAME_swe_stormaktstiden_mod: "Stormaktstiden"
- STATIC_MODIFIER_DESC_swe_stormaktstiden_mod: "Sweden's Age of Great Power — reached the apex of the northern empire dominating Scandinavia, the Baltic, and Eastern Europe."
+ STATIC_MODIFIER_DESC_swe_stormaktstiden_mod: "Sweden's Age of Greatness — reached the apex of the northern empire dominating Scandinavia, the Baltic, and Eastern Europe."
  STATIC_MODIFIER_NAME_swe_captured_fleet_mod: "Danish Fleet Seized"
  STATIC_MODIFIER_DESC_swe_captured_fleet_mod: "Seizing the Danish fleet rapidly strengthens the Swedish navy."
  STATIC_MODIFIER_NAME_swe_sound_toll_mod: "Sound Toll"

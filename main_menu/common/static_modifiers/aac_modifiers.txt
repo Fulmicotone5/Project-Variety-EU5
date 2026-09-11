@@ -7,8 +7,7 @@
 
 aac_rhineland_mod = {
 	icon = legacy_of_great_empires
-	global_trade_income_modifier = 0.15
-	global_wine_output_modifier = 0.10
+	global_iron_output_modifier = 0.05
 }
 
 aac_lorraine_mod = {
@@ -20,7 +19,7 @@ aac_lorraine_mod = {
 aac_hre_master_mod = {
 	icon = legacy_of_great_empires
 	government_reform_slots = 1
-	smooth_administration = 0.15
+	
 	diplomatic_reputation = 2
 }
 
@@ -78,7 +77,7 @@ aac_frankish_law_mod = {
 aac_missi_dominici_mod = {
 	icon = legalism_advance
 	government_size = 1
-	smooth_administration = 0.20
+	0
 	global_crown_estate_power = 0.20
 }
 

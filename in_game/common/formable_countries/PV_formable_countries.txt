@@ -203,7 +203,7 @@ F05_f = {
 }
 F06_f = {
 	level = 3
-	required_locations_fraction = 0.5
+	required_locations_fraction = 0.65
 	rule = historical
 
 	potential = {
@@ -211,6 +211,7 @@ F06_f = {
 		capital ?= {
 			region = region:south_german_region 
 		}
+		always = no
 	}
 
 	allow = {
@@ -330,25 +331,14 @@ F08_f = {
 }
 F09_f = {
 	level = 2
-	required_locations_fraction = 0.8
+	required_locations_fraction = 0.9
 	rule = historical
 
 	potential = {
-		or = {
-			culture = culture:lombard
-			culture = culture:piedmontese
-			culture = culture:venetian
-			culture = culture:ligurian
-			culture = culture:emilian
-			culture = culture:ladin
-			culture = culture:tuscan
-		}
+		always = no
 	}
 
 	allow = {
-		NOT = {
-			has_or_had_tag = VEN
-		}
 	}
 	
 	name = F09
@@ -385,7 +375,7 @@ F09_f = {
 }
 F10_f = {
 	level = 3
-	required_locations_fraction = 0.35
+	required_locations_fraction = 0.5
 	rule = historical
 
 	potential = {
@@ -509,6 +499,7 @@ F13_f = {
 	rule = historical
 
 	potential = {
+		always = no
 		any_owned_location = { 
 			or = {
 				region = region:carpathia_region 

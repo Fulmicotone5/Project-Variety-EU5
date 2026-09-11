@@ -3,16 +3,9 @@ touflavor.1 = {
 	type = country_event
 	title = touflavor.1.title
 	desc = touflavor.1.desc
-	fire_only_once = yes
 	image = "gfx/interface/illustrations/situation/council_of_trent.dds"
-	dynamic_historical_event = {
-		tag = TOU
-		from = 1300.1.1
-		to = 1338.1.1
-		monthly_chance = 100
-	}
+
 	trigger = {
-		has_or_had_tag = TOU
 	}
 	option = {
 		name = touflavor.1.a
@@ -23,13 +16,7 @@ touflavor.2 = {
 	type = country_event
 	title = touflavor.2.title
 	desc = touflavor.2.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		from = 1338.1.1
-		to = 1800.1.1
-		monthly_chance = 1
-	}
+
 	illustration_tags = {
 		10 = happy
 		10 = exterior
@@ -38,7 +25,6 @@ touflavor.2 = {
 		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
 	}
 	trigger = {
-		owns = location:toulouse
 		
 	}
 	option = {
@@ -63,22 +49,8 @@ touflavor.3 = {
 	type = country_event
 	title = touflavor.3.title
 	desc = touflavor.3.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		from = 1338.1.1
-		to = 1800.1.1
-		monthly_chance = 10
-	}
 	image = "gfx/interface/illustrations/disaster/placeholder.dds"
-	trigger = {
-		country_exists = c:AQN
-		NOT = {
-			c:AQN = {
-				is_subject_or_below_of = root
-			}
-		}
-	}
+
 	immediate = {
 		c:AQN = {
 			save_scope_as = target_country
@@ -100,13 +72,6 @@ touflavor.4 = {
 	type = country_event
 	title = touflavor.4.title
 	desc = touflavor.4.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		from = 1300.1.1
-		to = 1800.1.1
-		monthly_chance = 10
-	}
 	illustration_tags = {
 		10 = armed
         10 = interior
@@ -136,14 +101,7 @@ touflavor.5 = {
 	type = country_event
 	title = touflavor.5.title
 	desc = touflavor.5.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		tag = F02
-		from = 1300.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = exterior
 		10 = happy
@@ -155,8 +113,6 @@ touflavor.5 = {
 		}
 	}
 	trigger = {
-		has_or_had_tag = TOU
-		has_or_had_tag = F02
 	}
 	option = {
 		name = touflavor.5.a
@@ -171,14 +127,7 @@ touflavor.6 = {
 	type = country_event
 	title = touflavor.6.title
 	desc = touflavor.6.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		tag = F03
-		from = 1300.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = exterior
 		10 = regular
@@ -199,8 +148,7 @@ touflavor.6 = {
 		}
 	}
 	trigger = {
-		has_or_had_tag = TOU
-		has_or_had_tag = F03
+
 	}
 	option = {
 		name = touflavor.6.a
@@ -212,15 +160,7 @@ touflavor.7 = {
 	type = country_event
 	title = touflavor.7.title
 	desc = touflavor.7.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		tag = F02
-		tag = F03
-		from = 1340.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = happy
 		10 = exterior
@@ -247,15 +187,7 @@ touflavor.7 = {
 		}
 	}
 	trigger = {
-		owns = location:toulouse
-		owns = location:castelnaudary
-		owns = location:carcassonne
-		owns = location:narbonne
-		owns = location:beziers
-		owns = location:agde
-		location:toulouse = {
-			is_capital = yes
-		}
+
 	}
 	option = {
 		name = touflavor.7.a
@@ -302,15 +234,6 @@ touflavor.8 = {
 	type = country_event
 	title = touflavor.8.title
 	desc = touflavor.8.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		tag = F02
-		tag = F03
-		from = 1340.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
 	illustration_tags = {
 		10 = happy
 		10 = exterior
@@ -337,15 +260,7 @@ touflavor.8 = {
 		}
 	}
 	trigger = {
-		owns = location:toulouse
-		owns = location:aspet
-		owns = location:vielha
-		owns = location:talarn
-		owns = location:benabarre
-		owns = location:balaguer
-		location:toulouse = {
-			is_capital = yes
-		}
+
 	}
 	option = {
 		name = touflavor.8.a
@@ -496,22 +411,10 @@ touflavor.11 = {
 	type = country_event
 	title = touflavor.11.title
 	desc = touflavor.11.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = TOU
-		from = 1338.1.1
-		to = 1800.1.1
-		monthly_chance = 1
-	}
+
 	image = "gfx/interface/illustrations/disaster/placeholder.dds"
 	trigger = {
-		religion = religion:catharism
-		country_exists = c:MLL
-		NOT = {
-			c:MLL = {
-				is_subject_or_below_of = root
-			}
-		}
+
 	}
 	immediate = {
 		c:MLL = {

@@ -23,7 +23,7 @@ som_tur_bursa_silk_trade = {
 # === 南部拡張 ===
 
 som_tur_anatolia_unified_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	peasants_estate_max_tax = 0.10
 	monthly_legitimacy = 0.05
 	stability_cost = -0.05
@@ -193,47 +193,47 @@ som_tur_bureaucracy_mod = {
 }
 
 som_tur_mosque_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_prestige = 0.15
 	tolerance_own = 0.25
 	monthly_legitimacy = 0.05
 }
 
 som_tur_topkapi_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_prestige = 0.20
 	monthly_legitimacy = 0.10
 	diplomatic_reputation = 2
 }
 
 som_tur_ulema_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	tolerance_own = 0.25
 	estate_satisfaction:clergy_estate = 0.05
 	monthly_legitimacy = 0.05
 }
 
 som_tur_millet_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	tolerance_heathen = 1
 	global_pop_conversion_speed_modifier = 0.10
 }
 
 som_tur_kadi_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_pop_promotion_speed_modifier = 0.1
 	revoke_privilege_cost_modifier = -0.20
 }
 
 som_tur_sufi_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	num_possible_artists = 2
 	skill_of_new_artists = 0.20
 	monthly_prestige = 0.10
 }
 
 som_tur_synthesis_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	cultural_tradition_modifier = 0.20
 	cultural_influence_modifier = 0.20
 }
@@ -271,7 +271,7 @@ som_tur_trebizond_trade_mod = {
 }
 
 som_tur_silk_monopoly_unlock_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	allow_constantinopolitan_silk_monopoly_rights = yes
 }
 
@@ -283,7 +283,7 @@ som_tur_grand_bazaar_loc_mod = {
 }
 
 som_tur_anatolian_heartland_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_distance_from_capital_speed_propagation = 0.10
 	tax_income_efficiency = 0.03
 }
@@ -296,13 +296,13 @@ som_tur_aegean_shipbuilding_mod = {
 }
 
 som_tur_aleppo_learning_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_monthly_literacy = 0.1
 	local_max_literacy = 5
 }
 
 som_tur_damascus_learning_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_monthly_literacy = 0.1
 	local_max_literacy = 5
 }
@@ -315,7 +315,7 @@ som_tur_edirne_trade_mod = {
 }
 
 som_tur_novo_brdo_silver_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_silver_output_modifier = 0.50
 }
 

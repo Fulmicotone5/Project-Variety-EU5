@@ -4310,5 +4310,30 @@ countries = {
 
 			capital = montefeltro
 		}
+
+		AAC = {	#Aachen
+		own_control_core = {
+			aachen bergheim duren monchengladbach heinsberg maastricht hasselt bree borgloon  limbourg stavelot schleiden prum daun cochem liege dinant walcourt namur geldern arnhem roermond venlo nijmegen tiel harderwijk apeldoorn cuijk weert
+			mors kleve wesel zutphen doetinchem
+		}
+
+		starting_technology_level = 3
+		include = "expl_western_europe"
+		include = "catholic_free_city_no_coast"
+		include = "expl_northern_europe"
+		government = {
+			ruler = random
+		}
+
+		tolerated_cultures = {
+			low_franconian
+		}
+
+		country_rank = rank_county
+		capital = aachen
+		tolerated_cultures = {
+			westphalian
+		}
+	}
 	}
 }

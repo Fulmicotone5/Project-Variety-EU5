@@ -1,13 +1,16 @@
 ﻿pro_jewel_of_occitania_mission_pack = {
 	icon = pro_missions
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = PRO
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = pro_mission_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = pro_mission_started
+		set_global_variable = pro_mission_started
 	}
 
-	on_completion = {
-		remove_variable = pro_mission_started
-	}
-
-	on_abort = {
-		remove_variable = pro_mission_started
-	}
 
 	# ==================== ROOT ====================
 
@@ -53,8 +49,10 @@
 		duration = 120
 		on_completion = {
 			add_country_modifier = { modifier = pro_statutes_of_aix_mod years = -1 mode = add }
-			add_country_modifier = { modifier = pro_etats_de_provence_unlock_mod years = -1 mode = add }
-			add_country_modifier = { modifier = pro_marseille_port_unlock_mod years = -1 mode = add }
+			custom_tooltip = {
+				text = unlocks_tw
+					set_variable = statutesofaix
+			}
 		}
 	}
 
@@ -174,7 +172,7 @@
 		requires = { pro_lords_of_the_rhone }
 
 		enabled = {
-			army_size >= 15
+			regular_army_size >= 15
 			monthly_army_tradition >= 0.05
 		}
 		duration = 180
@@ -283,22 +281,7 @@
 		}
 	}
 
-	pro_king_of_jerusalem = {
-		icon = a_neverending_crusade
-		requires = { pro_king_of_sicily }
 
-		enabled = {
-			owns_or_non_sovereign_subject_owns = location:jerusalem
-			any_owned_location = {
-				area = area:levant_area
-				count >= 3
-			}
-		}
-		duration = 365
-		on_completion = {
-			trigger_event_non_silently = pro_events.5
-		}
-	}
 
 	# ==================== BRANCH 3: ロレーヌとオクシタニア ====================
 
@@ -345,11 +328,8 @@
 		requires = { pro_integrate_lorraine }
 
 		enabled = {
-			OR = {
-				is_part_of_hre = yes
-				is_leader_of_international_organization = international_organization:hre
-				NOT = { international_organization_exists = international_organization:hre }
-			}
+			is_member_of_international_organization = international_organization:hre
+
 		}
 		duration = 120
 		on_completion = {
@@ -415,7 +395,7 @@
 
 	pro_king_of_kings = {
 		icon = legacy_of_great_empires
-		requires = { pro_king_of_hungary pro_king_of_jerusalem pro_join_the_empire pro_king_of_france pro_la_marseillaise }
+		requires = { pro_king_of_hungary pro_join_the_empire pro_king_of_france pro_la_marseillaise }
 		final = yes
 
 		enabled = {

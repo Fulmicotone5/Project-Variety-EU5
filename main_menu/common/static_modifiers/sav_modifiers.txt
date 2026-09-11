@@ -146,7 +146,7 @@ sav_savoyard_occitania_mod = {
 
 sav_claim_france_mod = {
 	icon = french_language_in_all_courts
-	cultural_influence = 0.20
+	cultural_influence_modifier = 0.20
 	diplomatic_reputation = 2
 }
 
@@ -238,7 +238,7 @@ sav_lyon_gateway_mod = {
 
 sav_loire_valley_mod = {
 	icon = french_heritage
-	cultural_influence = 0.10
+	cultural_influence_modifier = 0.10
 	global_crown_estate_power = 0.25
 }
 

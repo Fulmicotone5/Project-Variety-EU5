@@ -46,7 +46,7 @@ por_ordenacoes_mod = {
 	icon = fra_code_civil
 	legislative_efficiency = 0.15
 	government_size = 1
-	smooth_administration = 0.10
+	
 }
 
 por_evora_mod = {

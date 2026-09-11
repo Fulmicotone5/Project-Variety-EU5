@@ -19,7 +19,7 @@ pol_events.10 = {
 	}
 	option = {
 		name = pol_events.10.a
-		add_country_modifier = { modifier = pol_jadwiga_union_mod years = -1 mode = add }
+		add_country_modifier = { modifier = pol_jadwiga_union_mod years = 5 mode = add }
 		add_prestige = 15
 	}
 }
@@ -43,7 +43,7 @@ pol_events.20 = {
 	}
 	option = {
 		name = pol_events.20.a
-		add_country_modifier = { modifier = pol_hungarian_union_bonus_mod years = -1 mode = add }
+		add_country_modifier = { modifier = pol_hungarian_union_bonus_mod years = 10 mode = add }
 		add_prestige = 15
 	}
 }

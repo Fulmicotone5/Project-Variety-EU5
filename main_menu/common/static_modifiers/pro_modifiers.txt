@@ -19,7 +19,6 @@ pro_marseille_mod = {
 
 pro_toulon_dockyard_mod = {
 	icon = rudimentary_coastal_ship_repair
-	monthly_navy_tradition = 0.10
 	local_repair_speed = 0.20
 	max_ships_built_at_same_time = 2
 }
@@ -98,7 +97,7 @@ pro_join_the_empire_mod = {
 pro_unite_occitania_mod = {
 	icon = fra_code_civil
 	global_crown_estate_power = 0.25
-	cultural_influence = 0.10
+	cultural_influence_modifier = 0.10
 }
 
 pro_gascony_mod = {
@@ -121,12 +120,4 @@ pro_king_of_kings_mod = {
 	discipline = 0.05
 }
 
-pro_marseille_port_unlock_mod = {
-	icon = rudimentary_coastal_ship_repair
-	allow_pro_marseille_free_port_town_rights = yes
-}
 
-pro_etats_de_provence_unlock_mod = {
-	icon = legalism_advance
-	allow_pro_etats_de_provence_town_rights = yes
-}

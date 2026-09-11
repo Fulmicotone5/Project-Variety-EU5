@@ -9,7 +9,7 @@ mlo_curb_della_scala_mod = {
 }
 
 mlo_state_led_enterprises_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_build_buildings_efficiency = 0.10
 	global_construction_speed = 0.10
 }
@@ -21,17 +21,17 @@ mlo_rigorous_plague_policy_mod = {
 
 mlo_duomo_di_milano_mod = {
 	icon = legalism_advance
-	cultural_tradition = 0.10
-	cultural_influence = 0.10
+	cultural_tradition_modifier = 0.25
+	cultural_influence_modifier = 0.25
 }
 
 mlo_road_network_of_the_realm_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	trade_land_efficiency = 0.10
 }
 
 mlo_expand_administrative_buildings_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	stability_cost_efficiency = 0.10
 }
 
@@ -148,12 +148,15 @@ mlo_italian_independence_mod = {
 	icon = crown_power_advance_renaissance
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.10
+	government_size = 1
 }
 
 mlo_who_achieves_all_things_mod = {
 	icon = crown_power_advance_renaissance
 	diplomatic_reputation = 2
 	global_distance_from_capital_speed_propagation = 0.10
+	government_size = 1
+	government_reform_slots = 1
 }
 
 mlo_serpent_reward_mod = {

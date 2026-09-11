@@ -8,13 +8,14 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = TEU
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = teu_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = teu_mission_started }
-	on_completion = { remove_variable = teu_mission_started }
-	on_abort = { remove_variable = teu_mission_started }
+	on_start = { set_global_variable = teu_mission_started }
 
 	# ===== ROOT =====
 
@@ -37,15 +38,14 @@
 		icon = a_fortified_border
 		requires = { teu_crusaders_legacy }
 		enabled = {
-			NOT = {
-				any_owned_location = {
+			any_owned_location = {
 					OR = {
-						area = area:danzig_province
-						area = area:tuchola_province
+						province_definition = province_definition:danzig_province
+						province_definition = province_definition:tuchola_province
 					}
-					NOT = { integration_level = integrated }
+					integration_level = integrated
+					count >= 10
 				}
-			}
 		}
 		on_completion = {
 			add_country_modifier = { modifier = teu_prussia_mod years = -1 mode = add }
@@ -56,14 +56,14 @@
 		icon = a_neverending_crusade
 		requires = { teu_secure_prussia }
 		enabled = {
-			dominant_religion = religion:catholic
+			religion = religion:catholic
 			religion_percentage_in_country = {
 				religion = religion:catholic
-				value >= 0.60
+				value <= 0.70
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = teu_christian_mod years = -1 mode = add }
+			add_country_modifier = { modifier = teu_christian_mod years = 20 mode = add }
 		}
 	}
 
@@ -115,7 +115,10 @@
 		icon = nmt_teu_crusade_path
 		requires = { }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 		}
 		on_completion = {
 			trigger_event_non_silently = teu_events.11
@@ -126,7 +129,10 @@
 		icon = lat_emperor_latins_advance
 		requires = { teu_crusade_path }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			NOT = { country_exists = c:LIV }
 			any_owned_location = {
 				area = area:baltic_area
@@ -144,7 +150,10 @@
 		icon = nmt_teu_crusade_path
 		requires = { teu_crusade_path }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			any_current_war = {
 				OR = {
 					attacker_leader = root
@@ -169,7 +178,10 @@
 		icon = a_fortified_border
 		requires = { teu_livonian_alliance }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			owns_or_non_sovereign_subject_owns = location:riga
 			army_tradition >= 40
 		}
@@ -184,7 +196,10 @@
 		icon = divine_supremacy
 		requires = { teu_crusade_east teu_livonian_alliance }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			any_owned_location = {
 				region = region:russian_region
 				is_owned_or_owned_by_subjects_of = root
@@ -200,7 +215,10 @@
 		icon = nmt_teu_crusade_path
 		requires = { teu_march_to_orthodox teu_riga_crusade }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			num_locations >= 400
 			army_tradition >= 50
 		}
@@ -213,7 +231,10 @@
 		icon = legacy_of_great_empires
 		requires = { teu_northern_crusade_final }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			location:constantinople = {
 				owner = root
 			}
@@ -227,10 +248,15 @@
 		icon = eternal_crusade
 		requires = { teu_constantinople_fall }
 		enabled = {
-			has_variable = teu_path_crusade
-			location:jerusalem = {
-				owner = root
+			religion = religion:catholic
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
 			}
+			any_country = {
+				religion = religion:catholic
+				owns = location:jerusalem
+				}
 		}
 		on_completion = {
 			trigger_event_non_silently = teu_events.56
@@ -243,7 +269,10 @@
 		icon = nmt_teu_icon_2
 		requires = { }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 		}
 		on_completion = {
 			add_country_modifier = { modifier = teu_secular_start_mod years = 60 mode = add }
@@ -254,7 +283,10 @@
 		icon = crown_power_advance_renaissance
 		requires = { teu_secularize_path }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			has_or_had_tag = PRU
 		}
 		on_completion = {
@@ -266,7 +298,10 @@
 		icon = expansionism
 		requires = { teu_secularize_path }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			any_owned_location = {
 				area = area:pomerania_area
 				is_owned_or_owned_by_subjects_of = root
@@ -282,7 +317,10 @@
 		icon = national_churches
 		requires = { teu_prussian_duchy }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			situation:reformation = {
 				OR = {
 					situation_is_active = yes
@@ -299,7 +337,10 @@
 		icon = lat_emperor_latins_advance
 		requires = { teu_prussian_duchy teu_control_pomerania }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			OR = {
 				is_leader_of_international_organization = international_organization:hre
 				country_rank_level >= 3
@@ -312,21 +353,18 @@
 	}
 
 	teu_north_german_empire = {
-		icon = legacy_of_great_empires
+		icon = salic_law_advance
 		requires = { teu_dominate_hre teu_protestant_reformation }
 		enabled = {
-			has_variable = teu_path_secular
-			any_owned_location = {
-				OR = {
-					region = region:north_german_region
-					region = region:south_german_region
-				}
-				is_owned_or_owned_by_subjects_of = root
-				count >= 100
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
 			}
+			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 250 }
 		}
 		on_completion = {
 			trigger_event_non_silently = teu_events.60
+			form_country = formable_country:F05_f
 		}
 	}
 
@@ -407,6 +445,7 @@
 		icon = crossroads_of_commerce
 		requires = { teu_danzig_port }
 		enabled = {
+			produced_in_country:amber > 12
 			monthly_income_trade_and_tax >= 60
 			any_owned_location = {
 				is_market_center = yes
@@ -507,7 +546,10 @@
 		icon = a_fortified_border
 		requires = { teu_livonian_alliance }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			location:narva = {
 				owner = root
 				OR = {
@@ -529,7 +571,10 @@
 		icon = city_building_advance
 		requires = { teu_control_pomerania }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			location:berlin = {
 				owner = root
 				OR = {
@@ -549,8 +594,12 @@
 		icon = court_accounting
 		requires = { teu_prussian_duchy }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			estate_satisfaction:nobles_estate >= 0.90
+			"estate_power(estate_type:nobles_estate)" >= 0.25
 		}
 		on_completion = {
 			add_country_modifier = { modifier = teu_junker_mod years = -1 mode = add }
@@ -561,7 +610,10 @@
 		icon = continental_trade
 		requires = { teu_dominate_hre }
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			any_owned_location = {
 				area = area:silesia_area
 				is_owned_or_owned_by_subjects_of = root
@@ -580,9 +632,10 @@
 		requires = { teu_christianize_prussia }
 		enabled = {
 			any_owned_location = {
-				has_building = building_type:temple
+				has_building = building_type:cathedral
 				count >= 20
 			}
+			"estate_power(estate_type:clergy_estate)" >= 0.25
 			estate_satisfaction:clergy_estate >= 0.75
 		}
 		on_completion = {
@@ -617,7 +670,10 @@
 		icon = legacy_of_great_empires
 		requires = { teu_grand_master }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			num_locations >= 2000
 			owns_or_non_sovereign_subject_owns = location:sarai_al_jadid
 			owns_or_non_sovereign_subject_owns = location:kazan
@@ -636,7 +692,10 @@
 		requires = { teu_mongol_empire }
 		final = yes
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			num_locations >= 3000
 		}
 		on_completion = {
@@ -651,7 +710,10 @@
 		icon = a_neverending_crusade
 		requires = { teu_northern_crusade_final }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			any_owned_location = {
 				region = region:steppes_region
 				owner = root
@@ -668,7 +730,10 @@
 		icon = eternal_crusade
 		requires = { teu_steppe_crusade }
 		enabled = {
-			has_variable = teu_path_crusade
+			custom_tooltip = {
+				text = pvpathcr
+				has_variable = teu_path_crusade
+			}
 			num_locations >= 500
 			prestige >= 75
 		}
@@ -682,7 +747,10 @@
 		requires = { teu_north_german_empire }
 		final = yes
 		enabled = {
-			has_variable = teu_path_secular
+			custom_tooltip = {
+				text = pvpathse
+				has_variable = teu_path_secular
+			}
 			OR = {
 				has_or_had_tag = GER
 				has_or_had_tag = HRE

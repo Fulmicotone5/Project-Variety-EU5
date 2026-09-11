@@ -25,7 +25,7 @@ last_bastion_of_hellenism = {
 	potential = {
 		has_or_had_tag = P08
 	}
-	cultural_tradition = 0.1
+	cultural_tradition_modifier = 0.1
 	global_pop_conversion_speed = 0.5
 
 	requires = renaissance_advance

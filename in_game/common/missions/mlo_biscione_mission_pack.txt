@@ -8,6 +8,9 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = MLO
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = mlo_biscione_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = mlo_biscione_started
+		set_global_variable = mlo_biscione_started
 	}
 
-	on_completion = {
-		remove_variable = mlo_biscione_started
-	}
-
-	on_abort = {
-		remove_variable = mlo_biscione_started
-	}
 
 	# ==================== ROOT ====================
 
@@ -52,33 +48,6 @@
 		}
 	}
 
-	mlo_curb_della_scala = {
-		icon = independence_from_mali
-		requires = { }
-
-		enabled = {
-			OR = {
-				NOT = { is_at_war_with = c:VER }
-				NOT = { country_exists = c:VER }
-				c:VER = { country_tax_base < root.country_tax_base }
-			}
-		}
-		duration = 0
-		on_completion = {
-			add_country_modifier = { modifier = mlo_curb_della_scala_mod years = 20 mode = add }
-			if = {
-				limit = {
-					country_exists = c:VER
-					location:verona = { exists = yes }
-				}
-				add_casus_belli = {
-					target = location:verona.owner
-					type = casus_belli:cb_conquer_province
-					province = location:verona.province
-				}
-			}
-		}
-	}
 
 	mlo_imperial_vicariate = {
 		icon = imperial_creed
@@ -95,7 +64,7 @@
 
 	mlo_serpent_that_devours_men = {
 		icon = milanese_heritage
-		requires = { mlo_expanded_domain mlo_curb_della_scala mlo_imperial_vicariate }
+		requires = { mlo_expanded_domain  mlo_imperial_vicariate }
 
 		enabled = {
 			has_fired_unique_event = flavor_mlo.13
@@ -148,7 +117,10 @@
 		requires = { mlo_state_led_enterprises }
 
 		enabled = {
-			has_fired_unique_event = flavor_mlo.24
+			custom_tooltip = {
+				text = textduomo
+				has_fired_unique_event = flavor_mlo.24
+			}
 		}
 		duration = 180
 		on_completion = {
@@ -162,6 +134,15 @@
 
 		enabled = {
 			average_control_in_home_region >= 0.50
+			location:bergamo = {
+				has_latest_road_to = location:milano
+			}
+			location:vercelli = {
+				has_latest_road_to = location:milano
+			}
+			location:cremona = {
+				has_latest_road_to = location:milano
+			}
 		}
 		duration = 120
 		on_completion = {
@@ -203,7 +184,10 @@
 		requires = { mlo_embrace_the_renaissance }
 
 		enabled = {
-			has_fired_unique_event = flavor_mlo.6
+			custom_tooltip = {
+				text = textduomo2
+				has_fired_unique_event = flavor_mlo.6
+			}
 		}
 		duration = 180
 		on_completion = {
@@ -291,7 +275,7 @@
 		requires = { mlo_serpent_that_devours_men }
 
 		enabled = {
-			army_size >= 1
+			regular_army_size >= 1
 		}
 		duration = 0
 		on_completion = {
@@ -307,7 +291,7 @@
 			any_owned_location = {
 				area = area:lombardy_area
 				owner = root
-				count >= 28
+				count >= 32
 			}
 		}
 		duration = 180
@@ -403,22 +387,11 @@
 
 	# ==================== BRANCH C: 権威の狭間にて ====================
 
-	mlo_between_two_authorities = {
-		icon = papal_investiture_and_tithes
-		requires = { mlo_serpent_that_devours_men }
 
-		enabled = {
-			has_fired_unique_event = flavor_mlo.13
-		}
-		duration = 0
-		on_completion = {
-			add_country_modifier = { modifier = mlo_between_two_authorities_mod years = 20 mode = add }
-		}
-	}
 
 	mlo_reconcile_with_the_papacy = {
 		icon = pap_head_of_the_church
-		requires = { mlo_between_two_authorities }
+		requires = { mlo_serpent_that_devours_men }
 
 		enabled = {
 			OR = {
@@ -435,7 +408,7 @@
 
 	mlo_trust_of_the_emperor = {
 		icon = lat_emperor_latins_advance
-		requires = { mlo_between_two_authorities }
+		requires = { mlo_serpent_that_devours_men }
 
 		enabled = {
 			OR = {
@@ -455,7 +428,7 @@
 
 	mlo_overture_to_france = {
 		icon = liberty_egalite_fraternity
-		requires = { mlo_between_two_authorities }
+		requires = { mlo_serpent_that_devours_men }
 
 		enabled = {
 			OR = {
@@ -473,7 +446,7 @@
 
 	mlo_the_italian_wars = {
 		icon = vauban_fortifications
-		requires = { mlo_reconcile_with_the_papacy mlo_trust_of_the_emperor mlo_overture_to_france }
+		requires = { mlo_north_italian_ambitions }
 
 		enabled = {
 			OR = {
@@ -542,13 +515,13 @@
 		enabled = {
 			any_owned_location = {
 				region = region:italy_region
-				count >= 200
+				count >= 150
 			}
 		}
 		duration = 180
 		on_completion = {
 			add_country_modifier = { modifier = mlo_italian_independence_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_kingdom }
+			form_country = formable_country:F09_f
 		}
 	}
 
@@ -565,7 +538,6 @@
 		duration = 365
 		on_completion = {
 			add_country_modifier = { modifier = mlo_who_achieves_all_things_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_empire }
 		}
 	}
 }

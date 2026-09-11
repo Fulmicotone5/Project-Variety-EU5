@@ -8,14 +8,14 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = DAN
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = den_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = den_mission_started }
-	on_completion = { remove_variable = den_mission_started }
-	on_abort = { remove_variable = den_mission_started }
-
+	on_start = { set_global_variable = den_mission_started }
 	# ==================== ROOT ====================
 
 	den_restoration_of_denmark = {
@@ -93,7 +93,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = den_holstein_integration_mod years = -1 mode = add }
+			add_country_modifier = { modifier = den_holstein_integration_mod years = 25 mode = add }
 		}
 	}
 
@@ -120,12 +120,7 @@
 		icon = dan_rulers_of_the_north
 		requires = { den_integrate_norway den_integrate_sweden den_integrate_holstein }
 		enabled = {
-			region:scandinavian_region = {
-				any_location_in_region = {
-					count >= 350
-					owner = root
-				}
-			}
+			has_or_had_tag = SCA
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_scandinavia_united_mod years = -1 mode = add }
@@ -150,10 +145,10 @@
 
 	den_sound_toll = {
 		icon = dan_royal_danish_navy
-		requires = { den_retake_gotland }
+		requires = { den_retake_gotland  }
 		enabled = {
-			navy_size >= 20
-			monthly_income_trade_and_tax >= 80
+			navy_size >= 50
+			monthly_income_trade_and_tax >= 300
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_sound_toll_mod years = -1 mode = add }
@@ -178,8 +173,7 @@
 		icon = hsa_mastery_of_the_sea
 		requires = { den_sound_toll }
 		enabled = {
-			owns_or_non_sovereign_subject_owns = location:tallinn
-			owns_or_non_sovereign_subject_owns = location:narva
+			own_entire_province = province_definition:estonia_province
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_estonia_mod years = -1 mode = add }
@@ -208,7 +202,7 @@
 			owns_or_non_sovereign_subject_owns = location:gdansk
 		}
 		on_completion = {
-			add_country_modifier = { modifier = den_baltic_master_mod years = -1 mode = add }
+			add_country_modifier = { modifier = den_baltic_master_mod years = 10 mode = add }
 		}
 	}
 
@@ -229,64 +223,19 @@
 
 	# ==================== BRANCH C: イングランド征服・北海帝国 ====================
 
-	den_rival_england = {
-		icon = dan_old_naval_traditions
-		requires = { den_restoration_of_denmark }
-		enabled = {
-			OR = {
-				c:ENG = { is_rival_of = root }
-				power_projection >= 15
-			}
-			navy_size >= 15
-		}
-		on_completion = {
-			if = {
-				limit = { location:york = { exists = yes } }
-				add_casus_belli = {
-					target = location:york.owner
-					type = casus_belli:cb_conquer_province
-					province = location:york.province
-				}
-			}
-		}
-	}
 
 	den_north_sea_fleet = {
 		icon = dan_royal_danish_navy
-		requires = { den_rival_england }
+		requires = { den_danish_navy }
 		enabled = {
-			navy_size >= 40
-			ship_build_speed >= 0
+			navy_size >= 100
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_north_sea_fleet_mod years = -1 mode = add }
 		}
 	}
 
-	den_invade_england = {
-		icon = dan_scanian_regiment
-		requires = { den_north_sea_fleet }
-		enabled = {
-			owns_or_non_sovereign_subject_owns = location:york
-		}
-		on_completion = {
-			add_country_modifier = { modifier = den_england_invasion_mod years = 30 mode = add }
-			add_prestige = 20
-		}
-	}
 
-	den_conquer_england = {
-		icon = dan_scanian_regiment
-		requires = { den_invade_england }
-		enabled = {
-			owns_or_non_sovereign_subject_owns = location:london
-			owns_or_non_sovereign_subject_owns = location:edinburgh
-		}
-		on_completion = {
-			add_country_modifier = { modifier = den_north_sea_empire_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_empire }
-		}
-	}
 
 	# ==================== BRANCH D: 宗教分岐（3方向）====================
 
@@ -326,7 +275,9 @@
 					defender_leader = root
 				}
 				any_war_participant = {
-					religion.group = religion_group:muslim
+					NOT = {
+						religion = religion:catholic
+					}
 					NOT = { this = root }
 				}
 			}
@@ -434,7 +385,7 @@
 
 	den_copenhagen_university = {
 		icon = dan_rentekammer_advance
-		requires = { den_strengthen_crown }
+		requires = { den_develop_copenhagen }
 		enabled = {
 			location:kobenhavn = {
 				has_building = building_type:university
@@ -467,26 +418,15 @@
 		}
 	}
 
-	den_absolutism = {
-		icon = dan_admiralty_college
-		requires = { den_copenhagen_university den_develop_copenhagen }
-		enabled = {
-			"estate_power(estate_type:crown_estate)" >= 0.30
-			legitimacy >= 90
-		}
-		on_completion = {
-			add_country_modifier = { modifier = den_absolutism_mod years = -1 mode = add }
-		}
-	}
 
 	den_economic_powerhouse = {
 		icon = dan_trading_economy
-		requires = { den_absolutism }
+		requires = { den_expand_the_toll den_north_sea_fleet }
 		enabled = {
-			monthly_income_trade_and_tax >= 300
-			any_owned_location = {
-				is_market_center = yes
-				count >= 3
+			monthly_income_trade_and_tax >= 1500
+			capital.market = {
+				"merchant_power_in_market(root)" >= 75
+				total_goods_value_traded >= 2000
 			}
 		}
 		on_completion = {
@@ -558,29 +498,17 @@
 		icon = dan_trading_economy
 		requires = { den_stralsund_treaty den_humiliate_hansa }
 		enabled = {
-			monthly_income_trade_and_tax >= 200
-			any_owned_location = {
-				is_market_center = yes
-				count >= 4
+			monthly_income_trade_and_tax >= 500
+			capital.market = {
+				"merchant_power_in_market(root)" >= 75
+				total_goods_value_traded >= 1000
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = den_sound_toll_extended_mod years = -1 mode = add }
+			add_country_modifier = { modifier = den_sound_toll_extended_mod years = 50 mode = add }
 		}
 	}
 
-	# ==================== BRANCH C延伸 ====================
-
-	den_danish_scotland = {
-		icon = dan_scanian_regiment
-		requires = { den_north_sea_fleet }
-		enabled = {
-			owns_or_non_sovereign_subject_owns = location:edinburgh
-		}
-		on_completion = {
-			add_country_modifier = { modifier = den_scotland_mod years = 30 mode = add }
-		}
-	}
 
 	# ==================== BRANCH E延伸 ====================
 
@@ -687,11 +615,11 @@
 	# A+E合流: スカンジナビア黄金時代
 	den_scandinavian_golden_age = {
 		icon = dan_rulers_of_the_north
-		requires = { den_integrate_norway den_integrate_sweden den_absolutism }
+		requires = { den_integrate_norway den_integrate_sweden  }
 		enabled = {
 			num_locations >= 400
-			monthly_income_trade_and_tax >= 400
-			prestige >= 70
+			monthly_income_trade_and_tax >= 300
+			prestige >= 50
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_golden_age_mod years = -1 mode = add }
@@ -705,8 +633,8 @@
 		requires = { den_unite_scandinavia den_master_of_the_baltic den_scandinavian_golden_age }
 		enabled = {
 			num_locations >= 600
-			monthly_income_trade_and_tax >= 600
-			navy_size >= 80
+			monthly_income_trade_and_tax >= 4000
+			navy_size >= 200
 		}
 		on_completion = {
 			add_country_modifier = { modifier = den_north_sea_dominion_mod years = -1 mode = add }
@@ -721,8 +649,6 @@
 		final = yes
 		enabled = {
 			num_locations >= 1000
-			prestige >= 80
-			monthly_income_trade_and_tax >= 1000
 		}
 		on_completion = {
 			trigger_event_non_silently = den_events.99

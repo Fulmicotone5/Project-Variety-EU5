@@ -16,7 +16,7 @@ location_raw_material_development = {
 
 rural_investment = {
 	icon = economy_icon
-	tax_income_efficiency = 0.15
+	tax_income_efficiency = 0.05
 	global_rural_build_buildings_efficiency = 0.20
 }
 

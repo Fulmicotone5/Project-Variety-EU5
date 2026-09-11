@@ -1,22 +1,23 @@
 ﻿bur_crown_of_lothair_mission_pack = {
 	icon = pro_missions
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = BUR
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = bur_mission_started
+		}
 	}
 
 	enabled = {
 		always = yes
 	}
 
-	on_start = { set_variable = bur_mission_started }
-	on_completion = { remove_variable = bur_mission_started }
-	on_abort = { remove_variable = bur_mission_started }
+	on_start = { set_global_variable = bur_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -31,11 +32,125 @@
 		}
 	}
 
+	burinde = {
+		icon = army_country_diplo_range_advance
+		requires = { bur_duchy_of_burgundy }
+		enabled = {
+			is_independent_or_autonomous_subject = no
+			is_situation_active = situation:hundred_years_war
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.1
+		}
+	}
+	burneves = {
+		icon = elan
+		requires = { burinde }
+		enabled = {
+			is_independent_or_autonomous_subject = yes
+			NOT = {
+				owns = location:nevers
+			}
+		}
+		bypass = {
+			owns = location:nevers
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.2
+		}
+	}
+	bujoin = {
+		icon = lux_destined_rule
+		requires = { burneves }
+		enabled = {
+			is_independent_or_autonomous_subject = yes
+		owns = location:nevers
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.3
+		}
+	}
+	burales = {
+		icon = friends_in_high_places
+		requires = { bujoin }
+		enabled = {
+			is_independent_or_autonomous_subject = yes
+			is_member_of_international_organization = international_organization:hre
+			NOT = {
+				owns = location:arles
+			}
+		}
+		bypass = {
+			has_or_had_tag = BGP
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.8
+		}
+	}
+	burbur = {
+		icon = bohemian_imperial_standing
+		requires = { burales }
+		enabled = {
+			owns = location:arles
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.9
+		}
+	}
+	burallb = {
+		icon = mandate_of_the_khan
+		final = yes
+		requires = { burbur }
+		enabled = {
+			own_entire_area = area:provence_area
+		own_entire_area = area:savoy_area
+		own_entire_area = area:lyonnais_area
+		own_entire_area = area:franche_comte_area
+		own_entire_area = area:western_switzerland_area
+		own_entire_area = area:central_switzerland_area
+		own_entire_area = area:burgundy_area
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.10
+		}
+	}
+	buropope = {
+		icon = isolated_reaches
+		requires = { burbur }
+		enabled = {
+			has_or_had_tag = BGP
+			country_rank = country_rank:rank_kingdom
+			not = {
+				owns = location:avignon
+			}
+			c:PAP = {
+				owns = location:avignon
+			}
+		}
+		bypass = {
+			owns = location:avignon
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.15
+		}
+	}
+	buravign = {
+		icon = glory_of_rome
+		requires = { buropope  }
+		enabled = {
+			owns = location:avignon
+			total_building_levels_including_construction:local_governor < modifier:num_local_governors
+		}
+		on_completion = {
+			trigger_event_non_silently = burflavor.13
+		}
+	}
+
 	# ==================== ブランチA: 英仏の立ち回り ====================
 
 	bur_balance_of_power = {
 		icon = bur_between_two_realms
-		requires = { bur_duchy_of_burgundy }
+		requires = { burinde }
 		enabled = {
 			power_projection >= 7
 		}
@@ -46,10 +161,13 @@
 
 	bur_ally_england = {
 		icon = english_ambition
-		requires = { bur_balance_of_power }
+		requires = { burinde }
 		enabled = {
 			is_allied_with = { target = c:ENG }
 			c:ENG = { opinion = { target = root value >= 100 } }
+			NOT = {
+				has_country_modifier = bur_ally_france_mod
+			}
 		}
 		on_completion = {
 			add_country_modifier = { modifier = bur_ally_england_mod years = -1 mode = add }
@@ -75,7 +193,7 @@
 
 	bur_treaty_of_troyes = {
 		icon = english_heritage
-		requires = { bur_siege_of_calais }
+		requires = { bur_siege_of_calais bujoin }
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:reims
 			owns_or_non_sovereign_subject_owns = location:paris
@@ -88,10 +206,13 @@
 
 	bur_ally_france = {
 		icon = french_ambition
-		requires = { bur_balance_of_power }
+		requires = { burinde }
 		enabled = {
 			is_allied_with = { target = c:FRA }
 			c:FRA = { opinion = { target = root value >= 100 } }
+			NOT = {
+				has_country_modifier = bur_ally_england_mod
+			}
 		}
 		on_completion = {
 			add_country_modifier = { modifier = bur_ally_france_mod years = -1 mode = add }
@@ -115,29 +236,10 @@
 
 	# ==================== ブランチB: 宮廷・文化 ====================
 
-	bur_join_hre = {
-		icon = lux_destined_rule
-		requires = { bur_duchy_of_burgundy }
-		enabled = {
-			OR = {
-				is_part_of_hre = yes
-				NOT = { international_organization_exists = international_organization:hre }
-				AND = {
-					international_organization_exists = international_organization:hre
-					international_organization:hre.leader_country = {
-						opinion = { target = root value >= 100 }
-					}
-				}
-			}
-		}
-		on_completion = {
-			trigger_event_non_silently = bur_events.4
-		}
-	}
 
 	bur_court_of_dijon = {
 		icon = bur_rich_soil_of_burgundy
-		requires = { bur_join_hre }
+		requires = { bujoin }
 		enabled = {
 			legitimacy >= 100
 			stability >= 30
@@ -198,6 +300,9 @@
 		icon = flemish_cloth_making
 		requires = { bur_duchy_of_burgundy }
 		enabled = {
+			c:FLA = {
+					is_ai = yes
+				}
 			OR = {
 				AND = {
 					country_exists = c:FLA

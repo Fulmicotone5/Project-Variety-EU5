@@ -1,9 +1,22 @@
 ﻿l_english:
  boh_crown_of_bohemia_mission_pack: "Glory of the Bohemian Crown"
- boh_crown_of_bohemia_mission_pack_DESCRIPTION:0 "In 1337, Bohemia is a powerful Central European kingdom ruled by Jan I (the Blind King) of the House of Luxembourg. Race through Bohemia's turbulent history — the Holy Roman Emperor Charles IV, the founding of Charles University, the Golden Bull — and from the execution of Jan Hus to the Wagenburg tactics of the Hussite Wars. Unite Moravia, Silesia, and Slovakia, challenge the Habsburgs for mastery of the Holy Roman Empire, and found the Bohemian Commonwealth."
- boh_crown_of_bohemia_mission_pack_CRITERIA_DESCRIPTION:0 "As Bohemia, achieve imperial dominance, cultural flourishing, and southern conquest to found the Bohemian Commonwealth."
- boh_crown_of_bohemia_mission_pack_BUTTON_TOOLTIP:0 "Complete missions to found the Bohemian Commonwealth."
- boh_crown_of_bohemia_mission_pack_BUTTON_DETAILS:0 "Carry the Blind King's will — from Golden Prague to a Central European Empire!"
+ boh_crown_of_bohemia_mission_pack_DESCRIPTION: "In 1337, Bohemia is a powerful Central European kingdom ruled by Jan I (the Blind King) of the House of Luxembourg. Race through Bohemia's turbulent history — the Holy Roman Emperor Charles IV, the founding of Charles University, the Golden Bull — and from the execution of Jan Hus to the Wagenburg tactics of the Hussite Wars. Unite Moravia, Silesia, and Slovakia, challenge the Habsburgs for mastery of the Holy Roman Empire, and found the Bohemian Commonwealth."
+ boh_crown_of_bohemia_mission_pack_CRITERIA_DESCRIPTION: "As Bohemia, achieve imperial dominance, cultural flourishing, and southern conquest to found the Bohemian Commonwealth."
+ boh_crown_of_bohemia_mission_pack_BUTTON_TOOLTIP: "Complete missions to found the Bohemian Commonwealth."
+ boh_crown_of_bohemia_mission_pack_BUTTON_DETAILS: "Carry the Blind King's will — from Golden Prague to a Central European Empire!"
+
+ PV_wrc_m: "Towards the Kingdom of the Western Slavs"
+ PV_wrc_m_DESCRIPTION: "The Duchy of Wroclaw has established itself as a dominant regional power in Silesia through strategic political marriages with the Piast dynasty and pragmatic political policies. These efforts have enabled the duchy to ultimately defeat [GetCountry('BOH').GetName], annex the provinces of [ShowProvinceDefinitionName('hradecko_province')] and [ShowProvinceDefinitionName('boleslavsko_province')], and emerge as a rising new power in the region."
+ PV_wrc_m_CRITERIA_DESCRIPTION: "As Wroclaw, achieve regional dominance, cultural flourishing, and northern conquest to found the Kingdom of the Western Slavs."
+ PV_wrc_m_BUTTON_TOOLTIP: "Complete missions to found Zapadoslavia"
+ PV_wrc_m_BUTTON_DETAILS: "Complete missions to found Zapadoslavia"
+ PV_mor_m: "A Glorious Past"
+ PV_mor_m_DESCRIPTION: "The Duchy of Moravia is the successor state to what was once the Kingdom of Great Moravia, the first successful endeavor to unify the majority of West Slavic people under one banner.\nUnfortunately, more than four centuries have passed since its fall, and significant changes have occurred over the intervening period"
+ PV_mor_m_CRITERIA_DESCRIPTION: "As Moravia, achieve regional dominance, cultural flourishing, and conquest to found a renewed Kingdom."
+ PV_mor_m_BUTTON_TOOLTIP: "Complete missions to redeem Moravia"
+ PV_mor_m_BUTTON_DETAILS: "Complete missions to redeem Moravia"
+ wro_final: "The Kingdom of the Western Slavs"
+ wro_final_desc: "The unification of the Polish, Czech, Moravian and Slovak peoples under the banner of Zapadoslavia marks a historic moment of solidarity and cultural kinship among the West Slavic People."
 
  boh_crown_of_jan: "Crown of the Blind King"
  boh_crown_of_jan_desc: "1337 — Jan I, the Blind King, reigns over Bohemia as one of Central Europe's most powerful rulers. 'I cannot see, but I can still fight' — the Blind King's spirit is Bohemia's pride. Before his heroic death at the Battle of Crécy in 1346, he elevated the House of Luxembourg to one of Europe's greatest dynasties. Establish Prague as the royal capital and consolidate the kingdom's foundations."
@@ -40,10 +53,12 @@
  boh_silver_mines_desc: "The silver mines of Kutná Hora were the most productive in 14th-century Europe. This silver, minted as Prague Groschen, circulated throughout Central Europe and sustained Bohemia's economic golden age."
 
  boh_develop_moravia: "Develop Moravia"
- boh_develop_moravia_desc: "Moravia, centered on Brno and Olomouc, is an important part of the Bohemian Crown Lands. Develop this fertile agricultural region as the second cultural and administrative center of the Bohemian Empire."
+ boh_develop_moravia_desc: "Develop this fertile agricultural region as the cultural and administrative center of Moravia."
+ morbasevent: "Glory of the Past"
+ morbasevent_desc: "The Duchy of Moravia is the successor state to what was once the Kingdom of Great Moravia, the first successful endeavor to unify the majority of West Slavic people under one banner."
 
  boh_internal_prosperity: "Internal Prosperity"
- boh_internal_prosperity_desc: "Bohemian glass, Kutná Hora silver, Prague's trade markets — combined, these make Bohemia Central Europe's greatest economic power."
+ boh_internal_prosperity_desc: "Gold, Silver, Iron — combined, these make Silesia's greatest economic power."
 
  boh_jan_hus_question: "The Question of Jan Hus"
  boh_jan_hus_question_desc: "News arrives in Prague that Jan Hus has been burned at the Council of Constance (1415). 'Truth prevails' — his last words spread across all of Bohemia and ignite the Hussite Wars. In the storm of the Reformation, which path will Bohemia choose?"
@@ -70,31 +85,33 @@
  boh_hungarian_succession_desc: "Bohemia and Hungary have formed personal unions multiple times through the Luxembourgs and Jagiellons. Place the wealthy Danubian kingdom centered on Buda under Bohemian suzerainty and solidify Central European dominance."
 
  boh_control_slovakia: "Control Slovakia"
- boh_control_slovakia_desc: "Slovakia is the ancestral home of the Great Moravian Empire, where Czech and Slovak brother peoples dwell. Securing this land strengthens Bohemia's Slavic foundations."
+ boh_control_slovakia_desc: "Slovakia is the ancestral home of the Great Moravian Empire, where Czech and Slovak brother peoples dwell. Securing this land strengthens Moravia's Slavic foundations."
 
  boh_conquer_transylvania: "Conquer Transylvania"
- boh_conquer_transylvania_desc: "Transylvania — 'the land beyond the forest' — where Romanians, Hungarians, and Germans intermingle, serves as Christendom's forward bastion against the Ottoman Empire. Controlling it opens the road to the Balkans."
+ boh_conquer_transylvania_desc: "Transylvania — 'the land beyond the forest' — where Romanians, Hungarians, and Germans intermingle, serves as Christendom's forward bastion against the Ottoman Empire."
+ intowala: "To the Black Sea"
+ intowala_desc: "The rich lands of Wallachia will open our way to the black sea."
 
  boh_nicopolis_revenge: "Revenge for Nicopolis"
  boh_nicopolis_revenge_desc: "At the Battle of Nicopolis in 1396, the crusading army led by Sigismund of Bohemia suffered a catastrophic defeat against the Ottoman Empire. The time has come to avenge that humiliation — retake Nicopolis and drive the Ottomans from the Balkans."
 
  boh_defend_against_turks: "Bulwark Against the Turks"
- boh_defend_against_turks_desc: "The Ottoman Empire sweeps the Balkans and approaches the gates of Central Europe. Strengthen Transylvania's fortifications and become Christendom's shield with a powerful army. Bohemia is the 'Antemurale Christianitatis' — the bulwark of Christian civilization."
+ boh_defend_against_turks_desc: "The Ottoman Empire sweeps the Balkans and approaches the gates of Central Europe. Strengthen Transylvania's fortifications and become Christendom's shield with a powerful army. Moravia is the 'Antemurale Christianitatis' — the bulwark of Christian civilization."
 
  boh_push_into_balkans: "Push Into the Balkans"
- boh_push_into_balkans_desc: "Avenge Nicopolis and advance southward as liberator of Christendom. Slavs, Greeks, and Bulgarians of the Balkans are freed under the Bohemian banner."
+ boh_push_into_balkans_desc: "Slavs, Greeks, and Bulgarians of the Balkans will be freed under the Moravian banner."
 
  boh_secure_silesia: "Secure Silesia"
- boh_secure_silesia_desc: "All of Silesia falls under Bohemian direct rule. Rich in iron and coal, this land becomes the core of the Bohemian industrial empire."
+ boh_secure_silesia_desc: "All of Silesia falls under Wroclaw direct rule. Rich in iron and coal, this land becomes the core of the Wroclaw industrial empire."
 
  boh_polish_ambitions: "Polish Ambitions"
- boh_polish_ambitions_desc: "Seize Kraków and establish Bohemia's relationship with the Polish kingdom. The heritage of the Přemyslid dynasty belongs to Bohemia — Poland should become a neighbor under Bohemian suzerainty."
+ boh_polish_ambitions_desc: "Seize Kraków and establish Silesian's relationship with the Polish kingdom. The heritage of the Přemyslid dynasty belongs to Silesia — Poland should become a neighbor under Silesian suzerainty."
 
  boh_conquer_poland: "Conquer Poland"
- boh_conquer_poland_desc: "The vast plains of Polish territory fall under Bohemian control. From the Vistula to the Oder, the Slavic lands are united under the Bohemian king's banner."
+ boh_conquer_poland_desc: "The vast plains of Polish territory fall under Silesian control. From the Vistula to the Oder, the Slavic lands are united under the Silesian banner."
 
  boh_baltic_access: "Baltic Access"
- boh_baltic_access_desc: "With Gdańsk seized, Bohemia gains direct access to the Baltic Sea. Transformed from a landlocked nation, Bohemia now participates in northern trade as well."
+ boh_baltic_access_desc: "With Gdańsk seized, Silesia gains direct access to the Baltic Sea. Transformed from a landlocked nation, Silesia now participates in northern trade as well."
 
  boh_bohemian_diet: "Bohemian Diet"
  boh_bohemian_diet_desc: "The Bohemian estates assembly (Zemský Sněm) — where nobles, clergy, and burghers participate — is a political institution. Strengthening it lays the groundwork for centralized imperial governance."
@@ -103,19 +120,19 @@
  boh_absolute_monarchy_desc: "Absolute monarchy is established in Bohemia. By limiting noble privileges and fully consolidating royal power, Bohemia transforms into a modern centralized state."
 
  boh_great_power_army: "Army of a Great Power"
- boh_great_power_army_desc: "Wagenburg tactics, the Black Army, elite infantry — Bohemia's military innovations produce Central Europe's strongest army. Establish Bohemia's military supremacy with high army tradition and a large standing force."
+ boh_great_power_army_desc: "Establish Moravia's military supremacy with high army tradition and a large standing force."
 
  boh_dev_brno: "Develop Brno"
  boh_dev_brno_desc: "Brno, Moravia's capital, flourishes as an industrial and commercial city at the crossroads of trade routes."
 
  boh_dev_wroclaw: "Develop Wrocław"
- boh_dev_wroclaw_desc: "Wrocław on the Oder is the heart of Silesia. Its multicultural commercial tradition expands the wealth of the Bohemian Empire."
+ boh_dev_wroclaw_desc: "Wrocław on the Oder is the heart of Silesia. Its multicultural commercial tradition expands the wealth of Silesia."
 
  boh_amber_road: "The Amber Road"
- boh_amber_road_desc: "The ancient Amber Road stretching from the Baltic to the Mediterranean crosses Bohemia. By controlling this trade route, Bohemia becomes the hub of north-south commerce."
+ boh_amber_road_desc: "The ancient Amber Road stretching from the Baltic to the Mediterranean crosses Silesia. By controlling this trade route, Silesia becomes the hub of north-south commerce."
 
  boh_dev_pest: "Develop Pest"
- boh_dev_pest_desc: "Pest, facing Buda across the Danube, is Hungary's greatest commercial city. Develop it as the economic center of the southern Bohemian Empire."
+ boh_dev_pest_desc: "Pest, facing Buda across the Danube, is Hungary's greatest commercial city. Develop it as the economic center of Great Moravia."
 
  boh_renaissance_court: "Renaissance Court"
  boh_renaissance_court_desc: "Charles IV's Prague was the center of Central European Renaissance where Italian, French, and Holy Roman cultures converged. Artists, scholars, and architects gather at Prague's court as a golden age of culture blossoms."
@@ -144,8 +161,8 @@
  boh_gothic_architecture: "City of Gothic Architecture"
  boh_gothic_architecture_desc: "St. Vitus Cathedral, Charles Bridge, Old Town Square — the magnificent Gothic architecture built by Charles IV transformed Prague into the 'Golden City.' Raise Prague's development and anticipate this architectural glory."
 
- boh_bohemian_trade_network: "Bohemian Trade Network"
- boh_bohemian_trade_network_desc: "A trade network centered on Prague, connecting Vienna, Wrocław, Kraków, and Nuremberg, sustains Bohemia's commercial supremacy."
+ boh_bohemian_trade_network: "Silesian Trade Network"
+ boh_bohemian_trade_network_desc: "A trade network centered on Silesia, connecting Vienna, Prague, Kraków, and Nuremberg, sustains Silesian commercial supremacy."
 
  boh_compactata: "Compactata of Prague"
  boh_compactata_desc: "The Compactata of 1436 had the Catholic Church recognize Utraquist communion from the chalice as a concession. The moderate Utraquist path brings religious stability to Bohemia."
@@ -157,7 +174,7 @@
  boh_protestant_alliance_desc: "Bohemia's Hussite tradition becomes the forerunner of Protestant reform. Through alliance with Lutherans and Calvinists, Bohemia is recognized as a pillar of the Protestant world."
 
  boh_black_army: "The Black Army"
- boh_black_army_desc: "The Black Army organized by King Matthias Corvinus — one of the first standing professional armies of medieval Europe. When this elite force fights under the Bohemian banner, nothing in Central Europe can stand against it."
+ boh_black_army_desc: "The Black Army organized by King Matthias Corvinus — one of the first standing professional armies of medieval Europe. When this elite force fights under the Moravian banner, nothing in Central Europe can stand against it."
 
  boh_danube_control: "Control the Danube"
  boh_danube_control_desc: "With Buda and Pest secured, the entire Danube basin falls under Bohemian control. As 'Mistress of the Danube,' Bohemia dominates southern trade and military affairs."
@@ -166,13 +183,13 @@
  boh_dev_berlin_desc: "The small Brandenburg town of Berlin grows as the northern administrative hub of the Bohemian Empire."
 
  boh_dev_konigsberg: "Develop Königsberg"
- boh_dev_konigsberg_desc: "Königsberg (the King's Castle), built by Otakar II, returns to Bohemia and becomes a hub of Baltic trade."
+ boh_dev_konigsberg_desc: "Königsberg (the King's Castle), built by Otakar II, is now Silesian and becomes a hub of Baltic trade."
 
  boh_great_king: "The Great King"
  boh_great_king_desc: "High prestige, great legitimacy, rich income — the King of Bohemia's name as one of Central European history's greatest rulers echoes across all of Europe, surpassing even the glory of Charles IV."
 
  boh_fortress_europe: "Fortress of Europe"
- boh_fortress_europe_desc: "A fortress network stretching from the Alps to the Carpathians holds back the Ottoman advance. Bohemia functions as the 'Shield of Europe.'"
+ boh_fortress_europe_desc: "A fortress network stretching from the Alps to the Carpathians holds back the advance of Islam. Moravia functions as the 'Shield of Europe.'"
 
  boh_dev_olomouc: "Olomouc Flourishes"
  boh_dev_olomouc_desc: "Olomouc, Moravia's ancient city of learning and episcopal seat, shines as a center of northern Renaissance culture."
@@ -181,7 +198,7 @@
  boh_upper_austria_desc: "Upper Austria along the upper Danube is incorporated into the Bohemian Empire, establishing a foundation for further southern advance."
 
  boh_carpathian_defense: "Carpathian Defense"
- boh_carpathian_defense_desc: "A fortress network along the Carpathian Mountains establishes a solid eastern defensive line for the Bohemian Empire — a shield against the Ottoman Empire, Tatars, and other eastern threats."
+ boh_carpathian_defense_desc: "A fortress network along the Carpathian Mountains establishes a solid eastern defensive line for Moravia — a shield against the Ottoman Empire, Tatars, and other eastern threats."
 
  boh_events.20.t: "Habsburg Crushed — Bohemian Supremacy"
  boh_events.20.d: "Vienna falls and Habsburg pride is shattered. 'The Habsburg dominance of Central Europe, continuing since Rudolf, has ended' — these words ring through Prague's court. The King of Bohemia is now the true master of Central Europe. Historians will later write: 'The House of Luxembourg was the true heir of the Empire.'"
@@ -222,8 +239,7 @@
  STATIC_MODIFIER_DESC_boh_glass_industry_mod: "Bohemian crystal establishes its reputation as Europe's finest craftsmanship."
  STATIC_MODIFIER_NAME_boh_kutna_hora_mod: "Silver of Kutná Hora"
  STATIC_MODIFIER_DESC_boh_kutna_hora_mod: "Central Europe's greatest silver mine sustains Bohemia's economic golden age. Prague Groschen circulates widely."
- STATIC_MODIFIER_NAME_boh_moravia_mod: "Moravian Integration"
- STATIC_MODIFIER_DESC_boh_moravia_mod: "Moravia centered on Brno and Olomouc is integrated into the Bohemian Empire."
+ STATIC_MODIFIER_NAME_boh_moravia_mod: "Moravian Development"
  STATIC_MODIFIER_NAME_boh_prosperity_mod: "Internal Prosperity"
  STATIC_MODIFIER_DESC_boh_prosperity_mod: "Bohemian glass, silver, and trade markets combine to create Central Europe's greatest economic power."
  STATIC_MODIFIER_NAME_boh_catholic_reform_mod: "Steadfast Catholic Faith"
@@ -244,11 +260,12 @@
  STATIC_MODIFIER_DESC_boh_slovakia_mod: "Slovakia, ancestral home of the Great Moravian Empire, is integrated into Bohemia — Slavic foundations strengthened."
  STATIC_MODIFIER_NAME_boh_transylvania_mod: "Transylvania"
  STATIC_MODIFIER_DESC_boh_transylvania_mod: "The land beyond the forest falls under Bohemian rule — a foothold for Balkan expansion established."
+ STATIC_MODIFIER_NAME_boh_transylvania_mod2: "Conquest of Bohemia"
  STATIC_MODIFIER_NAME_boh_nicopolis_glory_mod: "Revenge for Nicopolis"
  STATIC_MODIFIER_DESC_boh_nicopolis_glory_mod: "The humiliation of 1396 is avenged. Bohemia becomes the vanguard of the counteroffensive against the Ottoman Empire."
  STATIC_MODIFIER_NAME_boh_antemurale_mod: "Shield of Christendom"
  STATIC_MODIFIER_DESC_boh_antemurale_mod: "Transylvania's fortresses become the shield that halts the Ottoman advance."
- STATIC_MODIFIER_NAME_boh_balkan_conqueror_mod: "Liberator of the Balkans"
+ STATIC_MODIFIER_NAME_boh_balkan_conqueror_mod: "Conqueror of the Balkans"
  STATIC_MODIFIER_DESC_boh_balkan_conqueror_mod: "Bohemia advances southward as liberator of Slavs and Christians of the Balkans."
  STATIC_MODIFIER_NAME_boh_silesia_secured_mod: "Silesia Fully Integrated"
  STATIC_MODIFIER_DESC_boh_silesia_secured_mod: "All of Silesia under direct Bohemian rule — iron and coal industrial foundations established."
@@ -265,7 +282,7 @@
  STATIC_MODIFIER_NAME_boh_military_power_mod: "Army of a Great Power"
  STATIC_MODIFIER_DESC_boh_military_power_mod: "Bohemia's elite army, heir to Wagenburg and Black Army traditions, boasts Central Europe's greatest military power."
  STATIC_MODIFIER_NAME_boh_brno_mod: "Brno Flourishes"
- STATIC_MODIFIER_DESC_boh_brno_mod: "Moravia's capital Brno develops as a center of trade and industry."
+ STATIC_MODIFIER_DESC_boh_brno_mod: "Brno develops as a center of trade and industry."
  STATIC_MODIFIER_NAME_boh_wroclaw_mod: "Wrocław Flourishes"
  STATIC_MODIFIER_DESC_boh_wroclaw_mod: "Wrocław on the Oder functions as the heart of Silesian economy."
  STATIC_MODIFIER_NAME_boh_amber_road_mod: "The Amber Road"
@@ -288,8 +305,8 @@
  STATIC_MODIFIER_DESC_boh_silver_currency_mod: "Prague Groschen minted from Kutná Hora's silver becomes Central Europe's greatest international currency."
  STATIC_MODIFIER_NAME_boh_golden_prague_mod: "Golden Prague"
  STATIC_MODIFIER_DESC_boh_golden_prague_mod: "St. Vitus, Charles Bridge, the Hundred Spires — Prague becomes Central Europe's greatest cultural center as the 'Golden City.'"
- STATIC_MODIFIER_NAME_boh_trade_network_mod: "Bohemian Trade Network"
- STATIC_MODIFIER_DESC_boh_trade_network_mod: "A Central European trade network centered on Prague sustains Bohemia's commercial supremacy."
+ STATIC_MODIFIER_NAME_boh_trade_network_mod: "Silesian Trade Network"
+ STATIC_MODIFIER_DESC_boh_trade_network_mod: "A Central European trade network centered on Silesi sustains Silesian commercial supremacy."
  STATIC_MODIFIER_NAME_boh_compactata_mod: "Compactata of Prague"
  STATIC_MODIFIER_DESC_boh_compactata_mod: "Catholic-Utraquist reconciliation achieved — religious stability restored to Bohemia."
  STATIC_MODIFIER_NAME_boh_utraquist_mod: "Utraquist Church"
@@ -335,15 +352,17 @@
  boh_bohemian_agriculture: "Bohemian Agriculture"
  boh_bohemian_agriculture_desc: "The Bohemian lowlands along the Elbe are a rich agricultural zone. Wheat, barley, and rye ripen in abundance, and farm development greatly increases productivity. A stable food supply supports population growth across the Bohemian Empire."
  boh_moravian_wine: "Moravian Wine"
- boh_moravian_wine_desc: "Southern Moravia around Znojmo is Bohemia's greatest grape-growing region. The warm climate and limestone soil nurture Moravian wines prized even in the courts of Austria and Vienna. Their rich flavor symbolizes the cultural refinement of the Bohemian Empire."
+ boh_moravian_wine_desc: "Southern Moravia around Znojmo is Moravia's greatest grape-growing region. The warm climate and limestone soil nurture Moravian wines prized even in the courts of Austria and Vienna."
  boh_jihlava_silver: "Jihlava Silver Mines"
- boh_jihlava_silver_desc: "Jihlava, in the Bohemian-Moravian Highlands, is a silver mining city rivaling Kutná Hora. Bringing these silver mines to full operation further expands Bohemia's silver production and increases the minting of Prague Groschen."
+ boh_jihlava_silver_desc: "Jihlava, in the Bohemian-Moravian Highlands, is a silver mining city rivaling Kutná Hora. Bringing these silver mines to full operation further expands Moravian's silver production."
  boh_opava_iron: "Opava Iron Industry"
- boh_opava_iron_desc: "Opava, capital of the Duchy of Silesia, is known for its iron ore deposits. Developing this city's steel industry further strengthens Silesia's industrial foundation and dramatically improves Bohemian military equipment."
+ boh_opava_iron_desc: "Opava is known for its iron ore deposits. Developing this city's steel industry further strengthens Silesia's industrial foundation and dramatically improves Silesian military equipment."
  boh_dev_litomerice: "Develop Litoměřice"
- boh_dev_litomerice_desc: "Litoměřice on the Elbe is an important trading city in northern Bohemia. Developing it as the hub of the trade route extending to Hamburg through the Elbe activates commerce with northern Germany."
+ boh_dev_litomerice_desc: "Litoměřice on the Elbe is an important trading city in Silesia. Developing it as the hub of the trade route extending to Hamburg through the Elbe activates commerce with northern Germany."
  boh_silesian_mines: "Silesian Mines"
- boh_silesian_mines_desc: "Beneath Silesia's soil lie the iron and coke coal that will support future industrial revolutions. Establish a full-scale mining system and dramatically raise the Bohemian Empire's industrial production capacity."
+ boh_silesian_mines_desc: "Beneath Silesia's soil lie the iron and coke coal that will support future industrial efforts. Establish a full-scale mining system and dramatically raise Silesia's industrial production capacity."
+ pv_lostlands: "Lost Lands"
+ pv_lostlands_desc:  "[ShowLocationName('krnov')], [ShowLocationName('fryvaldov')] and [ShowLocationName('ziebice')] historically served as the economic core of Great Moravia, providing the kingdom with a consistent supply of [ShowGoodsName('silver')] and [ShowGoodsName('goods_gold')]. However, these territories have long been incorporated into [GetCountry('WRC').GetName]."
  boh_bohemian_cloth: "Bohemian Cloth Industry"
  boh_bohemian_cloth_desc: "Alongside Bohemian glass, Bohemia's textile and cloth industry is establishing its European reputation. Northern Bohemian cloth combined with Litoměřice's trade routes makes Bohemia a center of the textile industry."
  STATIC_MODIFIER_NAME_boh_plzen_mod: "Plzeň Developed"
@@ -388,10 +407,10 @@
  STATIC_MODIFIER_NAME_boh_sugar_beet_choice_mod: "Sugar Beet Farm"
  STATIC_MODIFIER_DESC_boh_sugar_beet_choice_mod: "Sugar beet cultivation matures — Bohemian-made sugar exported to European markets."
 
- boh_conquer_silesia: "Integrate Silesia"
- boh_conquer_silesia_desc: "Silesia is part of the Bohemian Crown Lands. Integrating this region, rich in iron ore and silver, dramatically strengthens Bohemia's industrial and military foundation."
+ boh_conquer_silesia: "The Duchy of [ROOT.GetCountry.GetName]"
+ boh_conquer_silesia_desc: "The Duchy of Silesia has established itself as a dominant regional power in Silesia through strategic political marriages with the Piast dynasty and pragmatic political policies."
 
- boh_events.50.b: "No, preserve Bohemia's traditional colors — there is no need to change"
+ boh_events.50.b: "Long live Great Moravia! Glory to Slavic unity!"
 
  boh_urban_privileges: "Bohemian Urban Privileges"
  boh_urban_privileges_desc: "With Brno and Olomouc developed, Bohemia has established a system for granting unique privileges to its cities. In feudal cities dominated by nobles, peasant bonds are strengthened; in ecclesiastical cities under clergy control, religious conversion is promoted. These privileges define each city's character and enrich Bohemia's diverse urban culture."

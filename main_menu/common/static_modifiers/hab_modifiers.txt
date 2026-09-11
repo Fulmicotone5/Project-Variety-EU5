@@ -24,7 +24,7 @@ hab_charlemagne_mod = {
 }
 
 hab_reform_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_integration_speed_modifier = 0.20
 	annexation_speed_modifier = 0.20
 	government_size = 1
@@ -110,14 +110,13 @@ hab_milan_mod = {
 
 hab_papal_mod = {
 	icon = ties_with_the_holy_see
-	tolerance_own = 0.5
-	diplomatic_reputation = 2
+	tolerance_own = 0.25
+	diplomatic_reputation = 1
 }
 
 hab_venetia_mod = {
 	icon = hsa_mastery_of_the_sea
 	trade_sea_efficiency = 0.15
-	harbor_suitability = 0.10
 }
 
 hab_naples_mod = {
@@ -288,8 +287,8 @@ hab_innsbruck_mod = {
 
 hab_graz_mod = {
 	icon = crusader_tradition
-	local_defensive = 0.50
-	local_unrest = -10
+	local_defensive = 0.25
+	local_unrest = -0.1
 }
 
 hab_renaissance_mod = {
@@ -311,7 +310,7 @@ hab_universal_empire_mod = {
 	cultures_capacity = 5
 	global_trade_income_modifier = 0.20
 	power_projection = 15
-	government_size = 2
+	government_reform_slots = 2
 }
 
 hab_hun_loyalty_mod = {
@@ -364,8 +363,3 @@ hab_swarovski_mod = {
 	local_production_efficiency = 0.05
 }
 
-hab_stadtrecht_mod = {
-	icon = city_building_advance
-	allow_wiener_stadtrecht_town_rights = yes
-	allow_landstadt_town_rights = yes
-}

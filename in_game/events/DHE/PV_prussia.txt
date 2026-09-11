@@ -11,7 +11,7 @@ pruflavor.1 = {
 		tag = ANS
 		tag = PRU
 		tag = F05
-		from = 1400.1.1
+		from = 1450.1.1
 		to = 1835.1.1
 		monthly_chance = 100
 	}
@@ -87,7 +87,6 @@ pruflavor.2 = {
 	title = pruflavor.2.title
 	desc = pruflavor.2.desc
 
-	fire_only_once = yes
 
 	image = "gfx/interface/illustrations/pv_events/empire_test.dds"
 
@@ -99,16 +98,9 @@ pruflavor.2 = {
 		}			
 	}
 
-	dynamic_historical_event = {
-		tag = ANS
-		from = 1300.1.1
-		to = 1500.1.1
-		monthly_chance = 100
-	}
-
 
 	trigger = {
-		has_or_had_tag = ANS
+	
 	}
 
 
@@ -124,7 +116,7 @@ pruflavor.3 = {
 	title = pruflavor.3.title
 	desc = pruflavor.3.desc
 
-	fire_only_once = yes
+
 	illustration_tags = {
 		10 = interior
 		10 = angry
@@ -146,29 +138,8 @@ pruflavor.3 = {
 		}
 	}
 
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1300.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
 	trigger = {
-		NOT = {
-			country_exists = c:LDB
-		}
-		NOT = {
-			owns = location:zwickau
-		}
-		NOT = {
-			owns = location:freiberg
-		}
-		NOT = {
-			owns = location:sayda
-		}
-		NOT = {
-			owns = location:chemnitz
-		}
+		
 	}
 	
 
@@ -200,26 +171,14 @@ pruflavor.3001 = {
 	title = pruflavor.3001.title
 	desc = pruflavor.3001.desc
 
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1300.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
+
 		
 	illustration_tags = {
 		10 = exterior
 		10 = happy
 	}
 
-	trigger = {
-		owns = location:zwickau
-		owns = location:sayda
-		owns = location:freiberg
-		owns = location:chemnitz
-	}
+
 
 	immediate = {
 		event_illustration_estate_effect = { foreground = estate_type:peasants_estate background = estate_type:peasants_estate }
@@ -299,15 +258,6 @@ pruflavor.4 = {
 	title = pruflavor.4.title
 	desc = pruflavor.4.desc
 
-	fire_only_once = yes
-
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1344.1.1
-		to = 1800.1.1
-		monthly_chance = 1
-	}
 
 	illustration_tags = {
 		10 = interior
@@ -317,23 +267,6 @@ pruflavor.4 = {
 		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:nobles_estate }
 	}
 
-	trigger = {
-		location:hof = {
-			is_capital = yes
-		}
-		owns = location:bayreuth
-		owns = location:wunsiedel
-		location:bayreuth = {
-			NOT = {
-				location_rank = location_rank:town
-			}
-		}
-		location:wunsiedel = {
-			NOT = {
-				location_rank = location_rank:town
-			}
-		}
-	}
 
 	option = {
 		name = pruflavor.4.a
@@ -442,41 +375,6 @@ pruflavor.5 = {
 		}
 	}
 
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1337.1.1
-		to = 1500.1.1
-		monthly_chance = 100
-	}
-
-
-	trigger = {
-		owns = location:zwickau
-		location:zwickau = {
-			NOT = {
-				integration_level = conquered
-			}
-		}
-		owns = location:sayda
-		location:sayda = {
-			NOT = {
-				integration_level = conquered
-			}
-		}
-		owns = location:freiberg
-		location:freiberg = {
-			NOT = {
-				integration_level = conquered
-			}
-		}
-		owns = location:chemnitz
-		location:chemnitz = {
-			NOT = {
-				integration_level = conquered
-			}
-		}
-	}
 
 
 	option = {
@@ -504,7 +402,6 @@ pruflavor.6 = {
 	title = pruflavor.6.title
 	desc = pruflavor.6.desc
 
-	fire_only_once = yes
 
 	illustration_tags = {
 		10 = interior
@@ -521,18 +418,7 @@ pruflavor.6 = {
 		}	
 	}
 
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1348.1.1
-		to = 1500.1.1
-		monthly_chance = 1
-	}
 
-
-	trigger = {
-		has_variable = pvnorthp
-	}
 
 	option = {
 		name = pruflavor.6.a
@@ -573,7 +459,6 @@ pruflavor.7 = {
 	title = pruflavor.7.title
 	desc = pruflavor.7.desc
 
-	fire_only_once = yes
 
 	illustration_tags = {
 		10 = exterior
@@ -588,23 +473,6 @@ pruflavor.7 = {
 			limit = { owns = location:gdansk }
 			save_scope_as = target_country
 		}	
-	}
-
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1350.1.1
-		to = 1500.1.1
-		monthly_chance = 5
-	}
-
-
-	trigger = {
-		has_variable = pvnorthp
-		OR ={
-			owns = location:berlin
-			own_entire_province = province_definition:neumark_province
-		}
 	}
 
 	option = {
@@ -631,15 +499,6 @@ pruflavor.8 = {
 	title = pruflavor.8.title
 	desc = pruflavor.8.desc
 
-	fire_only_once = yes
-
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1340.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
 
 	illustration_tags = {
 		10 = exterior
@@ -649,13 +508,6 @@ pruflavor.8 = {
 		event_illustration_estate_effect = { foreground = estate_type:nobles_estate background = estate_type:nobles_estate }
 	}
 
-	trigger = {
-		has_variable = pvnorthp
-		owns = location:hof
-		location:hof = {
-			is_capital = no
-		}
-	}
 
 	option = {
 		name = pruflavor.8.a
@@ -702,15 +554,6 @@ pruflavor.81 = {
 	title = pruflavor.81.title
 	desc = pruflavor.81.desc
 
-	fire_only_once = yes
-
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1340.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
 
 	illustration_tags = {
 		10 = exterior
@@ -720,15 +563,6 @@ pruflavor.81 = {
 		event_illustration_estate_effect = { foreground = estate_type:burghers_estate background = estate_type:burghers_estate }
 	}
 
-	trigger = {
-		has_variable = pvsouthp
-		owns = location:hof
-		location:hof = {
-			NOT = {
-						location_rank = location_rank:city
-					}
-		}
-	}
 
 	option = {
 		name = pruflavor.81.a
@@ -778,7 +612,6 @@ pruflavor.9 = {
 	title = pruflavor.9.title
 	desc = pruflavor.9.desc
 
-	fire_only_once = yes
 
 	illustration_tags = {
 		10 = interior
@@ -793,13 +626,6 @@ pruflavor.9 = {
 			limit = { owns = location:crailsheim }
 			save_scope_as = target_country
 		}	
-	}
-
-	dynamic_historical_event = {
-		tag = ANS
-		from = 1342.1.1
-		to = 1400.1.1
-		monthly_chance = 100
 	}
 
 
@@ -844,7 +670,7 @@ pruflavor.10 = {
 	title = pruflavor.10.title
 	desc = pruflavor.10.desc
 
-	fire_only_once = yes
+
 
 	illustration_tags = {
 		10 = exterior
@@ -855,18 +681,7 @@ pruflavor.10 = {
 	}
 
 
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1337.1.1
-		to = 1836.1.1
-		monthly_chance = 100
-	}
 
-
-	trigger = {
-		has_or_had_tag = FKN
-	}
 	option = {
 		name = pruflavor.10.a
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
@@ -883,7 +698,7 @@ pruflavor.101 = {
 	title = pruflavor.101.title
 	desc = pruflavor.101.desc
 
-	fire_only_once = yes
+
 
 	illustration_tags = {
 		10 = exterior
@@ -894,27 +709,6 @@ pruflavor.101 = {
 	}
 
 
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		tag = HAB
-		tag = LBV
-		tag = UBV
-		tag = BAV
-		tag = SLZ
-		tag = TIR
-		tag = WUR
-		tag = SWA
-		tag = PAL
-		from = 1336.1.1
-		to = 1836.1.1
-		monthly_chance = 100
-	}
-
-
-	trigger = {
-		has_or_had_tag = F06
-	}
 	option = {
 		name = pruflavor.101.a
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = estate_satisfaction_severe_bonus }
@@ -932,7 +726,6 @@ pruflavor.11 = {
 	title = pruflavor.11.title
 	desc = pruflavor.11.desc
 
-	fire_only_once = yes
 
 	illustration_tags = {
 		10 = exterior
@@ -959,18 +752,9 @@ pruflavor.11 = {
 				birth_location = location:klatovy
 			}
 	}
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1350.1.1
-		to = 1500.1.1
-		monthly_chance = 5
-	}
+	
 
 
-	trigger = {
-		has_variable = pvsouthp
-	}
 
 	option = {
 		name = pruflavor.11.a
@@ -996,14 +780,7 @@ pruflavor.12 = {
 	type = country_event
 	title = pruflavor.12.title
 	desc = pruflavor.12.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = ANS
-		tag = FKN
-		from = 1342.1.1
-		to = 1800.1.1
-		monthly_chance = 1
-	}
+
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -1020,13 +797,7 @@ pruflavor.12 = {
 			save_scope_as = target_location3
 		}
 	}
-	trigger = {
-		owns = location:cheb
-		owns = location:tachov
-		owns = location:wunsiedel
-		owns = location:plzen
-		has_variable = pvsouthp
-	}
+
 	option = {
 		name = pruflavor.12.a
 		historical_option = yes

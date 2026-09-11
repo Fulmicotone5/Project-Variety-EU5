@@ -14,7 +14,7 @@ bur_golden_fleece_mod = {
 	icon = golden_fleece
 	monthly_legitimacy = 0.10
 	diplomatic_reputation = 1
-	cultural_influence = 0.10
+	cultural_influence_modifier = 0.10
 }
 
 bur_estates_general_mod = {

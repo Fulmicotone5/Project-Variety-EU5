@@ -49,7 +49,7 @@
  pol_eastern_empire_desc: "The Polish-Lithuanian Commonwealth became the largest state in Europe at its peak (c. 1618). From the Baltic to the Pontic Steppe (Black Sea), the entire eastern Slavic world united under the Polish flag. Build the great eastern empire that Russia, the Ottomans, and the Habsburgs equally fear."
  pol_eastern_empire_tooltip: "Own 500 or more locations, own 150 or more locations in Eastern Europe region"
 
- pol_prussian_confederation: "The Prussian Confederation and the Teutonic Knights"
+ pol_prussian_confederation: "The Teutonic Knights"
  pol_prussian_confederation_desc: "The Teutonic Order, which conquered the Baltic pagans in the 13th century, has become Poland's hereditary enemy. At Grunwald in 1410, the Polish-Lithuanian army crushed them utterly. With the support of the Prussian Confederation — Prussian townspeople who sought Polish protection — defeat the Teutonic Order and secure Poland's outlet to the Baltic Sea."
  pol_prussian_confederation_tooltip: "Toruń owned by us or a subject, at war with Teutonic Order (c:TUE) or they don't exist or are our subject"
 
@@ -112,6 +112,7 @@
  pol_republic_of_nobles: "The Republic of Nobles"
  pol_republic_of_nobles_desc: "The small Kingdom of Poland that Casimir the Great ruled in 1337 has become the Rzeczpospolita — the Republic of Many Nations — the largest and most uniquely constituted state in European history. From the Baltic to the Black Sea, from the Ukrainian steppes to the forests of Bohemia — all united under the Polish banner. This great empire, proud of noble freedom, religious tolerance, and cultural diversity, inscribes Poland's name in the eternal record of history."
  pol_republic_of_nobles_tooltip: "Own 1,200 or more locations, prestige 80 or more, monthly income 1,000 or more"
+ deffffddd: "More than 60% of the population is Catholic"
 
  pol_events.10.t: "The Marriage of Jadwiga and Jagiello"
  pol_events.10.d: "The Union of Krewo has borne fruit: Polish Queen Jadwiga and Lithuanian Grand Duke Jagiello have wed. Jagiello received Christian baptism and took the name 'Władysław II' as King of Poland. Lithuania enters personal union with Poland, and the greatest political integration in Eastern Europe has begun. This marriage is more than political calculation — it is the historic moment when two peoples, two cultures, two languages unite under one dynasty. 'Poland and Lithuania are one forever,' the Union of Krewo declared."

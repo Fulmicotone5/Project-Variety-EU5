@@ -8,6 +8,9 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = NAV
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = nav_crown_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = nav_crown_started
+		set_global_variable = nav_crown_started
 	}
 
-	on_completion = {
-		remove_variable = nav_crown_started
-	}
-
-	on_abort = {
-		remove_variable = nav_crown_started
-	}
 
 	# ==================== ROOT: バスクの王国 ====================
 
@@ -33,7 +29,7 @@
 		requires = { }
 
 		enabled = {
-			always = yes
+			owns = location:pamplona
 		}
 		duration = 0
 		on_completion = {
@@ -244,7 +240,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:iberia_region
-				count >= 10
+				count >= 25
 			}
 		}
 		duration = 150
@@ -260,7 +256,7 @@
 		enabled = {
 			any_owned_location = {
 				region = region:iberia_region
-				count >= 40
+				count >= 80
 			}
 		}
 		duration = 180

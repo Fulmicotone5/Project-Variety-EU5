@@ -1,5 +1,5 @@
 ﻿den_valdemar_legacy_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.05
 }
@@ -8,7 +8,7 @@ den_danish_heartland_mod = {
 	icon = consolidate_the_royal_domain
 	peasants_estate_max_tax = 0.10
 	monthly_legitimacy = 0.05
-	smooth_administration = 0.10
+	
 }
 
 den_holstein_integration_mod = {
@@ -76,7 +76,7 @@ den_estonia_mod = {
 
 den_livonia_mod = {
 	icon = arduous_terrain
-	tax_income_efficiency = 0.05
+	tax_income_efficiency = 0.01
 	cultures_capacity = 1
 }
 
@@ -228,8 +228,9 @@ den_copenhagen_capital_mod = {
 den_absolutism_mod = {
 	icon = legalism_advance
 	legislative_efficiency = 0.15
-	global_crown_estate_power = 0.20
-	smooth_administration = 0.15
+	global_crown_estate_power = 1
+	court_spending_efficiency = -0.05
+	monthly_towards_absolutism = societal_value_huge_monthly_move
 }
 
 den_danish_economy_mod = {
@@ -277,7 +278,7 @@ den_norway_north_mod = {
 
 den_golden_age_mod = {
 	icon = legacy_of_great_empires
-	peasants_estate_max_tax = 0.10
+	government_reform_slots = 1
 	monthly_prestige = 0.20
 	diplomatic_reputation = 2
 	global_manpower_modifier = 0.10
@@ -294,7 +295,7 @@ den_north_sea_dominion_mod = {
 den_scandinavian_empire_final_mod = {
 	icon = legacy_of_great_empires
 	diplomatic_reputation = 4
-	peasants_estate_max_tax = 0.20
+	num_local_governors = 1
 	global_manpower_modifier = 0.20
 	monthly_prestige = 0.30
 	ship_build_speed = 0.20

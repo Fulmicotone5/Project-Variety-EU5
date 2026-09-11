@@ -25,7 +25,7 @@ cas_santa_hermandad = {
 }
 
 cas_elaborate_court = {
-    cultural_influence = 0.01
+    cultural_influence_modifier = 0.01
 }
 
 cas_spanish_culture = {

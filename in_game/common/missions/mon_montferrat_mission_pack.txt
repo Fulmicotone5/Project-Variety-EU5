@@ -6,6 +6,8 @@
 
 	visible = {
 		game_has_missions_enabled = yes
+		always = no
+		# TODO
 		has_or_had_tag = MFA
 		NOR = { country_type = pop country_type = building }
 	}

@@ -225,6 +225,7 @@ STATIC_MODIFIER_DESC_tur_imperial_capital:0 "Constantinople serves as the splend
 STATIC_MODIFIER_NAME_tur_bulgaria_subjugated:0 "Bulgaria Subjugated"
 STATIC_MODIFIER_DESC_tur_bulgaria_subjugated:0 "The Bulgarian lands have been brought under Ottoman rule, securing our European frontiers and providing new sources of manpower."
 
+STATIC_MODIFIER_NAME_tur_bulgaria_subjugated2:0 "Wallachia Subjugated"
 STATIC_MODIFIER_NAME_tur_aegean_dominance:0 "Aegean Dominance"
 STATIC_MODIFIER_DESC_tur_aegean_dominance:0 "Ottoman control over the Aegean Sea secures vital trade routes and ensures our naval superiority in the eastern Mediterranean."
 

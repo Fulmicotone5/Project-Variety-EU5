@@ -12,8 +12,8 @@ teu_prussia_mod = {
 
 teu_christian_mod = {
 	icon = ties_with_the_holy_see
-	tolerance_own = 0.5
-	global_pop_conversion_speed_modifier = 0.20
+	tolerance_heathen = -0.5
+	global_pop_conversion_speed_modifier = 0.50
 }
 
 teu_lithuania_mod = {
@@ -36,31 +36,32 @@ teu_crusade_start_mod = {
 
 teu_livonia_mod = {
 	icon = expansionism
-	global_manpower_modifier = 0.10
+	global_manpower_modifier = 0.05
 	fort_maintenance_efficiency = 0.10
 }
 
 teu_conquer_livonia_mod = {
 	icon = expansionism
-	global_manpower_modifier = 0.10
+	global_manpower_modifier = 0.05
 	army_heavy_cavalry_power = 0.10
 }
 
 teu_east_crusade_mod = {
 	icon = a_neverending_crusade
 	war_score_vs_other_religion_efficiency = 0.10
-	land_morale_modifier = 0.10
+	land_morale_modifier = 0.05
 }
 
 teu_orthodox_march_mod = {
 	icon = crusader_tradition
 	war_score_vs_other_religion_efficiency = 0.15
-	global_manpower_modifier = 0.10
+	global_manpower_modifier = 0.05
 }
 
 teu_secular_start_mod = {
 	icon = crown_power_advance_renaissance
 	legislative_efficiency = 0.10
+	global_clergy_estate_power = -0.25
 }
 
 teu_duchy_mod = {
@@ -108,7 +109,7 @@ teu_danzig_mod = {
 }
 
 teu_law_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	legislative_efficiency = 0.10
 	government_size = 1
 }
@@ -192,7 +193,7 @@ teu_mazovia_mod = {
 teu_narva_mod = {
 	icon = crusader_tradition
 	local_defensive = 0.50
-	local_unrest = -10
+	local_unrest = -0.25
 	harbor_suitability = 0.10
 }
 
@@ -204,11 +205,12 @@ teu_berlin_mod = {
 }
 
 teu_junker_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_legitimacy = 0.05
-	nobles_estate_agenda_impact = 0.15
+	nobles_estate_agenda_impact = 0.1
 	nobles_estate_target_satisfaction = 0.05
-	global_nobles_estate_power = 0.10
+	global_nobles_estate_power = 1
+	nobles_estate_max_tax = 0.05
 }
 
 teu_silesia_mod = {
@@ -237,8 +239,9 @@ teu_mongol_empire_mod = {
 	land_morale_modifier = 0.15
 	army_light_cavalry_power = 0.20
 	army_heavy_cavalry_power = 0.15
-	road_cost_on_distance_from_capital = -5
+	road_cost_on_distance_from_capital = -0.5
 	power_projection = 20
+	num_local_governors = 1
 }
 
 teu_sacred_nomads_mod = {
@@ -246,7 +249,8 @@ teu_sacred_nomads_mod = {
 	war_score_vs_other_religion_efficiency = 0.50
 	monthly_prestige = 0.20
 	government_size = 2
-	road_cost_on_distance_from_capital = -5
+	road_cost_on_distance_from_capital = -1
+	num_local_governors = 1
 }
 
 teu_steppe_crusade_mod = {

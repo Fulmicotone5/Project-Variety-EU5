@@ -8,13 +8,15 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = NOR
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = nor_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = nor_mission_started }
-	on_completion = { remove_variable = nor_mission_started }
-	on_abort = { remove_variable = nor_mission_started }
+	on_start = { set_global_variable = nor_mission_started }
+
 
 	# ==================== ROOT ====================
 
@@ -189,13 +191,13 @@
 		icon = hsa_global_reach
 		requires = { nor_greenland_expedition }
 		enabled = {
-			any_colonial_country = {
-				is_subject_of = root
-				count >= 1
+			or = {
+				has_discovered_area = area:labrador_area
+				has_discovered_area = area:newfoundland_area
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = nor_vinland_mod years = -1 mode = add }
+			add_country_modifier = { modifier = nor_vinland_mod years = 25 mode = add }
 		}
 	}
 
@@ -426,7 +428,9 @@
 					defender_leader = root
 				}
 				any_war_participant = {
-					religion.group = religion_group:muslim
+					NOT = {
+						religion = religion:catholic
+					}
 					NOT = { this = root }
 				}
 			}
@@ -572,7 +576,7 @@
 		icon = dan_trading_economy
 		requires = { nor_north_sea_markets }
 		enabled = {
-			produced_in_country:amber > 3
+			produced_in_country:amber > 10
 			monthly_income_trade_and_tax >= 150
 		}
 		on_completion = {

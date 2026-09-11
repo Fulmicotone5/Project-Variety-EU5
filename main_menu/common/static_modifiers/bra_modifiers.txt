@@ -17,10 +17,10 @@ bra_standing_army_mod = { icon = arm_mountain_armies global_manpower_modifier = 
 bra_absolutism_mod = { icon = crown_power_advance_renaissance court_spending_efficiency = -0.05
 	government_reform_slots = 1
 	global_crown_estate_power = 1
-	monthly_towards_absolutism = societal_value_significant_monthly_move }
+	monthly_towards_absolutism = societal_value_huge_monthly_move }
 bra_sovereign_mod = { icon = consolidate_the_royal_domain discipline = 0.05 }
-bra_administration_mod = { icon = administrative_icon country_cabinet_efficiency = 0.05 }
-bra_junker_mod = { icon = administrative_icon nobles_estate_agenda_impact = 0.10 nobles_estate_target_satisfaction = 0.05 }
+bra_administration_mod = { icon = government_reforms country_cabinet_efficiency = 0.05 }
+bra_junker_mod = { icon = government_reforms nobles_estate_agenda_impact = 0.10 nobles_estate_target_satisfaction = 0.05 global_nobles_estate_power = 0.25 }
 bra_potsdam_mod = { icon = city_building_advance local_monthly_prosperity = 0.002 }
 bra_soldier_king_mod = { icon = arm_mountain_armies monthly_army_tradition = 0.1 commander_combat_bonus = 1 }
 bra_treasury_mod = { icon = court_accounting global_build_buildings_efficiency = 0.20 }
@@ -47,7 +47,7 @@ bra_north_confederation_mod = { icon = legacy_of_great_empires power_projection 
 bra_south_german_mod = { icon = ties_with_the_holy_see diplomatic_reputation = 1 }
 bra_franco_prussian_mod = { icon = a_fortified_border global_war_score_efficiency = 0.15 }
 bra_alsace_mod = { icon = expansionism global_integration_speed_modifier = 0.20 }
-bra_kulturkampf_mod = { icon = national_churches cultural_influence_modifier = 0.10 global_pop_assimilation_speed = 0.003 }
+bra_kulturkampf_mod = { icon = national_churches cultural_influence_modifier = 0.10 global_pop_assimilation_speed = 0.005 }
 bra_social_mod = { icon = court_accounting global_monthly_prosperity = 0.0015 }
 bra_colonial_mod = { icon = expansionism subject_loyalty = 5 subject_pays_colonial_cost_modifier = 0.10 }
 bra_fleet_mod = { icon = continental_trade naval_range_modifier = 0.10 naval_damage_done = 0.10 }
@@ -64,3 +64,11 @@ bra_hegemon_mod = { icon = legacy_of_great_empires monthly_prestige = 0.10 power
 bra_king_in_prussia_mod = { icon = legacy_of_great_empires legislative_efficiency = 0.10 army_tradition = 10 }
 bra_second_reich_mod = { icon = legacy_of_great_empires global_monthly_development = 0.001 num_local_governors = 1 government_size = 1 }
 bra_pomerania_mod = { icon = a_fortified_border global_integration_speed_modifier = 0.10 }
+
+pvhohepalace = {  local_proximity_source = 60 }
+pvcontrol1 = {  global_crown_estate_power = 0.15 global_manpower_modifier = 0.1 }
+pvcontrol2 = {  global_integration_speed_modifier = 0.10 global_monthly_prosperity = 0.001 }
+pvcontrol3 = { global_war_score_efficiency = 0.2 antagonism_received_modifier = -0.1 }
+pvcontrol4 = { government_reform_slots = 1  global_max_literacy = 10   government_size = 1 monthly_army_tradition = 0.1 cultures_capacity = 3 }
+bra_hegemon_mod2 = { mountains_proximity_impact = -0.5
+	plateau_proximity_impact = -0.5 hills_proximity_impact = -0.5 global_monthly_development = 0.0015 global_max_rgo_size_modifier = 0.10 global_production_efficiency = 0.1 }

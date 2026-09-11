@@ -133,7 +133,6 @@ ayy_sunni_mod = {
 ayy_madrasa_mod = {
 	icon = library_advance
 	global_monthly_literacy = 0.10
-	research_modifier = 0.05
 	cultural_tradition_modifier = 0.10
 }
 
@@ -159,7 +158,7 @@ ayy_damascus_dev_mod = {
 
 ayy_spice_mod = {
 	icon = crossroads_of_commerce
-	global_merchant_capacity_modifier = 0.20
+	global_merchant_capacity_modifier = 0.1
 	trade_range_modifier = 0.10
 }
 
@@ -171,8 +170,8 @@ ayy_silk_mod = {
 
 ayy_cavalry_mod = {
 	icon = offensive_army
-	army_light_cavalry_power = 0.15
-	army_heavy_cavalry_power = 0.10
+	army_light_cavalry_power = 0.1
+	army_heavy_cavalry_power = 0.05
 }
 
 ayy_fleet_mod = {
@@ -197,7 +196,6 @@ ayy_navy_mod = {
 	icon = hsa_mastery_of_the_sea
 	naval_morale_modifier = 0.10
 	trade_sea_efficiency = 0.15
-	harbor_suitability = 0.10
 }
 
 ayy_sugar_mod = {

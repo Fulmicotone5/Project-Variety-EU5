@@ -3,13 +3,7 @@ burflavor.1 = {
 	type = country_event
 	title = burflavor.1.title
 	desc = burflavor.1.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = angry
 		10 = exterior
@@ -21,8 +15,7 @@ burflavor.1 = {
 		}
 	}
 	trigger = {
-		is_independent_or_autonomous_subject = no
-		is_situation_active = situation:hundred_years_war
+		
 	}
 	option = {
 		name = burflavor.1.a
@@ -48,13 +41,7 @@ burflavor.2 = {
 	type = country_event
 	title = burflavor.2.title
 	desc = burflavor.2.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = armed
 		10 = exterior
@@ -69,10 +56,7 @@ burflavor.2 = {
 		}
 	}
 	trigger = {
-		is_independent_or_autonomous_subject = yes
-		NOT = {
-			owns = location:nevers
-		}
+	
 	}
 	option = {
 		name = burflavor.2.a
@@ -118,13 +102,7 @@ burflavor.3 = {
 	type = country_event
 	title = burflavor.3.title
 	desc = burflavor.3.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -142,8 +120,7 @@ burflavor.3 = {
 		}
 	}
 	trigger = {
-		is_independent_or_autonomous_subject = yes
-		owns = location:nevers
+
 	}
 	option = {
 		name = burflavor.3.a
@@ -434,13 +411,7 @@ burflavor.8 = {
 	type = country_event
 	title = burflavor.8.title
 	desc = burflavor.8.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = regular
 		10 = exterior
@@ -459,13 +430,7 @@ burflavor.8 = {
 		}
 	}
 	trigger = {
-		is_independent_or_autonomous_subject = yes
-		any_international_organizations_member_of = {
-			international_organization_type = international_organization_type:hre
-		}
-		NOT = {
-			owns = location:arles
-		}
+		
 	}
 	option = {
 		name = burflavor.8.a
@@ -497,13 +462,7 @@ burflavor.9 = {
 	type = country_event
 	title = burflavor.9.title
 	desc = burflavor.9.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
+
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -518,7 +477,6 @@ burflavor.9 = {
 		}
 	}
 	trigger = {
-		owns = location:arles
 	}
 	option = {
 		name = burflavor.9.a
@@ -582,14 +540,6 @@ burflavor.10 = {
 	type = country_event
 	title = burflavor.10.title
 	desc = burflavor.10.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		tag = BGP
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 100
-	}
 	illustration_tags = {
 		10 = happy
 		10 = interior
@@ -604,17 +554,11 @@ burflavor.10 = {
 		}
 	}
 	trigger = {
-		own_entire_area = area:provence_area
-		own_entire_area = area:savoy_area
-		own_entire_area = area:lyonnais_area
-		own_entire_area = area:franche_comte_area
-		own_entire_area = area:western_switzerland_area
-		own_entire_area = area:central_switzerland_area
-		own_entire_area = area:burgundy_area
 	}
 	option = {
 		name = burflavor.10.a
-		add_stability = 7
+		add_stability = 25
+		add_gold = { value = monthly_income_trade_and_tax multiply = 24 }
 	}
 	option = {
 		name = burflavor.10.b
@@ -622,6 +566,9 @@ burflavor.10 = {
 		add_estate_satisfaction = { type = estate_type:nobles_estate value = estate_satisfaction_severe_bonus }
 		change_country_name = F25
 		add_legitimacy = 10
+		capital = {
+			change_location_rank = location_rank:megalopolis
+		}
 	}
 	option = {
 		name = burflavor.10.c
@@ -767,14 +714,7 @@ burflavor.13 = {
 	type = country_event
 	title = burflavor.13.title
 	desc = burflavor.13.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		tag = BGP
-		from = 1340.1.1
-		to = 1835.1.1
-		monthly_chance = 20
-	}
+
 	illustration_tags = {
 		10 = regular
 		10 = interior
@@ -786,8 +726,6 @@ burflavor.13 = {
 		}
 	}
 	trigger = {
-		owns = location:avignon
-		total_building_levels_including_construction:local_governor < modifier:num_local_governors
 	}
 	option = {
 		name = burflavor.13.a
@@ -949,14 +887,6 @@ burflavor.15 = {
 	type = country_event
 	title = burflavor.15.title
 	desc = burflavor.15.desc
-	fire_only_once = yes
-	dynamic_historical_event = {
-		tag = BUR
-		tag = BGP
-		from = 1336.1.1
-		to = 1835.1.1
-		monthly_chance = 20
-	}
 	illustration_tags = {
 		10 = regular
 		10 = exterior
@@ -968,11 +898,6 @@ burflavor.15 = {
 		}
 	}
 	trigger = {
-		has_or_had_tag = BGP
-		country_rank = country_rank:rank_kingdom
-		not = {
-			owns = location:avignon
-		}
 	}
 	option = {
 		historical_option = yes

@@ -1,0 +1,727 @@
+PV_wrc_m = {
+	icon = generic_traditional_economy
+	repeatable = no
+	player_playstyle = diplomatic
+	chance = 10000000
+	visible = {
+		game_has_missions_enabled = yes
+		has_or_had_tag = WRC
+		NOR = {
+			country_type = pop
+			country_type = building
+		}
+		NOT = {
+			has_global_variable = tou_crown_started4
+		}
+	}
+	enabled = {
+		always = yes
+	}
+	on_start = {
+		set_global_variable = tou_crown_started4
+	}
+	boh_conquer_silesia = {
+		icon = arduous_terrain
+		requires = {
+		}
+		enabled = {
+			always = yes
+		}
+		on_completion = {
+			trigger_event_non_silently = sileflavor.1
+		}
+	}
+	pv_matterofsilesia = {
+		icon = efficient_mining
+		requires = {
+			boh_conquer_silesia
+		}
+		enabled = {
+			NOT = {
+				owns = location:glogow
+			}
+			NOT = {
+				owns = location:zagan
+			}
+			NOT = {
+				owns = location:sulechow
+			}
+		}
+		on_completion = {
+			trigger_event_non_silently = sileflavor.3
+		}
+	}
+	boh_secure_silesia = {
+		icon = arduous_terrain
+		requires = {
+			pv_matterofsilesia
+		}
+		enabled = {
+			has_or_had_tag = SIL
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_silesia_secured_mod
+				years = -1
+				mode = add
+			}
+			trigger_event_non_silently = sileflavor.6
+		}
+	}
+	boh_dev_litomerice = {
+		icon = crossroads_of_commerce
+		requires = {
+			boh_dev_wroclaw
+		}
+		enabled = {
+			owns = location:litomerice
+			location:litomerice = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 28
+			}
+		}
+		on_completion = {
+			location:litomerice = {
+				add_location_modifier = {
+					modifier = boh_litomerice_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_polish_ambitions = {
+		icon = dan_levy_recruitment
+		requires = {
+			boh_conquer_silesia
+		}
+		enabled = {
+			OR = {
+				c:POL = {
+					opinion = {
+						target = root
+						value >= 150
+					}
+				}
+				is_allied_with = {
+					target = c:POL
+				}
+				c:POL = {
+					is_rival_of = root
+				}
+				NOT = {
+					country_exists = c:POL
+				}
+			}
+		}
+		on_completion = {
+			if = {
+				limit = {
+					country_exists = c:POL
+				}
+				add_casus_belli = {
+					target = c:POL
+					type = casus_belli:cb_claim_throne
+				}
+			}
+		}
+	}
+	boh_conquer_poland = {
+		icon = glorious_arms
+		requires = {
+			boh_polish_ambitions
+		}
+		enabled = {
+			OR = {
+				c:POL = {
+					in_union_with = root
+				}
+				c:POL = {
+					is_subject_of = root
+				}
+				NOT = {
+					country_exists = c:POL
+				}
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_poland_subjugated_mod
+				years = 15
+				mode = add
+			}
+		}
+	}
+	boh_dev_wroclaw = {
+		icon = city_building_advance
+		requires = {
+			boh_conquer_silesia
+		}
+		enabled = {
+			location:wroclaw = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 25
+			}
+		}
+		on_completion = {
+			location:wroclaw = {
+				add_location_modifier = {
+					modifier = boh_wroclaw_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_baltic_access = {
+		icon = hsa_mastery_of_the_sea
+		requires = {
+			boh_conquer_poland
+		}
+		enabled = {
+			owns_or_non_sovereign_subject_owns = location:gdansk
+			navy_size >= 20
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_baltic_access_mod
+				years = 20
+				mode = add
+			}
+		}
+	}
+	boh_opava_iron = {
+		icon = arduous_terrain
+		requires = {
+			boh_conquer_silesia
+		}
+		enabled = {
+			location:opava = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 20
+			}
+			produced_in_country:iron > 10
+		}
+		on_completion = {
+			location:opava = {
+				add_location_modifier = {
+					modifier = boh_opava_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_silesian_mines = {
+		icon = nor_bounties_of_the_sea
+		requires = {
+			boh_conquer_silesia
+		}
+		enabled = {
+			produced_in_country:iron > 20
+			produced_in_country:coal > 10
+			any_owned_location = {
+				area = area:silesia_area
+				rgo_level >= 8
+				count >= 5
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_silesian_mines_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_internal_prosperity = {
+		icon = crossroads_of_commerce
+		requires = {
+			boh_silesian_mines
+		}
+		enabled = {
+			monthly_income_trade_and_tax >= 200
+			any_market_with_merchants = {
+				location.area = area:silesia_area
+				any_export = {
+					goods = goods:goods_gold
+					trade_profit > 0
+					count >= 3
+				}
+			}
+			any_market_with_merchants = {
+				location.area = area:silesia_area
+				any_export = {
+					goods = goods:silver
+					trade_profit > 0
+					count >= 3
+				}
+			}
+			any_market_with_merchants = {
+				location.area = area:silesia_area
+				any_export = {
+					goods = goods:iron
+					trade_profit > 0
+					count >= 3
+				}
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_prosperity_mod
+				years = 15
+				mode = add
+			}
+		}
+	}
+	boh_amber_road = {
+		icon = crossroads_of_commerce
+		requires = {
+			boh_baltic_access
+		}
+		enabled = {
+			produced_in_country:amber > 5
+			monthly_income_trade_and_tax >= 150
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_amber_road_mod
+				years = 25
+				mode = add
+			}
+		}
+	}
+	boh_bohemian_trade_network = {
+		icon = crossroads_of_commerce
+		requires = {
+			boh_amber_road
+		}
+		enabled = {
+			monthly_income_trade_and_tax >= 1200
+			any_market_with_merchants = {
+				location.area = area:silesia_area
+				any_export = {
+					goods = goods:amber
+					trade_profit > 0
+					count >= 2
+				}
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_trade_network_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_dev_konigsberg = {
+		icon = city_building_advance
+		requires = {
+			boh_baltic_access
+		}
+		enabled = {
+			owns_or_non_sovereign_subject_owns = location:konigsberg
+			location:konigsberg = {
+				development >= 25
+			}
+		}
+		on_completion = {
+			location:konigsberg = {
+				add_location_modifier = {
+					modifier = boh_konigsberg_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	mission_challenge_bohemian_suzerainty = {
+		icon = diplomatic_influence
+		requires = {
+			boh_secure_silesia
+		}
+		enabled = {
+			country_exists = c:BOH
+			NOT = {
+				c:BOH ?= {
+					is_subject_of = root
+				}
+			}
+			root = {
+				relative_strength = {
+					target ?= c:BOH
+					value > 0.75
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = central_european_contender
+				years = 40
+				mode = add
+			}
+			trigger_event_non_silently = polish_mission_events.5
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_secure_pomerania = {
+		icon = maritime_advance_age_2
+		requires = {
+			mission_eliminate_teutonic_order
+		}
+		enabled = {
+			area:pomerania_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.8
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = pomeranian_access
+				years = 40
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_subjugate_teutonic_order = {
+		icon = glorious_arms
+		requires = {
+			boh_conquer_poland
+		}
+		enabled = {
+			area:prussia_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.65
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = c:TEU
+				}
+				c:TEU = {
+					is_subject_of = root
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = victory_over_teutons
+				years = 45
+				mode = add
+			}
+			if = {
+				limit = {
+					country_exists = c:TEU
+				}
+				trigger_event_non_silently = polish_mission_events.6
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_eliminate_teutonic_order = {
+		icon = glorious_arms
+		requires = {
+			mission_subjugate_teutonic_order
+		}
+		enabled = {
+			NOT = {
+				country_exists = c:TEU
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_prestige = 15
+			trigger_event_non_silently = polish_mission_events.60
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_establish_amber_trade = {
+		icon = merchants_and_trade
+		requires = {
+			boh_amber_road
+		}
+		enabled = {
+			any_owned_location = {
+				raw_material = goods:amber
+				count >= 4
+			}
+			produced_in_country:amber >= 15
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = amber_trade_monopoly
+				years = 25
+				mode = add
+			}
+			add_gold = 500
+			trigger_event_non_silently = polish_mission_events.68
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_secure_galicia_volhynia = {
+		icon = defensive_army
+		requires = {
+			boh_conquer_poland
+		}
+		enabled = {
+			area:volhynia_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.8
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_stability = 5
+			area:volhynia_area = {
+				ordered_location_in_area = {
+					limit = {
+						owner ?= root
+					}
+					order_by = development
+					max = 5
+					add_core = root
+				}
+			}
+			trigger_event_non_silently = polish_mission_events.9
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_expand_into_red_ruthenia = {
+		icon = cultural_acceptance_advance
+		requires = {
+			mission_secure_galicia_volhynia
+		}
+		enabled = {
+			area:red_ruthenia_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.7
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = multicultural_expansion
+				years = -1
+				mode = add
+			}
+			trigger_event_non_silently = polish_mission_events.10
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_integrate_ruthenian_culture = {
+		icon = cultural_acceptance_advance
+		requires = {
+			mission_expand_into_red_ruthenia
+		}
+		enabled = {
+			culture:ruthenian = {
+				is_accepted_in = root
+			}
+			# any_owned_location = {
+			# 	has_building_with_at_least_one_level = cathedral
+			# 	count >= 4
+			# }
+			estate_satisfaction:clergy_estate >= 0.55
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = ruthenian_integration_policy
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	mission_develop_baltic_ports = {
+		icon = ship_building_advance
+		requires = {
+			boh_baltic_access
+		}
+		enabled = {
+			region:baltic_region = {
+				any_location_in_region = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					has_building_with_at_least_one_level = wharf
+					count >= 2
+				}
+			}
+			navy_size >= 30
+		}
+		duration = 0
+		on_completion = {
+			region:baltic_region = {
+				ordered_location_in_region = {
+					limit = {
+						owner ?= root
+						is_coastal = yes
+					}
+					order_by = development
+					max = 3
+					add_location_modifier = {
+						modifier = baltic_port_development
+						years = 25
+						mode = add
+					}
+				}
+			}
+			trigger_event_non_silently = polish_mission_events.17
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_establish_baltic_navy = {
+		icon = maritime_advance_age_2
+		requires = {
+			mission_develop_baltic_ports
+		}
+		enabled = {
+			navy_size >= 50
+			total_effective_building_levels:dry_dock >= 4
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = baltic_naval_tradition
+				years = 30
+				mode = add
+			}
+			add_navy_tradition = 15
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_control_baltic_sea = {
+		icon = maritime_advance_age_2
+		requires = {
+			mission_establish_baltic_navy
+		}
+		enabled = {
+			navy_size >= 100
+			navy_tradition >= 25
+			area:baltic_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					count >= 35
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = baltic_sea_dominance
+				years = 45
+				mode = add
+			}
+			trigger_event_non_silently = polish_mission_events.75
+		}
+		#ai_will_do = { value = 100 }
+	}
+
+	wro_final = {
+		final = yes
+				icon = crown_power_advance_renaissance
+				# ai_will_do = { value = 100 }
+				duration = 0
+                requires = { mission_secure_pomerania boh_bohemian_trade_network mission_control_baltic_sea }
+
+				enabled = {
+					has_or_had_tag = F24
+				}
+
+				on_completion = {
+					add_country_modifier = {
+							modifier = lat_empire_formed2
+							years = -1
+							mode = add_and_extend
+					}
+				}
+		}
+}

@@ -23,7 +23,7 @@ sic_golden_wheat_fields_mod = {
 }
 
 sic_palermo_resurgent_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_production_efficiency = 0.10
 	local_monthly_development = 0.001
 }

@@ -367,7 +367,7 @@ danish_west_indies_established = {
 
 danish_plantation_colony = {
 	icon = merchants_and_trade
-	local_production_efficiency = 0.20
+	local_production_efficiency = 0.1
 	tax_income_efficiency = 0.04
 }
 
@@ -603,7 +603,7 @@ vinland_crown_colony = {
 	game_data = { category = country }
 	icon = crown_icon
 	colonial_migration_size_modifier = 0.10
-	global_monthly_control = 0.01
+	global_monthly_control = 0.001
 	subject_income_modifier = 0.10
 	monthly_legitimacy = 0.02
 }
@@ -696,10 +696,10 @@ danish_coromandel_mission = {
 danish_spice_route = {
 	game_data = { category = country }
 	icon = maritime_advance_age_2
-	global_cloth_output_modifier = 0.08
-	naval_range_modifier = 0.15
+	global_cloth_output_modifier = 0.02
+	naval_range_modifier = 0.1
 	global_merchant_power = 0.08
-	global_maritime_presence_modifier = 0.10
+	global_maritime_presence_modifier = 0.05
 }
 
 # Canton (Guangzhou) tea trade — the Danish Asiatic Company's most lucrative single good.

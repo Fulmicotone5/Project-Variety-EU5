@@ -1,5 +1,5 @@
 ﻿pol_piast_heritage_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	monthly_prestige = 0.10
 	monthly_legitimacy = 0.05
 	diplomatic_reputation = 1
@@ -9,7 +9,7 @@ pol_mazovia_integration_mod = {
 	icon = fra_integration_of_new_territories
 	global_integration_speed_modifier = 0.10
 	peasants_estate_max_tax = 0.05
-	smooth_administration = 0.10
+	
 	annexation_speed_modifier = 0.10
 }
 
@@ -37,7 +37,8 @@ pol_jagiellonian_learning_mod = {
 
 pol_golden_age_mod = {
 	icon = legacy_of_great_empires
-	peasants_estate_max_tax = 0.10
+	government_reform_slots = 1
+	government_size = 1
 	global_production_efficiency = 0.05
 	monthly_prestige = 0.15
 	diplomatic_reputation = 2
@@ -64,9 +65,9 @@ pol_eastern_expansion_mod = {
 
 pol_eastern_empire_mod = {
 	icon = legacy_of_great_empires
-	global_manpower_modifier = 0.15
-	peasants_estate_max_tax = 0.10
-	smooth_administration = 0.15
+	global_manpower_modifier = 0.1
+	peasants_estate_max_tax = 0.05
+	
 	military_tactics = 0.10
 }
 
@@ -78,7 +79,7 @@ pol_teutonic_victory_mod = {
 
 pol_gdansk_trade_mod = {
 	icon = trade_icon
-	local_monthly_prosperity = 0.005
+	local_monthly_prosperity = 0.0015
 	local_trade_center_power = 0.15
 	local_merchant_capacity = 10
 	ship_build_speed = 0.15
@@ -180,7 +181,7 @@ pol_republic_of_nobles_final_mod = {
 	peasants_estate_max_tax = 0.20
 	global_manpower_modifier = 0.20
 	monthly_prestige = 0.30
-	smooth_administration = 0.20
+	0
 }
 
 pol_jadwiga_union_mod = {
@@ -242,7 +243,7 @@ pol_greater_poland_mod = {
 	icon = consolidate_the_royal_domain
 	peasants_estate_max_tax = 0.10
 	global_pop_assimilation_speed_modifier = 0.15
-	smooth_administration = 0.10
+	
 }
 
 pol_grunwald_glory_mod = {
@@ -382,7 +383,7 @@ pol_szlachta_rights_mod = {
 
 pol_law_codex_mod = {
 	icon = legalism_advance
-	smooth_administration = 0.15
+	
 	legislative_efficiency = 0.10
 	peasants_estate_max_tax = 0.05
 }
@@ -396,7 +397,7 @@ pol_krakow_capital_mod = {
 pol_warsaw_capital_mod = {
 	icon = city_building_advance
 	global_integration_speed_modifier = 0.10
-	smooth_administration = 0.10
+	
 }
 
 pol_warsaw_location_mod = {
@@ -454,8 +455,7 @@ pol_russia_rivalry_mod = {
 
 pol_malbork_fortress_mod = {
 	icon = a_fortified_border
-	global_defensive = 0.20
-	fort_maintenance_efficiency = 0.20
+	local_defensive = 0.20
 }
 
 pol_gniezno_archbishopric_mod = {
@@ -490,7 +490,7 @@ pol_varna_glory_mod = {
 }
 
 pol_upper_silesia_mines_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	global_silver_output_modifier = 0.20
 	global_max_rgo_size_modifier = 0.10
 }
@@ -534,8 +534,8 @@ pol_royal_road_mod = {
 	road_cost_on_distance_from_capital = -0.25
 }
 pol_silesia_mines_mod = {
-	icon = administrative_icon
-	local_max_rgo_size_modifier = 0.20
+	icon = government_reforms
+	local_max_rgo_size_modifier = 0.05
 }
 
 pol_krakow_location_mod = {

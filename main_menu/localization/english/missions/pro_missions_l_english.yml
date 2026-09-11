@@ -12,6 +12,8 @@
  pro_statutes_of_aix: "Statutes of Aix"
  pro_statutes_of_aix_desc: "Aix-en-Provence, as the capital of the County of Provence, has developed its own legal system known as the 'Statutes of Aix.' The establishment of control and legal codification unlocks two unique institutions: the Etats de Provence (Estates General) and the Free Port of Marseille."
  pro_statutes_of_aix_tooltip: "Average control in the home region (average_control_in_home_region) is 50% or higher"
+ unlocks_tw: "Unlocks the "Etats de Provence" and "Free Port of Marseille" Town Rights"
+ hab_stadtrechts: "Unlocks the "Wiener Stadtrecht" and "Landstadt" Town Rights"
 
  pro_sponsor_the_arts: "Sponsor the Arts"
  pro_sponsor_the_arts_desc: "King René is renowned as one of the greatest patrons of the Italian Renaissance. Invite artists and scholars and make Provence the western center of Renaissance culture."
@@ -155,7 +157,7 @@
  pro_events.4.b: "Maintain independence while preserving the alliance"
 
  pro_events.5.t: "Formation of the Kingdom of Jerusalem"
- pro_events.5.d: "The Holy City of Jerusalem has finally come under the banner of Provence. The House of Anjou now holds the title of 'King of Jerusalem' in both name and deed, carrying on the crusader tradition. Reestablish the Kingdom of Jerusalem (KOJ) in the key positions of the Levant and have it governed as a vassal of Provence. This sacred kingdom, first founded by the First Crusade in 1099, is reborn by the hand of the House of Anjou. As guardian of the Catholic faith, defend the Holy Land against Islamic forces."
+ pro_events.5.d: "The Holy City of Jerusalem has finally come under the banner of Provence. The House of Anjou now holds the title of 'King of Jerusalem' in both name and deed, carrying on the crusader tradition. Reestablish the Kingdom of Jerusalem in the key positions of the Levant and have it governed as a vassal of Provence. This sacred kingdom, first founded by the First Crusade in 1099, is reborn by the hand of the House of Anjou. As guardian of the Catholic faith, defend the Holy Land against Islamic forces."
  pro_events.5.a: "Reestablish the Kingdom of Jerusalem and have it governed as an Angevin vassal!"
 
  pro_etats_de_provence_town_rights: "Etats de Provence"

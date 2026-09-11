@@ -1,13 +1,16 @@
 ﻿flo_magnifico_mission_pack = {
 	icon = nmt_italy
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = administrative
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = FLO
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = flo_magnifico_started
+		}
 	}
 
 	enabled = {
@@ -15,16 +18,9 @@
 	}
 
 	on_start = {
-		set_variable = flo_magnifico_started
+		set_global_variable = flo_magnifico_started
 	}
 
-	on_completion = {
-		remove_variable = flo_magnifico_started
-	}
-
-	on_abort = {
-		remove_variable = flo_magnifico_started
-	}
 
 	# ==================== ROOT ====================
 
@@ -43,7 +39,7 @@
 
 	flo_the_prince = {
 		icon = renaissance_prince
-		requires = { flo_rise_of_the_commune }
+		requires = { flo_machiavelli }
 
 		enabled = {
 			is_situation_active = situation:italian_wars
@@ -174,7 +170,10 @@
 		requires = { flo_birthplace_of_renaissance }
 
 		enabled = {
-			has_fired_unique_event = flavor_flo.33
+			custom_tooltip = {
+				text = textduomo6
+				has_fired_unique_event = flavor_flo.33
+			}
 		}
 		duration = 120
 		on_completion = {
@@ -187,7 +186,10 @@
 		requires = { flo_florentine_school_of_painting }
 
 		enabled = {
-			has_fired_unique_event = flavor_flo.45
+			custom_tooltip = {
+				text = textduomo7
+				has_fired_unique_event = flavor_flo.45
+			}
 		}
 		duration = 0
 		on_completion = {
@@ -230,7 +232,10 @@
 		requires = { flo_rise_of_the_commune }
 
 		enabled = {
-			has_fired_unique_event = flavor_flo.57
+			custom_tooltip = {
+				text = textduomo3
+				has_fired_unique_event = flavor_flo.57
+			}
 		}
 		duration = 120
 		on_completion = {
@@ -243,9 +248,9 @@
 		requires = { flo_the_rise_of_medici }
 
 		enabled = {
-			OR = {
+			custom_tooltip = {
+				text = textduomo4
 				has_fired_unique_event = flavor_flo.20
-				current_date > 1480.1.1
 			}
 		}
 		duration = 0
@@ -259,9 +264,9 @@
 		requires = { flo_pazzi_conspiracy }
 
 		enabled = {
-			OR = {
+			custom_tooltip = {
+				text = textduomo8
 				has_fired_unique_event = flavor_flo.46
-				current_date > 1515.1.1
 			}
 		}
 		duration = 120
@@ -275,8 +280,8 @@
 		requires = { flo_machiavelli }
 
 		enabled = {
-			legitimacy >= 0.75
-			stability >= 1
+			legitimacy >= 1
+			stability >= 50
 		}
 		duration = 150
 		on_completion = {
@@ -359,7 +364,6 @@
 		duration = 180
 		on_completion = {
 			add_country_modifier = { modifier = flo_unify_tuscany_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_kingdom }
 		}
 	}
 
@@ -402,28 +406,12 @@
 				count >= 80
 			}
 		}
-		duration = 365
 		on_completion = {
-			add_country_modifier = { modifier = flo_the_new_rome_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_empire }
+			add_country_modifier = { modifier = mlo_italian_independence_mod years = -1 mode = add }
+			form_country = formable_country:F09_f
 		}
 	}
 
-	flo_il_magnifico_of_italy = {
-		icon = cosmopolitan_court
-		requires = { flo_the_new_rome }
-
-		enabled = {
-			any_owned_location = {
-				region = region:italy_region
-				count >= 150
-			}
-		}
-		duration = 365
-		on_completion = {
-			add_country_modifier = { modifier = flo_il_magnifico_of_italy_mod years = -1 mode = add }
-		}
-	}
 
 
 	flo_medici_oriental_press = {
@@ -457,7 +445,10 @@
 		requires = { flo_birthplace_of_renaissance }
 
 		enabled = {
-			has_fired_unique_event = flavor_flo.1
+			custom_tooltip = {
+				text = textduomo5
+				has_fired_unique_event = flavor_flo.1
+			}
 		}
 		duration = 90
 		on_completion = {
@@ -483,6 +474,7 @@
 		requires = { flo_push_into_lombardy }
 
 		enabled = {
+			owns_or_non_sovereign_subject_owns = location:venice
 			OR = {
 				is_rival_of = c:VEN
 				c:VEN = { is_subject_of = root }
@@ -495,32 +487,12 @@
 		}
 	}
 
-	flo_papal_relations = {
-		icon = patron_of_art
-		requires = { flo_march_on_rome }
-
-		enabled = {
-			OR = {
-				is_allied_with = { target = c:PAP }
-				c:PAP = { is_subject_of = root }
-				NOT = { country_exists = c:PAP }
-			}
-		}
-		duration = 180
-		on_completion = {
-			add_country_modifier = { modifier = flo_papal_relations_mod years = -1 mode = add }
-		}
-	}
-
 	flo_vasari_corridor = {
 		icon = city_of_artists
 		requires = { flo_unify_tuscany }
 
 		enabled = {
-			OR = {
-				has_fired_unique_event = flavor_flo.44
-				current_date > 1500.1.1
-			}
+			has_fired_unique_event = flavor_flo.44
 		}
 		duration = 120
 		on_completion = {
@@ -549,11 +521,7 @@
 		requires = { flo_first_modern_engineer }
 
 		enabled = {
-			any_owned_location = {
-				region = region:italy_region
-				count >= 60
-			}
-			average_control_in_home_region >= 0.60
+			is_hegemon_type = hegemony:cultural_hegemon
 		}
 		duration = 180
 		on_completion = {
@@ -565,7 +533,7 @@
 
 	flo_magnifico = {
 		icon = medici_porcelain
-		requires = { flo_dominate_italian_trade flo_italian_cultural_hegemon flo_academy_of_florence flo_il_magnifico_of_italy flo_papal_relations }
+		requires = { flo_dominate_italian_trade flo_italian_cultural_hegemon flo_academy_of_florence flo_the_new_rome  }
 		final = yes
 
 		enabled = {

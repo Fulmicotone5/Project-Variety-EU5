@@ -116,12 +116,7 @@ por_events.99 = {
 	option = {
 		name = por_events.99.a
 		add_country_modifier = { modifier = por_empire_of_seas_final_mod years = -1 mode = add }
-		change_country_name = F04
-		change_country_adjective = F04_ADJ
-				hidden_effect = {
-						change_country_color = map_PVflusi
-				}
-				change_country_flag = F04
+		form_country = formable_country:F04_f
 				if = {
 				limit = {
 					NOT = {

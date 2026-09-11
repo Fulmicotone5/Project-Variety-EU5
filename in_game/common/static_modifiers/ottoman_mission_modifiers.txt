@@ -56,6 +56,13 @@ tur_bulgaria_subjugated = {
     subject_loyalty = 10
 }
 
+tur_bulgaria_subjugated2 = {
+    icon = crown_icon
+    global_manpower_modifier = 0.05
+    tax_income_efficiency = 0.025
+    subject_loyalty = 10
+}
+
 tur_aegean_dominance = {
     icon = maritime_icon
     global_maritime_presence_modifier = 0.10

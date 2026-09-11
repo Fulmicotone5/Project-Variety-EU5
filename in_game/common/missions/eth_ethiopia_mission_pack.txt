@@ -1,5 +1,5 @@
 ﻿eth_ethiopia_mission_pack = {
-	icon = nmt_ethiopia
+	icon = generic_traditional_economy
 	repeatable = no
 	player_playstyle = military
 	chance = 10000000
@@ -7,7 +7,9 @@
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = ETH
+		always = no
 		NOR = { country_type = pop country_type = building }
+		# TODO
 	}
 
 	enabled = { always = yes }

@@ -6,7 +6,7 @@
  aac_carolingian_legacy_mission_pack_BUTTON_DETAILS:0 "From Charlemagne's throne to the Western Roman Empire!"
 
  aac_throne_of_charlemagne: "Throne of Charlemagne"
- aac_throne_of_charlemagne_desc: "Aachen Cathedral — built by Charlemagne's command and site of his coronation as Western Roman Emperor in 800 — has returned to Carolingian hands. Rule Aachen, once the center of Western civilization, and take the first step toward restoring the Frankish Kingdom."
+ aac_throne_of_charlemagne_desc: "Aachen Cathedral — built by Charlemagne's command and site of his coronation as Roman Emperor in 800 — has returned to Carolingian hands. Rule Aachen, once the center of Western civilization, and take the first step toward restoring the Frankish Kingdom."
 
  aac_control_rhineland: "Control the Rhine"
  aac_control_rhineland_desc: "Cologne, Trier, Mainz — the three great archbishop cities along the Rhine were the economic, religious, and political center of the Frankish Kingdom. Seizing them returns the entire Rhine to Carolingian hands."
@@ -66,10 +66,10 @@
  aac_kingdom_of_franks_desc: "Gaul reunited, Lorraine integrated, Missi Dominici established — the three pillars align and the Frankish Kingdom is finally restored. For the first time since 800, the Carolingian banner flies from the Rhine to the Pyrenees."
 
  aac_papal_alliance: "Papal Alliance"
- aac_papal_alliance_desc: "On Christmas 800, at St. Peter's Basilica in Rome, Pope Leo III placed the Western Roman Emperor's crown on Charlemagne. Carry on that tradition, build a firm alliance with the Pope, and establish legitimacy as 'God's representative.'"
+ aac_papal_alliance_desc: "On Christmas 800, at St. Peter's Basilica in Rome, Pope Leo III placed the Roman Emperor's crown on Charlemagne. Carry on that tradition, build a firm alliance with the Pope, and establish legitimacy as 'God's representative.'"
 
  aac_conquer_italy: "Conquer Italy"
- aac_conquer_italy_desc: "Charlemagne conquered the Lombard Kingdom in 774 and acquired the title of King of Italy. Seizing Rome completes the path to the revival of the 'Western Roman Emperor' with papal approval."
+ aac_conquer_italy_desc: "Charlemagne conquered the Lombard Kingdom in 774 and acquired the title of King of Italy. Seizing Rome completes the path to the revival of the 'Roman Emperor' with papal approval."
 
  aac_western_roman_empire: "Restoration of the Western Roman Empire"
  aac_western_roman_empire_desc: "Aachen, Paris, Rome — the three cities of the Western Roman Empire reunified under the Carolingian banner. The Empire Charlemagne built in 800 is reborn in the modern era, and 'Renovatio Imperii Romani (Restoration of the Roman Empire)' is fulfilled."
@@ -100,16 +100,15 @@
  aac_events.20.a: "Long live Paris! Raise the Carolingian banner high!"
 
  aac_events.40.t: "Gaul Reunited — The Return of the Frankish King"
- aac_events.40.d: "From the Rhine to the Pyrenees, from Flanders to Provence — all of Gaul unified under the Frankish Kingdom's banner. The Empire split three ways by the Treaty of Verdun in 843 is reunited after 500 years. 'Dieu le veut (God wills it)' — the people gathered in the cathedral cry out."
+ aac_events.40.d: "From the Rhine to the Pyrenees, from Flanders to Provence — all of Gaul unified under the Frankish Kingdom's banner. The Empire split three ways by the Treaty of Verdun in 843 is reunited after 500 years. 'Dieu le veut' — the people gathered in the cathedral cry out."
  aac_events.40.a: "Long live Gaul! The Frankish Kingdom is eternal!"
 
  aac_events.50.t: "Declaration of the Frankish Kingdom's Restoration"
- aac_events.50.d: "Gaul reunited, Lorraine integrated, Missi Dominici established — the three pillars of the Frankish Kingdom are complete. A Frankish king's coronation is held at Aachen Cathedral, and for the first time since Charlemagne, a Frankish Emperor is born. 'In the name of Carolus Magnus Rex Francorum (Charlemagne, King of the Franks), we declare the Empire.'"
- aac_events.50.a: "Long live the Frankish Kingdom! The Carolingian glory is reborn — dye our colors in the blue of France!"
+ aac_events.50.d: "Gaul reunited, Lorraine integrated, Missi Dominici established — the three pillars of the Frankish Kingdom are complete. A Frankish king's coronation is held at Aachen Cathedral, and for the first time since Charlemagne, a Frankish King is born."
 
  aac_events.99.t: "Restoration of the Western Roman Empire"
  aac_events.99.d: "Aachen, Paris, Rome — three cities reunified under the Carolingian banner. The legendary moment when Pope Leo III placed the crown on Charlemagne on Christmas 800 is recreated in the modern era. 'Renovatio Imperii Romani' — these words are engraved in history forever. Will you change the Empire's color to the Carolingian crimson?"
- aac_events.99.a: "Raise the crimson banner — dye Rome with Carolingian colors (map_ROM)"
+ aac_events.99.a: "Raise the crimson banner — dye Rome with Carolingian colors"
  aac_events.99.b: "Keep the traditional colors — imperial dignity lies in power, not color"
 
  STATIC_MODIFIER_NAME_aac_carolingian_throne_mod: "Throne of Charlemagne"
@@ -174,12 +173,12 @@
  aac_aachen_megalopolis: "Aachen — Central Europe's Greatest City"
  aac_aachen_megalopolis_desc: "Charlemagne's court city Aachen is finally complete as Central Europe's greatest metropolis. With a population of 200,000, advanced urban development, and magnificent architecture, Aachen is established as the center of European civilization."
  aac_events.10.t: "Throne of Charlemagne — The Carolingian Awakening"
- aac_events.10.d: "Aachen — this city where Charlemagne (742–814) once held his court and was crowned Western Roman Emperor in 800 — has returned to Carolingian hands. Beneath the solemn dome of Aachen Cathedral, the marble throne awaits its master's return.\n\nThe dream of Charlemagne, called 'Father of Europe (Pater Europae)' — a unified Christian empire from the Rhine to the Pyrenees, from Rome to the Baltic — the time has come to realize it. Declare the Carolingian restoration and take the first step toward rebuilding the Frankish Kingdom."
+ aac_events.10.d: "Aachen — this city where Charlemagne (742–814) once held his court and was crowned Roman Emperor in 800 — has returned to Carolingian hands. Beneath the solemn dome of Aachen Cathedral, the marble throne awaits its master's return.\n\nThe dream of Charlemagne, called 'Father of Europe' — a unified Christian empire from the Rhine to the Pyrenees, from Rome to the Baltic — the time has come to realize it. Declare the Carolingian restoration and take the first step toward rebuilding the Frankish Kingdom."
  aac_events.10.a: "Reign as king of the Carolingian dynasty — declare the monarchy"
  aac_events.10.b: "The time is not yet ripe — build strength under the current system of governance"
  STATIC_MODIFIER_NAME_aac_aachen_megalopolis_mod: "Aachen Megalopolis"
  STATIC_MODIFIER_DESC_aac_aachen_megalopolis_mod: "Aachen is complete as one of Europe's greatest cities. Maximum RGO size, building levels, and population capacity greatly increased."
 
- aac_events.50.b: "Long live the Frankish Kingdom! The Carolingian glory is reborn — keep our traditional colors"
+ aac_events.50.b: "Long live the Frankish Kingdom! The Carolingian glory is reborn!"
  aac_events.99.a: "Adopt the name and colors of the Western Roman Empire (map_ROM) — proclaim Rome's revival to the world"
  aac_events.99.b: "Declare the name Western Roman Empire — but keep our current colors"

@@ -24,21 +24,21 @@ flo_dominate_italian_trade_mod = {
 
 flo_duomo_di_firenze_mod = {
 	icon = city_of_artists
-	cultural_tradition = 0.10
-	cultural_influence = 0.10
+	cultural_tradition_modifier = 0.10
+	cultural_influence_modifier = 0.10
 	monthly_prestige = 0.10
 }
 
 flo_birthplace_of_renaissance_mod = {
 	icon = renaissance_advance
-	cultural_tradition = 0.10
+	cultural_tradition_modifier = 0.10
 	skill_of_new_artists = 0.10
 }
 
 flo_florentine_school_of_painting_mod = {
 	icon = florentine_school
-	cultural_tradition = 0.10
-	cultural_influence = 0.15
+	cultural_tradition_modifier = 0.10
+	cultural_influence_modifier = 0.15
 }
 
 flo_the_mona_lisa_mod = {
@@ -67,7 +67,7 @@ flo_republic_of_virtue_mod = {
 
 flo_camerata_fiorentina_mod = {
 	icon = artists_advance
-	cultural_tradition = 0.10
+	cultural_tradition_modifier = 0.10
 	monthly_prestige = 0.10
 }
 
@@ -108,14 +108,14 @@ flo_the_new_rome_mod = {
 
 flo_il_magnifico_of_italy_mod = {
 	icon = cosmopolitan_court
-	cultural_tradition = 0.20
+	cultural_tradition_modifier = 0.20
 	global_crown_estate_power = 0.50
 }
 
 flo_medici_oriental_press_mod = {
 	icon = genoese_banking_traditions
 	skill_of_new_artists = 0.10
-	global_monthly_literacy = 0.02
+	global_monthly_literacy = 0.1
 }
 
 flo_clock_tower_mod = {
@@ -125,8 +125,8 @@ flo_clock_tower_mod = {
 
 flo_michelangelo_mod = {
 	icon = city_of_artists
-	cultural_tradition = 0.10
-	cultural_influence = 0.20
+	cultural_tradition_modifier = 0.10
+	cultural_influence_modifier = 0.20
 }
 
 flo_first_modern_engineer_mod = {
@@ -150,7 +150,7 @@ flo_papal_relations_mod = {
 flo_academy_of_florence_mod = {
 	icon = accademia_cimento
 	skill_of_new_artists = 0.10
-	global_monthly_literacy = 0.02
+	global_monthly_literacy = 0.2
 	research_speed_modifier = 0.05
 }
 
@@ -158,12 +158,17 @@ flo_italian_cultural_hegemon_mod = {
 	icon = medici_porcelain
 	invite_artist_cost_modifier = -0.20
 	num_possible_artists = 1
+	global_prosperity_decay = -0.05
+	global_monthly_development = 0.005
 }
 
 flo_magnifico_mod = {
 	icon = medici_porcelain
 	global_crown_estate_power = 0.50
 	diplomatic_reputation = 4
+	government_reform_slots = 2
+	government_size = 1
+	cultural_influence_modifier = 1
 }
 
 flo_the_rise_of_medici_mod = {
@@ -174,7 +179,7 @@ flo_the_rise_of_medici_mod = {
 
 flo_arno_corridor_mod = {
 	icon = river_trade
-	local_distance_from_capital_speed_propagation = 0.10
+	local_monthly_prosperity = 0.002
 }
 
 flo_vasari_corridor_mod = {

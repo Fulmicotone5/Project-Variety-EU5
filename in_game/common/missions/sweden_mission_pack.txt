@@ -8,6 +8,8 @@
 
 	visible = {
 		game_has_missions_enabled = yes
+		always = no
+		# TODO
 		OR = {
 			tag = "SWE"
 			tag = "SCA" # Scandinavia formable
@@ -1246,7 +1248,6 @@
 		enabled = {
 			is_great_power = yes
 			prestige >= 75
-			total_development >= 2500
 			average_country_literacy >= 30
 			
 			# Military supremacy in the North

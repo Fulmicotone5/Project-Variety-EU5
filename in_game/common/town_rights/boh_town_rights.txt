@@ -4,7 +4,7 @@
 	location_modifier = {
 		local_nobles_estate_power = 0.20
 		local_peasant_enfranchisment = -0.10
-		local_max_control = 0.05
+		local_max_control = 0.025
 	}
 
 	country_modifier = {
@@ -29,7 +29,7 @@ boh_ecclesiastical_city_rights = {
 	location_modifier = {
 		local_clergy_estate_power = 0.10
 		local_unrest = -0.10
-		local_pop_conversion_speed_modifier = 0.50
+		local_pop_conversion_speed_modifier = 0.25
 	}
 
 	country_modifier = {

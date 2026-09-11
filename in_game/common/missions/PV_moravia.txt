@@ -1,0 +1,534 @@
+PV_mor_m = {
+	icon = nmt_wallachia
+	repeatable = no
+	player_playstyle = administrative
+	chance = 10000000
+	visible = {
+		game_has_missions_enabled = yes
+		has_or_had_tag = MVA
+		NOR = {
+			country_type = pop
+			country_type = building
+		}
+		NOT = {
+			has_global_variable = tou_crown_started3
+		}
+	}
+	enabled = {
+		always = yes
+	}
+	on_start = {
+		set_global_variable = tou_crown_started3
+	}
+	morbasevent = {
+		icon = arduous_terrain
+		requires = {
+		}
+		enabled = {
+			has_or_had_tag = MVA
+		}
+		on_completion = {
+			trigger_event_non_silently = moraflavor.1
+		}
+	}
+	pv_lostlands = {
+		icon = efficient_mining
+		requires = {
+			morbasevent
+		}
+		enabled = {
+			NOT = {
+				owns = location:krnov
+			}
+			NOT = {
+				owns = location:fryvaldov
+			}
+			NOT = {
+				owns = location:ziebice
+			}
+		}
+		on_completion = {
+			trigger_event_non_silently = moraflavor.3
+		}
+	}
+	boh_develop_moravia = {
+		icon = city_building_advance
+		requires = {
+			morbasevent
+		}
+		enabled = {
+			province:brnensko_province = {
+				province_average_development >= 21
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_moravia_mod
+				years = 10
+				mode = add
+			}
+		}
+	}
+	boh_dev_brno = {
+		icon = city_building_advance
+		requires = {
+			boh_develop_moravia
+		}
+		enabled = {
+			location:brno = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 30
+			}
+		}
+		on_completion = {
+			location:brno = {
+				add_location_modifier = {
+					modifier = boh_brno_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_dev_olomouc = {
+		icon = encouragement_of_philosophers
+		requires = {
+			boh_develop_moravia
+		}
+		enabled = {
+			location:olomouc = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 25
+				has_building = building_type:university
+			}
+		}
+		on_completion = {
+			location:olomouc = {
+				add_location_modifier = {
+					modifier = boh_olomouc_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	mission_secure_silesia = {
+		icon = offensive_army
+		requires = {
+			pv_lostlands
+		}
+		enabled = {
+			area:silesia_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.8
+				}
+			}
+		}
+		duration = 0
+		on_completion = {
+			area:silesia_area = {
+				ordered_location_in_area = {
+					limit = {
+						owner ?= root
+					}
+					add_core = root
+					order_by = development
+					max = 10
+				}
+			}
+			trigger_event_non_silently = polish_mission_events.4
+		}
+		#ai_will_do = { value = 100 }
+	}
+	boh_moravian_wine = {
+		icon = crossroads_of_commerce
+		requires = {
+			boh_develop_moravia
+		}
+		enabled = {
+			location:znojmo = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+			}
+			produced_in_country:wine > 20
+		}
+		on_completion = {
+			location:znojmo = {
+				add_location_modifier = {
+					modifier = boh_znojmo_mod
+					years = -1
+					mode = add
+				}
+			}
+			add_country_modifier = {
+				modifier = boh_moravian_wine_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_jihlava_silver = {
+		icon = nor_bounties_of_the_sea
+		requires = {
+			boh_develop_moravia
+		}
+		enabled = {
+			location:jihlava = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+			}
+			produced_in_country:silver > 20
+		}
+		on_completion = {
+			location:jihlava = {
+				add_location_modifier = {
+					modifier = boh_jihlava_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_great_moravia_restored = {
+		icon = legacy_of_great_empires
+		requires = {
+			mission_secure_silesia
+			boh_control_slovakia
+			boh_conquer_bohemia
+		}
+		enabled = {
+			has_or_had_tag = F10
+		}
+		on_completion = {
+			trigger_event_non_silently = boh_events.50
+		}
+	}
+	boh_great_power_army = {
+		icon = glorious_arms
+		requires = {
+			boh_great_moravia_restored
+		}
+		enabled = {
+			army_tradition >= 25
+			regular_army_size >= 100
+			is_great_power = yes
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_military_power_mod
+				years = 50
+				mode = add
+			}
+		}
+	}
+	boh_black_army = {
+		icon = glorious_arms
+		requires = {
+			boh_great_power_army
+			mission_develop_polish_manufactories
+		}
+		enabled = {
+			army_tradition >= 50
+			regular_army_size >= 250
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_black_army_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_control_slovakia = {
+		icon = arduous_terrain
+		requires = {
+			morbasevent
+		}
+		enabled = {
+			any_owned_location = {
+				area = area:slovakia_area
+				count >= 40
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_slovakia_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_conquer_transylvania = {
+		icon = arduous_terrain
+		requires = {
+			boh_great_moravia_restored
+		}
+		enabled = {
+			any_owned_location = {
+				area = area:transylvania_area
+				count >= 30
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_transylvania_mod
+				years = 20
+				mode = add
+			}
+		}
+	}
+	boh_conquer_bohemia = {
+		icon = arduous_terrain
+		requires = {
+			morbasevent
+		}
+		enabled = {
+			any_owned_location = { area = area:bohemia_area is_owned_or_owned_by_subjects_of = root count >= 30 }
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_transylvania_mod2
+				years = 25
+				mode = add
+			}
+		}
+	}
+	boh_carpathian_defense = {
+		icon = a_fortified_border
+		requires = {
+			boh_control_slovakia
+		}
+		enabled = {
+			any_owned_location = {
+				region = region:carpathia_region
+				has_building = building_type:castle
+				count >= 3
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_carpathian_mod
+				years = 25
+				mode = add
+			}
+		}
+	}
+	boh_defend_against_turks = {
+		icon = a_fortified_border
+		requires = {
+			boh_conquer_transylvania
+		}
+		enabled = {
+			any_neighbor_country = {
+				religion.group = religion_group:muslim
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_antemurale_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	boh_push_into_balkans = {
+		icon = glorious_arms
+		requires = {
+			boh_great_moravia_restored
+		}
+		enabled = {
+			any_owned_location = {
+				region = region:balkan_region
+				count >= 100
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_balkan_conqueror_mod
+				years = -1
+				mode = add
+			}
+		}
+	}
+	wal_danubian_empire2 = {
+		icon = a_magnanimous_empire
+		requires = { intowala boh_black_army  }
+		final = yes
+		enabled = {
+			num_locations >= 400
+		}
+		on_completion = {
+			add_prestige = 100
+		add_country_modifier = { modifier = wal_danubian_empire_mod2 years = -1 mode = add }
+		form_country = formable_country:F13_f
+		}
+	}
+	intowala = {
+		icon = arduous_terrain
+		requires = {
+			boh_push_into_balkans boh_conquer_transylvania
+		}
+		enabled = {
+			any_owned_location = { area = area:wallachia_area is_owned_or_owned_by_subjects_of = root count >= 30 }
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = tur_bulgaria_subjugated2
+				years = 25
+				mode = add
+			}
+		}
+	}
+	boh_dev_pest = {
+		icon = city_building_advance
+		requires = {
+			boh_great_moravia_restored
+		}
+		enabled = {
+			location:pest = {
+				OR = {
+					location_rank = location_rank:city
+					location_rank = location_rank:megalopolis
+				}
+				development >= 25
+			}
+		}
+		on_completion = {
+			location:pest = {
+				add_location_modifier = {
+					modifier = boh_pest_mod
+					years = -1
+					mode = add
+				}
+			}
+		}
+	}
+	boh_fortress_europe = {
+		icon = lux_fortress_europe
+		requires = {
+			boh_great_moravia_restored
+		}
+		enabled = {
+			any_owned_location = {
+				OR = {
+					has_building = building_type:castle
+					has_building = building_type:bastion
+					has_building = building_type:star_fort
+					has_building = building_type:fortress
+				}
+				count >= 20
+			}
+		}
+		on_completion = {
+			add_country_modifier = {
+				modifier = boh_fortress_europe_mod
+				years = 100
+				mode = add
+			}
+		}
+	}
+	mission_secure_eastern_frontier = {
+		icon = defensive_army
+		requires = {
+			boh_conquer_transylvania
+		}
+		enabled = {
+			manpower >= 50
+		}
+		duration = 0
+		on_completion = {
+			add_legitimacy = 25
+			add_country_modifier = {
+				modifier = focus_military
+				years = 20
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_control_black_sea_coast = {
+		icon = maritime_advance_age_2
+		requires = {
+			mission_secure_eastern_frontier
+		}
+		enabled = {
+			area:crimea_area = {
+				any_location_in_area = {
+					OR = {
+						custom_tooltip = {
+							text = is_owner_generic_check
+							owner ?= root
+						}
+						custom_tooltip = {
+							text = is_owner_generic_subject_check
+							owner ?= {
+								is_subject_of = root
+							}
+						}
+					}
+					percent >= 0.6
+				}
+			}
+			navy_size >= 30
+		}
+		duration = 0
+		on_completion = {
+			add_country_modifier = {
+				modifier = black_sea_access
+				years = 25
+				mode = add
+			}
+		}
+		#ai_will_do = { value = 100 }
+	}
+	mission_develop_polish_manufactories = {
+		icon = LIV_crusader_forts
+		requires = {
+			boh_dev_olomouc
+			boh_dev_brno
+		}
+		enabled = {
+			any_owned_location = {
+				has_building_with_at_least_one_level = cloth_guild
+				count >= 12
+			}
+			any_owned_location = {
+				has_building_with_at_least_one_level = tools_guild
+				count >= 12
+			}
+			produced_in_country:cloth >= 30
+			produced_in_country:tools >= 30
+		}
+		duration = 0
+		on_completion = {
+			add_gold = {
+				value = monthly_income_trade_and_tax
+				multiply = 4
+			}
+			trigger_event_non_silently = polish_mission_events.67
+		}
+		#ai_will_do = { value = 100 }
+	}
+}

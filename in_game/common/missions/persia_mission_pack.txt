@@ -1,8 +1,8 @@
 ﻿persia_missions = {
-    icon = generic_capital_economy
+    icon = persia_missioneiu5
     repeatable = no
     chance = 3600   
-    player_playstyle = diplomatic
+    player_playstyle = administrative
     # ai_will_do = { value = 100 }   
 
     visible = {
@@ -17,8 +17,11 @@
             has_or_had_tag = HZP
             has_or_had_tag = MIH
             has_or_had_tag = BDS
-            has_or_had_tag = IRA
+            
         }
+        NOT = {
+			has_global_variable = per_mission_started
+		}
     }
 
     on_start = { 
@@ -27,6 +30,7 @@
             days = -1
             mode = add_and_extend
         }
+        set_global_variable = per_mission_started
     }
 
     on_abort = {
@@ -41,12 +45,12 @@
     # ==================== PHASE 1: PERSIAN UNIFICATION ====================
 
     mission_per_consolidate_persian_heartland = {
-        icon = centralization_advance
+        icon = pun_encourage_indo_persian_trade
         duration = 0
 
         enabled = {
             stability >= 30
-            legitimacy >= 50
+            legitimacy >= 100
 						##@@@put this in a seperate task
             # area:fars_area = {
             #     any_location_in_area = {
@@ -79,7 +83,7 @@
     }
 
     mission_per_develop_isfahan = {
-        icon = cultural_acceptance_advance
+        icon = centralize_the_states
         requires = { mission_per_consolidate_persian_heartland }
         duration = 0
 
@@ -114,11 +118,11 @@
         duration = 0
 
         enabled = {
-            "estate_power(estate_type:nobles_estate)" >= 0.25
+            "estate_power(estate_type:nobles_estate)" <= 0.35
             "estate_power(estate_type:crown_estate)" >= 0.15
             estate_satisfaction:nobles_estate >= 0.55
             stability >= 40
-            legitimacy >= 60
+            legitimacy >= 100
         }
 
         on_completion = {
@@ -140,12 +144,14 @@
         duration = 0
 
         enabled = {
+            owns = location:isfahan
             gold >= 500
-            monthly_income_trade_and_tax >= 50
+            monthly_income_trade_and_tax >= 100
             has_advance = banking_advance
         }
 
         on_completion = {
+            add_gold = -500
             location:isfahan = {
                 change_building_level_in_location = {
                     building = building_type:banking_office
@@ -166,7 +172,7 @@
 
         enabled = {
             culture:farsi_culture = {
-                cultural_tradition >= 650
+                cultural_influence >= 500
             }
             total_effective_building_levels:library >= 4
             any_owned_location = {
@@ -191,7 +197,7 @@
         duration = 0
 
         enabled = {
-            army_size_percentage >= 0.85
+            regular_army_size = 0.5
 						##@@@ to early for armory
             # any_owned_location = {
             #     has_building_with_at_least_one_level = armory
@@ -269,7 +275,7 @@
     }
 
     mission_per_integrate_lands = {
-        icon = vassal_management
+        icon = pun_encourage_indo_persian_trade
         requires = { 
             mission_per_secure_fars
         }
@@ -293,7 +299,7 @@
     }
 
     mission_per_spread_influence = {
-        icon = vassal_management
+        icon = ira_spread_of_persian_influence
         requires = { 
             mission_per_secure_fars
         }
@@ -303,8 +309,9 @@
             num_subjects >= 5
             any_subject = {
                 is_subject_type = vassal
-                count >= 2
                 liberty_desire < 50
+                total_population >= 50
+                count >= 2
             }
         }
 
@@ -318,7 +325,7 @@
     }
 
     mission_per_control_persian_gulf = {
-        icon = vassal_management
+        icon = ara_desperta_ferro
         requires = { 
             mission_per_integrate_lands
         }
@@ -350,7 +357,7 @@
     }
 
     mission_per_control_gulf_of_oman = {
-        icon = vassal_management
+        icon = gra_adaptative_trade
         requires = { 
             mission_per_integrate_lands
         }
@@ -719,7 +726,7 @@
     }
 
     mission_per_develop_persian_manufactories = {
-        icon = production_efficiency_advance
+        icon = ira_persian_rug_production
         requires = { mission_per_develop_agricultural_heartland }
         duration = 0
 
@@ -896,7 +903,7 @@
     }
 
     mission_per_sacred_cities = {
-        icon = pilgrimage
+        icon = chg_border_wars
         requires = { mission_per_secure_mesopotamia }
         duration = 0
 
@@ -957,7 +964,7 @@
     }
 
     mission_per_promote_persian_language = {
-        icon = cultural_acceptance_advance
+        icon = ira_spread_of_persian_influence
         requires = { mission_per_establish_isfahan_university }
         duration = 0
 
@@ -1005,8 +1012,7 @@
         duration = 0
 
         enabled = {
-            army_size_percentage >= 0.85
-            army_size >= 5
+            regular_army_size >= 10
         }
 
         on_completion = {
@@ -1019,7 +1025,7 @@
     }
 
     mission_per_establish_ghulams = {
-        icon = cavalry_advance
+        icon = ira_persian_horses
         requires = { mission_per_reform_persian_army }
         duration = 0
 
@@ -1047,12 +1053,12 @@
     }
 
     mission_per_develop_persian_artillery = {
-        icon = infantry_advance
+        icon = russian_artillery_yard
         requires = { mission_per_reform_persian_army }
         duration = 0
 
         visible = {
-            has_or_had_tag = IRA
+            
         }
         enabled = {
             has_embraced_institution = institution:artillery_institution
@@ -1136,7 +1142,7 @@
     mission_per_restore_sassanid_borders = {
         icon = imperial_ambitions
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = {
             mission_per_secure_mesopotamia
@@ -1190,7 +1196,7 @@
     mission_per_claim_the_legacy_of_cyrus = {
         icon = crown_power_advance_renaissance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { 
             mission_per_restore_sassanid_borders
@@ -1214,7 +1220,7 @@
     mission_per_establish_new_imperial_guard = {
         icon = glorious_arms
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { 
             mission_per_establish_ghulams
@@ -1222,7 +1228,7 @@
         duration = 0
 
         enabled = {
-            army_size >= 40
+            regular_army_size >= 40
             total_sub_unit_count:army_heavy_infantry >= 10
         }
 
@@ -1242,7 +1248,7 @@
     mission_per_azarbaijan_protectorate = {
         icon = diplomatic_influence
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { 
             mission_per_sacred_cities
@@ -1335,7 +1341,7 @@
     mission_per_establish_royal_road = {
         icon = inc_vertical_economy
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_control_the_silk_road }
         duration = 0
@@ -1372,7 +1378,7 @@
     mission_per_patron_of_arts = {
         icon = cultural_acceptance_advance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_promote_persian_culture }
         duration = 0
@@ -1396,7 +1402,7 @@
     mission_per_persian_miniatures = {
         icon = cultural_acceptance_advance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_patron_of_arts }
         duration = 0
@@ -1422,7 +1428,7 @@
     mission_per_establish_royal_library = {
         icon = library_advance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_establish_isfahan_university }
         duration = 0
@@ -1446,7 +1452,7 @@
     mission_per_embrace_renaissance = {
         icon = renaissance_thought
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_establish_royal_library }
         duration = 0
@@ -1475,7 +1481,7 @@
     mission_per_secure_the_levant = {
         icon = glorious_arms
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { 
             mission_per_secure_mesopotamia
@@ -1564,7 +1570,7 @@
     mission_per_expand_into_india = {
         icon = expansionism
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_control_persian_gulf_trade }
         duration = 0
@@ -1600,7 +1606,7 @@
     mission_per_dominate_indian_ocean_trade = {
         icon = maritime_advance_age_4
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_expand_into_india }
         duration = 0
@@ -1621,54 +1627,19 @@
         }
     }
 
-    mission_per_develop_hormuz = {
-        icon = merchants_and_trade
-        visible = {
-            has_or_had_tag = IRA
-        }
-        requires = { mission_per_control_persian_gulf_trade }
-        duration = 0
-
-        enabled = {
-            location:hormuz = {
-                is_owned_or_owned_by_subjects_of = root
-            }
-            location:hormuz = {
-                development > 30
-            }
-        }
-
-        on_completion = {
-            location:hormuz = {
-                add_location_modifier = {
-                    modifier = per_hormuz_trade_center
-                    years = -1
-                    mode = add_and_extend
-                }
-                change_building_level_in_location = {
-                    building = building_type:market_warehouse
-                    value = 1
-                }
-            }
-            add_estate_satisfaction = {
-                type = estate_type:burghers_estate
-                value = estate_satisfaction_severe_bonus
-            }
-        }
-    }
 
     # --- Administrative & Government Reforms ---
 
     mission_per_tax_reform = {
         icon = court_accounting
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_centralize_authority }
         duration = 0
 
         enabled = {
-            monthly_income_trade_and_tax >= 300
+            monthly_income_trade_and_tax >= 1300
             "estate_power(estate_type:crown_estate)" >= 0.30
             estate_satisfaction:burghers_estate >= 0.60
         }
@@ -1687,15 +1658,14 @@
     mission_per_develop_military_academy = {
         icon = glorious_arms
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_establish_new_imperial_guard }
         duration = 0
 
         enabled = {
-            any_owned_location = {
-                has_building_with_at_least_one_level = war_college
-                count >= 4
+            capital = {
+                has_building = building_type:war_college
             }
             army_tradition >= 60
             has_embraced_institution = institution:military_revolution
@@ -1714,23 +1684,23 @@
     mission_per_create_elite_corps = {
         icon = professional_armies_advance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_develop_military_academy }
         duration = 0
 
         enabled = {
-            army_tradition >= 90
-            army_size >= 120
+            army_tradition >= 50
+            regular_army_size >= 120
             total_sub_unit_count:army_heavy_cavalry >= 15
             total_sub_unit_count:army_heavy_infantry >= 15
         }
 
         on_completion = {
-            add_country_modifier = {
-                modifier = per_elite_corps
-                years = 35
-                mode = add_and_extend
+             capital = {
+                create_sub_unit = unit_type:a_gendarmerie
+                create_sub_unit = unit_type:a_gendarmerie
+                create_sub_unit = unit_type:a_gendarmerie
             }
         }
     }
@@ -1740,7 +1710,7 @@
     mission_per_establish_diplomatic_network = {
         icon = diplomatic_influence
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_centralize_authority }
         duration = 0
@@ -1766,7 +1736,7 @@
     mission_per_mediate_regional_conflicts = {
         icon = diplomatic_range_age_1
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_establish_diplomatic_network }
         duration = 0
@@ -1796,9 +1766,9 @@
     }
 
     mission_per_secure_tributaries = {
-        icon = vassal_management
+        icon = renaissance_thought
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { 
             mission_per_mediate_regional_conflicts
@@ -1829,7 +1799,7 @@
     mission_per_develop_irrigation = {
         icon = efficient_mining
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_develop_rural_economy }
         duration = 0
@@ -1859,7 +1829,7 @@
     mission_per_urban_development = {
         icon = global_supply_limit_modifier_advance_5
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_develop_isfahan }
         duration = 0
@@ -1871,14 +1841,14 @@
             }
             any_owned_location = {
                 location_rank = location_rank:megalopolis
-                count >= 2
+                count >= 1
             }
         }
 
         on_completion = {
             add_country_modifier = {
                 modifier = per_urban_development
-                years = -1
+                years = 25
                 mode = add_and_extend
             }
         }
@@ -1889,14 +1859,13 @@
     mission_per_spread_persian_culture = {
         icon = cultural_acceptance_advance
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_promote_persian_language }
         duration = 0
 
         enabled = {
             OR = {
-                total_effective_building_levels:printing_press_shop >= 12
                 total_effective_building_levels:printing_manufactory >= 10
                 total_effective_building_levels:printing_mill >= 8
             }
@@ -1915,7 +1884,7 @@
     mission_per_persian_diplomacy = {
         icon = diplomatic_training
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_establish_diplomatic_network }
         duration = 0
@@ -1945,7 +1914,7 @@
     mission_per_persian_science = {
         icon = research_effort
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = { mission_per_embrace_renaissance }
         duration = 0
@@ -1969,7 +1938,7 @@
     mission_per_persian_renaissance = {
         icon = renaissance_thought
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = {
             mission_per_persian_miniatures
@@ -1992,74 +1961,11 @@
 
     # zoroastrian religion branch
 
-    mission_per_restore_ancient_zoroastrian_faith = {
-        icon = glory_of_rome
-        visible = {
-            has_or_had_tag = IRA
-        }
-        requires = {  }
-        duration = 0
-
-        enabled = {
-            OR = {
-                religion = religion:shia
-                religion = religion:sunni
-            }
-            "estate_power(estate_type:clergy_estate)" >= 0.25
-            ##@@@unlucky i cant find any holy sites for zoro
-            # religion:sunni = {
-            #     any_holy_site_in_religion = {
-            #         location = {
-            #             owner = scope:this_country
-            #         }
-            #     }
-	        # }
-
-            owns = location:yazd
-            owns = location:kashmar
-            owns = location:istakhr
-
-        }
-
-        on_completion = {
-            trigger_event_non_silently = persian_mission_events.1
-        }
-    }
-
-    mission_per_spread_zoroastrian_unity = {
-        icon = renaissance_thought
-        visible = {
-            religion = religion:zoroastrian
-        }
-        requires = { mission_per_restore_ancient_zoroastrian_faith }
-        duration = 0
-
-        enabled = {
-            stability >= 50
-            "estate_power(estate_type:clergy_estate)" >= 0.30
-        }
-
-        on_completion = {
-            capital = {
-                area = {
-                    every_location_in_area = {
-                        every_pop = {
-                            limit = { religion != religion:zoroastrian }
-                            split_pop = {
-                                fraction = 0.4
-                                religion = religion:zoroastrian
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 
     mission_per_restore_persian_empire = {
         icon = imperial_ambitions
         visible = {
-            has_or_had_tag = IRA
+            
         }
         requires = {
             mission_per_restore_sassanid_borders

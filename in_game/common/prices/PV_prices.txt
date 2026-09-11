@@ -96,9 +96,9 @@ TRY_REPLACE:build_paved_road = {
 }
 
 TRY_REPLACE:build_modern_road = {
-	gold = 200
+	gold = 175
 }
 
 TRY_REPLACE:build_railroad = {
-	gold = 1000
+	gold = 500
 }

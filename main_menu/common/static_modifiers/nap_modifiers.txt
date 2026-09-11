@@ -1,5 +1,5 @@
 nap_new_capital_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_monthly_prosperity = 0.1
 }
 
@@ -78,7 +78,7 @@ nap_influence_over_the_papacy_mod = {
 }
 
 nap_the_bells_fall_silent_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	stability_cost_efficiency = 0.10
 	monthly_legitimacy = 0.05
 }
@@ -125,7 +125,7 @@ nap_king_of_france_mod = {
 }
 
 nap_mediterranean_greatest_city_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_production_efficiency = 0.10
 	local_monthly_development = 0.001
 	local_population_growth = 0.002

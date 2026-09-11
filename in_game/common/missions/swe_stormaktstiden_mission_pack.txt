@@ -1,20 +1,21 @@
 ﻿swe_stormaktstiden_mission_pack = {
 	icon = nmt_scandinavia
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = SWE
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = swe_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = swe_mission_started }
-	on_completion = { remove_variable = swe_mission_started }
-	on_abort = { remove_variable = swe_mission_started }
+	on_start = { set_global_variable = swe_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -359,7 +360,7 @@
 		enabled = {
 			OR = {
 				"estate_power(estate_type:crown_estate)" >= 0.25
-				"estate_power(estate_type:nobles_estate)" >= 0.50
+				"estate_power(estate_type:nobles_estate)" <= 0.35
 			}
 		}
 		on_completion = {
@@ -446,7 +447,9 @@
 					defender_leader = root
 				}
 				any_war_participant = {
-					religion.group = religion_group:muslim
+					NOT = {
+						religion = religion:catholic
+					}
 					NOT = { this = root }
 				}
 			}
@@ -751,11 +754,15 @@
 		icon = dan_scanian_regiment
 		requires = { swe_absolutism }
 		enabled = {
-			army_tradition >= 50
-			army_size >= 30
+			army_tradition >= 25
+			regular_army_size >= 30
+			current_year >= 1500
 		}
 		on_completion = {
 			add_country_modifier = { modifier = swe_karoliner_mod years = -1 mode = add }
+			capital = {
+				create_sub_unit = unit_type:a_caroleans
+			}
 		}
 	}
 

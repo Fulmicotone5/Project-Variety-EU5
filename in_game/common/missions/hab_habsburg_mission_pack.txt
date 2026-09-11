@@ -1,20 +1,21 @@
 ﻿hab_habsburg_mission_pack = {
 	icon = nmt_austria
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = HAB
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = hab_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = hab_mission_started }
-	on_completion = { remove_variable = hab_mission_started }
-	on_abort = { remove_variable = hab_mission_started }
+	on_start = { set_global_variable = hab_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -86,7 +87,7 @@
 	}
 
 	hab_imperial_reform = {
-		icon = administrative_icon
+		icon = government_reforms
 		requires = { hab_charlemagne_legacy }
 		enabled = {
 			OR = {
@@ -95,10 +96,7 @@
 					num_locations >= 200
 				}
 				any_owned_location = {
-					OR = {
-						owner = root
-						owner = { is_subject_of = root }
-					}
+					is_owned_or_owned_by_subjects_of = root
 					count >= 500
 				}
 			}
@@ -470,28 +468,14 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hab_croatia_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hab_croatia_mod years = 10 mode = add }
 		}
 	}
 
-	hab_ottoman_menace = {
-		icon = crusader_tradition
-		requires = { hab_secure_croatia }
-		enabled = {
-			any_owned_location = {
-				region = region:balkan_region
-				is_owned_or_owned_by_subjects_of = root
-				count >= 30
-			}
-		}
-		on_completion = {
-			add_country_modifier = { modifier = hab_ottoman_mod years = -1 mode = add }
-		}
-	}
 
 	hab_liberate_balkans = {
 		icon = glorious_arms
-		requires = { hab_ottoman_menace }
+		requires = { hab_secure_croatia }
 		enabled = {
 			any_owned_location = {
 				region = region:balkan_region
@@ -543,9 +527,11 @@
 			"estate_power(estate_type:crown_estate)" >= 0.25
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hab_stadtrecht_mod years = -1 mode = add }
-			set_variable = { name = hab_wiener_stadtrecht_unlocked value = 1 }
-			set_variable = { name = hab_landstadt_unlocked value = 1 }
+			custom_tooltip = {
+				text = hab_stadtrechts
+				set_variable = { name = hab_wiener_stadtrecht_unlocked value = 1 }
+				set_variable = { name = hab_landstadt_unlocked value = 1 }
+			}
 		}
 	}
 
@@ -804,7 +790,7 @@
 			regular_army_size >= 20
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hab_army_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hab_army_mod years = 25 mode = add }
 		}
 	}
 
@@ -813,9 +799,14 @@
 		requires = { hab_austrian_army hab_crown_of_spain }
 		enabled = {
 			army_tradition >= 55
+			has_embraced_institution = institution:pike_and_shot
 		}
 		on_completion = {
 			add_country_modifier = { modifier = hab_tercios_mod years = -1 mode = add }
+			capital = {
+                create_sub_unit = unit_type:a_tercio
+                create_sub_unit = unit_type:a_tercio
+            }
 		}
 	}
 
@@ -951,7 +942,7 @@
 		enabled = {
 			prestige >= 85
 			num_locations >= 600
-			monthly_income_trade_and_tax >= 500
+			monthly_income_trade_and_tax >= 5000
 		}
 		on_completion = {
 			trigger_event_non_silently = hab_events.99

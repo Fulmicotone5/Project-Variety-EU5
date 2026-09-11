@@ -16,7 +16,7 @@ wal_voivode_mod = {
 }
 
 wal_boyar_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	nobles_estate_agenda_impact = 0.10
 	nobles_estate_target_satisfaction = 0.05
 }
@@ -82,6 +82,8 @@ wal_hegemony_mod = {
 	icon = legacy_of_great_empires
 	power_projection = 5
 	monthly_prestige = 0.05
+	government_reform_slots = 1
+	num_local_governors = 1
 }
 
 wal_unity_mod = {
@@ -148,9 +150,18 @@ wal_treasury_mod = {
 
 wal_danubian_empire_mod = {
 	icon = legacy_of_great_empires
-	land_cost_going_upstream = -8
-	land_cost_going_downstream = -8
+	land_cost_going_upstream = -2
+	land_cost_going_downstream = -2
 	monthly_legitimacy = 0.10
 	global_crown_estate_power = 0.20
+}
+wal_danubian_empire_mod2 = {
+	icon = legacy_of_great_empires
+	land_cost_going_upstream = -2
+	land_cost_going_downstream = -2
+	monthly_legitimacy = 0.10
+	global_crown_estate_power = 0.25
+	government_reform_slots = 1
+	government_size = 2
 }
 

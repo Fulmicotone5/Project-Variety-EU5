@@ -69,8 +69,9 @@ cas_catholic_monarchs_mod = {
 cas_absolutism_mod = {
 	icon = crown_power_advance_renaissance
 	government_size = 1
-	global_crown_estate_power = 0.20
-	smooth_administration = 0.15
+	global_crown_estate_power = 0.75
+	court_spending_efficiency = -0.05
+	monthly_towards_absolutism = societal_value_huge_monthly_move
 }
 
 cas_cortes_mod = {

@@ -6,15 +6,16 @@
 
 	visible = {
 		game_has_missions_enabled = yes
-		has_or_had_tag = HSN
+	has_or_had_tag = HSN
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = ayy_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = ayy_mission_started }
-	on_completion = { remove_variable = ayy_mission_started }
-	on_abort = { remove_variable = ayy_mission_started }
+	on_start = { set_global_variable = ayy_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -34,25 +35,20 @@
 		requires = { ayy_rise_of_ayyubids }
 		enabled = {
 			OR = {
-				NOT = { country_exists = c:MAM }
-				c:MAM = { is_rival_of = root }
-				opinion = { target = c:MAM value <= 0 }
+				NOT = { country_exists = c:KOJ }
+				c:KOJ = { is_rival_of = root }
+				opinion = { target = c:KOJ value <= 0 }
 			}
+		}
+		bypass = {
+			NOT = { country_exists = c:KOJ }
 		}
 		on_completion = {
 			if = {
 				limit = {
-					country_exists = c:MAM
-					c:MAM = { has_owner = location:aleppo }
+					country_exists = c:KOJ
+					c:KOJ = { has_owner = location:aleppo }
 				}
-				add_casus_belli = {
-					type = casus_belli:cb_conquer_province
-					target = location:aleppo.top_owner
-					years = 60
-				}
-			}
-			if = {
-				limit = { location:aleppo = { has_owner = yes } }
 				add_casus_belli = {
 					type = casus_belli:cb_conquer_province
 					target = location:aleppo.top_owner
@@ -87,7 +83,7 @@
 			owns_or_non_sovereign_subject_owns = location:alexandria
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_lower_egypt_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_lower_egypt_mod years = 15 mode = add }
 		}
 	}
 
@@ -117,7 +113,7 @@
 			owns_or_non_sovereign_subject_owns = location:aswan
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_upper_egypt_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_upper_egypt_mod years = 15 mode = add }
 		}
 	}
 
@@ -137,8 +133,11 @@
 		requires = { ayy_seize_cairo }
 		enabled = {
 			location:cairo = {
-				development >= 35
-				total_building_levels >= 80
+				owner = root
+				population >= 350
+				development >= 50
+				total_building_levels >= 200
+				is_capital = yes
 			}
 		}
 		on_completion = {
@@ -263,7 +262,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_iraq_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_iraq_mod years = 50 mode = add }
 		}
 	}
 
@@ -356,17 +355,6 @@
 		}
 	}
 
-	ayy_arabian_trade = {
-		icon = crossroads_of_commerce
-		requires = { ayy_south_yemen }
-		enabled = {
-			navy_size >= 10
-			monthly_income_trade_and_tax >= 100
-		}
-		on_completion = {
-			add_country_modifier = { modifier = ayy_arabian_trade_mod years = -1 mode = add }
-		}
-	}
 
 	# ==================== E: 内政・宗教 ====================
 
@@ -438,11 +426,11 @@
 		icon = a_magnanimous_empire
 		requires = { ayy_mesopotamia_trade }
 		enabled = {
-			monthly_income_trade_and_tax >= 400
-			produced_in_country:silk > 15
+			monthly_income_trade_and_tax >= 1400
+			produced_in_country:silk > 25
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_silk_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_silk_mod years = 50 mode = add }
 		}
 	}
 
@@ -464,11 +452,11 @@
 		icon = ship_building_advance
 		requires = { ayy_seize_cairo }
 		enabled = {
-			navy_size >= 15
+			navy_size >= 25
 			navy_tradition >= 30
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_fleet_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_fleet_mod years = 25 mode = add }
 		}
 	}
 
@@ -491,11 +479,10 @@
 		requires = { ayy_nile_fleet }
 		enabled = {
 			navy_tradition >= 40
-			trade_sea_efficiency >= 0.05
 			total_sub_unit_count:navy_heavy_ship >= 30
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_navy_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_navy_mod years = 50 mode = add }
 		}
 	}
 
@@ -536,7 +523,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = ayy_mosque_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ayy_mosque_mod years = 50 mode = add }
 		}
 	}
 
@@ -559,12 +546,12 @@
 
 	ayy_new_saladin = {
 		icon = legacy_of_great_empires
-		requires = { ayy_sultan_of_egypt_syria ayy_arabian_trade ayy_silk_road_control ayy_kurdish_cavalry }
+		requires = { ayy_sultan_of_egypt_syria ayy_south_yemen ayy_silk_road_control }
 		final = yes
 		enabled = {
 			num_locations >= 600
-			monthly_income_trade_and_tax >= 800
-			prestige >= 85
+			monthly_income_trade_and_tax >= 2800
+			prestige >= 50
 		}
 		on_completion = {
 			trigger_event_non_silently = ayy_events.99

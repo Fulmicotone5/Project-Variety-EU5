@@ -97,15 +97,15 @@
  flo_push_into_lombardy_desc: "Beyond Tuscany, the time has come to extend our domain into the heart of northern Italy. Conflict with Milan, Genoa, and Venice is inevitable."
  flo_push_into_lombardy_tooltip: "Own 40 or more locations in the Italy region"
 
- flo_march_on_rome: "March on Rome"
- flo_march_on_rome_desc: "He who controls Rome controls Italy. By bringing the ancient capital of the Roman Empire into our domain, Florence stakes a claim to legitimacy that none can rival."
+ flo_march_on_rome: "Crossing the Rubicone"
+ flo_march_on_rome_desc: "He who controls Rome controls Italy. By bringing the ancient capital of the Roman Empire into our domain, Florence reached a prestige that none can rival."
  flo_march_on_rome_tooltip: "Rome is owned by us or a subject"
 
- flo_the_new_rome: "The New Rome"
- flo_the_new_rome_desc: "Florence, having conquered Rome, now dominates most of the Italian Peninsula and has become an empire. The time has come to build a new Rome."
+ flo_the_new_rome: "The Italian Confederation"
+ flo_the_new_rome_desc: "Florence has secured its standing as a strong, self-reliant power in Italy, dependent on neither Pope, Emperor, nor France."
  flo_the_new_rome_tooltip: "Own 80 or more locations in the Italy region"
 
- flo_il_magnifico_of_italy: "Il Magnifico of Italy"
+ flo_il_magnifico_of_italy: "Il Magnifico"
  flo_il_magnifico_of_italy_desc: "Just as Lorenzo de' Medici was called 'Il Magnifico,' all of Florence has now become the 'Magnificent One' of Italy."
  flo_il_magnifico_of_italy_tooltip: "Own 150 or more locations in the Italy region"
 
@@ -185,7 +185,7 @@
  STATIC_MODIFIER_DESC_flo_push_into_lombardy_mod: "The advance into northern Italy raises military tradition from battle and royal authority."
  STATIC_MODIFIER_NAME_flo_the_new_rome_mod: "The New Rome"
  STATIC_MODIFIER_DESC_flo_the_new_rome_mod: "The conquest of Rome permanently raises monthly prestige and legitimacy."
- STATIC_MODIFIER_NAME_flo_il_magnifico_of_italy_mod: "Il Magnifico of Italy"
+ STATIC_MODIFIER_NAME_flo_il_magnifico_of_italy_mod: "Il Magnifico"
  STATIC_MODIFIER_DESC_flo_il_magnifico_of_italy_mod: "The status as master of Italy permanently raises cultural tradition and royal authority."
  STATIC_MODIFIER_NAME_flo_medici_oriental_press_mod: "Heritage of Eastern Learning"
  STATIC_MODIFIER_DESC_flo_medici_oriental_press_mod: "Collecting and printing Eastern manuscripts raises the skill of new artists and literacy."

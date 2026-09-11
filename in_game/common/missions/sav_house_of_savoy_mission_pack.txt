@@ -1,12 +1,15 @@
 ﻿sav_house_of_savoy_mission_pack = {
 	icon = nmt_italy
 	repeatable = no
-	player_playstyle = military
+		player_playstyle = diplomatic
+
+
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
-		has_or_had_tag = SAV
+		always = no
+		# has_or_had_tag = SAV TODO
 		NOR = { country_type = pop country_type = building }
 	}
 

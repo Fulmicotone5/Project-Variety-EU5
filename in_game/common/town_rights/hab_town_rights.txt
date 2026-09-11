@@ -8,6 +8,7 @@ wiener_stadtrecht_town_rights = {
 		local_market_access = 0.10
 		local_trade_center_power = 0.10
 		local_merchant_capacity_modifier = 0.20
+		local_marketplace_building_levels = 5
 	}
 
 	potential = {

@@ -1570,8 +1570,6 @@
 		
 		enabled = {
 			is_hegemon = yes
-
-			total_development >= 4500
 			monthly_income_total >= 2500
 			
 		}

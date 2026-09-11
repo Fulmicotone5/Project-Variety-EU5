@@ -5,22 +5,11 @@ daneflavor.1 = {
 	title = daneflavor.1.title
 	desc = daneflavor.1.desc
 
-	fire_only_once = yes
-
 
 	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_neutral.dds"
 
-	dynamic_historical_event = {
-		tag = P01
-		from = 1300.1.1
-		to = 1338.1.1
-		monthly_chance = 100
-	}
 
 
-	trigger = {
-		has_or_had_tag = P01
-	}
 
 
 	option = {
@@ -958,29 +947,13 @@ daneflavor.20 = {
 	desc = daneflavor.20.desc
 	image = "gfx/interface/illustrations/pv_events/moving.dds"
 
-	fire_only_once = yes
+
 	immediate = {
 		c:DAN = {
 			save_scope_as = target_country
 		}
 	}
 
-	dynamic_historical_event = {
-		tag = P01
-		from = 1369.1.1
-		to = 1800.1.1
-		monthly_chance = 1
-	}
-	trigger = {
-		religion = religion:norse
-		c:DAN = {
-			or = {
-				own_entire_province = province_definition:zealand_province
-				owns = location:roskilde
-			}
-		}
-	}
-	
 
 	option = {
 		name = daneflavor.20.a
@@ -1314,21 +1287,7 @@ daneflavor.199 = {
 	desc = daneflavor.199.desc
 	image = "gfx/interface/illustrations/pv_events/tour_arrival_norse_welcome.dds"
 
-	fire_only_once = yes
-
-	dynamic_historical_event = {
-		tag = P01
-		from = 1370.1.1
-		to = 1800.1.1
-		monthly_chance = 100
-	}
 		
-
-	trigger = {
-		religion = religion:norse
-		own_entire_province = province_definition:zealand_province
-		is_integrating = province_definition:zealand_province
-	}
 
 	option = {
 		name = daneflavor.199.a

@@ -41,8 +41,8 @@
 	}
 
 	capital_modifier = {
-		cultural_tradition = 0.20
-		cultural_influence = 0.20
+		cultural_tradition_modifier = 0.20
+		cultural_influence_modifier = 0.20
 		global_crown_estate_power = 0.50
 	}
 

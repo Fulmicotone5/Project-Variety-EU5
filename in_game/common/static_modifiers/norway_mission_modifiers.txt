@@ -395,6 +395,8 @@ norse_renaissance = {
 	naval_morale_modifier = 0.08
 	land_morale_modifier = 0.08
 	global_integration_speed_modifier = 0.15
+	government_reform_slots = 1
+	government_size = 1
 }
 
 norse_golden_age = {
@@ -626,23 +628,23 @@ hall_of_the_slain = {
 	icon = glorious_arms
 	# Norway becomes an unmatched war machine...
 	discipline = 0.10
-	land_morale_modifier = 0.25
+	land_morale_modifier = 0.15
 	naval_morale_modifier = 0.15
 	global_manpower_modifier = 0.30
-	army_tradition_decay = -0.05
+	army_tradition_decay = -0.005
 	prestige_decay = -0.005
 	# ...but Odin's price is paid every month, not just once
-	tax_income_efficiency = -0.25
+	tax_income_efficiency = -0.2
 	trade_income = -0.20
-	global_production_efficiency = -0.15
+	global_production_efficiency = -0.1
 }
 
 glory_without_price = {
 	game_data = { category = country }
 	icon = glorious_arms
-	army_tradition_decay = -0.02
-	global_manpower_modifier = 0.08
-	land_morale_modifier = 0.05
+	army_tradition_decay = -0.001
+	global_manpower_modifier = 0.05
+	land_morale_modifier = 0.025
 }
 
 hladirs_refusal = {

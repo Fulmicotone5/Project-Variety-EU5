@@ -62,7 +62,6 @@
 				# region = region:wales_region
 				count >= 16
 			}
-			total_development >= 160	
 		}
 		
 		duration = 0

@@ -6,13 +6,18 @@
 
 ara_reconquest_of_granada_mod = {
 	icon = generic_conquer_province
-	tolerance_heretic = 1
+	tolerance_own = 0.25
 	monthly_legitimacy = 0.05
 }
 
 ara_vassalize_navarre_mod = {
 	icon = generic_conquer_province
 	diplomatic_reputation = 1
+}
+
+tou_shield_of_catharism_mod = {
+	monthly_legitimacy = 0.05
+	global_pop_conversion_speed_modifier = 0.25
 }
 
 ara_intervene_in_castile_mod = {
@@ -27,12 +32,12 @@ ara_union_of_the_crowns_mod = {
 }
 
 ara_war_of_the_remences_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	stability_cost_efficiency = 0.10
 }
 
 ara_catalan_nobility_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	nobles_estate_satisfaction_recovery = 0.001
 }
 
@@ -49,8 +54,8 @@ ara_pacify_sardinia_mod = {
 
 ara_consulate_of_the_sea_mod = {
 	icon = merchants_and_trade
-	trade_income = 0.10
-	global_merchant_capacity_modifier = 0.10
+	trade_income = 0.05
+	global_merchant_capacity_modifier = 0.05
 }
 
 ara_dominate_genoa_mod = {
@@ -72,7 +77,7 @@ ara_invade_occitania_mod = {
 
 ara_humiliate_provence_mod = {
 	icon = generic_conquer_province
-	global_naval_supplies_output_modifier = 0.05
+	num_local_governors = 1
 }
 
 ara_aragonese_navy_mod = {
@@ -107,8 +112,8 @@ ara_conquer_tunis_mod = {
 
 ara_occupy_alexandria_mod = {
 	icon = generic_conquer_province
-	trade_income = 0.20
-	global_merchant_capacity_modifier = 0.20
+	trade_income = 0.1
+	global_merchant_capacity_modifier = 0.15
 }
 
 ara_claims_on_athens_mod = {
@@ -158,10 +163,19 @@ ara_aragonese_renaissance_mod = {
 ara_golden_century_mod = {
 	icon = crown_power_advance_renaissance
 	monthly_prestige = 0.10
-	land_morale = 0.1
+	land_morale_modifier = 0.1
 	government_reform_slots = 1
 	government_size = 1
 	num_naval_governors = 1
+}
+
+ara_golden_century_mod6 = {
+	icon = crown_power_advance_renaissance
+	monthly_prestige = 0.10
+	land_morale_modifier = 0.1
+	discipline = 0.1
+	government_reform_slots = 2
+	government_size = 1
 }
 
 ara_golden_century_mod2 = {
@@ -170,8 +184,21 @@ ara_golden_century_mod2 = {
 	trade_income = 0.10
 	government_reform_slots = 1
 	government_size = 1
-	num_local_governors = 1
 }
+ara_golden_century_mod3 = {
+	global_pop_conversion_speed_modifier = 0.5
+	tolerance_heretic = -1
+}
+
+ara_golden_century_mod4 = {
+	global_pop_conversion_speed_modifier = 0.25
+}
+ara_golden_century_mod5 = {
+	monthly_prestige = 0.20
+	monthly_legitimacy = 0.10
+	tolerance_own = 1
+}
+
 
 ara_city_of_the_worlds_desire_mod = {
 	icon = crown_power_advance_renaissance
@@ -200,11 +227,13 @@ ara_gold_coast_trade_mod = {
 ara_discover_the_new_world_mod = {
 	icon = generic_colonize_explore
 	global_migration_speed_modifier = 0.10
+	colonial_migration_size_modifier = 0.25
+	colonial_maintenance_efficiency = 0.40
 }
 
 ara_caribbean_foothold_mod = {
 	icon = generic_colonize_explore
-	global_migration_attraction = 0.10
+	trade_income = 0.1
 }
 
 ara_conquest_of_the_incas_mod = {

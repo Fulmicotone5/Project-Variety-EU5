@@ -11,6 +11,7 @@ pro_etats_de_provence_town_rights = {
 		local_nobles_estate_power = 0.10
 		local_clergy_estate_power = 0.10
 		local_burghers_estate_power = 0.10
+		local_monthly_development = 0.001
 	}
 
 	country_modifier = {
@@ -24,6 +25,7 @@ pro_etats_de_provence_town_rights = {
 	}
 
 	allow = {
+		has_variable = statutesofaix
 	}
 
 	color = map_sardinia
@@ -49,6 +51,7 @@ pro_marseille_free_port_town_rights = {
 
 	allow = {
 		scope:target = location:marseille
+		has_variable = statutesofaix
 	}
 
 	color = map_sardinia

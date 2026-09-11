@@ -1,20 +1,21 @@
 ﻿wal_wallachia_mission_pack = {
 	icon = nmt_wallachia
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = diplomatic
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = WAL
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = wal_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = wal_mission_started }
-	on_completion = { remove_variable = wal_mission_started }
-	on_abort = { remove_variable = wal_mission_started }
+	on_start = { set_global_variable = wal_mission_started }
 
 	# ===== ROOT =====
 
@@ -105,7 +106,7 @@
 		enabled = {
 			location:bucharest = {
 				owner = root
-				total_building_levels >= 12
+				location_rank = location_rank:city
 			}
 		}
 		on_completion = {
@@ -161,7 +162,7 @@
 		enabled = {
 			location:targoviste = {
 				owner = root
-				total_building_levels >= 12
+				total_building_levels >= 100
 			}
 		}
 		on_completion = {
@@ -184,10 +185,7 @@
 				country_exists = c:MOL
 				any_owned_location = {
 					area = area:moldavia_area
-					OR = {
-						owner = root
-						owner = { is_subject_of = root }
-					}
+					is_owned_or_owned_by_subjects_of = root
 					count >= 1
 				}
 			}
@@ -229,17 +227,14 @@
 		enabled = {
 			any_owned_location = {
 				area = area:macedonia_area
-				owner = root
 				count >= 5
 			}
 			any_owned_location = {
 				area = area:thrace_area
-				owner = root
 				count >= 5
 			}
 			any_owned_location = {
 				area = area:bulgaria_area
-				owner = root
 				count >= 5
 			}
 		}
@@ -294,8 +289,8 @@
 		enabled = {
 			any_owned_location = {
 				area = area:transylvania_area
-				owner = root
-				count >= 20
+				is_owned_or_owned_by_subjects_of = root
+				count >= 30
 			}
 		}
 		on_completion = {
@@ -328,19 +323,7 @@
 		}
 	}
 
-	wal_reclaim_morea = {
-		icon = moe_reclaiming_the_peloponnese_advance
-		requires = { wal_drive_out_turks }
-		enabled = {
-			any_owned_location = {
-				area = area:morea_area
-				count >= 10
-			}
-		}
-		on_completion = {
-			add_country_modifier = { modifier = wal_morea_mod years = 20 mode = add }
-		}
-	}
+
 
 	# ===== 第6階層 =====
 
@@ -362,11 +345,10 @@
 		icon = military_border
 		requires = { wal_conquer_transylvania }
 		enabled = {
-			province_definition:szekelyfold_province = {
-				any_location_in_province_definition = {
-					count >= 8
-					is_core_of = root
-				}
+			any_owned_location = {
+				province_definition = province_definition:szekelyfold_province
+				count >= 8
+				NOT = {integration_level = conquered}
 			}
 		}
 		on_completion = {
@@ -378,11 +360,10 @@
 		icon = free_cities
 		requires = { wal_conquer_transylvania }
 		enabled = {
-			province_definition:kiralyfold_province = {
-				any_location_in_province_definition = {
-					count >= 6
-					is_core_of = root
-				}
+			any_owned_location = {
+				province_definition = province_definition:kiralyfold_province
+				count >= 6
+				NOT = {integration_level = conquered}
 			}
 		}
 		on_completion = {
@@ -405,25 +386,10 @@
 		}
 	}
 
-	wal_heir_of_rome = {
-		icon = heirs_of_rome
-		requires = { wal_liberate_serbia wal_reclaim_morea }
-		enabled = {
-			NOT = { country_exists = c:BYZ }
-			any_owned_location = {
-				area = area:thrace_area
-				is_owned_or_owned_by_subjects_of = root
-				count >= 20
-			}
-		}
-		on_completion = {
-			add_country_modifier = { modifier = wal_heir_of_rome_mod years = 20 mode = add }
-		}
-	}
 
 	wal_ottoman_downfall = {
 		icon = imperial_ambitions
-		requires = { wal_liberate_serbia wal_reclaim_morea }
+		requires = { wal_liberate_serbia  }
 		enabled = {
 			NOT = { country_exists = c:TUR }
 		}
@@ -447,7 +413,7 @@
 
 	wal_reclaim_constantinople = {
 		icon = glory_of_rome
-		requires = { wal_ottoman_downfall wal_heir_of_rome }
+		requires = { wal_ottoman_downfall  }
 		enabled = {
 			location:constantinople = {
 				owner = root
@@ -464,12 +430,7 @@
 		icon = rmn_the_descendants_of_trajan
 		requires = { wal_carpathian_hegemony }
 		enabled = {
-			this = c:RMN
-			any_owned_location = {
-				region = region:carpathia_region
-				owner = root
-				count >= 120
-			}
+			has_or_had_tag = RMN
 		}
 		on_completion = {
 			add_country_modifier = { modifier = wal_unity_mod years = -1 mode = add }
@@ -483,7 +444,7 @@
 		requires = { wal_reclaim_constantinople wal_romanian_unity }
 		final = yes
 		enabled = {
-			num_locations >= 600
+			num_locations >= 300
 		}
 		on_completion = {
 			trigger_event_non_silently = wal_events.99

@@ -93,13 +93,13 @@ lit_jagiellonian_mod = {
 }
 
 lit_szlachta_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	legislative_efficiency = 0.05
 	nobles_estate_agenda_impact = 0.10
 }
 
 lit_sejm_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	legislative_efficiency = 0.10
 	government_size = 1
 }
@@ -175,7 +175,7 @@ lit_amber_mod = {
 }
 
 lit_law_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	legislative_efficiency = 0.05
 	global_integration_speed_modifier = 0.10
 }
@@ -209,6 +209,8 @@ lit_krakow_mod = {
 
 lit_grand_empire_mod = {
 	icon = legacy_of_great_empires
+	num_local_governors = 1
+	government_reform_slots = 1
 	government_size = 1
 	monthly_prestige = 0.10
 	diplomatic_reputation = 2
@@ -277,8 +279,9 @@ lit_lublin_union_mod = {
 
 lit_commonwealth_final_mod = {
 	icon = legacy_of_great_empires
+	government_reform_slots = 1
+	government_size = 1
 	power_projection = 10
-	num_local_governors = 1
 	global_distance_from_capital_speed_propagation = 0.10
 }
 
@@ -297,7 +300,7 @@ lit_lviv_mod = {
 }
 
 lit_kaunas_mod = {
-	icon = administrative_icon
+	icon = government_reforms
 	local_monthly_prosperity = 0.002
 	country_cabinet_efficiency = 0.05
 }

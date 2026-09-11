@@ -8,13 +8,14 @@
 		game_has_missions_enabled = yes
 		has_or_had_tag = HUN
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = hun_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = hun_mission_started }
-	on_completion = { remove_variable = hun_mission_started }
-	on_abort = { remove_variable = hun_mission_started }
+	on_start = { set_global_variable = hun_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -100,6 +101,7 @@
 		enabled = {
 			owns = location:cluj
 			owns = location:brasov
+			any_owned_location = { area = area:transylvania_area is_owned_or_owned_by_subjects_of = root count >= 35 }
 			gold >= 1000
 		}
 		on_completion = {
@@ -134,7 +136,7 @@
 		requires = { hun_conquer_serbia }
 		enabled = {
 			OR = {
-				owns_or_non_sovereign_subject_owns = location:bucharest
+				any_owned_location = { area = area:wallachia_area is_owned_or_owned_by_subjects_of = root count >= 35 }
 				c:WAL = { is_subject_of = root }
 			}
 		}
@@ -148,12 +150,12 @@
 		requires = { hun_subjugate_wallachia }
 		enabled = {
 			OR = {
-				owns_or_non_sovereign_subject_owns = location:iasi
+				any_owned_location = { area = area:moldavia_area is_owned_or_owned_by_subjects_of = root count >= 35 }
 				c:MOL = { is_subject_of = root }
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hun_moldavian_buffer_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hun_moldavian_buffer_mod years = 40 mode = add }
 		}
 	}
 
@@ -230,9 +232,9 @@
 		icon = elan
 		requires = { hun_battle_of_nicopolis }
 		enabled = {
-			army_size >= 30
-			army_tradition >= 50
-			monthly_income_trade_and_tax >= 50
+			regular_army_size >= 30
+			army_tradition >= 25
+
 		}
 		on_completion = {
 			add_country_modifier = { modifier = hun_black_army_mod years = -1 mode = add }
@@ -252,7 +254,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hun_christendom_bulwark_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hun_christendom_bulwark_mod years = 20 mode = add }
 		}
 	}
 
@@ -376,10 +378,10 @@
 		enabled = {
 			num_locations >= 500
 			total_population >= 8000
-			monthly_income_trade_and_tax >= 300
+			monthly_income_trade_and_tax >= 2300
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hun_great_hungary_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hun_great_hungary_mod years = 30 mode = add }
 		}
 	}
 
@@ -391,7 +393,7 @@
 		requires = { hun_lord_of_the_north }
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:gdansk
-			monthly_income_trade_and_tax >= 100
+			monthly_income_trade_and_tax >= 600
 		}
 		on_completion = {
 			add_country_modifier = { modifier = hun_baltic_trade_mod years = -1 mode = add }
@@ -440,7 +442,7 @@
 		requires = { hun_danube_fortress_line }
 		enabled = {
 			OR = {
-				owns_or_non_sovereign_subject_owns = location:tarnovo
+				any_owned_location = { area = area:bulgaria_area is_owned_or_owned_by_subjects_of = root count >= 45 }
 				c:BUL = { is_subject_of = root }
 			}
 		}
@@ -451,7 +453,7 @@
 
 	hun_conquer_greece = {
 		icon = a_neverending_crusade
-		requires = { hun_conquer_bulgaria }
+		requires = { hun_mediterranean_fleet }
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:athens
 			owns_or_non_sovereign_subject_owns = location:thessaloniki
@@ -463,7 +465,7 @@
 
 	hun_balkan_empire = {
 		icon = legacy_of_great_empires
-		requires = { hun_conquer_greece }
+		requires = { hun_conquer_greece hun_conquer_bulgaria }
 		enabled = {
 			any_owned_location = {
 				region = region:balkan_region
@@ -509,7 +511,7 @@
 			owns_or_non_sovereign_subject_owns = location:palermo
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hun_med_fleet_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hun_med_fleet_mod years = 50 mode = add }
 		}
 	}
 
@@ -524,19 +526,6 @@
 		}
 	}
 
-	hun_latin_empire = {
-		icon = legacy_of_great_empires
-		requires = { hun_conquer_north_africa }
-		enabled = {
-			owns_or_non_sovereign_subject_owns = location:constantinople
-			owns_or_non_sovereign_subject_owns = location:rome
-			owns_or_non_sovereign_subject_owns = location:naples
-			owns_or_non_sovereign_subject_owns = location:athens
-		}
-		on_completion = {
-			add_country_modifier = { modifier = hun_latin_empire_mod years = -1 mode = add }
-		}
-	}
 
 	# ==================== BRANCH E 延伸: ハンガリー文明の完成 ====================
 
@@ -570,7 +559,7 @@
 		icon = crossroads_of_commerce
 		requires = { hun_great_hungary }
 		enabled = {
-			monthly_income_trade_and_tax >= 600
+			monthly_income_trade_and_tax >= 3500
 			any_owned_location = {
 				is_market_center = yes
 				count >= 5
@@ -587,7 +576,7 @@
 		enabled = {
 			num_locations >= 1000
 			total_population >= 10000
-			monthly_income_trade_and_tax >= 800
+			monthly_income_trade_and_tax >= 5000
 		}
 		on_completion = {
 			add_country_modifier = { modifier = hun_danube_empire_mod years = -1 mode = add }
@@ -598,9 +587,11 @@
 	# ==================== BRANCH F: 下ハンガリー鉱山都市群 ====================
 
 	hun_transylvanian_mines = {
-		icon = administrative_icon
+		icon = government_reforms
 		requires = { hun_secure_transylvania }
 		enabled = {
+			owns = location:kremnica
+			owns = location:banska_bystrica
 			location:kremnica = { rgo_level >= 6 }
 			location:banska_bystrica = { rgo_level >= 6 }
 		}
@@ -615,9 +606,10 @@
 	}
 
 	hun_silver_mines = {
-		icon = administrative_icon
+		icon = government_reforms
 		requires = { hun_transylvanian_mines }
 		enabled = {
+			owns = location:hont
 			location:hont = { rgo_level >= 8 }
 		}
 		on_completion = {
@@ -628,9 +620,11 @@
 	}
 
 	hun_salt_mines = {
-		icon = administrative_icon
+		icon = government_reforms
 		requires = { hun_silver_mines }
 		enabled = {
+			owns = location:sighet
+			owns = location:turda
 			location:sighet = { rgo_level >= 10 }
 			location:turda = { rgo_level >= 10 }
 		}
@@ -648,6 +642,7 @@
 		icon = continental_trade
 		requires = { hun_salt_mines }
 		enabled = {
+			owns = location:satoraljaujhely
 			location:satoraljaujhely = { rgo_level >= 12 }
 		}
 		on_completion = {
@@ -662,12 +657,12 @@
 		requires = { hun_tokaj_wine }
 		enabled = {
 			OR = {
-				produced_in_country:silver > 20
-				produced_in_country:goods_gold > 20
+				produced_in_country:silver > 100
+				produced_in_country:goods_gold > 100
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = hun_mining_empire_mod years = -1 mode = add }
+			add_country_modifier = { modifier = hun_mining_empire_mod years = 25 mode = add }
 		}
 	}
 
@@ -704,6 +699,8 @@
 		icon = continental_trade
 		requires = { hun_buda_capital }
 		enabled = {
+			owns = location:bratislava
+			owns = location:kosice
 			location:bratislava = {
 				OR = {
 					location_rank = location_rank:city
@@ -731,6 +728,8 @@
 		icon = crossroads_of_commerce
 		requires = { hun_upper_hungary_cities }
 		enabled = {
+			owns = location:pecs
+			owns = location:gyor
 			location:pecs = {
 				OR = {
 					location_rank = location_rank:city
@@ -758,6 +757,8 @@
 		icon = city_building_advance
 		requires = { hun_pannonian_cities }
 		enabled = {
+			owns = location:debrecen
+			owns = location:szeged
 			location:debrecen = {
 				OR = {
 					location_rank = location_rank:city
@@ -785,6 +786,8 @@
 		icon = city_building_advance
 		requires = { hun_great_plain_cities }
 		enabled = {
+			owns = location:cluj
+			owns = location:oradea
 			location:cluj = {
 				OR = {
 					location_rank = location_rank:city
@@ -813,10 +816,7 @@
 		requires = { hun_transylvania_cities hun_mining_empire }
 		enabled = {
 			any_owned_location = {
-				OR = {
-					location_rank = location_rank:city
-					location_rank = location_rank:megalopolis
-				}
+				location_rank = location_rank:city
 				count >= 20
 			}
 		}
@@ -829,12 +829,11 @@
 
 	hun_glory_of_st_stephen = {
 		icon = legacy_of_great_empires
-		requires = { hun_challenge_habsburgs hun_balkan_empire hun_hungarian_crusade hun_latin_empire hun_danube_empire hun_kingdom_of_cities }
+		requires = { hun_challenge_habsburgs hun_balkan_empire hun_hungarian_crusade  hun_danube_empire hun_kingdom_of_cities }
 		final = yes
 		enabled = {
-			prestige >= 80
+			prestige >= 50
 			num_locations >= 1500
-			monthly_income_trade_and_tax >= 1000
 		}
 		on_completion = {
 			trigger_event_non_silently = hun_events.99

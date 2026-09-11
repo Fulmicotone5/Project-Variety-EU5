@@ -564,7 +564,6 @@ iceland_mission_pack = {
 		enabled = {
 			average_country_literacy >= 25
 			has_embraced_institution = institution:new_world
-			total_development >= 75
 		}
 
 		duration = 0

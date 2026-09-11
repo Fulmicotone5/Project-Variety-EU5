@@ -67,13 +67,31 @@
  ara_invade_occitania_desc: "Provence, Languedoc, Gascony — the lands of southern France once fell within the Aragonese sphere of influence. Pushing our northern border against the Kingdom of France is an essential strategic task for the security of the Iberian Peninsula."
  ara_invade_occitania_tooltip: "Own Marseille, Toulon, or Nice, or have a subject that owns one of them."
 
- ara_humiliate_provence: "Humiliate Provence"
- ara_humiliate_provence_desc: "The Count of Provence has long claimed legitimate succession rights to both Aragon and Naples. We must end these arrogant pretensions and bring Provence under our control, making our western Mediterranean hegemony unassailable."
- ara_humiliate_provence_tooltip: "The County of Provence (PRO) does not exist."
+ king_of_occ: "Union of Crowns"
+ king_of_occ_desc: "Merge the crowns of Aragon and Occitania, and with a hegemonic power now overseeing the region, the stability and future prospects of the Crown will be secured."
+ king_of_occ_tooltip: "Form Aragon-Occitania"
+ arapass: "The #italic Talarn Pass#!"
+ arapass_desc: "An intriguing infrastructural project has been presented to the Royal Court, involving the establishment of a series of tunnels connecting Talarn to Toulouse."
+ arapass_tooltip: "Decide if it's worth to invest in the project."
+ reject_cath: "Purge Catharism"
+ reject_cath_desc: "After the failure of the Cathar Crusade, the duty of converting those heretics has fallen upon us. May the Lord have mercy."
+ reject_catha_tooltip: "Convert the remaining Cathar regions."
+ accept_cathar: "Accept Catharism"
+ accept_cathar_desc: "As Catharism has come to represent most of our subjects, a choice has come for the Kingdom. Forsake its subjects, or embrace their beliefs."
+ accept_cathar_tooltip: "Own Marseille, Toulon, or Nice, or have a subject that owns one of them."
+ cathar_reforma: "Cathar Reforms"
+ cathar_reforma_desc: "Despite being surrounded by predominantly Catholic nations, the continued existence and prosperity of Catharism in the region is indeed remarkable. However, a miracle alone is insufficient to guarantee its long-term survival, and numerous subjects of the Kingdom are now calling for reform to strengthen the faith's future."
+ cathar_reforma_tooltip: "Reform Catharism to ensure its survival."
+
+ ara_humiliate_provence: "Sole Ruler of Occitania"
+ ara_humiliate_provence_desc: "The time has come to fully submit to us the lands of Occitania, and become the sole ruler."
+ ara_humiliate_provence_tooltip: "The Duchy of Provence and Toulouse does not exist."
 
  ara_aragonese_navy: "The Aragonese Navy"
  ara_aragonese_navy_desc: "The territories of the Crown of Aragon are scattered across the Mediterranean. Protecting all of them and maintaining naval supremacy requires a powerful fleet. Build the Aragonese Armada and establish command of this inland sea."
  ara_aragonese_navy_tooltip: "Navy size of 25 or more"
+ ara_seize_sicily: "Seize Sicily"
+ ara_seize_sicily_desc: "Although formally under the crown of Aragon, Sicily is a de facto independent kingdom. Seizing this incredibly rich island would be an important feat for the Kingdom."
 
  ara_integrate_naples: "Integrate Naples"
  ara_integrate_naples_desc: "The Kingdom of Naples, conquered by King Alfonso V, remains one of the jewels in the Aragonese crown. By fully integrating southern Italy and the port city of Naples, our kingdom gains a bridgehead for expansion into the eastern Mediterranean."
@@ -184,6 +202,7 @@
 
  STATIC_MODIFIER_NAME_ara_vassalize_navarre_mod: "Balance of the Pyrenees"
  STATIC_MODIFIER_DESC_ara_vassalize_navarre_mod: "Bringing Navarre into our sphere has raised the kingdom's diplomatic standing."
+ STATIC_MODIFIER_NAME_tou_shield_of_catharism_mod: "Shield of Catharism"
 
  STATIC_MODIFIER_NAME_ara_intervene_in_castile_mod: "The Castilian Expeditionary Force"
  STATIC_MODIFIER_DESC_ara_intervene_in_castile_mod: "Having intervened in Castile, the royal army boasts high land morale."
@@ -215,8 +234,12 @@
  STATIC_MODIFIER_NAME_ara_invade_occitania_mod: "The Occitan Expeditionary Force"
  STATIC_MODIFIER_DESC_ara_invade_occitania_mod: "Having fought through southern France, the royal army marches faster and besieges with greater skill."
 
- STATIC_MODIFIER_NAME_ara_humiliate_provence_mod: "The Subjugation of Provence"
- STATIC_MODIFIER_DESC_ara_humiliate_provence_mod: "Having seized the shipyards of Provence, the kingdom's output of naval supplies has grown."
+ STATIC_MODIFIER_NAME_ara_golden_century_mod2: "The Kingdom of Aragon-Occitania"
+ STATIC_MODIFIER_NAME_ara_golden_century_mod2_desc: "The Crowns of Aragon and Occitania have, at long last, been united"
+ STATIC_MODIFIER_NAME_ara_golden_century_mod6: "Golden Age"
+
+ STATIC_MODIFIER_NAME_ara_humiliate_provence_mod: "Ruler of Occitania"
+ STATIC_MODIFIER_DESC_ara_humiliate_provence_mod: "Occitania has been fully seized."
 
  STATIC_MODIFIER_NAME_ara_aragonese_navy_mod: "The Armada de Aragon"
  STATIC_MODIFIER_DESC_ara_aragonese_navy_mod: "The reorganized Aragonese fleet boasts high morale and excellent repair capability."
@@ -259,6 +282,10 @@
 
  STATIC_MODIFIER_NAME_ara_golden_century_mod: "The Prosperity of the Siglo de Oro"
  STATIC_MODIFIER_DESC_ara_golden_century_mod: "The prosperity of the Golden Century has greatly raised the kingdom's prestige and trade income."
+
+ STATIC_MODIFIER_NAME_ara_golden_century_mod3: "Catharism Repressed"
+ STATIC_MODIFIER_NAME_ara_golden_century_mod4: "Catharism Embraced"
+ STATIC_MODIFIER_NAME_ara_golden_century_mod5: "Protector of Catharism"
 
  STATIC_MODIFIER_NAME_ara_city_of_the_worlds_desire_mod: "Master of the Bosphorus"
  STATIC_MODIFIER_DESC_ara_city_of_the_worlds_desire_mod: "The splendor of an empire that holds Constantinople has raised its prestige and legitimacy, and strengthened its hand in the negotiations of war as never before."
@@ -305,5 +332,90 @@
  ara_events.2.d: "The Kingdom of Majorca, once founded as a cadet branch of the Aragonese royal house by James II, has long remained within Aragon's sphere of influence — its holdings in the Balearic Islands, Roussillon, and Montpellier notwithstanding. The time has come for its full integration. Whether to annex it outright and make it a part of Aragon, or to retain it as a friendly vassal — in either case, Majorca will fall under the Aragonese crown."
  ara_events.2.a: "Annex Majorca outright"
  ara_events.2.b: "Retain Majorca as a friendly vassal"
- STATIC_MODIFIER_NAME_ara_seize_sicily_mod: "Glory of Seizing Sicily"
+ STATIC_MODIFIER_NAME_ara_seize_sicily_mod: "Glory of Conquering Sicily"
  STATIC_MODIFIER_DESC_ara_seize_sicily_mod: "The seizure of Sicily raises naval morale and maritime presence in the Mediterranean."
+
+ ara_taula_de_canvi_2: "Taula de Canvi"
+ ara_taula_de_canvi_2_desc: "The Taula de Canvi (Exchange Table), established in Barcelona in 1401, is one of Europe's oldest public banks. By making use of this financial institution, grown ever more sophisticated with the expansion of trade, we can place the kingdom's finances on an unshakeable foundation."
+ ara_taula_de_canvi_2_tooltip: "Hold 300 or more gold"
+
+ ara_valencian_silk_2: "Valencian Silk"
+ ara_valencian_silk_2_desc: "Valencia is becoming known as a producer of fine silk. By building up the Silk Exchange (Llotja de la Seda) and developing Valencia's silk industry, we can gain the upper hand even against eastern competition."
+ ara_valencian_silk_2_tooltip: "Valencia has RGO level 10+."
+
+ ara_guilds_of_barcelona_2: "Guilds of Barcelona"
+ ara_guilds_of_barcelona_2_desc: "The craftsmen's and merchants' guilds of Barcelona have long been the backbone of the city's economy. By securing their loyalty and organizing similar guilds across the realm, the foundation of industry and trade will be further reinforced."
+ ara_guilds_of_barcelona_2_tooltip: "Total building levels in Barcelona are 50+."
+
+ ara_industrial_districts_2: "Industrial Districts"
+ ara_industrial_districts_2_desc: "Glass, wine, paper, and silk — Aragon is home to a diverse range of high-value goods. By organizing these industries and developing manufacturing, the kingdom's economic power will grow by leaps and bounds."
+ ara_industrial_districts_2_tooltip: "Own 2+ market centers."
+
+ ara_aragonese_renaissance_2: "The Aragonese-Occitan Renaissance"
+ ara_aragonese_renaissance_2_desc: "The court of Alfonso V became a center of Renaissance culture in Toulouse, drawing Italian humanists from across Europe. By spreading this cultural flowering throughout the Kingdom, Aragon-Occitania will establish itself as the intellectual and artistic heart of Europe."
+ ara_aragonese_renaissance_2_tooltip: "Any one of our locations contains 50+ works of art."
+
+ ara_golden_century_2: "Golden Age"
+ ara_golden_century_2_desc: "Having unified Aragon and Occitania, mastered the mountains, and seen economy and culture bloom, our kingdom is truly entering its the Golden Age. Its brilliance will be spoken of for generations."
+ ara_golden_century_2_tooltip: "2000 ducats a month."
+mission_per_develop_agricultural_heartland1: "Develop Agricultural Heartland"
+mission_per_develop_agricultural_heartland1_desc: "Maximize the productivity of Occitania's fertile farmlands, ensuring food security and economic prosperity."
+
+mission_per_develop_rural_economy1: "Develop Rural Economy"
+mission_per_develop_rural_economy1_desc: "Improve the productivity of Occitania's vast agricultural lands, boosting grain and wool production."
+
+mission_per_establish_carpet_trade1: "Textile Pride"
+mission_per_establish_carpet_trade1_desc: "Develop a world-renowned texile industry, turning Occitan wool into valuable exports that enrich our merchants and treasury."
+
+mission_per_develop_persian_manufactories1: "Develop Occitan Manufactories"
+mission_per_develop_persian_manufactories1_desc: "Establish a robust manufacturing base for cloth and tools, reducing dependence on foreign imports and creating new sources of wealth."
+
+mission_per_develop_irrigation1: "Develop Irrigation Systems"
+mission_per_develop_irrigation1_desc: "Invest in irrigation infrastructure to turn Occitania's regions into productive farmland."
+
+mission_per_urban_development1: "Urban Development"
+mission_per_urban_development1_desc: "Promote urban growth across the Kingdom, developing major cities into centers of commerce, culture, and administration."
+
+
+ tou_1: "The Duchy of Toulouse"
+ tou_1_desc: "The Duchy of The Duchy of Toulouse, renowned for its flourishing culture and rich history, has managed throughout the years to become the predominant authority in Southern France. In this thriving society, Catharism has prospered and become the state religion, shaping the spiritual and social fabric of the duchy."
+ tou_1_tooltip: "Starting Event."
+ tou_matterof: "The Matter of Acquitaine"
+ tou_matterof_desc: "The Duchy of Acquitaine was incorporated into the Crown of England in 1153. As a Catholic territory under foreign influence, it is our duty to liberate this land and restore it as a Cathar nation."
+
+ tou_canal: "The #italic Canal Royal en Languedoc#!"
+ tou_canal_desc: "An intriguing infrastructural project has been presented to the Royal Court, involving the establishment of a channel connecting the capital to Narbonne, and subsequently linking Narbonne to Agde."
+ tou_matterofmall: "A Cry For Help"
+ tou_matterofmall_desc: "The Kingdom of Mallorca, although centered in [ShowProvinceDefinitionName('mallorca_province')], happens to own some lands bordering our country in which the majority of the population follows Catharism."
+ ara_invade_aragon: "Invade Aragon"
+ ara_invade_aragon_desc: "Control of the Pyrenean passes was vital to both defense and diplomacy. Toulousian rulers increasingly recognized that the security of Occitania required influence beyond the mountains."
+ tou_consolidate_occ: "Consolidate Occitania"
+ tou_consolidate_occ_desc: "Unify Occitania, and declare ourselves the King of Occitania to the world."
+ ara_humiliate_provence_2: "Ruler of Occitania"
+ ara_humiliate_provence_2_desc: "The time has come to fully submit to us the lands of Occitania, and become the sole ruler."
+
+ ara_tou_navy: "Eastablish a Navy"
+ ara_tou_navy_desc: "Toulouse's mediterranean coastline offers excellent harbors. Develop these ports to support our growing naval ambitions."
+ ara_tou_navy_ref: "Navy Reforms"
+ ara_tou_navy_ref_desc: "The Kingdom of Mallorca, although centered in [ShowProvinceDefinitionName('mallorca_province')], happens to own some lands bordering our country in which the majority of the population follows Catharism."
+ arapass_: "The #italic Talarn Pass#!"
+ arapass__desc: "An intriguing infrastructural project has been presented to the Royal Court, involving the establishment of a serie of tunnels connecting Toulouse, to Talarn."
+ protector_of_cath: "Protector of Catharism"
+ protector_of_cath_desc: "Become the shield and sword of Catharism in the world."
+ cathar_conver_ara_2: "Aragon Converted"
+ cathar_conver_ara_2_desc: "At long last, Aragon, Catalonia and Valencia have embraced the only faith."
+ cathar_conver_ara: "Convert Aragon"
+ cathar_conver_ara_desc: "Although the crowns of Aragon and Occitania have been united, our lands are far from united. Our subjects in  Aragon, Catalonia and Valencia need to embrace the Faith/"
+ cathar_reforma_2: "Cathar Reforms"
+ cathar_reforma_2_desc: "Despite being surrounded by predominantly Catholic nations, the continued existence and prosperity of Catharism in the region is indeed remarkable. However, a miracle alone is insufficient to guarantee its long-term survival, and numerous subjects of the Kingdom are now calling for reform to strengthen the faith's future."
+ cathar_reforma_2_tooltip: "Reform Catharism to ensure its survival."
+ king_of_occ_ara: "Union of Crowns"
+ king_of_occ_ara_desc: "Merge the crowns of Aragon and Occitania, and with a hegemonic power now overseeing the region, the stability and future prospects of the Crown will be secured."
+ tou_shield_of_catharism: "The Shield of Catharism"
+ tou_shield_of_catharism_desc: "Toulouse has become the last bastion of Catharism in the world."
+
+ PV_tou_m: "The Duchy of Toulouse"
+ PV_tou_m_DESCRIPTION:0 "The Duchy of Toulouse, renowned for its flourishing culture and rich history, has managed throughout the years to become the predominant authority in Southern France. In this thriving society, Catharism has prospered and become the state religion, shaping the spiritual and social fabric of the duchy. The Cathar faith, with its emphasis on spiritual purity and dualistic beliefs, influences daily life, governance, and the arts, creating a unique atmosphere of religious devotion and intellectual exploration."
+ PV_tou_m_CRITERIA_DESCRIPTION:0 "Complete missions as the Toulouse to establish Occitan unity."
+ PV_tou_m_BUTTON_TOOLTIP:0 "Complete missions to walk the path of Toulouse."
+ PV_tou_m_BUTTON_DETAILS:0 "Lay the foundation of the Kingdom of Occitania, and unify the crowns of Aragon and Occitania"

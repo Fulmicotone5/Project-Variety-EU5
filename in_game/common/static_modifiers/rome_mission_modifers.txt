@@ -388,7 +388,7 @@ nicaean_council_authority = {
 anatolian_cultural_synthesis = {
 	global_pop_assimilation_speed_modifier = 0.15
 	tolerance_heathen = 0.05
-	cultural_influence = 0.10
+	cultural_influence_modifier = 0.10
 }
 
 forced_hellenization = {

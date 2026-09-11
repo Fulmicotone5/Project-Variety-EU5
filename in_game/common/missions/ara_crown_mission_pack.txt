@@ -46,7 +46,7 @@
 		enabled = {
 			c:MLL = { opinion = { target = root value >= 200 } }
 		}
-		duration = 120
+		
 		on_completion = {
 			trigger_event_non_silently = ara_events.2
 		}
@@ -58,8 +58,14 @@
 
 		enabled = {
 			owns = location:granada
+			NOT = {
+				has_country_modifier = ara_golden_century_mod2
+			}
+			NOT = {
+				has_country_modifier = ara_consulate_of_the_sea_mod
+			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_reconquest_of_granada_mod years = -1 mode = add }
 		}
@@ -75,20 +81,28 @@
 				NOT = { country_exists = c:NAV }
 			}
 		}
-		duration = 120
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_vassalize_navarre_mod years = 40 mode = add }
 		}
 	}
 
 	ara_intervene_in_castile = {
-		icon = ara_desperta_ferro
+		icon = army_country_casus_belli_advance
 		requires = { ara_vassalize_navarre ara_reconquest_of_granada }
 
 		enabled = {
-			owns_or_non_sovereign_subject_owns = location:toledo
+			relative_strength = {
+						target = c:CAS
+						value >= 1
+					}
 		}
-		duration = 120
+		bypass = {
+			NOT = {
+				country_exists = c:CAS
+			}
+		}
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_intervene_in_castile_mod years = 40 mode = add }
 			add_casus_belli = {
@@ -109,7 +123,7 @@
 				NOT = { country_exists = c:CAS }
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_union_of_the_crowns_mod years = -1 mode = add }
 		}
@@ -122,7 +136,7 @@
 		enabled = {
 			has_fired_unique_event = flavor_ara.6
 		}
-		duration = 120
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_war_of_the_remences_mod years = 40 mode = add }
 		}
@@ -135,7 +149,7 @@
 		enabled = {
 			has_fired_unique_event = flavor_ara.16
 		}
-		duration = 120
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_catalan_nobility_mod years = 40 mode = add }
 		}
@@ -146,9 +160,9 @@
 		requires = { ara_union_of_the_crowns ara_catalan_nobility }
 
 		enabled = {
-			num_locations >= 300
+			num_locations >= 200
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_crowns_of_iberia_mod years = -1 mode = add }
 		}
@@ -163,7 +177,7 @@
 		enabled = {
 			owns = location:oristano
 		}
-		duration = 120
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_pacify_sardinia_mod years = 40 mode = add }
 		}
@@ -175,13 +189,10 @@
 
 		enabled = {
 			has_fired_unique_event = flavor_ara.1
-			NOT = {
-				has_country_modifier = ara_golden_century_mod2
-			}
 		}
-		duration = 120
+		
 		on_completion = {
-			add_country_modifier = { modifier = ara_consulate_of_the_sea_mod years = 40 mode = add }
+			add_country_modifier = { modifier = ara_consulate_of_the_sea_mod years = -1 mode = add }
 		}
 	}
 
@@ -192,7 +203,7 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:genoa
 		}
-		duration = 180
+		
 		on_completion = {
 			location:genoa = {
 				add_location_modifier = { modifier = ara_dominate_genoa_mod years = -1 mode = add }
@@ -209,8 +220,11 @@
 			NOT = {
 				has_country_modifier = ara_reconquest_of_granada_mod
 			}
+			NOT = {
+				has_country_modifier = ara_golden_century_mod2
+			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_rule_italy_mod years = -1 mode = add }
 		}
@@ -221,9 +235,17 @@
 		requires = { ara_pacify_sardinia }
 
 		enabled = {
-			always = yes
+			relative_strength = {
+						target = c:TOU
+						value >= 0.75
+					}
 		}
-		duration = 180
+		bypass = {
+			NOT = {
+				country_exists = c:TOU
+			}
+		}
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_invade_occitania_mod years = 40 mode = add }
 			add_casus_belli = {
@@ -236,13 +258,16 @@
 	}
 
 	king_of_occ = {
-		icon = ara_desperta_ferro
+		icon = salic_law_advance
 		requires = { ara_invade_occitania }
 
 		enabled = {
 			has_or_had_tag = F03
 			NOT = {
 				has_country_modifier = ara_consulate_of_the_sea_mod
+			}
+			NOT = {
+				has_country_modifier = ara_reconquest_of_granada_mod
 			}
 		}
 		on_completion = {
@@ -251,17 +276,87 @@
 		}
 	}
 
-	ara_humiliate_provence = {
-		icon = ara_desperta_ferro
+	accept_cathar = {
+		icon = assistance_to_the_suffering
 		requires = { king_of_occ }
 
 		enabled = {
-			NOT = { country_exists = c:PRO }
+			religion = religion:catharism
+			NOT = {
+				has_country_modifier = ara_golden_century_mod3
+			}
 		}
-		duration = 180
+		on_completion = {
+			change_religion = religion:catharism
+			add_country_modifier = { modifier = ara_golden_century_mod4 years = -1 mode = add }
+			c:PAP = { add_opinion = { target = root  modifier = opinion_displeased }
+		}
+	}
+	}
+
+	cathar_reforma = {
+		icon = government_reforms
+		requires = { accept_cathar }
+
+
+		enabled = {
+			religion = religion:catharism
+			religious_unity >= 0.8
+		}
+		on_completion = {
+
+			trigger_event_non_silently = touflavor.4
+		}
+	}
+	reject_cath = {
+		icon = pal_a_just_ruler
+		requires = { king_of_occ }
+
+
+		enabled = {
+			NOT = {
+				has_country_modifier = ara_golden_century_mod4
+			}
+		}
+		on_completion = {
+			add_country_modifier = { modifier = ara_golden_century_mod3 years = -1 mode = add }
+		}
+	}
+
+	arapass = {
+		icon = mountain_roads
+		requires = { king_of_occ }
+
+		enabled = {
+			owns = location:toulouse
+			owns = location:aspet
+			owns = location:vielha
+			owns = location:talarn
+			owns = location:benabarre
+			owns = location:balaguer
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.8
+		}
+	}
+
+	ara_humiliate_provence = {
+		icon = milanese_tradition
+		requires = { arapass }
+
+		enabled = {
+			NOT = { country_exists = c:PRO }
+			NOT = { country_exists = c:TOU }
+			owns = location:marseille
+			owns = location:toulouse
+		}
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_humiliate_provence_mod years = -1 mode = add }
 		}
+
+		final = yes
 	}
 
 	# ==================== BRANCH C: 西地中海とコンスタンティノープル（本ルート） ====================
@@ -273,7 +368,7 @@
 		enabled = {
 			navy_size >= 25
 		}
-		duration = 90
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_aragonese_navy_mod years = 40 mode = add }
 			if = {
@@ -293,7 +388,7 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:palermo
 		}
-		duration = 150
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_seize_sicily_mod years = 40 mode = add }
 			if = {
@@ -313,7 +408,7 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:naples
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_integrate_naples_mod years = 40 mode = add }
 		}
@@ -326,7 +421,7 @@
 		enabled = {
 			navy_size >= 100
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_mediterranean_ambitions_mod years = 40 mode = add }
 		}
@@ -339,7 +434,7 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:tlemcen
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_combat_barbary_piracy_mod years = 40 mode = add }
 		}
@@ -352,7 +447,7 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:tunis
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_conquer_tunis_mod years = -1 mode = add }
 		}
@@ -365,9 +460,9 @@
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:alexandria
 		}
-		duration = 180
+		
 		on_completion = {
-			add_country_modifier = { modifier = ara_occupy_alexandria_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ara_occupy_alexandria_mod years = 10 mode = add }
 		}
 	}
 
@@ -378,7 +473,7 @@
 		enabled = {
 			navy_size >= 200
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_claims_on_athens_mod years = 40 mode = add }
 			if = {
@@ -426,7 +521,7 @@
 		enabled = {
 			navy_size >= 250
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_mare_nostrum_mod years = -1 mode = add }
 		}
@@ -441,8 +536,8 @@
 		enabled = {
 			gold >= 300
 		}
-		duration = 90
 		on_completion = {
+			add_gold = -300
 			add_country_modifier = { modifier = ara_taula_de_canvi_mod years = 40 mode = add }
 		}
 	}
@@ -456,7 +551,7 @@
 				rgo_level >= 10
 			}
 		}
-		duration = 120
+		
 		on_completion = {
 			location:valencia = {
 				add_location_modifier = { modifier = ara_valencian_silk_mod years = -1 mode = add }
@@ -469,9 +564,9 @@
 		requires = { ara_taula_de_canvi }
 
 		enabled = {
-			location:barcelona.total_building_levels >= 50
+			location:barcelona.total_building_levels >= 100
 		}
-		duration = 120
+		
 		on_completion = {
 			location:barcelona = {
 				add_location_modifier = { modifier = ara_guilds_of_barcelona_mod years = -1 mode = add }
@@ -489,7 +584,7 @@
 				count >= 2
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_industrial_districts_mod years = 40 mode = add }
 		}
@@ -500,13 +595,13 @@
 		requires = { ara_industrial_districts }
 
 		enabled = {
-			any_owned_location = {
+			capital = {
 				any_work_of_art_in_location = {
 					count >= 50
 				}
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_aragonese_renaissance_mod years = -1 mode = add }
 		}
@@ -523,7 +618,7 @@
 				count >= 300
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_golden_century_mod years = -1 mode = add }
 		}
@@ -560,7 +655,7 @@
 				count >= 3
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_african_outposts_mod years = 40 mode = add }
 		}
@@ -576,7 +671,7 @@
 				is_market_center = yes
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_gold_coast_trade_mod years = 40 mode = add }
 		}
@@ -593,7 +688,7 @@
 				continent = continent:america
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_discover_the_new_world_mod years = 40 mode = add }
 		}
@@ -609,7 +704,7 @@
 				count >= 5
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_caribbean_foothold_mod years = 40 mode = add }
 		}
@@ -620,12 +715,13 @@
 		requires = { ara_caribbean_foothold }
 
 		enabled = {
+			owns = location:qusqu
 			any_owned_location = {
-				continent = continent:america
-				count >= 15
+				area = area:acamama_area
+				count >= 10
 			}
 		}
-		duration = 365
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_conquest_of_the_incas_mod years = -1 mode = add }
 		}
@@ -638,9 +734,15 @@
 		enabled = {
 			any_colonial_country = {
 				is_subject_of = root
+				custom_tooltip = {
+					text = capame
+					capital ?= { continent = continent:america }
+				}
+				total_population >= 300
+				count >= 3
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_new_kingdom_of_aragon_mod years = -1 mode = add }
 		}
@@ -657,7 +759,7 @@
 				continent = continent:asia
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_route_to_the_indies_mod years = 40 mode = add }
 		}
@@ -673,7 +775,7 @@
 				is_market_center = yes
 			}
 		}
-		duration = 180
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_spice_trade_outposts_mod years = 40 mode = add }
 		}
@@ -685,13 +787,13 @@
 
 		enabled = {
 			any_owned_location = {
-				continent = continent:asia
-				count >= 5
+				area = area:luzon_area
+				count >= 15
 			}
 		}
-		duration = 180
+		
 		on_completion = {
-			add_country_modifier = { modifier = ara_las_filipinas_mod years = -1 mode = add }
+			add_country_modifier = { modifier = ara_las_filipinas_mod years = 30 mode = add }
 		}
 	}
 
@@ -702,9 +804,13 @@
 		requires = { ara_new_kingdom_of_aragon ara_las_filipinas ara_gold_coast_trade }
 
 		enabled = {
-			num_colonial_charters >= 3
+			any_colonial_country = {
+				is_subject_of = root
+				count >= 5
+				total_population >= 500
+			}
 		}
-		duration = 365
+		
 		on_completion = {
 			add_country_modifier = { modifier = ara_empire_of_the_three_oceans_mod years = -1 mode = add }
 		}

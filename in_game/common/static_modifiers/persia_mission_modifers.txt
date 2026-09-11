@@ -32,6 +32,13 @@ per_persian_cultural_hegemony = {
     cultural_influence_modifier = 0.20
 }
 
+per_occ_cultural_hegemony = {
+    icon = culture_icon
+    cultural_tradition_modifier = 0.20
+    cultural_influence_modifier = 0.20
+}
+
+
 # === PHASE 2: MILITARY CONSOLIDATION ===
 per_standing_army_established = {
     icon = military_icon
@@ -79,23 +86,38 @@ per_agricultural_development = {
 per_rural_development_boom = {
     icon = production_icon
     global_population_growth = 0.0003
-    global_production_efficiency = 0.10
+    global_production_efficiency = 0.05
     global_food_capacity_modifier = 0.20
 }
 
 per_persian_carpet_trade = {
     icon = trade_icon
-    global_cloth_output_modifier = 0.15
-    trade_land_efficiency = 0.015
+    global_cloth_output_modifier = 0.1
+    trade_land_efficiency = 0.01
+    global_merchant_power = 0.10
+}
+
+per_persian_carpet_trade2 = {
+    icon = trade_icon
+    global_fine_cloth_output_modifier = 0.05
+    global_cloth_output_modifier = 0.1
+    trade_land_efficiency = 0.005
     global_merchant_power = 0.10
 }
 
 per_persian_manufacturing = {
     icon = industry_icon
-    global_production_efficiency = 0.15
+    global_production_efficiency = 0.1
     global_cloth_output_modifier = 0.15
     global_tools_output_modifier = 0.15
 }
+
+per_persian_manufacturing2 = {
+    icon = industry_icon
+    global_cloth_output_modifier = 0.15
+    global_tools_output_modifier = 0.15
+}
+
 
 per_persian_gulf_trade = {
     icon = trade_icon
@@ -127,7 +149,7 @@ per_isfahan_university = {
     icon = technology_icon
     research_speed_modifier = 0.05
     global_institution_growth_modifier = 0.10
-    global_max_literacy = 0.5
+    global_max_literacy = 5
 }
 
 per_persian_language_promotion = {
@@ -167,12 +189,14 @@ per_persian_artillery_corps = {
 per_estate_balance = {
     icon = government_icon
     global_estate_target_satisfaction = 0.15
-    global_monthly_control = 0.10
+    	global_estate_max_tax = -0.025
+    global_monthly_control = 0.0010
 }
 
 per_centralized_authority = {
     icon = crown_icon
     government_size = 1
+    global_crown_estate_power = 0.25
 }
 
 # === PHASE 10: PERSIA-SPECIFIC MODIFIERS ===
@@ -340,7 +364,8 @@ per_irrigation_system = {
 
 per_urban_development = {
     icon = city_icon
-    global_production_efficiency = 0.10
+    global_production_efficiency = 0.1
+    non_rural_migration_attraction = 0.25
 }
 
 # --- Event-style Modifiers ---
@@ -358,10 +383,10 @@ per_persian_science = {
 # --- Final Capstones ---
 per_persian_renaissance_flowering = {
     icon = culture_icon
-    cultural_influence_modifier = 0.05
-    cultural_tradition_modifier = 0.05
+    cultural_influence_modifier = 0.5
+    cultural_tradition_modifier = 0.5
     num_possible_artists = 1
-    global_max_literacy = 1.0
+    global_max_literacy = 5
 }
 
 per_persian_empire_restored = {
@@ -369,6 +394,17 @@ per_persian_empire_restored = {
     global_manpower_modifier = 0.15
     global_production_efficiency = 0.05
     government_size = 1
+    government_reform_slots = 1
+    num_local_governors = 1
+}
+
+lat_empire_formed2 = {
+    global_manpower_modifier = 0.15
+    global_production_efficiency = 0.05
+    government_size = 1
+    government_reform_slots = 1
+    global_max_bureaucracy_slots = 1
+    cultures_capacity = 3
 }
 
 # ==================== ADDITIONAL PERSIAN LOCATION MODIFIERS ====================

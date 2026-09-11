@@ -304,7 +304,7 @@
 
 
 	bra_frederick_the_great = {
-		icon = oda_triple_firing
+		icon = divine_supremacy
 		requires = { bra_king_in_prussia }
 		enabled = {
 			has_or_had_tag = PRU
@@ -501,7 +501,7 @@
 		icon = military_modernization
 		requires = { bra_prussian_constitution }
 		enabled = {
-			army_tradition >= 60
+			army_tradition >= 50
 			regular_army_size >= 500
 			OR = {
 				has_reform = government_reform:bra_quality_doctrine_reform
@@ -551,7 +551,7 @@
 		icon = salic_law_advance
 		requires = { bra_rhineland_acquisition }
 		enabled = {
-			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 220 }
+			any_owned_location = { region = region:north_german_region is_owned_or_owned_by_subjects_of = root count >= 300 }
 		}
 		on_completion = { 
 			form_country = formable_country:F05_f
@@ -612,22 +612,8 @@
 	bra_german_science = {
 		icon = dutch_education
 		requires = { mission_bra_establish_the_berlin_university }
-		enabled = { average_country_literacy >= 60
-	total_development >= 1500 }
+		enabled = { average_country_literacy >= 60 }
 		on_completion = { add_country_modifier = { modifier = bra_science_mod years = -1 mode = add } }
-	}
-
-	bra_balkan_influence = {
-		icon = balkan_hajduks
-		requires = { bra_north_confederation_mod }
-		enabled = {
-			any_owned_location = {
-				region = region:balkan_region
-				is_owned_or_owned_by_subjects_of = root
-				count >= 10
-			}
-		}
-		on_completion = { add_country_modifier = { modifier = bra_balkan_mod years = 20 mode = add } }
 	}
 
 
@@ -1378,7 +1364,7 @@
 		requires = { mission_bra_develop_artillery_corps }
 		
 		enabled = {
-			army_tradition >= 60
+			army_tradition >= 30
 			any_owned_location = {
 				has_building_with_at_least_one_level = barracks
 				count >= 5
@@ -1463,7 +1449,7 @@
 			capital = {
 				has_building_with_at_least_one_level = war_college
 			}
-			army_tradition >= 75
+			army_tradition >= 40
 		}
 		
 		duration = 0
@@ -1489,7 +1475,7 @@
 		
 		enabled = {
 			is_great_power = yes
-			army_tradition >= 80
+			army_tradition >= 50
 			army_size >= 150
 			army_size_percentage >= 0.90
 			prestige >= 70

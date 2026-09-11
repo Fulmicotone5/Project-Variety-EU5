@@ -1,0 +1,623 @@
+PV_tou_m = {
+	icon = mission_toui
+	repeatable = no
+	player_playstyle = military
+	chance = 10000000
+
+	visible = {
+		game_has_missions_enabled = yes
+		has_or_had_tag = TOU
+		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = tou_crown_started
+		}
+	}
+
+	enabled = {
+		always = yes
+	}
+
+	on_start = {
+		set_global_variable = tou_crown_started
+	}
+
+
+	# ==================== ROOT: カスペの妥協 ====================
+
+    mission_per_develop_agricultural_heartland1 = {
+        icon = efficient_mining
+        duration = 0
+
+		requires = { tou_1 }
+
+        enabled = {
+            any_owned_location = {
+                raw_material = goods:wheat
+                count >= 5
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_agricultural_development
+                years = 25
+                mode = add_and_extend
+            }
+        }
+    }
+
+    mission_per_develop_rural_economy1 = {
+        icon = expanded_supply_trains
+        requires = { mission_per_develop_agricultural_heartland1 }
+        duration = 0
+
+        enabled = {
+            estate_satisfaction:peasants_estate >= 0.60
+            produced_in_country:wheat >= 25
+            produced_in_country:wool >= 25
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_rural_development_boom
+                years = 35
+                mode = add_and_extend
+            }
+            add_gold = 150
+        }
+    }
+
+    mission_per_establish_carpet_trade1 = {
+        icon = merchants_and_trade
+        requires = { mission_per_develop_persian_manufactories1 }
+        duration = 0
+
+        enabled = {
+            any_owned_location = {
+                raw_material = goods:wool
+                count >= 10
+            }
+            any_owned_location = {
+							OR = {
+                has_building_with_at_least_one_level = cloth_guild
+                has_building_with_at_least_one_level = cloth_workshop
+							}
+              count >= 8
+            }
+			any_owned_location = {
+							OR = {
+                has_building_with_at_least_one_level = fine_cloth_guild
+                has_building_with_at_least_one_level = fine_cloth_workshop
+							}
+              count >= 5
+            }
+
+            produced_in_country:cloth >= 50
+			 produced_in_country:cloth >= 40
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_persian_carpet_trade2
+                years = -1
+                mode = add_and_extend
+            }
+            add_estate_satisfaction = {
+                type = estate_type:burghers_estate
+                value = estate_satisfaction_mild_bonus
+            }
+        }
+    }
+
+    mission_per_develop_persian_manufactories1 = {
+        icon = ira_persian_rug_production
+        requires = { mission_per_develop_agricultural_heartland1 }
+        duration = 0
+
+        enabled = {
+						OR = {
+							total_effective_building_levels:cloth_guild > 20
+							total_effective_building_levels:cloth_workshop > 10
+						}
+						OR = {
+							total_effective_building_levels:tools_guild > 20
+							total_effective_building_levels:tools_workshop > 10
+						}
+
+            produced_in_country:cloth >= 40
+            produced_in_country:tools >= 30
+        }
+
+        on_completion = {
+            add_gold = {
+                value = monthly_income_trade_and_tax
+                multiply = 5
+            }
+            add_country_modifier = {
+                modifier = per_persian_manufacturing2
+                years = 30
+                mode = add_and_extend
+            }
+        }
+    }
+
+	
+    mission_per_develop_irrigation1 = {
+        icon = efficient_mining
+        visible = {
+            
+        }
+        requires = { mission_per_develop_rural_economy1 }
+        duration = 0
+
+        enabled = {
+            any_owned_location = {
+                total_effective_building_levels:irrigation_systems >= 25
+            }
+            produced_in_country:wheat >= 50
+			produced_in_country:fruit >= 50
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_irrigation_system
+                years = 25
+                mode = add_and_extend
+            }
+            add_estate_satisfaction = {
+                type = estate_type:peasants_estate
+                value = estate_satisfaction_severe_bonus
+            }
+        }
+    }
+
+    mission_per_urban_development1 = {
+        icon = global_supply_limit_modifier_advance_5
+        visible = {
+            
+        }
+        requires = { mission_per_develop_persian_manufactories1 }
+        duration = 0
+
+        enabled = {
+            any_owned_location = {
+                location_rank = location_rank:city
+                count >= 15
+            }
+            any_owned_location = {
+                location_rank = location_rank:megalopolis
+                count >= 1
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_urban_development
+                years = 15
+                mode = add_and_extend
+            }
+        }
+    }
+
+
+
+	tou_1 = {
+		icon = dai_thuan_thien
+		requires = { }
+
+		enabled = {
+			always = yes
+		}
+		duration = 0
+		on_completion = {
+			trigger_event_non_silently = touflavor.1
+		}
+	}
+
+	# ==================== BRANCH A: イベリア統合 ====================
+
+	tou_matterof = {
+		icon = ligurian_coastal_seafarers
+		requires = { tou_1 }
+
+		enabled = {
+			relative_strength = {
+						target = c:AQN
+						value >= 0.75
+					}
+		}
+		bypass = {
+			NOT = {
+				country_exists = c:AQN
+			}
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.3
+		}
+	}
+
+	tou_canal = {
+		icon = extensive_canal_works
+		requires = { mission_per_develop_rural_economy1 }
+
+		enabled = {
+			owns = location:toulouse
+		owns = location:castelnaudary
+		owns = location:carcassonne
+		owns = location:narbonne
+		owns = location:beziers
+		owns = location:agde
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.7
+		}
+	}
+
+	tou_shield_of_catharism = {
+		icon = kol_school_of_painting
+		requires = { tou_1 }
+
+		enabled = {
+			religious_unity >= 0.95
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = tou_shield_of_catharism_mod years = 40 mode = add }
+		}
+	}
+
+	tou_consolidate_occ = {
+		icon = nav_navarrese_defense_force
+		requires = { tou_matterof }
+
+		enabled = {
+			has_or_had_tag = F02
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.5
+		}
+	}
+
+	mission_per_promote_occ_culture1 = {
+		icon = irish_travelling_bards_advance
+		requires = { tou_consolidate_occ }
+
+		enabled = {
+			culture:languedocien = {
+                cultural_influence >= 250
+            }
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.2
+		}
+	}
+
+	mission_per_promote_occ_culture = {
+        icon = cultural_acceptance_advance
+        requires = { mission_per_promote_occ_culture1 }
+        duration = 0
+
+        enabled = {
+            culture:languedocien = {
+                cultural_influence >= 500
+            }
+            total_effective_building_levels:library >= 10
+            any_owned_location = {
+                has_building_with_at_least_one_level = university
+                count >= 3
+            }
+        }
+
+        on_completion = {
+            add_country_modifier = {
+                modifier = per_occ_cultural_hegemony
+                years = 20
+                mode = add_and_extend
+            }
+        }
+    }
+
+
+	tou_matterofmall = {
+		icon = nav_navarrese_defense_force
+		requires = { tou_1 }
+
+		enabled = {
+			country_exists = c:MLL
+			religion = religion:catharism
+		}
+		bypass = {
+			NOT = {
+				country_exists = c:MLL
+			}
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.11
+		}
+	}
+
+	ara_invade_aragon = {
+		icon = alpine_defensiveness
+		requires = { tou_matterofmall }
+
+		enabled = {
+			relative_strength = {
+						target = c:ARA
+						value >= 0.8
+					}
+		}
+		bypass = {
+			NOT = {
+				country_exists = c:ARA
+			}
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_invade_occitania_mod years = 40 mode = add }
+			add_casus_belli = {
+					target = location:caspe.owner
+					type = casus_belli:cb_conquer_province
+					province = location:caspe.province
+				}
+
+		}
+	}
+
+	king_of_occ_ara = {
+		icon = salic_law_advance
+		requires = { ara_invade_aragon tou_consolidate_occ }
+
+		enabled = {
+			has_or_had_tag = F03
+		}
+		on_completion = {
+			add_country_modifier = { modifier = ara_golden_century_mod2 years = -1 mode = add }
+			trigger_event_non_silently = touflavor.6
+		}
+	}
+
+
+	cathar_reforma_2 = {
+		icon = government_reforms
+		requires = { tou_shield_of_catharism }
+
+
+		enabled = {
+			religion = religion:catharism
+			religious_unity >= 0.8
+			total_effective_building_levels:temple >= 25
+		}
+		on_completion = {
+
+			trigger_event_non_silently = touflavor.4
+		}
+	}
+
+	cathar_conver_ara = {
+		icon = pun_reforming_the_punjabi_army
+		requires = { king_of_occ_ara }
+
+
+		enabled = {
+			religion = religion:catharism
+			religious_unity <= 0.7
+		}
+
+		bypass = {
+			religious_unity >= 0.7
+		}
+		on_completion = {
+
+			add_country_modifier = { modifier = ara_golden_century_mod4 years = 25 mode = add }
+		}
+	}
+
+	cathar_conver_ara_2 = {
+		icon = preserver_of_national_identity
+		requires = { cathar_conver_ara }
+
+
+		enabled = {
+			religion = religion:catharism
+			own_entire_area = area:aragon_area
+			own_entire_area = area:catalonia_area
+			own_entire_area = area:valencia_area
+			religious_unity >= 0.9
+		}
+
+		on_completion = {
+
+			add_country_modifier = { modifier = ara_golden_century_mod4 years = -1 mode = add }
+		}
+	}
+
+	protector_of_cath = {
+		icon = isolated_reaches
+		requires = { cathar_reforma_2 cathar_conver_ara_2 }
+
+
+		enabled = {
+			religion = religion:catharism
+			religious_unity >= 0.95
+		}
+		on_completion = {
+
+			add_country_modifier = { modifier = ara_golden_century_mod5 years = -1 mode = add }
+		}
+	}
+
+
+	arapass_ = {
+		icon = mountain_roads
+		requires = { king_of_occ_ara }
+
+		enabled = {
+			owns = location:toulouse
+			owns = location:aspet
+			owns = location:vielha
+			owns = location:talarn
+			owns = location:benabarre
+			owns = location:balaguer
+		}
+		
+		on_completion = {
+			trigger_event_non_silently = touflavor.8
+		}
+	}
+
+	ara_humiliate_provence_2 = {
+		icon = austrian_heritage
+		requires = { tou_consolidate_occ }
+
+		enabled = {
+			own_entire_area = area:guyenne_area
+			own_entire_area = area:gascony_area
+			own_entire_area = area:limousin_province
+			own_entire_area = area:auvergne_area
+			own_entire_area = area:languedoc_area
+			own_entire_area = area:provence_area
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_humiliate_provence_mod years = -1 mode = add }
+		}
+
+	}
+
+	# ==================== BRANCH C: 西地中海とコンスタンティノープル（本ルート） ====================
+
+	ara_tou_navy = {
+		icon = exploration
+		requires = { king_of_occ_ara }
+
+		enabled = {
+			navy_size >= 25
+			any_owned_location = {
+                has_building_with_at_least_one_level = wharf
+                count >= 3
+            }
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_aragonese_navy_mod years = 40 mode = add }
+		}
+	}
+
+	ara_tou_navy_ref = {
+		icon = royal_navy
+		requires = { ara_tou_navy }
+
+		enabled = {
+			navy_size >= 100
+			total_sub_unit_count:navy_heavy_ship >= 10
+            navy_tradition >= 50
+            any_owned_location = {
+                has_building_with_at_least_one_level = shipyard
+                count >= 6
+            }
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_aragonese_navy_mod years = -1 mode = add }
+		}
+	}
+
+
+	ara_taula_de_canvi_2 = {
+		icon = ara_chartered_merchant_companies
+		requires = { king_of_occ_ara }
+
+		enabled = {
+			gold >= 300
+		}
+		on_completion = {
+			add_gold = -300
+			add_country_modifier = { modifier = ara_taula_de_canvi_mod years = 40 mode = add }
+		}
+	}
+
+	ara_valencian_silk_2 = {
+		icon = riches_of_the_silk_road
+		requires = { ara_taula_de_canvi_2 }
+
+		enabled = {
+			location:valencia = {
+				rgo_level >= 10
+			}
+		}
+		
+		on_completion = {
+			location:valencia = {
+				add_location_modifier = { modifier = ara_valencian_silk_mod years = -1 mode = add }
+			}
+		}
+	}
+
+	ara_guilds_of_barcelona_2 = {
+		icon = ara_chartered_merchant_companies
+		requires = { ara_taula_de_canvi_2 }
+
+		enabled = {
+			location:barcelona.total_building_levels >= 100
+		}
+		
+		on_completion = {
+			location:barcelona = {
+				add_location_modifier = { modifier = ara_guilds_of_barcelona_mod years = -1 mode = add }
+			}
+		}
+	}
+
+	ara_industrial_districts_2 = {
+		icon = sardinian_the_industrial_transition
+		requires = { ara_valencian_silk_2 ara_guilds_of_barcelona_2 }
+
+		enabled = {
+			any_owned_location = {
+				is_market_center = yes
+				count >= 2
+			}
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_industrial_districts_mod years = 40 mode = add }
+		}
+	}
+
+	ara_aragonese_renaissance_2 = {
+		icon = ara_valencian_golden_age
+		requires = { ara_industrial_districts_2 }
+
+		enabled = {
+			capital = {
+				any_work_of_art_in_location = {
+					count >= 50
+				}
+			}
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_aragonese_renaissance_mod years = -1 mode = add }
+		}
+	}
+
+	ara_golden_century_2 = {
+		icon = alpha_and_omega
+		requires = { ara_aragonese_renaissance_2 ara_crowns_of_iberia }
+		final = yes
+		enabled = {
+			monthly_income_trade_and_tax >= 2000
+		}
+		
+		on_completion = {
+			add_country_modifier = { modifier = ara_golden_century_mod6 years = -1 mode = add }
+		}
+	}
+
+
+}

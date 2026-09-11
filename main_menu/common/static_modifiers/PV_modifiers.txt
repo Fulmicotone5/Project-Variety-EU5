@@ -1,5 +1,5 @@
 TRY_INJECT:country_art = {
-	cultural_influence = 1
+	cultural_influence_modifier = 1
  
 }
 TRY_REPLACE:inverse_control = {

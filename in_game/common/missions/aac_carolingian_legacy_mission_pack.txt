@@ -1,20 +1,21 @@
 ﻿aac_carolingian_legacy_mission_pack = {
 	icon = nmt_bohemia
 	repeatable = no
-	player_playstyle = military
+	player_playstyle = administrative
 	chance = 10000000
 
 	visible = {
 		game_has_missions_enabled = yes
 		has_or_had_tag = AAC
 		NOR = { country_type = pop country_type = building }
+		NOT = {
+			has_global_variable = aac_mission_started
+		}
 	}
 
 	enabled = { always = yes }
 
-	on_start = { set_variable = aac_mission_started }
-	on_completion = { remove_variable = aac_mission_started }
-	on_abort = { remove_variable = aac_mission_started }
+	on_start = { set_global_variable = aac_mission_started }
 
 	# ==================== ROOT ====================
 
@@ -78,7 +79,7 @@
 
 	aac_conquer_hre = {
 		icon = legacy_of_great_empires
-		requires = { aac_integrate_lorraine aac_control_flanders }
+		requires = {  aac_kingdom_of_franks }
 		enabled = {
 			OR = {
 				is_leader_of_international_organization = international_organization:hre
@@ -96,7 +97,6 @@
 		}
 		on_completion = {
 			add_country_modifier = { modifier = aac_hre_master_mod years = -1 mode = add }
-			set_country_rank_effect = { rank = country_rank:rank_empire }
 		}
 	}
 
@@ -106,14 +106,14 @@
 		icon = crown_power_advance_renaissance
 		requires = { aac_throne_of_charlemagne }
 		enabled = {
-			owns_or_non_sovereign_subject_owns = location:liege
+			owns_or_non_sovereign_subject_owns = location:bruges
 			any_owned_location = {
 				area = area:flanders_area
 				count >= 8
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = aac_flanders_mod years = -1 mode = add }
+			add_country_modifier = { modifier = aac_flanders_mod years = 50 mode = add }
 		}
 	}
 
@@ -165,7 +165,7 @@
 			}
 		}
 		on_completion = {
-			add_country_modifier = { modifier = aac_northern_france_mod years = -1 mode = add }
+			add_country_modifier = { modifier = aac_northern_france_mod years = 25 mode = add }
 		}
 	}
 
@@ -298,7 +298,7 @@
 		requires = { aac_throne_of_charlemagne }
 		enabled = {
 			army_size >= 10
-			army_tradition >= 30
+			army_tradition >= 5
 		}
 		on_completion = {
 			add_country_modifier = { modifier = aac_frankish_levy_mod years = 30 mode = add }
@@ -309,11 +309,16 @@
 		icon = feudalism_advance
 		requires = { aac_frankish_levy }
 		enabled = {
-			army_tradition >= 50
-			army_size >= 40
+			army_tradition >= 15
+			regular_army_size >= 10
 		}
 		on_completion = {
-			add_country_modifier = { modifier = aac_palatine_mod years = -1 mode = add }
+			add_gold = -500
+			capital = {
+				create_sub_unit = unit_type:a_reislaufer
+				create_sub_unit = unit_type:a_reislaufer
+			}
+			add_country_modifier = { modifier = aac_palatine_mod years = 25 mode = add }
 		}
 	}
 
@@ -321,9 +326,8 @@
 		icon = fra_gendarmes
 		requires = { aac_palatine_guard }
 		enabled = {
-			army_tradition >= 65
-			discipline >= 1.05
-			army_size >= 60
+			army_tradition >= 50
+			total_sub_unit_count:army_heavy_cavalry >= 20
 		}
 		on_completion = {
 			add_country_modifier = { modifier = aac_cavalry_mod years = -1 mode = add }
@@ -360,7 +364,7 @@
 			monthly_income_trade_and_tax >= 150
 		}
 		on_completion = {
-			add_country_modifier = { modifier = aac_champagne_mod years = -1 mode = add }
+			add_country_modifier = { modifier = aac_champagne_mod years = 15 mode = add }
 		}
 	}
 
@@ -384,9 +388,12 @@
 		enabled = {
 			OR = {
 				is_allied_with = { target = c:PAP }
-				NOT = { country_exists = c:PAP }
+				c:PAP = { opinion = { target = root value >= 200 } }
 			}
-			c:PAP = { opinion = { target = root value >= 200 } }
+		}
+		bypass = {
+
+			NOT = { country_exists = c:PAP }
 		}
 		on_completion = {
 			add_country_modifier = { modifier = aac_holy_crown_mod years = -1 mode = add }
@@ -492,7 +499,6 @@
 		icon = a_neverending_crusade
 		requires = { aac_papal_alliance aac_kingdom_of_franks }
 		enabled = {
-			owns_or_non_sovereign_subject_owns = location:rome
 			any_owned_location = {
 				region = region:italy_region
 				count >= 150
@@ -507,14 +513,14 @@
 
 	aac_western_roman_empire = {
 		icon = frankokratia_frankokratia_advance
-		requires = { aac_conquer_hre aac_kingdom_of_franks aac_conquer_italy }
+		requires = { aac_conquer_hre aac_conquer_italy }
 		final = yes
 		enabled = {
 			num_locations >= 800
 			owns_or_non_sovereign_subject_owns = location:rome
 			owns_or_non_sovereign_subject_owns = location:paris
 			owns_or_non_sovereign_subject_owns = location:aachen
-			prestige >= 80
+			prestige >= 50
 		}
 		on_completion = {
 			trigger_event_non_silently = aac_events.99

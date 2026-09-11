@@ -68,7 +68,7 @@ last_bastion_of_norse_culture = {
 	potential = {
 		has_or_had_tag = P01
 	}
-	cultural_tradition = 0.25
+	cultural_tradition_modifier = 0.25
 
 	requires = renaissance_advance
 }
