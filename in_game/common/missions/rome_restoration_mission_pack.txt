@@ -73,7 +73,7 @@
 
 	byz_reclaim_bursa = {
 		icon = byz_akritai_advance
-		requires = { byz_avoid_collapse }
+		requires = { mission_counter_islamic_threat }
 
 		enabled = {
 			owns_or_non_sovereign_subject_owns = location:bursa
@@ -1195,25 +1195,28 @@
 		
 		enabled = {
 			#@@@ temporary removed, it causes errors in new patch
-			any_owned_location = {
-						has_building_with_at_least_one_level = orthodox_monastery
-			 		count >= 2
-					province_definition = province_definition:chalkidiki_province
-					}
+			location:mount_athos = {
+				owner = root
+				has_building_with_at_least_one_level = orthodox_monastery
+			}
+				has_fired_unique_event = flavor_byz.1100
+				societal_value:traditionalist_vs_innovative <= -60
+				societal_value:latinization_vs_hellenization >= 80
+
 		}
 		
 		duration = 0
 
 		on_completion = {
-			location:thessaloniki = {
+			location:mount_athos = {
 				add_location_modifier = {
 					modifier = mount_athos_autonomous
 					years = -1
 					mode = add
 				}
 			}
-			add_prestige = 15
-			add_legitimacy = 15
+			add_prestige = 5
+			add_legitimacy = -5
 		}
 		#ai_will_do = { value = 100 }
 	}
@@ -1224,6 +1227,9 @@
 		
 		enabled = {
 			gold >= 1000
+			location:constantinople = {
+				has_building = building_type:hippodrome
+			}
 		}
 		
 		duration = 0
@@ -1490,7 +1496,7 @@
 	
 	mission_counter_islamic_threat = {
 		icon = arm_mountain_armies
-		requires = { mission_establish_orthodox_hegemony }
+		requires = {  }
 		
 		enabled = {
 			any_country = {
@@ -1498,20 +1504,23 @@
 				is_neighbor_of = root
 				count >= 1
 			}
-			army_tradition >= 15
+			NOT = {
+				owns_or_non_sovereign_subject_owns = location:bursa
+			}
+		}
+		bypass = {
+			owns_or_non_sovereign_subject_owns = location:bursa
 		}
 		
 		duration = 0
 
 		on_completion = {
-			if = {
-				limit = { country_exists = c:TUR }
-				add_casus_belli = {
-					target ?= c:TUR
+			add_casus_belli = {
+					target = location:bursa.owner
+					province = location:bursa.province
 					type = casus_belli:cb_conquer_province
 					months = 120
 				}
-			}
 		}
 		#ai_will_do = { value = 100 }
 	}

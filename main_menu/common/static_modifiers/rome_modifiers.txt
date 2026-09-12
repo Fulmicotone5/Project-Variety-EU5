@@ -81,7 +81,7 @@ byz_bursa_silk = {
 }
 byz_bursa_fine_cloth = {
 	icon = trade_icon
-	local_fine_cloth_output_modifier = 0.30
+	local_fine_cloth_output_modifier = 0.1
 }
 byz_nicomedia_weaponry = {
 	icon = military_icon
