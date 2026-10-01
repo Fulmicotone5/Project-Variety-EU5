@@ -915,11 +915,12 @@
         enabled = {
 			AND = {
 				location:berlin = {
-					has_latest_road_to = location:potsdam
             		num_roads >= 2 
 				}
+				location:potsdam = {
+					has_road_to_capital = yes
+				}
 				location:brandenburg = {
-					has_latest_road_to = location:potsdam
             		num_roads >= 2 
 				}
 			}

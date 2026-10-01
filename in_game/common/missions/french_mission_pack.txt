@@ -186,10 +186,10 @@
 			count >= 10
 		}
 			location:orleans = {
-				has_latest_road_to = location:paris
+				has_road_to_capital = yes
 			}
 			location:reims = {
-				has_latest_road_to = location:paris
+				has_road_to_capital = yes
 			}
 		}
 		
@@ -210,9 +210,9 @@
 		requires = { mission_fra_construct_royal_roads }
 		
 		enabled = {
-			location:orleans = { has_latest_road_to = location:chartres }
-			location:chartres = { has_latest_road_to = location:paris }
-			location:paris = { has_latest_road_to = location:amiens }
+			location:orleans = { has_road_to_capital = yes }
+			location:chartres = { has_road_to_capital = yes }
+			location:amiens = { has_road_to_capital = yes }
 		}
 		
 		duration = 0

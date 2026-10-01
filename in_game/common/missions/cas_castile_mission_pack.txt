@@ -1985,7 +1985,7 @@
             area:navarre_area = {
 				any_location_in_area = {
 					is_owned_or_owned_by_subjects_of = root
-					percent = 1
+					percent >= 0.8
 				}
 			}
             area:gascony_area = {
@@ -2026,7 +2026,7 @@
             area:languedoc_area = {
 				any_location_in_area = {
 					is_owned_or_owned_by_subjects_of = root
-					percent = 0.8
+					percent >= 0.8
 				}
 			}
         }
@@ -2137,7 +2137,7 @@
             area:balearics_area = {
 				any_location_in_area = {
 					is_owned_or_owned_by_subjects_of = root
-					percent = 1
+					percent >= 0.8
 				}
 			}
         }
@@ -2572,13 +2572,13 @@
             area:granada_area = {
                 any_location_in_area = {
                     is_owned_or_owned_by_subjects_of = root
-                    percent = 0.8
+                    percent >= 0.8
                 }
             }
             area:andalusia_area = {
                 any_location_in_area = {
                     is_owned_or_owned_by_subjects_of = root
-                    percent = 0.8
+                    percent >= 0.8
                 }
             }
         }

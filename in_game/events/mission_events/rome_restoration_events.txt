@@ -265,6 +265,15 @@ byz_events.14 = {
 	}
 	option = {
 		name = byz_events.14.a
+		custom_tooltip = {
+			text = byz_events.14.a.tt
+			every_country = {
+			limit = {
+				religion = religion:catholic
+			}
+			trigger_event_silently = byz_events.99
+		}
+		}
 		add_estate_satisfaction = { type = estate_type:clergy_estate value = 0.2 }
 		add_legitimacy = 25
 		add_prestige = 100

@@ -281,7 +281,6 @@
 		}
 		enabled = {
 			any_owned_location = {
-				area = area:bohemia_area
 				rgo_level >= 6
 				raw_material = goods:silver
 				count >= 3
@@ -433,7 +432,7 @@
 			boh_hussite_reformation
 		}
 		enabled = {
-			gold = 500
+			gold >= 500
 		}
 		on_completion = {
 			add_gold = -500
@@ -773,7 +772,6 @@
 		enabled = {
 			produced_in_country:cloth > 30
 			any_owned_location = {
-				area = area:bohemia_area
 				rgo_level >= 5
 				raw_material = goods:wool
 				count >= 5

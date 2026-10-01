@@ -98,6 +98,8 @@ imperial_authority_restored = {
 
 hagia_sophia_restored = {
 	local_population_growth = 0.0005
+}
+hagia_sophia_restored_C = {
 	aqueduct_system_max_level = 1
 }
 
@@ -167,7 +169,7 @@ anatolian_hellenization = {
 
 second_city_restored = {
 	local_production_efficiency = 0.15
-	local_monthly_prosperity = 0.02
+	local_monthly_prosperity = 0.002
 	local_merchant_power = 10
 }
 
@@ -254,7 +256,7 @@ augustus_coronated = {
 
 practical_fortifications = {
 	local_garrison_growth = 0.20
-	global_build_buildings_efficiency = 0.25
+	local_build_buildings_efficiency = 0.25
 }
 
 reinforced_sea_walls = {

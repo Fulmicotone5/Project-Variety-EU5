@@ -468,8 +468,9 @@ denmark_mission_pack = {
 		}
 		enabled = {
 			navy_size >= 20
-			capital = {
+			any_owned_location = {
 				has_building_with_at_least_one_level = wharf
+				count >= 2
 			}
 			any_owned_location = {
 				raw_material = goods:lumber

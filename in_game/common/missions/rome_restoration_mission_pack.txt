@@ -1185,6 +1185,10 @@
 					mode = add
 				}
 			}
+			add_country_modifier = {
+				modifier = hagia_sophia_restored_C
+				years = -1
+			}
 		}
 		#ai_will_do = { value = 100 }
 	}

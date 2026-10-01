@@ -372,6 +372,8 @@ STATIC_MODIFIER_DESC_imperial_authority_restored_desc: "The emperor's power is u
 
 STATIC_MODIFIER_NAME_hagia_sophia_restored: "Valens Aqueduct Restored"
 STATIC_MODIFIER_DESC_hagia_sophia_restored_desc: "The Aqueduct of Valens has been restored"
+STATIC_MODIFIER_NAME_hagia_sophia_restored_C: "Valens Aqueduct Restored"
+STATIC_MODIFIER_DESC_hagia_sophia_restored_C_desc: "The Aqueduct of Valens has been restored"
 
 STATIC_MODIFIER_NAME_mount_athos_autonomous: "Mount Athos Autonomous"
 STATIC_MODIFIER_DESC_mount_athos_autonomous_desc: "The Holy Mountain thrives as a center of monastic spirituality."

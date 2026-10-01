@@ -119,6 +119,7 @@
  byz_events.14.t: "The End of the Great Schism"
  byz_events.14.d: "Since 1054, when Pope Leo IX and Patriarch Keroularios excommunicated each other, centuries have passed. Not through reconciliation, but through Orthodox conquest of Rome, the Great Schism ends. The Orthodox Church now holds the Pentarchy, the five most sacred cities of Christianity. The Eternal City becomes the western pillar of the Eastern Church.\nHistory chose Roman faith."
  byz_events.14.a: "Proclaim the end of the Great Schism to the world"
+ byz_events.14.a.tt: "Half of the Catholic population of the World will convert to Orthodoxy"
  byz_events.99.t: "The End of the Great Schism"
  byz_events.99.d: "Since 1054, when Pope Leo IX and Patriarch Keroularios excommunicated each other, centuries have passed. Not through reconciliation, but through Orthodox conquest of the Pentachy, the Great Schism ends.\nThe Orthodox Church now holds the Pentarchy, the five most sacred cities of Christianity.\nHistory chose Roman faith."
  byz_events.99.a: "So be it"

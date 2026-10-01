@@ -1348,20 +1348,20 @@
 
         enabled = {
             AND = {
-                location:isfahan = {
-                    has_latest_road_to = location:shiraz
+                location:yazd = {
+                    has_road_to_capital = yes
                 }
-                location:isfahan = {
-                    has_latest_road_to = location:baghdad
+                location:shiraz = {
+                   has_road_to_capital = yes
                 }
-                location:isfahan = {
-                    has_latest_road_to = location:tabriz
+                location:baghdad = {
+                    has_road_to_capital = yes
                 }
-                location:isfahan = {
-                    has_latest_road_to = location:herat
+                location:tabriz = {
+                    has_road_to_capital = yes
                 }
-                location:isfahan = {
-                    has_latest_road_to = location:yazd
+                location:herat = {
+                    has_road_to_capital = yes
                 }
             }
         }

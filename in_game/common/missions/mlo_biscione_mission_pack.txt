@@ -135,13 +135,13 @@
 		enabled = {
 			average_control_in_home_region >= 0.50
 			location:bergamo = {
-				has_latest_road_to = location:milano
+				has_road_to_capital = yes
 			}
 			location:vercelli = {
-				has_latest_road_to = location:milano
+				has_road_to_capital = yes
 			}
 			location:cremona = {
-				has_latest_road_to = location:milano
+				has_road_to_capital = yes
 			}
 		}
 		duration = 120

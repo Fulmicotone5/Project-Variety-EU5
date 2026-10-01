@@ -1109,14 +1109,14 @@
 			pol_prussian_confederation
 		}
 		enabled = {
-			location:krakow = {
-				has_latest_road_to = location:poznan
+			location:gdansk = {
+				has_road_to_capital = yes
 			}
 			location:poznan = {
-				has_latest_road_to = location:gniezno
+				has_road_to_capital = yes
 			}
 			location:gniezno = {
-				has_latest_road_to = location:gdansk
+				has_road_to_capital = yes
 			}
 		}
 		on_completion = {

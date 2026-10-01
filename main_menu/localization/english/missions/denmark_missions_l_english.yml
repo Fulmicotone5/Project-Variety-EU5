@@ -542,6 +542,8 @@ STATIC_MODIFIER_NAME_lubeck_danish_entrepot: "Norse Entrepôt"
  denmark_mission_pack_desc: "Initially established as an administrative region under the Kingdom of Danelaw, the Danelaw has gradually evolved into a de facto independent entity, particularly following the Norse monarch's abandonment of our traditional religion."
  denmark_mission_pack_BUTTON_TOOLTIP: "Complete missions to secure the Danelaw crown, conquer England, dominate Baltic and North Sea trade, and build a colonial empire across three continents."
  denmark_mission_pack_CRITERIA_DESCRIPTION: "Recover the crown, unite Scandinavia, control the Sound, establish overseas colonies, and revive the legacy of Canute the Great to unlock powerful modifiers and achieve the Norse Golden Age."
+ denmark_mission_pack_BUTTON_DETAILS: "Complete missions to secure the Danelaw crown, conquer England, dominate Baltic and North Sea trade, and build a colonial empire across three continents."
+ denmark_mission_pack_DESCRIPTION: "Recover the crown, unite Scandinavia, control the Sound, establish overseas colonies, and revive the legacy of Canute the Great to unlock powerful modifiers and achieve the Norse Golden Age."
 
  # ==================== MISSING MODIFIER LOCALISATIONS ====================
 
